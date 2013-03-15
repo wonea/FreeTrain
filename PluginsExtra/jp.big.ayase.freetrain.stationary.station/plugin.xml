@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Bridge pier</title>
+	<author>Hiro Ayase</author>
+	<homepage>http://www14.big.or.jp/~ayase/freetrain/</homepage>
+	
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-RailStructureImage-Station-03}">
+		<picture src="kouka2.bmp" origin="0,0" offset="16" />
+	</contribution>
+
+	
+	<contribution type="railStationary" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-Station-03a}">
+		<group>Bridge pier under station</group>
+		<price>200</price>
+		<height>1</height>
+		<size>1,2</size>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-RailStructureImage-Station-03}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-Station-03b}">
+		<group>Bridge pier under station</group>
+		<price>200</price>
+		<height>1</height>
+		<size>2,1</size>
+		<sprite origin="48,0" offset="24">
+			<picture ref="{FreeTrain-AYASE-Hiro-RailStructureImage-Station-03}"/>
+		</sprite>
+	</contribution>
+</plug-in>

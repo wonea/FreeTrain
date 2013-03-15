@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>International exhibition hall</title>
+	<author>Shino</author>
+	<homepage></homepage>
+	
+	<contribution type="picture" id="{7F5E411D-5D99-4402-8C14-10586AE7E8A4}">
+		<picture src="kokusai.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{S5776500-E8E5-4D5E-B30A-A0036A6ECDEB}">
+		<group>International exhibition hall</group>
+		<structure>
+			<category byname="Exhibition Halls"/>
+		</structure>
+		<price>5000</price>
+		<size>4,7</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="37">
+			<picture ref="{7F5E411D-5D99-4402-8C14-10586AE7E8A4}" />
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+</plug-in>

@@ -1,0 +1,839 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY built '
+	<group>Roller coaster (assembled)</group>
+	<structure>
+		<category byname="Amusement Parks"/>
+	</structure>
+	<price>3000</price>
+	<size>3,21</size>
+	<height>3</height>
+	<computerCannotBuild/>
+'>
+<!ENTITY built2 '
+	<group>Roller coaster (assembled)</group>
+	<structure>
+		<category byname="Amusement Parks"/>
+	</structure>
+	<price>3000</price>
+	<size>4,18</size>
+	<height>5</height>
+	<computerCannotBuild/>
+'>
+<!ENTITY straight '
+	<group>Roller coaster A(straight,slope)</group>
+	<structure>
+		<category byname="Amusement Parks"/>
+	</structure>
+	<price>10</price>
+	<size>1,1</size>
+	<minHeight>1</minHeight>
+	<maxHeight>5</maxHeight>
+	<computerCannotBuild/>
+'>
+<!ENTITY smallCurve '
+	<group>Roller coaster A(curve)</group>
+	<structure>
+		<category byname="Amusement Parks"/>
+	</structure>
+	<price>10</price>
+	<size>1,1</size>
+	<minHeight>1</minHeight>
+	<maxHeight>5</maxHeight>
+	<computerCannotBuild/>
+'>
+<!ENTITY largeCurve '
+	<group>Roller coaster A(curve)</group>
+	<structure>
+		<category byname="Amusement Parks"/>
+	</structure>
+	<price>40</price>
+	<size>2,2</size>
+	<minHeight>1</minHeight>
+	<maxHeight>5</maxHeight>
+	<computerCannotBuild/>
+'>
+<!ENTITY S_Curve '
+	<group>Roller coaster A(curve)</group>
+	<structure>
+		<category byname="Amusement Parks"/>
+	</structure>
+	<price>40</price>
+	<size>2,3</size>
+	<minHeight>1</minHeight>
+	<maxHeight>5</maxHeight>
+	<computerCannotBuild/>
+'>
+<!ENTITY virticalLoop '
+	<group>Roller coaster A(special)</group>
+	<structure>
+		<category byname="Amusement Parks"/>
+	</structure>
+	<price>80</price>
+	<size>1,2</size>
+	<minHeight>1</minHeight>
+	<maxHeight>5</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>35</base>
+	</population>
+	<computerCannotBuild/>
+'>
+<!ENTITY station '
+	<group>Roller coaster stop</group>
+	<structure>
+		<category byname="Amusement Parks"/>
+	</structure>
+	<price>120</price>
+	<size>1,2</size>
+	<height>1</height>
+	<computerCannotBuild/>
+'>
+<!ENTITY colorSet '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="255,255,255"/>
+	</spriteType>
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="120,240,255"/>
+		<map from="0,*,0" to="255,255,255"/>
+	</spriteType>
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,255,255"/>
+		<map from="0,*,0" to="255,255,255"/>
+	</spriteType>
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="200,200,200"/>
+		<map from="0,*,0" to="200,200,200"/>
+	</spriteType>
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="0,128,0"/>
+		<map from="0,*,0" to="96,96,96"/>
+	</spriteType>
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,255,0"/>
+		<map from="0,*,0" to="96,96,96"/>
+	</spriteType>
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="96,96,96"/>
+	</spriteType>
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="0,255,0"/>
+	</spriteType>
+'>
+<!ENTITY colorSet2 '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="255,255,255"/>
+		<map from="0,0,*" to="120,240,255"/>
+	</spriteType>
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="120,240,255"/>
+		<map from="0,*,0" to="255,255,255"/>
+		<map from="0,0,*" to="255,180,230"/>
+	</spriteType>
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,255,255"/>
+		<map from="0,*,0" to="255,255,255"/>
+		<map from="0,0,*" to="255,255,255"/>
+	</spriteType>
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="200,200,200"/>
+		<map from="0,*,0" to="200,200,200"/>
+		<map from="0,0,*" to="200,200,200"/>
+	</spriteType>
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="0,128,0"/>
+		<map from="0,*,0" to="96,96,96"/>
+		<map from="0,0,*" to="255,255,0"/>
+	</spriteType>
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,255,0"/>
+		<map from="0,*,0" to="96,96,96"/>
+		<map from="0,0,*" to="255,40,40"/>
+	</spriteType>
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="96,96,96"/>
+		<map from="0,0,*" to="0,255,255"/>
+	</spriteType>
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="0,255,0"/>
+	</spriteType>
+'>
+]>
+<plug-in>
+	<title>Roller coaster</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/%7Enao/</homepage>
+	<contribution type="picture" id="{33F626A5-0E8D-4D7D-C477-3B6456A8371E}-a1">
+		<picture src="ampark_coaster_A1.bmp">
+			<override when="night" src="ampark_coaster_A1_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{33F626A5-0E8D-4D7D-C477-3B6456A8371E}-b1">
+		<picture src="ampark_coaster_B1.bmp">
+			<override when="night" src="ampark_coaster_B1_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{6602CDAE-6B55-455B-C477-BB7513C7CA84}">
+		<picture src="ampark_coaster1_top.bmp">
+			<override when="night" src="ampark_coaster1_top_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{C0D113F5-DF41-40D1-C477-CA4017131EFB}">
+		<picture src="ampark_coaster1_pole.bmp">
+			<override when="night" src="ampark_coaster1_pole_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}">
+		<picture src="ampark_coaster1_base.bmp">
+			<override when="night" src="ampark_coaster1_base_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{76B8D222-1400-49AC-C477-1416F9775950}">
+		<picture src="ampark_coaster_station.bmp">
+			<override when="night" src="ampark_coaster_station_n.bmp"/>
+		</picture>
+	</contribution>
+
+	<!--完成版-->
+	<contribution type="GenericStructure" id="{4208F565-4799-4FCE-C477-116FD3755F84}">
+		&built;
+		<design>DESPERADO</design>
+		&colorSet2;
+		<sprite origin="384,0" offset="224" opposite="true">
+			<picture ref="{33F626A5-0E8D-4D7D-C477-3B6456A8371E}-a1"/>
+		</sprite>
+		<sprite origin="0,0" offset="80">
+			<picture ref="{33F626A5-0E8D-4D7D-C477-3B6456A8371E}-a1"/>
+		</sprite>
+		<sprite origin="384,256" offset="224" opposite="true">
+			<picture ref="{33F626A5-0E8D-4D7D-C477-3B6456A8371E}-a1"/>
+		</sprite>
+		<sprite origin="0,256" offset="80">
+			<picture ref="{33F626A5-0E8D-4D7D-C477-3B6456A8371E}-a1"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{A98B0FD5-C9FD-4800-C477-4750BBA17CA1}">
+		&built2;
+		<design>BIGWAVE</design>
+		&colorSet2;
+		<sprite origin="352,0" offset="208" opposite="true">
+			<picture ref="{33F626A5-0E8D-4D7D-C477-3B6456A8371E}-b1"/>
+		</sprite>
+		<sprite origin="0,0" offset="96">
+			<picture ref="{33F626A5-0E8D-4D7D-C477-3B6456A8371E}-b1"/>
+		</sprite>
+		<sprite origin="352,256" offset="208" opposite="true">
+			<picture ref="{33F626A5-0E8D-4D7D-C477-3B6456A8371E}-b1"/>
+		</sprite>
+		<sprite origin="0,256" offset="96">
+			<picture ref="{33F626A5-0E8D-4D7D-C477-3B6456A8371E}-b1"/>
+		</sprite>
+	</contribution>
+	<!--straight,slope-->	
+	<contribution type="GenericStructure" id="{AEF3C1A8-53AB-4CC3-C477-645328980ABE}-str">
+		&straight;
+		<design>horizontal straight</design>
+		&colorSet;
+		<pictures>
+			<top origin="320,344" offset="16">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="320,344" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="320,360" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="352,344" offset="16">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="352,344" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="352,360" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+	</contribution>
+	<contribution type="GenericStructure" id="{AEF3C1A8-53AB-4CC3-C477-645328980ABE}-slp">
+		&straight;
+		<design>slope</design>
+		&colorSet;
+		<pictures>
+			<top origin="0,8" offset="32">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="0,24" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="0,40" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="32,8" offset="32">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="32,24" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="32,40" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="64,8" offset="32">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="64,24" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="64,40" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="96,8" offset="32">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="96,24" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="96,40" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+	</contribution>
+	<contribution type="GenericStructure" id="{AEF3C1A8-53AB-4CC3-C477-645328980ABE}-top">
+		&straight;
+		<design>slope peak</design>
+		&colorSet;
+		<pictures>
+			<top origin="0,56" offset="32">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="0,72" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="0,88" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="32,56" offset="32">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="32,72" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="32,88" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="64,56" offset="32">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="64,72" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="64,88" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="96,56" offset="32">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="96,72" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="96,88" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+	</contribution>
+	<contribution type="GenericStructure" id="{AEF3C1A8-53AB-4CC3-C477-645328980ABE}-btm">
+		&straight;
+		<design>slope bottom</design>
+		&colorSet;
+		<pictures>
+			<top origin="0,104" offset="16">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="0,104" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="0,120" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="32,104" offset="16">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="32,104" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="32,120" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="64,104" offset="16">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="64,104" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="64,120" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="96,104" offset="16">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="96,104" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="96,120" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+	</contribution>
+	<!--special-->	
+	<contribution type="GenericStructure" id="{AEF3C1A8-53AB-4CC3-C477-645328980ABE}-vlp">
+		&virticalLoop;
+		<design>virtical loop</design>
+		&colorSet;
+		<pictures>
+			<top origin="0,248" offset="48">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="0,280" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="0,296" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top origin="48,248" offset="56">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="48,280" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="48,296" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+	</contribution>	
+	<contribution type="GenericStructure" id="{AEF3C1A8-53AB-4CC3-C477-645328980ABE}-csw">
+		&virticalLoop;
+		<design>corkscrew</design>
+		&colorSet;
+		<pictures opposite="true">
+			<top origin="112,264" offset="40">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="112,280" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="112,296" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="160,264" offset="32">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="160,280" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="160,296" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top origin="208,264" offset="40">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="208,280" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="208,296" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="256,264" offset="32">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="256,280" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="256,296" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+	</contribution>	
+	<!--curve-->
+	<contribution type="GenericStructure" id="{AEF3C1A8-53AB-4CC3-C477-645328980ABE}-scv">
+		&smallCurve;
+		<design>small curve</design>
+		&colorSet;
+		<pictures>
+			<top origin="320,280" offset="16">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="320,280" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="320,296" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="352,280" offset="16">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="352,280" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="352,296" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="320,312" offset="16">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="320,312" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="320,328" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="352,312" offset="16">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="352,312" offset="16" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="352,328" offset="0">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+	</contribution>
+	<contribution type="GenericStructure" id="{AEF3C1A8-53AB-4CC3-C477-645328980ABE}-lcv">
+		&largeCurve;
+		<design>big curve</design>
+		&colorSet;
+		<pictures>
+			<top origin="0,144" offset="24">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="0,144" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="0,160" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="64,144" offset="24">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="64,144" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="64,160" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="0,192" offset="24">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="0,192" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="0,208" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="64,192" offset="24">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="64,192" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="64,208" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+	</contribution>
+	<contribution type="GenericStructure" id="{AEF3C1A8-53AB-4CC3-C477-645328980ABE}-S">
+		&S_Curve;
+		<design>S-curve</design>
+		&colorSet;
+		<pictures>
+			<top origin="0,320" offset="24">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="0,320" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="0,336" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top origin="80,320" offset="32">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="80,320" offset="32" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="80,336" offset="16">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="160,320" offset="24">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="160,320" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="160,336" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top origin="240,320" offset="32">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="240,320" offset="32" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="240,336" offset="16">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+	</contribution>
+	<contribution type="GenericStructure" id="{AEF3C1A8-53AB-4CC3-C477-645328980ABE}-1tL">
+		&largeCurve;
+		<design>single circle [left]</design>
+		&colorSet;
+		<pictures>
+			<top origin="128,0" offset="40">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="128,16" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="128,32" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="192,0" offset="40">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="192,16" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="192,32" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="128,64" offset="40">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="128,80" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="128,96" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="192,64" offset="40">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="192,80" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="192,96" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+	</contribution>
+	<contribution type="GenericStructure" id="{AEF3C1A8-53AB-4CC3-C477-645328980ABE}-1tR">
+		&largeCurve;
+		<design>single circle [right]</design>
+		&colorSet;
+		<pictures>
+			<top origin="128,128" offset="40">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="128,144" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="128,160" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="192,128" offset="40">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="192,144" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="192,160" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="128,192" offset="40">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="128,208" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="128,224" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="192,192" offset="40">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="192,208" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="192,224" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+	</contribution>
+	<contribution type="GenericStructure" id="{AEF3C1A8-53AB-4CC3-C477-645328980ABE}-1.5tL">
+		&largeCurve;
+		<design>single+half circle [left]</design>
+		&colorSet;
+		<pictures>
+			<top origin="256,0" offset="40">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="256,16" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="256,32" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="320,0" offset="40">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="320,16" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="320,32" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="256,64" offset="40">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="256,80" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="256,96" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="320,64" offset="40">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="320,80" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="320,96" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+	</contribution>
+	<contribution type="GenericStructure" id="{AEF3C1A8-53AB-4CC3-C477-645328980ABE}-1.5tR">
+		&largeCurve;
+		<design>single+half circle [right]</design>
+		&colorSet;
+		<pictures>
+			<top origin="256,128" offset="40">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="256,144" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="256,160" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="320,128" offset="40">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="320,144" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="320,160" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="256,192" offset="40">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="256,208" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="256,224" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="320,192" offset="40">
+				<picture ref="{6602CDAE-6B55-455B-C477-BB7513C7CA84}" />
+			</top>
+			<middle origin="320,208" offset="24" overlay="true">
+				<picture ref="{C0D113F5-DF41-40D1-C477-CA4017131EFB}" />
+			</middle>
+			<bottom origin="320,224" offset="8">
+				<picture ref="{B6F797B8-3FD7-4A01-C477-64D1EDD01940}" />
+			</bottom>
+		</pictures>
+	</contribution>
+	<!--乗り場-->
+	<contribution type="GenericStructure" id="{36CA7352-20C2-43DD-C477-80CC7BDB509E}">
+		&station;
+		&colorSet2;
+		<sprite origin="0,0" offset="16">
+			<picture ref="{76B8D222-1400-49AC-C477-1416F9775950}"/>
+		</sprite>
+		<sprite origin="48,0" offset="24" opposite="true">
+			<picture ref="{76B8D222-1400-49AC-C477-1416F9775950}"/>
+		</sprite>
+	</contribution>
+</plug-in>

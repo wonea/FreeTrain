@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Monorail Set</title>
+	<author>Typhoon</author>
+	<homepage></homepage>
+
+	<contribution type="road" id="{TYPHOON-MONO-ROAD-7567171D3CEF}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Monorail tracks</name>
+		<description>Monorail tracks</description>
+		<picture src="road_mono.bmp" size="32,32" offset="16">
+		</picture>
+	</contribution>
+
+
+
+
+	<!-- 多摩1000系 先頭車-->
+	<contribution type="trainCar" id="{TYPHOON-TAMATOSHI-1000-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                <picture src="tama1000a.bmp" />
+                </sprite>
+		<capacity>100</capacity>
+	</contribution>
+	<!-- 多摩1000系 中間車-->
+	<contribution type="trainCar" id="{TYPHOON-TAMATOSHI-1000-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                <picture src="tama1000b.bmp" />
+                </sprite>
+		<capacity>107</capacity>
+	</contribution>
+	<!-- 多摩1000系 後尾車-->
+	<contribution type="trainCar" id="{TYPHOON-TAMATOSHI-1000-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{TYPHOON-TAMATOSHI-1000-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>101</capacity>
+	</contribution>
+
+	<contribution type="train" id="{TYPHOON-TAMATOSHI-1000-HENSEI-7567171D3CEF}">
+		<company>Tama Toshi Monorail</company>
+		<type>1000 Series</type>
+		<name></name>
+		<author>Typhoon</author>
+		<description></description>
+		<price>1</price>
+		<speed>slow</speed>
+           		<fare>300</fare>
+		<composition>
+			<head carRef="{TYPHOON-TAMATOSHI-1000-7567171D3CEF}-h"/>
+			<body carRef="{TYPHOON-TAMATOSHI-1000-7567171D3CEF}-m"/>
+			<tail carRef="{TYPHOON-TAMATOSHI-1000-7567171D3CEF}-t"/>
+		</composition>
+	</contribution></plug-in>

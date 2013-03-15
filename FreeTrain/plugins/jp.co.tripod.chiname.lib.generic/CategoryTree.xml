@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--IDは階層が一つ深くなるごとに二桁増える。最後の二桁以外は親のIDに一致させること。-->
+<tree>
+	<category id="01">
+		<icon src="icons.bmp" index="1"/>
+    <name>Housing</name> <!--!住宅-->
+		<category id="0101">
+			<icon src="icons_sp.bmp" index="0"/>
+			<name>Single Houses</name> <!--!一戸建て-->			
+		</category>
+		<category id="0102">
+			<name>Rental Housing</name>					
+			<category id="010201">
+				<name>Rental Apartments</name> <!--!賃貸アパート-->
+			</category>
+		</category>
+		<category id="0103">
+			<name>Dormitories</name> <!--!寮-->
+			<category id="010301">
+				<name>Student Dormitories</name> <!--!学生寮-->
+			</category>
+			<category id="010302">
+				<name>Employee Dormitories</name> <!--!社員寮-->			
+			</category>
+		</category>
+		<category id="0104">
+			<name>Condominium Apartments</name> <!--!分譲集合住宅-->
+			<icon src="icons_sp.bmp" index="1"/>
+			<category id="010401">
+				<name>Condominiums</name> <!--!分譲マンション-->
+			</category>
+		</category>
+		
+	</category>
+	<category id="10">
+		<icon src="icons.bmp" index="2"/>
+		<name>Stores</name> <!--!店舗-->
+		<category id="1001">
+			<name>Private Convenience Stores</name> <!--!個人日用品店-->
+		</category>
+		<category id="1002">
+			<name>Private Specialty Stores</name> <!--!個人専門店-->		
+		</category>
+		<category id="1003">
+      <name>Other Retailing</name> <!--!その他小売店-->
+			<category id="100301">
+				<name>Consumer Electronics Stores</name> <!--!家電店-->		
+			</category>
+			<category id="100302">
+				<name>Car Dealers</name> <!--!自動車販売店-->
+			</category>
+			<category id="100303">
+				<name>Gas Stations</name>
+			</category>
+		</category>
+		<category id="1010">
+			<name>Regional Convenience Chain Stores</name> <!--!地域チェーン日用品店-->			
+			<category id="101001">
+				<name>Discount Shops</name> <!--!ディスカウントショップ-->
+			</category>
+			<category id="101002">
+				<name>Convenience Stores</name> <!--!コンビニ-->
+			</category>
+		</category>
+		<category id="1012">
+			<name>Specialty Chain Stores</name> <!--!チェーン専門店-->
+		</category>
+		<category id="1020">
+			<name>Supermarkets</name> <!--!スーパー-->	
+		</category>
+		<category id="1022">
+      <name>Department Stores</name> <!--!デパート-->
+    </category>
+		<category id="1030">
+			<name>Urban Outlets</name> <!--!都市型量販店-->
+		</category>
+		<category id="1031">
+			<name>Suburban Outlets</name> <!--!郊外型量販店-->	
+		</category>
+		<category id="1050">
+			<name>Shopping Malls</name> <!--!ショッピングモール-->			
+		</category>
+		<category id="1060">
+      <name>Tourist Retailing</name> <!--!旅客向け小売店-->
+      <category id="106001">
+				<name>Souvenir Shops</name> <!--!土産物屋-->
+			</category>
+		</category>
+		<category id="1070">
+			<icon src="icons_sp.bmp" index="20"/>
+			<name>Exhibition Halls</name> <!--!展示場-->	
+		</category>
+		<category id="1080">
+			<icon src="icons_sp.bmp" index="20"/>
+			<name>Service Providers</name> <!--!サービス窓口-->
+		</category>
+		<category id="1081">
+			<icon src="icons_sp.bmp" index="20"/>
+			<name>Regional Service Providers</name> <!--!地域サービス店-->
+		</category>
+	</category>
+	<category id="11">
+		<icon src="icons.bmp" index="3"/>
+		<name>Offices</name> <!--!オフィス-->
+		<category id="1101">
+			<name>Rental Offices</name> <!--!貸事務所-->
+		</category>
+		<category id="1102">
+			<name>Corporate Offices</name> <!--!企業事務所-->
+		</category>
+		<category id="1103">
+			<name>Private Enterprise Offices</name> <!--!個人事務所-->
+		</category>
+		<category id="1110">
+			<name>Banks</name> <!--!銀行-->
+		</category>
+		<category id="1120">
+			<name>Business Services</name> <!--!商業向けサービス-->
+		</category>
+		<category id="1170">
+			<name>Municipal Offices</name> <!--!官公庁-->
+		</category>
+		<category id="1190">
+			<icon src="icons_sp.bmp" index="2"/>
+			<name>Broadcasting &amp; Media</name> <!--!放送メディア-->
+		</category>
+	</category>
+	<category id="20">
+		<icon src="icons.bmp" index="4"/>
+		<name>Research</name> <!--!研究施設-->
+    <category id="2001">
+			<name>Corporate Research Facilities</name> <!--!企業一般研究所-->
+		</category>
+		<category id="2009">
+			<name>Special Corporate Research Facilities</name> <!--!企業特殊研究所-->
+		</category>
+		<category id="2011">
+			<name>Public Research Facilities</name> <!--!公立一般研究所-->
+			<category id="201101">
+				<name>Industrial Examination Halls</name> <!--! 工業試験場-->
+			</category>
+		</category>
+		<category id="2014">
+			<name>Agricultural Examination Halls</name> <!--! 農林水産試験場-->
+		</category>
+		<category id="2019">
+			<name>Special Public Research Facilities</name> <!--!公立特殊研究所-->		
+		</category>
+		<category id="2030">
+			<name>Quantum Physics Research Facilities</name> <!--! 量子研究所-->	
+		</category>
+		<category id="2090">
+			<name>Observatories</name> <!--! 観測所-->
+			<category id="209001">
+				<name>Weather Observatories</name> <!--! 気象観測所-->
+			</category>
+			<category id="209002">
+				<name>Astronomical Observatories</name> <!--!天体観測所-->
+			</category>
+		</category>
+	</category>
+	<category id="21">
+		<icon src="icons.bmp" index="5"/>
+		<name>Factories</name> <!--! 工場-->
+		<category id="2101">
+			<name>Factory Components</name> <!--! 工場用パーツ-->
+		</category>
+		<category id="2102">
+			<name>Food Factories</name> <!--! 食品工場-->
+		</category>
+		<category id="2106">
+			<name>General Manufacturing</name> <!--!一般製品工場-->
+			<category id="210601">
+				<name>Pharmaceutical Manufacturing</name> <!--! 製薬工場-->
+			</category>
+		</category>
+		<category id="2112">
+			<name>Appliance Machine Shops</name> <!--! 民生機械工場-->
+			<category id="211201">
+				<name>Consumer Electronics Factories</name> <!--! 家電工場-->
+			</category>
+		</category>
+		<category id="2120">
+			<name>Car Factories</name> <!--! 自動車工場-->
+		</category>
+		<category id="2129">
+			<name>Shipyards</name> <!--!造船所-->
+		</category>
+		<category id="2130">
+			<name>Industrial Machinery</name> <!--!工業機械工場-->
+			<category id="213001">
+				<name>Small-Scale Factories</name> <!--! 町工場-->
+			</category>
+		</category>
+		<category id="2136">
+			<name>Precision Instrument Factories</name> <!--! 精機工場-->
+		</category>
+		<category id="2140">
+			<name>Raw Material Processing</name> <!--! 資材工場-->
+			<category id="214001">
+				<name>Iron Works</name> <!--! 製鉄所-->
+			</category>
+			<category id="214002">
+				<name>Sawmills</name> <!--! 製材所-->
+			</category>
+		</category>
+		<category id="2145">
+			<name>Light Industry Factories</name> <!--! 軽工業工場-->
+		</category>
+		<category id="2150">
+			<name>Chemical Plants</name> <!--! 化学工場-->
+			<category id="2151">
+				<name>Oil Refineries</name> <!--! 製油所-->
+			</category>
+		</category>
+		<category id="2170">
+			<name>High-Tech Industries</name> <!--!ハイテク工場-->
+			<category id="217002">
+				<name>Semiconductor Plants</name> <!--! 半導体工場-->
+			</category>
+			<category id="217004">
+				<name>Nanotech Plants</name> <!--!ナノテク工場-->
+			</category>
+			<category id="217006">
+				<name>Biotech Plants</name> <!--!バイオ工場-->
+			</category>
+		</category>
+		<category id="2179">
+			<name>Other Industrial Manufacturing</name> <!--!その他工業製品工場-->
+		</category>
+		<category id="2180">
+			<icon src="icons_sp.bmp" index="3"/>
+			<name>Fuel Storage</name> <!--! 燃料貯蔵所-->
+			<category id="218001">
+				<name>Oil Tanks</name> <!--!石油タンク-->
+			</category>
+			<category id="218002">
+				<name>Gas Tanks</name> <!--! ガスタンク-->
+			</category>
+		</category>
+		<category id="2190">
+			<icon src="icons_sp.bmp" index="4"/>
+			<name>General Power Plants</name> <!--!一般発電所-->
+			<category id="219001">
+				<name>Thermal Power Plants</name> <!--!火力発電所-->	
+			</category>
+			<category id="219002">
+				<name>Solar Power Plants</name> <!--! 太陽光発電所-->
+			</category>
+			<category id="219003">
+				<name>Wind Farms</name> <!--!風力発電所-->
+			</category>
+		</category>
+		<category id="2192">
+			<icon src="icons_sp.bmp" index="4"/>
+			<name>Nuclear Power Plants</name> <!--! 原子力発電所-->
+		</category>
+		<category id="2194">
+			<icon src="icons_sp.bmp" index="4"/>
+			<name>Special Power Plants</name> <!--! 特殊発電所-->
+			<category id="219401">
+				<name>Hydroelectric Power Stations</name> <!--! 水力発電所-->
+			</category>
+			<category id="219402">
+				<name>Geothermal Power Plants</name> <!--!地熱発電所-->
+			</category>
+			<category id="219403">
+				<name>Tidal Power Plants</name> <!--! 潮力発電所-->	
+			</category>
+		</category>
+		<category id="2199">
+			<icon src="icons_sp.bmp" index="4"/>
+			<name>Other Power Facilities</name> <!--!その他電力通信施設-->
+			<category id="219902">
+				<name>Substations</name> <!--!変電所-->
+			</category>
+			<category id="219904">
+				<name>Pylons</name> <!--! 送電線鉄塔-->
+			</category>
+		</category>
+	</category>
+	<category id="27">
+		<icon src="icons_sp.bmp" index="5"/>
+		<name>Air Traffic</name>					
+		<category id="2701">
+			<icon src="icons_sp.bmp" index="5"/>
+			<name>Airports</name> <!--! 空港-->
+			<category id="270110">
+				<icon src="icons_sp.bmp" index="5"/>
+				<name>Cargo Terminals</name> <!--!貨物ターミナル-->
+			</category>
+			<category id="270120">
+				<icon src="icons_sp.bmp" index="5"/>
+				<name>Passanger Terminals</name> <!--!旅客ターミナル-->
+			</category>
+			<category id="270130">
+				<icon src="icons_sp.bmp" index="5"/>
+				<name>Air Traffic Control Units</name> <!--!管制指令施設-->
+			</category>
+			<category id="270170">
+				<icon src="icons_sp.bmp" index="5"/>
+				<name>Hangars</name> <!--! 格納庫-->
+			</category>
+			<category id="270180">
+				<icon src="icons_sp.bmp" index="5"/>
+				<name>Runways</name> <!--! 滑走路-->
+			</category>
+			<category id="270190">
+				<icon src="icons_sp.bmp" index="5"/>
+				<name>Other Air Traffic Facilities</name> <!--!その他空港設備-->
+			</category>
+		</category>
+	</category>
+	<category id="28">
+		<icon src="icons_sp.bmp" index="6"/>
+		<name>Shipping</name> <!--! 船舶関連施設-->
+		<category id="2801">
+			<icon src="icons_sp.bmp" index="6"/>
+			<name>Harbors</name> <!--! 港湾-->
+			<category id="280110">
+				<icon src="icons_sp.bmp" index="6"/>
+				<name>Cargo Piers</name> <!--! 貨物埠頭-->
+			</category>
+			<category id="280120">
+				<icon src="icons_sp.bmp" index="6"/>
+				<name>Passenger Piers</name> <!--! 旅客埠頭-->
+			</category>
+			<category id="280190">
+				<icon src="icons_sp.bmp" index="6"/>
+				<name>Other Shipping Facilities</name> <!--! その他港湾設備-->		
+			</category>
+		</category>
+		<category id="2802">
+			<icon src="icons_sp.bmp" index="6"/>
+			<name>Docks</name> <!--! ドック-->
+		</category>
+		<category id="2890">
+			<icon src="icons_sp.bmp" index="6"/>
+			<name>Lighthouses</name> <!--! 灯台-->
+		</category>
+	</category>
+	
+	<category id="29">
+		<icon src="icons.bmp" index="6"/>
+		<name>Distribution</name> <!--! 物流-->
+		<category id="2901">
+			<name>Warehouses</name> <!--! 倉庫-->
+		</category>
+		<category id="2904">
+			<name>Distribution Centers</name> <!--! 集配所-->
+		</category>
+	</category>
+	<category id="30">
+		<icon src="icons.bmp" index="7"/>
+		<name>Agriculture</name> <!--! 食料産地-->
+		<category id="3001">
+			<icon src="icons_sp.bmp" index="7"/>
+			<name>Farmland</name> <!--! 食料農場-->
+			<category id="300101">
+				<name>Paddy Fields</name> <!--! 水田-->
+			</category>
+			<category id="300102">
+				<name>Market Gardens</name> <!--! 野菜畑-->
+			</category>
+			<category id="300104">
+				<name>Orchards</name> <!--! 果樹園-->
+			</category>
+		</category>
+		<category id="3002">
+			<name>Livestock Farms</name> <!--! 畜産場-->
+		</category>
+		<category id="3010">
+			<name>Fishing Ports</name> <!--! 漁港-->
+		</category>
+		<category id="3012">
+			<name>Nurseries</name> <!--! 養殖場-->
+		</category>
+	</category>
+	<category id="31">
+		<icon src="icons.bmp" index="8"/>
+		<name>Raw Material</name> <!--! 原材料産地-->
+		<category id="3101">
+			<icon src="icons_sp.bmp" index="13"/>
+			<name>Natural Resources</name> <!--! 天然素材産地-->
+			<category id="310101">
+				<name>Logging</name> <!--!伐採場-->
+			</category>
+		</category>
+		<category id="3102">
+			<icon src="icons_sp.bmp" index="8"/>
+			<name>Farming</name> <!--! 農園-->
+		</category>
+		<category id="3103">
+			<icon src="icons_sp.bmp" index="8"/>
+			<name>Ranching</name> <!--! 一般牧場-->
+		</category>
+		<category id="3150">
+			<name>Mining</name> <!--! 一般鉱山-->
+			<category id="315001">
+				<name>Coal Mines</name> <!--!炭坑-->
+			</category>
+			<category id="315003">
+				<name>Quarries</name> <!--! 採石場-->
+			</category>
+			<category id="315080">
+				<name>Precious Metal Mines</name> <!--!貴金属鉱山-->
+			</category>
+		</category>
+		<category id="3170">
+			<name>Oil Fields</name> <!--! 油田-->
+		</category>
+	</category>
+	<category id="40">
+		<icon src="icons.bmp" index="9"/>
+		<name>Food &amp; Drink</name> <!--! 飲食-->
+		<category id="4001">
+			<name>Restaurants</name> <!--! 一般飲食店-->
+		</category>
+		<category id="4011">
+			<name>Chain Restaurants</name> <!--! チェーン飲食店-->
+			<category id="401101">
+				<name>Fast Food</name> <!--! ファーストフード-->
+			</category>
+			<category id="401102">
+				<name>Family Restaurants</name> <!--! ファミレス-->
+			</category>
+		</category>
+		<category id="4070">
+			<name>High-Class Restaurants</name> <!--! 高級飲食店-->
+		</category>
+		<category id="4090">
+			<name>Famous Restaurants</name> <!--! 有名飲食店-->
+		</category>
+	</category>
+	<category id="41">
+		<icon src="icons.bmp" index="10"/>
+		<name>Lodging</name> <!--! 宿泊-->
+		<category id="4101">
+			<name>General Lodging</name> <!--! 一般宿泊施設-->
+			<category id="410101">
+				<name>B&amp;B</name> <!--! 民宿-->
+			</category>
+			<category id="410120">
+				<name>Inns</name> <!--! 旅館-->
+			</category>
+			<category id="410140">
+				<name>Business Hotels</name> <!--! ビジネスホテル-->
+			</category>
+			<category id="410150">
+				<name>Tourist Hotels</name> <!--! 観光ホテル-->
+			</category>
+		</category>
+		<category id="4110">
+			<name>Famous Hotels</name> <!--! 有名宿泊施設-->
+			<category id="411001">
+				<name>Luxury Hotels</name> <!--!高級ホテル-->
+			</category>
+		</category>
+		<category id="4120">
+			<name>Special Lodging</name> <!--! 特殊宿泊施設-->
+			<category id="412010">
+				<name>Hot Spring Resorts</name> <!--! 温泉旅館-->
+			</category>
+			<category id="412020">
+				<name>Camp Sites</name> <!--!キャンプ場-->
+			</category>
+		</category>
+		<category id="412090">
+			<name>Cottages</name> <!--! 別荘-->
+		</category>
+	</category>
+	<category id="50">
+		<icon src="icons.bmp" index="11"/>
+		<name>Recreation</name> <!--! 娯楽-->
+		<category id="5001">
+			<icon src="icons_sp.bmp" index="10"/>
+			<name>Amusement Centers</name> <!--! 遊技場-->
+			<category id="500101">
+				<name>Game Arcades</name> <!--!ゲームセンター-->
+			</category>
+		</category>
+		<category id="5008">
+			<icon src="icons_sp.bmp" index="10"/>
+			<name>Private Gambling</name> <!--! 民営賭博場-->
+			<category id="500810">
+				<name>Pachinko Parlors</name> <!--!パチンコ店-->
+			</category>
+			<category id="500820">
+				<name>Shogi Parlors</name> <!--! 雀荘-->
+			</category>
+		</category>
+		<category id="5009">
+			<icon src="icons_sp.bmp" index="10"/>
+			<name>Public Gambling</name> <!--! 公営賭博場-->
+			<category id="500901">
+				<name>Horse Racing</name> <!--!競馬場-->
+			</category>
+		</category>
+		<category id="5010">
+			<icon src="icons_sp.bmp" index="9"/>
+			<name>Sports Arenas</name> <!--!スポーツ観戦施設-->
+			<category id="501001">
+				<name>Baseball Stadiums</name> <!--! プロ野球場-->
+			</category>
+			<category id="501002">
+				<name>Soccer Stadiums</name> <!--!プロサッカー場-->
+			</category>
+		</category>
+		<category id="5011">
+			<icon src="icons_sp.bmp" index="9"/>
+			<name>Sports Grounds</name> <!--!スポーツ競技施設-->
+			<category id="501101">
+				<name>Athletic Fields</name> <!--!陸上競技場-->
+			</category>
+			<category id="501110">
+				<name>Tennis Courts</name> <!--! テニスコート-->
+			</category>
+			<category id="501120">
+				<name>Ball Courts</name> <!--! 一般球技場-->
+			</category>
+		</category>
+		<category id="5012">
+			<icon src="icons_sp.bmp" index="9"/>
+			<name>Other Recreation Facilities</name> <!--!一般スポーツ遊技施設-->
+			<category id="501280">
+				<name>Outdoor Pools</name> <!--!屋外プール-->
+			</category>
+		</category>
+		<category id="5018">
+			<icon src="icons_sp.bmp" index="9"/>
+			<name>Specific Recreation Facilities</name> <!--!特定スポーツ遊技施設-->
+			<category id="501810">
+				<name>Golf Courses</name> <!--!ゴルフ場-->
+			</category>
+			<category id="501820">
+				<name>Skiing Grounds</name> <!--!スキー場-->
+			</category>
+			<category id="501880">
+				<icon src="icons_sp.bmp" index="21"/>
+				<name>Marinas</name> <!--! マリーナ-->
+			</category>
+			<category id="501890">
+				<icon src="icons_sp.bmp" index="21"/>
+				<name>Outdoor Swimming</name> <!--!野外遊泳場-->
+			</category>
+		</category>
+		<category id="5020">
+			<icon src="icons_sp.bmp" index="11"/>
+			<name>Spectating</name> <!--! 観覧施設-->
+			<category id="502010">
+				<name>Theaters</name> <!--! 劇場-->
+			</category>
+			<category id="502020">
+				<name>Cinemas</name> <!--! 映画館-->
+			</category>
+		</category>
+		<category id="5021">
+			<icon src="icons_sp.bmp" index="12"/>
+			<name>Culture</name> <!--! 教養施設-->
+			<category id="502101">
+				<name>Art Museums</name> <!--! 美術館-->
+			</category>
+			<category id="502111">
+				<name>Museums</name> <!--! 博物館-->
+			</category>
+			<category id="502121">
+				<name>Historical Museums</name> <!--! 歴史資料館-->
+			</category>
+			<category id="502131">
+				<name>Libraries</name> <!--! 図書館-->
+			</category>
+			<category id="502141">
+				<name>Zoos &amp; Botanical Gardens</name> <!--! 動植物園-->
+			</category>
+			<category id="502150">
+				<name>Aquariums</name> <!--! 水族館-->
+			</category>
+		</category>
+		<category id="5030">
+			<name>Playgrounds</name> <!--! 児童公園-->
+		</category>
+		<category id="5031">
+			<icon src="icons_sp.bmp" index="15"/>
+			<name>Amusement Parks</name> <!--! 遊園地-->
+		</category>
+		<category id="5032">
+			<name>Resorts</name> <!--!複合レジャー施設-->
+			<category id="503201">
+				<name>Spa Resorts</name> <!--!スパリゾート-->
+			</category>
+		</category>
+		<category id="5035">
+			<name>Event Halls</name> <!--! イベント会場-->
+		</category>
+		<category id="5040">
+			<icon src="icons_sp.bmp" index="13"/>
+			<name>Parks</name> <!--! 緑地-->
+		</category>
+		<category id="5042">
+			<icon src="icons_sp.bmp" index="13"/>
+			<name>Nature Parks</name> <!--! 自然公園-->
+		</category>
+		<category id="5045">
+			<icon src="icons_sp.bmp" index="13"/>
+			<name>Harvest Sites</name> <!--! 収穫場-->
+		</category>
+		<category id="5090">
+			<icon src="icons_sp.bmp" index="14"/>
+			<name>Bars</name> <!--! 酒場-->
+		</category>
+		<category id="5091">
+			<icon src="icons_sp.bmp" index="14"/>
+			<name>Night Clubs</name> <!--! ナイトクラブ-->
+		</category>
+		<category id="5099">
+			<icon src="icons_sp.bmp" index="14"/>
+			<name>Red-Light District</name> <!--! 性風俗-->
+		</category>
+	</category>
+	<category id="59">
+		<icon src="icons.bmp" index="12"/>
+		<name>Tourism</name> <!--! 観光-->
+		<category id="5901">
+			<name>Historic Sites</name> <!--! 史跡-->
+			<category id="590101">
+				<name>Famous Temples</name> <!--! 有名寺社-->
+			</category>
+			<category id="590111">
+				<name>Castles</name> <!--! 城郭-->
+			</category>
+		</category>
+		<category id="5910">
+			<icon src="icons_sp.bmp" index="13"/>
+			<name>Beauty Spots</name> <!--! 景勝地-->
+			<category id="591001">
+				<name>National Parks</name> <!--! 国定公園-->
+			</category>
+		</category>
+		<category id="5920">
+			<name>Natural Hot Springs</name> <!--! 天然温泉-->
+		</category>
+		<category id="5980">
+			<icon src="icons_sp.bmp" index="16"/>
+			<name>Landmarks</name> <!--! ランドマーク-->
+		</category>
+	</category>
+	<category id="70">
+		<icon src="icons.bmp" index="13"/>
+		<name>Public Facilities</name> <!--! 公共施設-->
+		<category id="7001">
+			<name>Childcare</name> <!--! 養育施設-->
+			<category id="700101">
+				<name>Day-Care Centers</name> <!--! 保育園-->
+			</category>
+			<category id="700104">
+				<name>Kindergartens</name> <!--! 幼稚園-->
+			</category>
+		</category>
+		<category id="7002">
+			<icon src="icons_sp.bmp" index="17"/>
+			<name>Public Education</name> <!--! 公立教育施設-->
+			<category id="700201">
+				<name>Public Elementary &amp; Middle Schools</name> <!--! 公立小中学校-->
+			</category>
+			<category id="700210">
+				<name>Public High Schools</name> <!--! 公立高校-->
+			</category>
+			<category id="700240">
+				<name>Public Universities</name> <!--! 公立大学-->
+			</category>
+			<category id="700270">
+				<name>Community Centers</name> <!--! 公立文化センター-->
+			</category>
+		</category>
+		<category id="7004">
+			<icon src="icons_sp.bmp" index="17"/>
+			<name>Private Education</name> <!--! 私立教育施設-->
+			<category id="700401">
+				<name>Private Elementary &amp; Middle Schools</name> <!--! 私立小中学校-->
+			</category>
+			<category id="700410">
+				<name>Private High Schools</name> <!--! 私立高校-->
+			</category>
+			<category id="700440">
+				<name>Private Universities</name> <!--! 私立大学-->
+			</category>
+			<category id="700470">
+				<name>Private Technical Colleges</name> <!--! 私立専門学校-->
+			</category>
+			<category id="700490">
+				<name>Private Academies</name> <!--! 学習塾-->
+			</category>
+		</category>
+		<category id="7020">
+			<icon src="icons_sp.bmp" index="18"/>
+			<name>Hospitals</name> <!--! 病院-->
+		</category>
+		<category id="7030">
+			<name>Assembly Halls</name> <!--! 集会所-->
+		</category>
+		<category id="7040">
+			<name>Other Public Welfare Facilities</name> <!--! その他福祉施設-->
+		</category>
+		<category id="7045">
+			<name>Wedding Halls</name> <!--! 結婚式場-->
+		</category>
+		<category id="7050">
+			<name>Religious Institutions</name> <!--! 宗教施設-->
+		</category>
+		<category id="7060">
+			<name>Public Offices</name> <!--! 役所-->
+		</category>
+		<category id="7065">
+			<name>Post Offices</name> <!--! 郵便局-->
+		</category>
+		<category id="7066">
+			<name>Police Stations</name> <!--! 警察署-->
+		</category>
+		<category id="7068">
+			<name>Fire Stations</name> <!--! 消防署-->
+		</category>
+		<category id="7080">
+			<name>Waterworks</name> <!--! 上水施設-->
+			<category id="708001">
+				<name>Filtration Plants</name> <!--! 浄水場-->
+			</category>
+			<category id="708002">
+				<name>Water Towers</name> <!--! 給水塔-->
+			</category>
+		</category>
+	</category>
+	<category id="80">
+		<icon src="icons.bmp" index="14"/>
+		<name>Rail Accessories</name> <!--! 鉄道付属物-->
+		<category id="8001">
+			<name>General Rail Accessories</name> <!--! 一般鉄道付属物-->
+		</category>
+	</category>
+	<category id="81">
+		<icon src="icons.bmp" index="14"/>
+		<name>Road Accessories</name> <!--! 道路関連物-->
+		<category id="8101">
+			<icon src="icons_sp.bmp" index="19"/>
+			<name>Parking Areas</name> <!--! 駐車場-->
+		</category>
+		<category id="8102">
+			<icon src="icons_sp.bmp" index="19"/>
+			<name>Rest Areas</name> <!--! パーキングエリア-->
+		</category>
+		<category id="8110">
+			<name>Tollgates</name> <!--!料金所-->
+		</category>
+	</category>
+	<category id="82">
+		<icon src="icons.bmp" index="15"/>
+		<name>Public Works</name> <!--土木-->
+		<category id="8210">
+			<name>Flood Control Facilities</name> <!--! 治水防波設備-->
+		</category>
+		<category id="8230">
+			<name>Afforestation Facility</name> <!--! 治山設備-->
+		</category>
+	</category>
+	<category id="85">
+		<icon src="icons_sp.bmp" index="13"/>
+		<name>Natural Features</name> <!--! 自然物-->
+		<category id="8510">
+			<name>Land</name> <!--! 地表-->
+			<category id="851010">
+				<name>Forest</name> <!--! 森林-->
+			</category>
+			<category id="851020">
+				<name>Grassland</name> <!--! 草原-->
+			</category>
+			<category id="851030">
+				<name>Barren Land</name> <!--! 不毛地-->
+			</category>
+		</category>
+		<category id="8520">
+			<icon src="icons_sp.bmp" index="21"/>
+			<name>Shore</name> <!--! 水辺-->
+			<category id="852010">
+				<name>Seashore</name> <!--! 海浜-->
+			</category>
+			<category id="852020">
+				<name>Rivers</name> <!--! 河川-->
+			</category>
+		</category>
+		<category id="8550">
+			<name>Natural Structures</name> <!--! 自然構造物-->
+		</category>
+	</category>
+	<category id="99">
+		<icon src="icons.bmp" index="16"/>
+		<name>Special</name> <!--! 特殊-->
+		<category id="9910">
+			<name>Military Facilities</name> <!--! 軍事施設-->
+		</category>
+		<category id="9920">
+			<name>Nuclear Facilities</name> <!--! 核施設-->
+		</category>
+		<category id="9930">
+			<name>Sewage Disposal Plants</name> <!--! 下水処理場-->
+		</category>
+		<category id="9932">
+			<name>Waste Treatment</name> <!--! 処理処分場-->
+			<category id="993201">
+				<name>Waste Treatment Plants</name> <!--! 処理場-->
+			</category>
+			<category id="993202">
+				<name>Landfills</name> <!--!埋め立て地-->
+			</category>
+		</category>
+		<category id="9934">
+			<name>Industrial Waste Treatment Plants</name> <!--! 産業廃棄物処理場-->
+		</category>
+		<category id="9940">
+			<name>Cemetaries</name> <!--!墓地斎場-->
+		</category>
+		<category id="9950">
+			<name>Prisons</name> <!--! 刑務所-->
+		</category>
+		<category id="9990">
+			<name>Liabilities</name> <!--! 忌避物件-->
+			<category id="999010">
+				<name>Cultist Religious Institutions</name> <!--! カルト宗教施設-->
+			</category>
+			<category id="999020">
+				<name>Mobster Headquarters</name> <!--! 暴力団事務所-->
+			</category>
+			<category id="999040">
+				<name>Ruins</name> <!--! 廃墟-->
+			</category>
+			<category id="999050">
+				<name>Pollution</name> <!--! 汚染地区-->
+			</category>
+		</category>
+	</category>
+</tree>

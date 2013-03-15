@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Utility Poles</title>
+	<!--!<title>架線柱</title>-->
+	<author>Ayase &amp; Kohsuke Kawaguchi</author>
+	<!--!<author>綾瀬さん＆川口耕介</author>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="contribution" id="{6CCE619B-6D03-4784-B3EF-C53577E2C958}">
+		<name>electricPole</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.world.rail.pole.ElectricPoleContribution"
+			codebase="bin/Debug/FreeTrain.ElectricPole.dll" />
+	</contribution>
+	
+	<!-- temporary -->
+	<contribution type="menu" id="{AA51666F-1BD1-4247-A491-F82332BFAC44}">
+		<class name="freetrain.world.rail.pole.MenuContributionImpl"
+			codebase="bin/Debug/FreeTrain.ElectricPole.dll" />
+	</contribution>
+	
+	
+	
+	<contribution type="electricPole" id="{DDF7F835-8100-45fd-8AE7-EC498796D387}">
+		<name>Double pole (1)</name>
+		<!--!<name>両柱(1)</name>-->
+		<sprite>
+			<picture src="kasen1.bmp"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="electricPole" id="{DD7D4548-5E0E-48e4-AB6E-64A443C240F7}">
+		<name>Double pole (2)</name>
+		<!--!<name>両柱(2)</name>-->
+		<sprite>
+			<picture src="kasen2.bmp"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="electricPole" id="{86E56A60-19DF-4ba7-BFE8-ABFBDF5DFA0A}">
+		<name>Single pole (1)</name>
+		<!--!<name>片柱(1)</name>-->
+		<sprite>
+			<picture src="kasen3.bmp"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="electricPole" id="{FD1635C1-05BF-41af-9185-4891B983E2A4}">
+		<name>Single pole (2)</name>
+		<!--!<name>片柱(2)</name>-->
+		<sprite>
+			<picture src="kasen4.bmp"/>
+		</sprite>
+	</contribution>
+</plug-in>

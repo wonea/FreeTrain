@@ -1,0 +1,1062 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+
+<!ENTITY wall-khaki '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="202,189,158"/>
+</spriteType>
+'>
+<!ENTITY wall-steelblue '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="181,203,226"/>
+</spriteType>
+'>
+<!ENTITY wall-brown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="157,90,70"/>
+</spriteType>
+'>
+<!ENTITY wall-salmonpink '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="255,172,122"/>
+</spriteType>
+'>
+<!ENTITY wall-yelloworange '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="255,171,62"/>
+</spriteType>
+'> 
+
+<!ENTITY fb-skyblue '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="188,234,232"/>
+</spriteType>
+'>
+<!ENTITY fb-white '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="237,235,236"/>
+</spriteType>
+'> 
+
+<!ENTITY fb-concrete '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="195,187,171"/>
+</spriteType>
+'>
+<!ENTITY fb-vermilion '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="221,86,56"/>
+</spriteType>
+'> 
+
+<!ENTITY wall-greyyellow '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="198,195,164"/>
+</spriteType>
+'>
+<!ENTITY wall-warmbrown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="174,143,122"/>
+</spriteType>
+'>
+<!ENTITY wall-greywarmbrown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="213,205,184"/>
+</spriteType>
+'>
+<!ENTITY wall-darkbrown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="143,134,125"/>
+</spriteType>
+'>
+<!ENTITY wall-lightyelloworange '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="246,228,164"/>
+</spriteType>
+'> 
+
+<!ENTITY ta-white '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="244,234,218"/>
+</spriteType>
+'>
+<!ENTITY ta-silvergreen '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="198,198,184"/>
+</spriteType>
+'> 
+
+<!ENTITY wall-brownbeige '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="217,197,173"/>
+</spriteType>
+'>
+<!ENTITY wall-redbrick '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="94,65,41"/>
+</spriteType>
+'>
+<!ENTITY wall-ivory '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="212,215,194"/>
+</spriteType>
+'>
+<!ENTITY wall-urbanstone '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="196,180,167"/>
+</spriteType>
+'>
+<!ENTITY wall-tiled '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="203,170,124"/>
+</spriteType>
+'>
+<!ENTITY wall-pastelgray '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="191,206,200"/>
+</spriteType>
+'> 
+
+<!ENTITY wall-wood001 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="191,138,85"/>
+</spriteType>
+'>
+<!ENTITY wall-wood002 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="191,175,85"/>
+</spriteType>
+'>
+<!ENTITY wall-wood003 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="204,150,97"/>
+</spriteType>
+'>
+<!ENTITY wall-wood004 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="199,178,153"/>
+</spriteType>
+'> <!ENTITY wall-wood005 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="138,110,61"/>
+</spriteType>
+'>
+<!ENTITY wall-wood006 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="114,99,88"/>
+</spriteType>
+'>
+<!ENTITY wall-wood007 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="160,151,104"/>
+</spriteType>
+'>
+<!ENTITY wall-wood008 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="93,79,65"/>
+</spriteType>
+'> 
+
+<!ENTITY tent-yellow '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="230,220,30"/>
+</spriteType>
+'>
+<!ENTITY tent-orange '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="220,109,57"/>
+</spriteType>
+'>
+<!ENTITY tent-green '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="30,160,94"/>
+</spriteType>
+'>
+<!ENTITY tent-skyblue '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="30,180,221"/>
+</spriteType>
+'>
+
+<!ENTITY component_campsite_001 '
+	<group>Lodging</group>
+	<name>Camp site(1x1)</name>
+	<structure>
+		<category byname="Special Lodging"/>
+	</structure>
+	<size>1,1</size>
+	<height>1</height>
+	<computerCannotBuild />
+'>
+<!ENTITY population_campsite_001 '
+	<price>100</price>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>4</base>
+		</population>
+	</population>
+'>
+<!ENTITY population_campsite_002 '
+	<price>200</price>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>8</base>
+		</population>
+	</population>
+'>
+<!ENTITY population_campsite_003 '
+	<price>600</price>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>12</base>
+		</population>
+	</population>
+'>
+<!ENTITY population_campsite_004 '
+	<price>1000</price>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>30</base>
+		</population>
+	</population>
+'>
+<!ENTITY population_campsite_005 '
+	<price>1000</price>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>40</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+'>
+<!ENTITY population_campsite_006 '
+	<price>400</price>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>20</base>
+		</population>
+	</population>
+'>
+<!ENTITY population_campsite_007 '
+	<price>300</price>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>40</base>
+		</population>
+	</population>
+'>
+<!ENTITY population_campsite_008 '
+	<price>100</price>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>20</base>
+		</population>
+	</population>
+'>
+<!ENTITY component_ryokan_001 '
+	<group>Lodging</group>
+	<name>Inn(1x1)</name>
+	<structure>
+		<category byname="Inns"/>
+	</structure>
+	<size>1,1</size>
+	<height>1</height>
+	<price>2000</price>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>50</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>10</base>
+		</population>
+	</population>
+'>
+<!ENTITY component_ryokan_002 '
+	<group>Lodging</group>
+	<name>Inn(2x2)</name>
+	<structure>
+		<category byname="Inns"/>
+	</structure>
+	<size>2,2</size>
+	<height>1</height>
+	<price>2000</price>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>180</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>20</base>
+		</population>
+	</population>
+'>
+
+]>
+
+
+<plug-in>
+
+<author>Shikashika</author>
+<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+<title>Buildings(Lodging)</title>
+
+<!-- Camp site -->
+
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-camp-campsite-001}">
+	<picture src = "campsite_001.bmp">
+		<override when="spring" src="campsite_001spring.bmp">
+			<override when="night" src="campsite_001spring_night.bmp"/>
+		</override>
+		<override when="summer" src="campsite_001summer.bmp">
+			<override when="night" src="campsite_001summer_night.bmp"/>
+		</override>
+		<override when="autumn" src="campsite_001autumn.bmp">
+			<override when="night" src="campsite_001autumn_night.bmp"/>
+		</override>
+		<override when="winter" src="campsite_001winter.bmp">
+			<override when="night" src="campsite_001winter_night.bmp"/>
+		</override>
+	</picture>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-camp-tent1-001}">
+&component_campsite_001;
+&population_campsite_001;
+	<design>tent 1</design>
+	&tent-yellow;
+	&tent-orange;
+	&tent-green;
+	&tent-skyblue;
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-001}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-001}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-001}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-camp-tent2-001}">
+&component_campsite_001;
+&population_campsite_002;
+	<design>tent 2</design>
+	&tent-yellow;
+	&tent-orange;
+	&tent-green;
+	&tent-skyblue;
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-001}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-001}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-001}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-camp-bungalow-001}">
+&component_campsite_001;
+&population_campsite_003;
+	<design>bungalow</design>
+	&wall-redbrick;
+	&wall-wood001;
+	&wall-wood002;
+	&wall-wood003;
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-001}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-001}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-001}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-camp-cabin-001}">
+&component_campsite_001;
+&population_campsite_004;
+	<design>cabin</design>
+	&wall-redbrick;
+	&wall-wood001;
+	&wall-wood002;
+	&wall-wood003;
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-001}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-001}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-001}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-camp-campsite-002}">
+	<picture src = "campsite_002.bmp">
+		<override when="spring" src="campsite_002spring.bmp">
+			<override when="night" src="campsite_002spring_night.bmp"/>
+		</override>
+		<override when="summer" src="campsite_002summer.bmp">
+			<override when="night" src="campsite_002summer_night.bmp"/>
+		</override>
+		<override when="autumn" src="campsite_002autumn.bmp">
+			<override when="night" src="campsite_002autumn_night.bmp"/>
+		</override>
+		<override when="winter" src="campsite_002winter.bmp">
+			<override when="night" src="campsite_002winter_night.bmp"/>
+		</override>
+	</picture>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-camp-publicbathhouse-002}">
+&component_campsite_001;
+&population_campsite_005;
+	<design>Public bath house</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-002}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-002}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-002}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-002}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-camp-cookhouse-002}">
+&component_campsite_001;
+&population_campsite_006;
+	<design>Cook house</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-002}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-002}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-002}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-002}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-camp-campfire-002}">
+&component_campsite_001;
+&population_campsite_007;
+	<design>Campfire</design>
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-002}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-002}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-002}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-002}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-camp-informationoffice-002}">
+&component_campsite_001;
+&population_campsite_005;
+	<design>Information office</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-002}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-002}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-002}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-002}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-camp-campsite-003}">
+	<picture src = "campsite_003.bmp">
+		<override when="spring" src="campsite_003spring.bmp">
+			<override when="night" src="campsite_003spring_night.bmp"/>
+		</override>
+		<override when="summer" src="campsite_003summer.bmp">
+			<override when="night" src="campsite_003summer_night.bmp"/>
+		</override>
+		<override when="autumn" src="campsite_003autumn.bmp">
+			<override when="night" src="campsite_003autumn_night.bmp"/>
+		</override>
+		<override when="winter" src="campsite_003winter.bmp">
+			<override when="night" src="campsite_003winter_night.bmp"/>
+		</override>
+	</picture>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-camp-firtree-003}">
+&component_campsite_001;
+&population_campsite_008;
+	<design>Fir tree</design>
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-003}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-003}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-003}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-003}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-camp-pond-003}">
+&component_campsite_001;
+&population_campsite_008;
+	<design>Pond</design>
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-003}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-003}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-003}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-camp-campsite-003}"/>
+	</sprite>
+
+</contribution>
+
+<!-- Inns -->
+
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-hotel-ryokan-001}">
+	<picture  src="ryokan_001.bmp">
+		<override when="night" src="ryokan_001_night.bmp"/>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-hotel-ryokan-002}">
+	<picture  src="ryokan_002.bmp">
+		<override when="night" src="ryokan_002_night.bmp"/>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-hotel-ryokan-003}">
+	<picture  src="ryokan_003.bmp">
+		<override when="night" src="ryokan_003_night.bmp"/>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-hotel-ryokan-004}">
+	<picture  src="ryokan_004.bmp">
+		<override when="night" src="ryokan_004_night.bmp"/>
+	</picture>
+</contribution>
+
+<!-- Inns(1x1) -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-structure-hotel-ryokan-001-a}">
+&component_ryokan_001;
+	<design>Inn A</design>
+	&wall-brownbeige;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	&wall-lightyelloworange;
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-001}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-001}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-001}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-structure-hotel-ryokan-001-b}">
+&component_ryokan_001;
+	<design>Inn B</design>
+	&wall-brownbeige;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	&wall-lightyelloworange;
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-001}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-001}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-001}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-structure-hotel-ryokan-001-c}">
+&component_ryokan_001;
+	<design>Inn C</design>
+	&wall-brownbeige;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	&wall-lightyelloworange;
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-001}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-001}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-001}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-structure-hotel-ryokan-001-d}">
+&component_ryokan_001;
+	<design>Inn D</design>
+	&wall-brownbeige;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	&wall-lightyelloworange;
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-001}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-001}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-001}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-structure-hotel-ryokan-002-a}">
+&component_ryokan_001;
+	<design>Inn A(tile roof)</design>
+	&wall-wood003;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-wood005;
+	&wall-wood006;
+	&wall-lightyelloworange;
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-002}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-002}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-002}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-002}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-structure-hotel-ryokan-002-b}">
+&component_ryokan_001;
+	<design>Inn B(tile roof)</design>
+	&wall-wood003;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-wood005;
+	&wall-wood006;
+	&wall-lightyelloworange;
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-002}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-002}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-002}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-002}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-structure-hotel-ryokan-002-c}">
+&component_ryokan_001;
+	<design>Inn C(tile roof)</design>
+	&wall-wood003;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-wood005;
+	&wall-wood006;
+	&wall-lightyelloworange;
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-002}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-002}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-002}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-002}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-structure-hotel-ryokan-002-d}">
+&component_ryokan_001;
+	<design>Inn D(tile roof)</design>
+	&wall-wood003;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-wood005;
+	&wall-wood006;
+	&wall-lightyelloworange;
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-002}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-002}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-002}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-002}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-structure-hotel-ryokan-003-e}">
+&component_ryokan_001;
+	<design>Inn E(tile roof)</design>
+	&ta-white;
+	&wall-wood003;
+	&wall-wood004;
+	&wall-wood005;
+	&wall-wood006;
+	&wall-wood007;
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-003}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-003}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-003}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-003}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-structure-hotel-ryokan-003-f}">
+&component_ryokan_001;
+	<design>Inn F(tile roof)</design>
+	&ta-white;
+	&wall-wood003;
+	&wall-wood004;
+	&wall-wood005;
+	&wall-wood006;
+	&wall-wood007;
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-003}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-003}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-003}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-003}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-structure-hotel-ryokan-003-g}">
+&component_ryokan_001;
+	<design>Inn G(tile roof)</design>
+	&wall-wood003;
+	&wall-wood004;
+	&wall-wood005;
+	&wall-wood006;
+	&wall-wood007;
+	&wall-wood008;
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-003}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-003}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-003}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-003}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-structure-hotel-ryokan-003-h}">
+&component_ryokan_001;
+	<design>Inn H(tile roof)</design>
+	&wall-wood003;
+	&wall-wood004;
+	&wall-wood005;
+	&wall-wood006;
+	&wall-wood007;
+	&wall-wood008;
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-003}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-003}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-003}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-003}"/>
+	</sprite>
+
+</contribution>
+
+<!-- Inns(2x2) -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-structure-hotel-ryokan-004-a}">
+&component_ryokan_002;
+	<design>Inn A(tile roof)</design>
+	&wall-wood003;
+	&wall-wood004;
+	&wall-wood005;
+	&wall-wood006;
+	&wall-wood007;
+	&wall-wood008;
+
+	<sprite origin="0,0" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-004}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-004}"/>
+	</sprite>
+
+	<sprite origin="128,0" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-004}"/>
+	</sprite>
+
+	<sprite origin="192,0" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-004}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-structure-hotel-ryokan-004-b}">
+&component_ryokan_002;
+	<design>Inn B(tile roof)</design>
+	&wall-wood003;
+	&wall-wood004;
+	&wall-wood005;
+	&wall-wood006;
+	&wall-wood007;
+	&wall-wood008;
+
+	<sprite origin="0,64" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-004}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-004}"/>
+	</sprite>
+
+	<sprite origin="128,64" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-004}"/>
+	</sprite>
+
+	<sprite origin="192,64" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-hotel-ryokan-004}"/>
+	</sprite>
+
+</contribution>
+
+</plug-in>

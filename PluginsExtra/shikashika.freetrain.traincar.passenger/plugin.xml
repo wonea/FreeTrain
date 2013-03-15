@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+<author>Shikashika</author>
+<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+<title>Traincars (Passenger Cars: JNR or JR)</title>
+
+<!-- 特急形客車(スハ44系) -->
+<!-- イメージ画像定義 -->
+	<!-- スハ44系特急形客車 スハニ35(3等荷物合造車) -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-shuhani35}">
+		<picture src="shuhani35.bmp" />
+	</contribution>
+	<!-- スハ44系特急形客車 スハ44(3等車) -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-shuha44}">
+		<picture src="shuha44.bmp" />
+	</contribution>
+	<!-- スハ44系特急形客車 スロ60(特別2等車) -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-shuro60}">
+		<picture src="shuro60.bmp" />
+	</contribution>
+	<!-- スハ44系特急形客車 マシ35(食堂車) -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-mashi35}">
+		<picture src="mashi35.bmp" />
+	</contribution>
+	<!-- スハ44系特急形客車 マイテ49(1等展望車) -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-maite49}">
+		<picture src="maite49.bmp" />
+	</contribution>
+<!-- 車両定義 -->
+<!-- 特急形客車(スハ44系)ぶどう色 -->
+	<!-- スハ44系特急形客車 スハニ35(3等荷物合造車) 定員48人 ぶどう色 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuhani35}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-shuhani35}" />
+		</sprite>
+		<capacity>48</capacity>
+	</contribution>
+	<!-- スハ44系特急形客車 スハ44(3等車) 定員76人 ぶどう色 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuha44}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-shuha44}" />
+		</sprite>
+		<capacity>76</capacity>
+	</contribution>
+	<!-- スハ44系特急形客車 スロ60(特別2等車) 定員44人 ぶどう色 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuro60}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-shuro60}" />
+		</sprite>
+		<capacity>44</capacity>
+	</contribution>
+	<!-- スハ44系特急形客車 マシ35(食堂車) 定員30人 ぶどう色 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-mashi35}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-mashi35}" />
+		</sprite>
+		<capacity>30</capacity>
+	</contribution>
+	<!-- スハ44系特急形客車 マイテ49(1等展望車) 定員30人 ぶどう色 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-maite49}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-maite49}" />
+		</sprite>
+		<capacity>30</capacity>
+	</contribution>
+<!-- 特急形客車(スハ44系)青 -->
+	<!-- スハ44系特急形客車 スハニ35(3等荷物合造車) 定員48人 青 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuhani35-B}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-shuhani35}" />
+		<spriteType name="colorMapped">
+			<map from="80,48,48" to="51,51,100"/>
+			<map from="95,57,57" to="59,59,115"/>
+			<map from="90,54,54" to="57,57,90"/>
+			<map from="100,60,60" to="62,62,120"/>
+			<map from="110,66,66" to="67,67,130"/>
+			<map from="120,72,72" to="73,73,140"/>
+		</spriteType>
+		</sprite>
+		<capacity>48</capacity>
+	</contribution>
+	<!-- スハ44系特急形客車 スハ44(3等車) 定員76人 青 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuha44-B}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-shuha44}" />
+		<spriteType name="colorMapped">
+			<map from="80,48,48" to="51,51,100"/>
+			<map from="95,57,57" to="59,59,115"/>
+			<map from="90,54,54" to="57,57,90"/>
+			<map from="100,60,60" to="62,62,120"/>
+			<map from="110,66,66" to="67,67,130"/>
+			<map from="120,72,72" to="73,73,140"/>
+		</spriteType>
+		</sprite>
+		<capacity>76</capacity>
+	</contribution>
+	<!-- スハ44系特急形客車 スロ60(特別2等車) 定員44人 青 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuro60-B}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-shuro60}" />
+		<spriteType name="colorMapped">
+			<map from="80,48,48" to="51,51,100"/>
+			<map from="95,57,57" to="59,59,115"/>
+			<map from="90,54,54" to="57,57,90"/>
+			<map from="100,60,60" to="62,62,120"/>
+			<map from="110,66,66" to="67,67,130"/>
+			<map from="120,72,72" to="73,73,140"/>
+			<map from="63,63,130" to="67,67,130"/>
+		</spriteType>
+		</sprite>
+		<capacity>44</capacity>
+	</contribution>
+	<!-- スハ44系特急形客車 マシ35(食堂車) 定員30人 青 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-mashi35-B}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-mashi35}" />
+		<spriteType name="colorMapped">
+			<map from="80,48,48" to="51,51,100"/>
+			<map from="95,57,57" to="59,59,115"/>
+			<map from="90,54,54" to="57,57,90"/>
+			<map from="100,60,60" to="62,62,120"/>
+			<map from="110,66,66" to="67,67,130"/>
+			<map from="120,72,72" to="73,73,140"/>
+		</spriteType>
+		</sprite>
+		<capacity>30</capacity>
+	</contribution>
+	<!-- スハ44系特急形客車 マイテ49(1等展望車) 定員30人 青 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-maite49-B}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-maite49}" />
+		<spriteType name="colorMapped">
+			<map from="80,48,48" to="51,51,100"/>
+			<map from="95,57,57" to="59,59,115"/>
+			<map from="90,54,54" to="57,57,90"/>
+			<map from="100,60,60" to="62,62,120"/>
+			<map from="110,66,66" to="67,67,130"/>
+			<map from="120,72,72" to="73,73,140"/>
+			<map from="150,150,150" to="67,67,130"/>
+		</spriteType>
+		</sprite>
+		<capacity>30</capacity>
+	</contribution>
+<!-- 特急形客車(スハ44系)青大将 -->
+	<!-- スハ44系特急形客車 スハニ35(3等荷物合造車) 定員48人 青大将 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuhani35-A}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-shuhani35}" />
+		<spriteType name="colorMapped">
+			<map from="80,48,48" to="78,130,81"/>
+			<map from="95,57,57" to="87,145,90"/>
+			<map from="90,54,54" to="84,140,88"/>
+			<map from="100,60,60" to="90,150,95"/>
+			<map from="110,66,66" to="96,160,101"/>
+			<map from="120,72,72" to="102,170,108"/>
+			<map from="152,152,190" to="190,190,190"/>
+			<map from="144,144,180" to="180,180,180"/>
+			<map from="136,136,170" to="170,170,170"/>
+			<map from="128,128,160" to="160,160,160"/>
+			<map from="104,104,130" to="130,130,130"/>
+			<map from="67,67,80" to="80,80,80"/>
+			<map from="240,51,200" to="200,200,200"/>
+		</spriteType>
+		</sprite>
+		<capacity>48</capacity>
+	</contribution>
+	<!-- スハ44系特急形客車 スハ44(3等車) 定員76人 青大将 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuha44-A}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-shuha44}" />
+		<spriteType name="colorMapped">
+			<map from="80,48,48" to="78,130,81"/>
+			<map from="95,57,57" to="87,145,90"/>
+			<map from="90,54,54" to="84,140,88"/>
+			<map from="100,60,60" to="90,150,95"/>
+			<map from="110,66,66" to="96,160,101"/>
+			<map from="120,72,72" to="102,170,108"/>
+			<map from="152,152,190" to="190,190,190"/>
+			<map from="144,144,180" to="180,180,180"/>
+			<map from="136,136,170" to="170,170,170"/>
+			<map from="128,128,160" to="160,160,160"/>
+			<map from="104,104,130" to="130,130,130"/>
+			<map from="67,67,80" to="80,80,80"/>
+			<map from="240,51,200" to="200,200,200"/>
+		</spriteType>
+		</sprite>
+		<capacity>76</capacity>
+	</contribution>
+	<!-- スハ44系特急形客車 スロ60(特別2等車) 定員44人 青大将 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuro60-A}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-shuro60}" />
+		<spriteType name="colorMapped">
+			<map from="80,48,48" to="78,130,81"/>
+			<map from="95,57,57" to="87,145,90"/>
+			<map from="90,54,54" to="84,140,88"/>
+			<map from="100,60,60" to="90,150,95"/>
+			<map from="110,66,66" to="96,160,101"/>
+			<map from="120,72,72" to="102,170,108"/>
+			<map from="152,152,190" to="190,190,190"/>
+			<map from="144,144,180" to="180,180,180"/>
+			<map from="136,136,170" to="170,170,170"/>
+			<map from="128,128,160" to="160,160,160"/>
+			<map from="104,104,130" to="130,130,130"/>
+			<map from="67,67,80" to="80,80,80"/>
+			<map from="240,51,200" to="200,200,200"/>
+			<map from="63,63,130" to="96,160,101"/>
+		</spriteType>
+		</sprite>
+		<capacity>44</capacity>
+	</contribution>
+	<!-- スハ44系特急形客車 マシ35(食堂車) 定員30人 青大将 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-mashi35-A}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-mashi35}" />
+		<spriteType name="colorMapped">
+			<map from="80,48,48" to="78,130,81"/>
+			<map from="95,57,57" to="87,145,90"/>
+			<map from="90,54,54" to="84,140,88"/>
+			<map from="100,60,60" to="90,150,95"/>
+			<map from="110,66,66" to="96,160,101"/>
+			<map from="120,72,72" to="102,170,108"/>
+			<map from="152,152,190" to="190,190,190"/>
+			<map from="144,144,180" to="180,180,180"/>
+			<map from="136,136,170" to="170,170,170"/>
+			<map from="128,128,160" to="160,160,160"/>
+			<map from="104,104,130" to="130,130,130"/>
+			<map from="67,67,80" to="80,80,80"/>
+			<map from="240,51,200" to="200,200,200"/>
+		</spriteType>
+		</sprite>
+		<capacity>30</capacity>
+	</contribution>
+	<!-- スハ44系特急形客車 マイテ49(1等展望車) 定員30人 青大将 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-maite49-A}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-maite49}" />
+		<spriteType name="colorMapped">
+			<map from="80,48,48" to="78,130,81"/>
+			<map from="95,57,57" to="87,145,90"/>
+			<map from="90,54,54" to="84,140,88"/>
+			<map from="100,60,60" to="90,150,95"/>
+			<map from="110,66,66" to="96,160,101"/>
+			<map from="120,72,72" to="102,170,108"/>
+			<map from="152,152,190" to="190,190,190"/>
+			<map from="144,144,180" to="180,180,180"/>
+			<map from="136,136,170" to="170,170,170"/>
+			<map from="128,128,160" to="160,160,160"/>
+			<map from="104,104,130" to="130,130,130"/>
+			<map from="67,67,80" to="80,80,80"/>
+			<map from="240,51,200" to="200,200,200"/>
+			<map from="150,150,150" to="96,160,101"/>
+			<map from="125,125,125" to="93,155,97"/>
+			<map from="95,95,95" to="69,115,71"/>
+		</spriteType>
+		</sprite>
+		<capacity>30</capacity>
+	</contribution>
+
+<!-- 一般形客車(スハ43系) -->
+<!-- イメージ画像定義 -->
+	<!-- スハ43系一般形客車 スハ43(急行用3等車) -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-shuha43}">
+		<picture src="shuha43.bmp" />
+	</contribution>
+	<!-- スハ43系一般形客車 スハフ42(急行用3等車) -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-shuhahu42}">
+		<picture src="shuhahu42.bmp" />
+	</contribution>
+<!-- 車両定義 -->
+<!-- 一般形客車(スハ43系)ぶどう色 -->
+	<!-- スハ43系一般形客車 スハ43(急行用3等車) 定員88人 ぶどう色 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-shuha43}" />
+		</sprite>
+		<capacity>88</capacity>
+	</contribution>
+	<!-- スハ43系一般形客車 スハフ42(急行用3等車) 定員80人 ぶどう色 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-shuhahu42}" />
+		</sprite>
+		<capacity>80</capacity>
+	</contribution>
+	<!-- スハ43系一般形客車 スハフ42(急行用3等車) 定員80人 ぶどう色　向き：逆-->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-R}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42}"/>
+	</contribution>
+<!-- 一般形客車(スハ43系)青 -->
+	<!-- スハ43系一般形客車 スハ43(急行用3等車) 定員88人 青 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43-B}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-shuha43}" />
+		<spriteType name="colorMapped">
+			<map from="80,48,48" to="51,51,100"/>
+			<map from="95,57,57" to="59,59,115"/>
+			<map from="90,54,54" to="57,57,90"/>
+			<map from="100,60,60" to="62,62,120"/>
+			<map from="110,66,66" to="67,67,130"/>
+			<map from="120,72,72" to="73,73,140"/>
+			<map from="150,150,150" to="67,67,130"/>
+		</spriteType>
+		</sprite>
+		<capacity>88</capacity>
+	</contribution>
+	<!-- スハ43系一般形客車 スハフ42(急行用3等車) 定員80人 青 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-shuhahu42}" />
+		<spriteType name="colorMapped">
+			<map from="80,48,48" to="51,51,100"/>
+			<map from="95,57,57" to="59,59,115"/>
+			<map from="90,54,54" to="57,57,90"/>
+			<map from="100,60,60" to="62,62,120"/>
+			<map from="110,66,66" to="67,67,130"/>
+			<map from="120,72,72" to="73,73,140"/>
+			<map from="150,150,150" to="67,67,130"/>
+		</spriteType>
+		</sprite>
+		<capacity>80</capacity>
+	</contribution>
+	<!-- スハ43系一般形客車 スハフ42(急行用3等車) 定員80人 青　向き：逆-->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B-R}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B}"/>
+	</contribution>
+
+<!-- 一般形客車(50系) -->
+<!-- イメージ画像定義 -->
+	<!-- 50系一般形客車 オハフ50(普通緩急車) -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-ohahu50}">
+		<picture src="ohahu50.bmp" />
+	</contribution>
+	<!-- 50系一般形客車 オフ50(普通車) -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-oha50}">
+		<picture src="oha50.bmp" />
+	</contribution>
+	<!-- 50系一般形客車 オハフ50-1000番台(普通緩急車･冷房車) -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-ohahu50-1000}">
+		<picture src="ohahu50_1000.bmp" />
+	</contribution>
+	<!-- 50系一般形客車 オフ50-1000番台(普通車･冷房車) -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-oha50-1000}">
+		<picture src="oha50_1000.bmp" />
+	</contribution>
+<!-- 車両定義 -->
+<!-- 一般形客車(50系) -->
+	<!-- 50系一般形客車 オハフ50(普通緩急車) 座席67立席25定員92人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu50-T}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-ohahu50}" />
+		</sprite>
+		<capacity>92</capacity>
+	</contribution>
+	<!-- 50系一般形客車 オハフ50(普通緩急車) 座席67立席25定員92人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu50}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-ohahu50}" />
+		<spriteType name="colorMapped">
+			<map from="08,00,00" to="00,00,00"/>
+		</spriteType>
+		</sprite>
+		<capacity>92</capacity>
+	</contribution>
+	<!-- 50系一般形客車 オハフ50(普通緩急車) 座席67立席25定員92人　向き：逆-->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu50-R}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu50}"/>
+	</contribution>
+	<!-- 50系一般形客車 オフ50(普通車) 座席80立席32定員112人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-oha50}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-oha50}" />
+		</sprite>
+		<capacity>112</capacity>
+	</contribution>
+
+	<!-- 50系一般形客車 オハフ50-1000番台(普通緩急車･冷房車) 座席67立席25定員92人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu50-1000-T}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-ohahu50-1000}" />
+		</sprite>
+		<capacity>92</capacity>
+	</contribution>
+	<!-- 50系一般形客車 オハフ50-1000番台(普通緩急車･冷房車) 座席67立席25定員92人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu50-1000}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-ohahu50-1000}" />
+		<spriteType name="colorMapped">
+			<map from="08,00,00" to="00,00,00"/>
+		</spriteType>
+		</sprite>
+		<capacity>92</capacity>
+	</contribution>
+	<!-- 50系一般形客車 オハフ50-1000番台(普通緩急車･冷房車) 座席67立席25定員92人　向き：逆-->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu50-1000-R}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu50-1000}"/>
+	</contribution>
+	<!-- 50系一般形客車 オフ50-1000番台(普通車･冷房車) 座席80立席32定員112人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-oha50-1000}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-oha50-1000}" />
+		</sprite>
+		<capacity>112</capacity>
+	</contribution>
+
+<!-- 急行形客車(12系) -->
+<!-- イメージ画像定義 -->
+	<!-- 12系急行形客車 オハフ13(スハフ12) -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-ohahu13}">
+		<picture src="ohahu13.bmp" />
+	</contribution>
+	<!-- 12系急行形客車 オハ12 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-oha12}">
+		<picture src="oha12.bmp" />
+	</contribution>
+<!-- 車両定義 -->
+	<!-- 12系急行形客車 オハフ13 定員80人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu13}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-ohahu13}" />
+		<spriteType name="colorMapped">
+			<map from="08,00,00" to="00,00,00"/>
+		</spriteType>
+		</sprite>
+		<capacity>80</capacity>
+	</contribution>
+	<!-- 12系急行形客車 スハフ12 定員80人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu12-T}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-ohahu13}" />
+		</sprite>
+		<capacity>80</capacity>
+	</contribution>
+	<!-- 12系急行形客車 スハフ12 定員80人　向き：逆 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu12}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu12-T}"/>
+	</contribution>
+	<!-- 12系急行形客車 スハフ12 定員80人　向き：逆 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu12-T-R}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu12-T}"/>
+	</contribution>
+	<!-- 12系急行形客車 オハ12 定員88人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-oha12}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-oha12}" />
+		</sprite>
+		<capacity>88</capacity>
+	</contribution>
+
+
+<!-- 特急形寝台客車(14系) -->
+<!-- イメージ画像定義 -->
+	<!-- 14系特急形寝台客車 スハネフ14 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-suhanehu14}">
+		<picture src="suhanehu14.bmp" />
+	</contribution>
+	<!-- 14系特急形寝台客車 オハネ14 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-ohane14}">
+		<picture src="ohane14.bmp" />
+	</contribution>
+	<!-- 14系特急形寝台客車 オロネ14 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-orone14}">
+		<picture src="orone14.bmp" />
+	</contribution>
+	<!-- 14系特急形寝台客車 オシ14 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-oshi14}">
+		<picture src="oshi14.bmp" />
+	</contribution>
+	<!-- 14系特急形客車 オハフ15(スハフ14) -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-ohahu15}">
+		<picture src="ohahu15.bmp" />
+	</contribution>
+	<!-- 14系特急形客車 オハ14 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-oha14}">
+		<picture src="oha14.bmp" />
+	</contribution>
+<!-- 車両定義 -->
+	<!-- 14系特急形寝台客車 スハネフ14(B寝台緩急車(発電機)：3段式45台) 定員45人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-suhanehu14}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-suhanehu14}" />
+		</sprite>
+		<capacity>45</capacity>
+	</contribution>
+	<!-- 14系特急形寝台客車 スハネフ14(B寝台緩急車(発電機)：3段式45台) 定員45人 向き：逆 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-suhanehu14-R}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Shika-PassengerCar-TrainCar-suhanehu14}"/>
+	</contribution>
+	<!-- 14系特急形寝台客車 オハネ14(B寝台車：3段式48台) 定員48人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-ohane14}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-ohane14}" />
+		</sprite>
+		<capacity>48</capacity>
+	</contribution>
+	<!-- 14系特急形寝台客車 オロネ14(A寝台車：2段式28台) 定員28人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-orone14}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-orone14}" />
+		</sprite>
+		<capacity>28</capacity>
+	</contribution>
+	<!-- 14系特急形寝台客車 オシ14(食堂車：10テーブル) 定員40人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-oshi14}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-oshi14}" />
+		</sprite>
+		<capacity>40</capacity>
+	</contribution>
+	<!-- 14系特急形客車 オハフ15(緩急車) 定員64人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu15}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-ohahu15}" />
+		</sprite>
+		<capacity>64</capacity>
+	</contribution>
+	<!-- 14系特急形客車 オハ14 定員72人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-oha14}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-oha14}" />
+		</sprite>
+		<capacity>72</capacity>
+	</contribution>
+	<!-- 14系特急形客車 スハフ14(緩急車(発電機)) 定員64人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu14}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu15}"/>
+	</contribution>
+
+<!-- 特急形寝台客車(24系25形) -->
+<!-- イメージ画像定義 -->
+	<!-- 24系25形特急形寝台客車 オハネフ25 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-ohanehu25}">
+		<picture src="ohanehu25.bmp" />
+	</contribution>
+	<!-- 24系25形特急形寝台客車 オハネ25 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-ohane25}">
+		<picture src="ohane25.bmp" />
+	</contribution>
+	<!-- 24系25形特急形寝台客車 オハ24-700 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-oha24}">
+		<picture src="oha24.bmp" />
+	</contribution>
+	<!-- 24系25形特急形寝台客車 オシ24 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-oshi24}">
+		<picture src="oshi24.bmp" />
+	</contribution>
+	<!-- 24系25形特急形寝台客車 オロネ25 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-orone25}">
+		<picture src="orone25.bmp" />
+	</contribution>
+	<!-- 24系25形特急形寝台客車 カニ24 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-kani24}">
+		<picture src="kani24.bmp" />
+	</contribution>
+<!-- 車両定義 -->
+	<!-- 24系25形特急形寝台客車 オハネフ25(B寝台緩急車) 定員32人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-ohanehu25}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-ohanehu25}" />
+		</sprite>
+		<capacity>32</capacity>
+	</contribution>
+	<!-- 24系25形特急形寝台客車 オハネフ25(B寝台緩急車) 定員32人 向き：逆-->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-ohanehu25-R}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Shika-PassengerCar-TrainCar-ohanehu25}"/>
+	</contribution>
+	<!-- 24系25形特急形寝台客車 オハネ25(B寝台緩急車：2段式) 定員34人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-ohane25}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-ohane25}" />
+		</sprite>
+		<capacity>34</capacity>
+	</contribution>
+	<!-- 24系25形特急形寝台客車 オハ24-700(ロビーカー) -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-oha24}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-oha24}" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+	<!-- 24系25形特急形寝台客車 オシ24(食堂車) 定員40人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-oshi24}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-oshi24}" />
+		</sprite>
+		<capacity>40</capacity>
+	</contribution>
+	<!-- 24系25形特急形寝台客車 オロネ25(A寝台車：一人用個室14室) 定員14人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-orone25}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-orone25}" />
+		</sprite>
+		<capacity>14</capacity>
+	</contribution>
+	<!-- 24系25形特急形寝台客車 カニ24(電源荷物車) -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-kani24}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-kani24}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	<!-- 24系25形特急形寝台客車 カニ24(電源荷物車) 向き：逆 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-kani24-R}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Shika-PassengerCar-TrainCar-kani24}"/>
+	</contribution>
+
+
+<!-- 特急形寝台客車(E26系) -->
+<!-- イメージ画像定義 --> 
+	<!-- E26系特急形2階建寝台客車 スロネフE26-1 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-shuronehuE26-1}">
+		<picture src="shuronehuE26_001.bmp" />
+	</contribution>
+	<!-- E26系特急形2階建寝台客車 スロネE26-1 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-shuroneE26-1}">
+		<picture src="shuroneE26_001.bmp" />
+	</contribution>
+	<!-- E26系特急形2階建寝台食堂車 マシE26-1 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-mashiE26-1}">
+		<picture src="mashiE26_001.bmp" />
+	</contribution>
+	<!-- E26系特急形2階建寝台客車 スロネE27-1(201,301) -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-shuroneE27-1}">
+		<picture src="shuroneE27_001.bmp" />
+	</contribution>
+	<!-- E26系特急形2階建寝台客車 スロネE27-101 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-shuroneE27-101}">
+		<picture src="shuroneE27_101.bmp" />
+	</contribution>
+	<!-- E26系特急形2階建寝台客車 スロネE27-401 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-shuroneE27-401}">
+		<picture src="shuroneE27_401.bmp" />
+	</contribution>
+	<!-- E26系特急形2階建寝台客車 カハフE26-1 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-kahahuE26-1}">
+		<picture src="kahahuE26_001.bmp" />
+	</contribution>
+	<!-- 予備電源車 カヤE27-501 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-kaya27-501}">
+		<picture src="kaya27_501.bmp" />
+	</contribution>
+<!-- 車両定義 -->
+	<!-- E26系特急形2階建寝台客車 スロネフE26-1(2人用個室特A寝台:カシオペア･スイート4室) 定員11人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuronehuE26-1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-shuronehuE26-1}" />
+		</sprite>
+		<capacity>11</capacity>
+	</contribution>
+	<!-- E26系特急形2階建寝台客車 スロネE26-1(2人用個室特A寝台:カシオペア･スイート3室カシオペア･デラックス1室) 定員12人  -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE26-1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-shuroneE26-1}" />
+		</sprite>
+		<capacity>12</capacity>
+	</contribution>
+	<!-- E26系特急形2階建寝台客車 マシE26-1(食堂:定員28名) 定員28人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-mashiE26-1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-mashiE26-1}" />
+		</sprite>
+		<capacity>28</capacity>
+	</contribution>
+	<!-- E26系特急形2階建寝台客車 スロネE27-1(201,301)(2人用個室A寝台:カシオペア・ツイン10室) 定員21人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-shuroneE27-1}" />
+		</sprite>
+		<capacity>21</capacity>
+	</contribution>
+	<!-- E26系特急形2階建寝台客車 スロネE27-101(2人用個室A寝台:カシオペア・ツイン10室) 定員20人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-101}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-shuroneE27-101}" />
+		</sprite>
+		<capacity>20</capacity>
+	</contribution>
+	<!-- E26系特急形2階建寝台客車 スロネE27-401(2人用個室A寝台:カシオペア・ツイン10室) 定員21人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-401}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-shuroneE27-401}" />
+		</sprite>
+		<capacity>21</capacity>
+	</contribution>
+	<!-- E26系特急形2階建寝台客車 カハフE26-1(ラウンジ:定員18名,電源車) 定員18人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-kahahuE26-1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-kahahuE26-1}" />
+		</sprite>
+		<capacity>18</capacity>
+	</contribution>
+	<!-- 予備電源車 カヤE27-501(予備電源車) -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-kaya27-501}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-kaya27-501}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+
+
+
+<title>車輌(荷物車:旧国鉄及びJR各社)</title>
+
+<!-- 荷物車 -->
+<!-- イメージ画像定義 -->
+	<!-- 荷物車 マニ60 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-mani60}">
+		<picture src="mani60.bmp" />
+	</contribution>
+	<!-- 荷物車 マニ30(日本銀行所有) -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-mani30}">
+		<picture src="mani30.bmp" />
+	</contribution>
+
+
+<!-- 車両定義 -->
+	<!-- 荷物車 マニ60ぶどう色 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-mani60}" />
+		</sprite>
+		<capacity>10</capacity>
+	</contribution>
+	<!-- 現金輸送用荷物車 マニ30(日本銀行所有) -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-mani30}" />
+		</sprite>
+		<capacity>10</capacity>
+	</contribution>
+	<!-- 現金輸送用荷物車 マニ30(日本銀行所有)　向き：逆-->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+	</contribution>
+
+<!-- 荷物車(50系) -->
+<!-- イメージ画像定義 -->
+	<!-- 50系荷物車 マニ50 -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-mani50}">
+		<picture src="mani50.bmp" />
+	</contribution>
+<!-- 車両定義 -->
+<!-- 荷物車(50系) -->
+	<!-- 50系荷物車 マニ50 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-mani50-T}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-mani50}" />
+		</sprite>
+		<capacity>10</capacity>
+	</contribution>
+	<!-- 50系荷物車 マニ50 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-mani50}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-mani50}" />
+		<spriteType name="colorMapped">
+			<map from="08,00,00" to="00,00,00"/>
+		</spriteType>
+		</sprite>
+		<capacity>10</capacity>
+	</contribution>
+
+<!-- 郵便車 -->
+<!-- イメージ画像定義 -->
+	<!-- 郵便車 オユ10(郵政省所有) -->
+	<contribution type="picture" id="{FreeTrain-Shika-PassengerCar-picture-oyu10}">
+		<picture src="oyu10.bmp" />
+	</contribution>
+<!-- 車両定義 -->
+	<!-- 郵便車 オユ10青(郵政省所有) -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-PassengerCar-picture-oyu10}" />
+		<spriteType name="colorMapped">
+			<map from="80,48,48" to="51,51,100"/>
+			<map from="95,57,57" to="59,59,115"/>
+			<map from="90,54,54" to="57,57,90"/>
+			<map from="100,60,60" to="62,62,120"/>
+			<map from="110,66,66" to="67,67,130"/>
+			<map from="120,72,72" to="73,73,140"/>
+		</spriteType>
+		</sprite>
+		<capacity>10</capacity>
+	</contribution>
+</plug-in>

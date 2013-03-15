@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY templeTower '
+	<group>5-storied pagoda</group>
+	<structure>
+		<category byname="Famous Temples"/>
+	</structure>
+	<price>3000</price>
+	<size>1,1</size>
+	<height>4</height>
+	<computerCannotBuild/>
+'>
+]>
+<plug-in>
+	<title>Temples</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+
+	<contribution type="picture" id="{EDF30556-04D0-472E-C477-D7E5710D2025}">
+		<picture src="tower-5lv.bmp"/>
+	</contribution>		
+
+	<contribution type="GenericStructure" id="{A672D45E-FA9B-405F-C477-0EE109E8B38D}">
+		&templeTower;
+		<design>tile-roofing</design>
+		<sprite origin="0,0" offset="40">
+			<picture ref="{EDF30556-04D0-472E-C477-D7E5710D2025}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{DEBD4FD7-C11D-43E3-C477-84D3A2979DB8}">
+		&templeTower;
+		<design>wood skin roofing</design>
+		<sprite origin="32,0" offset="40">
+			<picture ref="{EDF30556-04D0-472E-C477-D7E5710D2025}"/>
+		</sprite>
+	</contribution>
+</plug-in>

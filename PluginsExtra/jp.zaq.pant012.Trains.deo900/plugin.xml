@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>DEO 900</title>
+ 	<homepage>http://www.cwo.zaq.ne.jp/pant012/freetrain/</homepage>
+
+	<contribution type="picture" id="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4-1}">
+		<picture src="Train_deo900.bmp" />
+	</contribution>
+
+	<contribution type="picture" id="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4-2}">
+		<picture src="train_deo900_2.bmp" />
+	</contribution>
+
+	<contribution type="picture" id="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4-3}">
+		<picture src="train_deo900_3.bmp" />
+	</contribution>
+
+	<!-- デオ900先頭 -->
+	<contribution type="trainCar" id="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="217,0,54" to="214,96,153"/>
+<map from="245,77,89" to="252,108,169"/>
+<map from="233,45,67" to="194,70,143"/>
+			</spriteType>
+			<picture ref="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4-1}" />
+		</sprite>
+		<capacity>86</capacity>
+	</contribution>
+
+	<!-- デオ900中間-->
+	<contribution type="trainCar" id="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="217,0,54" to="214,96,153"/>
+<map from="245,77,89" to="252,108,169"/>
+<map from="233,45,67" to="194,70,143"/>
+			</spriteType>
+			<picture ref="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4-2}" />
+		</sprite>
+		<capacity>90</capacity>
+	</contribution>
+
+	<!-- デオ900最後尾 -->
+	<contribution type="trainCar" id="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4}-t">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="217,0,54" to="214,96,153"/>
+<map from="245,77,89" to="252,108,169"/>
+<map from="233,45,67" to="194,70,143"/>
+			</spriteType>
+	<picture ref="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4-3}" />
+		</sprite>
+		<capacity>86</capacity>
+	</contribution>
+
+	<!-- デオ900-903先頭 -->
+	<contribution type="trainCar" id="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4-903}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4-1}" />
+		</sprite>
+		<capacity>86</capacity>
+	</contribution>
+
+	<!-- デオ900-903中間-->
+	<contribution type="trainCar" id="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4-903}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4-2}" />
+		</sprite>
+		<capacity>90</capacity>
+	</contribution>
+
+	<!-- デオ900-903最後尾 -->
+	<contribution type="trainCar" id="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4-903}-t">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+	<picture ref="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4-3}" />
+		</sprite>
+		<capacity>86</capacity>
+	</contribution>
+
+	<contribution type="train" id="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4-901}">
+		<company>Eizan Electric Railway</company>
+		<type>DEO 900</type>
+		<name>Kirara Crimson Coating (901 Formation)</name>
+              <fare>1000</fare> 
+		<author>T.Hara</author>
+		<description>
+出町柳～鞍馬を結ぶ観光用電車として平成9年に誕生した電車です。窓を大きく取ったダイナミックなデザイン、叡電初のクロスシート等、乗っていて楽しい電車です。(中間車を連結していますが、実車には中間車はありません)
+		</description>
+		<price>850</price>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4}-h"/>
+			<body carRef="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4}-m"/>
+			<tail carRef="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4}-t"/>
+		</composition>
+	</contribution>
+
+	<contribution type="train" id="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4-903}">
+		<company>Eizan Electric Railway</company>
+		<type>DEO 900</type>
+		<name>Kirara Vermilion Coating (903 Formation)</name>
+              <fare>1000</fare> 
+		<author>T.Hara</author>
+		<description>
+第一編成が好評だった為、急遽製造された第二編成です。ちなみに車名の"きらら"とは沿線近くにある｢雲母坂(きらら坂)｣から命名された。(中間車を連結していますが、実車には中間車はありません)
+		</description>
+		<price>850</price>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4-903}-h"/>
+			<body carRef="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4-903}-m"/>
+			<tail carRef="{7661CAC2-57EE-4F0B-957A-E6DF86A148C4-903}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- デオ600 -->
+	<contribution type="trainCar" id="{nyaganyaga-deo600}-h">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="Train_deo600.bmp" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{nyaganyaga-deo600}">
+		<company>Eizan Electric Railway</company>
+		<type>DEO 600</type>
+		<name></name>
+		<author>T.Hara</author>
+		<description>
+デナ500の足回りを使用して製作された車両。冷房化されていないので現在2両を残すのみです。</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<composition>
+			<body carRef="{nyaganyaga-deo600}-h"/>
+		</composition>
+	</contribution>
+
+	<!-- デオ700 -->
+	<contribution type="trainCar" id="{nyaganyaga-deo700}-h">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="Train_deo700.bmp" />
+		</sprite>
+		<capacity>88</capacity>
+	</contribution>
+
+	<contribution type="train" id="{nyaganyaga-deo700}">
+		<company>Eizan Electric Railway</company>
+		<type>DEO 700</type>
+		<name></name>
+		<author>T.Hara</author>
+		<description>
+叡電初の冷房車でワンマン対応の車両です。余談ながら叡電の車両は武庫川車両製で阪神の部品がかなり使われています</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<composition>
+			<body carRef="{nyaganyaga-deo700}-h"/>
+		</composition>
+	</contribution>
+</plug-in>

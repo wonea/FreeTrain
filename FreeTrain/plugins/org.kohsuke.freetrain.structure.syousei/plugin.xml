@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Small Private Houses</title>
+	<author>syousei</author>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="picture" id="{710A1459-445F-4DF9-8AC5-CF7343E54864}">
+		<picture src="minka.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{D6DE0AED-AECF-4d7f-8455-488016997FFF}">
+		<name>Private house (S)</name>
+		<structure>
+			<category byname="Single Houses"/>
+		</structure>
+		<price>150</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="0">
+			<picture ref="{710A1459-445F-4DF9-8AC5-CF7343E54864}" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+	</contribution>
+</plug-in>

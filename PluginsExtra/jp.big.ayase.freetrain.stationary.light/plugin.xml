@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Railroad facilites (floodlight)</title>
+	<author>Hiro Ayase</author>
+	<homepage>http://www14.big.or.jp/~ayase/freetrain/</homepage>
+
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-RailStructureImg-Light}">
+		<picture src="light.bmp"/>
+	</contribution>
+
+	<contribution type="railStationary" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-Light-1}">
+		<group>Floodlight</group>
+		<price>100</price>
+		<size>1,1</size>
+		<height>4</height>
+		<sprite origin="0,0" offset="48">
+			<picture ref="{FreeTrain-AYASE-Hiro-RailStructureImg-Light}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+	<contribution type="railStationary" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-Light-2}">
+		<group>Floodlight</group>
+		<price>100</price>
+		<size>1,1</size>
+		<height>4</height>
+		<sprite origin="32,0" offset="48">
+			<picture ref="{FreeTrain-AYASE-Hiro-RailStructureImg-Light}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+</plug-in>

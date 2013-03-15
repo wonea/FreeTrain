@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Two-Lane Road (15 Sprites)</title>
+	<!--!<title>二車線道路(15枚絵)</title>-->
+	<author>romulanWarbird</author>
+	<homepage>N/A</homepage>
+	<!--!<homepage>通信圏外</homepage>-->
+	
+	<contribution type="road" id="{7254CD19-38B1-42DB-84E3-88F9A5C88E42}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Two-lane road (15 sprites)</name>
+		<!--!<name>二車線道路(15枚絵)</name>-->
+		<description>Two-lane road including T-junction and curves</description>
+		<!--!<description>三叉路、曲がり角等を含むニ車線の道路</description>-->
+		<picture src="road-2-15.bmp" size="32,16" offset="0" />
+	</contribution>
+</plug-in>

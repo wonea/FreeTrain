@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY crWhite '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,255,255"/>
+	</spriteType>	
+'>
+<!ENTITY crGray '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="212,208,200"/>
+	</spriteType>	
+'>
+<!ENTITY crChocolate '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="163,82,71"/>
+	</spriteType>	
+'>
+<!ENTITY crKhaki '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="189,171,137"/>
+	</spriteType>	
+'>
+<!ENTITY crLtSteel '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="198,210,232"/>
+	</spriteType>	
+'>
+
+
+]>
+<plug-in>
+
+	<title>University campus</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+		
+	<contribution type="picture" id="{3999A8F3-9134-489B-C477-B0195147860E}-01">
+		<picture src="bldg_campus01.bmp">
+			<override when="night" src="bldg_campus01n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{3999A8F3-9134-489B-C477-B0195147860E}-02">
+		<picture src="bldg_campus02.bmp">
+			<override when="night" src="bldg_campus02n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{3999A8F3-9134-489B-C477-B0195147860E}-03">
+		<picture src="bldg_campus03.bmp">
+			<override when="night" src="bldg_campus03n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{3999A8F3-9134-489B-C477-B0195147860E}-04">
+		<picture src="bldg_campus04.bmp">
+			<override when="night" src="bldg_campus04n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{3999A8F3-9134-489B-C477-B0195147860E}-05">
+		<picture src="bldg_campus05.bmp">
+			<override when="night" src="bldg_campus05n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{3999A8F3-9134-489B-C477-B0195147860E}-06">
+		<picture src="bldg_campus06.bmp">
+			<override when="night" src="bldg_campus06n.bmp" />
+		</picture>
+	</contribution>
+		
+<!-- 01 -->
+	<contribution type="GenericStructure" id="{6D4CDDD5-83BB-486A-C477-F29BAF479A27}-l0">
+		<group>Campus</group>
+		<structure>
+			<category byname="Public Education"/>
+		</structure>
+		<design>laboratory A</design>
+		<price>5000</price>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>600</base>
+		</population>
+		<height>3</height>
+		<size>2,2</size>
+		<computerCannotBuild/>
+		&crWhite;
+		&crGray;
+		&crLtSteel;
+		&crKhaki;
+		&crChocolate;
+		<sprite origin=" 0,0" offset="40">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-01"/>
+		</sprite>
+		<sprite origin="64,0" offset="40">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-01"/>
+		</sprite>
+	</contribution>
+
+<!--02-->
+	<contribution type="GenericStructure" id="{3450E7C7-D562-46A1-C477-4E9082C411F6}-l0">
+		<group>Campus</group>
+		<structure>
+			<category byname="Public Education"/>
+		</structure>
+		<design>laboratory B</design>
+		<price>3200</price>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>360</base>
+		</population>
+		<height>2</height>
+		<size>3,3</size>
+		<computerCannotBuild/>
+		&crWhite;
+		&crGray;
+		&crLtSteel;
+		&crKhaki;
+		&crChocolate;
+		<sprite origin=" 0,0" offset="32">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-02"/>
+		</sprite>
+		<sprite origin="96,0" offset="32">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-02"/>
+		</sprite>
+	</contribution>
+	
+<!--03-->
+	<contribution type="GenericStructure" id="{6C9EA74F-D0C8-4048-C477-C683AA3B47E8}-l0">
+		<group>Campus</group>
+		<structure>
+			<category byname="Public Education"/>
+		</structure>
+		<design>laboratory C</design>
+		<price>3600</price>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>520</base>
+		</population>
+		<height>2</height>
+		<computerCannotBuild/>
+		<size>3,5</size>
+		&crWhite;
+		&crGray;
+		&crLtSteel;
+		&crKhaki;
+		&crChocolate;
+		<sprite origin="256,0" offset="40">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-03"/>
+		</sprite>
+		<sprite origin="384,0" offset="56" opposite="true">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-03"/>
+		</sprite>
+	</contribution>
+
+<!--tower-->
+	<contribution type="GenericStructure" id="{20617BAB-92C7-418A-C477-1A78E7D853A1}-l0">
+		<group>Campus</group>
+		<structure>
+			<category byname="Public Education"/>
+		</structure>
+		<design>clock tower</design>
+		<price>6400</price>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>800</base>
+		</population>
+		<height>3</height>
+		<computerCannotBuild/>
+		<size>3,5</size>
+		&crChocolate;
+		&crKhaki;
+		<sprite origin="0,0" offset="40">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-03"/>
+		</sprite>
+		<sprite origin="128,0" offset="56" opposite="true">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-03"/>
+		</sprite>
+	</contribution>
+
+<!--04-->
+	<contribution type="GenericStructure" id="{E1311165-173F-4193-C477-99828AABBCE7}-l0">
+		<group>Campus</group>
+		<structure>
+			<category byname="Public Education"/>
+		</structure>
+		<design>lecture rooms A</design>
+		<price>4800</price>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>700</base>
+		</population>
+		<height>2</height>
+		<size>4,4</size>
+		<computerCannotBuild/>
+		&crWhite;
+		&crGray;
+		&crLtSteel;
+		&crKhaki;
+		&crChocolate;
+		<sprite origin=" 0,0" offset="48">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-04"/>
+		</sprite>
+		<sprite origin="128,0" offset="48">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-04"/>
+		</sprite>
+	</contribution>
+	
+<!--05-->
+	<contribution type="GenericStructure" id="{4D633FDE-2090-4AAC-C477-A090D03E5FE8}-n0">
+		<group>Campus</group>
+		<structure>
+			<category byname="Public Education"/>
+		</structure>
+		<design>lecture rooms B</design>
+		<price>1200</price>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>180</base>
+		</population>
+		<height>2</height>
+		<computerCannotBuild/>
+		<size>3,1</size>
+		&crWhite;
+		&crGray;
+		&crLtSteel;
+		&crKhaki;
+		&crChocolate;
+		<sprite origin=" 0,0" offset="56">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-05"/>
+		</sprite>
+		<sprite origin="64,0" offset="40" opposite="true">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-05"/>
+		</sprite>
+		<sprite origin="128,0" offset="56">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-05"/>
+		</sprite>
+		<sprite origin="192,0" offset="40" opposite="true">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-05"/>
+		</sprite>
+	</contribution>
+
+<!--06-->
+	<contribution type="GenericStructure" id="{9F05E0C7-9BA8-469A-C477-D1B42684CAB9}-l0">
+		<group>Campus</group>
+		<structure>
+			<category byname="Public Education"/>
+		</structure>
+		<design>laboratory D</design>
+		<price>4000</price>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>580</base>
+		</population>
+		<height>2</height>
+		<computerCannotBuild/>
+		<size>2,3</size>
+		&crWhite;
+		&crGray;
+		&crLtSteel;
+		&crKhaki;
+		&crChocolate;
+		<sprite origin="256,0" offset="40">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-05"/>
+		</sprite>
+		<sprite origin="336,0" offset="48" opposite="true">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-05"/>
+		</sprite>
+	</contribution>
+
+<!--07-->
+	<contribution type="GenericStructure" id="{D94DC838-D617-4A72-A8EC-207EEEDA75E4}-n0">
+		<group>Campus</group>
+		<structure>
+			<category byname="Public Education"/>
+		</structure>
+		<design>lecture rooms C</design>
+		<price>3600</price>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>700</base>
+		</population>
+		<height>2</height>
+		<size>3,3</size>
+		<computerCannotBuild/>
+		&crWhite;
+		&crGray;
+		&crLtSteel;
+		&crKhaki;
+		&crChocolate;
+		<sprite origin="0,0" offset="40">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-06"/>
+		</sprite>
+		<sprite origin="96,0" offset="40">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-06"/>
+		</sprite>
+		<sprite origin="192,0" offset="40">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-06"/>
+		</sprite>
+		<sprite origin="288,0" offset="40">
+			<picture ref="{3999A8F3-9134-489B-C477-B0195147860E}-06"/>
+		</sprite>
+	</contribution>
+</plug-in>

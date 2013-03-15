@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Shared Train Images</title>
+	<author>Hima</author>
+	<homepage>http://suzukams.tripod.co.jp/FreeTrain/index.htm</homepage>
+
+	<contribution type="picture" id="Train100a">
+		<picture src="Train100a.bmp">
+		</picture>
+	</contribution>
+	<contribution type="picture" id="Train100b">
+		<picture src="Train100b.bmp">
+		</picture>
+	</contribution>
+	<contribution type="picture" id="Train100c">
+		<picture src="Train100c.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="113sho">
+		<picture src="113sho.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="165sho">
+		<picture src="165sho.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="103">
+		<picture src="103.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="103_L">
+		<picture src="103_L.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="103_h">
+		<picture src="103_h.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="103_Lh">
+		<picture src="103_Lh.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="n103">
+		<picture src="n103.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="n103_h">
+		<picture src="n103_h.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="415a">
+		<picture src="415a.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="415b">
+		<picture src="415b.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="485a">
+		<picture src="485a.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="485b">
+		<picture src="485b.bmp">
+		</picture>
+	</contribution>
+	<contribution type="picture" id="583a">
+		<picture src="583a.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="583b">
+		<picture src="583b.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="500a">
+		<picture src="500a.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="500b">
+		<picture src="500b.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="Train200a">
+		<picture src="Train200a.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="Train200b">
+		<picture src="Train200b.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="Train200Sa">
+		<picture src="Train200Sa.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="Train200Sb">
+		<picture src="Train200Sb.bmp">
+		</picture>
+	</contribution>
+	<contribution type="picture" id="Train500a">
+		<picture src="Train500a.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="Train500b">
+		<picture src="Train500b.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="shink700a">
+		<picture src="shink700a.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="shink700b">
+		<picture src="shink700b.bmp">
+		</picture>
+	</contribution>
+
+</plug-in>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<plug-in>
+	<title>JR北海道 車両キット</title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	
+	
+	<!-- JR北海道 711系 -->
+	<contribution type="trainCar" id="{63503270-F912-429C-BDB3-23E026BED21E}">
+		<class name="freetrain.framework.plugin.impl.ColoredTrainCarImpl" />
+		<colorMap picture="1" base="240,0,0" line1="255,248,244" line2="236,0,0" line3="240,0,0" />
+		<capacity>99</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{734ED621-D6D6-4F11-8485-12F057F387F0}">
+		<company>JR北海道</company>
+		<type>711系</type>
+		<name></name>
+		<author>名無しさん＠北海道さん</author>
+		<description>
+在来線初の交流専用車。3両で1ユニットを組み、普通列車や快速で運転されている。中には3扉化改造やロングシート化などが図られている車両もある。
+		</description>
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{63503270-F912-429C-BDB3-23E026BED21E}"/>
+		</composition>
+	</contribution>
+	
+	
+	
+	
+	<!-- 721系 -->
+	<contribution type="trainCar" id="{611CCBFC-82F8-4589-ACB3-CFE2A346488B}">
+		<class name="freetrain.framework.plugin.impl.ColoredTrainCarImpl" />
+		<colorMap picture="6" base="192,192,192" line1="0,255,0" line2="0,255,0" line3="192,192,192" />
+		<capacity>99</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{A7AC0005-8FCA-4e60-907C-2EF681CAC9AE}">
+		<company>JR北海道</company>
+		<type>721系</type>
+		<name></name>
+		<author>名無しさん＠北海道さん</author>
+		<description>
+輸送近代化などのため昭和63年に登場。空港アクセス列車にも使用されるため、大きな荷物を持った乗客に対応できるようになっている。
+		</description>
+		<price>1</price>
+		<speed>fast</speed>
+		<composition>
+			<body carRef="{611CCBFC-82F8-4589-ACB3-CFE2A346488B}"/>
+		</composition>
+	</contribution>
+	
+
+	<!-- JR北海道 キハ40系日高線 -->
+	<contribution type="trainCar" id="{185A56CF-FBAA-42ac-B684-B8B66800B9E7}">
+		<class name="freetrain.framework.plugin.impl.ColoredTrainCarImpl" />
+		<colorMap picture="1" base="255,255,255" line1="255,0,128" line2="0,128,255" line3="0,128,255" />
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{61B9A951-B0B2-4190-B35F-CA83E5B9DC0A}">
+		<company>JR北海道</company>
+		<type>キハ40系</type>
+		<name>日高線色</name>
+		<author>名無しさん＠北海道さん</author>
+		<description>
+北海道の日高線(苫小牧-様似)を走っている列車です。
+		</description>
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{185A56CF-FBAA-42ac-B684-B8B66800B9E7}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- JR北海道 キハ40系北海道色 -->
+	<contribution type="trainCar" id="{D7DBBF2A-BD25-417e-AFEE-4D400EE9AD3B}">
+		<class name="freetrain.framework.plugin.impl.ColoredTrainCarImpl" />
+		<colorMap picture="6" base="255,255,255" line1="128,255,0" line2="0,128,255" line3="0,128,255" />
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{09503B8F-57FE-44a5-B82A-5109F3044D8D}">
+		<company>JR北海道</company>
+		<type>キハ40系</type>
+		<name>北海道色</name>
+		<author>名無しさん＠北海道さん</author>
+		<description>
+北海道各地を走る列車です。
+		</description>
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{D7DBBF2A-BD25-417e-AFEE-4D400EE9AD3B}"/>
+		</composition>
+	</contribution>
+</plug-in>

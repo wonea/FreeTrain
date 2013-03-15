@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+<title>Nagoya City Transportation Bureau</title>
+<author>Namo</author>
+	<homepage>http://www.medias.co.jp/~bell8528/freetrain/</homepage>
+
+<!-- 名城線2000形先頭 -->
+<contribution type="trainCar" id="{DD0220E0-7438-4E8B-A17D-C6116089B1CF-1}">
+	<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+	<sprite origin="0,0">
+	<picture src="Nagoyacitykotsu_2000.bmp" />
+	</sprite>
+	<capacity>96</capacity>
+</contribution>
+
+<!-- 中間 -->
+<contribution type="trainCar" id="{DD0220E0-7438-4E8B-A17D-C6116089B1CF-2}">
+	<class name="freetrain.contributions.train.SymTrainCarImpl" />
+	<sprite origin="0,0">
+	<picture src="Nagoyacitykotsu_2000b.bmp" />
+	</sprite>
+	<capacity>107</capacity>
+</contribution>
+
+<!-- 後尾 -->
+<contribution type="trainCar" id="{DD0220E0-7438-4E8B-A17D-C6116089B1CF-3}">
+	<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+	<base carRef="{DD0220E0-7438-4E8B-A17D-C6116089B1CF-1}"/>
+</contribution>
+
+<contribution type="train" id="{DD0220E0-7438-4E8B-A17D-C6116089B1CF}">
+	<company>Nagoya City Transportation Bureau</company>
+	<type>2000 Series</type>
+	<name>Meijo Line / Line 4</name>
+	<price>100</price>
+	<speed>medium</speed>
+	<author>Namo</author>
+	<fare>100</fare>
+<description>
+平成元年の世界デザイン博を機に、名城線・4号線に導入した車両で、以後既存車両の買い換え用として毎年導入している。
+この車両は、従来からの車両設計の基本理念としているSpeedy Safety Silentの3Sを基礎にし、最新の技術を導入して、省エネルギー、省メンテナンスを実現するとともに乗客サービスの向上を図り、乗り心地の向上を始めとする居住性、快適性を追求した。
+</description>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{DD0220E0-7438-4E8B-A17D-C6116089B1CF-1}"/>
+<car char="中" ref="{DD0220E0-7438-4E8B-A17D-C6116089B1CF-2}"/>
+<car char="後" ref="{DD0220E0-7438-4E8B-A17D-C6116089B1CF-3}"/>
+
+
+<composition>前中中中中後</composition>
+</config>
+
+</contribution>
+
+<!-- 東山線5050形先頭 -->
+<contribution type="trainCar" id="{00263A5E-ED2F-4DDB-BBB9-11BF0269C563-1}">
+	<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+	<sprite origin="0,0">
+	<picture src="Nagoyacitykotsu_5050.bmp" />
+	</sprite>
+	<capacity>96</capacity>
+</contribution>
+
+<!-- 中間 -->
+<contribution type="trainCar" id="{00263A5E-ED2F-4DDB-BBB9-11BF0269C563-2}">
+	<class name="freetrain.contributions.train.SymTrainCarImpl" />
+	<sprite origin="0,0">
+	<picture src="Nagoyacitykotsu_5050b.bmp" />
+	</sprite>
+	<capacity>107</capacity>
+</contribution>
+
+<!-- 後尾 -->
+<contribution type="trainCar" id="{00263A5E-ED2F-4DDB-BBB9-11BF0269C563-3}">
+	<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+	<base carRef="{00263A5E-ED2F-4DDB-BBB9-11BF0269C563-1}"/>
+</contribution>
+
+<contribution type="train" id="{00263A5E-ED2F-4DDB-BBB9-11BF0269C563}">
+	<company>Nagoya City Transportation Bureau</company>
+	<type>5050 Series</type>
+	<name>Higashiyama Line</name>
+	<price>100</price>
+	<speed>medium</speed>
+	<author>Namo</author>
+	<fare>100</fare>
+<description>
+昭和55年に5000形車両（チョッパ制御車）を導入して車両の冷房化をすすめてきましたが、さらに省エネルギー、省メンテナンスを実現すべく新形式5050形車両を導入した。
+従来からの車両設計の基本理念としているSpeedy Safety Silentの3Sを基礎にし、乗り心地の向上を始めとする居住性、快適性を追求し、「人にやさしい車両」とした。
+</description>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{00263A5E-ED2F-4DDB-BBB9-11BF0269C563-1}"/>
+<car char="中" ref="{00263A5E-ED2F-4DDB-BBB9-11BF0269C563-2}"/>
+<car char="後" ref="{00263A5E-ED2F-4DDB-BBB9-11BF0269C563-3}"/>
+
+
+<composition>前中中中中後</composition>
+</config>
+
+</contribution>
+</plug-in>

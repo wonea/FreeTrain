@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Concrete pavement</title>
+	<author>Nanashi</author>
+	<homepage></homepage>
+	
+	<contribution type="road" id="{8DB8W0Q2-B695-4YD1-7694-9706FDF6FB8M}">
+		<class name="freetrain.contributions.road.A3RoadContribution" />
+		<name>Concrete pavement</name>
+		<description>Concrete pavement</description>
+		<picture src="con_road_a.bmp">
+			<override when="night" src="con_road_b.bmp"/>
+		</picture>
+	</contribution>
+</plug-in>

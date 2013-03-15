@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+	<!ENTITY unmannedStation1 "
+		<group>Shimomatsu Station 1</group>
+		<price>200</price>
+		<height>1</height>
+		<operationCost>10</operationCost>
+	">
+
+	<!ENTITY unmannedStation2 "
+		<group>Shimomatsu Station 2</group>
+		<price>200</price>
+		<height>1</height>
+		<operationCost>10</operationCost>
+	">
+]>
+<plug-in>
+	<title>Shimomatsu Station</title>
+	<author>HanabisiRekka</author>
+	<homepage></homepage>
+	
+	<depends on="org.kohsuke.freetrain.rail.electricPole" />
+
+	<contribution type="picture" id="{10000000-1000-2000-9C5A-D0EA1049D28D}">
+		<picture src="JRW-Simomatu3.bmp" />
+	</contribution>
+	<contribution type="picture" id="{10000000-1000-2001-9C5A-D0EA1049D28D}">
+		<picture src="JRW-Simomatu4.bmp" />
+	</contribution>
+	<contribution type="picture" id="{10000000-1000-2002-9C5A-D0EA1049D28D}">
+		<picture src="JRW-Simomatu5.bmp" />
+	</contribution>
+	<contribution type="picture" id="{10000000-1000-2003-9C5A-D0EA1049D28D}">
+		<picture src="JRW-Simomatu3-b.bmp" />
+	</contribution>
+
+	<contribution type="electricPole" id="{10000000-1000-2004-9C5A-D0EA1049D28D}">
+		<name>Shimomatsu Station (left stairs behind)</name>
+		<sprite>
+			<picture src="JRW-Simomatu6.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{10000000-1000-2005-9C5A-D0EA1049D28D}">
+		<name>Shimomatsu Station (right stairs behind)</name>
+		<sprite>
+			<picture src="JRW-Simomatu7.bmp"/>
+		</sprite>
+	</contribution>
+
+
+	
+	<contribution type="electricPole" id="{200000000-1000-3001-9C5A-D0EA1049D28D}">
+		<name>Shimomatsu Station building-A0</name>
+		<sprite>
+			<picture ref="{10000000-1000-2000-9C5A-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{200000000-1001-3001-9C5A-D0EA1049D28D}">
+		<name>Shimomatsu Station building-B</name>
+		<sprite>
+			<picture ref="{10000000-1000-2001-9C5A-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{200000000-1002-3001-9C5A-D0EA1049D28D}">
+		<name>Shimomatsu Station building-C</name>
+		<sprite>
+			<picture ref="{10000000-1000-2002-9C5A-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{200000000-1003-3001-9C5A-D0EA1049D28D}">
+		<name>Shimomatsu Sstation building-A0</name>
+		<sprite>
+			<picture ref="{10000000-1000-2003-9C5A-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+
+
+	<contribution type="picture" id="{s0000100-0001-1000-b400-123000000001}">
+		<picture src="JRW-Simomatu1.bmp" >
+			<override when="night" src="JRW-Simomatu1-n.bmp" /> 
+  		</picture>
+	</contribution>
+	<contribution type="picture" id="{s0000100-0002-1001-b400-123000000001}">
+		<picture src="JRW-Simomatu2.bmp" >
+			<override when="night" src="JRW-Simomatu2-n.bmp" /> 
+  		</picture>
+	</contribution>
+
+	
+	<contribution type="station" id="{s0000100-0001-1000-b400-12300000000A}">
+		&unmannedStation1;
+		<size>1,4</size>
+		<sprite origin="0,0" offset="11">
+			<picture ref="{s0000100-0001-1000-b400-123000000001}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{s0000100-0001-1000-b400-12300000000B}">
+		&unmannedStation1;
+		<size>4,1</size>
+		<sprite origin="80,0" offset="35">
+			<picture ref="{s0000100-0001-1000-b400-123000000001}"/>
+		</sprite>
+	</contribution>
+
+
+	<contribution type="station" id="{s0000100-0001-2202-b400-12300000000A}">
+		&unmannedStation2;
+		<size>1,4</size>
+		<sprite origin="0,0" offset="11">
+			<picture ref="{s0000100-0002-1001-b400-123000000001}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{s0000100-0001-2202-b400-12300000000B}">
+		&unmannedStation2;
+		<size>4,1</size>
+		<sprite origin="80,0" offset="35">
+			<picture ref="{s0000100-0002-1001-b400-123000000001}"/>
+		</sprite>
+	</contribution>
+
+
+
+</plug-in>

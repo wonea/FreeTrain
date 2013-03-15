@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Banking Module</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+	<contribution type="dockingContent" id="{8254AA45-A93B-4989-C477-3D3BD31F7A8D}">
+		<name>Bankbook</name>
+		<menu name="Bankbook" location="view" />
+		<class name="freetrain.views.bank.BankbookWindow" codebase="bin/Debug/Bank.dll" />
+	</contribution>
+	<contribution type="menu" id="{AD26D946-C86C-4904-C477-C79CDAAADBD6}">
+		<class name="freetrain.views.bank.BankPlugIn" codebase="bin/Debug/Bank.dll" />
+		<settings>
+			<businessHour open="9" close="17"/>
+			<deposit available="true" cancelable="true"/>
+			<debt available="true" repayable="true"/>
+		</settings>
+	</contribution>
+</plug-in>

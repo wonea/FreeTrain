@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Tokyo Metropolitan Bureau of Transportation</title>
+ 	<homepage>http://www14.big.or.jp/~ayase/freetrain/</homepage>
+ 	
+ 	<!-- イメージ画像定義 -->
+ 	<!-- 都電車両（東京市電） -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-TODEN7500}">
+		<picture src="toden.bmp" />
+	</contribution>
+
+	<!-- 車両定義 -->
+	<!-- 都電車両（7500系） -->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-TODEN7500}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-TODEN7500}" />
+		</sprite>
+		<capacity>50</capacity>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-T01}">
+		<company>Tokyo Metropolitan Bureau of Transportation</company>
+		<type>Toden</type>
+		<name>7500 Series</name>
+		<author>Hiro Ayase</author>
+		<description>Tokyo Metropolitan Bureau of Transportation's streetcar. Normally operated as a single car.
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<!-- <class name="freetrain.contributions.train.PatternTrainImpl"/> -->
+		<composition>
+			<body carRef="{FreeTrain-AYASE-Hiro-TrainImg-TODEN7500}"/>
+		</composition>
+	</contribution>
+</plug-in>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+
+<!ENTITY TennisCourtData '
+	<group>Tennis Court</group>
+	<price>100</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.ShopperPopulation"/>
+		<base>10</base>
+	</population>
+'>
+
+
+]>
+<plug-in>
+	<title>Tennis Court</title>
+	<author>RougetsuRouya</author>
+	<homepage></homepage>
+
+
+	<contribution type="picture" id="{TennisCourt-picture-C000-0000-B690FE5A-狼月}">
+		<picture src="TennisCourt.bmp"/>
+	</contribution>
+
+
+	<contribution type="GenericStructure" id="{TennisCourt-commercial-C000-000a-B690FE5A-狼月}">
+		<name>Tennis court</name>
+				&TennisCourtData;
+		<structure>
+			<category byname="Tennis Courts"/>
+		</structure>
+		<sprite origin="0,0" offset="0">
+			<picture ref="{TennisCourt-picture-C000-0000-B690FE5A-狼月}" />
+		</sprite>
+		<sprite origin="32,0" offset="0">
+			<picture ref="{TennisCourt-picture-C000-0000-B690FE5A-狼月}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="GenericStructure" id="{TennisCourt-commercial-C000-000c-B690FE5A-狼月}">
+		<name>Tennis court</name>
+				&TennisCourtData;
+		<structure>
+			<category byname="Tennis Courts"/>
+		</structure>
+		<sprite origin="64,0" offset="0">
+			<picture ref="{TennisCourt-picture-C000-0000-B690FE5A-狼月}" />
+		</sprite>
+		<sprite origin="96,0" offset="0">
+			<picture ref="{TennisCourt-picture-C000-0000-B690FE5A-狼月}" />
+		</sprite>
+	</contribution>
+
+
+
+	<contribution type="GenericStructure" id="{TennisCourt-commercial-C000-000e-B690FE5A-狼月}">
+		<name>Tennis court</name>
+				&TennisCourtData;
+		<structure>
+			<category byname="Tennis Courts"/>
+		</structure>
+		<sprite origin="128,0" offset="0">
+			<picture ref="{TennisCourt-picture-C000-0000-B690FE5A-狼月}" />
+		</sprite>
+		<sprite origin="160,0" offset="0">
+			<picture ref="{TennisCourt-picture-C000-0000-B690FE5A-狼月}" />
+		</sprite>
+	</contribution>
+
+
+</plug-in>

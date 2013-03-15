@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<plug-in>
+	<title></title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	
+	
+	
+	<!-- 小田急通勤車タイプ -->
+	<contribution type="trainCar" id="{B333C320-9689-48c8-9DA9-4D35C4B5929E}">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="OER.bmp" origin="0,0"/>
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{2F672A7D-537E-4f71-ACD1-EEC76D6CAEC0}">
+		<company>小田急電鉄</company>
+		<type>通勤車タイプ</type>
+		<name></name>
+		<author>無名の人さん</author>
+		<description>
+小田急電鉄の通勤車タイプ。
+		</description>
+		<price>1000</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{B333C320-9689-48c8-9DA9-4D35C4B5929E}"/>
+		</composition>
+	</contribution>
+</plug-in>

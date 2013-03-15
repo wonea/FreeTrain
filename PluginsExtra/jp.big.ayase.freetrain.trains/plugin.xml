@@ -1,0 +1,1667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Japanese National Railways Old-Fashioned Trains</title>
+ 	<homepage>http://www14.big.or.jp/~ayase/freetrain/</homepage>
+ 	
+ 	<!-- イメージ画像定義 -->
+ 	<!-- 客　車　スハ 42(青) -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-SUHA42}">
+		<picture src="suha42.bmp" />
+	</contribution>
+	<!-- 客　車　オユ 10(青) -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-OYU10}">
+		<picture src="oyu10.bmp" />
+	</contribution>
+	<!-- 客　車　マニ 60(青) -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-MANI60}">
+		<picture src="mani60.bmp" />
+	</contribution>
+	
+	<!-- 客　車　ナハネフ 21 -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-BT20-1}">
+		<picture src="bluetrain20a.bmp" />
+	</contribution>
+	<!-- 客　車　ナハネ 20 -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-BT20-2}">
+		<picture src="bluetrain20b.bmp" />
+	</contribution>
+	<!-- 客　車　カニ 21 -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-BT20-3}">
+		<picture src="bluetrain20c.bmp" />
+	</contribution>
+	<!-- 客　車　ナハネフ 23 -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-BT20-4}">
+		<picture src="bluetrain20d.bmp" />
+	</contribution>
+
+	<!-- 貨　車　ワキ 5000(茶) -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-WAKI-1}">
+		<picture src="waki_a.bmp" />
+	</contribution>
+	<!-- 貨　車　ワキ 10000(緑) -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-WAKI-2}">
+		<picture src="waki_b.bmp" />
+	</contribution>
+	<!-- 貨　車　ワキ 10000(青) -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-WAKI-3}">
+		<picture src="waki_c.bmp" />
+	</contribution>
+	
+	<!-- 貨　車　タキ 3000(黒) -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-TAKI-1}">
+		<picture src="taki_a.bmp" />
+	</contribution>
+	
+	<!-- 貨　車　コキフ 5500(国鉄コンテナ) -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-KOKI-1}">
+		<picture src="koki_a1.bmp" />
+	</contribution>
+	
+	<!-- 貨　車　コキ 5000(国鉄コンテナ) -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-KOKI-2}">
+		<picture src="koki_a2.bmp" />
+	</contribution>
+
+	<!-- 貨　車　コキ 5000(国鉄コンテナ) -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-KOKI-3}">
+		<picture src="koki_a3.bmp" />
+	</contribution>
+
+
+	<!-- Electric Freight Train　Super Rail CargoＭｃ車 -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-SRC-1}">
+		<picture src="src_a.bmp" />
+	</contribution>
+	
+	<!-- Electric Freight Train　Super Rail CargoＭ車 -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-SRC-2}">
+		<picture src="src_b.bmp" />
+	</contribution>
+
+	<!-- Electric Freight Train　Super Rail CargoＴ車 -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-SRC-3}">
+		<picture src="src_c.bmp" />
+	</contribution>
+	
+	<!-- ディーゼル機関車 DD16 -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-DD16-1}">
+		<picture src="DD16.bmp" />
+	</contribution>
+	
+	<!-- 蒸気機関車 C11 -->
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-TrainCarImg-C11-1}">
+		<picture src="C11.bmp" />
+	</contribution>
+	
+	
+ 	<!-- 車両定義 -->
+
+	<!-- 有蓋車　ワキ 5000(茶) -->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-WAKI5000TYA}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-WAKI-1}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+
+	<!-- 有蓋車　ワキ 10000(緑) -->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-WAKI10000GRN}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-WAKI-2}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- 有蓋車　ワキ 10000(青) -->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-WAKI10000SLV}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-WAKI-3}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- タンク車　タキ 3000(黒) -->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-TAKI8000BLK}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-TAKI-1}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+
+	<!-- コンテナ車　コキフ 5500(国鉄コンテナ) 向き：正-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-KOKI5000JNR-1a}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-KOKI-1}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- コンテナ車　コキフ 5500(国鉄コンテナ) 向き：逆-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-KOKI5000JNR-1b}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-AYASE-Hiro-TrainImg-KOKI5000JNR-1a}"/>
+	</contribution>
+
+	<!-- コンテナ車　コキ 5000(国鉄コンテナ) -->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-KOKI5000JNR-2}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-KOKI-2}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- コンテナ車　コキ 5000(国鉄コンテナ) -->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-KOKI5000JNR-3}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-KOKI-3}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- コンテナ車　コキフ 10000(国鉄コンテナ) 向き：正-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-KOKI10000JNR-1a}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="148,100, 72" to=" 50, 92,170"/>
+				<map from="138, 72, 50" to=" 50, 50,128"/>
+				<map from="110, 56, 40" to=" 26, 26, 74"/>
+				<map from="158, 86, 20" to=" 50, 50,128"/>
+				<map from="108, 58, 44" to=" 36, 36, 72"/>
+				<map from="132, 50, 16" to=" 32, 32, 64"/>
+				<map from=" 72, 38, 18" to=" 24, 24, 48"/>
+			</spriteType>
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-KOKI-1}" />
+		</sprite>
+		<capacity>144</capacity>
+	</contribution>
+	
+	<!-- コンテナ車　コキフ 10000(国鉄コンテナ) 向き：逆-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-KOKI10000JNR-1b}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-AYASE-Hiro-TrainImg-KOKI10000JNR-1a}"/>
+	</contribution>
+	
+	<!-- コンテナ車　コキ 10000(国鉄コンテナ) -->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-KOKI10000JNR-2}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="148,100, 72" to=" 50, 92,170"/>
+				<map from="138, 72, 50" to=" 50, 50,128"/>
+				<map from="110, 56, 40" to=" 26, 26, 74"/>
+				<map from="158, 86, 20" to=" 50, 50,128"/>
+				<map from="108, 58, 44" to=" 36, 36, 72"/>
+				<map from="132, 50, 16" to=" 32, 32, 64"/>
+				<map from=" 72, 38, 18" to=" 24, 24, 48"/>
+			</spriteType>
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-KOKI-2}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- コンテナ車　コキ 10000(国鉄コンテナ) -->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-KOKI10000JNR-3}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="148,100, 72" to=" 50, 92,170"/>
+				<map from="138, 72, 50" to=" 50, 50,128"/>
+				<map from="110, 56, 40" to=" 26, 26, 74"/>
+				<map from="158, 86, 20" to=" 50, 50,128"/>
+				<map from="108, 58, 44" to=" 36, 36, 72"/>
+				<map from="132, 50, 16" to=" 32, 32, 64"/>
+				<map from=" 72, 38, 18" to=" 24, 24, 48"/>
+			</spriteType>
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-KOKI-3}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+
+	<!-- Electric Freight Train　Super Rail Cargo　Ｍｃ車　向き：正-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-SRC-Mc1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-SRC-1}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- Electric Freight Train　Super Rail Cargo　Ｍｃ車　向き：逆-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-SRC-Mc2}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-AYASE-Hiro-TrainImg-SRC-Mc1}"/>
+	</contribution>
+
+	<!-- Electric Freight Train　Super Rail Cargo　Ｍ車　-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-SRC-M1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-SRC-2}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- Electric Freight Train　Super Rail Cargo　Ｔ車-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-SRC-T1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-SRC-3}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+
+	
+	<!-- 客　車　スハ 42(青) -->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-SUHA42BLU}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-SUHA42}" />
+		</sprite>
+		<capacity>144</capacity>
+	</contribution>
+	
+	<!-- 客　車　オユ 10(青) -->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-OYU10BLU}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-OYU10}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- 客　車　マニ 60(青) -->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-MANI60BLU}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-MANI60}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- 客　車　スハ 42(茶) -->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-SUHA42TYA}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from=" 66, 66,150" to="104, 64, 44"/>
+				<map from=" 26, 26, 74" to=" 58, 44, 28"/>
+				<map from=" 38, 36,102" to=" 76, 52, 32"/>
+			</spriteType>
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-SUHA42}" />
+		</sprite>
+		<capacity>144</capacity>
+	</contribution>
+	
+	<!-- 客　車　オユ 10(茶) -->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-OYU10TYA}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from=" 66, 66,150" to="104, 64, 44"/>
+				<map from=" 26, 26, 74" to=" 58, 44, 28"/>
+				<map from=" 38, 36,102" to=" 76, 52, 32"/>
+			</spriteType>
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-OYU10}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- 客　車　マニ 60(茶) -->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-MANI60TYA}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from=" 66, 66,150" to="104, 64, 44"/>
+				<map from=" 26, 26, 74" to=" 58, 44, 28"/>
+				<map from=" 38, 36,102" to=" 76, 52, 32"/>
+			</spriteType>
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-MANI60}" />
+		</sprite>
+
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- 客　車　ナハネフ 21 -->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-1a}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-BT20-1}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+	<!-- 客　車　ナハネフ 21　向き：逆-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-1b}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-1a}"/>
+	</contribution>
+	
+	<!-- 客　車　ナハネ 20 -->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-2}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-BT20-2}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+	
+	<!-- 客　車　カニ 21 -->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-3a}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-BT20-3}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	<!-- 客　車　カニ 21　向き：逆-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-3b}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-3a}"/>
+	</contribution>
+	
+	<!-- 客　車　ナハネフ 23 -->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-4a}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-BT20-4}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+	<!-- 客　車　ナハネフ 23　向き：逆-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-4b}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-4a}"/>
+	</contribution>
+	
+
+	<!-- 電気機関車 -->
+	<!-- EF62-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-EF62-0000}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="EF62.bmp" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- EF64-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-EF64-0000}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="EF64.bmp" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- EF65 特急色-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-EF65-0001}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="EF65.bmp" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- EF71-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-EF71-0000}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="EF71.bmp" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+
+	<!-- EF81-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-EF81-0000}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="EF81.bmp" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- EF15-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-EF15-0000}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="EF15.bmp" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+
+	<!-- ディーゼル機関車 -->
+	<!-- DD51-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-DD51-0000}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="DD51.bmp" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- DD16　向き：正-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-DD16-A}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-DD16-1}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- DD16　向き：逆-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-DD16-B}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-AYASE-Hiro-TrainImg-DD16-A}"/>
+	</contribution>
+	
+	<!-- C11　向き：正-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-C11-A}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-AYASE-Hiro-TrainCarImg-C11-1}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- C11　向き：逆-->
+	<contribution type="trainCar" id="{FreeTrain-AYASE-Hiro-TrainImg-C11-B}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-AYASE-Hiro-TrainImg-C11-A}"/>
+	</contribution>
+
+	<!-- Definition of Pallet Freight Train -->
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-K01-01}">
+		<company>JR Freight</company>
+		<type>EF 64</type>
+		<name>Pallet Freight Train</name>
+		<author>Hiro Ayase</author>
+		<description>Freight train for carrying pallets. Pulled by
+either one or two EF 64 engines.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-EF64-0000}"/>
+			<car char="Ｗ" ref="{FreeTrain-AYASE-Hiro-TrainImg-WAKI5000TYA}"/>
+			<car char="Ｇ" ref="{FreeTrain-AYASE-Hiro-TrainImg-WAKI10000GRN}"/>
+			<car char="Ｓ" ref="{FreeTrain-AYASE-Hiro-TrainImg-WAKI10000SLV}"/>
+			
+			<composition>＜</composition>
+			<composition>＜Ｗ</composition>
+			<composition>＜ＳＧ</composition>
+			<composition>＜ＷＳＧ</composition>
+			<composition>＜ＧＷＳＧ</composition>
+			<composition>＜ＷＧＷＳＧ</composition>
+			<composition>＜ＳＷＷＷＳＧ</composition>
+			<composition>＜ＧＳＷＷＧＳＧ</composition>
+			<composition>＜ＷＷＧＳＳＷＧＧ</composition>
+			<composition>＜＜ＷＧＳＳＷＷＷＧ</composition>
+			<composition>＜＜ＷＷＷＧＧＧＳＳＧ</composition>
+			<composition>＜＜ＷＷＷＷＧＧＧＳＳＧ</composition>
+			<composition>＜＜ＳＷＷＷＷＧＧＧＳＳＧ</composition>
+			<composition>＜＜ＳＳＷＷＷＷＧＧＧＳＳＧ</composition>
+			<composition>＜＜ＳＳＳＷＷＷＷＧＧＧＧＳＧ</composition>
+			<composition>＜＜ＳＳＳＳＷＷＷＷＧＧＧＧＳＧ</composition>
+			<composition>＜＜ＳＳＳＳＳＷＷＷＷＧＧＧＧＳＧ</composition>
+		</config>
+	</contribution>
+	
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-K01-02}">
+		<company>JR Freight</company>
+		<type>EF 71</type>
+		<name>Pallet Freight Train</name>
+		<author>Hiro Ayase</author>
+		<description>Freight train for carrying pallets. Pulled by
+either one or two EF 71 engines.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-EF71-0000}"/>
+			<car char="Ｗ" ref="{FreeTrain-AYASE-Hiro-TrainImg-WAKI5000TYA}"/>
+			<car char="Ｇ" ref="{FreeTrain-AYASE-Hiro-TrainImg-WAKI10000GRN}"/>
+			<car char="Ｓ" ref="{FreeTrain-AYASE-Hiro-TrainImg-WAKI10000SLV}"/>
+			
+			<composition>＜</composition>
+			<composition>＜Ｗ</composition>
+			<composition>＜ＳＧ</composition>
+			<composition>＜ＷＳＧ</composition>
+			<composition>＜ＧＷＳＧ</composition>
+			<composition>＜ＷＧＷＳＧ</composition>
+			<composition>＜ＳＷＷＷＳＧ</composition>
+			<composition>＜ＧＳＷＷＧＳＧ</composition>
+			<composition>＜ＷＷＧＳＳＷＧＧ</composition>
+			<composition>＜＜ＷＧＳＳＷＷＷＧ</composition>
+			<composition>＜＜ＷＷＷＧＧＧＳＳＧ</composition>
+			<composition>＜＜ＷＷＷＷＧＧＧＳＳＧ</composition>
+			<composition>＜＜ＳＷＷＷＷＧＧＧＳＳＧ</composition>
+			<composition>＜＜ＳＳＷＷＷＷＧＧＧＳＳＧ</composition>
+			<composition>＜＜ＳＳＳＷＷＷＷＧＧＧＧＳＧ</composition>
+			<composition>＜＜ＳＳＳＳＷＷＷＷＧＧＧＧＳＧ</composition>
+			<composition>＜＜ＳＳＳＳＳＷＷＷＷＧＧＧＧＳＧ</composition>
+		</config>
+	</contribution>
+	
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-K01-03}">
+		<company>JR Freight</company>
+		<type>DD 51</type>
+		<name>Pallet Freight Train</name>
+		<author>Hiro Ayase</author>
+		<description>Freight train for carrying pallets. Pulled by
+either one or two EF 51 engines.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-DD51-0000}"/>
+			<car char="Ｗ" ref="{FreeTrain-AYASE-Hiro-TrainImg-WAKI5000TYA}"/>
+			<car char="Ｇ" ref="{FreeTrain-AYASE-Hiro-TrainImg-WAKI10000GRN}"/>
+			<car char="Ｓ" ref="{FreeTrain-AYASE-Hiro-TrainImg-WAKI10000SLV}"/>
+			
+			<composition>＜</composition>
+			<composition>＜Ｗ</composition>
+			<composition>＜ＳＧ</composition>
+			<composition>＜ＷＳＧ</composition>
+			<composition>＜ＧＷＳＧ</composition>
+			<composition>＜ＷＧＷＳＧ</composition>
+			<composition>＜ＳＷＷＷＳＧ</composition>
+			<composition>＜ＧＳＷＷＧＳＧ</composition>
+			<composition>＜ＷＷＧＳＳＷＧＧ</composition>
+			<composition>＜＜ＷＧＳＳＷＷＷＧ</composition>
+			<composition>＜＜ＷＷＷＧＧＧＳＳＧ</composition>
+			<composition>＜＜ＷＷＷＷＧＧＧＳＳＧ</composition>
+			<composition>＜＜ＳＷＷＷＷＧＧＧＳＳＧ</composition>
+			<composition>＜＜ＳＳＷＷＷＷＧＧＧＳＳＧ</composition>
+			<composition>＜＜ＳＳＳＷＷＷＷＧＧＧＧＳＧ</composition>
+			<composition>＜＜ＳＳＳＳＷＷＷＷＧＧＧＧＳＧ</composition>
+			<composition>＜＜ＳＳＳＳＳＷＷＷＷＧＧＧＧＳＧ</composition>
+		</config>
+	</contribution>
+	
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-K01-04}">
+		<company>JR Freight</company>
+		<type>EF 65 Special Express Colors</type>
+		<name>Pallet Freight Train</name>
+		<author>Hiro Ayase</author>
+		<description>Freight train for carrying pallets. Pulled by
+either one or two EF 65 engines.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-EF65-0001}"/>
+			<car char="Ｗ" ref="{FreeTrain-AYASE-Hiro-TrainImg-WAKI5000TYA}"/>
+			<car char="Ｇ" ref="{FreeTrain-AYASE-Hiro-TrainImg-WAKI10000GRN}"/>
+			<car char="Ｓ" ref="{FreeTrain-AYASE-Hiro-TrainImg-WAKI10000SLV}"/>
+			
+			<composition>＜</composition>
+			<composition>＜Ｗ</composition>
+			<composition>＜ＳＧ</composition>
+			<composition>＜ＷＳＧ</composition>
+			<composition>＜ＧＷＳＧ</composition>
+			<composition>＜ＷＧＷＳＧ</composition>
+			<composition>＜ＳＷＷＷＳＧ</composition>
+			<composition>＜ＧＳＷＷＧＳＧ</composition>
+			<composition>＜ＷＷＧＳＳＷＧＧ</composition>
+			<composition>＜＜ＷＧＳＳＷＷＷＧ</composition>
+			<composition>＜＜ＷＷＷＧＧＧＳＳＧ</composition>
+			<composition>＜＜ＷＷＷＷＧＧＧＳＳＧ</composition>
+			<composition>＜＜ＳＷＷＷＷＧＧＧＳＳＧ</composition>
+			<composition>＜＜ＳＳＷＷＷＷＧＧＧＳＳＧ</composition>
+			<composition>＜＜ＳＳＳＷＷＷＷＧＧＧＧＳＧ</composition>
+			<composition>＜＜ＳＳＳＳＷＷＷＷＧＧＧＧＳＧ</composition>
+			<composition>＜＜ＳＳＳＳＳＷＷＷＷＧＧＧＧＳＧ</composition>
+		</config>
+	</contribution>
+
+	<!-- Definition of Tank Freight Train -->
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-K02-01}">
+		<company>JR Freight</company>
+		<type>DD 51</type>
+		<name>Tank Freight Train</name>
+		<author>Hiro Ayase</author>
+		<description>Freight train for carrying gasoline and other
+volatile liquid fuel. Pulled by either one or two DD 51 engines.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-DD51-0000}"/>
+			<car char="Ｔ" ref="{FreeTrain-AYASE-Hiro-TrainImg-TAKI8000BLK}"/>
+			
+			<composition>＜</composition>
+			<composition>＜Ｔ</composition>
+			<composition>＜ＴＴ</composition>
+			<composition>＜ＴＴＴ</composition>
+			<composition>＜ＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-K02-02}">
+		<company>JR Freight</company>
+		<type>EF 64</type>
+		<name>Tank Freight Train</name>
+		<author>Hiro Ayase</author>
+		<description>Freight train for carrying gasoline and other
+volatile liquid fuel. Pulled by either one or two EF 64 engines.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-EF64-0000}"/>
+			<car char="Ｔ" ref="{FreeTrain-AYASE-Hiro-TrainImg-TAKI8000BLK}"/>
+			
+			<composition>＜</composition>
+			<composition>＜Ｔ</composition>
+			<composition>＜ＴＴ</composition>
+			<composition>＜ＴＴＴ</composition>
+			<composition>＜ＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-K02-03}">
+		<company>JR Freight</company>
+		<type>EF 71</type>
+		<name>Tank Freight Train</name>
+		<author>Hiro Ayase</author>
+		<description>Freight train for carrying gasoline and other
+volatile liquid fuel. Pulled by either one or two EF 71 engines.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-EF71-0000}"/>
+			<car char="Ｔ" ref="{FreeTrain-AYASE-Hiro-TrainImg-TAKI8000BLK}"/>
+			
+			<composition>＜</composition>
+			<composition>＜Ｔ</composition>
+			<composition>＜ＴＴ</composition>
+			<composition>＜ＴＴＴ</composition>
+			<composition>＜ＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-K02-04}">
+		<company>JR Freight</company>
+		<type>EF 15</type>
+		<name>Tank Freight Train</name>
+		<author>Hiro Ayase</author>
+		<description>Freight train for carrying gasoline and other
+volatile liquid fuel. Pulled by either one or two EF 15 engines.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-EF15-0000}"/>
+			<car char="Ｔ" ref="{FreeTrain-AYASE-Hiro-TrainImg-TAKI8000BLK}"/>
+			
+			<composition>＜</composition>
+			<composition>＜Ｔ</composition>
+			<composition>＜ＴＴ</composition>
+			<composition>＜ＴＴＴ</composition>
+			<composition>＜ＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+		</config>
+	</contribution>
+	
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-K02-05}">
+		<company>JR Freight</company>
+		<type>EF 65 Limited Express Colors</type>
+		<name>Tank Freight Train</name>
+		<author>Hiro Ayase</author>
+		<description>Freight train for carrying gasoline and other
+volatile liquid fuel. Pulled by either one or two EF 65 engines.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-EF65-0001}"/>
+			<car char="Ｔ" ref="{FreeTrain-AYASE-Hiro-TrainImg-TAKI8000BLK}"/>
+			
+			<composition>＜</composition>
+			<composition>＜Ｔ</composition>
+			<composition>＜ＴＴ</composition>
+			<composition>＜ＴＴＴ</composition>
+			<composition>＜ＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴＴＴ</composition>
+			<composition>＜ＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+			<composition>＜＜ＴＴＴＴＴＴＴＴＴＴＴＴＴＴＴ</composition>
+		</config>
+	</contribution>
+	
+	<!-- Definition of Container Freight Train -->
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-K03-01}">
+		<company>JR Freight</company>
+		<type>EF 64</type>
+		<name>Container Freight Train</name>
+		<author>Hiro Ayase</author>
+		<description>Freight train for carrying containers. Pulled by either one or two EF 64 engines.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-EF64-0000}"/>
+			<car char="Ｆ" ref="{FreeTrain-AYASE-Hiro-TrainImg-KOKI10000JNR-1a}"/>
+			<car char="Ｅ" ref="{FreeTrain-AYASE-Hiro-TrainImg-KOKI10000JNR-1b}"/>
+			<car char="Ｔ" ref="{FreeTrain-AYASE-Hiro-TrainImg-KOKI10000JNR-2}"/>
+			<car char="Ｓ" ref="{FreeTrain-AYASE-Hiro-TrainImg-KOKI10000JNR-3}"/>
+			
+			<composition>＜</composition>
+			<composition>＜Ｆ</composition>
+			<composition>＜ＴＦ</composition>
+			<composition>＜ＴＴＥ</composition>
+			<composition>＜ＴＳＴＦ</composition>
+			<composition>＜ＴＴＴＴＥ</composition>
+			<composition>＜ＴＴＳＴＴＦ</composition>
+			<composition>＜ＴＴＳＴＳＴＥ</composition>
+			<composition>＜ＴＴＴＳＴＳＴＦ</composition>
+			<composition>＜＜ＦＴＴＳＳＴＴＦ</composition>
+			<composition>＜＜ＥＴＳＴＴＳＴＴＥ</composition>
+			<composition>＜＜ＦＴＴＴＳＳＴＳＴＦ</composition>
+			<composition>＜＜ＥＴＴＴＴＳＴＳＴＴＥ</composition>
+			<composition>＜＜ＦＴＳＴＳＴＴＳＳＴＴＦ</composition>
+			<composition>＜＜ＥＴＴＳＴＴＳＴＴＳＳＴＥ</composition>
+			<composition>＜＜ＦＴＳＴＴＳＴＴＳＳＴＳＴＦ</composition>
+			<composition>＜＜ＥＴＴＳＴＴＴＳＴＴＳＴＴＴＥ</composition>
+		</config>
+	</contribution>
+	
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-K03-02}">
+		<company>JR Freight</company>
+		<type>DD 51</type>
+		<name>Container Freight Train</name>
+		<author>Hiro Ayase</author>
+		<description>Freight train for carrying containers. Pulled by either one or two DD 51 engines.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-DD51-0000}"/>
+			<car char="Ｆ" ref="{FreeTrain-AYASE-Hiro-TrainImg-KOKI5000JNR-1a}"/>
+			<car char="Ｅ" ref="{FreeTrain-AYASE-Hiro-TrainImg-KOKI5000JNR-1b}"/>
+			<car char="Ｔ" ref="{FreeTrain-AYASE-Hiro-TrainImg-KOKI5000JNR-2}"/>
+			<car char="Ｓ" ref="{FreeTrain-AYASE-Hiro-TrainImg-KOKI5000JNR-3}"/>
+			
+			<composition>＜</composition>
+			<composition>＜Ｆ</composition>
+			<composition>＜ＴＦ</composition>
+			<composition>＜ＴＴＥ</composition>
+			<composition>＜ＴＳＴＦ</composition>
+			<composition>＜ＴＴＴＴＥ</composition>
+			<composition>＜ＴＴＳＴＴＦ</composition>
+			<composition>＜ＴＴＳＴＳＴＥ</composition>
+			<composition>＜ＴＴＴＳＴＳＴＦ</composition>
+			<composition>＜＜ＦＴＴＳＳＴＴＦ</composition>
+			<composition>＜＜ＥＴＳＴＴＳＴＴＥ</composition>
+			<composition>＜＜ＦＴＴＴＳＳＴＳＴＦ</composition>
+			<composition>＜＜ＥＴＴＴＴＳＴＳＴＴＥ</composition>
+			<composition>＜＜ＦＴＳＴＳＴＴＳＳＴＴＦ</composition>
+			<composition>＜＜ＥＴＴＳＴＴＳＴＴＳＳＴＥ</composition>
+			<composition>＜＜ＦＴＳＴＴＳＴＴＳＳＴＳＴＦ</composition>
+			<composition>＜＜ＥＴＴＳＴＴＴＳＴＴＳＴＴＴＥ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-K03-03}">
+		<company>JR Freight</company>
+		<type>EF 65 Express Colors</type>
+		<name>Container Freight Train</name>
+		<author>Hiro Ayase</author>
+		<description>Freight train for carrying containers. Pulled by either one or two EF 65 engines.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-EF65-0001}"/>
+			<car char="Ｆ" ref="{FreeTrain-AYASE-Hiro-TrainImg-KOKI10000JNR-1a}"/>
+			<car char="Ｅ" ref="{FreeTrain-AYASE-Hiro-TrainImg-KOKI10000JNR-1b}"/>
+			<car char="Ｔ" ref="{FreeTrain-AYASE-Hiro-TrainImg-KOKI10000JNR-2}"/>
+			<car char="Ｓ" ref="{FreeTrain-AYASE-Hiro-TrainImg-KOKI10000JNR-3}"/>
+			
+			<composition>＜</composition>
+			<composition>＜Ｆ</composition>
+			<composition>＜ＴＦ</composition>
+			<composition>＜ＴＴＥ</composition>
+			<composition>＜ＴＳＴＦ</composition>
+			<composition>＜ＴＴＴＴＥ</composition>
+			<composition>＜ＴＴＳＴＴＦ</composition>
+			<composition>＜ＴＴＳＴＳＴＥ</composition>
+			<composition>＜ＴＴＴＳＴＳＴＦ</composition>
+			<composition>＜＜ＦＴＴＳＳＴＴＦ</composition>
+			<composition>＜＜ＥＴＳＴＴＳＴＴＥ</composition>
+			<composition>＜＜ＦＴＴＴＳＳＴＳＴＦ</composition>
+			<composition>＜＜ＥＴＴＴＴＳＴＳＴＴＥ</composition>
+			<composition>＜＜ＦＴＳＴＳＴＴＳＳＴＴＦ</composition>
+			<composition>＜＜ＥＴＴＳＴＴＳＴＴＳＳＴＥ</composition>
+			<composition>＜＜ＦＴＳＴＴＳＴＴＳＳＴＳＴＦ</composition>
+			<composition>＜＜ＥＴＴＳＴＴＴＳＴＴＳＴＴＴＥ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-K03-04}">
+		<company>JR Freight</company>
+		<type>EF 15</type>
+		<name>Container Freight Train</name>
+		<author>Hiro Ayase</author>
+		<description>Freight train for carrying containers. Pulled by either one or two EF 15 engines.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-EF15-0000}"/>
+			<car char="Ｆ" ref="{FreeTrain-AYASE-Hiro-TrainImg-KOKI5000JNR-1a}"/>
+			<car char="Ｅ" ref="{FreeTrain-AYASE-Hiro-TrainImg-KOKI5000JNR-1b}"/>
+			<car char="Ｔ" ref="{FreeTrain-AYASE-Hiro-TrainImg-KOKI5000JNR-2}"/>
+			<car char="Ｓ" ref="{FreeTrain-AYASE-Hiro-TrainImg-KOKI5000JNR-3}"/>
+			
+			<composition>＜</composition>
+			<composition>＜Ｆ</composition>
+			<composition>＜ＴＦ</composition>
+			<composition>＜ＴＴＥ</composition>
+			<composition>＜ＴＳＴＦ</composition>
+			<composition>＜ＴＴＴＴＥ</composition>
+			<composition>＜ＴＴＳＴＴＦ</composition>
+			<composition>＜ＴＴＳＴＳＴＥ</composition>
+			<composition>＜ＴＴＴＳＴＳＴＦ</composition>
+			<composition>＜＜ＦＴＴＳＳＴＴＦ</composition>
+			<composition>＜＜ＥＴＳＴＴＳＴＴＥ</composition>
+			<composition>＜＜ＦＴＴＴＳＳＴＳＴＦ</composition>
+			<composition>＜＜ＥＴＴＴＴＳＴＳＴＴＥ</composition>
+			<composition>＜＜ＦＴＳＴＳＴＴＳＳＴＴＦ</composition>
+			<composition>＜＜ＥＴＴＳＴＴＳＴＴＳＳＴＥ</composition>
+			<composition>＜＜ＦＴＳＴＴＳＴＴＳＳＴＳＴＦ</composition>
+			<composition>＜＜ＥＴＴＳＴＴＴＳＴＴＳＴＴＴＥ</composition>
+		</config>
+	</contribution>
+	
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-K04-01}">
+		<company>JR Freight</company>
+		<type>Electric Freight Train</type>
+		<name>Super Rail Cargo</name>
+		<author>Hiro Ayase</author>
+		<description>Express freight train for carrying containers. The world's first power dispersion freight train.
+		</description>
+		<price>100</price>
+		<speed>fast</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-SRC-Mc1}"/>
+			<car char="Ｍ" ref="{FreeTrain-AYASE-Hiro-TrainImg-SRC-M1}"/>
+			<car char="Ｔ" ref="{FreeTrain-AYASE-Hiro-TrainImg-SRC-T1}"/>
+			<car char="＞" ref="{FreeTrain-AYASE-Hiro-TrainImg-SRC-Mc2}"/>
+			
+			<composition>＜</composition>
+			<composition>＜＞</composition>
+			<composition>＜Ｔ＞</composition>
+			<composition>＜ＴＴ＞</composition>
+			<composition>＜ＭＴＭ＞</composition>
+			<composition>＜ＭＴＴＭ＞</composition>
+			<composition>＜ＭＴＴＴＭ＞</composition>
+			<composition>＜ＭＴＴＴＴＭ＞</composition>
+			<composition>＜ＭＴＴＴＴＴＭ＞</composition>
+			<composition>＜ＭＴＴＴＴＴＴＭ＞</composition>
+			<composition>＜ＭＴＴＴＴＴＴＴＭ＞</composition>
+			<composition>＜ＭＴＴＴＴＴＴＴＴＭ＞</composition>
+			<composition>＜ＭＴＴＴＴＴＴＴＴＴＭ＞</composition>
+			<composition>＜ＭＴＴＴＴＴＴＴＴＴＴＭ＞</composition>
+			<composition>＜ＭＴＴＴＴＴＴＴＴＴＴＴＭ＞</composition>
+			<composition>＜ＭＴＴＴＴＴＴＴＴＴＴＴＴＭ＞</composition>
+		</config>
+	</contribution>
+	
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-K05-01}">
+		<company>JR Freight</company>
+		<type>C 11</type>
+		<name>Hybrid Freight Train</name>
+		<author>Hiro Ayase</author>
+		<description>Freight train for carrying pallets. Pulled by either one or two C 11 engines.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-C11-A}"/>
+			<car char="＞" ref="{FreeTrain-AYASE-Hiro-TrainImg-C11-B}"/>
+			<car char="Ｗ" ref="{FreeTrain-AYASE-Hiro-TrainImg-WAKI5000TYA}"/>
+			<car char="Ｒ" ref="{FreeTrain-AYASE-Hiro-TrainImg-KOKI5000JNR-2}"/>
+			<car char="Ｓ" ref="{FreeTrain-AYASE-Hiro-TrainImg-KOKI5000JNR-3}"/>
+			<car char="Ｔ" ref="{FreeTrain-AYASE-Hiro-TrainImg-TAKI8000BLK}"/>
+			
+			<composition>＜</composition>
+			<composition>＜Ｗ</composition>
+			<composition>＜ＷＳ</composition>
+			<composition>＜ＴＳＷ</composition>
+			<composition>＜ＴＲＳＷ</composition>
+			<composition>＜ＴＲＷＳＷ</composition>
+			<composition>＜ＳＷＷＷＴＲ</composition>
+			<composition>＜ＲＳＷＷＲＳＴ</composition>
+			<composition>＜ＷＷＴＳＳＷＴＴ</composition>
+			<composition>＜＜ＷＲＳＳＴＷＷＷ</composition>
+			<composition>＜＜ＷＴＷＲＴＳＳＳＴ</composition>
+			<composition>＜＜ＷＲＴＷＴＴＷＴＷＷ</composition>
+			<composition>＜＜ＳＲＷＷＴＲＳＴＲＳＳ</composition>
+			<composition>＜＜ＴＲＷＷＷＴＴＳＲＷＳＴ</composition>
+			<composition>＜＜ＳＷＳＲＷＷＷＲＲＳＳＷＴ</composition>
+			<composition>＜＜ＳＲＳＴＲＴＷＲＴＲＲＴＳＴ</composition>
+			<composition>＜＜ＴＷＳＳＳＷＷＴＷＲＷＴＴＳＲ</composition>
+		</config>
+	</contribution>
+
+	<!-- 普通旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-R01-01">
+		<company>Japanese National Railways</company>
+		<type>EF 64</type>
+		<name>Old Local Passenger Train (Blue)</name>
+		<author>Hiro Ayase</author>
+		<description>Local passenger train in an old-fashioned formation. Baggage car attached.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-EF64-0000}"/>
+			<car char="Ｈ" ref="{FreeTrain-AYASE-Hiro-TrainImg-SUHA42BLU}"/>
+			<car char="Ｎ" ref="{FreeTrain-AYASE-Hiro-TrainImg-MANI60BLU}"/>
+			<car char="Ｙ" ref="{FreeTrain-AYASE-Hiro-TrainImg-OYU10BLU}"/>
+						
+			<composition>＜</composition>
+			<composition>＜Ｈ</composition>
+			<composition>＜ＨＨ</composition>
+			<composition>＜ＹＨＨ</composition>
+			<composition>＜ＮＨＨＨ</composition>
+			<composition>＜ＹＨＨＨＨ</composition>
+			<composition>＜ＮＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＮＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＮＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＮＨＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＹＮＮＨＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＹＮＮＨＨＨＨＨＨＨＨＨＨＨＨ</composition>
+		</config>
+	</contribution>
+	
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-R01-02">
+		<company>Japanese National Railways</company>
+		<type>DD 51</type>
+		<name>Old Local Passenger Train (Blue)</name>
+		<author>Hiro Ayase</author>
+		<description>Local passenger train in an old-fashioned formation. Baggage car attached.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-DD51-0000}"/>
+			<car char="Ｈ" ref="{FreeTrain-AYASE-Hiro-TrainImg-SUHA42BLU}"/>
+			<car char="Ｎ" ref="{FreeTrain-AYASE-Hiro-TrainImg-MANI60BLU}"/>
+			<car char="Ｙ" ref="{FreeTrain-AYASE-Hiro-TrainImg-OYU10BLU}"/>
+						
+			<composition>＜</composition>
+			<composition>＜Ｈ</composition>
+			<composition>＜ＨＨ</composition>
+			<composition>＜ＹＨＨ</composition>
+			<composition>＜ＮＨＨＨ</composition>
+			<composition>＜ＹＨＨＨＨ</composition>
+			<composition>＜ＮＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＮＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＮＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＮＨＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＹＮＮＨＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＹＮＮＨＨＨＨＨＨＨＨＨＨＨＨ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-R01-03">
+		<company>Japanese National Railways</company>
+		<type>EF 71</type>
+		<name>Old Local Passenger Train (Blue)</name>
+		<author>Hiro Ayase</author>
+		<description>Local passenger train in an old-fashioned formation. Baggage car attached.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-EF71-0000}"/>
+			<car char="Ｈ" ref="{FreeTrain-AYASE-Hiro-TrainImg-SUHA42BLU}"/>
+			<car char="Ｎ" ref="{FreeTrain-AYASE-Hiro-TrainImg-MANI60BLU}"/>
+			<car char="Ｙ" ref="{FreeTrain-AYASE-Hiro-TrainImg-OYU10BLU}"/>
+						
+			<composition>＜</composition>
+			<composition>＜Ｈ</composition>
+			<composition>＜ＨＨ</composition>
+			<composition>＜ＹＨＨ</composition>
+			<composition>＜ＮＨＨＨ</composition>
+			<composition>＜ＹＨＨＨＨ</composition>
+			<composition>＜ＮＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＮＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＮＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＮＨＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＹＮＮＨＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＹＮＮＨＨＨＨＨＨＨＨＨＨＨＨ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-R01-04">
+		<company>Japanese National Railways</company>
+		<type>C 11</type>
+		<name>Old Local Passenger Train (Blue)</name>
+		<author>Hiro Ayase</author>
+		<description>Local passenger train in an old-fashioned formation. Baggage car attached.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-C11-A}"/>
+			<car char="＞" ref="{FreeTrain-AYASE-Hiro-TrainImg-C11-B}"/>
+			<car char="Ｈ" ref="{FreeTrain-AYASE-Hiro-TrainImg-SUHA42BLU}"/>
+			<car char="Ｎ" ref="{FreeTrain-AYASE-Hiro-TrainImg-MANI60BLU}"/>
+			<car char="Ｙ" ref="{FreeTrain-AYASE-Hiro-TrainImg-OYU10BLU}"/>
+						
+			<composition>＜</composition>
+			<composition>＞Ｈ</composition>
+			<composition>＜ＨＨ</composition>
+			<composition>＞ＹＨＨ</composition>
+			<composition>＜ＮＨＨＨ</composition>
+			<composition>＞ＹＨＨＨＨ</composition>
+			<composition>＜ＮＨＨＨＨＨ</composition>
+			<composition>＞ＹＮＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨ</composition>
+			<composition>＞ＹＮＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨＨ</composition>
+			<composition>＞＞ＹＮＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜＜ＹＮＮＨＨＨＨＨＨＨＨ</composition>
+			<composition>＞＞ＹＮＮＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜＜ＹＮＮＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＞＞ＹＹＮＮＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜＜ＹＹＮＮＨＨＨＨＨＨＨＨＨＨＨ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-R02-01">
+		<company>Japanese National Railways</company>
+		<type>EF 64</type>
+		<name>Old Local Passenger Train (Brown)</name>
+		<author>Hiro Ayase</author>
+		<description>Local passenger train in an old-fashioned formation. Baggage car attached.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-EF64-0000}"/>
+			<car char="Ｈ" ref="{FreeTrain-AYASE-Hiro-TrainImg-SUHA42TYA}"/>
+			<car char="Ｎ" ref="{FreeTrain-AYASE-Hiro-TrainImg-MANI60TYA}"/>
+			<car char="Ｙ" ref="{FreeTrain-AYASE-Hiro-TrainImg-OYU10TYA}"/>
+						
+			<composition>＜</composition>
+			<composition>＜Ｈ</composition>
+			<composition>＜ＨＨ</composition>
+			<composition>＜ＹＨＨ</composition>
+			<composition>＜ＮＨＨＨ</composition>
+			<composition>＜ＹＨＨＨＨ</composition>
+			<composition>＜ＮＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＮＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＮＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＮＨＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＹＮＮＨＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＹＮＮＨＨＨＨＨＨＨＨＨＨＨＨ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-R02-02">
+		<company>Japanese National Railways</company>
+		<type>DD 51</type>
+		<name>Old Local Passenger Train (Brown)</name>
+		<author>Hiro Ayase</author>
+		<description>Local passenger train in an old-fashioned formation. Baggage car attached.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-DD51-0000}"/>
+			<car char="Ｈ" ref="{FreeTrain-AYASE-Hiro-TrainImg-SUHA42TYA}"/>
+			<car char="Ｎ" ref="{FreeTrain-AYASE-Hiro-TrainImg-MANI60TYA}"/>
+			<car char="Ｙ" ref="{FreeTrain-AYASE-Hiro-TrainImg-OYU10TYA}"/>
+						
+			<composition>＜</composition>
+			<composition>＜Ｈ</composition>
+			<composition>＜ＨＨ</composition>
+			<composition>＜ＹＨＨ</composition>
+			<composition>＜ＮＨＨＨ</composition>
+			<composition>＜ＹＨＨＨＨ</composition>
+			<composition>＜ＮＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＮＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＮＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＮＨＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＹＮＮＨＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＹＮＮＨＨＨＨＨＨＨＨＨＨＨＨ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-R02-03">
+		<company>Japanese National Railways</company>
+		<type>EF 71</type>
+		<name>Old Local Passenger Train (Brown)</name>
+		<author>Hiro Ayase</author>
+		<description>Local passenger train in an old-fashioned formation. Baggage car attached.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-EF71-0000}"/>
+			<car char="Ｈ" ref="{FreeTrain-AYASE-Hiro-TrainImg-SUHA42TYA}"/>
+			<car char="Ｎ" ref="{FreeTrain-AYASE-Hiro-TrainImg-MANI60TYA}"/>
+			<car char="Ｙ" ref="{FreeTrain-AYASE-Hiro-TrainImg-OYU10TYA}"/>
+						
+			<composition>＜</composition>
+			<composition>＜Ｈ</composition>
+			<composition>＜ＨＨ</composition>
+			<composition>＜ＹＨＨ</composition>
+			<composition>＜ＮＨＨＨ</composition>
+			<composition>＜ＹＨＨＨＨ</composition>
+			<composition>＜ＮＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＮＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＮＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＮＨＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＹＮＮＨＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＹＮＮＨＨＨＨＨＨＨＨＨＨＨＨ</composition>
+		</config>
+	</contribution>
+	
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-R02-04">
+		<company>Japanese National Railways</company>
+		<type>C 11</type>
+		<name>Old Local Passenger Train (Brown)</name>
+		<author>Hiro Ayase</author>
+		<description>Local passenger train in an old-fashioned formation. Baggage car attached.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-C11-A}"/>
+			<car char="＞" ref="{FreeTrain-AYASE-Hiro-TrainImg-C11-B}"/>
+			<car char="Ｈ" ref="{FreeTrain-AYASE-Hiro-TrainImg-SUHA42TYA}"/>
+			<car char="Ｎ" ref="{FreeTrain-AYASE-Hiro-TrainImg-MANI60TYA}"/>
+			<car char="Ｙ" ref="{FreeTrain-AYASE-Hiro-TrainImg-OYU10TYA}"/>
+						
+			<composition>＜</composition>
+			<composition>＞Ｈ</composition>
+			<composition>＜ＨＨ</composition>
+			<composition>＞ＹＨＨ</composition>
+			<composition>＜ＮＨＨＨ</composition>
+			<composition>＞ＹＨＨＨＨ</composition>
+			<composition>＜ＮＨＨＨＨＨ</composition>
+			<composition>＞ＹＮＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨ</composition>
+			<composition>＞ＹＮＨＨＨＨＨＨＨ</composition>
+			<composition>＜ＹＮＨＨＨＨＨＨＨＨ</composition>
+			<composition>＞＞ＹＮＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜＜ＹＮＮＨＨＨＨＨＨＨＨ</composition>
+			<composition>＞＞ＹＮＮＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜＜ＹＮＮＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＞＞ＹＹＮＮＨＨＨＨＨＨＨＨＨＨ</composition>
+			<composition>＜＜ＹＹＮＮＨＨＨＨＨＨＨＨＨＨＨ</composition>
+		</config>
+	</contribution>
+	
+	<!-- 急行荷物列車の定義 -->
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-R03-01">
+		<company>Japanese National Railways</company>
+		<type>EF 64</type>
+		<name>Old Passenger and Baggage Express Train</name>
+		<author>Hiro Ayase</author>
+		<description>Old-fashioned passenger formation with post and baggage cars.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-EF64-0000}"/>
+			<car char="Ｓ" ref="{FreeTrain-AYASE-Hiro-TrainImg-WAKI10000SLV}"/>
+			<car char="Ｎ" ref="{FreeTrain-AYASE-Hiro-TrainImg-MANI60BLU}"/>
+			<car char="Ｙ" ref="{FreeTrain-AYASE-Hiro-TrainImg-OYU10BLU}"/>
+			<car char="ｎ" ref="{FreeTrain-AYASE-Hiro-TrainImg-MANI60TYA}"/>
+			<car char="ｙ" ref="{FreeTrain-AYASE-Hiro-TrainImg-OYU10TYA}"/>
+						
+			<composition>＜</composition>
+			<composition>＜Ｎ</composition>
+			<composition>＜Ｎｙ</composition>
+			<composition>＜ｎｙＮ</composition>
+			<composition>＜ＳＮｙｎ</composition>
+			<composition>＜ＹＳＮＮｙ</composition>
+			<composition>＜ＮＳｎｙＮＳ</composition>
+			<composition>＜ＮＳＳｎｙＮＳ</composition>
+			<composition>＜ＮＳＳｎｙＮｎＳ</composition>
+			<composition>＜ＹＮＳＳｎｙＮｎＳ</composition>
+			<composition>＜ＹＮＮＳｙｎＮＳＳｎ</composition>
+			<composition>＜ＹＹＮＮＳｙｎＮＳＳｎ</composition>
+			<composition>＜ＹＹＮＮＳＳｙｎＮＳＳｎ</composition>
+			<composition>＜ＳＹｎＳｎＮｎＹｙＮＮＳｎ</composition>
+			<composition>＜ＳＳＹｎＳｎＮｎＹｙＮＮＳｎ</composition>
+			<composition>＜ＳＳＹｎＳｎＮｎＹｙＮＮＳｎｎ</composition>
+			<composition>＜ｎＹＳｎＮＳＹｙＮＮｎＳｎＮＹｙ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-R03-02">
+		<company>Japanese National Railways</company>
+		<type>DD 51</type>
+		<name>Old Passenger and Baggage Express Train</name>
+		<author>Hiro Ayase</author>
+		<description>Old-fashioned passenger formation with post and baggage cars.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-DD51-0000}"/>
+			<car char="Ｓ" ref="{FreeTrain-AYASE-Hiro-TrainImg-WAKI10000SLV}"/>
+			<car char="Ｎ" ref="{FreeTrain-AYASE-Hiro-TrainImg-MANI60BLU}"/>
+			<car char="Ｙ" ref="{FreeTrain-AYASE-Hiro-TrainImg-OYU10BLU}"/>
+			<car char="ｎ" ref="{FreeTrain-AYASE-Hiro-TrainImg-MANI60TYA}"/>
+			<car char="ｙ" ref="{FreeTrain-AYASE-Hiro-TrainImg-OYU10TYA}"/>
+						
+			<composition>＜</composition>
+			<composition>＜Ｎ</composition>
+			<composition>＜Ｎｙ</composition>
+			<composition>＜ｎｙＮ</composition>
+			<composition>＜ＳＮｙｎ</composition>
+			<composition>＜ＹＳＮＮｙ</composition>
+			<composition>＜ＮＳｎｙＮＳ</composition>
+			<composition>＜ＮＳＳｎｙＮＳ</composition>
+			<composition>＜ＮＳＳｎｙＮｎＳ</composition>
+			<composition>＜ＹＮＳＳｎｙＮｎＳ</composition>
+			<composition>＜ＹＮＮＳｙｎＮＳＳｎ</composition>
+			<composition>＜ＹＹＮＮＳｙｎＮＳＳｎ</composition>
+			<composition>＜ＹＹＮＮＳＳｙｎＮＳＳｎ</composition>
+			<composition>＜ＳＹｎＳｎＮｎＹｙＮＮＳｎ</composition>
+			<composition>＜ＳＳＹｎＳｎＮｎＹｙＮＮＳｎ</composition>
+			<composition>＜ＳＳＹｎＳｎＮｎＹｙＮＮＳｎｎ</composition>
+			<composition>＜ｎＹＳｎＮＳＹｙＮＮｎＳｎＮＹｙ</composition>
+		</config>
+	</contribution>
+	
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-R03-03">
+		<company>Japanese National Railways</company>
+		<type>EF 71</type>
+		<name>Old Passenger and Baggage Express Train</name>
+		<author>Hiro Ayase</author>
+		<description>Old-fashioned passenger formation with post and baggage cars.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-EF71-0000}"/>
+			<car char="Ｓ" ref="{FreeTrain-AYASE-Hiro-TrainImg-WAKI10000SLV}"/>
+			<car char="Ｎ" ref="{FreeTrain-AYASE-Hiro-TrainImg-MANI60BLU}"/>
+			<car char="Ｙ" ref="{FreeTrain-AYASE-Hiro-TrainImg-OYU10BLU}"/>
+			<car char="ｎ" ref="{FreeTrain-AYASE-Hiro-TrainImg-MANI60TYA}"/>
+			<car char="ｙ" ref="{FreeTrain-AYASE-Hiro-TrainImg-OYU10TYA}"/>
+						
+			<composition>＜</composition>
+			<composition>＜Ｎ</composition>
+			<composition>＜Ｎｙ</composition>
+			<composition>＜ｎｙＮ</composition>
+			<composition>＜ＳＮｙｎ</composition>
+			<composition>＜ＹＳＮＮｙ</composition>
+			<composition>＜ＮＳｎｙＮＳ</composition>
+			<composition>＜ＮＳＳｎｙＮＳ</composition>
+			<composition>＜ＮＳＳｎｙＮｎＳ</composition>
+			<composition>＜ＹＮＳＳｎｙＮｎＳ</composition>
+			<composition>＜ＹＮＮＳｙｎＮＳＳｎ</composition>
+			<composition>＜ＹＹＮＮＳｙｎＮＳＳｎ</composition>
+			<composition>＜ＹＹＮＮＳＳｙｎＮＳＳｎ</composition>
+			<composition>＜ＳＹｎＳｎＮｎＹｙＮＮＳｎ</composition>
+			<composition>＜ＳＳＹｎＳｎＮｎＹｙＮＮＳｎ</composition>
+			<composition>＜ＳＳＹｎＳｎＮｎＹｙＮＮＳｎｎ</composition>
+			<composition>＜ｎＹＳｎＮＳＹｙＮＮｎＳｎＮＹｙ</composition>
+		</config>
+	</contribution>
+	
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-R03-04">
+		<company>Japanese National Railways</company>
+		<type>EF 15</type>
+		<name>Old Passenger and Baggage Express Train</name>
+		<author>Hiro Ayase</author>
+		<description>Old-fashioned passenger formation with post and baggage cars.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-EF15-0000}"/>
+			<car char="Ｓ" ref="{FreeTrain-AYASE-Hiro-TrainImg-WAKI10000SLV}"/>
+			<car char="Ｎ" ref="{FreeTrain-AYASE-Hiro-TrainImg-MANI60BLU}"/>
+			<car char="Ｙ" ref="{FreeTrain-AYASE-Hiro-TrainImg-OYU10BLU}"/>
+			<car char="ｎ" ref="{FreeTrain-AYASE-Hiro-TrainImg-MANI60TYA}"/>
+			<car char="ｙ" ref="{FreeTrain-AYASE-Hiro-TrainImg-OYU10TYA}"/>
+						
+			<composition>＜</composition>
+			<composition>＜Ｎ</composition>
+			<composition>＜Ｎｙ</composition>
+			<composition>＜ｎｙＮ</composition>
+			<composition>＜ＳＮｙｎ</composition>
+			<composition>＜ＹＳＮＮｙ</composition>
+			<composition>＜ＮＳｎｙＮＳ</composition>
+			<composition>＜ＮＳＳｎｙＮＳ</composition>
+			<composition>＜ＮＳＳｎｙＮｎＳ</composition>
+			<composition>＜ＹＮＳＳｎｙＮｎＳ</composition>
+			<composition>＜ＹＮＮＳｙｎＮＳＳｎ</composition>
+			<composition>＜ＹＹＮＮＳｙｎＮＳＳｎ</composition>
+			<composition>＜ＹＹＮＮＳＳｙｎＮＳＳｎ</composition>
+			<composition>＜ＳＹｎＳｎＮｎＹｙＮＮＳｎ</composition>
+			<composition>＜ＳＳＹｎＳｎＮｎＹｙＮＮＳｎ</composition>
+			<composition>＜ＳＳＹｎＳｎＮｎＹｙＮＮＳｎｎ</composition>
+			<composition>＜ｎＹＳｎＮＳＹｙＮＮｎＳｎＮＹｙ</composition>
+		</config>
+	</contribution>
+	
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-R03-05">
+		<company>Japanese National Railways</company>
+		<type>C 11</type>
+		<name>Old Passenger and Baggage Express Train</name>
+		<author>Hiro Ayase</author>
+		<description>Old-fashioned passenger formation with post and baggage cars.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ｌ" ref="{FreeTrain-AYASE-Hiro-TrainImg-C11-A}"/>
+			<car char="Ｊ" ref="{FreeTrain-AYASE-Hiro-TrainImg-C11-B}"/>
+			<car char="Ｓ" ref="{FreeTrain-AYASE-Hiro-TrainImg-WAKI10000SLV}"/>
+			<car char="Ｎ" ref="{FreeTrain-AYASE-Hiro-TrainImg-MANI60BLU}"/>
+			<car char="Ｙ" ref="{FreeTrain-AYASE-Hiro-TrainImg-OYU10BLU}"/>
+			<car char="ｎ" ref="{FreeTrain-AYASE-Hiro-TrainImg-MANI60TYA}"/>
+			<car char="ｙ" ref="{FreeTrain-AYASE-Hiro-TrainImg-OYU10TYA}"/>
+						
+			<composition>Ｌ</composition>
+			<composition>ＪＮ</composition>
+			<composition>ＬＮｙ</composition>
+			<composition>ＪｎｙＮ</composition>
+			<composition>ＬＳＮｙｎ</composition>
+			<composition>ＪＹＳＮＮｙ</composition>
+			<composition>ＬＮＳｎｙＮＳ</composition>
+			<composition>ＪＮＳＳｎｙＮＳ</composition>
+			<composition>ＬＮＳＳｎｙＮｎＳ</composition>
+			<composition>ＪＹＮＳＳｎｙＮｎＳ</composition>
+			<composition>ＬＹＮＮＳｙｎＮＳＳｎ</composition>
+			<composition>ＪＪＹＮＮＳｙｎＮＳＳｎ</composition>
+			<composition>ＬＬＹＮＮＳＳｙｎＮＳＳｎ</composition>
+			<composition>ＪＪＹｎＳｎＮｎＹｙＮＮＳｎ</composition>
+			<composition>ＬＬＳＹｎＳｎＮｎＹｙＮＮＳｎ</composition>
+			<composition>ＪＪＳＹｎＳｎＮｎＹｙＮＮＳｎｎ</composition>
+			<composition>ＬＬＹＳｎＮＳＹｙＮＮｎＳｎＮＹｙ</composition>
+		</config>
+	</contribution>
+	
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-R04-01">
+		<company>Japanese National Railways</company>
+		<type>EF 65</type>
+		<name>20 Series Blue Train</name>
+		<author>Hiro Ayase</author>
+		<description>This is the Blue Train night traveling limited express of past years, at the time praised as a 'hotel on wheels'.
+		</description>
+		<price>300</price>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ｌ" ref="{FreeTrain-AYASE-Hiro-TrainImg-EF65-0001}"/>
+			<car char="≪" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-3a}"/>	<!-- カニ 正 -->
+			<car char="≫" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-3b}"/>	<!-- カニ 逆 -->
+			<car char="Ｈ" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-2}"/>	<!-- ナハネ -->
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-1a}"/>	<!-- ナハネフ21 正 -->
+			<car char="＞" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-1b}"/>	<!-- ナハネフ21 逆 -->
+			<car char="【" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-4a}"/>	<!-- ナハネフ23 正 -->
+			<car char="】" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-4b}"/>	<!-- ナハネフ23 逆 -->
+						
+			<composition>Ｌ</composition>
+			<composition>Ｌ＞</composition>
+			<composition>Ｌ＜＞</composition>
+			<composition>Ｌ【Ｈ≫</composition>
+			<composition>Ｌ≪ＨＨ】</composition>
+			<composition>Ｌ【ＨＨＨ≫</composition>
+			<composition>Ｌ≪ＨＨＨＨ＞</composition>
+			<composition>Ｌ＜ＨＨ【ＨＨ≫</composition>
+			<composition>Ｌ≪ＨＨＨ】ＨＨ＞</composition>
+			<composition>Ｌ＜ＨＨＨ【ＨＨＨ≫</composition>
+			<composition>Ｌ≪ＨＨＨＨ】ＨＨＨ＞</composition>
+			<composition>Ｌ＜ＨＨＨＨ【ＨＨＨＨ≫</composition>
+			<composition>Ｌ≪ＨＨＨＨＨ】ＨＨＨＨ＞</composition>
+			<composition>Ｌ＜ＨＨＨＨＨ【ＨＨＨＨＨ≫</composition>
+		</config>
+	</contribution>
+	
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-R04-02">
+		<company>Japanese National Railways</company>
+		<type>DD 51</type>
+		<name>20 Series Blue Train</name>
+		<author>Hiro Ayase</author>
+		<description>This is the Blue Train night traveling limited express of past years, at the time praised as a 'hotel on wheels'.
+		</description>
+		<price>300</price>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ｌ" ref="{FreeTrain-AYASE-Hiro-TrainImg-DD51-0000}"/>
+			<car char="≪" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-3a}"/>	<!-- カニ 正 -->
+			<car char="≫" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-3b}"/>	<!-- カニ 逆 -->
+			<car char="Ｈ" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-2}"/>	<!-- ナハネ -->
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-1a}"/>	<!-- ナハネフ21 正 -->
+			<car char="＞" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-1b}"/>	<!-- ナハネフ21 逆 -->
+			<car char="【" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-4a}"/>	<!-- ナハネフ23 正 -->
+			<car char="】" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-4b}"/>	<!-- ナハネフ23 逆 -->
+						
+			<composition>Ｌ</composition>
+			<composition>Ｌ＞</composition>
+			<composition>Ｌ＜＞</composition>
+			<composition>Ｌ【Ｈ≫</composition>
+			<composition>Ｌ≪ＨＨ】</composition>
+			<composition>Ｌ【ＨＨＨ≫</composition>
+			<composition>Ｌ≪ＨＨＨＨ＞</composition>
+			<composition>Ｌ＜ＨＨ【ＨＨ≫</composition>
+			<composition>Ｌ≪ＨＨＨ】ＨＨ＞</composition>
+			<composition>Ｌ＜ＨＨＨ【ＨＨＨ≫</composition>
+			<composition>Ｌ≪ＨＨＨＨ】ＨＨＨ＞</composition>
+			<composition>Ｌ＜ＨＨＨＨ【ＨＨＨＨ≫</composition>
+			<composition>Ｌ≪ＨＨＨＨＨ】ＨＨＨＨ＞</composition>
+			<composition>Ｌ＜ＨＨＨＨＨ【ＨＨＨＨＨ≫</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-R04-03">
+		<company>Japanese National Railways</company>
+		<type>C 11</type>
+		<name>20 Series Blue Train</name>
+		<author>Hiro Ayase</author>
+		<description>This is the Blue Train night traveling limited express of past years, at the time praised as a 'hotel on wheels'.
+		</description>
+		<price>300</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ｌ" ref="{FreeTrain-AYASE-Hiro-TrainImg-C11-A}"/>
+			<car char="Ｊ" ref="{FreeTrain-AYASE-Hiro-TrainImg-C11-B}"/>
+			<car char="≪" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-3a}"/>	<!-- カニ 正 -->
+			<car char="≫" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-3b}"/>	<!-- カニ 逆 -->
+			<car char="Ｈ" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-2}"/>	<!-- ナハネ -->
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-1a}"/>	<!-- ナハネフ21 正 -->
+			<car char="＞" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-1b}"/>	<!-- ナハネフ21 逆 -->
+			<car char="【" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-4a}"/>	<!-- ナハネフ23 正 -->
+			<car char="】" ref="{FreeTrain-AYASE-Hiro-TrainImg-BlueTrain20-4b}"/>	<!-- ナハネフ23 逆 -->
+						
+			<composition>Ｌ</composition>
+			<composition>Ｊ＞</composition>
+			<composition>Ｌ＜＞</composition>
+			<composition>Ｊ【Ｈ≫</composition>
+			<composition>Ｌ≪ＨＨ】</composition>
+			<composition>Ｊ【ＨＨＨ≫</composition>
+			<composition>Ｌ≪ＨＨＨＨ＞</composition>
+			<composition>Ｊ＜ＨＨ【ＨＨ≫</composition>
+			<composition>Ｌ≪ＨＨＨ】ＨＨ＞</composition>
+			<composition>ＬＬ≪ＨＨＨ】ＨＨ＞</composition>
+			<composition>ＪＪ＜ＨＨＨ【ＨＨＨ≫</composition>
+			<composition>ＬＬ≪ＨＨＨＨ】ＨＨＨ＞</composition>
+			<composition>ＪＪ＜ＨＨＨＨ【ＨＨＨＨ≫</composition>
+			<composition>ＬＬ≪ＨＨＨＨＨ】ＨＨＨＨ＞</composition>
+			<composition>ＪＪ＜ＨＨＨＨＨ【ＨＨＨＨＨ≫</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-AYASE-Hiro-TrainHensei-Z01-01">
+		<company>Japanese National Railways</company>
+		<type>DD16</type>
+		<name>Tokusetsu</name>
+		<author>Hiro Ayase</author>
+		<description>Russel snowplow introduced on easy lines. Has Russel heads installed on its front and back.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{FreeTrain-AYASE-Hiro-TrainImg-DD16-A}"/>
+			<car char="Ｈ" ref="{FreeTrain-AYASE-Hiro-TrainImg-DD51-0000}"/>
+			<car char="＞" ref="{FreeTrain-AYASE-Hiro-TrainImg-DD16-B}"/>
+						
+			<composition>＜</composition>
+			<composition>＜＞</composition>
+			<composition>＜Ｈ＞</composition>
+		</config>
+	</contribution>
+
+</plug-in>

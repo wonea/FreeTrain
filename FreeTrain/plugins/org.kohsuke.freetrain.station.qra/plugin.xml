@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plug-in [
+	<!ENTITY WoodenStation "
+		<group>Overground station</group>
+		<!--!<group>地上駅舎</group>-->
+		<price>1200</price>
+		<height>1</height>
+		<operationCost>100</operationCost>
+	">
+<!ENTITY PRStation "
+		<group>Overground station</group>
+		<group>地上駅舎</group>
+		<price>1500</price>
+		<height>1</height>
+		<operationCost>120</operationCost>
+	">
+<!ENTITY colorMap '
+	<spriteType name="colorMapped">
+<map from="84,84,113" to="189,81,20"/>
+<map from="44,44,63" to="120,46,7"/>
+<map from="104,104,190" to="241,104,33"/>
+<map from="84,84,166" to="228,89,14"/>
+<map from="71,71,139" to="206,79,11"/>
+<map from="59,59,84" to="159,61,9"/>
+<map from="72,72,97" to="162,70,17"/>
+<map from="67,67,90" to="151,64,16"/>
+<map from="52,52,75" to="142,55,8"/>
+<map from="57,57,111" to="164,63,9"/>
+<map from="67,67,132" to="181,71,11"/>
+<map from="83,83,151" to="192,83,26"/>
+<map from="74,74,106" to="200,77,11"/>
+<map from="46,46,66" to="124,48,7"/>
+<map from="74,74,99" to="162,74,25"/>
+<map from="93,93,125" to="203,93,32"/>
+<map from="59,59,80" to="134,58,14"/>
+<map from="58,58,78" to="126,58,20"/>
+<map from="219,195,131" to="221,177,129"/>
+<map from="230,179,115" to="236,218,229"/>
+<map from="153,119,76" to="157,145,153"/>
+<map from="50,50,67" to="113,49,12"/>
+<map from="69,69,99" to="186,72,10"/>
+<map from="78,78,105" to="176,76,19"/>
+<map from="59,59,117" to="161,63,10"/>
+<map from="73,73,135" to="171,73,23"/>
+<map from="199,191,142" to="221,177,129"/>
+<map from="50,50,98" to="146,56,8"/>
+<map from="180,169,112" to="221,177,129"/>
+<map from="189,182,135" to="221,177,129"/>
+
+	</spriteType>
+'>
+]>
+<plug-in>
+	<title>Station</title>
+	<!--!<title>駅舎</title>-->
+	<author>qra_ra</author>
+	<homepage>N/A</homepage>
+		
+	<contribution type="picture" id="{136A81E5-F568-6516-83FD-001338978F2C}">
+		<picture src="eki-1.bmp"/>
+	</contribution>
+
+	<contribution type="station" id="{372D89DD-0A01-554B-8BC3-8B8567CA7F59}">
+		<name>Wooden station (entrance) L</name>
+		<!--!<name>木造駅舎（入口側）L</name>-->
+		<size>1,2</size>
+                &WoodenStation;
+		<sprite origin="0, 0" offset="8">
+			<picture ref="{136A81E5-F568-6516-83FD-001338978F2C}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{372D89DD-0A02-554B-8BC3-8B8567CA7F59}">
+		<name>Wooden station (entrance) R</name>
+		<!--!<name>木造駅舎（入口側）R</name>-->
+		<size>2,1</size>
+                &WoodenStation;
+		<sprite origin="48,0" offset="16">
+			<picture ref="{136A81E5-F568-6516-83FD-001338978F2C}" />
+		</sprite>	
+	</contribution>
+	
+	<contribution type="station" id="{372D89DD-0A03-554B-8BC3-8B8567CA7F59}">
+		<name>Wooden station (ticket gate) L</name>
+		<!--!<name>木造駅舎（改札口側）L</name>-->
+		<size>1,2</size>
+                &WoodenStation;
+		<sprite origin="96,0" offset="8">
+			<picture ref="{136A81E5-F568-6516-83FD-001338978F2C}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{372D89DD-0A04-554B-8BC3-8B8567CA7F59}">
+		<name>Wooden station (ticket gate) R</name>
+		<!--!<name>木造駅舎（改札口側）R</name>-->
+		<size>2,1</size>
+                &WoodenStation;
+		<sprite origin="144,0" offset="16">
+			<picture ref="{136A81E5-F568-6516-83FD-001338978F2C}" />
+		</sprite>	
+	</contribution>		
+
+
+
+	<contribution type="station" id="{372D89DD-0B01-554B-8BC3-8B8567CA7F59}">
+		<name>Private station (entrance) L</name>
+		<!--!<name>私鉄駅舎（入口側）L</name>-->
+		<size>1,2</size>
+                &PRStation;
+		<sprite origin="0, 0" offset="8">
+                &colorMap;
+			<picture ref="{136A81E5-F568-6516-83FD-001338978F2C}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{372D89DD-0B02-554B-8BC3-8B8567CA7F59}">
+		<name>Private station (entrance) R</name>
+		<!--!<name>私鉄駅舎（入口側）R</name>-->
+		<size>2,1</size>
+                &PRStation;
+		<sprite origin="48,0" offset="16">
+                &colorMap;
+			<picture ref="{136A81E5-F568-6516-83FD-001338978F2C}" />
+		</sprite>	
+	</contribution>
+	
+	<contribution type="station" id="{372D89DD-0B03-554B-8BC3-8B8567CA7F59}">
+		<name>Private station (ticket gate) L</name>
+		<!--!<name>私鉄駅舎（改札口側）L</name>-->
+		<size>1,2</size>
+                &PRStation;
+		<sprite origin="96,0" offset="8">
+                 &colorMap;
+			<picture ref="{136A81E5-F568-6516-83FD-001338978F2C}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{372D89DD-0B04-554B-8BC3-8B8567CA7F59}">
+		<name>Private station (ticket gate) R</name>
+		<!--!<name>私鉄駅舎（改札口側）R</name>-->
+		<size>2,1</size>
+                &PRStation;
+		<sprite origin="144,0" offset="16">
+                &colorMap;
+			<picture ref="{136A81E5-F568-6516-83FD-001338978F2C}" />
+		</sprite>	
+	</contribution>		
+</plug-in>

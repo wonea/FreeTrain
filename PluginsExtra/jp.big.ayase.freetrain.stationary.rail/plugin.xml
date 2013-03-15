@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+	<!ENTITY unmannedRailStop "
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+	">
+]>
+<plug-in>
+	<title>Railroad facilities</title>
+	<author>Hiro Ayase</author>
+	<homepage>http://www14.big.or.jp/~ayase/freetrain/</homepage>
+
+	<contribution type="picture" id="{000000-2002-1212-AYASE-RailStructure-img01}">
+		<picture src="stoprail.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{000000-2002-1212-AYASE-RailStructure-img02}">
+		<picture src="stoprail2.bmp" />
+	</contribution>
+	
+	<contribution type="railStationary" id="{2CF891C2-5789-454F-947C-B672F9BCD4BC}">
+		<group>Buffer stop (station)</group>
+		&unmannedRailStop;
+		<sprite origin="0,0" offset="16">
+			<picture ref="{000000-2002-1212-AYASE-RailStructure-img01}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{90CD13F6-F9C7-4081-8A78-E210C221EEC1}">
+		<group>Buffer stop (station)</group>
+		&unmannedRailStop;
+		<sprite origin="32,0" offset="16">
+			<picture ref="{000000-2002-1212-AYASE-RailStructure-img01}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{6E3B5FC7-9294-4171-92EE-F717AD4E356C}">
+		<group>Buffer stop (station)</group>
+		&unmannedRailStop;
+		<sprite origin="64,0" offset="16">
+			<picture ref="{000000-2002-1212-AYASE-RailStructure-img01}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{0CA2C73B-BBC9-4785-8ED6-B5E6ECD94124}">
+		<group>Buffer stop (station)</group>
+		&unmannedRailStop;
+		<sprite origin="96,0" offset="16">
+			<picture ref="{000000-2002-1212-AYASE-RailStructure-img01}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{E9A0A382-EC6E-4B73-AD55-51B580FBEE4D}">
+		<group>Buffer stop (station)</group>
+		&unmannedRailStop;
+		<sprite origin="128,0" offset="16">
+			<picture ref="{000000-2002-1212-AYASE-RailStructure-img01}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{651EC2AB-72DC-4E7B-82BF-D5CCF104BE4C}">
+		<group>Buffer stop (station)</group>
+		&unmannedRailStop;
+		<sprite origin="160,0" offset="16">
+			<picture ref="{000000-2002-1212-AYASE-RailStructure-img01}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{1F35F6A9-F160-4546-8BB8-186CD660011F}">
+		<group>Buffer stop (station)</group>
+		&unmannedRailStop;
+		<sprite origin="192,0" offset="16">
+			<picture ref="{000000-2002-1212-AYASE-RailStructure-img01}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{450876F7-2A56-4187-90FB-E725B2058DA6}">
+		<group>Buffer stop (station)</group>
+		&unmannedRailStop;
+		<sprite origin="224,0" offset="16">
+			<picture ref="{000000-2002-1212-AYASE-RailStructure-img01}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{66D8CEFC-B0A5-44E9-BA8E-53F2986E3D8F}">
+		<group>Buffer stop (general)</group>
+		&unmannedRailStop;
+		<sprite origin="0,0" offset="0">
+			<picture ref="{000000-2002-1212-AYASE-RailStructure-img02}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{60EA6394-DDD7-4C97-822C-1B06458D42B4}">
+		<group>Buffer stop (general)</group>
+		&unmannedRailStop;
+		<sprite origin="32,0" offset="0">
+			<picture ref="{000000-2002-1212-AYASE-RailStructure-img02}"/>
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{988C4797-0124-478F-BB3D-34F1E1ACD2D5}">
+		<group>Buffer stop (general)</group>
+		&unmannedRailStop;
+		<sprite origin="64,0" offset="0">
+			<picture ref="{000000-2002-1212-AYASE-RailStructure-img02}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{5A9F67BA-3696-4248-A6AA-FE2CFBA0C76F}">
+		<group>Buffer stop (general)</group>
+		&unmannedRailStop;
+		<sprite origin="96,0" offset="0">
+			<picture ref="{000000-2002-1212-AYASE-RailStructure-img02}"/>
+		</sprite>
+	</contribution>
+</plug-in>

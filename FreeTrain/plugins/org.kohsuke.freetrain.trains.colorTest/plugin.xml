@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Color Test Train</title>
+	<author>Kohsuke Kawaguchi</author>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="menu" id="{8CA8F000-4DC6-4441-8F53-A628C952BD9F}">
+		<class name="freetrain.world.rail.cttrain.ColorConfigCommand"
+			codebase="bin/Debug/FreeTrain.ColorTestTrain.dll" />
+	</contribution>
+	
+	<!-- Test Train -->
+	<contribution type="trainCar" id="{6E5E12DD-69CB-4DF2-B4F0-2BCDA703CBB0}">
+		<class
+			name="freetrain.world.rail.cttrain.ColorTestTrainCar"
+			codebase="bin/Debug/FreeTrain.ColorTestTrain.dll" />
+	</contribution>
+	
+	<contribution type="train" id="{719F0922-EA74-409C-B829-C4950201C226}">
+		<name>Test train with modifiable colors</name>
+		<price>1</price>
+		<speed>medium</speed>
+		<author>C477 (mainly)</author>
+		<type>FTct</type>
+		<company>FreeTrain</company>
+		<description>Used when designing new trains</description>
+		
+		<composition>
+			<body carRef="{6E5E12DD-69CB-4DF2-B4F0-2BCDA703CBB0}" />
+		</composition>
+	</contribution>
+</plug-in>

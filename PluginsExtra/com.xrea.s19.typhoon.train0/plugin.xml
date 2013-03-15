@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Train Set Number 0</title>
+	<homepage></homepage>
+
+	<!-- キハ55系 先頭車-->
+	<contribution type="trainCar" id="{TYPHOON-JNR-k55-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                <picture src="kiha55a.bmp" />
+                </sprite>
+		<capacity>84</capacity>
+	</contribution>
+	<!-- キハ55系 中間車-->
+	<contribution type="trainCar" id="{TYPHOON-JNR-k55-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                <picture src="kiha55b.bmp" />
+                </sprite>
+		<capacity>132</capacity>
+	</contribution>
+	<!-- キハ55系 後尾車-->
+	<contribution type="trainCar" id="{TYPHOON-JNR-k55-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{TYPHOON-JNR-k55-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>84</capacity>
+	</contribution>
+
+	<contribution type="train" id="{TYPHOON-JNR-k55-HENSEI-7567171D3CEF}">
+		<company>Japanese National Railways</company>
+		<type>KIHA 55 Series</type>
+		<name>Express Colors</name>
+		<author>Typhoon</author>
+		<description>Supports up to 8 car formations</description>
+		<price>1</price>
+		<speed>slow</speed>
+           		<fare>400</fare>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+ 		<config>
+  		<car char="A" ref="{TYPHOON-JNR-k55-7567171D3CEF}-h"/>
+   		<car char="B" ref="{TYPHOON-JNR-k55-7567171D3CEF}-t"/>
+   		<composition>A</composition>
+   		<composition>AB</composition>
+   		<composition>AAB</composition>
+		<composition>ABAB</composition>
+		<composition>AABAB</composition>
+		<composition>ABABAB</composition>
+		<composition>AABABAB</composition>
+		<composition>ABABABAB</composition>
+		</config>
+	</contribution>
+	<contribution type="train" id="{TYPHOON-NANKAI-k5501-HENSEI-7567171D3CEF}">
+		<company>Nankai Electric Railway</company>
+		<type>KIHA 5501 Series</type>
+		<name></name>
+		<author>Typhoon</author>
+		<description>KIHA 5501 was a train manufactured by Nankai Electric Railway in 1960
+to serve Japanese National Railways' Kisei Main Line. Based on Japanese National Railways' KIHA 55, 
+it ran as Kinokuni Local Express but was later promoted to express train. The train was withdrawn from 
+service by JNR in 1986.
+(Max 8 car formation.)</description>
+		<price>1</price>
+		<speed>slow</speed>
+           		<fare>400</fare>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+ 		<config>
+  		<car char="A" ref="{TYPHOON-JNR-k55-7567171D3CEF}-h"/>
+   		<car char="B" ref="{TYPHOON-JNR-k55-7567171D3CEF}-t"/>
+   		<composition>A</composition>
+   		<composition>AB</composition>
+   		<composition>AAB</composition>
+		<composition>ABAB</composition>
+		<composition>AABAB</composition>
+		<composition>ABABAB</composition>
+		<composition>AABABAB</composition>
+		<composition>ABABABAB</composition>
+		</config>
+	</contribution>
+	<contribution type="train" id="{TYPHOON-NANKAI-KINOKUNI-HENSEI-7567171D3CEF}">
+		<company>Nankai Electric Railway</company>
+		<type>KIHA 5501 Series + KIHA 58 Series</type>
+		<name>Kinokuni</name>
+		<author>Typhoon</author>
+		<description>(8 car formation only)</description>
+		<price>1</price>
+		<speed>slow</speed>
+           		<fare>400</fare>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+ 		<config>
+  		<car char="A" ref="{TYPHOON-JNR-k55-7567171D3CEF}-h"/>
+   		<car char="B" ref="{TYPHOON-JNR-k55-7567171D3CEF}-t"/>
+  		<car char="C" ref="{ADF87135-9F9C-058A-9B45-04F846A0479D}-h"/>
+   		<car char="D" ref="{ADF87135-9F9C-058A-9B45-04F846A0479D}-t"/>
+
+		<composition>ABCDCDCD</composition>
+		</config>
+	</contribution>
+</plug-in>

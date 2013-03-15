@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plug-in>
+	<title>System</title>
+	<!--!<title>システム</title>-->
+	<author>Kohsuke Kawaguchi</author>
+	<!--!<author>川口耕介</author>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+<!--
+	システムの機能もほとんどがコントリビューションとして定義されています。
+	このファイルでは、システム組み込みのコントリビューションを定義します。
+-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!-- システム組み込みの標準コントリビューション型 -->
+	
+	<contribution type="contribution" id="{312E3101-E7A6-4276-8AC9-617FA6D7ADEA}">
+		<!-- ＢＧＭ -->
+		<name>bgm</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.contributions.sound.BGMContribution" />
+	</contribution>
+	
+	<contribution type="contribution" id="{5E0E178B-835A-4987-8ECC-B9E7A70EB39A}">
+		<!-- ＢＧＭのファクトリ -->
+		<name>bgmFactory</name>
+		<class name="freetrain.contributions.sound.BGMFactoryContributionFactory"/>
+	</contribution>
+	
+	<contribution type="contribution" id="{32A5AFB2-B676-4A4E-A06E-917AF760FFB6}">
+		<!-- 駅 -->
+		<name>station</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.contributions.rail.StationContribution" />
+	</contribution>
+	
+	<contribution type="contribution" id="{636703FB-D70F-4AF8-9254-FBDA1DAB4344}">
+		<!-- 地表 -->
+		<name>land</name>
+		<class name="freetrain.framework.plugin.DynamicContributionFactory"/>
+		<implementation name="freetrain.contributions.land.LandBuilderContribution" />
+	</contribution>
+	
+	<contribution type="contribution" id="{6D1F34DC-F3E0-4CA8-B705-028C2F4D2F39}">
+		<!-- メニュー項目 -->
+		<name>menu</name>
+		<class name="freetrain.framework.plugin.DynamicContributionFactory"/>
+		<implementation name="freetrain.contributions.others.MenuContribution" />
+	</contribution>
+	
+	<contribution type="contribution" id="{12975FE4-93CB-41D5-9947-59FF28A8C961}">
+		<!-- 列車（一編成） -->
+		<name>train</name>
+		<class name="freetrain.contributions.train.TrainContributionFactory"/>
+	</contribution>
+	
+	<contribution type="contribution" id="{A18E14FD-1EC5-4C78-A721-42C91A864084}">
+		<!-- 列車（一両） -->
+		<name>trainCar</name>
+		<class name="freetrain.framework.plugin.DynamicContributionFactory"/>
+		<implementation name="freetrain.contributions.train.TrainCarContribution" />
+	</contribution>
+	
+	<contribution type="contribution" id="{A53A5080-8F66-4CA3-A88F-8B4D5D7EC0AC}">
+		<!-- 列車制御アルゴリズム -->
+		<name>trainController</name>
+		<class name="freetrain.framework.plugin.DynamicContributionFactory"/>
+		<implementation name="freetrain.contributions.rail.TrainControllerContribution" />
+	</contribution>
+	
+	<contribution type="contribution" id="{9D6AC382-8A79-4CCF-BE16-15AAA5EBD5F3}">
+		<!-- 鉄橋・トンネルなどの特殊な線路 -->
+		<name>specialRail</name>
+		<class name="freetrain.framework.plugin.DynamicContributionFactory"/>
+		<implementation name="freetrain.contributions.rail.SpecialRailContribution" />
+	</contribution>
+	
+	<contribution type="contribution" id="{DE8F9D81-67D0-4F8E-810D-E53D2251E64B}">
+		<!-- 空港などの特殊な「プロジェクト」建物 -->
+		<name>specialStructure</name>
+		<class name="freetrain.framework.plugin.DynamicContributionFactory"/>
+		<implementation name="freetrain.contributions.structs.SpecialStructureContribution" />
+	</contribution>
+	
+	<contribution type="contribution" id="{C9E8E541-FD55-47DB-B2D9-222E941DDB63}">
+		<!-- 建物 -->
+		<name>commercial</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.contributions.structs.CommercialStructureContribution" />
+	</contribution>
+	
+	<contribution type="contribution" id="{94B9070E-DEEA-4C70-AEF2-7E795312FEC3}">
+		<!-- 道路 -->
+		<name>road</name>
+		<class name="freetrain.framework.plugin.DynamicContributionFactory"/>
+		<implementation name="freetrain.contributions.road.RoadContribution" />
+	</contribution>
+	
+	<contribution type="contribution" id="{BFA3A8EA-05B0-4910-907F-4F617528B7CD}">
+		<!-- 鉄道用小物アクセサリ -->
+		<name>railStationary</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.contributions.rail.RailStationaryContribution" />
+	</contribution>
+	
+	<contribution type="contribution" id="{8D79D146-21F9-4E9E-ACAB-5B43A003F032}">
+		<!-- 高さ可変の建物 -->
+		<name>varHeightBuilding</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.contributions.structs.VarHeightBuildingContribution" />
+	</contribution>
+	
+<!--J[Cu-->
+	<contribution type="contribution" id="{C6F610B7-5046-4F74-C477-049B238F262D}">
+		<name>ColorLibrary</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.framework.plugin.graphics.ColorLibrary"/>
+	</contribution>
+
+	<contribution type="ColorLibrary" id="{COLORLIB-NULL}">
+		<name>NULL</name>
+	</contribution>
+	
+	<contribution type="ColorLibrary" id="{COLORLIB-RAINBOW}">
+		<name>Rainbow</name>
+		<!--!<name>カラフル</name>-->
+		<element color="230,0,18"/>
+		<element color="235,97,0"/>
+		<element color="245,232,0"/>
+		<element color="143,195,31"/>
+		<element color="0,153,68"/>
+		<element color="0,160,233"/>
+		<element color="40,73,238"/>
+		<element color="160,37,201"/>
+	</contribution>
+
+	<contribution type="ColorLibrary" id="{COLORLIB-STONES}">
+		<name>Stone</name>
+		<!--!<name>石壁</name>-->
+		<element color="149,63,55"/>
+		<element color="129,103,103"/>
+		<element color="210,167,117"/>
+		<element color="231,217,170"/>
+		<element color="210,210,210"/>
+		<element color="129,144,136"/>
+		<element color="149,149,167"/>
+		<element color="80,90,106"/>
+	</contribution>
+
+	<contribution type="ColorLibrary" id="{COLORLIB-WOODS}">
+		<name>Wood</name>
+		<!--!<name>木材</name>-->
+		<element color="207,136,34"/>
+		<element color="241,190,109"/>
+		<element color="197,162,144"/>
+		<element color="95,67,31"/>
+		<element color="138,101,48"/>
+		<element color="190,157,38"/>
+		<element color="218,206,138"/>
+		<element color="98,98,98"/>
+	</contribution>
+
+	<contribution type="ColorLibrary" id="{COLORLIB-METALS}">
+		<name>Metal</name>
+		<!--!<name>金属</name>-->
+		<element color="142,33,33"/>
+		<element color="183,131,131"/>
+		<element color="142,93,33"/>
+		<element color="185,175,85"/>		
+		<element color="134,126,36"/>		
+		<element color="152,171,143"/>		
+		<element color="105,140,84"/>
+		<element color="143,174,193"/>		
+		<element color="109,119,154"/>
+		<element color="220,220,220"/>		
+		<element color="153,153,153"/>
+		<element color="110,110,110"/>
+	</contribution>
+
+	<contribution type="ColorLibrary" id="{COLORLIB-BRICKS}">
+		<name>Brick</name>
+		<!--!<name>レンガ</name>-->
+		<element color="221,99,93"/>
+		<element color="154,31,11"/>
+		<element color="191,112,116"/>
+		<element color="210,108,50"/>
+		<element color="232,193,144"/>
+		<element color="192,123,40"/>
+		<element color="195,178,135"/>
+		<element color="150,144,110"/>
+	</contribution>
+
+	<contribution type="ColorLibrary" id="{COLORLIB-DIRTS}">
+		<name>Earth / Concrete</name>
+		<!--!<name>土・コンクリ</name>-->
+		<element color="153,108,51"/>
+		<element color="176,136,80"/>
+		<element color="175,151,128"/>
+		<element color="220,200,180"/>
+		<element color="170,164,96"/>
+		<element color="210,210,210"/>
+		<element color="150,157,141"/>
+		<element color="84,73,67"/>
+	</contribution>
+
+	<contribution type="ColorLibrary" id="{COLORLIB-PASTEL}">
+		<name>Pastel</name>
+		<!--!<name>パステル</name>-->
+		<element color="230,175,198"/>
+		<element color="225,170,139"/>
+		<element color="225,222,147"/>
+		<element color="200,220,162"/>
+		<element color="172,222,177"/>
+		<element color="190,220,215"/>
+		<element color="191,202,232"/>
+		<element color="217,187,232"/>
+	</contribution>	
+	
+	<contribution type="ColorLibrary" id="{COLORLIB-COLPLATE}">
+		<name>Painted Iron Roof</name>
+		<!--!<name>カラー鉄板屋根</name>-->
+		<element color="164,0,91"/>
+		<element color="248,110,158"/>
+		<element color="188,12,24"/>
+		<element color="90,80,33"/>
+		<element color="35,97,30"/>
+		<element color="154,189,184"/>		
+		<element color="113,223,185"/>		
+		<element color="84,175,210"/>		
+		<element color="92,114,127"/>
+		<element color="61,83,156"/>
+		<element color="210,210,210"/>
+		<element color="98,98,98"/>
+	</contribution>	
+	
+	<contribution type="ColorLibrary" id="{COLORLIB-ROOF}">
+		<name>Tile / Slate</name>
+		<!--!<name>瓦・スレート</name>-->
+		<element color="160,160,160"/>
+		<element color="84,84,84"/>
+		<element color="108,51,65"/>
+		<element color="168,66,0"/>
+		<element color="200,11,26"/>
+		<element color="232,137,36"/>
+		<element color="135,124,96"/>
+		<element color="138,182,44"/>
+		<element color="61,133,59"/>		
+		<element color="113,223,185"/>
+		<element color="68,103,175"/>
+		<element color="142,84,167"/>
+	</contribution>	
+	
+	
+<!-- 会計分類 -->
+	
+	<contribution type="contribution" id="{630D0CFF-FCCA-44CE-AF24-E26EFA54352B}">
+		<name>accountGenre</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.world.accounting.AccountGenre" />
+	</contribution>
+	
+	<contribution type="accountGenre" id="{AC30BB0B-044C-4784-A83D-FCB1F60B3CF2}">
+		<name>Rail</name>
+		<!--!<name>鉄道</name>-->
+	</contribution>
+	
+	<contribution type="accountGenre" id="{CC00A6D1-D078-4D3C-AFB2-EDC6CB9F4CB3}">
+		<name>Bus</name>
+		<!--!<name>バス</name>-->
+	</contribution>
+	
+	<contribution type="accountGenre" id="{2A666F1A-9F40-4F67-98F4-DEAC1E55296D}">
+		<name>Subsidiary</name>
+		<!--!<name>子会社</name>-->
+	</contribution>
+	
+	<contribution type="accountGenre" id="{C0A9ABA5-801F-4AA6-93EA-6FF563C2B407}">
+		<name>Other</name>
+		<!--!<name>その他</name>-->
+	</contribution>
+	
+	<!-- TODO: more coming -->
+	
+	
+	
+	
+<!-- 列車の発車ベル -->
+	
+	<contribution type="contribution" id="{821FC629-4180-48a4-8B47-ECE2817D2106}">
+		<name>trainDepartureBell</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.contributions.rail.DepartureBellContribution" />
+	</contribution>
+	
+	<contribution type="trainDepartureBell" id="{9B087AEA-6E9C-48cd-A1F3-1B774500752E}">
+		<name>Departure bell</name>
+		<!--!<name>プルルル</name>-->
+		<sound href="station.wav" />
+	</contribution>
+	
+	<contribution type="trainDepartureBell" id="{87B1BA1B-C18F-4E39-AD50-245255F34388}">
+		<name>Silence</name>
+		<!--!<name>無音</name>-->
+		<sound href="otonasi.wav" />
+	</contribution>
+	
+	
+	
+	
+	
+	
+	
+<!-- ドッキングウィンドウ -->
+	<contribution type="contribution" id="{B348329E-6D3B-4545-88A6-B8B368E11EED}">
+		<name>dockingContent</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.contributions.dock.DockingContribution" />
+	</contribution>
+	
+	<contribution type="dockingContent" id="{12DB2C30-14B2-426D-B324-639BE17268C5}">
+		<name>Sales Report</name>
+		<menu name="&amp;Sales Report" location="view" />
+		<!--!<name>売上情報</name>
+		<menu name="売上情報(&amp;S)" location="view" />-->
+		<class name="freetrain.world.accounting.AccountSummaryWindow"/>
+	</contribution>
+	
+	<contribution type="dockingContent" id="{7A5AE360-0974-4e6a-A7BB-70A3906C406E}">
+		<name>Subsidiaries</name>
+		<menu name="S&amp;ubsidiaries" location="view" />
+		<!--!<name>子会社売買</name>
+		<menu name="子会社売買(&amp;U)" location="view" />-->
+		<class name="freetrain.world.subsidiaries.MarketWindow"/>
+	</contribution>
+	
+	<contribution type="dockingContent" id="{CBB96A74-1201-4A26-82ED-B7A8C71EC5AD}">
+		<name>Diagram Settings</name>
+		<menu name="D&amp;iagram Settings" location="rail" position="8" />
+		<!--!<name>ダイヤ設定</name>
+		<menu name="ダイヤ設定(&amp;I)" location="rail" position="8" />-->
+		<class name="freetrain.controllers.rail.TrainControllerDialog"/>
+	</contribution>
+	
+	<contribution type="dockingContent" id="{533F5EF1-2E97-46aa-A231-49BB0D2A724D}">
+		<name>Train Tracking</name>
+		<!--!<name>列車情報</name>-->
+		<multiple/>	<!-- multiple instances are allowed -->
+		<menu name="&amp;Train Tracking" location="view" />
+		<!--!<menu name="列車情報(&amp;T)" location="view" />-->
+		<class name="freetrain.controllers.rail.TrainTrackingWindow"/>
+	</contribution>
+	
+	
+	
+	
+<!-- スプライトファクトリ -->
+	
+	<!--
+		ピクチャを描画する方法をカスタマイズできます
+	-->
+	<contribution type="contribution" id="{DC051871-BA74-45ED-B122-247BC7EA0BFA}">
+		<name>spriteFactory</name>
+		<class name="freetrain.framework.plugin.DynamicContributionFactory"/>
+		<implementation name="freetrain.framework.graphics.SpriteFactoryContribution" />
+	</contribution>
+	
+	
+	<!-- ディフォルトのスプライトファクトリ。パラメータなし -->
+	<contribution type="spriteFactory" id="spriteFactory:default">
+		<class name="freetrain.framework.graphics.SimpleSpriteFactoryContributionImpl"/>
+	</contribution>
+	
+	<!-- 色マップをするスプライトファクトリ。
+		<map from="100,50,200" to="30,80,90" />
+		...
+		
+		のパラメータをとる
+	-->
+	<contribution type="spriteFactory" id="spriteFactory:colorMapped">
+		<class name="freetrain.framework.graphics.ColorMappedSpriteFactoryContributionImpl"/>
+	</contribution>
+	
+	<!-- 色相による色マップをするスプライトファクトリ
+		<map from="100,*,100" to="50,30,20" />
+		のパラメータをとる
+	-->
+	<contribution type="spriteFactory" id="spriteFactory:hueTransform">
+		<class name="freetrain.framework.graphics.HueTransformSpriteFactoryContributionImpl"/>
+	</contribution>
+	
+	<!--  色相による色マップをするスプライトファクトリ
+		<map from="R" to="80,130,220" />
+		<map from="G" to="160,130,40" />
+		<map from="B" to="250,220,20" />
+		の一または複数のパラメータをとる
+	<contribution type="spriteFactory" id="spriteFactory:RGBTransform">
+		<class name="freetrain.framework.graphics.RGBTransformSpriteFactoryContributionImpl"/>
+	</contribution>	
+	-->	
+	
+	
+<!-- スプライトローダ。画像からどうスプライトを切り出すかを隠蔽する -->
+	<contribution type="contribution" id="{5733A3EA-7A2D-4602-B702-D63D55A0FAB9}">
+		<name>spriteLoader</name>
+		<class name="freetrain.framework.plugin.DynamicContributionFactory"/>
+		<implementation name="freetrain.framework.graphics.SpriteLoaderContribution" />
+	</contribution>
+	
+	<!--
+		ディフォルトの実装
+		
+		0D: <sprite origin="..." offset="..." size="..." picture="..." />
+		2D: <sprite origin="..." offset="..." picture="..." />
+		
+		it supports nested <picture> element.
+	-->
+	<contribution type="spriteLoader" id="spriteLoader:default">
+		<class name="freetrain.framework.graphics.DefaultSpriteLoaderContributionImpl"/>
+	</contribution>
+	
+	
+	
+	
+	
+	
+<!-- 匿名コントリビューション -->
+	
+	<contribution type="contribution" id="{8AD27BD7-FF9E-401b-B309-53BB0DFAD2C4}">
+		<name>anonymous</name>
+		<class name="freetrain.framework.plugin.DynamicContributionFactory"/>
+		<!-- any contribution is allowed as anonymous -->
+		<implementation name="freetrain.framework.plugin.Contribution" />
+	</contribution>
+	
+	
+	
+	
+	
+	
+<!-- 画像のコントリビューション。IDを使って画像にアクセスできるようになります -->
+	<contribution type="contribution" id="{A51C49BF-7C30-40B3-B371-ECDE6A7C9C0C}">
+		<name>picture</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.contributions.common.PictureContribution" />
+	</contribution>
+	
+	
+	<!-- システム組み込み画像 -->
+	<contribution type="picture" id="{3FF9F902-6B2A-44A4-9C5F-DE8D82CFD37D}">
+		<!-- 駅の画像 -->
+		<picture src="ThinPlatform.bmp">
+			<override when="night" src="ThinPlatform.n.bmp" />
+		</picture>
+	</contribution>
+	
+	<contribution type="picture" id="{3197A63A-89DC-4237-8C9B-045F41F31CDB}">
+		<!-- 跨線橋 -->
+		<picture src="renraku02.bmp">
+			<override when="night" src="renraku02.n.bmp" />
+		</picture>
+	</contribution>
+	
+	
+	
+	
+	
+	
+<!-- 色替え列車用の画像コントリビューション -->
+	<contribution type="contribution" id="{669FE39E-0F2B-42C1-B618-49832461448A}">
+		<name>colorMapTrainPicture</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.contributions.train.ColoredTrainPictureContribution" />
+	</contribution>
+	
+	<contribution type="colorMapTrainPicture" id="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-1">
+		<name>General-purpose three-color thin stripe</name>
+		<!--!<name>汎用三色細帯</name>-->
+		<author>477</author>
+		<!--!<author>477さん</author>-->
+		<picture src="UncoloredTrain01.bmp" />
+	</contribution>
+	
+	<contribution type="colorMapTrainPicture" id="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-2">
+		<name>General-purpose four-color thick stripe</name>
+		<!--!<name>汎用四色太帯</name>-->
+		<author>477</author>
+		<!--!<author>477さん</author>-->
+		<picture src="UncoloredTrain02.bmp" />
+	</contribution>
+	
+	<contribution type="colorMapTrainPicture" id="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-3">
+		<name>Genral-purpose four-color thin stripe</name>
+		<!--!<name>汎用四色細帯</name>-->
+		<author>477</author>
+		<!--!<author>477さん</author>-->
+		<picture src="UncoloredTrain03.bmp" />
+	</contribution>
+	
+	<contribution type="colorMapTrainPicture" id="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-4">
+		<name>103 series style</name>
+		<!--!<name>103系風</name>-->
+		<author>477</author>
+		<!--!<author>477さん</author>-->
+		<picture src="UncoloredTrain04.bmp" />
+	</contribution>
+	
+	<contribution type="colorMapTrainPicture" id="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-5">
+		<name>205 series style</name>
+		<!--!<name>205系風</name>-->
+		<author>477</author>
+		<!--!<author>477さん</author>-->
+		<picture src="UncoloredTrain05.bmp" />
+	</contribution>
+	
+	<contribution type="colorMapTrainPicture" id="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-6">
+		<name>211 series style</name>
+		<!--!<name>211系風</name>-->
+		<author>477</author>
+		<!--!<author>477さん</author>-->
+		<picture src="UncoloredTrain06.bmp" />
+	</contribution>
+	
+	<contribution type="colorMapTrainPicture" id="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-7">
+		<name>E231 series style</name>
+		<!--!<name>E231系風</name>-->
+		<author>477</author>
+		<!--!<author>477さん</author>-->
+		<picture src="UncoloredTrain07.bmp" />
+	</contribution>
+	
+	
+	
+	
+<!--
+	新規ゲーム
+	
+	新規ゲームコントリビューションで定義されたものが「新しいゲーム」
+	ダイアログに表示されます
+-->
+	<contribution type="contribution" id="{9AB5DFE3-B13A-485c-956D-996E27FDCD9F}">
+		<name>newGame</name>
+		<class name="freetrain.framework.plugin.DynamicContributionFactory"/>
+		<implementation name="freetrain.contributions.others.NewGameContribution" />
+	</contribution>
+	
+	<contribution type="newGame" id="{9093E8B2-9215-42f3-A36A-5CAA7AF389FF}">
+		<!-- A plug-in that creates a new empty world -->
+		<class name="freetrain.contributions.others.EmptyNewGameContributionImpl"/>
+	</contribution>
+	
+	
+	
+	
+<!-- そのほかのシステム定義画像 -->
+	<contribution type="picture" id="{F4380415-A2F2-41d8-8FCD-ED25A470A84D}">
+		<!-- 踏み切り -->
+		<picture src="crossing.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{0E7A9F09-4482-4b78-8A8D-F59F02574B1B}">
+		<!-- 私有地 -->
+		<picture src="LandProperty.bmp" />
+	</contribution>
+	
+	
+</plug-in>

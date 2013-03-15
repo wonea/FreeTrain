@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY HiClassHotelPopulation '
+	<population>
+		<class name="freetrain.contributions.population.ResidentialPopulation"/>
+		<base>35</base>
+	</population>
+'>
+<!ENTITY crPeru '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="197,149,95"/>
+	</spriteType>
+'>
+<!ENTITY crWhite '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="255,255,255"/>
+	</spriteType>
+'>
+<!ENTITY crSteelBlue '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="200,240,255"/>
+	</spriteType>
+'>
+]>
+<plug-in>
+	<title>General hospital</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+	<contribution type="picture" id="{C1E8C47D-219F-4FAC-C477-7BCC21E2999A}">
+		<picture src="gene_hospitalA.bmp">
+			<override when="night" src="gene_hospitalA_n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{562C9F64-B51B-43BC-C477-2E78A25C5028}">
+		<picture src="gene_hospitalA3.bmp">
+			<override when="night" src="gene_hospitalA3_n.bmp" />
+		</picture>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{45E15A82-EC17-48FE-C477-27F07E6130F9}">
+		<name>General hospital</name>
+		<design>suburban main building</design>
+		<structure>
+			<category byname="Hospitals"/>
+		</structure>
+		<price>32000</price>
+		<size>6,5</size>
+		<height>2</height>
+		&HiClassHotelPopulation;
+		&crWhite;
+		&crPeru;
+		&crSteelBlue;
+		<sprite origin="0,0" offset="72">
+			<picture ref="{C1E8C47D-219F-4FAC-C477-7BCC21E2999A}"/>
+		</sprite>
+		<sprite origin="176,0" offset="64" opposite="true">
+			<picture ref="{C1E8C47D-219F-4FAC-C477-7BCC21E2999A}"/>
+		</sprite>
+		<sprite origin="352,0" offset="72">
+			<picture ref="{C1E8C47D-219F-4FAC-C477-7BCC21E2999A}"/>
+		</sprite>
+		<sprite origin="528,0" offset="64" opposite="true">
+			<picture ref="{C1E8C47D-219F-4FAC-C477-7BCC21E2999A}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{4A9A4AFC-3351-4B3D-C477-8D0AC25D5D0F}">
+		<name>General hospital</name>
+		<design>suburban sub building</design>
+		<structure>
+			<category byname="Hospitals"/>
+		</structure>
+		<price>32000</price>
+		<size>5,4</size>
+		<height>2</height>
+		&HiClassHotelPopulation;
+		&crWhite;
+		&crPeru;
+		&crSteelBlue;
+		<sprite origin="0,0" offset="64">
+			<picture ref="{562C9F64-B51B-43BC-C477-2E78A25C5028}"/>
+		</sprite>
+		<sprite origin="144,0" offset="56" opposite="true">
+			<picture ref="{562C9F64-B51B-43BC-C477-2E78A25C5028}"/>
+		</sprite>
+		<sprite origin="288,0" offset="64">
+			<picture ref="{562C9F64-B51B-43BC-C477-2E78A25C5028}"/>
+		</sprite>
+		<sprite origin="432,0" offset="56" opposite="true">
+			<picture ref="{562C9F64-B51B-43BC-C477-2E78A25C5028}"/>
+		</sprite>
+	</contribution>
+</plug-in>

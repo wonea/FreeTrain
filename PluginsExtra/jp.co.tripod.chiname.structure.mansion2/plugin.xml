@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY Manshon1_2a '
+	<group>Condominium(1x2)</group>
+	<design>simple modern</design>
+	<price>1500</price>
+	<size>2,1</size>
+	<structure>
+		<category byname="Condominiums"/>
+	</structure>
+	<minHeight>2</minHeight>
+	<maxHeight>4</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.ResidentialPopulation"/>
+		<base>80</base>
+	</population>
+'>
+<!ENTITY Manshon1_2b '
+	<group>Condominium(1x2)</group>
+	<design>European brick</design>
+	<price>1900</price>
+	<size>2,1</size>
+	<structure>
+		<category byname="Condominiums"/>
+	</structure>
+	<minHeight>2</minHeight>
+	<maxHeight>4</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.ResidentialPopulation"/>
+		<base>82</base>
+	</population>
+'>
+
+<!ENTITY crWhite '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="255,255,255"/>
+	</spriteType>
+'>
+<!ENTITY crRosyBrown '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="192,136,126"/>
+	</spriteType>
+'>
+<!ENTITY crBrown '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="122,79,31"/>
+	</spriteType>
+'>
+<!ENTITY crLtSteelBlue '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="154,159,180"/>
+	</spriteType>
+'>
+<!ENTITY crKhaki '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="201,195,141"/>
+	</spriteType>
+'>
+<!ENTITY crBlack '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="60,60,60"/>
+	</spriteType>
+'>
+
+<!ENTITY crRedBrick '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="195,101,110"/>
+	</spriteType>
+'>
+
+<!ENTITY crEarthBrown '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="187,137,106"/>
+	</spriteType>
+'>
+<!ENTITY crChoco '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="138,57,43"/>
+	</spriteType>
+'>
+<!ENTITY crOrange '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="221,145,32"/>
+	</spriteType>
+'>
+
+
+]>
+
+<plug-in>
+	<title>Condominium</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+
+	<contribution type="picture" id="{C8357183-5899-4B14-C477-F7CB5E4DCD21}">
+		<picture src="mansnVH_m03.bmp">
+			<override when="night" src="mansnVH_m03_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{DAD6B0D4-3E1B-4030-C477-E34BFB6BA3C3}">
+		<picture src="mansnVH_m04.bmp">
+			<override when="night" src="mansnVH_m04_n.bmp"/>
+		</picture>
+	</contribution>
+
+
+	<contribution type="GenericStructure" id="{2B65B244-70A7-4A82-C477-15B31E553D17}">
+		&Manshon1_2a;
+		&crWhite;
+		&crRosyBrown;
+		&crBrown;
+		&crLtSteelBlue;
+		&crKhaki;
+		&crBlack;
+		<pictures>
+			<top    origin=" 0, 0" offset="16">
+				<picture ref="{C8357183-5899-4B14-C477-F7CB5E4DCD21}"/>
+			</top>
+			<middle origin=" 0,32" offset="32">
+				<picture ref="{C8357183-5899-4B14-C477-F7CB5E4DCD21}"/>
+			</middle>
+			<bottom origin=" 0,80" offset="32">
+				<picture ref="{C8357183-5899-4B14-C477-F7CB5E4DCD21}"/>
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top    origin="48, 0" offset="8">
+				<picture ref="{C8357183-5899-4B14-C477-F7CB5E4DCD21}"/>
+			</top>
+			<middle origin="48,32" offset="24">
+				<picture ref="{C8357183-5899-4B14-C477-F7CB5E4DCD21}"/>
+			</middle>
+			<bottom origin="48,80" offset="24">
+				<picture ref="{C8357183-5899-4B14-C477-F7CB5E4DCD21}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="96, 0" offset="16">
+				<picture ref="{C8357183-5899-4B14-C477-F7CB5E4DCD21}"/>
+			</top>
+			<middle origin="96,32" offset="32">
+				<picture ref="{C8357183-5899-4B14-C477-F7CB5E4DCD21}"/>
+			</middle>
+			<bottom origin="96,80" offset="32">
+				<picture ref="{C8357183-5899-4B14-C477-F7CB5E4DCD21}"/>
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top    origin="144, 0" offset="8">
+				<picture ref="{C8357183-5899-4B14-C477-F7CB5E4DCD21}"/>
+			</top>
+			<middle origin="144,32" offset="24">
+				<picture ref="{C8357183-5899-4B14-C477-F7CB5E4DCD21}"/>
+			</middle>
+			<bottom origin="144,80" offset="24">
+				<picture ref="{C8357183-5899-4B14-C477-F7CB5E4DCD21}"/>
+			</bottom>
+		</pictures>
+	</contribution>	
+	<contribution type="GenericStructure" id="{5531DF59-5ABC-422C-C477-2DE1D4C3127D}">
+		&Manshon1_2b;
+		&crRedBrick;
+		&crEarthBrown;
+		&crChoco;
+		<pictures>
+			<top    origin=" 0, 8" offset="24">
+				<picture ref="{DAD6B0D4-3E1B-4030-C477-E34BFB6BA3C3}"/>
+			</top>
+			<middle origin=" 0,56" offset="24">
+				<picture ref="{DAD6B0D4-3E1B-4030-C477-E34BFB6BA3C3}"/>
+			</middle>
+			<bottom origin=" 0,104" offset="24">
+				<picture ref="{DAD6B0D4-3E1B-4030-C477-E34BFB6BA3C3}"/>
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top    origin="48, 8" offset="16">
+				<picture ref="{DAD6B0D4-3E1B-4030-C477-E34BFB6BA3C3}"/>
+			</top>
+			<middle origin="48,56" offset="16">
+				<picture ref="{DAD6B0D4-3E1B-4030-C477-E34BFB6BA3C3}"/>
+			</middle>
+			<bottom origin="48,104" offset="16">
+				<picture ref="{DAD6B0D4-3E1B-4030-C477-E34BFB6BA3C3}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="96, 8" offset="24">
+				<picture ref="{DAD6B0D4-3E1B-4030-C477-E34BFB6BA3C3}"/>
+			</top>
+			<middle origin="96,56" offset="24">
+				<picture ref="{DAD6B0D4-3E1B-4030-C477-E34BFB6BA3C3}"/>
+			</middle>
+			<bottom origin="96,104" offset="24">
+				<picture ref="{DAD6B0D4-3E1B-4030-C477-E34BFB6BA3C3}"/>
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top    origin="144, 8" offset="16">
+				<picture ref="{DAD6B0D4-3E1B-4030-C477-E34BFB6BA3C3}"/>
+			</top>
+			<middle origin="144,56" offset="16">
+				<picture ref="{DAD6B0D4-3E1B-4030-C477-E34BFB6BA3C3}"/>
+			</middle>
+			<bottom origin="144,104" offset="16">
+				<picture ref="{DAD6B0D4-3E1B-4030-C477-E34BFB6BA3C3}"/>
+			</bottom>
+		</pictures>
+	</contribution>	
+</plug-in>

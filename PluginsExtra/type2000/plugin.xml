@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<plug-in>
+  <title>TYPE2000</title> 
+  <author>Shino</author> 
+  <homepage></homepage>
+ 
+<!-- 2000先頭車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9A44-TYPE2000}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000a.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution>
+<!-- 2000最後尾車 -->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9A44-TYPE2000}-B">
+　<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+  <base carRef="{6F2F2667-05F0-4595-9A44-TYPE2000}-A" />  
+  <capacity>142</capacity> 
+  </contribution> 
+<!--2000中間車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9A44-TYPE2000}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000b.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--2000パンタ車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9A44-TYPE2000}-P">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000p.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{79C7B654-0E5E-402D-87CB-525CA403F917}">
+<company>Keihin Express Electric Railway</company>
+<type>2000 Series Remodeled (slow)</type>
+<name>Keikyu Line</name>
+<author>Shino</author>
+<description>The 2000 Series were introduced in 1982 and had two doors and cross seats. After remodeling, another door was added and long seats were installed. Nonwithstading, it retained its traditional capabilities and became more widely used. (low-speed version)
+</description>
+<fare>200</fare>
+<price>2200</price>
+<speed>slow</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{6F2F2667-05F0-4595-9A44-TYPE2000}-A"/>
+<car char="中" ref="{6F2F2667-05F0-4595-9A44-TYPE2000}-C"/>
+<car char="後" ref="{6F2F2667-05F0-4595-9A44-TYPE2000}-B"/> 
+<car char="P" ref="{6F2F2667-05F0-4595-9A44-TYPE2000}-P"/> 
+<composition>前P中後</composition>
+<composition>前P中中中中P後</composition>
+<composition>前中P後前P中中中中P後</composition>
+</config>
+</contribution>
+
+<!-- 2000先頭車 --> 
+　<contribution type="trainCar" id="{4F2F2667-05F0-4595-9A44-TYPE2000}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000a.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution>
+<!-- 2000最後尾車 -->
+　<contribution type="trainCar" id="{4F2F2667-05F0-4595-9A44-TYPE2000}-B">
+　<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+  <base carRef="{4F2F2667-05F0-4595-9A44-TYPE2000}-A" />  
+  <capacity>142</capacity> 
+  </contribution> 
+<!--2000中間車-->
+　<contribution type="trainCar" id="{4F2F2667-05F0-4595-9A44-TYPE2000}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000b.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--2000パンタ車-->
+　<contribution type="trainCar" id="{4F2F2667-05F0-4595-9A44-TYPE2000}-P">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000p.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{52C7B654-0E5E-402D-87CB-525CA403F917}">
+<company>Keihin Express Electric Railway</company>
+<type>2000 Series Remodeled (medium)</type>
+<name>Keikyu Line</name>
+<author>Shino</author>
+<description>The 2000 Series were introduced in 1982 and had two doors and cross seats. After remodeling, another door was added and long seats were installed. Nonwithstading, it retained its traditional capabilities and became more widely used. (medium-speed version)
+</description>
+<fare>200</fare>
+<price>2200</price>
+<speed>medium</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{4F2F2667-05F0-4595-9A44-TYPE2000}-A"/>
+<car char="中" ref="{4F2F2667-05F0-4595-9A44-TYPE2000}-C"/>
+<car char="後" ref="{4F2F2667-05F0-4595-9A44-TYPE2000}-B"/> 
+<car char="P" ref="{4F2F2667-05F0-4595-9A44-TYPE2000}-P"/> 
+<composition>前P中後</composition>
+<composition>前P中中中中P後</composition>
+<composition>前中P後前P中中中中P後</composition>
+</config>
+</contribution>
+
+<!-- 2000先頭車 --> 
+　<contribution type="trainCar" id="{2F2F2667-05F0-4595-9A44-TYPE2000}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000a.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution>
+<!-- 2000最後尾車 -->
+　<contribution type="trainCar" id="{2F2F2667-05F0-4595-9A44-TYPE2000}-B">
+　<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+  <base carRef="{2F2F2667-05F0-4595-9A44-TYPE2000}-A" />  
+  <capacity>142</capacity> 
+  </contribution> 
+<!--2000中間車-->
+　<contribution type="trainCar" id="{2F2F2667-05F0-4595-9A44-TYPE2000}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000b.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--2000パンタ車-->
+　<contribution type="trainCar" id="{2F2F2667-05F0-4595-9A44-TYPE2000}-P">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000p.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{75G3A011-0E5E-402D-87CB-525CA403F917}">
+<company>Keihin Express Electric Railway</company>
+<type>2000 Series Remodeled (fast)</type>
+<name>Keikyu Line</name>
+<author>Shino</author>
+<description>The 2000 Series were introduced in 1982 and had two doors and cross seats. After remodeling, another door was added and long seats were installed. Nonwithstading, it retained its traditional capabilities and became more widely used. (high-speed version)
+</description>
+<fare>200</fare>
+<price>2200</price>
+<speed>fast</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{2F2F2667-05F0-4595-9A44-TYPE2000}-A"/>
+<car char="中" ref="{2F2F2667-05F0-4595-9A44-TYPE2000}-C"/>
+<car char="後" ref="{2F2F2667-05F0-4595-9A44-TYPE2000}-B"/> 
+<car char="P" ref="{2F2F2667-05F0-4595-9A44-TYPE2000}-P"/> 
+<composition>前P中後</composition>
+<composition>前P中中中中P後</composition>
+<composition>前中P後前P中中中中P後</composition>
+</config>
+</contribution>
+
+
+
+<!-- 2000先頭車 --> 
+　<contribution type="trainCar" id="{835CA09F-1ECC-470A-OLD-TYPE2000}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000a old.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution>
+<!-- 2000最後尾車 -->
+　<contribution type="trainCar" id="{835CA09F-1ECC-470A-OLD-TYPE2000}-B">
+　<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+  <base carRef="{835CA09F-1ECC-470A-OLD-TYPE2000}-A" />  
+  <capacity>142</capacity> 
+  </contribution> 
+<!--2000中間車-->
+　<contribution type="trainCar" id="{835CA09F-1ECC-470A-OLD-TYPE2000}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000b old.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--2000パンタ車-->
+　<contribution type="trainCar" id="{835CA09F-1ECC-470A-OLD-TYPE2000}-P">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000p old.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{628615F9-AECD-4E43-A179-088290B7B216}">
+<company>Keihin Express Electric Railway</company>
+<type>2000 Series Nonremodeled (slow)</type>
+<name>Keikyu Line</name>
+<author>Shino</author>
+<description>Introduced as the successor of the old rapid train 600 Series in 1982. With the exception of the carriage right behind the cab, it was fitted with cross seats. Originally available only in an 8 car formation, an additional 4 car formation was manufactured from 1985. The 8 and 4 car formations could be connected to form a 12 car formation used during rush hours, or two 4 car formations could be used as an 8 car formation. (low-speed type)
+</description>
+<fare>200</fare>
+<price>2200</price>
+<speed>slow</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{835CA09F-1ECC-470A-OLD-TYPE2000}-A"/>
+<car char="中" ref="{835CA09F-1ECC-470A-OLD-TYPE2000}-C"/>
+<car char="後" ref="{835CA09F-1ECC-470A-OLD-TYPE2000}-B"/> 
+<car char="P" ref="{835CA09F-1ECC-470A-OLD-TYPE2000}-P"/> 
+<composition>前P中後</composition>
+<composition>前P中中中中P後</composition>
+<composition>前中P後前P中中中中P後</composition>
+</config>
+</contribution>
+
+<!-- 2000先頭車 --> 
+　<contribution type="trainCar" id="{835CA09F-2ECC-470A-OLD-TYPE2000}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000a old.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution>
+<!-- 2000最後尾車 -->
+　<contribution type="trainCar" id="{835CA09F-2ECC-470A-OLD-TYPE2000}-B">
+　<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+  <base carRef="{835CA09F-2ECC-470A-OLD-TYPE2000}-A" />  
+  <capacity>142</capacity> 
+  </contribution> 
+<!--2000中間車-->
+　<contribution type="trainCar" id="{835CA09F-2ECC-470A-OLD-TYPE2000}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000b old.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--2000パンタ車-->
+　<contribution type="trainCar" id="{835CA09F-2ECC-470A-OLD-TYPE2000}-P">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000p old.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{123F092D-91F0-449C-BCB3-9A2A189650B8}">
+<company>Keihin Express Electric Railway</company>
+<type>2000 Series Nonremodeled (medium)</type>
+<name>Keikyu Line</name>
+<author>Shino</author>
+<description>Introduced as the successor of the old rapid train 600 Series in 1982. With the exception of the carriage right behind the cab, it was fitted with cross seats. Originally available only in an 8 car formation, an additional 4 car formation was manufactured from 1985. The 8 and 4 car formations could be connected to form a 12 car formation used during rush hours, or two 4 car formations could be used as an 8 car formation. (medium-speed type)
+</description>
+<fare>200</fare>
+<price>2200</price>
+<speed>medium</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{835CA09F-2ECC-470A-OLD-TYPE2000}-A"/>
+<car char="中" ref="{835CA09F-2ECC-470A-OLD-TYPE2000}-C"/>
+<car char="後" ref="{835CA09F-2ECC-470A-OLD-TYPE2000}-B"/> 
+<car char="P" ref="{835CA09F-2ECC-470A-OLD-TYPE2000}-P"/> 
+<composition>前P中後</composition>
+<composition>前P中中中中P後</composition>
+<composition>前中P後前P中中中中P後</composition>
+</config>
+</contribution>
+
+<!-- 2000先頭車 --> 
+　<contribution type="trainCar" id="{835CA09F-3ECC-470A-OLD-TYPE2000}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000a old.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution>
+<!-- 2000最後尾車 -->
+　<contribution type="trainCar" id="{835CA09F-3ECC-470A-OLD-TYPE2000}-B">
+　<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+  <base carRef="{835CA09F-3ECC-470A-OLD-TYPE2000}-A" />  
+  <capacity>142</capacity> 
+  </contribution> 
+<!--2000中間車-->
+　<contribution type="trainCar" id="{835CA09F-3ECC-470A-OLD-TYPE2000}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000b old.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--2000パンタ車-->
+　<contribution type="trainCar" id="{835CA09F-3ECC-470A-OLD-TYPE2000}-P">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000p old.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{6204E5B8-6EB6-4F64-A14D-44694A5C5D02}">
+<company>Keihin Express Electric Railway</company>
+<type>2000 Series Nonremodeled (fast)</type>
+<name>Keikyu Line</name>
+<author>Shino</author>
+<description>Introduced as the successor of the old rapid train 600 Series in 1982. With the exception of the carriage right behind the cab, it was fitted with cross seats. Originally available only in an 8 car formation, an additional 4 car formation was manufactured from 1985. The 8 and 4 car formations could be connected to form a 12 car formation used during rush hours, or two 4 car formations could be used as an 8 car formation. (high-speed type)
+</description>
+<fare>200</fare>
+<price>2200</price>
+<speed>fast</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{835CA09F-3ECC-470A-OLD-TYPE2000}-A"/>
+<car char="中" ref="{835CA09F-3ECC-470A-OLD-TYPE2000}-C"/>
+<car char="後" ref="{835CA09F-3ECC-470A-OLD-TYPE2000}-B"/> 
+<car char="P" ref="{835CA09F-3ECC-470A-OLD-TYPE2000}-P"/> 
+<composition>前P中後</composition>
+<composition>前P中中中中P後</composition>
+<composition>前中P後前P中中中中P後</composition>
+</config>
+</contribution>
+
+<!-- 2000先頭車 --> 
+　<contribution type="trainCar" id="{835CA09F-4ECC-470A-OLD-TYPE2000}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000a old.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution>
+<!-- 2000最後尾車 -->
+　<contribution type="trainCar" id="{835CA09F-4ECC-470A-OLD-TYPE2000}-B">
+　<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+  <base carRef="{835CA09F-4ECC-470A-OLD-TYPE2000}-A" />  
+  <capacity>142</capacity> 
+  </contribution> 
+<!--2000中間車-->
+　<contribution type="trainCar" id="{835CA09F-4ECC-470A-OLD-TYPE2000}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000b old.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--2000パンタ車-->
+　<contribution type="trainCar" id="{835CA09F-4ECC-470A-OLD-TYPE2000}-P">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 2000p old.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{90G4AE26-7EB6-9D32-H49F-44694A5C5D02}">
+<company>Keihin Express Electric Railway</company>
+<type>2000 Series Nonremodeled 4+4 car (fast)</type>
+<name>Keikyu Line</name>
+<author>Shino</author>
+<description>Introduced as the successor of the old rapid train 600 Series in 1982. With the exception of the carriage right behind the cab, it was fitted with cross seats. Originally available only in an 8 car formation, an additional 4 car formation was manufactured from 1985. The 8 and 4 car formations could be connected to form a 12 car formation used during rush hours, or two 4 car formations could be used as an 8 car formation. (high-speed 4 car or 4+4 car type)
+</description>
+<fare>200</fare>
+<price>2200</price>
+<speed>fast</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{835CA09F-4ECC-470A-OLD-TYPE2000}-A"/>
+<car char="中" ref="{835CA09F-4ECC-470A-OLD-TYPE2000}-C"/>
+<car char="後" ref="{835CA09F-4ECC-470A-OLD-TYPE2000}-B"/> 
+<car char="P" ref="{835CA09F-4ECC-470A-OLD-TYPE2000}-P"/> 
+<composition>前P中後</composition>
+<composition>前P中後前P中後</composition>
+</config>
+</contribution>
+</plug-in>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Sagami Railway Plugin</title>
+	<author>Nanashi-no-Hito</author>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<!-- 10000系 -->
+	<contribution type="trainCar" id="{0405302000}dfyu3432413">
+	<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+	<capacity>180</capacity>
+ 	<colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-7" base="192,192,192" line1="128,128,128" line2="0,128,0" line3="255,255,0" />
+    	</contribution>
+
+	<contribution type="train" id="{0405302000}ljkyl5xldjgul32">
+ 		<company>Sagami Railway</company>
+		 <type>10000 Series</type>
+		 <name>10000 Series</name>
+		 <capacity>180</capacity>
+		 <author>Sotetsu</author>
+		 <description>相模鉄道の最新型車輌JR東日本のE231を基本にして作られた   </description>
+		 <price>1300</price>
+		 <speed>medium</speed>
+		<composition>
+			<body carRef="{0405302000}dfyu3432413"/>
+		</composition>
+	</contribution>
+
+
+
+
+
+
+	<!-- 5000形 -->
+	<contribution type="trainCar" id="{0406022228}dfydsfyh13">
+	<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+	<capacity>180</capacity>
+ 	 <colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-6" base="128,128,128"  line1="255,0,0" line2="255,0,0" line3="128,128,128" />   
+    	</contribution>
+
+	<contribution type="train" id="{0406022228}lja8953jgul32">
+ 		<company>Sagami Railway</company>
+		 <type>5000 Series</type>
+		 <name>5000 Series</name>
+		 <capacity>180</capacity>
+		 <author>Holiday Rapid Service Sotetsu Line</author>
+		 <description>相模鉄道初の新造車。VVVFインバーター制御に改造された</description>
+		 <price>1500</price>
+		 <speed>medium</speed>
+		<composition>
+			<body carRef="{0406022228}dfydsfyh13"/>
+		</composition>
+	</contribution>
+
+
+</plug-in>

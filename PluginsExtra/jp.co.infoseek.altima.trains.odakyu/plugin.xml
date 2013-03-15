@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Odakyu Train Pack</title>
+	<author>Altima</author>
+	<homepage>http://zero-d.web.infoseek.co.jp/</homepage>
+
+
+	<contribution type="picture" id="{AltimaTRAINS-EC-ODAKYU-8000-PIC01}">
+		<picture src="odakyu8000b.bmp"/>
+	</contribution>
+
+
+	<!-- 2600形2670F先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-2600TC1-2670F}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>144</capacity>
+		<sprite origin="0,0">
+			<picture src="odakyu2670f_a.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 2600形2670F中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-2600MI1-2670F}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>162</capacity>
+		<sprite origin="0,0">
+			<picture src="odakyu2670f_b.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 2600形2670F後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-2600TC2-2670F}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-ODAKYU-2600TC1-2670F}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-2600-2670F}">
+		<company>Odakyu Electric Railway</company>
+		<type>2600 Series (Old Coating) 2670F</type>
+		<name></name>
+		<author>Altima</author>
+		<description>1964年に小田急初の20m通勤車として登場。広幅・裾絞り車体、両開き4扉など近代の小田急電車の基本となった。最後まで残った2670Fは、ダークブルーとオレンジイエローの旧塗装に復元された。</description>
+		<fare>350</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-ODAKYU-2600TC1-2670F}"/>
+			<body carRef="{AltimaTRAINS-EC-ODAKYU-2600MI1-2670F}"/>
+			<tail carRef="{AltimaTRAINS-EC-ODAKYU-2600TC2-2670F}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 5000形先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-5000TC1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>144</capacity>
+		<sprite origin="0,0">
+			<picture src="odakyu5000a.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 5000形中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-5000MI1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>162</capacity>
+		<sprite origin="0,0">
+			<picture src="odakyu5000b.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 5000形後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-5000TC2}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-ODAKYU-5000TC1}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-5000}">
+		<company>Odakyu Electric Railway</company>
+		<type>5000 Series / 5200 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>1969年に優等列車向けの車両として登場。2600形を基本とし、電動カム軸抵抗バーニア制御を採用。4連は5000形、6連は5200形となっている。1990年からは修繕・更新工事を順次実施している。</description>
+		<fare>350</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-ODAKYU-5000TC1}"/>
+			<body carRef="{AltimaTRAINS-EC-ODAKYU-5000MI1}"/>
+			<tail carRef="{AltimaTRAINS-EC-ODAKYU-5000TC2}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 8000形先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-8000TC1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>144</capacity>
+		<sprite origin="0,0">
+			<picture src="odakyu8000a.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 8000形中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-8000MI1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>162</capacity>
+		<sprite origin="0,0">
+			<picture ref="{AltimaTRAINS-EC-ODAKYU-8000-PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 8000形後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-8000TC2}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-ODAKYU-8000TC1}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-8000}">
+		<company>Odakyu Electric Railway</company>
+		<type>8000 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>1982年に地上線用として登場。当時流行のブラックフェイスを取り入れたスタイル。制御装置は9000形と同じ界磁チョッパ。一部車両はIGBT-VVVF採用などの更新工事を実施している。</description>
+		<fare>390</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-ODAKYU-8000TC1}"/>
+			<body carRef="{AltimaTRAINS-EC-ODAKYU-8000MI1}"/>
+			<tail carRef="{AltimaTRAINS-EC-ODAKYU-8000TC2}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 1000形先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-1000TC1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>144</capacity>
+		<sprite origin="0,0">
+			<picture src="odakyu1000a.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 1000形中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-1000MI1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>157</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="231,228,216" to="186,189,200"/>
+<map from="171,169,161" to="138,140,148"/>
+<map from="245,242,230" to="198,201,212"/>
+<map from="186,184,175" to="151,153,161"/>
+<map from="201,198,189" to="162,165,174"/>
+<map from="213,211,200" to="173,173,173"/>
+<map from="162,161,152" to="132,132,132"/>
+<map from="215,213,202" to="174,177,186"/>
+<map from="184,183,173" to="149,152,160"/>
+<map from="137,135,128" to="110,112,119"/>
+<map from="175,173,164" to="142,142,142"/>
+<map from="187,185,176" to="152,152,152"/>
+<map from="200,199,188" to="163,163,163"/>
+<map from="196,194,184" to="158,161,170"/>
+<map from="0,118,178" to="0,119,179"/>
+<map from="0,90,135" to="0,91,136"/>
+<map from="149,148,140" to="120,122,129"/>
+<map from="170,169,160" to="138,138,138"/>
+<map from="129,129,122" to="105,105,105"/>
+<map from="0,97,146" to="0,98,147"/>
+<map from="0,111,168" to="0,112,168"/>
+<map from="139,139,131" to="113,113,113"/>
+<map from="161,159,151" to="129,132,139"/>
+<map from="0,104,156" to="0,105,157"/>
+<map from="160,159,151" to="130,130,130"/>
+<map from="172,170,162" to="139,141,149"/>
+<map from="149,148,141" to="121,121,121"/>
+			</spriteType>
+			<picture ref="{AltimaTRAINS-EC-ODAKYU-8000-PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 1000形後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-1000TC2}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-ODAKYU-1000TC1}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-1000}">
+		<company>Odakyu Electric Railway</company>
+		<type>1000 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>1987年に登場。同社初のステンレス車体、GTO-VVVF車で、一部を除き地下鉄直通に対応。長期間増備され形式バリエーションが豊富で、200両近い大所帯を誇る。</description>
+		<fare>450</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-ODAKYU-1000TC1}"/>
+			<body carRef="{AltimaTRAINS-EC-ODAKYU-1000MI1}"/>
+			<tail carRef="{AltimaTRAINS-EC-ODAKYU-1000TC2}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 1700形先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-1700TC1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>144</capacity>
+		<sprite origin="0,0">
+			<picture src="odakyu1700a.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 1700形中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-1700MI1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>157</capacity>
+		<sprite origin="0,0">
+			<picture src="odakyu1700b.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 1700形後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-1700TC2}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-ODAKYU-1700TC1}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-1700}">
+		<company>Odakyu Electric Railway</company>
+		<type>1500 Series / 1700 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>1991年に登場した車両で、乗降時間対策として2mドアを採用。その後1.6m開口制限と座席の増加改造を行なった。4連は1500形、6連は1700形となっていたが、2004年からは6連化改造と改番を行なう。</description>
+		<fare>450</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-ODAKYU-1700TC1}"/>
+			<body carRef="{AltimaTRAINS-EC-ODAKYU-1700MI1}"/>
+			<tail carRef="{AltimaTRAINS-EC-ODAKYU-1700TC2}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 2000形先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-2000TC1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>144</capacity>
+		<sprite origin="0,0">
+			<picture src="odakyu2000a.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 2000形中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-2000MI1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>157</capacity>
+		<sprite origin="0,0">
+			<picture src="odakyu2000b.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 2000形後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-2000TC2}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-ODAKYU-2000TC1}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-2000}">
+		<company>Odakyu Electric Railway</company>
+		<type>2000 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>1995年に登場した車両。車体は1000形とほとんど同じだが、IGBT-VVVFやLED表示器・案内装置、1.6mドアを採用している。</description>
+		<fare>470</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-ODAKYU-2000TC1}"/>
+			<body carRef="{AltimaTRAINS-EC-ODAKYU-2000MI1}"/>
+			<tail carRef="{AltimaTRAINS-EC-ODAKYU-2000TC2}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 3000形1次車先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-3000TC1-1ST}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>145</capacity>
+		<sprite origin="0,0">
+			<picture src="odakyu3000-1st_a.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 3000形1次車中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-3000MI1-1ST}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>157</capacity>
+		<sprite origin="0,0">
+			<picture src="odakyu3000-1st_b.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 3000形1次車後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-3000TC2-1ST}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-ODAKYU-3000TC1-1ST}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-3000-1ST}">
+		<company>Odakyu Electric Railway</company>
+		<type>3000 Series 1st Car</type>
+		<name></name>
+		<author>Altima</author>
+		<description>
+2001年デビューの最新型車両。ストレート車体や前面非貫通構造など、近年の小田急電車の特徴を覆す車両となった。1次車は1.6mワイドドアを採用、ブロック工法を用いた車体構造となっている。</description>
+		<fare>470</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-ODAKYU-3000TC1-1ST}"/>
+			<body carRef="{AltimaTRAINS-EC-ODAKYU-3000MI1-1ST}"/>
+			<tail carRef="{AltimaTRAINS-EC-ODAKYU-3000TC2-1ST}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 3000形2次車先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-3000TC1-2ND}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>141</capacity>
+		<sprite origin="0,0">
+			<picture src="odakyu3000-2nd_a.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 3000形2次車中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-3000MI1-2ND}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>152</capacity>
+		<sprite origin="0,0">
+			<picture src="odakyu3000-2nd_b.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 3000形2次車後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-3000TC2-2ND}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-ODAKYU-3000TC1-2ND}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-3000-2ND}">
+		<company>Odakyu Electric Railway</company>
+		<type>3000 Series 2nd Car</type>
+		<name></name>
+		<author>Altima</author>
+		<description>
+2001年デビューの最新型車両。ストレート車体や前面非貫通構造など、近年の小田急電車の特徴を覆す車両となった。2次車は戸袋窓の廃止、ドア幅1.3m、内装仕様の変更などが行なわれた。</description>
+		<fare>480</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-ODAKYU-3000TC1-2ND}"/>
+			<body carRef="{AltimaTRAINS-EC-ODAKYU-3000MI1-2ND}"/>
+			<tail carRef="{AltimaTRAINS-EC-ODAKYU-3000TC2-2ND}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 3000形3次車先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-3000TC1-3RD}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>141</capacity>
+		<sprite origin="0,0">
+			<picture src="odakyu3000-3rd_a.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 3000形3次車後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-3000TC2-3RD}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-ODAKYU-3000TC1-3RD}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-3000-3RD}">
+		<company>Odakyu Electric Railway</company>
+		<type>3000 Series 3rd Car</type>
+		<name></name>
+		<author>Altima</author>
+		<description>
+2001年デビューの最新型車両。ストレート車体や前面非貫通構造など、近年の小田急電車の特徴を覆す車両となった。3次車は制御装置の変更、ドアエンジンの変更、フルカバースカートの採用など。</description>
+		<fare>480</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-ODAKYU-3000TC1-3RD}"/>
+			<body carRef="{AltimaTRAINS-EC-ODAKYU-3000MI1-2ND}"/>
+			<tail carRef="{AltimaTRAINS-EC-ODAKYU-3000TC2-3RD}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 3000形3263F先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-3000TC1-3263F}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>141</capacity>
+		<sprite origin="0,0">
+			<picture src="odakyu3263f_a.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 3000形3263F中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-3000MI1-3263F}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>152</capacity>
+		<sprite origin="0,0">
+			<picture src="odakyu3263f_b.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 3000形3263F後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-ODAKYU-3000TC2-3263F}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-ODAKYU-3000TC1-3263F}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-3000-3263F}">
+		<company>Odakyu Electric Railway</company>
+		<type>3000 Series 3rd Car 3263F</type>
+		<name></name>
+		<author>Altima</author>
+		<description>
+2001年デビューの最新型車両。ストレート車体や前面非貫通構造など、近年の小田急電車の特徴を覆す車両となった。3次車トップバッターの3263Fは、防音効果実証試験の為、床下機器を覆うマウントカバーを装着、特徴的な外観となっている。</description>
+		<fare>480</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-ODAKYU-3000TC1-3263F}"/>
+			<body carRef="{AltimaTRAINS-EC-ODAKYU-3000MI1-3263F}"/>
+			<tail carRef="{AltimaTRAINS-EC-ODAKYU-3000TC2-3263F}"/>
+		</composition>
+	</contribution>
+
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-2600+5000}">
+		<company>Odakyu Electric Railway</company>
+		<type>2600 Series + 5000 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>
+2600形6連と5000形4連の10両編成</description>
+		<fare>350</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{AltimaTRAINS-EC-ODAKYU-2600TC1-2670F}"/>
+			<car char="B" ref="{AltimaTRAINS-EC-ODAKYU-2600MI1-2670F}"/>
+			<car char="C" ref="{AltimaTRAINS-EC-ODAKYU-2600TC2-2670F}"/>
+			<car char="D" ref="{AltimaTRAINS-EC-ODAKYU-5000TC1}"/>
+			<car char="E" ref="{AltimaTRAINS-EC-ODAKYU-5000MI1}"/>
+			<car char="F" ref="{AltimaTRAINS-EC-ODAKYU-5000TC2}"/>
+		<composition>ABBBBCDEEF</composition>
+		</config>
+	</contribution>
+
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-5200+8000}">
+		<company>Odakyu Electric Railway</company>
+		<type>5200 Series + 8000 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>
+5200形6連と8000形4連の10両編成</description>
+		<fare>350</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{AltimaTRAINS-EC-ODAKYU-5000TC1}"/>
+			<car char="B" ref="{AltimaTRAINS-EC-ODAKYU-5000MI1}"/>
+			<car char="C" ref="{AltimaTRAINS-EC-ODAKYU-5000TC2}"/>
+			<car char="D" ref="{AltimaTRAINS-EC-ODAKYU-8000TC1}"/>
+			<car char="E" ref="{AltimaTRAINS-EC-ODAKYU-8000MI1}"/>
+			<car char="F" ref="{AltimaTRAINS-EC-ODAKYU-8000TC2}"/>
+		<composition>ABBBBCDEEF</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-5200+1000}">
+		<company>Odakyu Electric Railway</company>
+		<type>5200 Series + 1000 series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>
+5200形6連と1000形4連の10両編成</description>
+		<fare>350</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{AltimaTRAINS-EC-ODAKYU-5000TC1}"/>
+			<car char="B" ref="{AltimaTRAINS-EC-ODAKYU-5000MI1}"/>
+			<car char="C" ref="{AltimaTRAINS-EC-ODAKYU-5000TC2}"/>
+			<car char="D" ref="{AltimaTRAINS-EC-ODAKYU-1000TC1}"/>
+			<car char="E" ref="{AltimaTRAINS-EC-ODAKYU-1000MI1}"/>
+			<car char="F" ref="{AltimaTRAINS-EC-ODAKYU-1000TC2}"/>
+		<composition>ABBBBCDEEF</composition>
+		</config>
+	</contribution>
+
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-8000+5000}">
+		<company>Odakyu Electric Railway</company>
+		<type>8000 Series + 5000 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>
+8000形6連と5000形4連の10両編成</description>
+		<fare>390</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{AltimaTRAINS-EC-ODAKYU-8000TC1}"/>
+			<car char="B" ref="{AltimaTRAINS-EC-ODAKYU-8000MI1}"/>
+			<car char="C" ref="{AltimaTRAINS-EC-ODAKYU-8000TC2}"/>
+			<car char="D" ref="{AltimaTRAINS-EC-ODAKYU-5000TC1}"/>
+			<car char="E" ref="{AltimaTRAINS-EC-ODAKYU-5000MI1}"/>
+			<car char="F" ref="{AltimaTRAINS-EC-ODAKYU-5000TC2}"/>
+		<composition>ABBBBCDEEF</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-8000+1000}">
+		<company>Odakyu Electric Railway</company>
+		<type>8000 Series + 1000 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>
+8000形6連と1000形4連の10両編成</description>
+		<fare>390</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{AltimaTRAINS-EC-ODAKYU-8000TC1}"/>
+			<car char="B" ref="{AltimaTRAINS-EC-ODAKYU-8000MI1}"/>
+			<car char="C" ref="{AltimaTRAINS-EC-ODAKYU-8000TC2}"/>
+			<car char="D" ref="{AltimaTRAINS-EC-ODAKYU-1000TC1}"/>
+			<car char="E" ref="{AltimaTRAINS-EC-ODAKYU-1000MI1}"/>
+			<car char="F" ref="{AltimaTRAINS-EC-ODAKYU-1000TC2}"/>
+		<composition>ABBBBCDEEF</composition>
+		</config>
+	</contribution>
+
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-1000+5000}">
+		<company>Odakyu Electric Railway</company>
+		<type>1000 Series + 5000 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>
+1000形6連と5000形4連の10両編成</description>
+		<fare>450</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{AltimaTRAINS-EC-ODAKYU-1000TC1}"/>
+			<car char="B" ref="{AltimaTRAINS-EC-ODAKYU-1000MI1}"/>
+			<car char="C" ref="{AltimaTRAINS-EC-ODAKYU-1000TC2}"/>
+			<car char="D" ref="{AltimaTRAINS-EC-ODAKYU-5000TC1}"/>
+			<car char="E" ref="{AltimaTRAINS-EC-ODAKYU-5000MI1}"/>
+			<car char="F" ref="{AltimaTRAINS-EC-ODAKYU-5000TC2}"/>
+		<composition>ABBBBCDEEF</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-1000+8000}">
+		<company>Odakyu Electric Railway</company>
+		<type>1000 Series + 8000 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>
+1000形6連と8000形4連の10両編成</description>
+		<fare>450</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{AltimaTRAINS-EC-ODAKYU-1000TC1}"/>
+			<car char="B" ref="{AltimaTRAINS-EC-ODAKYU-1000MI1}"/>
+			<car char="C" ref="{AltimaTRAINS-EC-ODAKYU-1000TC2}"/>
+			<car char="D" ref="{AltimaTRAINS-EC-ODAKYU-8000TC1}"/>
+			<car char="E" ref="{AltimaTRAINS-EC-ODAKYU-8000MI1}"/>
+			<car char="F" ref="{AltimaTRAINS-EC-ODAKYU-8000TC2}"/>
+		<composition>ABBBBCDEEF</composition>
+		</config>
+	</contribution>
+
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-3000-1+5000}">
+		<company>Odakyu Electric Railway</company>
+		<type>3000 Series 1st Car + 5000 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>
+3000形1次車6連と5000形4連の10両編成</description>
+		<fare>470</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{AltimaTRAINS-EC-ODAKYU-3000TC1-1ST}"/>
+			<car char="B" ref="{AltimaTRAINS-EC-ODAKYU-3000MI1-1ST}"/>
+			<car char="C" ref="{AltimaTRAINS-EC-ODAKYU-3000TC2-1ST}"/>
+			<car char="D" ref="{AltimaTRAINS-EC-ODAKYU-5000TC1}"/>
+			<car char="E" ref="{AltimaTRAINS-EC-ODAKYU-5000MI1}"/>
+			<car char="F" ref="{AltimaTRAINS-EC-ODAKYU-5000TC2}"/>
+		<composition>ABBBBCDEEF</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-3000-2+8000}">
+		<company>Odakyu Electric Railway</company>
+		<type>3000 Series 2nd Car + 8000 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>
+3000形2次車6連と8000形4連の10両編成</description>
+		<fare>480</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{AltimaTRAINS-EC-ODAKYU-3000TC1-2ND}"/>
+			<car char="B" ref="{AltimaTRAINS-EC-ODAKYU-3000MI1-2ND}"/>
+			<car char="C" ref="{AltimaTRAINS-EC-ODAKYU-3000TC2-2ND}"/>
+			<car char="D" ref="{AltimaTRAINS-EC-ODAKYU-8000TC1}"/>
+			<car char="E" ref="{AltimaTRAINS-EC-ODAKYU-8000MI1}"/>
+			<car char="F" ref="{AltimaTRAINS-EC-ODAKYU-8000TC2}"/>
+		<composition>ABBBBCDEEF</composition>
+		</config>
+	</contribution>
+
+
+	<contribution type="train" id="{AltimaTRAINS-EC-ODAKYU-3000-3+1000}">
+		<company>Odakyu Electric Railway</company>
+		<type>3000 Series 3rd Car + 1000 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>
+3000形3次車6連と1000形4連の10両編成</description>
+		<fare>480</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{AltimaTRAINS-EC-ODAKYU-3000TC1-3RD}"/>
+			<car char="B" ref="{AltimaTRAINS-EC-ODAKYU-3000MI1-2ND}"/>
+			<car char="C" ref="{AltimaTRAINS-EC-ODAKYU-3000TC2-3RD}"/>
+			<car char="D" ref="{AltimaTRAINS-EC-ODAKYU-1000TC1}"/>
+			<car char="E" ref="{AltimaTRAINS-EC-ODAKYU-1000MI1}"/>
+			<car char="F" ref="{AltimaTRAINS-EC-ODAKYU-1000TC2}"/>
+		<composition>ABBBBCDEEF</composition>
+		</config>
+	</contribution>
+
+
+</plug-in>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="mountainPalette.xsl" type="text/xsl" ?>
+<!--
+	Defines colors of the mountain textures.
+	One set of palettes for each season.
+	
+	Try opening this file with Internet Explorer.
+	
+	@type must be either "hsv" or "rgb".
+	Different palette set may have different number of
+	colors, but they must be sorted from dark to bright.
+-->
+<mountainPalette>
+	<spring>
+		<color type="hsv"> 60,162, 90</color>
+		<color type="hsv"> 60,166,105</color>
+		<color type="hsv"> 60,170,120</color>
+		<color type="hsv"> 60,174,130</color>
+		<color type="hsv"> 60,176,140</color>
+		<color type="hsv"> 60,178,150</color>
+		<color type="hsv"> 60,180,165</color>
+		<color type="hsv"> 60,185,195</color>
+	</spring>
+	<summer>
+		<color type="hsv"> 69,185, 70</color>
+		<color type="hsv"> 69,180, 80</color>
+		<color type="hsv"> 69,175, 90</color>
+		<color type="hsv"> 69,170,100</color>
+		<color type="hsv"> 69,165,110</color>
+		<color type="hsv"> 69,160,120</color>
+		<color type="hsv"> 69,155,140</color>
+		<color type="hsv"> 69,150,170</color>
+	</summer>
+	<autumn>
+		<color type="hsv"> 39,125, 78</color>
+		<color type="hsv"> 39,138, 90</color>
+		<color type="hsv"> 39,150,106</color>
+		<color type="hsv"> 39,157,119</color>
+		<color type="hsv"> 39,159,132</color>
+		<color type="hsv"> 39,160,145</color>
+		<color type="hsv"> 39,161,165</color>
+		<color type="hsv"> 39,181,185</color>
+	</autumn>
+	<winter>
+		<color type="hsv">160, 20,166</color>
+		<color type="hsv">160, 14,180</color>
+		<color type="hsv">160,  7,190</color>
+		<color type="hsv">160,  5,200</color>
+		<color type="hsv">160,  3,210</color>
+		<color type="hsv">160,  1,220</color>
+		<color type="hsv">160,  0,230</color>
+		<color type="hsv">160,  0,239</color>
+	</winter>
+	<water>
+		<color type="hsv">149, 72, 60</color>
+		<color type="hsv">149, 77, 70</color>
+		<color type="hsv">149, 82, 80</color>
+		<color type="hsv">149, 87, 90</color>
+		<color type="hsv">149, 92,100</color>
+		<color type="hsv">149, 97,115</color>
+		<color type="hsv">149,107,135</color>
+		<color type="hsv">149,122,150</color>
+	</water>
+</mountainPalette>

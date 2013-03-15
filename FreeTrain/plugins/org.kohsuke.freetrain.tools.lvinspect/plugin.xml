@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Land Value Inspector Window</title>
+	<!--!<title>地価の検査ウィンドウ</title>-->
+	<author>Kohsuke Kawaguchi</author>
+	<!--!<author>川口耕介</author>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="menu" id="{173B77D5-08FD-4897-BD37-FFA64CED1493}">
+		<class name="freetrain.world.development.LandValueInspectorPlugin" />
+	</contribution>
+</plug-in>

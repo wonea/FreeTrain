@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Train Set No 4</title>
+	<homepage>http://typhoon.s19.xrea.com/ft/index.html</homepage>
+	<author>Typhoon</author>
+
+
+	<!-- 南海旧7000系先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-N71K-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="nankai7000ra.bmp" />
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+	<!-- 南海旧7000系中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-N71K-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="nankai7000rb.bmp" />
+               	 </sprite>
+		<capacity>144</capacity>
+	</contribution>
+	<!-- 南海旧7000系後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-N71K-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-N71K-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-71KN-8FE0-7567171D3CEF}">
+		<company>Nankai Electric Railway</company>
+		<type>7000 Series</type>
+		<name>Old Colors</name>
+		<author>Typhoon</author>
+		<description></description>
+		<price>1</price>
+           		<fare>350</fare>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-N71K-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-N71K-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-N71K-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 南海7000系先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-N70K-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="nankai7000a.bmp" />
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+	<!-- 南海7000系中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-N70K-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="nankai7000b.bmp" />
+               	 </sprite>
+		<capacity>144</capacity>
+	</contribution>
+	<!-- 南海7000系後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-N70K-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-N70K-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-70KN-8FE0-7567171D3CEF}">
+		<company>Nankai Electric Railway</company>
+		<type>7000 Series</type>
+		<name></name>
+		<author>Typhoon</author>
+		<description></description>
+		<price>1</price>
+           		<fare>350</fare>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-N70K-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-N70K-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-N70K-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 南海旧１000系先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-N11K-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="nankai-old1000a.bmp" />
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+	<!-- 南海旧1000系中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-N11K-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="nankai-old1000b.bmp" />
+               	 </sprite>
+		<capacity>144</capacity>
+	</contribution>
+	<!-- 南海旧1000系後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-N11K-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-N11K-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-11KN-8FE0-7567171D3CEF}">
+		<company>Nankai Electric Railway</company>
+		<type>Old 1000 Series</type>
+		<name>Shikoku, etc.</name>
+		<author>Typhoon</author>
+		<description></description>
+		<price>1</price>
+           		<fare>350</fare>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-N11K-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-N11K-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-N11K-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 南海2000系先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-N20K-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="nankai2000a.bmp" />
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+	<!-- 南海2000系中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-N20K-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="nankai2000b.bmp" />
+               	 </sprite>
+		<capacity>144</capacity>
+	</contribution>
+	<!-- 南海2000系後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-N20K-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-N20K-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-20KN-8FE0-7567171D3CEF}">
+		<company>Nankai Electric Railway</company>
+		<type>2000 Series</type>
+		<name></name>
+		<author>Typhoon</author>
+		<description>(12両までの偶数両のみ編成可)</description>
+		<price>1</price>
+           		<fare>350</fare>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+ 		<config>
+  		<car char="A" ref="{57644AE6-7FFA-N20K-8FE0-7567171D3CEF}-h"/>
+   		<car char="-" ref="{57644AE6-7FFA-N20K-8FE0-7567171D3CEF}-m"/>
+   		<car char="B" ref="{57644AE6-7FFA-N20K-8FE0-7567171D3CEF}-t"/>
+
+   		<composition>AB</composition>
+		<composition>A--B</composition>
+		<composition>ABA--B</composition>
+		<composition>A--BA--B</composition>
+		<composition>ABA--BA--B</composition>
+		<composition>A--BA--BA--B</composition>
+		</config>
+	</contribution>
+
+	<!-- 南海10000系先頭車 -->
+	<contribution type="trainCar" id="{TYPHOON-NANKAI-NEW10000-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="nankai10000a.bmp" />
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+	<!-- 南海10000系中間車 -->
+	<contribution type="trainCar" id="{TYPHOON-NANKAI-NEW10000-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="nankai10000b.bmp" />
+               	 </sprite>
+		<capacity>144</capacity>
+	</contribution>
+	<!-- 南海10000系後尾車 -->
+	<contribution type="trainCar" id="{TYPHOON-NANKAI-NEW10000-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{TYPHOON-NANKAI-NEW10000-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<contribution type="train" id="{TYPHOON-NANKAI-NEW10000-HENSEI-7567171D3CEF}">
+		<company>Nankai Electric Railway</company>
+		<type>10000 Series</type>
+		<name>Southern</name>
+		<author>Typhoon</author>
+		<description>(4・8・12両のみ編成可)</description>
+		<price>1</price>
+           		<fare>350</fare>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+ 		<config>
+  		<car char="A" ref="{TYPHOON-NANKAI-NEW10000-7567171D3CEF}-h"/>
+   		<car char="-" ref="{TYPHOON-NANKAI-NEW10000-7567171D3CEF}-m"/>
+   		<car char="B" ref="{TYPHOON-NANKAI-NEW10000-7567171D3CEF}-t"/>
+
+		<composition>A--B</composition>
+		<composition>A--BA--B</composition>
+		<composition>A--BA--BA--B</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{TYPHOON-NANKAI-NEW17000-HENSEI-7567171D3CEF}">
+		<company>Nankai Electric Railway</company>
+		<type>10000 Series + 7000 Series</type>
+		<name>Southern</name>
+		<author>Typhoon</author>
+		<description>(8両のみ編成可)</description>
+		<price>1</price>
+           		<fare>350</fare>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+ 		<config>
+  		<car char="A" ref="{TYPHOON-NANKAI-NEW10000-7567171D3CEF}-h"/>
+   		<car char="-" ref="{TYPHOON-NANKAI-NEW10000-7567171D3CEF}-m"/>
+   		<car char="B" ref="{TYPHOON-NANKAI-NEW10000-7567171D3CEF}-t"/>
+   		<car char="C" ref="{57644AE6-7FFA-N70K-8FE0-7567171D3CEF}-h"/>
+   		<car char="+" ref="{57644AE6-7FFA-N70K-8FE0-7567171D3CEF}-m"/>
+   		<car char="D" ref="{57644AE6-7FFA-N70K-8FE0-7567171D3CEF}-t"/>
+
+		<composition>A--BC++D</composition>
+		</config>
+	</contribution>
+
+	<!-- 南海旧10000系先頭車 -->
+	<contribution type="trainCar" id="{TYPHOON-NANKAI-OLD10000-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="nankai10000c.bmp" />
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+	<!-- 南海旧10000系後尾車 -->
+	<contribution type="trainCar" id="{TYPHOON-NANKAI-OLD10000-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{TYPHOON-NANKAI-OLD10000-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<contribution type="train" id="{TYPHOON-NANKAI-OLD10000-HENSEI-7567171D3CEF}">
+		<company>Nankai Electric Railway</company>
+		<type>10000 Series</type>
+		<name>Old Colors　Southern</name>
+		<author>Typhoon</author>
+		<description>(12両までの偶数両のみ編成可)</description>
+		<price>1</price>
+           		<fare>350</fare>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+ 		<config>
+  		<car char="A" ref="{TYPHOON-NANKAI-OLD10000-7567171D3CEF}-h"/>
+   		<car char="B" ref="{TYPHOON-NANKAI-OLD10000-7567171D3CEF}-t"/>
+
+		<composition>AB</composition>
+		<composition>ABAB</composition>
+		<composition>ABABAB</composition>
+		<composition>ABABABAB</composition>
+		<composition>ABABABABAB</composition>
+		<composition>ABABABABABAB</composition>
+		</config>
+	</contribution>
+	<contribution type="train" id="{TYPHOON-NANKAI-OLD17000-HENSEI-7567171D3CEF}">
+		<company>Nankai Electric Railway</company>
+		<type>10000 Series + 7000 Series</type>
+		<name>Old Colors　Southern</name>
+		<author>Typhoon</author>
+		<description>(6両のみ編成可)</description>
+		<price>1</price>
+           		<fare>350</fare>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+ 		<config>
+  		<car char="A" ref="{TYPHOON-NANKAI-OLD10000-7567171D3CEF}-h"/>
+   		<car char="B" ref="{TYPHOON-NANKAI-OLD10000-7567171D3CEF}-t"/>
+   		<car char="C" ref="{57644AE6-7FFA-N71K-8FE0-7567171D3CEF}-h"/>
+   		<car char="+" ref="{57644AE6-7FFA-N71K-8FE0-7567171D3CEF}-m"/>
+   		<car char="D" ref="{57644AE6-7FFA-N71K-8FE0-7567171D3CEF}-t"/>
+
+		<composition>ABC++D</composition>
+		</config>
+	</contribution>
+
+	<!-- 南海1000系先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-N10K-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="nankai1000a.bmp" />
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+	<!-- 南海1000系中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-N10K-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="nankai1000b.bmp" />
+               	 </sprite>
+		<capacity>144</capacity>
+	</contribution>
+	<!-- 南海1000系後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-N10K-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-N10K-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-10KN-8FE0-7567171D3CEF}">
+		<company>Nankai Electric Railway</company>
+		<type>1000 Series</type>
+		<name></name>
+		<author>Typhoon</author>
+		<description>(12両までの偶数両のみ編成可)</description>
+		<price>1</price>
+           		<fare>350</fare>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+ 		<config>
+  		<car char="A" ref="{57644AE6-7FFA-N10K-8FE0-7567171D3CEF}-h"/>
+   		<car char="-" ref="{57644AE6-7FFA-N10K-8FE0-7567171D3CEF}-m"/>
+   		<car char="B" ref="{57644AE6-7FFA-N10K-8FE0-7567171D3CEF}-t"/>
+
+   		<composition>AB</composition>
+		<composition>A--B</composition>
+		<composition>A----B</composition>
+		<composition>A----BAB</composition>
+		<composition>ABABA----B</composition>
+		<composition>A----BA----B</composition>
+		</config>
+	</contribution>
+
+	<!-- 名鉄5500系先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="m5500a.bmp" />
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+	<!-- 名鉄5500系中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="m5500b.bmp" />
+               	 </sprite>
+		<capacity>144</capacity>
+	</contribution>
+	<!-- 名鉄5500系後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-55MT-8FE0-7567171D3CEF}">
+		<company>Nagoya Railroad</company>
+		<type>5500 Series</type>
+		<name></name>
+		<author>Typhoon</author>
+		<description></description>
+		<price>1</price>
+           		<fare>350</fare>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 名鉄5500系base先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-a">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="m5500c.bmp" />
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+	<!-- 名鉄5500系base後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-b">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-a"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+	<!-- 名鉄5500系白帯先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-c">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="128,64,64" to="255,64,64"/>
+			<map from="64,160,192" to="192,128,192"/>
+			<map from="64,128,160" to="160,128,192"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-a"/>
+                         	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+	<!-- 名鉄5500系白帯後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-d">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-c"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+	<contribution type="train" id="{57644AE6-7FFA-MT55A-8FE0-7567171D3CEF}">
+		<company>Nagoya Railroad</company>
+		<type>5500 Series</type>
+		<name>Scarlet + White Stripe</name>
+		<author>Typhoon</author>
+		<description>(8両までの偶数両のみ編成可)</description>
+		<price>1</price>
+           		<fare>350</fare>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+ 		<config>
+  		<car char="A" ref="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-c"/>
+   		<car char="B" ref="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-d"/>
+
+   		<composition>AB</composition>
+		<composition>ABAB</composition>
+		<composition>ABABAB</composition>
+		<composition>ABABABAB</composition>
+		</config>
+	</contribution>
+	<!-- 名鉄5500系赤帯先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-e">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="249,64,69" to="200,200,160"/>
+			<map from="128,64,64" to="200,200,145"/>
+			<map from="255,64,64" to="200,200,145"/>
+			<map from="208,49,43" to="200,200,145"/>
+			<map from="192,64,64" to="200,200,145"/>
+			<map from="224,0,0" to="200,200,145"/>
+			<map from="224,224,224" to="224,0,0"/>
+			<map from="192,192,192" to="192,0,0"/>
+			<map from="199,74,77" to="183,183,111"/>
+			<map from="147,19,16" to="183,183,111"/>
+			<map from="213,49,50" to="183,183,111"/>
+			<map from="172,58,66" to="183,183,111"/>
+			<map from="176,55,56" to="183,183,111"/>
+			<map from="182,30,3" to="183,183,111"/>
+			<map from="173,27,27" to="183,183,111"/>
+			<map from="173,27,27" to="183,183,111"/>
+			<map from="160,64,64" to="183,183,75"/>
+			<map from="154,57,44" to="183,183,75"/>
+			<map from="173,27,28" to="146,146,58"/>
+			<map from="199,74,77" to="146,146,58"/>
+			<map from="120,0,4" to="183,183,75"/>
+			<map from="160,0,0" to="183,183,75"/>
+			<map from="128,0,0" to="160,160,64"/>
+			<map from="121,19,13" to="160,160,64"/>
+			<map from="192,0,0" to="160,160,64"/>
+			<map from="160,160,164" to="160,0,0"/>
+			<map from="129,126,116" to="129,0,0"/>
+			<map from="128,128,128" to="129,0,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-a"/>
+                         	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+	<!-- 名鉄5500系赤帯後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-f">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-e"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+	<contribution type="train" id="{57644AE6-7FFA-MT55B-8FE0-7567171D3CEF}">
+		<company>Nagoya Railroad</company>
+		<type>5500 Series</type>
+		<name>'Straw Cream' + Red Stripe</name>
+		<author>Typhoon</author>
+		<description>(8両までの偶数両のみ編成可)</description>
+		<price>1</price>
+           		<fare>350</fare>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+ 		<config>
+  		<car char="A" ref="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-e"/>
+   		<car char="B" ref="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-f"/>
+
+   		<composition>AB</composition>
+		<composition>ABAB</composition>
+		<composition>ABABAB</composition>
+		<composition>ABABABAB</composition>
+		</config>
+	</contribution>
+	<!-- 名鉄5500系チョコ先頭車 -->
+	<contribution type="trainCar" id="{TYPHOON-MEITETSU-CHO5500-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="m5500d.bmp" />
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+	<!-- 名鉄5500系チョコ後尾車 -->
+	<contribution type="trainCar" id="{TYPHOON-MEITETSU-CHO5500-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{TYPHOON-MEITETSU-CHO5500-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+	<contribution type="train" id="{TYPHOON-MEITETSU-CHO5500-HENSEI-7567171D3CEF}">
+		<company>Nagoya Railroad</company>
+		<type>5500 Series</type>
+		<name>Chocolate</name>
+		<author>Typhoon</author>
+		<description>(8両までの偶数両のみ編成可)</description>
+		<price>1</price>
+           		<fare>350</fare>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+ 		<config>
+  		<car char="A" ref="{TYPHOON-MEITETSU-CHO5500-7567171D3CEF}-h"/>
+   		<car char="B" ref="{TYPHOON-MEITETSU-CHO5500-7567171D3CEF}-t"/>
+
+   		<composition>AB</composition>
+		<composition>ABAB</composition>
+		<composition>ABABAB</composition>
+		<composition>ABABABAB</composition>
+		</config>
+	</contribution>
+
+
+	<contribution type="train" id="{57644AE6-7FFA-MT55D-8FE0-7567171D3CEF}">
+		<company>Nagoya Railroad</company>
+		<type>5500 Series</type>
+		<name>Double-Headed</name>
+		<author>Typhoon</author>
+		<description>(6・12両までの偶数両のみ編成可)</description>
+		<price>1</price>
+           		<fare>350</fare>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+ 		<config>
+  		<car char="C" ref="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-c"/>
+   		<car char="D" ref="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-d"/>
+  		<car char="H" ref="{TYPHOON-MEITETSU-CHO5500-7567171D3CEF}-h"/>
+  		<car char="T" ref="{TYPHOON-MEITETSU-CHO5500-7567171D3CEF}-t"/>
+  		<car char="E" ref="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-e"/>
+   		<car char="F" ref="{57644AE6-7FFA-MT55-8FE0-7567171D3CEF}-f"/>
+
+
+		<composition>EFHTCD</composition>
+		<composition>EFHTCDEFHTCD</composition>
+		</config>
+	</contribution>
+
+	<!-- 東武30000系先頭車 -->
+	<contribution type="trainCar" id="{TYPHOON-TOBU-30000-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="tobu30000a.bmp" />
+               	 </sprite>
+		<capacity>139</capacity>
+	</contribution>
+	<!--東武30000系中間車 -->
+	<contribution type="trainCar" id="{TYPHOON-TOBU-30000-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="tobu30000b.bmp" />
+               	 </sprite>
+		<capacity>139</capacity>
+	</contribution>
+	<!-- 東武30000系後尾車 -->
+	<contribution type="trainCar" id="{TYPHOON-TOBU-30000-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{TYPHOON-TOBU-30000-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>139</capacity>
+	</contribution>
+
+	<contribution type="train" id="{TYPHOON-TOBU-30000-HENSEI-7567171D3CEF}">
+		<company>Tobu Railway</company>
+		<type>30000 Series</type>
+		<name></name>
+		<author>Typhoon</author>
+		<description>半蔵門線、田園都市線直通の電車です。</description>
+		<price>1</price>
+           		<fare>350</fare>
+		<speed>medium</speed>
+		<composition>
+  			<head carRef="{TYPHOON-TOBU-30000-7567171D3CEF}-h"/>
+   			<body carRef="{TYPHOON-TOBU-30000-7567171D3CEF}-m"/>
+   			<tail carRef="{TYPHOON-TOBU-30000-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+</plug-in>

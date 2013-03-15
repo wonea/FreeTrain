@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Baseball Stadium</title>
+	<author>T.Hara</author>
+	<homepage>http://www.cwo.zaq.ne.jp/pant012/freetrain/</homepage>
+	
+	<contribution type="picture" id="{83827B49-1580-40E3-BE94-C009863BF132}">
+		<picture src="baseballstadium.bmp" />
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{hanshin-yuusyou-mezasite-gangare}">
+		<group>Baseball stadium</group>
+		<price>5000</price>
+		<size>7,7</size>
+		<height>2</height>
+		<structure>
+			<category byname="Baseball Stadiums"/>
+		</structure>
+		<sprite origin="0,0" offset="47">
+		<picture ref="{83827B49-1580-40E3-BE94-C009863BF132}" />
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="picture" id="{25DD7371-DE9F-43E5-B97C-83A299C7F713}">
+		<picture src="ground1.bmp">
+			<override when="summer" src="ground2.bmp" />
+		</picture>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{nekoneko-nyanyanya-ground-overridtest}">
+		<name>Multi purpose ground</name>
+		<price>1000</price>
+		<size>2,4</size>
+		<height>2</height>
+		<structure>
+			<category byname="Sports Grounds"/>
+		</structure>
+		<sprite origin="0,0" offset="18">
+		<picture ref="{25DD7371-DE9F-43E5-B97C-83A299C7F713}" />
+		</sprite>
+	</contribution>
+</plug-in>

@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+	<!ENTITY tutiiro '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="202,189,158"/>
+	</spriteType>
+	'>
+	<!ENTITY haiao '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="181,203,226"/>
+	</spriteType>
+	'>
+	<!ENTITY tyairo '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="157,90,70"/>
+	</spriteType>
+	'>
+	<!ENTITY ModernStation "
+		<size>1,1</size>
+		<price>4000</price>
+		<height>1</height>
+		<operationCost>100</operationCost>
+	">
+	
+]>
+<plug-in>
+
+
+
+	<title>Building Set No.1</title>
+	<author>Typhoon</author>
+	<homepage>http://typhoon.s19.xrea.com/ft/index.html</homepage>
+	
+	<contribution type="picture" id="{TYPHOON-GAZOU-MILITARY-RADER-7567171D3CEF}">
+		<picture src="radar.bmp"/>
+	</contribution>
+	<contribution type="picture" id="{TYPHOON-GAZOU-MILITARY-F-15DJ2-7567171D3CEF}">
+		<picture src="F-15DJBL.bmp"/>
+	</contribution>
+
+	<depends on="org.kohsuke.freetrain.rail.electricPole" />
+	
+	<contribution type="picture" id="{57644AE6-7FFA-1HMY-8FE0-7567171D3CEF}">
+		<picture src="homeyane1.bmp">
+			<override when="night" src="homeyane1-n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{57644AE6-7FFA-2HMY-8FE0-7567171D3CEF}">
+		<picture src="homeyane2.bmp">
+			<override when="night" src="homeyane2-n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{57644AE6-7FFA-1HUE-8FE0-7567171D3CEF}">
+		<picture src="hashiue-a.bmp">
+			<override when="night" src="hashiue-a-n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{57644AE6-7FFA-1MDS-8FE0-7567171D3CEF}">
+		<picture src="hasiue-b.bmp">
+			<override when="night" src="hasiue-bn.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{57644AE6-7FFA-2MDS-8FE0-7567171D3CEF}">
+		<picture src="hasiue-c.bmp">
+			<override when="night" src="hasiue-cn.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{57644AE6-7FFA-3MDS-8FE0-7567171D3CEF}">
+		<picture src="hasiue-d.bmp">
+			<override when="night" src="hasiue-dn.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{57644AE6-7FFA-4MDS-8FE0-7567171D3CEF}">
+		<picture src="hasiue-e.bmp">
+			<override when="night" src="hasiue-en.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{TYPHOON-GAZOU-SUPERL-YOKADO-7567171D3CEF}">
+		<picture src="superL.bmp">
+			<override when="night" src="superL-n.bmp"/>
+		</picture>
+	</contribution>
+
+	<contribution type="electricPole" id="{57644AE6-7FFA-HMY1-8FE0-7567171D3CEF}">
+		<name>platform wall,khaki1</name>
+		<sprite origin=" 0, 0" offset="16">
+			&tutiiro;
+			<picture ref="{57644AE6-7FFA-1HMY-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-HMY2-8FE0-7567171D3CEF}">
+		<name>platform wall,khaki2</name>
+		<sprite origin=" 0, 0" offset="16">
+			&tutiiro;
+			<picture ref="{57644AE6-7FFA-2HMY-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-HMY3-8FE0-7567171D3CEF}">
+		<name>platform wall,rusty-closet1</name>
+		<sprite origin=" 0, 0" offset="16">
+			&haiao;
+			<picture ref="{57644AE6-7FFA-1HMY-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-HMY4-8FE0-7567171D3CEF}">
+		<name>platform wall,rusty-closet2</name>
+		<sprite origin=" 0, 0" offset="16">
+			&haiao;
+			<picture ref="{57644AE6-7FFA-2HMY-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-HMY5-8FE0-7567171D3CEF}">
+		<name>platform wall,brown1</name>
+		<sprite origin=" 0, 0" offset="16">
+			&tyairo;
+			<picture ref="{57644AE6-7FFA-1HMY-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-HMY6-8FE0-7567171D3CEF}">
+		<name>platform wall,brown2</name>
+		<sprite origin=" 0, 0" offset="16">
+			&tyairo;
+			<picture ref="{57644AE6-7FFA-2HMY-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-HUE1-8FE0-7567171D3CEF}">
+		<name>Bridge station (khaki)</name>
+		<sprite origin=" 0, 0" offset="16">
+			&tutiiro;
+			<picture ref="{57644AE6-7FFA-1HUE-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-MST1-8FE0-7567171D3CEF}">
+		<name>Bridge station (khaki,stairs-right)</name>
+		<sprite origin=" 0, 0" offset="16">
+			&tutiiro;
+			<picture ref="{57644AE6-7FFA-1MDS-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-MST2-8FE0-7567171D3CEF}">
+		<name>Bridge station (khaki,stairs-left)</name>
+		<sprite origin=" 0, 0" offset="16">
+			&tutiiro;
+			<picture ref="{57644AE6-7FFA-2MDS-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-MST3-8FE0-7567171D3CEF}">
+		<name>Bridge station (khaki,stairs-right behind)</name>
+		<sprite origin=" 0, 0" offset="16">
+			&tutiiro;
+			<picture ref="{57644AE6-7FFA-3MDS-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-MST4-8FE0-7567171D3CEF}">
+		<name>Bridge station (khaki,stairs-left behind)</name>
+		<sprite origin=" 0, 0" offset="16">
+			&tutiiro;
+			<picture ref="{57644AE6-7FFA-4MDS-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{57644AE6-7FFA-MDS9-8FE0-7567171D3CEF}">
+		<group>Bridge station (khaki,main)</group>
+		&ModernStation;
+		<sprite origin=" 64, 0" offset="16">
+			&tutiiro;
+			<picture ref="{57644AE6-7FFA-1HUE-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{57644AE6-7FFA-MDS10-8FE0-7567171D3CEF}">
+		<group>Bridge station (khaki,main)</group>
+		&ModernStation;
+		<sprite origin=" 96, 0" offset="16">
+			&tutiiro;
+			<picture ref="{57644AE6-7FFA-1HUE-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-HUE2-8FE0-7567171D3CEF}">
+		<name>Bridge station （rusty-closet)</name>
+		<sprite origin=" 0, 0" offset="16">
+			&haiao;
+			<picture ref="{57644AE6-7FFA-1HUE-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-MSH1-8FE0-7567171D3CEF}">
+		<name>Bridge station （rusty-closet,stairs-right)</name>
+		<sprite origin=" 0, 0" offset="16">
+			&haiao;
+			<picture ref="{57644AE6-7FFA-1MDS-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-MSH2-8FE0-7567171D3CEF}">
+		<name>Bridge station （rusty-closet,stairs-left)</name>
+		<sprite origin=" 0, 0" offset="16">
+			&haiao;
+			<picture ref="{57644AE6-7FFA-2MDS-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-MSH3-8FE0-7567171D3CEF}">
+		<name>Bridge station （rusty-closet,stairs-right behind)</name>
+		<sprite origin=" 0, 0" offset="16">
+			&haiao;
+			<picture ref="{57644AE6-7FFA-3MDS-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-MSH4-8FE0-7567171D3CEF}">
+		<name>Bridge station （rusty-closet,stairs-left behind)</name>
+		<sprite origin=" 0, 0" offset="16">
+			&haiao;
+			<picture ref="{57644AE6-7FFA-4MDS-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{57644AE6-7FFA-MDS19-8FE0-7567171D3CEF}">
+		<group>Bridge station (rusty-closet,main)</group>
+		&ModernStation;
+		<sprite origin=" 64, 0" offset="16">
+			&haiao;
+			<picture ref="{57644AE6-7FFA-1HUE-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{57644AE6-7FFA-MDS20-8FE0-7567171D3CEF}">
+		<group>Bridge station (rusty-closet,main)</group>
+		&ModernStation;
+		<sprite origin=" 96, 0" offset="16">
+			&haiao;
+			<picture ref="{57644AE6-7FFA-1HUE-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-HUE3-8FE0-7567171D3CEF}">
+		<name>Bridge station (brown)</name>
+		<sprite origin=" 0, 0" offset="16">
+			&tyairo;
+			<picture ref="{57644AE6-7FFA-1HUE-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-MSC1-8FE0-7567171D3CEF}">
+		<name>Bridge station (brown,stairs-right)</name>
+		<sprite origin=" 0, 0" offset="16">
+			&tyairo;
+			<picture ref="{57644AE6-7FFA-1MDS-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-MSC2-8FE0-7567171D3CEF}">
+		<name>Bridge station (brown,stairs-left)</name>
+		<sprite origin=" 0, 0" offset="16">
+			&tyairo;
+			<picture ref="{57644AE6-7FFA-2MDS-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-MSC3-8FE0-7567171D3CEF}">
+		<name>Bridge station (brown,stairs-right behind)</name>
+		<sprite origin=" 0, 0" offset="16">
+			&tyairo;
+			<picture ref="{57644AE6-7FFA-3MDS-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{57644AE6-7FFA-MSC4-8FE0-7567171D3CEF}">
+		<name>Bridge station (brown,stairs-left behind)</name>
+		<sprite origin=" 0, 0" offset="16">
+			&tyairo;
+			<picture ref="{57644AE6-7FFA-4MDS-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{57644AE6-7FFA-MDS29-8FE0-7567171D3CEF}">
+		<group>Bridge station (brown,main)</group>
+		&ModernStation;
+		<sprite origin=" 64, 0" offset="16">
+			&tyairo;
+			<picture ref="{57644AE6-7FFA-1HUE-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{57644AE6-7FFA-MDS30-8FE0-7567171D3CEF}">
+		<group>Bridge station (brown,main)</group>
+		&ModernStation;
+		<sprite origin=" 96, 0" offset="16">
+			&tyairo;
+			<picture ref="{57644AE6-7FFA-1HUE-8FE0-7567171D3CEF}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="GenericStructure" id="{TYPHOON-SUPERL-YOKADO-7567171D3CEF}">
+		<group>Huge supermarket</group>
+		<structure>
+			<category byname="Supermarkets"/>
+		</structure>
+		<price>3000</price>
+		<height>3</height>
+		<size>8,8</size>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>1500</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>60</base>
+		</population>
+	<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>150</base>
+	</population>
+	</population>
+		<sprite origin="0,0" offset="112">
+			<picture ref="{TYPHOON-GAZOU-SUPERL-YOKADO-7567171D3CEF}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+
+
+	<contribution type="GenericStructure" id="{TYPHOON-Military-Rader1-7567171D3CEF}">
+		<group>Radar</group>
+		<name>Early-warning radar</name>
+		<structure>
+			<category byname="Military Facilities"/>
+		</structure>
+		<price>3000</price>
+		<height>4</height>
+		<size>1,1</size>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>50</base>
+		</population>
+	</population>
+		<sprite origin="0,0" offset="40">
+			<picture ref="{TYPHOON-GAZOU-MILITARY-RADER-7567171D3CEF}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+	<contribution type="GenericStructure" id="{TYPHOON-Military-Rader2-7567171D3CEF}">
+		<group>Radar</group>
+		<name>Airport surveillance radar A</name>
+		<structure>
+			<category byname="Military Facilities"/>
+			<category byname="Airports"/>
+		</structure>
+		<price>1200</price>
+		<height>4</height>
+		<size>1,1</size>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>20</base>
+		</population>
+	</population>
+		<sprite origin="32,0" offset="40">
+			<picture ref="{TYPHOON-GAZOU-MILITARY-RADER-7567171D3CEF}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+	<contribution type="GenericStructure" id="{TYPHOON-Military-Rader3-7567171D3CEF}">
+		<group>Radar</group>
+		<name>Airport surveillance radar B</name>
+		<structure>
+			<category byname="Military Facilities"/>
+			<category byname="Airports"/>
+		</structure>
+		<price>1200</price>
+		<height>4</height>
+		<size>1,1</size>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>20</base>
+		</population>
+	</population>
+		<sprite origin="64,0" offset="40">
+			<picture ref="{TYPHOON-GAZOU-MILITARY-RADER-7567171D3CEF}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+	<contribution type="GenericStructure" id="{TYPHOON-Military-F-15DJ2-7567171D3CEF}">
+		<group>Fighter</group>
+		<name>F-15DJ (black)</name>
+		<structure>
+			<category byname="Military Facilities"/>
+		</structure>
+		<price>1200</price>
+		<height>1</height>
+		<size>2,2</size>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>2</base>
+		</population>
+	</population>
+		<sprite origin="0,0" offset="8">
+			<picture ref="{TYPHOON-GAZOU-MILITARY-F-15DJ2-7567171D3CEF}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+</plug-in>

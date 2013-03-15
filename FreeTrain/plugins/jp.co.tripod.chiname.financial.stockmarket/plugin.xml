@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Stock Market Module</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+	<contribution type="dockingContent" id="{25FBD928-C82D-4EB3-C477-D08AC8A5504F}">
+		<name>StockPorfolio</name>
+		<menu name="Stock Portfolio" location="view" />
+		<class name="freetrain.finance.stock.StocksWindow" codebase="bin/Debug/StockMarket.dll" />
+	</contribution>
+	<contribution type="menu" id="{7DA77890-54E8-43EB-C477-F9B7C7F6F31C}">
+		<name>StockMarket</name>
+		<class name="freetrain.finance.stock.StockMarketPlugIn" codebase="bin/Debug/StockMarket.dll" />
+		<!--debug/-->
+		<settings>
+			<businessHour open="9" close="17"/>
+			<!--eventSpans>10d,50d,250d,3y,30y,300y</eventSpans-->
+			<eventSpans>1,2,4,8,10,20,30</eventSpans>
+		</settings>
+		<data file = "typelist.xml"/>
+		<data file = "companies.xml"/>
+		<data file = "events.xml"/>
+		<!--<data file = "sample.xml"/>-->
+	</contribution>
+</plug-in>

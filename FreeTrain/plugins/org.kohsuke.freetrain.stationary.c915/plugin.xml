@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Brick Piers</title>
+	<!--!<title>レンガ橋脚</title>-->
+	<author>915</author>
+	<!--!<author>915さん</author>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	
+	
+	<contribution type="picture" id="{D7F7DC27-6506-49A6-B63A-961EE8DE258B}">
+		<picture src="BridgePier.bmp"/>
+	</contribution>
+	
+	<contribution type="railStationary" id="{6EFAC132-DEAF-4989-BDE4-5865B1669986}">
+		<group>Brick pier</group>
+		<!--!<group>レンガ橋脚</group>-->
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{D7F7DC27-6506-49A6-B63A-961EE8DE258B}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{FB233435-5BA0-4699-8CB8-F6D0E435BF4F}">
+		<group>Brick pier</group>
+		<!--!<group>レンガ橋脚</group>-->
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{D7F7DC27-6506-49A6-B63A-961EE8DE258B}" />
+		</sprite>
+	</contribution>
+	
+	
+	
+	
+	<contribution type="picture" id="{C835FE09-B47B-4962-8F32-EEBD12B5F6F5}">
+		<picture src="tokyoeki.bmp"/>
+	</contribution>
+	
+	<contribution type="station" id="{3DCA36FF-F475-44f8-A33F-4AD032BE3F69}">
+		<group>Tokyo Station</group>
+		<!--!<group>東京駅</group>-->
+		<price>18000</price>
+		<size>9,2</size>
+		<height>2</height>
+		<operationCost>600</operationCost>
+		<sprite origin="0,0" offset="88">
+			<picture ref="{C835FE09-B47B-4962-8F32-EEBD12B5F6F5}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{000B7EA8-D97B-4BD0-899F-B3808E7339AF}">
+		<group>Tokyo Station</group>
+		<!--!<group>東京駅</group>-->
+		<price>18000</price>
+		<size>2,9</size>
+		<height>2</height>
+		<operationCost>600</operationCost>
+		<sprite origin="176,0" offset="32">
+			<picture ref="{C835FE09-B47B-4962-8F32-EEBD12B5F6F5}"/>
+		</sprite>
+	</contribution>
+</plug-in>

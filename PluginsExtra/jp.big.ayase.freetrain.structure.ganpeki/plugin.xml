@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Warf (road)</title>
+	<author>Hiro Ayase</author>
+	<homepage>http://www14.big.oir.jp/~ayase/</homepage>
+	
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-StructureImage-ganpeki-01}">
+		<picture src="ganpeki.bmp" />
+	</contribution>
+	
+	
+	<contribution type="GenericStructure" id="{FreeTrain-AYASE-Hiro-StructureImpl-ganpeki-01}">
+		<group>Wharf</group>
+		<structure>
+			<category byname="Other Shipping Facilities"/>
+		</structure>
+		<price>100</price>
+		<height>1</height>
+		<size>1,1</size>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-StructureImage-ganpeki-01}"/>
+		</sprite>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-StructureImage-ganpeki-01}"/>
+		</sprite>
+		<sprite origin="64,0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-StructureImage-ganpeki-01}"/>
+		</sprite>
+		<sprite origin="0,32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-StructureImage-ganpeki-01}"/>
+		</sprite>
+		<sprite origin="32,32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-StructureImage-ganpeki-01}"/>
+		</sprite>
+		<sprite origin="64,32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-StructureImage-ganpeki-01}"/>
+		</sprite>
+		<sprite origin="0,64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-StructureImage-ganpeki-01}"/>
+		</sprite>
+		<sprite origin="32,64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-StructureImage-ganpeki-01}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+</plug-in>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+
+
+<!ENTITY building2x2Param '
+	<group>Rental office (2x2)</group>
+	<structure>
+		<category byname="Rental Offices"/>
+	</structure>
+	<price>2800</price>
+	<size>2,2</size>
+	<minHeight>3</minHeight>
+	<maxHeight>10</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>150</base>
+	</population>
+'>
+]>
+<plug-in>
+	<title>Office Buildings 2</title>
+	<author>Shino</author>
+	<homepage></homepage>
+	
+	
+	
+	<contribution type="picture" id="{60C939F0-CF0B-4E03-99AF-53AD2AF5AF6F}">
+		<picture src="2x2buil(T).bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{6C9498F6-839C-464F-B824-26DFA4154ED7}">
+		&building2x2Param;
+		<pictures>
+			<top    origin="0,  0" offset="26">
+				<picture ref="{60C939F0-CF0B-4E03-99AF-53AD2AF5AF6F}"/>
+			</top>
+			<middle origin="0, 50" offset="16">
+				<picture ref="{60C939F0-CF0B-4E03-99AF-53AD2AF5AF6F}"/>
+			</middle>
+			<bottom origin="0, 90" offset="16">
+				<picture ref="{60C939F0-CF0B-4E03-99AF-53AD2AF5AF6F}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+</plug-in>

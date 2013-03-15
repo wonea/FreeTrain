@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE plug-in [
+
+<!ENTITY crSilver '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="190,190,190"/>
+	</spriteType>
+'>
+<!ENTITY crCyan '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="166,189,203"/>
+	</spriteType>
+'>
+<!ENTITY crDkGray '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="90,90,90"/>
+	</spriteType>
+'>
+<!ENTITY crKhaki '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="188,174,144"/>
+	</spriteType>
+'>
+
+]>
+<plug-in>
+	<depend on="org.kohsuke.freetrain.structure.c477"/>
+
+  <title>Generic Plugin</title>
+  <!--<title>汎用プラグイン</title> -->
+	<author>C477</author>
+  <!--!<author>C477@2両目</author>-->
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+
+	<contribution type="menu" id="{2E1EE15E-101A-43E5-C477-95363F8E8AF0}">
+		<class name="freetrain.framework.plugin.generic.MenuContributionImpl"
+			codebase="bin/Debug/FreeTrain.ContribEx.dll" />
+	</contribution>
+	
+	<contribution type="contribution" id="{F9C26336-8D20-44FE-C477-453A270EC37D}">
+		<name>GenericStructure</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.framework.plugin.generic.GenericStructureContribution"
+			codebase="bin/Debug/FreeTrain.ContribEx.dll" />
+	</contribution>
+	<contribution type="contribution" id="{E58C4314-E57B-4F02-C477-A86CF1E1D655}">
+		<name>GenericLand</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.framework.plugin.generic.GenericLandContribution"
+			codebase="bin/Debug/FreeTrain.ContribEx.dll" />
+	</contribution>
+	<contribution type="dockingContent" id="{C7E08038-DADA-46FD-C477-AEB5A4112B1C}">
+		<name>StructureTypeTree</name>
+		<menu name="Structure Type Tree" location="view" />
+		<!--!<name>建物類別一覧</name>
+		<menu name="建物類別一覧" location="view" />-->
+		<class name="freetrain.framework.plugin.generic.CategoryTreeWnd" codebase="bin/Debug/FreeTrain.ContribEx.dll" />
+	</contribution>
+	
+	<contribution type="picture" id = "{2C3ED0DA-FBA1-4586-9999-67DC93B851C9}">
+		<picture src = "dummy.bmp"/>
+	</contribution>
+	<contribution type="GenericStructure" id="null-contrib">
+		<name></name>
+		<structure>
+			<category byid="ffffffff"/>
+		</structure>
+		<price>0</price>
+		<size>0,0</size>
+		<height>0</height>
+		<sprite origin="0,0" offset="0" >
+			<picture ref="{2C3ED0DA-FBA1-4586-9999-67DC93B851C9}"/>
+		</sprite>
+	</contribution>
+</plug-in>

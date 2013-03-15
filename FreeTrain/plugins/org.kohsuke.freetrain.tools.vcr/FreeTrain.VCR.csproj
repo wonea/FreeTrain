@@ -1,0 +1,168 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D600BE69-53F2-49FE-B79B-7043F0F0D4D1}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>FreeTrain.VCR</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>freetrain.tools.vcr</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BitmapWriterTypeLib">
+      <Name>BitmapWriterTypeLib</Name>
+      <HintPath>..\..\lib\DirectShow.VideoRecorder\lib\BitmapWriter.TypeLib\BitmapWriterTypeLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DirectShowLib">
+      <Name>DirectShowLib</Name>
+      <HintPath>..\..\lib\DirectShow.TypeLib\DirectShowLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\..\core\FreeTrain.Core.csproj">
+      <Name>FreeTrain.Core</Name>
+      <Project>{7746CF50-D84E-4E7B-83FB-AB43DB854DA8}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\lib\DirectDraw.net\DirectDraw.net.csproj">
+      <Name>DirectDraw.net</Name>
+      <Project>{C7DA6E56-7BB2-43BC-871C-3B33F0DE038C}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+      <Private>False</Private>
+    </ProjectReference>
+    <COMReference Include="QuartzTypeLib">
+      <Guid>{56A868B0-0AD4-11CE-B03A-0020AF0BA770}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Private>True</Private>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="resource\icons.bmp" />
+    <EmbeddedResource Include="src\ConfigDialog.resx">
+      <DependentUpon>ConfigDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\VCRConsole.resx">
+      <DependentUpon>VCRConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="src\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\ConfigDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\DirectShowUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\Moniker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\Recorder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\ResizingStrategies.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\VCRConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\VCRContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\VCRController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\VCROptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>xcopy $(SolutionDir)lib\DirectShow.VideoRecorder\Debug\*.dll $(OutDir) /D /E /I /Q /Y</PostBuildEvent>
+  </PropertyGroup>
+</Project>

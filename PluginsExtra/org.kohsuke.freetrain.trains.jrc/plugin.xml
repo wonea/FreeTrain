@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>JR Central Train Kit</title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	<depend on="org.kohsuke.freetrain.trains.trainshare" />
+
+	<!-- 311系 -->
+	 <contribution type="trainCar" id="{311-tokai-200309291049}">
+	<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+	 <colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-1" base="255,255,255" line1="0,0,0" line2="255,255,0" line3="255,255,0" />
+	 <capacity>300</capacity>
+	</contribution>
+
+	<contribution type="train" id="{311-tokai-200309291050}">
+		<company>JR Central</company>
+		<type>311 Series</type>
+		<name>Tokaido Main Line Rapid</name>
+		<author>iwasaki</author>
+		<description>東海道本線などに使われている快速電車です。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{311-tokai-200309291049}"/>
+		</composition>
+	</contribution>
+
+	<!-- 165系-->
+	<contribution type="trainCar" id="{4FCC28AC-410D-4da9-89B7-8AD4E3F5E6D8}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="165sho" />
+		</sprite>
+		<capacity>90</capacity> 
+	</contribution>
+
+	<contribution type="train" id="{7E7B6658-46A4-4e05-AFC3-8F24BE41100A}">
+		<company>JR Central</company>
+		<type>165 Series</type>
+		<name>Shonan Colors</name>
+		<author>Min</author>
+		<speed>medium</speed>  
+		<description>急行型電車。現在この色での定期運用はないはず。</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{4FCC28AC-410D-4da9-89B7-8AD4E3F5E6D8}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 313系8000先頭車両 -->
+	<contribution type="trainCar" id="{222426E9-EFD9-4318-8291-2B3EBCA8AAC2}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="313cena.bmp" />
+		</sprite>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 313系8000中間車両 -->
+	<contribution type="trainCar" id="{222426E9-EFD9-4318-8291-2B3EBCA8AAC2}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="313cenb.bmp" />
+		</sprite>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 313系8000後尾車両 -->
+	<contribution type="trainCar" id="{222426E9-EFD9-4318-8291-2B3EBCA8AAC2}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{222426E9-EFD9-4318-8291-2B3EBCA8AAC2}-h"/>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{222426E9-EFD9-4318-8291-2B3EBCA8AAC2}">
+		<company>JR Central</company>
+		<type>313 Series 8000 Model</type>
+		<name>Central Liner</name>
+		<author>Hima</author>
+		<description>
+座席定員制の快速列車「セントラルライナー」用の車両。最高時速は120km/hだが、130km/hでも走行できる性能を持つ。間合いで各駅停車などに使用されることがある。3両編成または6両編成。
+		</description>
+		<price>1</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{222426E9-EFD9-4318-8291-2B3EBCA8AAC2}-h"/>
+			<body carRef="{222426E9-EFD9-4318-8291-2B3EBCA8AAC2}-m"/>
+			<tail carRef="{222426E9-EFD9-4318-8291-2B3EBCA8AAC2}-t"/>
+		</composition>
+	</contribution>
+	<!-- 500系先頭車両 -->
+	<contribution type="trainCar" id="{1E8B6EF2-78D6-496d-99B2-E761056C4EF2}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train500a" />
+		</sprite>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<!-- 500系中間車両 -->
+	<contribution type="trainCar" id="{1E8B6EF2-78D6-496d-99B2-E761056C4EF2}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train500b" />
+		</sprite>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<!-- 500系後尾車両 -->
+	<contribution type="trainCar" id="{1E8B6EF2-78D6-496d-99B2-E761056C4EF2}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{1E8B6EF2-78D6-496d-99B2-E761056C4EF2}-h"/>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{1E8B6EF2-78D6-496d-99B2-E761056C4EF2}">
+		<company>JR Central</company>
+		<type>500 Series</type>
+		<name>500 Series Nozomi</name>
+		<author>Kigami</author>
+		<description>
+1997年山陽新幹線でデビューし当時のフランス・TGVと並ぶ世界最高の300㎞／hでの営業運転を開始した
+先頭形状が従来新幹線より超ロングノーズになり、１５／２７ｍもの長さに達する。
+車体断面もよりチューブ化が進み、航空機を思わせる車体形状をしている。
+「グッドデザイン賞」、「1998年ブルーリボン賞」「1998年ブルネル賞奨励賞」を受賞。
+16両編成。
+		</description>
+		<price>100</price>
+		<speed>superb</speed>
+		<composition>
+			<head carRef="{1E8B6EF2-78D6-496d-99B2-E761056C4EF2}-h"/>
+			<body carRef="{1E8B6EF2-78D6-496d-99B2-E761056C4EF2}-m"/>
+			<tail carRef="{1E8B6EF2-78D6-496d-99B2-E761056C4EF2}-t"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 500系(2)先頭車両 -->
+	<contribution type="trainCar" id="{05CB9ED5-D61A-4151-93DA-4E8964438AC2}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="500a" />
+		</sprite>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<!-- 500系(2)中間車両 -->
+	<contribution type="trainCar" id="{05CB9ED5-D61A-4151-93DA-4E8964438AC2}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="500b" />
+		</sprite>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<!-- 500系(2)後尾車両 -->
+	<contribution type="trainCar" id="{05CB9ED5-D61A-4151-93DA-4E8964438AC2}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{05CB9ED5-D61A-4151-93DA-4E8964438AC2}-h"/>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{05CB9ED5-D61A-4151-93DA-4E8964438AC2}">
+		<company>JR Central</company>
+		<type>500 Series</type>
+		<name>Nozomi</name>
+		<author>1500v</author>
+		<description>
+山陽区間では最高速度300km/hで運転される、まさに超高速な列車。
+		</description>
+		<price>100</price>
+		<speed>superb</speed>
+		<composition>
+			<head carRef="{05CB9ED5-D61A-4151-93DA-4E8964438AC2}-h"/>
+			<body carRef="{05CB9ED5-D61A-4151-93DA-4E8964438AC2}-m"/>
+			<tail carRef="{05CB9ED5-D61A-4151-93DA-4E8964438AC2}-t"/>
+		</composition>
+	</contribution>
+	<!-- 700系先頭車両 -->
+	<contribution type="trainCar" id="{846EE27C-1B58-46b0-BBEB-D96F153DC750}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="shink700a" />
+		</sprite>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<!-- 700系中間車両 -->
+	<contribution type="trainCar" id="{846EE27C-1B58-46b0-BBEB-D96F153DC750}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="shink700b" />
+		</sprite>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<!-- 700系後尾車両 -->
+	<contribution type="trainCar" id="{846EE27C-1B58-46b0-BBEB-D96F153DC750}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{846EE27C-1B58-46b0-BBEB-D96F153DC750}-h"/>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{846EE27C-1B58-46b0-BBEB-D96F153DC750}">
+		<company>JR Central</company>
+		<type>700 Series</type>
+		<name>Nozomi</name>
+		<author>qra_ra</author>
+		<description>
+JR CentralとJR西日本の共同開発による東海道・山陽新幹線用車両。
+		</description>
+		<price>100</price>
+		<speed>superb</speed>
+		<composition>
+			<head carRef="{846EE27C-1B58-46b0-BBEB-D96F153DC750}-h"/>
+			<body carRef="{846EE27C-1B58-46b0-BBEB-D96F153DC750}-m"/>
+			<tail carRef="{846EE27C-1B58-46b0-BBEB-D96F153DC750}-t"/>
+		</composition>
+	</contribution>
+	<!-- 922系先頭車両 -->
+	<contribution type="trainCar" id="{8106BB92-BC09-4279-A4A8-BEABE1070F6A}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train200Sa" />
+		<spriteType name="colorMapped">
+			<map from="62,162,32" to="63,95,223"/>
+			<map from="63,127,63" to="31,63,191"/>
+		</spriteType>
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+
+	<!-- 922系中間車両 -->
+	<contribution type="trainCar" id="{8106BB92-BC09-4279-A4A8-BEABE1070F6A}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train200Sb" />
+		<spriteType name="colorMapped">
+			<map from="62,162,32" to="63,95,223"/>
+		</spriteType>
+		</sprite>
+		<capacity>80</capacity>
+	</contribution>
+	
+	<!-- 922系後尾車両 -->
+	<contribution type="trainCar" id="{8106BB92-BC09-4279-A4A8-BEABE1070F6A}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{8106BB92-BC09-4279-A4A8-BEABE1070F6A}-h"/>
+		<capacity>60</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{8106BB92-BC09-4279-A4A8-BEABE1070F6A}">
+		<company>JR Central</company>
+		<type>922 Series</type>
+		<name>Dr.Yellow</name>
+		<author>Kigami (cars by Ayase)</author>
+		<description>東海道・山陽新幹線用のDr.Yellow</description>
+		<price>100</price>
+		<speed>superb</speed> 
+		<composition>
+			<head carRef="{8106BB92-BC09-4279-A4A8-BEABE1070F6A}-h"/>
+			<body carRef="{8106BB92-BC09-4279-A4A8-BEABE1070F6A}-m"/>
+			<tail carRef="{8106BB92-BC09-4279-A4A8-BEABE1070F6A}-t"/>
+		</composition>
+	</contribution>
+	<!-- 0系先頭車両 -->
+	<contribution type="trainCar" id="{BAD1975C-42B0-4225-ACF2-800B433CD1C1}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train200a" />
+		<spriteType name="colorMapped">
+<map from="238,216,198" to="243,243,235"/>
+<map from="252,255,226" to="253,253,245"/>
+<map from="223,223,191" to="233,233,225"/>
+<map from="62,162,32" to="31,63,159"/>
+<map from="63,127,63" to="0,31,127"/>
+
+		</spriteType>
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+
+	<!-- 0系中間車両 -->
+	<contribution type="trainCar" id="{BAD1975C-42B0-4225-ACF2-800B433CD1C1}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train200b" />
+
+		<spriteType name="colorMapped">
+<map from="223,223,191" to="233,233,225"/>
+<map from="62,162,32" to="31,63,159"/>
+<map from="252,255,226" to="253,253,245"/>
+<map from="238,216,198" to="243,243,235"/>
+
+		</spriteType>
+		</sprite>
+		<capacity>80</capacity>
+	</contribution>
+	
+	<!-- 0系後尾車両 -->
+	<contribution type="trainCar" id="{BAD1975C-42B0-4225-ACF2-800B433CD1C1}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{BAD1975C-42B0-4225-ACF2-800B433CD1C1}-h"/>
+		<capacity>60</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{BAD1975C-42B0-4225-ACF2-800B433CD1C1}">
+		<company>JR Central</company>
+		<type>0 Series</type>
+		<name>Hikari / Kodama</name>
+		<author>Kigami (cars by Ayase)</author>
+		<description>新幹線最初の東海道・山陽新幹線用車両</description>
+		<price>100</price>
+		<speed>superb</speed> 
+		<composition>
+			<head carRef="{BAD1975C-42B0-4225-ACF2-800B433CD1C1}-h"/>
+			<body carRef="{BAD1975C-42B0-4225-ACF2-800B433CD1C1}-m"/>
+			<tail carRef="{BAD1975C-42B0-4225-ACF2-800B433CD1C1}-t"/>
+		</composition>
+	</contribution>
+	<!-- 100系先頭車両 -->
+	<contribution type="trainCar" id="{2003-0211-KIGAMI-TrainImg-100}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train100a" />
+		<spriteType name="colorMapped">
+<map from="230,230,235" to="255,255,255"/>
+<map from="179,179,184" to="204,204,204"/>
+<map from="204,204,209" to="230,230,230"/>
+<map from="153,153,158" to="179,179,179"/>
+<map from="69,72,69" to="0,0,204"/>
+<map from="51,52,46" to="0,0,179"/>
+<map from="62,162,23" to="255,255,255"/>
+<map from="62,134,55" to="179,179,179"/>
+<map from="128,128,133" to="153,153,153"/>
+<map from="33,32,23" to="0,0,153"/>
+<map from="62,155,31" to="230,230,230"/>
+<map from="62,141,47" to="179,179,179"/>
+<map from="62,148,39" to="204,204,204"/>
+<map from="63,127,63" to="153,153,153"/>
+		</spriteType>
+		</sprite>
+		<capacity>65</capacity>
+	</contribution>
+
+	<!-- 100系中間車両 -->
+	<contribution type="trainCar" id="{2003-0211-KIGAMI-TrainImg-100}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train100b" />
+		<spriteType name="colorMapped">
+<map from="230,230,235" to="255,255,255"/>
+<map from="179,179,184" to="204,204,204"/>
+<map from="153,153,158" to="179,179,179"/>
+<map from="204,204,209" to="230,230,230"/>
+<map from="128,128,133" to="153,153,153"/>
+<map from="51,52,46" to="0,0,179"/>
+<map from="33,32,23" to="0,0,153"/>
+<map from="69,72,69" to="0,0,204"/>
+<map from="62,155,31" to="230,230,230"/>
+<map from="63,127,63" to="153,153,153"/>
+<map from="62,162,23" to="255,255,255"/>
+<map from="62,134,55" to="179,179,179"/>
+<map from="62,141,47" to="179,179,179"/>
+<map from="62,148,39" to="204,204,204"/>
+		</spriteType>
+		</sprite>
+		<capacity>95</capacity>
+	</contribution>
+
+	<!-- 100系中間車両 -->
+	<contribution type="trainCar" id="{2003-0211-KIGAMI-TrainImg-100}-2">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train100c" />
+		</sprite>
+		<capacity>42</capacity>
+	</contribution>
+	
+	<!-- 100系後尾車両 -->
+	<contribution type="trainCar" id="{2003-0211-KIGAMI-TrainImg-100}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{2003-0211-KIGAMI-TrainImg-100}-h"/>
+		<capacity>75</capacity>
+	</contribution>
+
+	<contribution type="train" id="{2003-0211-KIGAMI-TrainImg-100}">
+		<company>JR Central</company>
+		<type>100 Series</type>
+		<name>Hikari / Kodama</name>
+		<author>Kigami</author>
+		<description>東海道・山陽新幹線用車両。
+当時グランドひかりとして0系のみだった新幹線に衝撃を与えた車両。
+16両編成では2階建て車両があり、そこからの景色は格別</description>
+		<price>100</price>
+		<speed>superb</speed> 
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{2003-0211-KIGAMI-TrainImg-100}-h"/>
+			<car char="Ｍ" ref="{2003-0211-KIGAMI-TrainImg-100}-m"/>
+			<car char="２" ref="{2003-0211-KIGAMI-TrainImg-100}-2"/>
+			<car char="＞" ref="{2003-0211-KIGAMI-TrainImg-100}-t"/>
+			
+			<composition>＜ＭＭＭ＞</composition>
+			<composition>＜ＭＭＭＭ＞</composition>
+			<composition>＜ＭＭ２２ＭＭ＞</composition>
+			<composition>＜ＭＭＭ２２ＭＭＭ＞</composition>
+			<composition>＜ＭＭＭＭ２２ＭＭＭＭ＞</composition>
+			<composition>＜ＭＭＭＭＭ２２２２ＭＭＭＭＭ＞</composition>
+		</config>
+	</contribution>
+</plug-in>

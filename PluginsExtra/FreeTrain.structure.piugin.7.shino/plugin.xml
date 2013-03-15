@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY building2x2ParamA '
+	<group>Rental office (2x2)</group>
+	<structure>
+		<category byname="Rental Offices"/>
+	</structure>
+	<price>3300</price>
+	<size>2,2</size>
+	<minHeight>5</minHeight>
+	<maxHeight>6</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>220</base>
+	</population>
+'>
+<!ENTITY building2x2ParamB '
+	<group>Rental office (2x2)</group>
+	<structure>
+		<category byname="Rental Offices"/>
+	</structure>
+	<price>3100</price>
+	<size>2,2</size>
+	<minHeight>3</minHeight>
+	<maxHeight>6</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>200</base>
+	</population>
+'>
+<!ENTITY building2x2ParamC '
+	<group>Rental office (2x2)</group>
+	<structure>
+		<category byname="Rental Offices"/>
+	</structure>
+	<price>2700</price>
+	<size>2,2</size>
+	<minHeight>3</minHeight>
+	<maxHeight>8</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>190</base>
+	</population>
+'>
+]>
+	
+<plug-in>
+	<title>Office Buildings 5</title>
+	<author>Shino</author>
+	<homepage></homepage>
+
+
+	<contribution type="picture" id="{AE73B6F1-0437-48F0-A4C4-E01324AF0BCF}">
+		<picture src="2x2buil 002.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{21ECC7D2-E865-493D-9FBD-3E945EB219D9}">
+		&building2x2ParamB;
+		<pictures>
+			<top    origin="0,  0" offset="26">
+				<picture ref="{AE73B6F1-0437-48F0-A4C4-E01324AF0BCF}"/>
+			</top>
+			<middle origin="0, 50" offset="16">
+				<picture ref="{AE73B6F1-0437-48F0-A4C4-E01324AF0BCF}"/>
+			</middle>
+			<bottom origin="0, 90" offset="16">
+				<picture ref="{AE73B6F1-0437-48F0-A4C4-E01324AF0BCF}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="64,  0" offset="26">
+				<picture ref="{AE73B6F1-0437-48F0-A4C4-E01324AF0BCF}"/>
+			</top>
+			<middle origin="64, 50" offset="16">
+				<picture ref="{AE73B6F1-0437-48F0-A4C4-E01324AF0BCF}"/>
+			</middle>
+			<bottom origin="64, 90" offset="16">
+				<picture ref="{AE73B6F1-0437-48F0-A4C4-E01324AF0BCF}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="128,  0" offset="26">
+				<picture ref="{AE73B6F1-0437-48F0-A4C4-E01324AF0BCF}"/>
+			</top>
+			<middle origin="128, 50" offset="16">
+				<picture ref="{AE73B6F1-0437-48F0-A4C4-E01324AF0BCF}"/>
+			</middle>
+			<bottom origin="128, 90" offset="16">
+				<picture ref="{AE73B6F1-0437-48F0-A4C4-E01324AF0BCF}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="192,  0" offset="26">
+				<picture ref="{AE73B6F1-0437-48F0-A4C4-E01324AF0BCF}"/>
+			</top>
+			<middle origin="192, 50" offset="16">
+				<picture ref="{AE73B6F1-0437-48F0-A4C4-E01324AF0BCF}"/>
+			</middle>
+			<bottom origin="192, 90" offset="16">
+				<picture ref="{AE73B6F1-0437-48F0-A4C4-E01324AF0BCF}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+
+
+
+	<contribution type="picture" id="{246656A9-8662-4A52-9B52-0A6D713EC83A}">
+		<picture src="2x2buil 003.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{F6519424-C47C-4281-B06E-12D21CDAF121}">
+		&building2x2ParamA;
+		<pictures>
+			<top    origin="0,  0" offset="26">
+				<picture ref="{246656A9-8662-4A52-9B52-0A6D713EC83A}"/>
+			</top>
+			<middle origin="0, 50" offset="16">
+				<picture ref="{246656A9-8662-4A52-9B52-0A6D713EC83A}"/>
+			</middle>
+			<bottom origin="0, 90" offset="16">
+				<picture ref="{246656A9-8662-4A52-9B52-0A6D713EC83A}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="64,  0" offset="26">
+				<picture ref="{246656A9-8662-4A52-9B52-0A6D713EC83A}"/>
+			</top>
+			<middle origin="64, 50" offset="16">
+				<picture ref="{246656A9-8662-4A52-9B52-0A6D713EC83A}"/>
+			</middle>
+			<bottom origin="64, 90" offset="16">
+				<picture ref="{246656A9-8662-4A52-9B52-0A6D713EC83A}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="128,  0" offset="26">
+				<picture ref="{246656A9-8662-4A52-9B52-0A6D713EC83A}"/>
+			</top>
+			<middle origin="128, 50" offset="16">
+				<picture ref="{246656A9-8662-4A52-9B52-0A6D713EC83A}"/>
+			</middle>
+			<bottom origin="128, 90" offset="16">
+				<picture ref="{246656A9-8662-4A52-9B52-0A6D713EC83A}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="192,  0" offset="26">
+				<picture ref="{246656A9-8662-4A52-9B52-0A6D713EC83A}"/>
+			</top>
+			<middle origin="192, 50" offset="16">
+				<picture ref="{246656A9-8662-4A52-9B52-0A6D713EC83A}"/>
+			</middle>
+			<bottom origin="192, 90" offset="16">
+				<picture ref="{246656A9-8662-4A52-9B52-0A6D713EC83A}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+
+
+
+
+	<contribution type="picture" id="{151209FC-ED44-420A-9943-F7B05874AB61}">
+		<picture src="2x2buil 004.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{D4ED7A69-2849-49BC-8A72-05B334E2D7B3}">
+		&building2x2ParamC;
+		<pictures>
+			<top    origin="0,  0" offset="26">
+				<picture ref="{151209FC-ED44-420A-9943-F7B05874AB61}"/>
+			</top>
+			<middle origin="0, 50" offset="16">
+				<picture ref="{151209FC-ED44-420A-9943-F7B05874AB61}"/>
+			</middle>
+			<bottom origin="0, 90" offset="16">
+				<picture ref="{151209FC-ED44-420A-9943-F7B05874AB61}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="64,  0" offset="26">
+				<picture ref="{151209FC-ED44-420A-9943-F7B05874AB61}"/>
+			</top>
+			<middle origin="64, 50" offset="16">
+				<picture ref="{151209FC-ED44-420A-9943-F7B05874AB61}"/>
+			</middle>
+			<bottom origin="64, 90" offset="16">
+				<picture ref="{151209FC-ED44-420A-9943-F7B05874AB61}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="128,  0" offset="26">
+				<picture ref="{151209FC-ED44-420A-9943-F7B05874AB61}"/>
+			</top>
+			<middle origin="128, 50" offset="16">
+				<picture ref="{151209FC-ED44-420A-9943-F7B05874AB61}"/>
+			</middle>
+			<bottom origin="128, 90" offset="16">
+				<picture ref="{151209FC-ED44-420A-9943-F7B05874AB61}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="192,  0" offset="26">
+				<picture ref="{151209FC-ED44-420A-9943-F7B05874AB61}"/>
+			</top>
+			<middle origin="192, 50" offset="16">
+				<picture ref="{151209FC-ED44-420A-9943-F7B05874AB61}"/>
+			</middle>
+			<bottom origin="192, 90" offset="16">
+				<picture ref="{151209FC-ED44-420A-9943-F7B05874AB61}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+
+</plug-in>

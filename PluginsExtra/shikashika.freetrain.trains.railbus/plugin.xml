@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+<author>Shikashika</author>
+<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+<title>Rail Vehicle(RailCar:RailBus)</title>
+
+<!-- イメージ画像定義 -->
+	<!-- 0動車 KIHA01系 -->
+	<contribution type="picture" id="{FreeTrain-Shika-DieselRailcar-RailBus-picture-kiha01}">
+		<picture src="kiha01.bmp" />
+	</contribution>
+	<!-- 0動車 Kuyuni01系 -->
+	<contribution type="picture" id="{FreeTrain-Shika-DieselRailcar-RailBus-picture-kiyuni01}">
+		<picture src="kiyuni01.bmp" />
+	</contribution>
+	<!-- 0動車 KIHA02系 -->
+	<contribution type="picture" id="{FreeTrain-Shika-DieselRailcar-RailBus-picture-kiha02}">
+		<picture src="kiha02.bmp" />
+	</contribution>
+	<!-- 0動車 KIHA03系 -->
+	<contribution type="picture" id="{FreeTrain-Shika-DieselRailcar-RailBus-picture-kiha03}">
+		<picture src="kiha03.bmp" />
+	</contribution>
+	<!-- 0動車 KIHA10系-101-102(NanbuJyuukan Railway) -->
+	<contribution type="picture" id="{FreeTrain-Shika-DieselRailcar-RailBus-picture-kiha10-nanbu}">
+		<picture src="kiha10_nanbu.bmp" />
+	</contribution>
+	<!-- LE-Car Haimo180(Tarumi Railway) -->
+	<contribution type="picture" id="{FreeTrain-Shika-DieselRailcar-RailBus-picture-haimo180}">
+		<picture src="haimo180.bmp" />
+	</contribution>
+	<!-- LE-Car Haimo180(Arida Railway) -->
+	<contribution type="picture" id="{FreeTrain-Shika-DieselRailcar-RailBus-picture-haimo180-arita}">
+		<picture src="haimo180_arita.bmp" />
+	</contribution>
+	<!-- LE-Car MIKI180(Miki Railway) -->
+	<contribution type="picture" id="{FreeTrain-Shika-DieselRailcar-RailBus-picture-miki180}">
+		<picture src="miki180.bmp" />
+	</contribution>
+	<!-- LE-Car Flower1985(Hojyo Railway) -->
+	<contribution type="picture" id="{FreeTrain-Shika-DieselRailcar-RailBus-picture-hurawa1985}">
+		<picture src="hurawa1985.bmp" />
+	</contribution>
+	<!-- LE-Car KIHA10系(Meitetsu Railway) -->
+	<contribution type="picture" id="{FreeTrain-Shika-DieselRailcar-RailBus-picture-kiha10-meitetu}">
+		<picture src="kiha10_meitetu.bmp" />
+	</contribution>
+
+
+<!-- 車両定義 -->
+	<!-- 0動車 KIHA01系 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-kiha01}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-DieselRailcar-RailBus-picture-kiha01}" />
+		</sprite>
+		<capacity>46</capacity>
+	</contribution>
+	<!-- 0動車 Kuyuni01系 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-kiyuni01}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-DieselRailcar-RailBus-picture-kiyuni01}" />
+		</sprite>
+		<capacity>46</capacity>
+	</contribution>
+	<!-- 0動車 KIHA02系 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-kiha02}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-DieselRailcar-RailBus-picture-kiha02}" />
+		</sprite>
+		<capacity>46</capacity>
+	</contribution>
+	<!-- 0動車 KIHA03系 定員46人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-kiha03}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-DieselRailcar-RailBus-picture-kiha03}" />
+		</sprite>
+		<capacity>46</capacity>
+	</contribution>
+	<!-- 0動車 KIHA10系-101-102(NanbuJyuukan Railway) 座席27立席33 定員60人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-kiha10-nanbu}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-DieselRailcar-RailBus-picture-kiha10-nanbu}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+	<!-- LE-Car Haimo180(Tarumi Railway)ロングシート席36立席54 定員90人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-haimo180}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-DieselRailcar-RailBus-picture-haimo180}" />
+		</sprite>
+		<capacity>90</capacity>
+	</contribution>
+	<!-- LE-Car Haimo180(Arida Railway)クロスシート席34立席36 定員70人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-haimo180-arita}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-DieselRailcar-RailBus-picture-haimo180-arita}" />
+		</sprite>
+		<capacity>70</capacity>
+	</contribution>
+	<!-- LE-Car MIKI180(Miki Railway) 定員88人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-miki180}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-DieselRailcar-RailBus-picture-miki180}" />
+		</sprite>
+		<capacity>88</capacity>
+	</contribution>
+	<!-- LE-Car Flower1985-1号車(Hojyo Railway)ロングシート席36立席45 定員88人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-hurawa1985-1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-DieselRailcar-RailBus-picture-hurawa1985}" />
+		</sprite>
+		<capacity>88</capacity>
+	</contribution>
+	<!-- LE-Car Flower1985-2号車(Hojyo Railway) 定員88人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-hurawa1985-2}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-DieselRailcar-RailBus-picture-hurawa1985}" />
+		<spriteType name="colorMapped">
+			<map from="0,203,0" to="85,0,219"/>
+			<map from="0,129,0" to="54,0,140"/>
+			<map from="0,214,0" to="90,0,231"/>
+			<map from="0,193,0" to="81,0,208"/>
+			<map from="0,140,0" to="59,0,151"/>
+			<map from="0,151,0" to="64,0,163"/>
+			<map from="0,162,0" to="68,0,175"/>
+			<map from="0,183,0" to="77,0,197"/>
+			<map from="0,172,0" to="72,0,186"/>
+		</spriteType>
+		</sprite>
+		<capacity>88</capacity>
+	</contribution>
+	<!-- LE-Car Flower1985-3号車(Hojyo Railway) 定員88人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-hurawa1985-3}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-DieselRailcar-RailBus-picture-hurawa1985}" />
+		<spriteType name="colorMapped">
+			<map from="0,203,0" to="0,125,0"/>
+			<map from="0,129,0" to="0,80,0"/>
+			<map from="0,214,0" to="0,132,0"/>
+			<map from="0,193,0" to="0,119,0"/>
+			<map from="0,140,0" to="0,86,0"/>
+			<map from="0,151,0" to="0,93,0"/>
+			<map from="0,162,0" to="0,100,0"/>
+			<map from="0,183,0" to="0,113,0"/>
+			<map from="0,172,0" to="0,106,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>88</capacity>
+	</contribution>
+	<!-- LE-Car KIHA10系(Meitetsu Railway) 定員88人 -->
+	<contribution type="trainCar" id="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-kiha10-meitetu}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Shika-DieselRailcar-RailBus-picture-kiha10-meitetu}" />
+		</sprite>
+		<capacity>88</capacity>
+	</contribution>
+
+
+<!-- 列車定義 -->
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-kiha01-railbus}">
+		<company>Japanese National Railways</company>
+		<type>KIHA01</type>
+		<name>Railbus</name>
+		<author>Shikashika</author>
+		<description>A small sized diesel railbus. 12 were built in 1954. Model numbers were initially
+KIHA10000-11, but in 1957, KIHA10000-03 became KIHA01 (#01 - #04) while KIHA10004-11 became KIHA01
+(#51-#58).
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="0" ref="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-kiha01}"/>
+			
+			<composition>0</composition>
+			<composition>00</composition>
+			<composition>000</composition>
+		</config>
+	</contribution>
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-kiyuni01-railbus}">
+		<company>Japanese National Railways</company>
+		<type>Kiyuni01</type>
+		<name>Railbus</name>
+		<author>Shikashika</author>
+		<description>In 1952, KIHA01 - 55 had their interior remodelled and became Kiyuni01-1.
+Only one Kuyuni was built. It was used on the Sanin Main Line and North Sanko Line, stopping in 1967.
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="1" ref="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-kiyuni01}"/>
+			<car char="0" ref="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-kiha01}"/>
+			
+			<composition>1</composition>
+			<composition>10</composition>
+			<composition>100</composition>
+		</config>
+	</contribution>
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-kiha02-railbus}">
+		<company>Japanese National Railways</company>
+		<type>KIHA02</type>
+		<name>Railbus</name>
+		<author>Shikashika</author>
+		<description>This is a small-sized diesel railbus. There were 17 of the KIHA02 Series produced.
+From the beginning, they were numbered KIHA10012-28, but in 1957, they became KIHA02 (#01-#17).
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="0" ref="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-kiha02}"/>
+			
+			<composition>0</composition>
+			<composition>00</composition>
+			<composition>000</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-kiha03-railbus}">
+		<company>Japanese National Railways</company>
+		<type>KIHA03</type>
+		<name>Railbus</name>
+		<author>Shikashika</author>
+		<description>This is a railbus based on the KIHA02 built in 1956 for the extreme cold conditions in
+Hokkaido, with double windows and better heating. From the beginning, they were numbered KIHA10200-10219,
+but in 1957, they became KIHA03 (#01-#20). By 1966, they had all been retired.
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="0" ref="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-kiha03}"/>
+			
+			<composition>0</composition>
+			<composition>00</composition>
+			<composition>000</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-nanbu-kiha10-railbus}">
+		<company>Nambu Jukan Railway</company>
+		<type>KIHA10</type>
+		<name>Railbus</name>
+		<author>Shikashika</author>
+		<description>In 1962, on the 20th of October, The Nambu Jukan Railway opened and used these 
+vehicles produced by Fuji Heavy Industries. In 1996, they won the "Evergreen" award. The Nambu Jukan Railway
+paused on 5th April 1997 and was abolished on the 1st of August 2002.
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="0" ref="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-kiha10-nanbu}"/>
+			
+			<composition>0</composition>
+			<composition>00</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-tarumi-haimo180-railbus}">
+		<company>Tarumi Railway</company>
+		<type>HAIMO180</type>
+		<name>Railbus</name>
+		<author>Shikashika</author>
+		<description>Fuji Heavy Industries produced this LE-Car (Light-Economy,Diesel Car) railbus.
+3 cars were built with cross-seats and long-seats and one car with cross-seats was transferred to Wakayama
+Prefecture's Arida Railway.
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="0" ref="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-haimo180}"/>
+			
+			<composition>0</composition>
+			<composition>00</composition>
+			<composition>000</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-arita-haimo180-railbus}">
+		<company>Arida Railway</company>
+		<type>Haimo180</type>
+		<name>Railbus</name>
+		<author>Shikashika</author>
+		<description>Fuji Heavy Industries produced this LE-Car (Light-Economy,Diesel Car) railbus.
+Transferred from Tarumi Railway, it had cross-seats and could seat 34, with 70 passengers in total.
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="0" ref="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-haimo180-arita}"/>
+			
+			<composition>0</composition>
+			<composition>00</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-miki-miki180-railbus}">
+		<company>Miki Railway</company>
+		<type>MIKI180</type>
+		<name>Railbus</name>
+		<author>Shikashika</author>
+		<description>Fuji Heavy Industries produced this LE-Car (Light-Economy, Diesel Car) railbus.
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="0" ref="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-miki180}"/>
+			
+			<composition>0</composition>
+			<composition>00</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-miki-hurawa1985-1-railbus}">
+		<company>Hojo Railway</company>
+		<type>Flower1985-1</type>
+		<name>Railbus</name>
+		<author>Shikashika</author>
+		<description>Fuji Heavy Industries produced this LE-Car (Light-Economy,Diesel Car) railbus.
+The first car was painted red and yellow-green on white base, the second car was painted blue and red, and the
+third car was painted red with a green stripe.
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="1" ref="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-hurawa1985-1}"/>
+			<car char="2" ref="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-hurawa1985-2}"/>
+			<car char="3" ref="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-hurawa1985-3}"/>
+			
+			<composition>1</composition>
+			<composition>12</composition>
+			<composition>123</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-miki-hurawa1985-2-railbus}">
+		<company>Hojo Railway</company>
+		<type>Flower1985-2</type>
+		<name>Railbus</name>
+		<author>Shikashika</author>
+		<description>Fuji Heavy Industries produced this LE-Car (Light-Economy,Diesel Car) railbus.
+The first car was painted red and yellow-green on white base, the second car was painted blue and red, and the
+third car was painted red with a green stripe.
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="1" ref="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-hurawa1985-1}"/>
+			<car char="2" ref="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-hurawa1985-2}"/>
+			<car char="3" ref="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-hurawa1985-3}"/>
+			
+			<composition>2</composition>
+			<composition>23</composition>
+			<composition>231</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-miki-hurawa1985-3-railbus}">
+		<company>Hojo Railway</company>
+		<type>Flower1985-3</type>
+		<name>Railbus</name>
+		<author>Shikashika</author>
+		<description>Fuji Heavy Industries produced this LE-Car (Light-Economy,Diesel Car) railbus.
+The first car was painted red and yellow-green on white base, the second car was painted blue and red, and the
+third car was painted red with a green stripe.
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="1" ref="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-hurawa1985-1}"/>
+			<car char="2" ref="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-hurawa1985-2}"/>
+			<car char="3" ref="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-hurawa1985-3}"/>
+			
+			<composition>3</composition>
+			<composition>31</composition>
+			<composition>312</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-meitetu-kiha10-railbus}">
+		<company>Nagoya Railroad</company>
+		<type>KIHA10</type>
+		<name>Railbus</name>
+		<author>Shikashika</author>
+		<description>Fuji Heavy Industries produced these cars in 1984 for the Yaotsu Line and the
+Mikawa Line. Airconditioning was added in 1985. These cars were taken out of service in 1995, though 2 cars
+(KIHA10 - #15 and #16) still run on rural railways.
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="0" ref="{FreeTrain-Shika-DieselRailcar-RailBus-TrainCar-kiha10-meitetu}"/>
+			
+			<composition>0</composition>
+			<composition>00</composition>
+		</config>
+	</contribution>
+
+</plug-in>

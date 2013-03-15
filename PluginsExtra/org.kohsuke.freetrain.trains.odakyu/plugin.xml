@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title></title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	
+	
+	
+	<!-- 小田急通勤車タイプ -->
+	<contribution type="trainCar" id="{B333C320-9689-48c8-9DA9-4D35C4B5929E}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                <picture src="OER.bmp" />
+                </sprite>
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{2F672A7D-537E-4f71-ACD1-EEC76D6CAEC0}">
+		<company>Odakyu Electric Railway</company>
+		<type>Commuter Type</type>
+		<name></name>
+		<author>Nanashi-no-Hito</author>
+		<description>
+小田急電鉄の通勤車タイプ。
+		</description>
+		<price>1000</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{B333C320-9689-48c8-9DA9-4D35C4B5929E}"/>
+		</composition>
+	</contribution>
+
+	<!-- 10000系先頭車両 -->
+	<contribution type="trainCar" id="{5BA3B71C-4DFD-4b48-839D-BE68CCFA9C09}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+                <sprite origin="0,0">
+		<picture src="TrainHiSEa.bmp"/>
+                </sprite>
+		<capacity>39</capacity>
+	</contribution>
+	
+	<!-- 10000系中間車両 -->
+	<contribution type="trainCar" id="{5BA3B71C-4DFD-4b48-839D-BE68CCFA9C09}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+		<picture src="TrainHiSEb.bmp"/>
+                </sprite>
+		<capacity>39</capacity>
+	</contribution>
+	
+	<!-- 10000系後尾車両 -->
+	<contribution type="trainCar" id="{5BA3B71C-4DFD-4b48-839D-BE68CCFA9C09}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{5BA3B71C-4DFD-4b48-839D-BE68CCFA9C09}-h"/>
+		<capacity>39</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{5BA3B71C-4DFD-4b48-839D-BE68CCFA9C09}">
+		<company>Odakyu Electric Railway</company>
+		<type>10000 Series</type>
+		<name>HiSE</name>
+		<author>477</author>
+		<description>
+小田急開業６０周年の昭和62年運行開始。小田急最後の展望席付き車輌。
+フルハイデッカーの客室からワイドなパノラマを楽しむことができます。
+昭和63年ブルーリボン賞受賞。
+		</description>
+		<price>100</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{5BA3B71C-4DFD-4b48-839D-BE68CCFA9C09}-h"/>
+			<body carRef="{5BA3B71C-4DFD-4b48-839D-BE68CCFA9C09}-m"/>
+			<tail carRef="{5BA3B71C-4DFD-4b48-839D-BE68CCFA9C09}-t"/>
+		</composition>
+	</contribution>
+</plug-in>

@@ -1,0 +1,17 @@
+[
+    uuid(FC00609F-A2E7-4664-9193-68BFE55A1B3E)
+]
+library MsHtmlHost
+{
+    import "MsHtmHst.idl";
+    
+    enum tagDOCHOSTUIDBLCLK;
+    enum tagDOCHOSTUIFLAG;
+    enum tagDOCHOSTUITYPE;
+    
+    interface ICustomDoc;
+    interface IDocHostShowUI;
+    interface IDocHostUIHandler;
+    interface IDocHostUIHandler2;
+    interface IHostDialogHelper;
+};

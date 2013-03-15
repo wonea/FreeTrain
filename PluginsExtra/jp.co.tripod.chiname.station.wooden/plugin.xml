@@ -1,0 +1,734 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+	<!ENTITY WoodenStation '
+		<price>120</price>
+		<height>1</height>
+		<operationCost>40</operationCost>
+	'>
+	<!ENTITY kawa_black '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="154,154,154"/>
+		<map from="0,*,0" to="94,94,94"/>
+	</spriteType>
+	'>
+	<!ENTITY kawa_brown '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="64,104,104"/>
+		<map from="0,*,0" to="178,138,80"/>
+	</spriteType>
+	'>
+	<!ENTITY kawa_creme '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="147,82,98"/>
+		<map from="0,*,0" to="210,214,205"/>
+	</spriteType>
+	'>
+	<!ENTITY kawa_black_ex '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="154,154,154"/>
+		<map from="0,*,0" to="94,94,94"/>
+		<map from="0,0,*" to="130,165,165"/>
+	</spriteType>
+	'>
+	<!ENTITY kawa_brown_ex '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="64,104,104"/>
+		<map from="0,*,0" to="178,138,80"/>
+		<map from="0,0,*" to="140,214,214"/>
+	</spriteType>
+	'>
+	<!ENTITY kawa_creme_ex '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="147,82,98"/>
+		<map from="0,*,0" to="210,214,205"/>
+		<map from="0,0,*" to="214,132,110"/>
+	</spriteType>
+	'>
+	<!ENTITY purple_totan '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="223,167,192"/>
+		<map from="0,*,0" to="92,75,55"/>
+	</spriteType>
+	'>
+	<!ENTITY cyan_totan '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="114,199,196"/>
+		<map from="0,*,0" to="180,166,130"/>
+	</spriteType>
+	'>
+	<!ENTITY green_totan '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="33,152,12"/>
+		<map from="0,*,0" to="243,152,53"/>
+	</spriteType>
+	'>
+	
+]>
+<plug-in>
+	<title>Wooden station at countryside</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+		
+	<contribution type="picture" id="{E27467BE-9531-40DC-C477-2B976663A77F}">
+		<picture src="station05series.bmp">
+			<override when="night" src="station05series_n.bmp"/>
+		</picture>
+	</contribution>
+
+	<!--color set 1-->
+	
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-a0">
+		<group>Wooden station A</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin=" 0, 0" offset="16">
+			&kawa_black;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-a1">
+		<group>Wooden station A</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="48, 0" offset="24">
+			&kawa_black;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-a2">
+		<group>Wooden station A</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin="96, 0" offset="16">
+			&kawa_black;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-a3">
+		<group>Wooden station A</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="144, 0" offset="24">
+			&kawa_black;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-b0">
+		<group>Wooden station B</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin=" 0,40" offset="16">
+			&kawa_black;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-b1">
+		<group>Wooden station B</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="48,40" offset="24">
+			&kawa_black;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-b2">
+		<group>Wooden station B</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin="96,40" offset="16">
+			&kawa_black;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-b3">
+		<group>Wooden station B</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="144,40" offset="24">
+			&kawa_black;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-c0">
+		<group>Wooden station C</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin=" 0,80" offset="16">
+			&kawa_black_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-c1">
+		<group>Wooden station C</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="48,80" offset="24">
+			&kawa_black_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-c2">
+		<group>Wooden station C</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin="96,80" offset="16">
+			&kawa_black_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-c3">
+		<group>Wooden station C</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="144,80" offset="24">
+			&kawa_black_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-d0">
+		<group>Wooden station D</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin=" 0,120" offset="16">
+			&kawa_black_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-d1">
+		<group>Wooden station D</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="48,120" offset="24">
+			&kawa_black_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-d2">
+		<group>Wooden station D</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin="96,120" offset="16">
+			&kawa_black_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-d3">
+		<group>Wooden station D</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="144,120" offset="24">
+			&kawa_black_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-e0">
+		<group>Wooden station E</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin=" 0,160" offset="16">
+			&purple_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-e1">
+		<group>Wooden station E</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="48,160" offset="24">
+			&purple_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-e2">
+		<group>Wooden station E</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin="96,160" offset="16">
+			&purple_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-e3">
+		<group>Wooden station E</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="144,160" offset="24">
+			&purple_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>		
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-f0">
+		<group>Wooden station F</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin=" 0,200" offset="16">
+			&purple_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-f1">
+		<group>Wooden station F</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="48,200" offset="24">
+			&purple_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-f2">
+		<group>Wooden station F</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin="96,200" offset="16">
+			&purple_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7632DFB5-FB21-43AC-C477-BDA65F6A460F}-f3">
+		<group>Wooden station F</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="144,200" offset="24">
+			&purple_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>		
+
+	<!--color set 2-->
+	
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-a0">
+		<group>Wooden station A</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin=" 0, 0" offset="16">
+			&kawa_brown;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-a1">
+		<group>Wooden station A</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="48, 0" offset="24">
+			&kawa_brown;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-a2">
+		<group>Wooden station A</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin="96, 0" offset="16">
+			&kawa_brown;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-a3">
+		<group>Wooden station A</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="144, 0" offset="24">
+			&kawa_brown;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-b0">
+		<group>Wooden station B</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin=" 0,40" offset="16">
+			&kawa_brown;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-b1">
+		<group>Wooden station B</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="48,40" offset="24">
+			&kawa_brown;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-b2">
+		<group>Wooden station B</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin="96,40" offset="16">
+			&kawa_brown;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-b3">
+		<group>Wooden station B</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="144,40" offset="24">
+			&kawa_brown;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-c0">
+		<group>Wooden station C</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin=" 0,80" offset="16">
+			&kawa_brown_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-c1">
+		<group>Wooden station C</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="48,80" offset="24">
+			&kawa_brown_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-c2">
+		<group>Wooden station C</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin="96,80" offset="16">
+			&kawa_brown_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-c3">
+		<group>Wooden station C</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="144,80" offset="24">
+			&kawa_brown_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-d0">
+		<group>Wooden station D</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin=" 0,120" offset="16">
+			&kawa_brown_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-d1">
+		<group>Wooden station D</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="48,120" offset="24">
+			&kawa_brown_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-d2">
+		<group>Wooden station D</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin="96,120" offset="16">
+			&kawa_brown_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-d3">
+		<group>Wooden station D</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="144,120" offset="24">
+			&kawa_brown_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-e0">
+		<group>Wooden station E</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin=" 0,160" offset="16">
+			&cyan_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-e1">
+		<group>Wooden station E</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="48,160" offset="24">
+			&cyan_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-e2">
+		<group>Wooden station E</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin="96,160" offset="16">
+			&cyan_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-e3">
+		<group>Wooden station E</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="144,160" offset="24">
+			&cyan_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>		
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-f0">
+		<group>Wooden station F</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin=" 0,200" offset="16">
+			&cyan_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-f1">
+		<group>Wooden station F</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="48,200" offset="24">
+			&cyan_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-f2">
+		<group>Wooden station F</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin="96,200" offset="16">
+			&cyan_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{230E8F56-F976-4061-C477-29817768760F}-f3">
+		<group>Wooden station F</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="144,200" offset="24">
+			&cyan_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>		
+
+	<!--color set 3-->
+	
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-a0">
+		<group>Wooden station A</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin=" 0, 0" offset="16">
+			&kawa_creme;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-a1">
+		<group>Wooden station A</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="48, 0" offset="24">
+			&kawa_creme;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-a2">
+		<group>Wooden station A</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin="96, 0" offset="16">
+			&kawa_creme;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-a3">
+		<group>Wooden station A</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="144, 0" offset="24">
+			&kawa_creme;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-b0">
+		<group>Wooden station B</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin=" 0,40" offset="16">
+			&kawa_creme;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-b1">
+		<group>Wooden station B</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="48,40" offset="24">
+			&kawa_creme;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-b2">
+		<group>Wooden station B</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin="96,40" offset="16">
+			&kawa_creme;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-b3">
+		<group>Wooden station B</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="144,40" offset="24">
+			&kawa_creme;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-c0">
+		<group>Wooden station C</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin=" 0,80" offset="16">
+			&kawa_creme_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-c1">
+		<group>Wooden station C</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="48,80" offset="24">
+			&kawa_creme_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-c2">
+		<group>Wooden station C</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin="96,80" offset="16">
+			&kawa_creme_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-c3">
+		<group>Wooden station C</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="144,80" offset="24">
+			&kawa_creme_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-d0">
+		<group>Wooden station D</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin=" 0,120" offset="16">
+			&kawa_creme_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-d1">
+		<group>Wooden station D</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="48,120" offset="24">
+			&kawa_creme_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-d2">
+		<group>Wooden station D</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin="96,120" offset="16">
+			&kawa_creme_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-d3">
+		<group>Wooden station D</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="144,120" offset="24">
+			&kawa_creme_ex;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-e0">
+		<group>Wooden station E</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin=" 0,160" offset="16">
+			&green_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-e1">
+		<group>Wooden station E</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="48,160" offset="24">
+			&green_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-e2">
+		<group>Wooden station E</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin="96,160" offset="16">
+			&green_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-e3">
+		<group>Wooden station E</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="144,160" offset="24">
+			&green_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>		
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-f0">
+		<group>Wooden station F</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin=" 0,200" offset="16">
+			&green_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-f1">
+		<group>Wooden station F</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="48,200" offset="24">
+			&green_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-f2">
+		<group>Wooden station F</group>
+		&WoodenStation;
+		<size>1,2</size>
+		<sprite origin="96,200" offset="16">
+			&green_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{7173DC7A-FFD8-414F-C477-8AB3F75C433E}-f3">
+		<group>Wooden station F</group>
+		&WoodenStation;
+		<size>2,1</size>
+		<sprite origin="144,200" offset="24">
+			&green_totan;
+			<picture ref="{E27467BE-9531-40DC-C477-2B976663A77F}" />
+		</sprite>
+	</contribution>		
+</plug-in>

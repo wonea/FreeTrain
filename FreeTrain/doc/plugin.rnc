@@ -1,0 +1,34 @@
+datatypeLibrary = "http://www.w3.org/2001/XMLSchema-datatypes";
+
+##
+## docking contribution
+##
+dockingContentContrib =
+	attribute type {"dockingContent"},
+	# ウィンドウタブに表示される短い名前
+	element shortName {text},
+	element menu {
+		# メニューに使用される名前
+		attribute name {text},
+		# 配置するメニュー項目
+		attribute location {menuLocation},
+		# 表示位置
+		attribute pos{integer}?
+	},
+	# 表示されるウィンドウの型
+	element class {class}
+
+
+##
+## クラス情報
+##
+##
+class =
+	# 型名
+	attribute name {text},
+	# 方を含むアセンブリ。省略時はFreeTrain.Core.dll
+	attribute codebase {text}?
+
+
+menuLocation =
+	"file"|"view"|"rail"|"road"|"construction"|"config"|"help";

@@ -1,0 +1,1100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7746CF50-D84E-4E7B-83FB-AB43DB854DA8}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>FreeTrain.Core</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>freetrain</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputType>Library</OutputType>
+    <AssemblyName>FreeTrain.Core</AssemblyName>
+    <RootNamespace>freetrain</RootNamespace>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputType>Library</OutputType>
+    <AssemblyName>FreeTrain.Core</AssemblyName>
+    <RootNamespace>freetrain</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MagicLibrary">
+      <Name>MagicLibrary</Name>
+      <HintPath>..\extlib\MagicLibrary.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.JScript">
+      <Name>Microsoft.JScript</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Vsa">
+      <Name>Microsoft.Vsa</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpZipLib">
+      <Name>SharpZipLib</Name>
+      <HintPath>..\extlib\SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SHDocVw">
+      <Name>SHDocVw</Name>
+      <HintPath>..\extlib\SHDocVw.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Name>System.Runtime.Serialization.Formatters.Soap</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\lib\Controls\FreeTrain.Controls.csproj">
+      <Name>FreeTrain.Controls</Name>
+      <Project>{D3B86CCE-530E-4472-AE8E-3FA5F903C206}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\lib\DirectAudio.net\DirectAudio.net.csproj">
+      <Name>DirectAudio.net</Name>
+      <Project>{0616A314-BDF0-466D-AB4B-9FA1B071A8A2}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\lib\DirectDraw.net\DirectDraw.net.csproj">
+      <Name>DirectDraw.net</Name>
+      <Project>{C7DA6E56-7BB2-43BC-871C-3B33F0DE038C}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+      <Private>True</Private>
+    </ProjectReference>
+    <COMReference Include="DxVBLib">
+      <Guid>{E1211242-8E94-11D1-8808-00C04FC2C602}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Private>True</Private>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\common\FixedSizeStructureContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\common\FixedSizeStructureController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\common\IEntityBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\common\IPreviewWorldBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\common\LineContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\common\PictureContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\common\StructureContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\common\StructureGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\common\SubDividedStructureContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\dock\DockingContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\dock\IDockingWindow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\land\Bulldozer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\land\DefaultControllerImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\land\LandBuilderContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\land\LandBuilderGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\land\RandomLandBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\land\StaticLandBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\others\EmptyNewGameContributionImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\others\MenuContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\others\NewGameContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\others\NewWorldDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contributions\population\AgriculturalPopulation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\population\CombinationPopulation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\population\ConstantPopulation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\population\HourlyPopulation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\population\MultiplierPopulation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\population\OfficePopulation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\population\PersistentPopulation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\population\Population.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\population\ResidentialPopulation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\population\RestaurantPopulation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\population\ShopperPopulation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\rail\DepartureBellContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\rail\RailAccessoryContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\rail\RailStationaryContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\rail\SpecialRailContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\rail\StationContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\rail\TrainControllerContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\road\A3RoadContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\road\AbstractRoadContributionImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\road\RoadContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\road\StandardRoadContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\sound\BGMContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\sound\BGMFactoryContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\structs\CommercialStructureContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\structs\SpecialStructureContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\structs\VarHeightBuildingContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\train\AbstractTrainContributionImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\train\AsymTrainCarImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\train\ColoredTrainCarImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\train\ParamTrainImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\train\PatternTrainImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\train\ReverseTrainCarImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\train\SymTrainCarImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\train\TrainCarContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\train\TrainContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contributions\train\TrainContributionFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\AbstractControllerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\AbstractControllerImpl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\AbstractLineController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\ControllerHostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\CubeSelectorController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\Disambiguators.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\IControllerSite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\land\BulldozeController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\land\LandController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\land\LandPropertyController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\LocationDisambiguator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\LocationStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\ModalController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\PointSelectorController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\rail\PlatformController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\rail\PlatformPropertyDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\rail\RailRoadController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\rail\SlopeRailRoadController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\rail\SpecialPurposeRailController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\rail\StationaryStructPlacementController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\rail\StationPassagewayController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\rail\StationPropertyDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\rail\TrainControllerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\rail\TrainPlacementController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\rail\TrainTrackingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\rail\TrainTradingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\RectSelectorController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\road\RoadController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\structs\CommercialStructPlacementController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\structs\FixedSizeStructController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\structs\StructPlacementController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\structs\VarHeightBuildingController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controllers\terrain\MountainController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="framework\AboutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="framework\BGMManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\ConfigDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="framework\Core.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\ErrorMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="framework\ExternToolsHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\GlobalOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\graphics\AlphaBlendSpriteSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\graphics\ColorLibrary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\graphics\ColorMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\graphics\ColorMappedSprite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\graphics\DefaultSpriteLoaderContributionImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\graphics\DirectSprite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\graphics\DirtyRect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\graphics\GraphicsException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\graphics\HueTransformSprite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\graphics\NullSprite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\graphics\Picture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\graphics\PictureManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\graphics\PreviewDrawer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\graphics\SimpleSprite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\graphics\Sprite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\graphics\SpriteFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\graphics\SpriteFactoryContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\graphics\SpriteLoaderContribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\graphics\SurfaceLoaders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="framework\MenuItemConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\MruHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\NewWorldDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="framework\PersistentOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\plugin\Contribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\plugin\ContributionFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\plugin\DynamicContributionFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\plugin\FixedClassContributionFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\plugin\Plugin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\plugin\PluginListDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="framework\plugin\PluginManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\plugin\PluginSerializationBinder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\plugin\PluginUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\plugin\XmlUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\ResourceUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\sound\RepeatableSoundEffectImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\sound\SoundEffect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\sound\SoundEffectManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="framework\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="util\ArrayEnumerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="util\command\Command.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="util\command\CommandExecutor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="util\command\CommandManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="util\controls\DDTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="util\controls\ToolBarCustomizerUI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="util\CurrencyUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="util\docking\ContentEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="util\docking\DockingManagerEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="util\docking\EconomicalContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="util\docking\SuicidalContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="util\FontInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="util\Keyboard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="util\LongTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="util\PriorityQueue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="util\Set.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="util\UrlInvoker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="util\WindowState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="views\AbstractView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="views\GlobalViewOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="views\MapOverlay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="views\map\HeightCutWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\map\MapView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\map\PreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\map\PreviewMapWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\NullWeatherOverlay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="views\QuarterViewDrawer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="views\WeatherOverlay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="views\WeatherOverlayImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="views\WeatherOverlaySpriteSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\accounting\AccountGenre.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\accounting\AccountManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\accounting\AccountSummaryWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="world\accounting\BalanceSheetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="world\accounting\Debt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\accounting\GenreSelectorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="world\accounting\TransactionHistory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\Car.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\CarState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\Clock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\Cube.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\development\CommercialStructurePlan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\development\DevelopConfigure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="world\development\DevelopConfigurePlugin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\development\DevelopmentAlgorithm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\development\LandPlan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\development\LandValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\development\LandValueInspector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="world\development\LandValueInspectorPlugin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\development\Plan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\development\ULV.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\development\ULVFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\development\VarHeightBuildingPlan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\Direction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\DrawContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\EmptyVoxel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\Entity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\land\LandPropertyVoxel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\land\LandVoxel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\land\StaticLandVoxel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\Location.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\Matrix.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\BridgePierVoxel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\BridgeRail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\DelegationTrainControllerImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\FatPlatform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\GlobalTrafficMonitor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\JunctionRailRoad.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\PassagewayRail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\Platform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\PlatformHost.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\RailPattern.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\RailRoad.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\RailStationaryStructure.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\SimpleTrainControllerImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\SingleRailRoad.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\SlopeRailRoad.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\SpecialPurposeRailRoad.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\Station.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\StationListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\StealSupportedRailContributionImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\ThinPlatform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\Train.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\TrainController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\TrainGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\TrainHarbor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\TrainItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\TunnelRail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\rail\YardRailRoad.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\road\Bus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\road\Road.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\road\RoadPattern.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\road\RoadStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\RRCrossing.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\SIZE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\SparseVoxelArray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\structs\Commercial.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\structs\ConstructionSite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\structs\PopulatedStructure.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\structs\PThreeDimStructure.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\structs\StationListenerImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\structs\Structure.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\structs\VarHeightBuilding.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\subsidiaries\MarketWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="world\subsidiaries\Parameters.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\subsidiaries\SubsidiaryCompany.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\subsidiaries\SubsidiaryEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\subsidiaries\SubsidiaryMarket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\terrain\MountainVoxel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\Time.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\TimeLength.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\Traffic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\Voxel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\VoxelOutlookListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="world\World.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="..\plugins\system\plugin.xml">
+      <Link>plugin.xml</Link>
+    </Content>
+    <Content Include="..\whatsnew.txt">
+      <Link>whatsnew.txt</Link>
+    </Content>
+    <Content Include="contributions\readme.txt" />
+    <Content Include="res\Arrows.bmp" />
+    <Content Include="res\BridgePier.bmp" />
+    <Content Include="res\ConstructionBones.bmp" />
+    <Content Include="res\ConstructionFence.bmp" />
+    <Content Include="res\ConstructionGround.bmp" />
+    <Content Include="res\ConstructionWall.bmp" />
+    <Content Include="res\DayNight.bmp" />
+    <Content Include="res\EmptyChip.bmp" />
+    <Content Include="res\Item.bmp" />
+    <Content Include="res\RailRoads.bmp" />
+    <Content Include="res\Toolbar.bmp" />
+    <Content Include="res\ugslope.bmp" />
+    <Content Include="res\YardChip.bmp" />
+    <EmbeddedResource Include="contributions\others\NewWorldDialog.resx">
+      <DependentUpon>NewWorldDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\AbstractControllerForm.resx">
+      <DependentUpon>AbstractControllerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\AbstractControllerImpl.resx">
+      <DependentUpon>AbstractControllerImpl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\AbstractLineController.resx">
+      <DependentUpon>AbstractLineController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\ControllerHostForm.resx">
+      <DependentUpon>ControllerHostForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\land\BulldozeController.resx">
+      <DependentUpon>BulldozeController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\land\LandController.resx">
+      <DependentUpon>LandController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\land\LandPropertyController.resx">
+      <DependentUpon>LandPropertyController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\rail\PlatformController.resx">
+      <DependentUpon>PlatformController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\rail\PlatformPropertyDialog.resx">
+      <DependentUpon>PlatformPropertyDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\rail\RailRoadController.resx">
+      <DependentUpon>RailRoadController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\rail\SlopeRailRoadController.resx">
+      <DependentUpon>SlopeRailRoadController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\rail\StationPassagewayController.resx">
+      <DependentUpon>StationPassagewayController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\rail\StationPropertyDialog.resx">
+      <DependentUpon>StationPropertyDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\rail\TrainControllerDialog.resx">
+      <DependentUpon>TrainControllerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\rail\TrainPlacementController.resx">
+      <DependentUpon>TrainPlacementController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\rail\TrainTrackingWindow.resx">
+      <DependentUpon>TrainTrackingWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\rail\TrainTradingDialog.resx">
+      <DependentUpon>TrainTradingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\road\RoadController.resx">
+      <DependentUpon>RoadController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\structs\FixedSizeStructController.resx">
+      <DependentUpon>FixedSizeStructController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\structs\StructPlacementController.resx">
+      <DependentUpon>StructPlacementController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\structs\VarHeightBuildingController.resx">
+      <DependentUpon>VarHeightBuildingController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controllers\terrain\MountainController.resx">
+      <DependentUpon>MountainController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="framework\AboutDialog.resx">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="framework\ConfigDialog.resx">
+      <DependentUpon>ConfigDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="framework\ErrorMessageBox.resx">
+      <DependentUpon>ErrorMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="framework\MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="framework\NewWorldDialog.resx">
+      <DependentUpon>NewWorldDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="framework\plugin\PluginListDialog.resx">
+      <DependentUpon>PluginListDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="framework\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\splash.jpg" />
+    <EmbeddedResource Include="util\command\CommandManager.resx">
+      <DependentUpon>CommandManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\map\HeightCutWindow.resx">
+      <DependentUpon>HeightCutWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\map\MapView.resx">
+      <DependentUpon>MapView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\map\PreviewForm.resx">
+      <DependentUpon>PreviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\map\PreviewMapWindow.resx">
+      <DependentUpon>PreviewMapWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="world\accounting\AccountSummaryWindow.resx">
+      <DependentUpon>AccountSummaryWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="world\accounting\BalanceSheetForm.resx">
+      <DependentUpon>BalanceSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="world\accounting\GenreSelectorDialog.resx">
+      <DependentUpon>GenreSelectorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="world\development\DevelopConfigure.resx">
+      <DependentUpon>DevelopConfigure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="world\development\LandValueInspector.resx">
+      <DependentUpon>LandValueInspector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="world\subsidiaries\MarketWindow.resx">
+      <DependentUpon>MarketWindow.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="util\video\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>rem del $(ProjectDir)\obj\Debug\*.PDB</PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <ProjectGuid>{7746CF50-D84E-4E7B-83FB-AB43DB854DA8}</ProjectGuid>
+    <RootNamespace>freetrain</RootNamespace>
+  </PropertyGroup>
+</Project>

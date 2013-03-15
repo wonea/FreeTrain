@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>JR East Train Set</title>
+	<homepage>http://www4.ocn.ne.jp/~presto/ft/</homepage>
+	<author>Hinoto</author>
+
+	<depend on="jp.co.infoseek.hp.efa-typoon.train2"/>
+
+	<!-- 485系勝田区K60編成先頭車 -->
+	<contribution type="trainCar" id="{005BDC20-4885-11D8-968B-0800460222F0-titech-485K60}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="64,64,64" to="224,224,224"/>
+			<map from="64,64,96" to="192,192,214"/>
+			<map from="64,192,255" to="224,224,224"/>
+			<map from="0,160,255" to="192,192,214"/>
+			<map from="128,192,128" to="230,230,255"/>
+			<map from="160,192,128" to="216,216,240"/>
+			<map from="64,128,192" to="27,33,196"/>
+			<map from="192,192,192" to="192,192,214"/>
+			<map from="64,224,192" to="98,87,81"/>
+			<map from="0,192,192" to="90,79,73"/>
+			<map from="224,224,224" to="230,230,255"/>
+			<map from="64,192,192" to="90,79,73"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-E485-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+	<!-- 485系勝田区K60編成中間車 -->
+	<contribution type="trainCar" id="{005BDC20-4885-11D8-968B-0800460222F0-titech-485K60}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="64,64,64" to="224,224,224"/>
+			<map from="64,64,96" to="192,192,214"/>
+			<map from="64,192,255" to="224,224,224"/>
+			<map from="0,160,255" to="192,192,214"/>
+			<map from="128,192,128" to="230,230,255"/>
+			<map from="160,192,128" to="216,216,240"/>
+			<map from="64,128,192" to="27,33,196"/>
+			<map from="192,192,192" to="192,192,214"/>
+			<map from="64,224,192" to="98,87,81"/>
+			<map from="0,192,192" to="90,79,73"/>
+			<map from="224,224,224" to="230,230,255"/>
+			<map from="64,192,192" to="90,79,73"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-485E-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>64</capacity>
+	</contribution>
+	<!-- 485系勝田区K60編成後尾車 -->
+	<contribution type="trainCar" id="{005BDC20-4885-11D8-968B-0800460222F0-titech-485K60}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{005BDC20-4885-11D8-968B-0800460222F0-titech-485K60}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+
+	<contribution type="train" id="{005BDC20-4885-11D8-968B-0800460222F0-titech-485K60}">
+		<company>JR East</company>
+		<type>485 Series</type>
+		<name>Katsuta Ward K60 Formation</name>
+		<author>Hinoto</author>
+		<description>勝田電車区の臨時・団臨用485系</description>
+		<price>55000</price>
+          		<fare>1000</fare> 
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{005BDC20-4885-11D8-968B-0800460222F0-titech-485K60}-h"/>
+			<body carRef="{005BDC20-4885-11D8-968B-0800460222F0-titech-485K60}-m"/>
+			<tail carRef="{005BDC20-4885-11D8-968B-0800460222F0-titech-485K60}-t"/>
+		</composition>
+	</contribution>
+
+
+
+<!-- E926 East i -->
+	<!-- E926先頭車両 -->
+	<contribution type="trainCar" id="{9AD58640-3D5C-11D8-968B-0800460222F0-titech-e926}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="E926_easti_a.bmp" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- E926中間車両 -->
+	<contribution type="trainCar" id="{9AD58640-3D5C-11D8-968B-0800460222F0-titech-e926}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="E926_easti_b.bmp" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+
+	
+	<!-- E926後尾車両 -->
+	<contribution type="trainCar" id="{9AD58640-3D5C-11D8-968B-0800460222F0-titech-e926}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{9AD58640-3D5C-11D8-968B-0800460222F0-titech-e926}-h"/>
+		<capacity>0</capacity>
+	</contribution>
+
+	<contribution type="train" id="{9AD58640-3D5C-11D8-968B-0800460222F0-titech-e926}">
+		<company>JR East</company>
+		<type>E926 Series</type>
+		<name>East i</name>
+		<author>HINOTO</author>
+		<!-- 画像のベースとなったこまち色E3を提供された477氏に感謝 -->
+		<description>
+JR Eastのフル規格・ミニ新幹線全線区における
+架線・線路の検査を行う新幹線電気軌道総合試験車
+		</description>
+		<price>500000</price>
+		<fare>0</fare>
+		<speed>superb</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{9AD58640-3D5C-11D8-968B-0800460222F0-titech-e926}-h"/>
+			<car char="=" ref="{9AD58640-3D5C-11D8-968B-0800460222F0-titech-e926}-m"/>
+			<car char="＞" ref="{9AD58640-3D5C-11D8-968B-0800460222F0-titech-e926}-t"/>
+			<composition>＜====＞</composition>
+		</config>
+	</contribution>
+
+
+<!-- E2 はやて色 -->
+	<!-- E2 はやて色 先頭車両 -->
+	<contribution type="trainCar" id="{9AD58641-3D5C-11D8-968B-0800460222F0-titech-e2-hayate}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="E2_hayate_a.bmp" />
+		</sprite>
+		<capacity>75</capacity>
+	</contribution>
+	
+	<!-- E2 はやて色 中間車両 -->
+	<contribution type="trainCar" id="{9AD58641-3D5C-11D8-968B-0800460222F0-titech-e2-hayate}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="E2_hayate_b.bmp" />
+		</sprite>
+		<capacity>75</capacity>
+	</contribution>
+	
+	<!-- E2 はやて色 後尾車両 -->
+	<contribution type="trainCar" id="{9AD58641-3D5C-11D8-968B-0800460222F0-titech-e2-hayate}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{9AD58641-3D5C-11D8-968B-0800460222F0-titech-e2-hayate}-h"/>
+		<capacity>75</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{9AD58641-3D5C-11D8-968B-0800460222F0-titech-e2-hayate}">
+		<company>JR East</company>
+		<type>E2 Series</type>
+		<name>Hayate (Pink Stripe)</name>
+		<author>HINOTO</author>
+		<!-- 画像のベースとなったE2を提供された綾瀬氏に感謝 -->
+		<description>
+東北新幹線八戸開業時に登場した
+ピンク帯のE2系です。
+		</description>
+		<!-- かなーり間違っていると思うので誰か修正よろ -->
+		<price>450000</price>
+		<fare>1300</fare>
+		<speed>superb</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{9AD58641-3D5C-11D8-968B-0800460222F0-titech-e2-hayate}-h"/>
+			<car char="=" ref="{9AD58641-3D5C-11D8-968B-0800460222F0-titech-e2-hayate}-m"/>
+			<car char="＞" ref="{9AD58641-3D5C-11D8-968B-0800460222F0-titech-e2-hayate}-t"/>
+			<composition>＜========＞</composition>
+		</config>
+	</contribution>
+
+<!-- E3 つばさ色 -->
+	<!-- E3 つばさ色 先頭車両 -->
+	<contribution type="trainCar" id="{8773C1E0-3EDB-11D8-968B-0800460222F0-titech-e3-tsubasa}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="E3_tsubasa_a.bmp" />
+		</sprite>
+		<capacity>56</capacity>
+	</contribution>
+	
+	<!-- E3 つばさ色 中間車両 -->
+	<contribution type="trainCar" id="{8773C1E0-3EDB-11D8-968B-0800460222F0-titech-e3-tsubasa}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="E3_tsubasa_b.bmp" />
+		</sprite>
+		<capacity>64</capacity>
+	</contribution>
+	
+	<!-- E3 つばさ色 後尾車両 -->
+	<contribution type="trainCar" id="{8773C1E0-3EDB-11D8-968B-0800460222F0-titech-e3-tsubasa}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{8773C1E0-3EDB-11D8-968B-0800460222F0-titech-e3-tsubasa}-h"/>
+		<capacity>56</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{8773C1E0-3EDB-11D8-968B-0800460222F0-titech-e3-tsubasa}">
+		<company>JR East</company>
+		<type>E3 Series</type>
+		<name>Tsubasa</name>
+		<author>HINOTO</author>
+		<!-- 画像のベースとなったこまち色E3を提供された477氏に感謝 -->
+		<description>
+山形新幹線新庄延伸にともなう増備車は400系ではなく"こまち"と同型のE3系となった。
+銀色の車体に緑色の帯という塗色は後に400系でも採用されている。
+		</description>
+		<!-- かなーり間違っていると思うので誰か修正よろ -->
+		<price>440000</price>
+		<fare>1280</fare>
+		<speed>superb</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{8773C1E0-3EDB-11D8-968B-0800460222F0-titech-e3-tsubasa}-h"/>
+			<car char="=" ref="{8773C1E0-3EDB-11D8-968B-0800460222F0-titech-e3-tsubasa}-m"/>
+			<car char="＞" ref="{8773C1E0-3EDB-11D8-968B-0800460222F0-titech-e3-tsubasa}-t"/>
+			<composition>＜=====＞</composition>
+		</config>
+	</contribution>
+
+<!-- E1 新塗色 -->
+	<!-- E1 先頭車両 -->
+	<contribution type="trainCar" id="{8773C1E9-3EDB-11D8-968B-0800460222F0-titech-e1-renewal}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="E1_n_a.bmp" />
+		</sprite>
+		<capacity>70</capacity>
+	</contribution>
+	
+	<!-- E1 中間車両 -->
+	<contribution type="trainCar" id="{8773C1E9-3EDB-11D8-968B-0800460222F0-titech-e1-renewal}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="E1_n_b.bmp" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+	
+	<!-- E1 後尾車両 -->
+	<contribution type="trainCar" id="{8773C1E9-3EDB-11D8-968B-0800460222F0-titech-e1-renewal}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{8773C1E9-3EDB-11D8-968B-0800460222F0-titech-e1-renewal}-h"/>
+		<capacity>70</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{8773C1E9-3EDB-11D8-968B-0800460222F0-titech-e1-renewal}">
+		<company>JR East</company>
+		<type>E1 Series</type>
+		<name>Max (Refurbished)</name>
+		<author>HINOTO</author>
+		<description>
+平成15年末に登場したE1系Maxのリニューアル車。
+塗色がE4系と同様の塗り分けとなったが、帯の色は朱鷺色になっている。
+		</description>
+		<!-- かなーり間違っていると思うので誰か修正よろ -->
+		<price>500000</price>
+		<fare>1270</fare>
+		<speed>superb</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{8773C1E9-3EDB-11D8-968B-0800460222F0-titech-e1-renewal}-h"/>
+			<car char="=" ref="{8773C1E9-3EDB-11D8-968B-0800460222F0-titech-e1-renewal}-m"/>
+			<car char="＞" ref="{8773C1E9-3EDB-11D8-968B-0800460222F0-titech-e1-renewal}-t"/>
+			<composition>＜======＞</composition>
+			<composition>＜========＞</composition>
+			<composition>＜==========＞</composition>
+			<composition>＜==============＞</composition>
+		</config>
+	</contribution>
+
+<!-- おまけコーナー
+		要 org.kohsuke.freetrain.trainsプラグイン
+-->
+
+	<depend on="org.kohsuke.freetrain.trains" />
+
+	<contribution type="train" id="{9AD58642-3D5C-11D8-968B-0800460222F0-hyate-plus-komachi}">
+		<company>JR East</company>
+		<type>E2 Series + E3 Series</type>
+		<name>Hayate + Komachi</name>
+		<author>HINOTO</author>
+		<!-- 画像のベースとなったE2を提供された綾瀬氏に感謝 -->
+		<!-- 利用させてもらっているE3を提供された477氏に感謝 -->
+		<description>
+E2系"はやて"とE3系"こまち"を併結した16両編成です。
+		</description>
+		<price>450000</price>
+		<fare>1300</fare>
+		<speed>superb</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="H" ref="{9AD58641-3D5C-11D8-968B-0800460222F0-titech-e2-hayate}-h"/>
+			<car char="=" ref="{9AD58641-3D5C-11D8-968B-0800460222F0-titech-e2-hayate}-m"/>
+			<car char="h" ref="{9AD58641-3D5C-11D8-968B-0800460222F0-titech-e2-hayate}-t"/>
+			<car char="K" ref="{F4D54B1E-534E-47b0-9EA7-76CE075423E4}-h"/>
+			<car char="-" ref="{F4D54B1E-534E-47b0-9EA7-76CE075423E4}-m"/>
+			<car char="k" ref="{F4D54B1E-534E-47b0-9EA7-76CE075423E4}-t"/>
+			<composition>H========hK----k</composition>
+		</config>
+	</contribution>
+
+<!-- おまけコーナーその２ 
+		要org.kohsuke.freetrain.trains.jreプラグイン
+-->
+
+		<depend on="org.kohsuke.freetrain.trains.jre" />
+
+	<contribution type="train" id="{8773C1E0-3EDB-11D8-968B-0800460222F0-e3pluse4}">
+		<company>JR East</company>
+		<type>E3 Series + E4 Series</type>
+		<name>Tsubasa + Max Yamabiko</name>
+		<author>HINOTO</author>
+		<!-- 画像のベースとなったこまち色E3を提供された477氏に感謝 -->
+		<!-- 利用させてもらっているE4を提供されたきがみ氏に感謝 -->
+		<description>
+東京～福島間で見られる"つばさ"と"Maxやまびこ"の併結編成
+		</description>
+		<!-- かなーり間違っていると思うので誰か修正よろ -->
+		<price>440000</price>
+		<fare>1280</fare>
+		<speed>superb</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="T" ref="{8773C1E0-3EDB-11D8-968B-0800460222F0-titech-e3-tsubasa}-h"/>
+			<car char="-" ref="{8773C1E0-3EDB-11D8-968B-0800460222F0-titech-e3-tsubasa}-m"/>
+			<car char="t" ref="{8773C1E0-3EDB-11D8-968B-0800460222F0-titech-e3-tsubasa}-t"/>
+			<car char="M" ref="{377D778C-CEF0-4e4c-9CE0-C1EFA6E1D743}-h" /> 
+  			<car char="=" ref="{377D778C-CEF0-4e4c-9CE0-C1EFA6E1D743}-m" /> 
+  			<car char="m" ref="{377D778C-CEF0-4e4c-9CE0-C1EFA6E1D743}-t" /> 
+			<composition>M======mT-----t</composition>
+		</config>
+	</contribution>
+
+
+
+
+</plug-in>

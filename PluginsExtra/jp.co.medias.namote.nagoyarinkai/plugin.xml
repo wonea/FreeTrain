@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+<title>Nagoya Rinkai Kosoku Railway</title>
+<author>Namo</author>
+	<homepage>http://www.medias.co.jp/~bell8528/freetrain/</homepage>
+
+<!-- あおなみ線先頭 -->
+<contribution type="trainCar" id="{DD0220E0-7998-4E8B-A17D-C6116089B1CF-1}">
+	<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+	<sprite origin="0,0">
+	<picture src="aonami.bmp" />
+	</sprite>
+	<capacity>96</capacity>
+</contribution>
+
+<!-- 中間 -->
+<contribution type="trainCar" id="{DD0220E0-7998-4E8B-A17D-C6116089B1CF-2}">
+	<class name="freetrain.contributions.train.SymTrainCarImpl" />
+	<sprite origin="0,0">
+	<picture src="aonamib.bmp" />
+	</sprite>
+	<capacity>107</capacity>
+</contribution>
+
+<!-- 後尾 -->
+<contribution type="trainCar" id="{DD0220E0-7998-4E8B-A17D-C6116089B1CF-3}">
+	<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+	<base carRef="{DD0220E0-7998-4E8B-A17D-C6116089B1CF-1}"/>
+</contribution>
+
+<contribution type="train" id="{DD0220E0-7998-4E8B-A17D-C6116089B1CF}">
+	<company>Nagoya Rinkai Kosoku Railway</company>
+	<type>1000 Series</type>
+	<name>Aonami Line</name>
+	<price>100</price>
+	<speed>medium</speed>
+	<author>Namo</author>
+	<fare>150</fare>
+<description>
+国際港湾・名古屋港と名古屋都心部を直結する路線として、平成16年10月6日、全線開業いたしました。
+</description>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{DD0220E0-7998-4E8B-A17D-C6116089B1CF-1}"/>
+<car char="中" ref="{DD0220E0-7998-4E8B-A17D-C6116089B1CF-2}"/>
+<car char="後" ref="{DD0220E0-7998-4E8B-A17D-C6116089B1CF-3}"/>
+
+
+<composition>前中中後</composition>
+</config>
+
+
+</contribution>
+</plug-in>

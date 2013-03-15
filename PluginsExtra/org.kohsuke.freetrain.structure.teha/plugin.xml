@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Building set</title>
+	<author>T.Hara</author>
+	<homepage>http://www.cwo.zaq.ne.jp/pant012/freetrain/</homepage>
+	
+	<contribution type="picture" id="{57ECC1ED-6ED9-49FE-B165-B469325D7B5D}">
+		<picture src="ferry1.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{9D150F8F-0128-41FB-9862-0EB2F20EEF07}">
+		<picture src="ferry1r.bmp" />
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{B7330314-2AB8-48CB-842A-083088D1E239}">
+		<group>Car ferry (coastwise)</group>
+		<price>5000</price>
+		<size>2,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Shipping"/>
+		</structure>
+		<sprite origin="0,0" offset="22">
+		<picture ref="{57ECC1ED-6ED9-49FE-B165-B469325D7B5D}" />
+		</sprite>
+		<sprite origin="0,0" offset="14" opposite="true">
+		<picture ref="{9D150F8F-0128-41FB-9862-0EB2F20EEF07}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{F459E74E-F4C2-44D1-8EA2-068ECCB1D806}">
+		<picture src="kamotsu1.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{E1346B3F-4B69-4831-9433-5B82F3C83324}">
+		<name>Cargo boat</name>
+		<price>5000</price>
+		<size>4,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Shipping"/>
+		</structure>
+		<sprite origin="0,0" offset="38">
+		<picture ref="{F459E74E-F4C2-44D1-8EA2-068ECCB1D806}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{01849C08-BD2C-4A5A-849F-A606EC2B09AE}">
+		<picture src="renraku.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{AA5955D6-002D-4DE7-8A96-74AEE038C5D9}">
+		<picture src="renrakur.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{B14C68C1-22CC-4BD1-B5B9-0429106E1B01}">
+		<group>Ube-Kochi plying ferry</group>
+		<price>5000</price>
+		<size>4,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Shipping"/>
+		</structure>
+		<sprite origin="0,0" offset="38">
+		<picture ref="{01849C08-BD2C-4A5A-849F-A606EC2B09AE}" />
+		</sprite>
+		<sprite origin="0,0" offset="39">
+		<picture ref="{AA5955D6-002D-4DE7-8A96-74AEE038C5D9}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{4E311952-E095-45CB-AE2A-D0F83C94FE2B}">
+		<picture src="apart.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{13C1C973-27E8-40B3-AE37-139F39D68B89}">
+		<name>Rental Apartment</name>
+		<price>5000</price>
+		<size>1,2</size>
+		<height>1</height>
+		<structure>
+			<category byname="Rental Apartments"/>
+		</structure>
+		<sprite origin="0,0" offset="18">
+		<picture ref="{4E311952-E095-45CB-AE2A-D0F83C94FE2B}" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>50</base>
+		</population>
+	</contribution>
+	
+	<contribution type="picture" id="{F4801A9B-1BE6-4101-8A07-E433B1F29D5C}">
+		<picture src="plant1.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{DFE65244-99FE-48B4-A8A7-C3AE17178798}">
+		<group>Factory</group>
+		<price>5000</price>
+		<size>2,2</size>
+		<height>1</height>
+		<structure>
+			<category byname="Factories"/>
+		</structure>
+		<sprite origin="0,0" offset="26">
+		<picture ref="{F4801A9B-1BE6-4101-8A07-E433B1F29D5C}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{B0A6B07C-8D8C-4958-B196-BB77D6147C8F}">
+		<picture src="plant2.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{2679B42F-D747-488A-B327-6CF0CD2577DC}">
+		<group>Factory</group>
+		<price>5000</price>
+		<size>2,2</size>
+		<height>1</height>
+		<structure>
+			<category byname="Factories"/>
+		</structure>
+		<sprite origin="0,0" offset="26">
+		<picture ref="{B0A6B07C-8D8C-4958-B196-BB77D6147C8F}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{17F2EFBA-9629-4681-BD38-AA7D96F31D83}">
+		<picture src="sinumeda.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{E24C700F-40D3-4397-B4B3-6C9C98ECA774}">
+		<name>Umeda Sky Building</name>
+		<price>5000</price>
+		<size>5,5</size>
+		<height>10</height>
+		<structure>
+			<category byname="Rental Offices"/>
+			<category byname="Restaurants" hide="true"/>
+			<category byname="Stores" hide="true"/>
+		</structure>
+		<sprite origin="0,0" offset="184">
+		<picture ref="{17F2EFBA-9629-4681-BD38-AA7D96F31D83}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{D516D7ED-EB25-4CEA-AD8F-EB4B530C43CC}">
+		<picture src="osakatower.bmp" >
+			<override when="night" src="osakatower_n.bmp"/>
+		</picture>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{619F301B-EB53-4FA9-8B69-6A80E9C3DD42}">
+		<name>Osaka Tower</name>
+		<price>5000</price>
+		<size>1,1</size>
+		<height>5</height>
+		<structure>
+			<category byname="Landmarks"/>
+		</structure>
+		<sprite origin="0,0" offset="82">
+		<picture ref="{D516D7ED-EB25-4CEA-AD8F-EB4B530C43CC}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{1A7A9640-4F9E-4106-9907-7BD3ED562EE6}">
+		<picture src="gakko.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{5FF50C0C-BECF-4AFD-AA82-EEBE3D609BA8}">
+		<name>School</name>
+		<price>5000</price>
+		<size>5,3</size>
+		<height>1</height>
+		<structure>
+			<category byname="Public Education"/>
+		</structure>
+		<sprite origin="0,0" offset="46">
+		<picture ref="{1A7A9640-4F9E-4106-9907-7BD3ED562EE6}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{5183AE1C-08FA-44F7-AA2B-2B50400DD1E0}">
+		<picture src="zaku.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{F5B4222A-3EA0-4F98-BECD-1F32B5E64932}">
+		<name>Char's ZAKU</name>
+		<price>5000</price>
+		<size>2,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Landmarks"/>
+		</structure>
+		<sprite origin="0,0" offset="32">
+		<picture ref="{5183AE1C-08FA-44F7-AA2B-2B50400DD1E0}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{DBB0B42B-CE95-4DD7-ADF4-DA2033F6DE4E}">
+		<picture src="supermarket.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{FA0AB70B-3AF0-4BE0-A9F0-21E82C49F186}">
+		<name>Shopping center</name>
+		<price>5000</price>
+		<size>3,4</size>
+		<height>2</height>
+		<structure>
+			<category byname="Supermarkets"/>
+		</structure>
+		<sprite origin="0,0" offset="50">
+		<picture ref="{DBB0B42B-CE95-4DD7-ADF4-DA2033F6DE4E}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{286EDA86-2E2E-4525-84D7-FE33CE14714B}">
+		<picture src="water3.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{1A87615B-4B76-443F-8417-728D6BF0361A}">
+		<group>Water</group>
+		<name>Lake with dam</name>
+		<price>5000</price>
+		<size>1,1</size>
+		<height>2</height>
+		<structure>
+			<category byname="Natural Features"/>
+		</structure>
+		<sprite origin="0,0" offset="30">
+		<picture ref="{286EDA86-2E2E-4525-84D7-FE33CE14714B}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{18C983C7-A252-4C4F-B49D-F7DA3D3C89F7}">
+		<picture src="water3r.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{7D039D58-B250-4A93-AE83-DD81BA77B757}">
+		<group>Water</group>
+		<name>Water (level3)</name>
+		<price>5000</price>
+		<size>1,1</size>
+		<height>3</height>
+		<structure>
+			<category byname="Natural Features"/>
+		</structure>
+		<sprite origin="0,0" offset="48">
+		<picture ref="{18C983C7-A252-4C4F-B49D-F7DA3D3C89F7}" />
+		</sprite>
+	</contribution>
+
+	
+	<contribution type="picture" id="{43CA48A1-1A66-4A75-B8D3-D9165BFC51BB}">
+		<picture src="taki.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{CC6A8B66-BE28-4863-B5E5-18F238938B00}">
+		<name>Waterfall</name>
+		<price>5000</price>
+		<size>2,1</size>
+		<height>3</height>
+		<structure>
+			<category byname="Natural Features"/>
+		</structure>
+		<sprite origin="0,0" offset="56">
+		<picture ref="{43CA48A1-1A66-4A75-B8D3-D9165BFC51BB}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{926459FA-4A80-41E0-93C0-D28D2EAB002C}">
+		<picture src="dam1.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{7225141D-052F-4642-A084-8583DFE3484F}">
+		<name>Dam</name>
+		<price>5000</price>
+		<size>2,3</size>
+		<height>2</height>
+		<structure>
+			<category byname="Flood Control Facilities"/>
+		</structure>
+		<sprite origin="0,0" offset="39">
+		<picture ref="{926459FA-4A80-41E0-93C0-D28D2EAB002C}" />
+		</sprite>
+	</contribution>
+
+	
+	<contribution type="picture" id="{5026E894-E270-4AA4-BE49-1CF27ACC95C2}">
+		<picture src="gaddem.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{FBDDC8DC-8E9D-422B-AD97-B7E9157D3D62}">
+		<name>Devil Castle Goddamn</name>
+		<price>5000</price>
+		<size>2,2</size>
+		<height>2</height>
+		<structure>
+			<category byname="Landmarks"/>
+		</structure>
+		<sprite origin="0,0" offset="40">
+		<picture ref="{5026E894-E270-4AA4-BE49-1CF27ACC95C2}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{97DB0C01-01C2-46E0-99F2-56C8AAB83479}">
+		<picture src="pyramid.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{6323EA1B-3D1E-4E7D-BEB9-1D6E6ED2E1A1}">
+		<name>Tower of Destiny</name>
+		<price>5000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Landmarks"/>
+		</structure>
+		<sprite origin="0,0" offset="6">
+		<picture ref="{97DB0C01-01C2-46E0-99F2-56C8AAB83479}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{F55250B5-4A3D-42D3-BAF2-7A6239BC03B5}">
+		<picture src="kousakusen.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{A9823026-15C6-4836-905D-9DFE38E119A1}">
+		<name>Military operation boat </name>
+		<price>5000</price>
+		<size>2,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Military Facilities"/>
+		</structure>
+		<sprite origin="0,0" offset="12">
+		<picture ref="{F55250B5-4A3D-42D3-BAF2-7A6239BC03B5}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{B0C398C1-7AB7-42B5-954D-C7FF62D76BF3}">
+		<picture src="jyunsi1.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{F752307B-C840-4162-9307-316389B29CF8}">
+		<name>Patrol boat</name>
+		<price>5000</price>
+		<size>3,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Military Facilities"/>
+		</structure>
+		<sprite origin="0,0" offset="18">
+		<picture ref="{B0C398C1-7AB7-42B5-954D-C7FF62D76BF3}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{C10C10AF-FDB0-4AB4-9369-E36C75D4B99C}">
+		<picture src="ferryterminal1.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{189F360B-CC55-4ACA-B406-1DD689F9D2E6}">
+		<name>Ferry terminal</name>
+		<price>5000</price>
+		<size>3,2</size>
+		<height>1</height>
+		<structure>
+			<category byname="Passenger Piers"/>
+		</structure>
+		<sprite origin="0,0" offset="15">
+		<picture ref="{C10C10AF-FDB0-4AB4-9369-E36C75D4B99C}" />
+		</sprite>
+	</contribution>
+
+<contribution type="picture" id="{4C272624-9CE6-4210-BB72-58B2D4046E15}">
+<picture src="ganpeki.bmp"/>
+</contribution>
+
+	<contribution type="GenericStructure" id="{947753DE-3568-440D-9D66-02D405001C32}-0">
+		<group>Wharf</group>
+		<price>5000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Other Shipping Facilities"/>
+		</structure>
+		<sprite origin="0,0" offset="0">
+		<picture ref="{4C272624-9CE6-4210-BB72-58B2D4046E15}"/>
+		</sprite>
+		<sprite origin="32,0" offset="0">
+		<picture ref="{4C272624-9CE6-4210-BB72-58B2D4046E15}"/>
+		</sprite>
+		<sprite origin="64,0" offset="0">
+		<picture ref="{4C272624-9CE6-4210-BB72-58B2D4046E15}"/>
+		</sprite>
+		<sprite origin="96,0" offset="0">
+		<picture ref="{4C272624-9CE6-4210-BB72-58B2D4046E15}"/>
+		</sprite>
+		<sprite origin="128,0" offset="0">
+		<picture ref="{4C272624-9CE6-4210-BB72-58B2D4046E15}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{80EB4EB6-670B-4E5B-830E-4A8B413FC03F}">
+		<picture src="sunflower1.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{53134BEE-9DE4-4660-9966-01764EC731D0}">
+		<name>Ferry 'Sun Flower'</name>
+		<price>5000</price>
+		<size>1,5</size>
+		<height>1</height>
+		<structure>
+			<category byname="Shipping"/>
+		</structure>
+		<sprite origin="0,0" offset="-1">
+		<picture ref="{80EB4EB6-670B-4E5B-830E-4A8B413FC03F}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{43A3C2AB-A90F-4CB5-9324-CAD3381158E8}">
+		<picture src="ferry2.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{61CD8A5D-6A2D-4EC6-A1AA-99319C83EC2E}">
+		<name>Car ferry (ocean)</name>
+		<price>5000</price>
+		<size>1,5</size>
+		<height>1</height>
+		<structure>
+			<category byname="Shipping"/>
+		</structure>
+		<sprite origin="0,0" offset="1">
+		<picture ref="{43A3C2AB-A90F-4CB5-9324-CAD3381158E8}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{8AC2A9C1-16E3-4903-83B7-D384A47602E4}">
+		<picture src="water1.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{C4A9FCAA-2754-409B-ABE3-573EF5DE92E6}">
+		<group>Water</group>
+		<name>Water (level1)</name>
+		<price>5000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Natural Features"/>
+		</structure>
+		<sprite origin="0,0" offset="0">
+		<picture ref="{8AC2A9C1-16E3-4903-83B7-D384A47602E4}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{B91B0911-8D41-4469-A40F-28A1C226C9E8}">
+		<picture src="sizuoka1.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{DFBD51DE-E6D1-4CE0-BD2F-5C0E1CBC61FE}">
+		<name>Shizuoka Broadcasting Tokyo Branch</name>
+		<price>5000</price>
+		<size>2,1</size>
+		<height>4</height>
+		<structure>
+			<category byname="Broadcasting &amp; Media"/>
+		</structure>
+		<sprite origin="0,0" offset="72">
+		<picture ref="{B91B0911-8D41-4469-A40F-28A1C226C9E8}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{74939039-21ED-42C3-AAD0-3273869404F1}">
+		<picture src="nakagin1.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{F34E2C0D-9ECE-4590-A25A-3203BA9184C8}">
+		<name>Nakagin Capsule Tower</name>
+		<price>5000</price>
+		<size>1,2</size>
+		<height>3</height>
+		<structure>
+			<category byname="Rental Apartments"/>
+			<category byname="Rental Offices"/>
+		</structure>
+		<sprite origin="0,0" offset="40">
+		<picture ref="{74939039-21ED-42C3-AAD0-3273869404F1}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{CC282422-4513-4968-8847-88F1C7741C4C}">
+		<picture src="sonytower.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{5C13B5F3-7CDF-44A4-9C59-3D359E4DB6FE}">
+		<name>Sony Tower</name>
+		<price>5000</price>
+		<size>1,2</size>
+		<height>4</height>
+		<structure>
+			<category byname="Consumer Electronics Stores"/>
+		</structure>
+		<sprite origin="0,0" offset="62">
+		<picture ref="{CC282422-4513-4968-8847-88F1C7741C4C}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{0F835600-2A73-4D9F-871F-F1B6D97DCD26}">
+		<picture src="actyosaka.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{54A932D2-12BE-44BF-8E63-B517E93354F8}">
+		<name>Acty Osaka Building</name>
+		<price>5000</price>
+		<size>4,2</size>
+		<height>8</height>
+		<structure>
+			<category byname="Rental Offices"/>
+			<category byname="Restaurants" hide="true"/>
+			<category byname="Stores" hide="true"/>
+		</structure>
+		<sprite origin="0,0" offset="136">
+		<picture ref="{0F835600-2A73-4D9F-871F-F1B6D97DCD26}" />
+		</sprite>
+	</contribution>
+</plug-in>

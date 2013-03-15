@@ -1,0 +1,27 @@
+HKCR
+{
+	DirectDrawAlphaBlend.AlphaBlender.1 = s 'AlphaBlender Class'
+	{
+		CLSID = s '{B6803A0F-671C-4730-A802-BB0C2C4BDAC4}'
+	}
+	DirectDrawAlphaBlend.AlphaBlender = s 'AlphaBlender Class'
+	{
+		CLSID = s '{B6803A0F-671C-4730-A802-BB0C2C4BDAC4}'
+		CurVer = s 'DirectDrawAlphaBlend.AlphaBlender.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B6803A0F-671C-4730-A802-BB0C2C4BDAC4} = s 'AlphaBlender Class'
+		{
+			ProgID = s 'DirectDrawAlphaBlend.AlphaBlender.1'
+			VersionIndependentProgID = s 'DirectDrawAlphaBlend.AlphaBlender'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{EF1510AF-E75F-4974-BE7A-A2F4E88EBFB4}'
+		}
+	}
+}

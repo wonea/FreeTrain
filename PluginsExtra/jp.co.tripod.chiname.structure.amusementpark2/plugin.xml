@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY Pastel1 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="093,158,255"/><!--Blue-->
+		<map from="0,*,0" to="246,141,246"/><!--Pink-->
+		<map from="0,0,*" to="252,231,113"/><!--Yellow-->
+	</spriteType>	
+'>
+<!ENTITY Pastel2 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="092,231,233"/><!--Cyan-->
+		<map from="0,*,0" to="252,231,113"/><!--Yellow-->
+		<map from="0,0,*" to="250,132,132"/><!--Red-->
+	</spriteType>	
+'>
+<!ENTITY Pastel3 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="250,132,132"/><!--Red-->
+		<map from="0,*,0" to="126,242,104"/><!--Green-->
+		<map from="0,0,*" to="093,158,255"/><!--Blue-->
+	</spriteType>	
+'>
+<!ENTITY Pastel4 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="246,141,246"/><!--Pink-->
+		<map from="0,*,0" to="092,231,233"/><!--Cyan-->
+		<map from="0,0,*" to="126,242,104"/><!--Green-->
+	</spriteType>	
+'>
+
+<!ENTITY colSet '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="207,023,026"/>
+		<map from="0,*,0" to="144,216,114"/>
+		<map from="0,0,*" to="225,102,000"/>
+	</spriteType>	
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="123,079,013"/>
+		<map from="0,*,0" to="113,209,143"/>
+	</spriteType>	
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="073,146,010"/>
+		<map from="0,*,0" to="174,141,218"/>
+		<map from="0,0,*" to="208,000,208"/>
+	</spriteType>	
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="026,114,114"/>
+		<map from="0,*,0" to="218,141,218"/>
+		<map from="0,0,*" to="254,046,077"/>
+	</spriteType>	
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="072,080,198"/>
+		<map from="0,*,0" to="222,167,137"/>
+		<map from="0,0,*" to="011,162,163"/>
+	</spriteType>	
+'>
+<!ENTITY colSet2 '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="222,167,137"/>
+		<map from="0,0,*" to="080,162,163"/>
+	</spriteType>	
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="032,032,222"/>
+		<map from="0,*,0" to="174,218,218"/>
+		<map from="0,0,*" to="170,092,062"/>
+	</spriteType>	
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="174,218,218"/>
+		<map from="0,0,*" to="100,100,248"/>
+	</spriteType>	
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="032,032,222"/>
+		<map from="0,*,0" to="218,218,137"/>
+		<map from="0,0,*" to="098,098,108"/>
+	</spriteType>	
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="042,167,55"/>
+		<map from="0,*,0" to="222,167,137"/>
+		<map from="0,0,*" to="218,218,218"/>
+	</spriteType>	
+'>
+
+]>
+
+<plug-in>
+
+	<title>Amusement Park set 2</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+		
+	<contribution type="picture" id="{EECD562F-03C5-4256-C477-D1F6B7912F24}">
+		<picture src="ampark_shop.bmp">
+			<override when="night" src="ampark_shop_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{A97A07F0-F0F2-4D5A-C477-D18BD690F1A3}">
+		<picture src="ampark_shop2.bmp">
+			<override when="night" src="ampark_shop2_n.bmp"/>
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="{741DB0BD-6F5B-4BCA-C477-3A2BFAA3E3A3}-1">
+		<picture src="ampark_ciclemonorail1.bmp">
+			<override when="night" src="ampark_ciclemonorail1_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{741DB0BD-6F5B-4BCA-C477-3A2BFAA3E3A3}-2">
+		<picture src="ampark_ciclemonorail2.bmp">
+			<override when="night" src="ampark_ciclemonorail2_n.bmp"/>
+		</picture>
+	</contribution>
+
+	<contribution type="road" id="{B0E968D8-BE76-4861-C477-9112FA78C953}-w">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>cycle monorail(green)</name>
+		<description>cycle monorail</description>
+		<picture ref="{741DB0BD-6F5B-4BCA-C477-3A2BFAA3E3A3}-1" size="32,32" offset="16"/>
+	</contribution>
+	<contribution type="road" id="{B0E968D8-BE76-4861-C477-9112FA78C953}-g">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>cycle monorail(white)</name>
+		<description>cycle monorail</description>
+		<picture ref="{741DB0BD-6F5B-4BCA-C477-3A2BFAA3E3A3}-2" size="32,32" offset="16"/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{657DE35E-C898-4BCC-C477-B1A3AA649C1E}">
+		<group>Stand</group>
+		<design>Tiny stands x3</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>18</price>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>3</base>
+		</population>
+		<height>1</height>
+		<size>1,1</size>
+		<computerCannotBuild/>
+		&Pastel1;
+		&Pastel2;
+		&Pastel3;
+		&Pastel4;
+		<sprite origin="0,56" offset="8">
+			<picture ref="{EECD562F-03C5-4256-C477-D1F6B7912F24}"/>
+		</sprite>
+		<sprite origin="32,56" offset="8">
+			<picture ref="{EECD562F-03C5-4256-C477-D1F6B7912F24}"/>
+		</sprite>
+		<sprite origin="64,56" offset="8">
+			<picture ref="{EECD562F-03C5-4256-C477-D1F6B7912F24}"/>
+		</sprite>
+		<sprite origin="97,56" offset="8">
+			<picture ref="{EECD562F-03C5-4256-C477-D1F6B7912F24}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{D5CEA823-5FA3-44CD-C477-A3D638703394}">
+		<group>Stand</group>
+		<design>Tiny stands x2</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>12</price>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>2</base>
+		</population>
+		<height>1</height>
+		<size>1,1</size>
+		<computerCannotBuild/>
+		&Pastel1;
+		&Pastel2;
+		&Pastel3;
+		&Pastel4;
+		<sprite origin="0,24" offset="8">
+			<picture ref="{EECD562F-03C5-4256-C477-D1F6B7912F24}"/>
+		</sprite>
+		<sprite origin="32,24" offset="8">
+			<picture ref="{EECD562F-03C5-4256-C477-D1F6B7912F24}"/>
+		</sprite>
+		<sprite origin="64,24" offset="8">
+			<picture ref="{EECD562F-03C5-4256-C477-D1F6B7912F24}"/>
+		</sprite>
+		<sprite origin="97,24" offset="8">
+			<picture ref="{EECD562F-03C5-4256-C477-D1F6B7912F24}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{2661E02A-78F0-4978-C477-A1A8F32CAC1B}">
+		<group>Stand</group>
+		<design>Resthouse</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>60</price>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>12</base>
+		</population>
+		<height>1</height>
+		<size>1,1</size>
+		<computerCannotBuild/>
+		&colSet;
+		<sprite origin="0,80" offset="16">
+			<picture ref="{EECD562F-03C5-4256-C477-D1F6B7912F24}"/>
+		</sprite>
+		<sprite origin="32,80" offset="16">
+			<picture ref="{EECD562F-03C5-4256-C477-D1F6B7912F24}"/>
+		</sprite>
+		<sprite origin="64,80" offset="16">
+			<picture ref="{EECD562F-03C5-4256-C477-D1F6B7912F24}"/>
+		</sprite>
+		<sprite origin="97,80" offset="16">
+			<picture ref="{EECD562F-03C5-4256-C477-D1F6B7912F24}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{5B5843D7-7C58-47A3-C477-F9D24B5F21FD}">
+		<group>Stand</group>
+		<design>Small shopping mall</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>200</price>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>50</base>
+		</population>
+		<height>1</height>
+		<size>3,1</size>
+		<computerCannotBuild/>
+		&colSet2;
+		<sprite origin="0,0" offset="32">
+			<picture ref="{A97A07F0-F0F2-4D5A-C477-D18BD690F1A3}"/>
+		</sprite>
+		<sprite origin="64,0" offset="16" opposite="true">
+			<picture ref="{A97A07F0-F0F2-4D5A-C477-D18BD690F1A3}"/>
+		</sprite>
+		<sprite origin="0,48" offset="32">
+			<picture ref="{A97A07F0-F0F2-4D5A-C477-D18BD690F1A3}"/>
+		</sprite>
+		<sprite origin="64,48" offset="16" opposite="true">
+			<picture ref="{A97A07F0-F0F2-4D5A-C477-D18BD690F1A3}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{7E1EEEA8-AF6F-4810-C477-88C3AED6DE66}-0">
+		<group>Amusement Parks:tables</group>
+		<computerCannotBuild/>
+		<price>4</price>
+		<class name="freetrain.contributions.land.StaticLandBuilder"/>
+		<sprite origin="0,0" offset="0">
+			<picture ref="{EECD562F-03C5-4256-C477-D1F6B7912F24}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{7E1EEEA8-AF6F-4810-C477-88C3AED6DE66}-1">
+		<group>Amusement Parks:tables</group>
+		<computerCannotBuild/>
+		<price>4</price>
+		<class name="freetrain.contributions.land.StaticLandBuilder"/>
+		<sprite origin="32,0" offset="0">
+			<picture ref="{EECD562F-03C5-4256-C477-D1F6B7912F24}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{7E1EEEA8-AF6F-4810-C477-88C3AED6DE66}-2">
+		<group>Amusement Parks:tables</group>
+		<computerCannotBuild/>
+		<price>4</price>
+		<class name="freetrain.contributions.land.StaticLandBuilder"/>
+		<sprite origin="64,0" offset="0">
+			<picture ref="{EECD562F-03C5-4256-C477-D1F6B7912F24}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{7E1EEEA8-AF6F-4810-C477-88C3AED6DE66}-3">
+		<group>Amusement Parks:tables</group>
+		<computerCannotBuild/>
+		<price>4</price>
+		<class name="freetrain.contributions.land.StaticLandBuilder"/>
+		<sprite origin="97,0" offset="0">
+			<picture ref="{EECD562F-03C5-4256-C477-D1F6B7912F24}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{7E1EEEA8-AF6F-4810-C477-88C3AED6DE66}">
+		<group>Amusement Parks:tables</group>
+		<computerCannotBuild/>
+		<price>4</price>
+		<class name="freetrain.contributions.land.RandomLandBuilder"/>
+		<lands>
+			{7E1EEEA8-AF6F-4810-C477-88C3AED6DE66}-0
+			{7E1EEEA8-AF6F-4810-C477-88C3AED6DE66}-1
+			{7E1EEEA8-AF6F-4810-C477-88C3AED6DE66}-2
+			{7E1EEEA8-AF6F-4810-C477-88C3AED6DE66}-3
+		</lands>
+	</contribution>
+</plug-in>

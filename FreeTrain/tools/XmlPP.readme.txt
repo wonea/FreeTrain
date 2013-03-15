@@ -1,0 +1,5 @@
+XML Pretty Printer
+                  (C)Copyright by Kohsuke Kawaguchi, 2002
+
+Read an XML document from stdin and pretty-print it to stdout.
+Licensed for use in the FreeTrain project only.

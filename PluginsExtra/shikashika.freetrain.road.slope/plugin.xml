@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<plug-in>
+
+<author>Shikashika</author>
+<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+<title>Road(Slope Road)</title>
+
+<!-- Wood land path -->
+
+<contribution type="picture" id="{FreeTrain-Shika-picture-roadslope-woodlandpath-001}">
+	<picture src = "roadslope_woodlandpath_spring.bmp">
+		<override when="spring" src="roadslope_woodlandpath_spring.bmp"/>
+		<override when="summer" src="roadslope_woodlandpath_summer.bmp"/>
+		<override when="autumn" src="roadslope_woodlandpath_autumn.bmp"/>
+		<override when="winter" src="roadslope_woodlandpath_winter.bmp"/>
+	</picture>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-roadslope-woodlandpath-001}">
+	<group>Road Accessories</group>
+	<name>Slope Road</name>
+	<design>Wood land path(unpaved)</design>
+	<structure>
+		<category byname="Road Accessories"/>
+	</structure>
+	<price>500</price>
+	<size>1,4</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>0</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-roadslope-woodlandpath-001}"/>
+	</sprite>
+
+	<sprite origin="80,0" offset="40" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-roadslope-woodlandpath-001}"/>
+	</sprite>
+
+	<sprite origin="160,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-roadslope-woodlandpath-001}"/>
+	</sprite>
+
+	<sprite origin="240,0" offset="40" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-roadslope-woodlandpath-001}"/>
+	</sprite>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-roadslope-woodlandpath-002}">
+	<group>Road Accessories</group>
+	<name>Slope Road</name>
+	<design>Wood land path(paved)</design>
+	<structure>
+		<category byname="Road Accessories"/>
+	</structure>
+	<price>800</price>
+	<size>1,4</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>0</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-roadslope-woodlandpath-001}"/>
+	</sprite>
+
+	<sprite origin="80,64" offset="40" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-roadslope-woodlandpath-001}"/>
+	</sprite>
+
+	<sprite origin="160,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-roadslope-woodlandpath-001}"/>
+	</sprite>
+
+	<sprite origin="240,64" offset="40" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-roadslope-woodlandpath-001}"/>
+	</sprite>
+</contribution>
+
+<!-- Stairs(concrete) -->
+
+<contribution type="picture" id="{FreeTrain-Shika-picture-staircase-concrete-001}">
+	<picture src = "staircase_concrete.bmp" />
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-staircase-concrete-001-up}">
+
+	<group>Road Accessories</group>
+	<name>Stairs</name>
+	<design>concrete</design>
+	<structure>
+		<category byname="Road Accessories"/>
+	</structure>
+	<price>150</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>0</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-concrete-001}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-concrete-001}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-concrete-001}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-concrete-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-staircase-concrete-001-up-banister}">
+
+	<group>Road Accessories</group>
+	<name>Stairs</name>
+	<design>concrete(handrailed)</design>
+	<structure>
+		<category byname="Road Accessories"/>
+	</structure>
+	<price>150</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>0</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-concrete-001}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-concrete-001}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-concrete-001}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-concrete-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-staircase-concrete-001-down}">
+
+	<group>Road Accessories</group>
+	<name>Stairs</name>
+	<design>concrete</design>
+	<structure>
+		<category byname="Road Accessories"/>
+	</structure>
+	<price>150</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>0</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-concrete-001}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-concrete-001}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-concrete-001}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-concrete-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-staircase-concrete-001-down-banister}">
+
+	<group>Road Accessories</group>
+	<name>Stairs</name>
+	<design>concrete(handrailed)</design>
+	<structure>
+		<category byname="Road Accessories"/>
+	</structure>
+	<price>150</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>0</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-concrete-001}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-concrete-001}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-concrete-001}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-concrete-001}"/>
+	</sprite>
+
+</contribution>
+
+<!-- Stairs(Stone block(brown)) -->
+
+<contribution type="picture" id="{FreeTrain-Shika-picture-staircase-stonesteps-001}">
+	<picture src = "staircase_stonesteps.bmp" />
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-staircase-stonesteps-001-up}">
+
+	<group>Road Accessories</group>
+	<name>Stairs</name>
+	<design>Stone block(brown)</design>
+	<structure>
+		<category byname="Road Accessories"/>
+	</structure>
+	<price>150</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>0</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-001}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-001}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-001}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-staircase-stonesteps-001-up-banister}">
+
+	<group>Road Accessories</group>
+	<name>Stairs</name>
+	<design>Stone block(brown,handrailed)</design>
+	<structure>
+		<category byname="Road Accessories"/>
+	</structure>
+	<price>150</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>0</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-001}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-001}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-001}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-staircase-stonesteps-001-down}">
+
+	<group>Road Accessories</group>
+	<name>Stairs</name>
+	<design>Stone block(brown)</design>
+	<structure>
+		<category byname="Road Accessories"/>
+	</structure>
+	<price>150</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>0</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-001}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-001}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-001}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-staircase-stonesteps-001-down-banister}">
+
+	<group>Road Accessories</group>
+	<name>Stairs</name>
+	<design>Stone block(brown,handrailed)</design>
+	<structure>
+		<category byname="Road Accessories"/>
+	</structure>
+	<price>150</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>0</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-001}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-001}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-001}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-001}"/>
+	</sprite>
+
+</contribution>
+
+<!-- Stairs(Stone block(gray)) -->
+
+<contribution type="picture" id="{FreeTrain-Shika-picture-staircase-stonesteps-grey-001}">
+	<picture src = "staircase_stonesteps_grey.bmp" />
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-staircase-stonesteps-grey-001-up}">
+
+	<group>Road Accessories</group>
+	<name>Stairs</name>
+	<design>Stone block(gray)</design>
+	<structure>
+		<category byname="Road Accessories"/>
+	</structure>
+	<price>150</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>0</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-grey-001}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-grey-001}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-grey-001}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-grey-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-staircase-stonesteps-grey-001-up-banister}">
+
+	<group>Road Accessories</group>
+	<name>Stairs</name>
+	<design>Stone block(gray,handrailed)</design>
+	<structure>
+		<category byname="Road Accessories"/>
+	</structure>
+	<price>150</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>0</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-grey-001}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-grey-001}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-grey-001}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-grey-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-staircase-stonesteps-grey-001-down}">
+
+	<group>Road Accessories</group>
+	<name>Stairs</name>
+	<design>Stone block(gray)</design>
+	<structure>
+		<category byname="Road Accessories"/>
+	</structure>
+	<price>150</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>0</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-grey-001}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-grey-001}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-grey-001}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-grey-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-staircase-stonesteps-grey-001-down-banister}">
+
+	<group>Road Accessories</group>
+	<name>Stairs</name>
+	<design>Stone block(gray,handrailed)</design>
+	<structure>
+		<category byname="Road Accessories"/>
+	</structure>
+	<price>150</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>0</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-grey-001}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-grey-001}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-grey-001}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-staircase-stonesteps-grey-001}"/>
+	</sprite>
+
+</contribution>
+
+</plug-in>

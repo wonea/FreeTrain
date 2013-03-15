@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Pedestrian crossing</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>	
+	<depend on="org.kohsuke.freetrain.structure.c477" />	
+	
+	<contribution type="roadAccessory" id="{ADE1AB2E-4700-4806-C477-20A730AE2026}">
+		<name>Pedestrian crossing</name>
+		<sprite>
+			<picture src="crosswalk01.bmp"/>
+		</sprite>
+	</contribution>
+	
+</plug-in>

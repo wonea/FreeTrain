@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Road</title>
+	<!--!<title>道路</title>-->
+	<author>syosei</author>
+	<!--!<author>鐘声さん</author>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="road" id="{FAF0E7F9-3BCA-49B4-9F80-D0216B2D136A}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Single lane road</name>
+		<description>Road with a single lane</description>
+		<!--!<name>一車線道路</name>
+		<description>一車線の道路</description>-->
+		<picture src="roads.bmp" size="32,16" offset="0" />
+		<!-- sizeは一つあたりの道路チップのサイズ。配置は画像を参照 -->
+		<!-- offsetは、チップ内での位置あわせ用。通常、size.Y-16 -->
+	</contribution>
+</plug-in>

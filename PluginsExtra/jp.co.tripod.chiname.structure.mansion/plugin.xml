@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY Manshon2_2 '
+	<group>Condominium(2x2)</group>
+	<price>2400</price>
+	<size>2,2</size>
+	<structure>
+		<category byname="Condominiums"/>
+	</structure>
+	<minHeight>2</minHeight>
+	<maxHeight>4</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.ResidentialPopulation"/>
+		<base>180</base>
+	</population>
+'>
+<!ENTITY Manshon4_2 '
+	<group>Condominium(4x2)</group>
+	<size>4,2</size>
+	<structure>
+		<category byname="Condominiums"/>
+	</structure>
+	<price>4600</price>
+	<minHeight>3</minHeight>
+	<maxHeight>5</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.ResidentialPopulation"/>
+		<base>340</base>
+	</population>
+'>
+<!ENTITY crWhite '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,255,255"/>
+	</spriteType>
+'>
+<!ENTITY crRosyBrown '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="192,136,126"/>
+	</spriteType>
+'>
+<!ENTITY crBrown '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="122,79,31"/>
+	</spriteType>
+'>
+<!ENTITY crLtSteelBlue '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="154,159,180"/>
+	</spriteType>
+'>
+<!ENTITY crKhaki '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="201,195,141"/>
+	</spriteType>
+'>
+<!ENTITY crBlack '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="60,60,60"/>
+	</spriteType>
+'>
+
+]>
+
+<plug-in>
+	<title>Condominium</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+
+	<contribution type="picture" id="{35EA4620-0BE3-4424-C477-CE11599C3EF1}">
+		<picture src="mansnVH_m01.bmp">
+			<override when="night" src="mansnVH_m01_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{1FB0C22C-7B09-4C8F-C477-34B64B0D8506}">
+		<picture src="mansnVH_m02.bmp">
+			<override when="night" src="mansnVH_m02_n.bmp"/>
+		</picture>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{0B1A4A3C-0BA0-418F-C477-6207429BA639}">
+		&Manshon4_2;
+		&crWhite;
+		&crRosyBrown;
+		&crBrown;
+		&crLtSteelBlue;
+		&crKhaki;
+		&crBlack;
+		<pictures>
+			<top    origin=" 0,0" offset="32">
+				<picture ref="{1FB0C22C-7B09-4C8F-C477-34B64B0D8506}"/>
+			</top>
+			<middle origin=" 0,80" offset="32">
+				<picture ref="{1FB0C22C-7B09-4C8F-C477-34B64B0D8506}"/>
+			</middle>
+			<bottom origin=" 0,160" offset="32">
+				<picture ref="{1FB0C22C-7B09-4C8F-C477-34B64B0D8506}"/>
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top    origin="96,0" offset="16">
+				<picture ref="{1FB0C22C-7B09-4C8F-C477-34B64B0D8506}"/>
+			</top>
+			<middle origin="96,80" offset="16">
+				<picture ref="{1FB0C22C-7B09-4C8F-C477-34B64B0D8506}"/>
+			</middle>
+			<bottom origin="96,160" offset="16">
+				<picture ref="{1FB0C22C-7B09-4C8F-C477-34B64B0D8506}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="192,0" offset="32">
+				<picture ref="{1FB0C22C-7B09-4C8F-C477-34B64B0D8506}"/>
+			</top>
+			<middle origin="192,80" offset="32">
+				<picture ref="{1FB0C22C-7B09-4C8F-C477-34B64B0D8506}"/>
+			</middle>
+			<bottom origin="192,160" offset="32">
+				<picture ref="{1FB0C22C-7B09-4C8F-C477-34B64B0D8506}"/>
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top    origin="288,0" offset="16">
+				<picture ref="{1FB0C22C-7B09-4C8F-C477-34B64B0D8506}"/>
+			</top>
+			<middle origin="288,80" offset="16">
+				<picture ref="{1FB0C22C-7B09-4C8F-C477-34B64B0D8506}"/>
+			</middle>
+			<bottom origin="288,160" offset="16">
+				<picture ref="{1FB0C22C-7B09-4C8F-C477-34B64B0D8506}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+
+
+	<contribution type="GenericStructure" id="{1F0EDC38-0EB4-4354-C477-A40FEF387758}">
+		&Manshon2_2;
+		&crWhite;
+		&crRosyBrown;
+		&crBrown;
+		&crLtSteelBlue;
+		&crKhaki;
+		&crBlack;
+		<pictures>
+			<top    origin=" 0, 0" offset="16">
+				<picture ref="{35EA4620-0BE3-4424-C477-CE11599C3EF1}"/>
+			</top>
+			<middle origin=" 0,48" offset="16">
+				<picture ref="{35EA4620-0BE3-4424-C477-CE11599C3EF1}"/>
+			</middle>
+			<bottom origin=" 0,96" offset="16">
+				<picture ref="{35EA4620-0BE3-4424-C477-CE11599C3EF1}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="64, 0" offset="16">
+				<picture ref="{35EA4620-0BE3-4424-C477-CE11599C3EF1}"/>
+			</top>
+			<middle origin="64,48" offset="16">
+				<picture ref="{35EA4620-0BE3-4424-C477-CE11599C3EF1}"/>
+			</middle>
+			<bottom origin="64,96" offset="16">
+				<picture ref="{35EA4620-0BE3-4424-C477-CE11599C3EF1}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="128, 0" offset="16">
+				<picture ref="{35EA4620-0BE3-4424-C477-CE11599C3EF1}"/>
+			</top>
+			<middle origin="128,48" offset="16">
+				<picture ref="{35EA4620-0BE3-4424-C477-CE11599C3EF1}"/>
+			</middle>
+			<bottom origin="128,96" offset="16">
+				<picture ref="{35EA4620-0BE3-4424-C477-CE11599C3EF1}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="192, 0" offset="16">
+				<picture ref="{35EA4620-0BE3-4424-C477-CE11599C3EF1}"/>
+			</top>
+			<middle origin="192,48" offset="16">
+				<picture ref="{35EA4620-0BE3-4424-C477-CE11599C3EF1}"/>
+			</middle>
+			<bottom origin="192,96" offset="16">
+				<picture ref="{35EA4620-0BE3-4424-C477-CE11599C3EF1}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+</plug-in>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Buildings (Namoh)</title>
+	<author>Namoh</author>
+	<homepage>http://namoge.xrea.jp/freetrain/</homepage>
+	
+	<contribution type="picture" id="{A5BD857C-F2A1-4218-936C-C61EA4D28084}">
+		<picture src="sa-k.bmp">
+			<override when="night" src="sa-k_n.bmp" />
+		</picture>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{A5BD857C-F2A1-4218-936C-C61EA4D28084-1}">
+		<group>Circle-K</group>
+		<price>100</price>
+		<size>1,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Convenience Stores"/>
+		</structure>
+		<sprite origin="0,0" offset="8">
+			<picture ref="{A5BD857C-F2A1-4218-936C-C61EA4D28084}"/>
+		</sprite>
+		<sprite origin="0,32" offset="8">
+			<picture ref="{A5BD857C-F2A1-4218-936C-C61EA4D28084}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+	
+	<contribution type="picture" id="{A5BD857C-F2A1-4218-936C-C61EA4D28085}">
+		<picture src="mifuzi.bmp">
+			<override when="night" src="mifuzi_n.bmp" />
+		</picture>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{A5BD857C-F2A1-4218-936C-C61EA4D28085-1}">
+		<group>Mifuji Restaurant</group>
+		<price>100</price>
+		<size>1,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Restaurants"/>
+		</structure>
+		<sprite origin="0,0" offset="8">
+			<picture ref="{A5BD857C-F2A1-4218-936C-C61EA4D28085}"/>
+		</sprite>
+		<sprite origin="0,32" offset="8">
+			<picture ref="{A5BD857C-F2A1-4218-936C-C61EA4D28085}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+
+
+	<contribution type="picture" id="{FD978351-73CE-442E-8816-76DBA52E8875}">
+		<picture src="shop_s.bmp">
+			<override when="night" src="shop_s_n.bmp" />
+		</picture>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{FD978351-73CE-442E-8816-76DBA52E8875-1}">
+		<group>Small shopping center</group>
+		<price>100</price>
+		<size>2,3</size>
+		<height>2</height>
+		<structure>
+			<category byname="Shopping Malls"/>
+		</structure>
+		<sprite origin="0,0" offset="22">
+			<picture ref="{FD978351-73CE-442E-8816-76DBA52E8875}"/>
+		</sprite>
+		<sprite origin="0,64" offset="40" opposite="true">
+			<picture ref="{FD978351-73CE-442E-8816-76DBA52E8875}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{FD978351-73CE-442E-8816-76DBA52E8875-3}">
+		<group>Small shopping center</group>
+		<price>100</price>
+		<size>2,3</size>
+		<height>2</height>
+		<structure>
+			<category byname="Shopping Malls"/>
+		</structure>
+		<sprite origin="96,0" offset="22">
+			<picture ref="{FD978351-73CE-442E-8816-76DBA52E8875}"/>
+		</sprite>
+		<sprite origin="96,64" offset="40" opposite="true">
+			<picture ref="{FD978351-73CE-442E-8816-76DBA52E8875}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{FD978351-73CE-442E-8816-76DBA52E8875-5}">
+		<group>Small shopping center</group>
+		<price>100</price>
+		<size>2,3</size>
+		<height>2</height>
+		<structure>
+			<category byname="Shopping Malls"/>
+		</structure>
+		<sprite origin="192,0" offset="22">
+			<picture ref="{FD978351-73CE-442E-8816-76DBA52E8875}"/>
+		</sprite>
+		<sprite origin="192,64" offset="40" opposite="true">
+			<picture ref="{FD978351-73CE-442E-8816-76DBA52E8875}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+
+
+
+	<contribution type="picture" id="{FD978351-73CE-442E-8816-76DBA52E8877}">
+		<picture src="shop_m.bmp">
+			<override when="night" src="shop_m_n.bmp" />
+		</picture>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{FD978351-73CE-442E-8816-76DBA52E8877-1}">
+		<group>Medium shopping center</group>
+		<price>100</price>
+		<size>3,3</size>
+		<height>2</height>
+		<structure>
+			<category byname="Shopping Malls"/>
+		</structure>
+		<sprite origin="0,0" offset="31">
+			<picture ref="{FD978351-73CE-442E-8816-76DBA52E8877}"/>
+		</sprite>
+		<sprite origin="0,96" offset="32">
+			<picture ref="{FD978351-73CE-442E-8816-76DBA52E8877}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{FD978351-73CE-442E-8816-76DBA52E8877-3}">
+		<group>Medium shopping center</group>
+		<price>100</price>
+		<size>3,3</size>
+		<height>2</height>
+		<structure>
+			<category byname="Shopping Malls"/>
+		</structure>
+		<sprite origin="96,0" offset="31">
+			<picture ref="{FD978351-73CE-442E-8816-76DBA52E8877}"/>
+		</sprite>
+		<sprite origin="96,96" offset="32">
+			<picture ref="{FD978351-73CE-442E-8816-76DBA52E8877}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{FD978351-73CE-442E-8816-76DBA52E8877-5}">
+		<group>Medium shopping center</group>
+		<price>100</price>
+		<size>3,3</size>
+		<height>2</height>
+		<structure>
+			<category byname="Shopping Malls"/>
+		</structure>
+		<sprite origin="192,0" offset="31">
+			<picture ref="{FD978351-73CE-442E-8816-76DBA52E8877}"/>
+		</sprite>
+		<sprite origin="192,96" offset="32">
+			<picture ref="{FD978351-73CE-442E-8816-76DBA52E8877}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+
+</plug-in>

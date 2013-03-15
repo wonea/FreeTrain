@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Fuji TV Building</title>
+	<author>Shu</author>
+	<homepage></homepage>
+
+	<contribution type="picture" id="{817B808C-0B1D-49FF-9756-0AF6EAA07BA9}">
+		<picture src="fuji.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{AACA403C-56ED-418C-8444-ED4CB868234C}">
+		<name>Fuji TV Building</name>
+		<structure>
+			<category byname="Broadcasting &amp; Media"/>
+		</structure>
+		<price>1000</price>
+		<size>8,2</size>
+		<height>6</height>
+
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>1000</base>
+		</population>
+
+		<sprite origin="0,0" offset="131">
+			<picture ref="{817B808C-0B1D-49FF-9756-0AF6EAA07BA9}" />
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+</plug-in>

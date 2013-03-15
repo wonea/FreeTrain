@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+	<!ENTITY unmannedStation "
+		<group>Under-viaduct station (red brick)</group>
+		<price>1000</price>
+		<height>1</height>
+		<operationCost>10</operationCost>
+	">
+]>
+<plug-in>
+	<title>Under-viaduct Station</title>
+	<author>Hiro Ayase</author>
+	<homepage>http://www14.big.or.jp/~ayase/freetrain/</homepage>
+	
+	<contribution type="picture" id="{000000-2002-1212-AYASE-Station-img01}">
+		<picture src="koukasita2.bmp" origin="0,0" offset="16" />
+	</contribution>
+
+	
+	<contribution type="station" id="{BC6D8F1A-D9D5-429F-BD9F-4CF37D2A2A51}">
+		&unmannedStation;
+		<size>1,2</size>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{000000-2002-1212-AYASE-Station-img01}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{17EB538E-30DD-4473-9BFD-16ACACEDBFDD}">
+		&unmannedStation;
+		<size>2,1</size>
+		<sprite origin="48,0" offset="24">
+			<picture ref="{000000-2002-1212-AYASE-Station-img01}"/>
+		</sprite>
+	</contribution>
+</plug-in>

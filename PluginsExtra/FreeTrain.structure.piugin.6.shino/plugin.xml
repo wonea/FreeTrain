@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY building2x2Param '
+	<group>Rental office (2x2)</group>
+	<structure>
+		<category byname="Rental Offices"/>
+	</structure>
+	<price>3300</price>
+	<size>2,2</size>
+	<minHeight>3</minHeight>
+	<maxHeight>10</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>150</base>
+	</population>
+'>
+<!ENTITY building3x3ParamA '
+	<group>Rental office (3x3)</group>
+	<structure>
+		<category byname="Rental Offices"/>
+	</structure>
+	<price>4000</price>
+	<size>3,3</size>
+	<minHeight>3</minHeight>
+	<maxHeight>10</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>370</base>
+	</population>
+'>
+<!ENTITY building3x3ParamB '
+	<group>Rental office (3x3)</group>
+	<structure>
+		<category byname="Rental Offices"/>
+	</structure>
+	<price>5000</price>
+	<size>3,3</size>
+	<minHeight>3</minHeight>
+	<maxHeight>10</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>500</base>
+	</population>
+'>
+<!ENTITY hotelParam ' 
+	<group>Medium hotel</group>
+	<structure>
+		<category byname="Business Hotels"/>
+	</structure>
+	<price>4600</price>
+	<size>3,3</size>
+	<minHeight>3</minHeight>
+	<maxHeight>7</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>100</base>
+	</population>
+'>
+]>
+	
+<plug-in>
+	<title>Office Buildings 4</title>
+	<author>Shino</author>
+	<homepage></homepage>
+
+        <contribution type="picture" id="{7A5FEBD6-3778-4DA6-821E-A7551BCB439F}">
+		<picture src="2x2buil 001.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{839D3127-4BB0-4E62-A014-5286DC362A21}">
+		&building2x2Param;
+		<pictures>
+			<top    origin="0,  0" offset="26">
+				<picture ref="{7A5FEBD6-3778-4DA6-821E-A7551BCB439F}"/>
+			</top>
+			<middle origin="0, 50" offset="16">
+				<picture ref="{7A5FEBD6-3778-4DA6-821E-A7551BCB439F}"/>
+			</middle>
+			<bottom origin="0, 90" offset="16">
+				<picture ref="{7A5FEBD6-3778-4DA6-821E-A7551BCB439F}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="64,  0" offset="26">
+				<picture ref="{7A5FEBD6-3778-4DA6-821E-A7551BCB439F}"/>
+			</top>
+			<middle origin="64, 50" offset="16">
+				<picture ref="{7A5FEBD6-3778-4DA6-821E-A7551BCB439F}"/>
+			</middle>
+			<bottom origin="64, 90" offset="16">
+				<picture ref="{7A5FEBD6-3778-4DA6-821E-A7551BCB439F}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+        
+
+
+	<contribution type="picture" id="{D3E96A43-5F05-48B7-B773-E9B93953BD87}">
+		<picture src="3x3buil 001.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{683D1CB6-5726-4B5D-9087-3858B7DEC20C}">
+		&building3x3ParamA;
+		<pictures>
+			<top    origin="0,  0" offset="26">
+				<picture ref="{D3E96A43-5F05-48B7-B773-E9B93953BD87}"/>
+			</top>
+			<middle origin="0, 75" offset="16">
+				<picture ref="{D3E96A43-5F05-48B7-B773-E9B93953BD87}"/>
+			</middle>
+			<bottom origin="0, 127" offset="16">
+				<picture ref="{D3E96A43-5F05-48B7-B773-E9B93953BD87}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="96,  0" offset="26">
+				<picture ref="{D3E96A43-5F05-48B7-B773-E9B93953BD87}"/>
+			</top>
+			<middle origin="96, 75" offset="16">
+				<picture ref="{D3E96A43-5F05-48B7-B773-E9B93953BD87}"/>
+			</middle>
+			<bottom origin="96, 127" offset="16">
+				<picture ref="{D3E96A43-5F05-48B7-B773-E9B93953BD87}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="192,  0" offset="26">
+				<picture ref="{D3E96A43-5F05-48B7-B773-E9B93953BD87}"/>
+			</top>
+			<middle origin="192, 75" offset="16">
+				<picture ref="{D3E96A43-5F05-48B7-B773-E9B93953BD87}"/>
+			</middle>
+			<bottom origin="192, 127" offset="16">
+				<picture ref="{D3E96A43-5F05-48B7-B773-E9B93953BD87}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="288,  0" offset="26">
+				<picture ref="{D3E96A43-5F05-48B7-B773-E9B93953BD87}"/>
+			</top>
+			<middle origin="288, 75" offset="16">
+				<picture ref="{D3E96A43-5F05-48B7-B773-E9B93953BD87}"/>
+			</middle>
+			<bottom origin="288, 127" offset="16">
+				<picture ref="{D3E96A43-5F05-48B7-B773-E9B93953BD87}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+
+
+
+	<contribution type="picture" id="{9C5886B0-E753-4F54-BF39-06181F52F6D4}">
+		<picture src="3x3buil 002.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{2DECFAE6-7B81-4B07-9C1C-1E419DF7FAB8}">
+		&building3x3ParamB;
+		<pictures>
+			<top    origin="0,  0" offset="26">
+				<picture ref="{9C5886B0-E753-4F54-BF39-06181F52F6D4}"/>
+			</top>
+			<middle origin="0, 75" offset="16">
+				<picture ref="{9C5886B0-E753-4F54-BF39-06181F52F6D4}"/>
+			</middle>
+			<bottom origin="0, 127" offset="16">
+				<picture ref="{9C5886B0-E753-4F54-BF39-06181F52F6D4}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="96,  0" offset="26">
+				<picture ref="{9C5886B0-E753-4F54-BF39-06181F52F6D4}"/>
+			</top>
+			<middle origin="96, 75" offset="16">
+				<picture ref="{9C5886B0-E753-4F54-BF39-06181F52F6D4}"/>
+			</middle>
+			<bottom origin="96, 127" offset="16">
+				<picture ref="{9C5886B0-E753-4F54-BF39-06181F52F6D4}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+ 
+
+        
+	<contribution type="picture" id="{C03D71E4-2233-4D74-A940-C82E253F0956}">
+		<picture src="hotel 001.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{E102FC0C-6DDD-430C-A3E1-1AF80C83FACA}">
+		&hotelParam;
+		<pictures>
+			<top    origin="0,  0" offset="26">
+				<picture ref="{C03D71E4-2233-4D74-A940-C82E253F0956}"/>
+			</top>
+			<middle origin="0, 75" offset="16">
+				<picture ref="{C03D71E4-2233-4D74-A940-C82E253F0956}"/>
+			</middle>
+			<bottom origin="0, 127" offset="16">
+				<picture ref="{C03D71E4-2233-4D74-A940-C82E253F0956}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="96,  0" offset="26">
+				<picture ref="{C03D71E4-2233-4D74-A940-C82E253F0956}"/>
+			</top>
+			<middle origin="96, 75" offset="16">
+				<picture ref="{C03D71E4-2233-4D74-A940-C82E253F0956}"/>
+			</middle>
+			<bottom origin="96, 127" offset="16">
+				<picture ref="{C03D71E4-2233-4D74-A940-C82E253F0956}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="192,  0" offset="26">
+				<picture ref="{C03D71E4-2233-4D74-A940-C82E253F0956}"/>
+			</top>
+			<middle origin="192, 75" offset="16">
+				<picture ref="{C03D71E4-2233-4D74-A940-C82E253F0956}"/>
+			</middle>
+			<bottom origin="192, 127" offset="16">
+				<picture ref="{C03D71E4-2233-4D74-A940-C82E253F0956}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="288,  0" offset="26">
+				<picture ref="{C03D71E4-2233-4D74-A940-C82E253F0956}"/>
+			</top>
+			<middle origin="288, 75" offset="16">
+				<picture ref="{C03D71E4-2233-4D74-A940-C82E253F0956}"/>
+			</middle>
+			<bottom origin="288, 127" offset="16">
+				<picture ref="{C03D71E4-2233-4D74-A940-C82E253F0956}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+
+</plug-in>

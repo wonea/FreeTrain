@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+	<!ENTITY RBStationA "
+		<group>Red-brick station A</group>
+		<size>1,1</size>
+		<price>7000</price>
+		<height>1</height>
+		<operationCost>150</operationCost>
+	">
+	<!ENTITY RBStationB "
+		<group>Red-brick station B</group>
+		<size>1,1</size>
+		<price>4000</price>
+		<height>1</height>
+		<operationCost>80</operationCost>
+	">
+	
+	<!ENTITY RBrenraku "
+		<group>Red-brick station bridge</group>
+		<price>2000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<operationCost>60</operationCost>
+	">	
+]>
+<plug-in>
+	<title>Red-brick station</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+	<!--<depend on="org.kohsuke.freetrain.rail.electricPole"/>-->
+		
+	<contribution type="picture" id="{7E7C5BE8-1FE6-48DF-C477-8978CB28F75F}">
+		<picture src="stationRB.bmp">
+			<override when="night" src="stationRB_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{DFFFD982-F2F5-4200-C477-60AB854A43C3}">
+		<picture src="renrakuRB.bmp">
+			<override when="night" src="renrakuRB_n.bmp"/>
+		</picture>
+	</contribution>
+
+	
+	<contribution type="station" id="{A3A3BD91-FD9E-494D-C477-B886E452A437}-0">
+		&RBStationA;
+		<sprite origin=" 0, 0" offset="16">
+			<picture ref="{7E7C5BE8-1FE6-48DF-C477-8978CB28F75F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A3A3BD91-FD9E-494D-C477-B886E452A437}-1">
+		&RBStationA;
+		<sprite origin="32, 0" offset="16">
+			<picture ref="{7E7C5BE8-1FE6-48DF-C477-8978CB28F75F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A3A3BD91-FD9E-494D-C477-B886E452A437}-2">
+		&RBStationA;
+		<sprite origin="64, 0" offset="16">
+			<picture ref="{7E7C5BE8-1FE6-48DF-C477-8978CB28F75F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A3A3BD91-FD9E-494D-C477-B886E452A437}-3">
+		&RBStationA;
+		<sprite origin="96, 0" offset="16">
+			<picture ref="{7E7C5BE8-1FE6-48DF-C477-8978CB28F75F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A3A3BD91-FD9E-494D-C477-B886E452A437}-4">
+		&RBStationA;
+		<sprite origin="128, 0" offset="16">
+			<picture ref="{7E7C5BE8-1FE6-48DF-C477-8978CB28F75F}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{A3A3BD91-FD9E-494D-C477-B886E452A437}-5">
+		&RBStationB;
+		<sprite origin=" 0,32" offset="16">
+			<picture ref="{7E7C5BE8-1FE6-48DF-C477-8978CB28F75F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A3A3BD91-FD9E-494D-C477-B886E452A437}-6">
+		&RBStationB;
+		<sprite origin="32,32" offset="16">
+			<picture ref="{7E7C5BE8-1FE6-48DF-C477-8978CB28F75F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A3A3BD91-FD9E-494D-C477-B886E452A437}-7">
+		&RBStationB;
+		<sprite origin="64,32" offset="16">
+			<picture ref="{7E7C5BE8-1FE6-48DF-C477-8978CB28F75F}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A3A3BD91-FD9E-494D-C477-B886E452A437}-8">
+		&RBStationB;
+		<sprite origin="96,32" offset="16">
+			<picture ref="{7E7C5BE8-1FE6-48DF-C477-8978CB28F75F}" />
+		</sprite>
+	</contribution>
+
+</plug-in>

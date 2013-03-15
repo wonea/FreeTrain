@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title></title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+
+	<!-- 2600系 -->
+	<contribution type="trainCar" id="{7DDEA712-274E-4f11-89AC-906F01EAC923}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kh2600.bmp"/>
+                </sprite>
+		<capacity>125</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{C1F95779-DC2F-4580-B905-836BC1D073ED}">
+		<company>Keihan Electric Railway</company>
+		<type>2600 Series</type>
+		<name></name>
+		<author>Hima</author>
+		<description>
+2000系の車体などを活用した車両で、昭和53年より改造が始まった。2,3,4の各固定ユニットがあり、普通から急行まで幅広く運用される。2両編成や3両編成での運用は存在せず、最短は4両、最長は8両。
+		</description>
+		<price>1000</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{7DDEA712-274E-4f11-89AC-906F01EAC923}"/>
+		</composition>
+	</contribution>
+
+	<!-- 7000系先頭車両 -->
+	<contribution type="trainCar" id="{0B6321F5-C21F-4490-8486-28CBDC8C15D9}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="7000a.bmp"/>
+                </sprite>
+		<capacity>130</capacity>
+	</contribution>
+	
+	<!-- 7000系中間車両 -->
+	<contribution type="trainCar" id="{0B6321F5-C21F-4490-8486-28CBDC8C15D9}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="7000b.bmp"/>
+                </sprite>
+		<capacity>140</capacity>
+	</contribution>
+	
+	<!-- 7000系後尾車両 -->
+	<contribution type="trainCar" id="{0B6321F5-C21F-4490-8486-28CBDC8C15D9}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{0B6321F5-C21F-4490-8486-28CBDC8C15D9}-h"/>
+		<capacity>130</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{0B6321F5-C21F-4490-8486-28CBDC8C15D9}">
+		<company>Keihan Electric Railway</company>
+		<type>7000 Series</type>
+		<name></name>
+		<author>Hima</author>
+		<description>平成元年、鴨東線開業時に8000系特急車とともに登場。後に7200系が登場したため全4編成と少数派だが、この車両から京阪の新しいスタイルが確立されたことは特筆すべきだろう。7両固定編成で急行から普通まで使用されている。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{0B6321F5-C21F-4490-8486-28CBDC8C15D9}-h"/>
+			<body carRef="{0B6321F5-C21F-4490-8486-28CBDC8C15D9}-m"/>
+			<tail carRef="{0B6321F5-C21F-4490-8486-28CBDC8C15D9}-t"/>
+		</composition>
+	</contribution>
+
+
+
+	<!-- 8000系先頭車両 -->
+	<contribution type="trainCar" id="{01D6FB67-F28D-4da5-A3B0-630DB1F4D10D}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="8000a.bmp"/>
+                </sprite>
+		<capacity>107</capacity>
+	</contribution>
+	
+	<!-- 8000系中間車両 -->
+	<contribution type="trainCar" id="{01D6FB67-F28D-4da5-A3B0-630DB1F4D10D}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="8000b.bmp"/>
+                </sprite>
+		<capacity>113</capacity>
+	</contribution>
+	<!-- 8000系中間車両 -->
+	<contribution type="trainCar" id="{01D6FB67-F28D-4da5-A3B0-630DB1F4D10D}-dd">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="8000dd.bmp"/>
+                </sprite>
+		<capacity>200</capacity>
+	</contribution>
+	<!-- 8000系後尾車両 -->
+	<contribution type="trainCar" id="{01D6FB67-F28D-4da5-A3B0-630DB1F4D10D}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{01D6FB67-F28D-4da5-A3B0-630DB1F4D10D}-h"/>
+		<capacity>124</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{01D6FB67-F28D-4da5-A3B0-630DB1F4D10D}">
+		<company>Keihan Electric Railway</company>
+		<type>8000 Series</type>
+		<name></name>
+		<author>Hima</author>
+		<description>平成元年、鴨東線開業時に3000系の置き換えも兼ね登場。テレビカーなどの伝統を受け継いだばかりでなく、連続側面窓やワンハンドルマスコンなど新機軸も取り入れた。また、平成9年から平成10年にかけてダブルデッカー車両が増結され8両編成で主に特急に使用されている。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+		<car char="＜" ref="{01D6FB67-F28D-4da5-A3B0-630DB1F4D10D}-h"/>
+		<car char="-" ref="{01D6FB67-F28D-4da5-A3B0-630DB1F4D10D}-m"/>
+		<car char="＝" ref="{01D6FB67-F28D-4da5-A3B0-630DB1F4D10D}-dd"/>
+		<car char="＞" ref="{01D6FB67-F28D-4da5-A3B0-630DB1F4D10D}-t"/>
+		<composition>＜</composition>
+		<composition>＜＞</composition>
+		<composition>＜-＞</composition>
+		<composition>＜--＞</composition>
+		<composition>＜---＞</composition>
+		<composition>＜----＞</composition>
+		<composition>＜-----＞</composition>
+		<composition>＜---＝--＞</composition>
+		</config>
+	</contribution>
+
+
+	<!-- 1900系先頭車両 -->
+	<contribution type="trainCar" id="{0406051143}aeositgypkb">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="1900a.bmp"/>
+                </sprite>
+		<capacity>130</capacity>
+	</contribution>
+	
+	<!-- 1900系中間車両 -->
+	<contribution type="trainCar" id="{0406051143}shpkpjn">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="1900b.bmp"/>
+                </sprite>
+		<capacity>140</capacity>
+	</contribution>
+	
+	<!-- 1900系後尾車両 -->
+	<contribution type="trainCar" id="{0406051144}3897yhsfo">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{0406051143}aeositgypkb"/>
+		<capacity>130</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{0406051144}kh1900local">
+		<company>Keihan Electric Railway</company>
+		<type>1900 Series Local</type>
+		<name></name>
+		<author>Hima</author>
+		<description>特急が3000系で統一されるまで京阪特急の代名詞として走っていた。特急引退後は3扉・ロングシート化、塗装変更のうえ、普通車に転用された。前面のバンパーや、普通車でありながら扉が片開きであるなど、京阪電車で特徴的な存在である。中には一車両中に両開きと片開きが混在する車両も存在する。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{0406051143}aeositgypkb"/>
+			<body carRef="{0406051143}shpkpjn"/>
+			<tail carRef="{0406051144}3897yhsfo"/>
+		</composition>
+	</contribution>
+
+	<!-- 1900系特急先頭車両 -->
+	<contribution type="trainCar" id="{0406051249}aeositgypkb">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="1900c.bmp"/>
+                </sprite>
+		<capacity>130</capacity>
+	</contribution>
+	
+	<!-- 1900系特急中間車両 -->
+	<contribution type="trainCar" id="{0406051249}shpkpjn">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="1900d.bmp"/>
+                </sprite>
+		<capacity>140</capacity>
+	</contribution>
+	
+	<!-- 1900系特急後尾車両 -->
+	<contribution type="trainCar" id="{0406051249}3897yhsfo">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{0406051249}aeositgypkb"/>
+		<capacity>130</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{0406051249}kh1900local">
+		<company>Keihan Electric Railway</company>
+		<type>1900 Series Limited Express</type>
+		<name></name>
+		<author>Hima</author>
+		<description>3000系の前の世代の特急車。淀屋橋延長の際に新造された車両と、1810系から編入された車両がある。前面のバンパーは当初、新造グループにのみ取り付けられていた。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{0406051249}aeositgypkb"/>
+			<body carRef="{0406051249}shpkpjn"/>
+			<tail carRef="{0406051249}3897yhsfo"/>
+		</composition>
+	</contribution>
+</plug-in>

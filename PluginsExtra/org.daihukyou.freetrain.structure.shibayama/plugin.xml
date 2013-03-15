@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Techno Garden Building</title>
+	<author>ShibayamaOyakata</author>
+	<homepage>http://www.geocities.co.jp/SiliconValley-Oakland/8444/</homepage>
+	
+        <contribution type="picture" id="{9FAB85B3-1232-4DAE-B833-BD2E5ADBDDD2}">
+                <picture src="image01.bmp" />
+              
+	</contribution>
+
+        <contribution type="GenericStructure" id="{1EBA4A26-C35D-4209-9C71-AA9B1237C14C}">
+		<group>Techno Garden Building</group>
+		<price>10000</price>
+		<size>2,4</size>
+		<height>10</height>
+		<structure>
+			<category byname="Rental Offices"/>
+		</structure>
+		<sprite origin="0,0" offset="142">
+			<picture ref="{9FAB85B3-1232-4DAE-B833-BD2E5ADBDDD2}"/>
+		</sprite>
+		<sprite origin="96,0" offset="159">
+			<picture ref="{9FAB85B3-1232-4DAE-B833-BD2E5ADBDDD2}" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>2200</base>
+		</population>
+              </contribution>
+  </plug-in>

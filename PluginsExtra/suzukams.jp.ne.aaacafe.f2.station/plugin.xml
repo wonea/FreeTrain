@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>HIMA Station Buildings.</title>
+	<author>Hima</author>
+	<homepage></homepage>
+	
+	<contribution type="station" id="{0405292143}l3574341">
+		<name>Small station building 01</name>
+		<price>700</price>
+		<operationCost>120</operationCost>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="8">
+			<picture src="Small01.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{0405292143}u373241">
+		<name>Small station building 01</name>
+		<price>700</price>
+		<operationCost>120</operationCost>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="8">
+			<picture src="Small01.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{0405292143}r6732421">
+		<name>Small station building 01</name>
+		<price>700</price>
+		<operationCost>120</operationCost>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="64,0" offset="8">
+			<picture src="Small01.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{0405292143}w57341">
+		<name>Small station building 01</name>
+		<price>700</price>
+		<operationCost>120</operationCost>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="96,0" offset="8">
+			<picture src="Small01.bmp"/>
+		</sprite>
+	</contribution>
+</plug-in>

@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title></title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+
+
+	<!-- 63系電車ジュラ電 -->
+
+	<!-- モハ(クモハ)63 900 -->
+
+	<contribution type="picture" id="{Freetrain-T63-JNR-duralumin-Kumoha63900}">
+		<picture src="62d01.bmp" />
+	</contribution>
+
+	<contribution type="trainCar" id="{Freetrain-Type63-JNR-duralumin-moha63900}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{Freetrain-T63-JNR-duralumin-Kumoha63900}" />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+
+	<!--モハ63 901-->
+	<contribution type="picture" id="{Freetrain-T63-JNR-duralumin-moha63901}">
+		<picture src="62d02.bmp" />
+	</contribution>
+
+
+	<contribution type="trainCar" id="{Freetrain-Type63-JNR-duralumin-moha63901}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{Freetrain-T63-JNR-duralumin-moha63901}" />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+
+	<!--モハ63 902-->
+
+
+	<contribution type="picture" id="{Freetrain-T63-JNR-duralumin-saha78200}">
+		<picture src="62d01.bmp" />
+	</contribution>
+
+
+	<contribution type="trainCar" id="{Freetrain-Type63-JNR-duralumin-moha63902}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="62d01.bmp" />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{Freetrain-Type63-JNR-duralumin-moha63902B}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{Freetrain-Type63-JNR-duralumin-moha63902}"/>
+	</contribution>
+
+
+	
+	<contribution type="train" id="{Freetrain-T63-JNR-duralumin}">
+		<company>Japanese National Railways</company>
+		<type>JNR Old Type</type>
+		<name>63 Series 900 Model 'Dura' Electric Train</name>
+		<author>Nanashi</author>
+		<description>This train was popularly called the 'Dural' 
+train, as is had experimental duralumin carriages as well as fluorescent
+lighting on the inside. However, since it was unpainted it was also subject
+to heavy corrosion. Subsequently painted as a normal train, is was finally
+converted to a steel body.
+		</description>
+		<price>500</price>
+		<speed>slow</speed>
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+
+		<car char="1" ref="{Freetrain-Type63-JNR-duralumin-moha63900}"/>
+		<car char="2" ref="{Freetrain-Type63-JNR-duralumin-moha63901}"/>
+		<car char="3" ref="{Freetrain-Type63-JNR-duralumin-moha63902B}"/>
+		
+		<composition>123</composition>
+		</config>
+	</contribution>
+
+
+
+	<!-- 旧型国電ぶどう色(2扉・クロスシートタイプ) -->
+
+
+	<contribution type="trainCar" id="{Freetrain-Oldtype-JNR-2doors-Kuha77}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="62_T.bmp" />
+		</sprite>
+		<capacity>104</capacity>
+	</contribution>
+
+
+	<contribution type="trainCar" id="{Freetrain-Oldtype-JNR-2doors-Kuha77B}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{Freetrain-Oldtype-JNR-2doors-Kuha77}"/>
+	</contribution>
+
+
+
+	<contribution type="trainCar" id="{Freetrain-Oldtype-JNR-2doors-Moha62}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="62_T02.bmp"  />
+		</sprite>
+		<capacity>104</capacity>
+	</contribution>
+
+
+	<contribution type="train" id="{Freetrain-Oldtype-JNR-2doors-budou}">
+		<company>Japanese National Railways</company>
+		<type>JNR Old Type</type>
+		<name>MOHA 62 / KUHA 77</name>
+		<author>Nanashi</author>
+		<description>An old train type from before the War. This is
+the type refitted with cross seats for local lines.
+		</description>
+		<price>150</price>
+		<speed>slow</speed>
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+
+		<car char="1" ref="{Freetrain-Oldtype-JNR-2doors-Kuha77}"/>
+		<car char="2" ref="{Freetrain-Oldtype-JNR-2doors-Moha62}"/>
+		<car char="3" ref="{Freetrain-Oldtype-JNR-2doors-Kuha77B}"/> 
+		
+		<composition>123</composition>
+		</config>
+	</contribution>
+
+
+	<!-- 旧型国電大糸線 -->
+
+
+	<contribution type="trainCar" id="{Freetrain-Oldtype-JNR-ooito-kumoha43}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="kumoha43.bmp" />
+		</sprite>
+		<capacity>104</capacity>
+	</contribution>
+
+
+	<contribution type="trainCar" id="{Freetrain-Oldtype-JNR-ooito-kumoha60}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="kumoha60.bmp" />
+		</sprite>
+		<capacity>124</capacity>
+	</contribution>
+
+
+	<contribution type="trainCar" id="{Freetrain-Oldtype-JNR-ooito-kumoha60B}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{Freetrain-Oldtype-JNR-ooito-kumoha60}"/>
+	</contribution>
+
+
+
+	<contribution type="trainCar" id="{Freetrain-Oldtype-JNR-ooito-kuha55}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="kuha55.bmp" />
+		</sprite>
+		<capacity>124</capacity>
+	</contribution>
+
+
+	<contribution type="trainCar" id="{Freetrain-Oldtype-JNR-ooito-kuha55B}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{Freetrain-Oldtype-JNR-ooito-kuha55}"/>
+	</contribution>
+
+	<!--クモユニ81-->
+	<contribution type="trainCar" id="{FreeTrain-Type80e-JRN-ooito-kumoyuni}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="kumoyuni81003.bmp"/>
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>	
+
+	<contribution type="train" id="{Freetrain-Oldtype-JNR-ooito}">
+		<company>Japanese National Railways</company>
+		<type>JNR Old Type</type>
+		<name>Oito Line</name>
+		<author>––</author>
+		<description>This is KUMOHA 43 / KUMOHA 60 / KUHA 55 active
+on the Oito Line. It has a rare sky blue paint-work and served together with
+KUMOYUNI 81003 until 1981.
+		</description>
+		<price>80</price>
+		<speed>slow</speed>
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+
+			<car char="1" ref="{Freetrain-Oldtype-JNR-ooito-kumoha60}"/>
+			<car char="2" ref="{Freetrain-Oldtype-JNR-ooito-kuha55B}"/>
+			<car char="A" ref="{Freetrain-Oldtype-JNR-ooito-kuha55}"/>
+			<car char="B" ref="{Freetrain-Oldtype-JNR-ooito-kumoha60B}"/> 
+			<car char="3" ref="{Freetrain-Oldtype-JNR-ooito-kumoha43}"/>
+			<car char="F" ref="{FreeTrain-Type80e-JRN-ooito-kumoyuni}"/> 
+
+		
+			<composition>12</composition>
+			<composition>3AB</composition>
+			<composition>32AB</composition>
+			<composition>123ABF</composition>
+			<composition>1232ABF</composition>
+			<composition>1232AB12</composition>
+		</config>
+	</contribution>
+
+
+
+
+
+	<!-- 72/73系電車ぶどう色 -->
+
+	<!--クモハ近代化・鋼体車-->
+
+	<contribution type="trainCar" id="{Freetrain-Type72-JNR-budou-Kumoha73-modernization}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="kumoha72.bmp" />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<!--モハ・サハ-->
+
+
+	<contribution type="trainCar" id="{Freetrain-Type72-JNR-budou-Moha73}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="72_MT01.bmp" />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<!--モハ-->
+
+	<contribution type="trainCar" id="{Freetrain-Type72-JNR-budou-Moha72}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="72_M01.bmp"  />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+
+
+	<!--クハ-->
+
+
+	<contribution type="trainCar" id="{Freetrain-Type72-JNR-budou-Kuha79-modernization}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="kuha72.bmp" />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{Freetrain-Type72-JNR-budou-Kuha79B-modernization}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{Freetrain-Type72-JNR-budou-Kuha79-modernization}"/>
+	</contribution>
+
+
+	<contribution type="train" id="{{Freetrain-Type72-JNR-budou}">
+		<company>Japanese National Railways</company>
+		<type>JNR Old Type</type>
+		<name>73 Series Modernized Train</name>
+		<author>Nanashi</author>
+		<description>Remodelled variant of 63 Series in the aftermath
+of the 1951 Sakuragicho accident. It became the archetype of all future
+commuter trains with its 20 meter length and 4 doors. This is the type with
+a steel body among other improvements introduced after the War, and is a
+predecessor to 101 Series.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+
+		<car char="1" ref="{Freetrain-Type72-JNR-budou-Kumoha73-modernization}"/>
+		<car char="M" ref="{Freetrain-Type72-JNR-budou-Moha73}"/>
+		<car char="P" ref="{Freetrain-Type72-JNR-budou-Moha72}"/>
+		<car char="A" ref="{Freetrain-Type72-JNR-budou-Kuha79-modernization}"/>
+		<car char="2" ref="{Freetrain-Type72-JNR-budou-Kuha79B-modernization}"/>
+		
+		<!--←横浜-->
+		<composition>12</composition>
+		<composition>1M2</composition>
+		<composition>APM2</composition>
+		<composition>APMP2</composition>
+		<composition>APMPM2</composition>
+		<composition>APMMPM2</composition>
+		<composition>APM21MP2</composition>
+		<composition>APMPM21M2</composition>
+		<composition>APMMPMMPM2</composition>
+
+		</config>
+	</contribution>
+
+        <!--近代化前-->
+	<contribution type="trainCar" id="{Freetrain-Type72-JNR-budou-Kumoha73}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="72_MC01.bmp" />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{Freetrain-Type72-JNR-budou-Kuha79}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="72_TC01.bmp" />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{Freetrain-Type72-JNR-budou-Kuha79B}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{Freetrain-Type72-JNR-budou-Kuha79}"/>
+	</contribution>
+
+
+
+
+	<contribution type="train" id="{{Freetrain-Type72-JNR-oldtype}">
+		<company>Japanese National Railways</company>
+		<type>JNR Old Type</type>
+		<name>73 Series Grape Color</name>
+		<author>Nanashi</author>
+		<description>An older non-modernized type.
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+
+		<config>
+
+			<car char="1" ref="{Freetrain-Type72-JNR-budou-Kumoha73}"/>
+			<car char="M" ref="{Freetrain-Type72-JNR-budou-Moha73}"/>
+			<car char="P" ref="{Freetrain-Type72-JNR-budou-Moha72}"/>
+			<car char="A" ref="{Freetrain-Type72-JNR-budou-Kuha79}"/>
+			<car char="2" ref="{Freetrain-Type72-JNR-budou-Kuha79B}"/>
+		
+
+
+			<!--←横浜-->
+			<composition>12</composition>
+			<composition>AP2</composition>
+			<composition>1M212</composition>
+			<composition>1M2AP2</composition>
+			<composition>1M2AP212</composition>
+			<composition>APM2AP212</composition>
+			<composition>APM1M2APM2</composition>
+
+		</config>
+	</contribution>
+
+
+
+	<contribution type="train" id="{{Freetrain-Type72-JNR-Mix}">
+		<company>Japanese National Railways</company>
+		<type>JNR Old Type</type>
+		<name>73 Series Grape Color + 'Dura' Electric Train</name>
+		<author>ななし</author>
+		<description>A mixed formation of normal and duralumin cars.
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+
+		<config>
+
+			<car char="1" ref="{Freetrain-Type72-JNR-budou-Kumoha73}"/>
+			<car char="M" ref="{Freetrain-Type72-JNR-budou-Moha73}"/>
+			<car char="P" ref="{Freetrain-Type72-JNR-budou-Moha72}"/>
+			<car char="A" ref="{Freetrain-Type72-JNR-budou-Kuha79}"/>
+			<car char="2" ref="{Freetrain-Type72-JNR-budou-Kuha79B}"/>
+		
+
+			<car char="H" ref="{Freetrain-Type63-JNR-duralumin-moha63900}"/>
+			<car char="C" ref="{Freetrain-Type63-JNR-duralumin-moha63901}"/>
+			<car char="T" ref="{Freetrain-Type63-JNR-duralumin-moha63902B}"/>
+
+			<!--←横浜-->
+			<composition>12HCT</composition>
+			<composition>1M2HCT</composition>
+			<composition>APM2HCT</composition>
+			<composition>APMMPM2HCT</composition>
+
+		</config>
+	</contribution>
+
+
+
+	
+	<!--横須賀色-->
+
+	<contribution type="trainCar" id="{Freetrain-Type72-JNR-sukasyoku-Kumoha73}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="72S_MC.bmp" />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<!--モハ・サハ-->
+
+
+	<contribution type="trainCar" id="{Freetrain-Type72-JNR-sukasyoku-Moha73}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="72S_T.bmp" />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<!--モハ-->
+
+	<contribution type="trainCar" id="{Freetrain-Type72-JNR-sukasyoku-Moha72}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="72S_M.bmp"  />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+
+	<!--クハ-->
+
+
+	<contribution type="trainCar" id="{Freetrain-Type72-JNR-sukasyoku-Kuha79}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="72S_TC.bmp" />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{Freetrain-Type72-JNR-sukasyoku-Kuha79B}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{Freetrain-Type72-JNR-sukasyoku-Kuha79}"/>
+	</contribution>
+
+
+	<contribution type="train" id="{Freetrain-Type72-JNR-sukasyoku}">
+
+		<company>Japanese National Railways</company>
+
+		<type>JNR Old Type</type>
+		<name>73 Series Ska Colors</name>
+
+		<author>––</author>
+
+		<description>Modernized as an effect of the electrification 
+of the Gotenba Line, this 73 Series was painted in Yokosuka colors.
+		</description>
+
+		<price>100</price>
+		<speed>medium</speed>
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+
+			<car char="1" ref="{Freetrain-Type72-JNR-sukasyoku-Kumoha73}"/>
+			<car char="M" ref="{Freetrain-Type72-JNR-sukasyoku-Moha73}"/>
+			<car char="P" ref="{Freetrain-Type72-JNR-sukasyoku-Moha72}"/>
+			<car char="2" ref="{Freetrain-Type72-JNR-sukasyoku-Kuha79B}"/>
+		
+			<!--←国府津-->
+			<composition>12</composition>
+			<composition>1M2</composition>
+			<composition>1MP2</composition>
+			<composition>1M212</composition>
+			<composition>1M21M2</composition>
+			<composition>1MP21M2</composition>
+			<composition>1MP21MP2</composition>
+
+		</config>
+	</contribution>
+
+
+</plug-in>

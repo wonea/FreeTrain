@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+
+<!ENTITY fb-skyblue '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="188,234,232"/>
+</spriteType>
+'>
+
+<!ENTITY fb-white '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="237,235,236"/>
+</spriteType>
+'>
+
+<!ENTITY fb-concrete '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="196,188,172"/>
+</spriteType>
+'>
+
+<!ENTITY fb-vermilion '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="233,76,41"/>
+</spriteType>
+'>
+
+]>
+
+<plug-in>
+
+<title>Road Accessories</title>
+
+<author>Shikashika</author>
+<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+<!-- Footbridge -->
+	
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-footbridge1}">
+<name>Footbridge</name>
+<sprite>&fb-skyblue;
+<picture src="r_a_footbridge1.bmp"/>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-footbridge1l}">
+<name>Footbridge(left)</name>
+<sprite>&fb-skyblue;
+<picture src="r_a_footbridge1l.bmp"/>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-footbridge1r}">
+<name>Footbridge(right)</name>
+<sprite>&fb-skyblue;
+<picture src="r_a_footbridge1r.bmp"/>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-footbridge1m}">
+<name>Footbridge(medium)</name>
+<sprite>&fb-skyblue;
+<picture src="r_a_footbridge1m.bmp"/>
+</sprite>
+</contribution>
+
+<!-- Footbridge(spiral staircase) -->
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-footbridge2}">
+<name>Footbridge(spiral)</name>
+<sprite>&fb-skyblue;
+<picture src="r_a_footbridge2.bmp"/>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-footbridge2l}">
+<name>Footbridge(spiral,left)</name>
+<sprite>&fb-skyblue;
+<picture src="r_a_footbridge2l.bmp"/>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-footbridge2r}">
+<name>Footbridge(spiral,right)</name>
+<sprite>&fb-skyblue;
+<picture src="r_a_footbridge2r.bmp"/>
+</sprite>
+</contribution>
+
+<!-- Footbridge(white) -->
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-footbridge1w}">
+<name>Footbridge(white)</name>
+<sprite>&fb-white;
+<picture src="r_a_footbridge1.bmp"/>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-footbridge1wl}">
+<name>Footbridge(white,left)</name>
+<sprite>&fb-white;
+<picture src="r_a_footbridge1l.bmp"/>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-footbridge1wr}">
+<name>Footbridge(white,right)</name>
+<sprite>&fb-white;
+<picture src="r_a_footbridge1r.bmp"/>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-footbridge1wm}">
+<name>Footbridge(white,medium)</name>
+<sprite>&fb-white;
+<picture src="r_a_footbridge1m.bmp"/>
+</sprite>
+</contribution>
+
+<!-- Footbridge(white,spiral staircase) -->
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-footbridge2w}">
+<name>Footbridge(white,spiral)</name>
+<sprite>&fb-white;
+<picture src="r_a_footbridge2.bmp"/>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-footbridge2wl}">
+<name>Footbridge(white,spiral,left)</name>
+<sprite>&fb-white;
+<picture src="r_a_footbridge2l.bmp"/>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-footbridge2wr}">
+<name>Footbridge(white,spiral,right)</name>
+<sprite>&fb-white;
+<picture src="r_a_footbridge2r.bmp"/>
+</sprite>
+</contribution>
+
+
+<!-- Underpass entrance -->
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-underpass1}">
+<name>Underpass entrance</name>
+<sprite>
+<picture src="r_a_underpass1.bmp">
+<override when="night" src="r_a_underpass1n.bmp"/>
+</picture>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-underpass1l}">
+<name>Underpass entrance(left)</name>
+<sprite>
+<picture src="r_a_underpass1l.bmp">
+<override when="night" src="r_a_underpass1ln.bmp"/>
+</picture>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-underpass1r}">
+<name>Underpass entrance(right)</name>
+<sprite>
+<picture src="r_a_underpass1r.bmp">
+<override when="night" src="r_a_underpass1rn.bmp"/>
+</picture>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-subway1}">
+<name>Subway entrance</name>
+<sprite>
+<picture src="r_a_subway1.bmp">
+<override when="night" src="r_a_subway1n.bmp"/>
+</picture>
+</sprite>
+</contribution>
+
+<!-- Subway entrance -->
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-subway1l}">
+<name>Subway entrance(left)</name>
+<sprite>
+<picture src="r_a_subway1l.bmp">
+<override when="night" src="r_a_subway1ln.bmp"/>
+</picture>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-subway1r}">
+<name>Subway entrance(right)</name>
+<sprite>
+<picture src="r_a_subway1r.bmp">
+<override when="night" src="r_a_subway1rn.bmp"/>
+</picture>
+</sprite>
+</contribution>
+
+<!-- Bridge pier -->
+	
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-pier1r-w}">
+<name>Bridge pier(right)</name>
+<sprite>&fb-white;
+<picture src="r_a_pier1r.bmp"/>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-pier1l-w}">
+<name>Bridge pier(left)</name>
+<sprite>&fb-white;
+<picture src="r_a_pier1l.bmp"/>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-pier2r-w}">
+<name>Bridge pier(thin,right)</name>
+<sprite>&fb-white;
+<picture src="r_a_pier2r.bmp"/>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-pier2l-w}">
+<name>Bridge pier(thin,left)</name>
+<sprite>&fb-white;
+<picture src="r_a_pier2l.bmp"/>
+</sprite>
+</contribution>
+
+<!-- Torii (the entrance to a Shinto shrine) -->
+	
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-torii01-c}">
+<name>Torii(gray)</name>
+<sprite>&fb-concrete;
+<picture src="r_a_torii1.bmp"/>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-torii01-v}">
+<name>Torii(red)</name>
+<sprite>&fb-vermilion;
+<picture src="r_a_torii1.bmp"/>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-torii02-c}">
+<name>Torii(large,gray)</name>
+<sprite>&fb-concrete;
+<picture src="r_a_torii2.bmp"/>
+</sprite>
+</contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-torii02-v}">
+<name>Torii(large,red)</name>
+<sprite>&fb-vermilion;
+<picture src="r_a_torii2.bmp"/>
+</sprite>
+</contribution>
+
+</plug-in>

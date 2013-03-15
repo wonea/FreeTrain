@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<plug-in>
+	<title>BostonMBTA 車両キット</title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+
+	<!-- series 0600 -->
+	<contribution type="trainCar" id="{B7B87CFF-3CCB-452d-AE40-D008CCFE6631}">
+		<class name="freetrain.framework.plugin.impl.ColoredTrainCarImpl" />
+		<colorMap picture="3" base="255,255,255" line1="0,128,192" line2="255,255,255" line3="0,128,192" />
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{383D12F8-034D-41f9-8164-A0D1EB9F68EA}">
+		<company>Boston MBTA</company>
+		<type>series 0600</type>
+		<name>Blue Line</name>
+		<author>川口耕介さん</author>
+		<description>
+Bowdoin-Wonderland. Builder: Hawker-Siddeley, Electrical: GE, Year: 1978-1980, Length: 48' 6", Width: 111", Seats: 42. Currently 68 cars are active.
+		</description>
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{B7B87CFF-3CCB-452d-AE40-D008CCFE6631}"/>
+		</composition>
+	</contribution>
+
+
+
+	<!-- series 01500/01600 -->
+	<contribution type="trainCar" id="{56C6AA25-C5EC-4283-B86C-BF1AA89344C9}">
+		<class name="freetrain.framework.plugin.impl.ColoredTrainCarImpl" />
+		<colorMap picture="3" base="255,255,255" line1="255,0,0" line2="255,255,255" line3="255,0,0" />
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{680ED466-1EA5-4c22-A411-99CFE7B46DA6}">
+		<company>Boston MBTA</company>
+		<type>series 01500/01600</type>
+		<name>Red Line</name>
+		<author>川口耕介さん</author>
+		<description>
+Alewife-Braintree. Builder: Pullman Standard, Electrical: WH, Year:1969-1970 (rebuilt 1985-1988), Length: 69' 6", Width: 122".
+		</description>
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{56C6AA25-C5EC-4283-B86C-BF1AA89344C9}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- series 3400 -->
+	<contribution type="trainCar" id="{CAD4A8B6-8E75-4229-9E1E-57F91B792590}">
+		<class name="freetrain.framework.plugin.impl.ColoredTrainCarImpl" />
+		<colorMap picture="3" base="255,255,255" line1="0,128,0" line2="255,255,255" line3="0,128,0" />
+		<capacity>45</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{1524D523-85C2-465c-8240-BC55EA511D3B}">
+		<company>Boston MBTA</company>
+		<type>series 3400</type>
+		<name>Green Line</name>
+		<author>川口耕介さん</author>
+		<description>
+Lenchmere-Kenmore。野球場を通る路面電車です。
+		</description>
+		<price>1</price>
+		<speed>slow</speed>
+		<composition>
+			<body carRef="{CAD4A8B6-8E75-4229-9E1E-57F91B792590}"/>
+		</composition>
+	</contribution>
+
+	<!-- series 01200 -->
+	<contribution type="trainCar" id="{B43851BB-78D8-40b1-B5DE-2503EB161BF4}">
+		<class name="freetrain.framework.plugin.impl.ColoredTrainCarImpl" />
+		<colorMap picture="3" base="255,255,255" line1="242,121,0" line2="255,255,255" line3="242,121,0" />
+		<capacity>45</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{5830F166-5E53-4fd1-8FFD-A6B69B1BB8A5}">
+		<company>Boston MBTA</company>
+		<type>series 01200</type>
+		<name>Orange Line</name>
+		<author>川口耕介さん</author>
+		<description>
+Oak Grove-Forest Hills。Amtrakと接続します。
+		</description>
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{B43851BB-78D8-40b1-B5DE-2503EB161BF4}"/>
+		</composition>
+	</contribution>
+
+</plug-in>

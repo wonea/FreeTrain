@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY dc10a '
+		<group>Douglas DC10</group>
+		<design>Type A</design>
+		<structure>
+			<category byname="Airports"/>
+		</structure>
+		<price>800</price>
+		<size>4,4</size>
+		<height>1</height>
+		<computerCannotBuild/>
+'>
+<!ENTITY dc10b '
+		<group>Douglas DC10</group>
+		<design>Type B</design>
+		<structure>
+			<category byname="Airports"/>
+		</structure>
+		<price>800</price>
+		<size>4,4</size>
+		<height>1</height>
+		<computerCannotBuild/>
+'>
+<!ENTITY b747a '
+		<group>Boeing747</group>
+		<design>Type A</design>
+		<structure>
+			<category byname="Airports"/>
+		</structure>
+		<price>1000</price>
+		<size>5,5</size>
+		<height>1</height>
+		<computerCannotBuild/>
+'>
+<!ENTITY b747b '
+		<group>Boeing747</group>
+		<design>Type B</design>
+		<structure>
+			<category byname="Airports"/>
+		</structure>
+		<price>1000</price>
+		<size>5,5</size>
+		<height>1</height>
+		<computerCannotBuild/>
+'>
+<!ENTITY crRed '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,0,0"/>
+	</spriteType>
+'>
+<!ENTITY crDeepBlue '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="0,0,230"/>
+	</spriteType>
+'>
+<!ENTITY crSkyBlue '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="0,230,250"/>
+	</spriteType>
+'>
+<!ENTITY crWineRed '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="250,0,140"/>
+	</spriteType>
+'>
+]>
+
+<plug-in>
+	<title>Jumbo jet (resized)</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+
+	<contribution type="picture" id="{1E923AE1-E5AE-44D3-C477-1375529F4455}">
+		<picture src="Airplane_s.B747.a.bmp"/>
+	</contribution>
+	<contribution type="picture" id="{33B3BE95-D0EF-4BF4-C477-2D85D50E5153}">
+		<picture src="Airplane_s.B747.b.bmp"/>
+	</contribution>
+		
+	<contribution type="picture" id="{DBED583F-A88F-49CC-C477-85840DCD7C3D}">
+		<picture src="Airplane_s.DC10.a.bmp"/>
+	</contribution>
+	<contribution type="picture" id="{6380D96B-08C0-4635-C477-2DF6E5F017D2}">
+		<picture src="Airplane_s.DC10.b.bmp"/>
+	</contribution>
+
+	<!--RedLine-->
+	<!--BlueLine-->
+	<contribution type="GenericStructure" id="{CBE0C36F-6AB4-434A-C477-0F589659C756}-b747-a">
+		&b747a;
+		&crRed;
+		&crDeepBlue;
+		<sprite origin="0,0" offset="48">
+			<picture ref="{1E923AE1-E5AE-44D3-C477-1375529F4455}"/>
+		</sprite>
+		<sprite origin="160,0" offset="48">
+			<picture ref="{1E923AE1-E5AE-44D3-C477-1375529F4455}"/>
+		</sprite>
+		<sprite origin="320,0" offset="48">
+			<picture ref="{1E923AE1-E5AE-44D3-C477-1375529F4455}"/>
+		</sprite>
+		<sprite origin="480,0" offset="48">
+			<picture ref="{1E923AE1-E5AE-44D3-C477-1375529F4455}"/>
+		</sprite>
+		<sprite origin="0,288" offset="48">
+			<picture ref="{1E923AE1-E5AE-44D3-C477-1375529F4455}"/>
+		</sprite>
+		<sprite origin="160,288" offset="48">
+			<picture ref="{1E923AE1-E5AE-44D3-C477-1375529F4455}"/>
+		</sprite>
+		<sprite origin="320,288" offset="48">
+			<picture ref="{1E923AE1-E5AE-44D3-C477-1375529F4455}"/>
+		</sprite>
+		<sprite origin="480,288" offset="48">
+			<picture ref="{1E923AE1-E5AE-44D3-C477-1375529F4455}"/>
+		</sprite>
+		<sprite origin="0,192" offset="48">
+			<picture ref="{1E923AE1-E5AE-44D3-C477-1375529F4455}"/>
+		</sprite>
+		<sprite origin="160,192" offset="48">
+			<picture ref="{1E923AE1-E5AE-44D3-C477-1375529F4455}"/>
+		</sprite>
+		<sprite origin="320,192" offset="48">
+			<picture ref="{1E923AE1-E5AE-44D3-C477-1375529F4455}"/>
+		</sprite>
+		<sprite origin="480,192" offset="48">
+			<picture ref="{1E923AE1-E5AE-44D3-C477-1375529F4455}"/>
+		</sprite>
+		<sprite origin="0,96" offset="48">
+			<picture ref="{1E923AE1-E5AE-44D3-C477-1375529F4455}"/>
+		</sprite>
+		<sprite origin="160,96" offset="48">
+			<picture ref="{1E923AE1-E5AE-44D3-C477-1375529F4455}"/>
+		</sprite>
+		<sprite origin="320,96" offset="48">
+			<picture ref="{1E923AE1-E5AE-44D3-C477-1375529F4455}"/>
+		</sprite>
+		<sprite origin="480,96" offset="48">
+			<picture ref="{1E923AE1-E5AE-44D3-C477-1375529F4455}"/>
+		</sprite>
+	</contribution>
+
+	
+	<!--SkiBlueBody-->
+	<!--WineRedBody-->
+	<contribution type="GenericStructure" id="{CBE0C36F-6AB4-434A-C477-0F589659C756}-b747-b">
+		&b747b;
+		&crSkyBlue;
+		&crWineRed;
+		<sprite origin="0,0" offset="48">
+			<picture ref="{33B3BE95-D0EF-4BF4-C477-2D85D50E5153}"/>
+		</sprite>
+		<sprite origin="160,0" offset="48">
+			<picture ref="{33B3BE95-D0EF-4BF4-C477-2D85D50E5153}"/>
+		</sprite>
+		<sprite origin="320,0" offset="48">
+			<picture ref="{33B3BE95-D0EF-4BF4-C477-2D85D50E5153}"/>
+		</sprite>
+		<sprite origin="480,0" offset="48">
+			<picture ref="{33B3BE95-D0EF-4BF4-C477-2D85D50E5153}"/>
+		</sprite>
+		<sprite origin="0,288" offset="48">
+			<picture ref="{33B3BE95-D0EF-4BF4-C477-2D85D50E5153}"/>
+		</sprite>
+		<sprite origin="160,288" offset="48">
+			<picture ref="{33B3BE95-D0EF-4BF4-C477-2D85D50E5153}"/>
+		</sprite>
+		<sprite origin="320,288" offset="48">
+			<picture ref="{33B3BE95-D0EF-4BF4-C477-2D85D50E5153}"/>
+		</sprite>
+		<sprite origin="480,288" offset="48">
+			<picture ref="{33B3BE95-D0EF-4BF4-C477-2D85D50E5153}"/>
+		</sprite>
+		<sprite origin="0,192" offset="48">
+			<picture ref="{33B3BE95-D0EF-4BF4-C477-2D85D50E5153}"/>
+		</sprite>
+		<sprite origin="160,192" offset="48">
+			<picture ref="{33B3BE95-D0EF-4BF4-C477-2D85D50E5153}"/>
+		</sprite>
+		<sprite origin="320,192" offset="48">
+			<picture ref="{33B3BE95-D0EF-4BF4-C477-2D85D50E5153}"/>
+		</sprite>
+		<sprite origin="480,192" offset="48">
+			<picture ref="{33B3BE95-D0EF-4BF4-C477-2D85D50E5153}"/>
+		</sprite>
+		<sprite origin="0,96" offset="48">
+			<picture ref="{33B3BE95-D0EF-4BF4-C477-2D85D50E5153}"/>
+		</sprite>
+		<sprite origin="160,96" offset="48">
+			<picture ref="{33B3BE95-D0EF-4BF4-C477-2D85D50E5153}"/>
+		</sprite>
+		<sprite origin="320,96" offset="48">
+			<picture ref="{33B3BE95-D0EF-4BF4-C477-2D85D50E5153}"/>
+		</sprite>
+		<sprite origin="480,96" offset="48">
+			<picture ref="{33B3BE95-D0EF-4BF4-C477-2D85D50E5153}"/>
+		</sprite>
+	</contribution>
+
+	<!--####### from here definition of DC-10 #######-->		
+	<!--RedLine-->
+	<!--BlueLine-->
+	<contribution type="GenericStructure" id="{CBE0C36F-6AB4-434A-C477-0F589659C756}-dc10-a">
+		&dc10a;
+		&crRed;
+		&crDeepBlue;
+		<sprite origin="0,0" offset="40">
+			<picture ref="{DBED583F-A88F-49CC-C477-85840DCD7C3D}"/>
+		</sprite>
+		<sprite origin="128,0" offset="40">
+			<picture ref="{DBED583F-A88F-49CC-C477-85840DCD7C3D}"/>
+		</sprite>
+		<sprite origin="256,0" offset="40">
+			<picture ref="{DBED583F-A88F-49CC-C477-85840DCD7C3D}"/>
+		</sprite>
+		<sprite origin="384,0" offset="40">
+			<picture ref="{DBED583F-A88F-49CC-C477-85840DCD7C3D}"/>
+		</sprite>
+		<sprite origin="0,240" offset="40">
+			<picture ref="{DBED583F-A88F-49CC-C477-85840DCD7C3D}"/>
+		</sprite>
+		<sprite origin="128,240" offset="40">
+			<picture ref="{DBED583F-A88F-49CC-C477-85840DCD7C3D}"/>
+		</sprite>
+		<sprite origin="256,240" offset="40">
+			<picture ref="{DBED583F-A88F-49CC-C477-85840DCD7C3D}"/>
+		</sprite>
+		<sprite origin="384,240" offset="40">
+			<picture ref="{DBED583F-A88F-49CC-C477-85840DCD7C3D}"/>
+		</sprite>
+		<sprite origin="0,160" offset="40">
+			<picture ref="{DBED583F-A88F-49CC-C477-85840DCD7C3D}"/>
+		</sprite>
+		<sprite origin="128,160" offset="40">
+			<picture ref="{DBED583F-A88F-49CC-C477-85840DCD7C3D}"/>
+		</sprite>
+		<sprite origin="256,160" offset="40">
+			<picture ref="{DBED583F-A88F-49CC-C477-85840DCD7C3D}"/>
+		</sprite>
+		<sprite origin="384,160" offset="40">
+			<picture ref="{DBED583F-A88F-49CC-C477-85840DCD7C3D}"/>
+		</sprite>
+		<sprite origin="0,80" offset="40">
+			<picture ref="{DBED583F-A88F-49CC-C477-85840DCD7C3D}"/>
+		</sprite>
+		<sprite origin="128,80" offset="40">
+			<picture ref="{DBED583F-A88F-49CC-C477-85840DCD7C3D}"/>
+		</sprite>
+		<sprite origin="256,80" offset="40">
+			<picture ref="{DBED583F-A88F-49CC-C477-85840DCD7C3D}"/>
+		</sprite>
+		<sprite origin="384,80" offset="40">
+			<picture ref="{DBED583F-A88F-49CC-C477-85840DCD7C3D}"/>
+		</sprite>
+	</contribution>
+
+	
+	<!--SkiBlueBody-->
+	<!--WineRedBody-->
+	<contribution type="GenericStructure" id="{CBE0C36F-6AB4-434A-C477-0F589659C756}-dc10-b">
+		&dc10b;
+		&crSkyBlue;
+		&crWineRed;
+		<sprite origin="0,0" offset="40">
+			<picture ref="{6380D96B-08C0-4635-C477-2DF6E5F017D2}"/>
+		</sprite>
+		<sprite origin="128,0" offset="40">
+			<picture ref="{6380D96B-08C0-4635-C477-2DF6E5F017D2}"/>
+		</sprite>
+		<sprite origin="256,0" offset="40">
+			<picture ref="{6380D96B-08C0-4635-C477-2DF6E5F017D2}"/>
+		</sprite>
+		<sprite origin="384,0" offset="40">
+			<picture ref="{6380D96B-08C0-4635-C477-2DF6E5F017D2}"/>
+		</sprite>
+		<sprite origin="0,240" offset="40">
+			<picture ref="{6380D96B-08C0-4635-C477-2DF6E5F017D2}"/>
+		</sprite>
+		<sprite origin="128,240" offset="40">
+			<picture ref="{6380D96B-08C0-4635-C477-2DF6E5F017D2}"/>
+		</sprite>
+		<sprite origin="256,240" offset="40">
+			<picture ref="{6380D96B-08C0-4635-C477-2DF6E5F017D2}"/>
+		</sprite>
+		<sprite origin="384,240" offset="40">
+			<picture ref="{6380D96B-08C0-4635-C477-2DF6E5F017D2}"/>
+		</sprite>
+		<sprite origin="0,160" offset="40">
+			<picture ref="{6380D96B-08C0-4635-C477-2DF6E5F017D2}"/>
+		</sprite>
+		<sprite origin="128,160" offset="40">
+			<picture ref="{6380D96B-08C0-4635-C477-2DF6E5F017D2}"/>
+		</sprite>
+		<sprite origin="256,160" offset="40">
+			<picture ref="{6380D96B-08C0-4635-C477-2DF6E5F017D2}"/>
+		</sprite>
+		<sprite origin="384,160" offset="40">
+			<picture ref="{6380D96B-08C0-4635-C477-2DF6E5F017D2}"/>
+		</sprite>
+		<sprite origin="0,80" offset="40">
+			<picture ref="{6380D96B-08C0-4635-C477-2DF6E5F017D2}"/>
+		</sprite>
+		<sprite origin="128,80" offset="40">
+			<picture ref="{6380D96B-08C0-4635-C477-2DF6E5F017D2}"/>
+		</sprite>
+		<sprite origin="256,80" offset="40">
+			<picture ref="{6380D96B-08C0-4635-C477-2DF6E5F017D2}"/>
+		</sprite>
+		<sprite origin="384,80" offset="40">
+			<picture ref="{6380D96B-08C0-4635-C477-2DF6E5F017D2}"/>
+		</sprite>
+	</contribution>
+
+</plug-in>

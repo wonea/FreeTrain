@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Creek</title>
+	<!--!<title>小川</title>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	<author>NagayoshiyaEkimaeten</author>
+	<!--!<author>永吉屋駅前店さん</author>-->
+	
+	<contribution type="land" id="{25AA2C3E-2014-4134-A4FB-DAD90FDBC758}">
+		<group>River</group>
+		<!--!<group>河川</group>-->
+		<name>Creek</name>
+		<!--!<name>小川</name>-->
+		<class name="freetrain.world.land.creek.eikichiya.CreekBuilder"
+			codebase="bin/Debug/FreeTrain.Creek.Eikichiya.dll"/>
+		<picture src="creek.bmp">
+			<override when="winter" src="creek.WIN.bmp" />
+		</picture>
+		<price>40</price>
+		<computerCannotBuild />
+	</contribution>
+</plug-in>

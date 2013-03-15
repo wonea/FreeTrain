@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Buildings (factories)</title>
+	<author>Hiro Ayase</author>
+	<homepage>http://www14.big.or.jp/~ayase/freetrain/</homepage>
+	
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-StructureImage-Plants-01}">
+		<picture src="plants.bmp">
+			<override when="night" src="plants_n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-StructureImage-Plants-02}">
+		<picture src="plants2.bmp">
+			<override when="night" src="plants2_n.bmp" />
+		</picture>
+	</contribution>
+	
+	
+	<contribution type="GenericStructure" id="{FreeTrain-AYASE-Hiro-StructureImpl-Plants-01a}">
+		<group>Factory</group>
+		<structure>
+			<category byname="Factories"/>
+		</structure>
+		<price>2000</price>
+		<height>5</height>
+		<size>2,2</size>
+		<sprite origin="0,0" offset="72">
+			<picture ref="{FreeTrain-AYASE-Hiro-StructureImage-Plants-01}"/>
+		</sprite>
+		<sprite origin="64,0" offset="72">
+			<picture ref="{FreeTrain-AYASE-Hiro-StructureImage-Plants-01}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+	
+	
+	<contribution type="GenericStructure" id="{FreeTrain-AYASE-Hiro-StructureImpl-Plants-02a}">
+		<group>Warehouse</group>
+		<structure>
+			<category byname="Warehouses"/>
+		</structure>
+		<price>1000</price>
+		<height>2</height>
+		<size>5,2</size>
+		<sprite origin="0,0" offset="56">
+			<picture ref="{FreeTrain-AYASE-Hiro-StructureImage-Plants-02}"/>
+		</sprite>
+		<sprite origin="112,0" offset="32" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-StructureImage-Plants-02}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+</plug-in>

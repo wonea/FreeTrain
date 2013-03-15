@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<author>Shikashika</author>
+ 	<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+	<title>Ichibata Electric Railway</title>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 一畑電気鉄道 ED22 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-ED22}">
+		<picture src="ED22.bmp" />
+	</contribution>
+	<!-- 一畑電気鉄道 ト50 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-to50}">
+		<picture src="to50.bmp" />
+	</contribution>
+	<!-- 一畑電気鉄道 ワム -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-wamu50000}">
+		<picture src="wamu50000.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 一畑電気鉄道 ED22 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-ED22}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-ED22}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	<!-- 一畑電気鉄道 ト50 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-to50}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-to50}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	<!-- 一畑電気鉄道 ワム -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-wamu50000}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-wamu50000}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-ED22}">
+		<company>Ichibata Electric Railway</company>
+		<type>ED22</type>
+		<name>Baggage Train</name>
+		<author>Shikashika</author>
+		<description>昭和02年ボールドウイン・ウェスチングハウス社製造の電気機関車ED22です。元信濃鉄道1号で、国鉄ED221、西武鉄道ED1、近江鉄道ED1と変遷して昭和30年ED221に改番、昭和35年一畑電鉄に入線しました。一畑電鉄の貨物営業廃止以後、昭和49年に弘南鉄道に譲渡されています。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-ED22}"/>
+			<car char="無" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-to50}"/>
+			<car char="有" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-wamu50000}"/>
+			
+			<composition>電</composition>
+			<composition>電無</composition>
+			<composition>電無有</composition>
+			<composition>電無有有</composition>
+			<composition>電無有有有</composition>
+			<composition>電無有無有有</composition>
+			<composition>電無有無有有有</composition>
+			<composition>電無有無無有有有</composition>
+			<composition>電無有無無有有有有</composition>
+			<composition>電無有無無有有有有有</composition>
+			<composition>電無有無無有有有無有有</composition>
+
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 一畑電気鉄道 デハニ50形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-dehani50}">
+		<picture src="dehani50.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 一畑電気鉄道 デハニ50形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-dehani50}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-dehani50}" />
+		</sprite>
+		<capacity>90</capacity>
+	</contribution>
+	<!-- 一畑電気鉄道 デハ50形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha50}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-dehani50}" />
+		</sprite>
+		<capacity>36</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-dehani50}">
+		<company>Ichibata Electric Railway</company>
+		<type>DEHANI 50 Series</type>
+		<name></name>
+		<author>Shikashika</author>
+		<description>昭和03年日本車輌製造の荷物合造車。荷物輸送の減少と共に、デハニ51は昭和26年にデハ21に、デハニ54は昭和42年にデハ11に改造され、デハニ52は定員36名のお座敷列車デハ52に改造されています。3扉全て手動扉です。ラッシュ時の増強や、無蓋貨車を引いてバラスト散布作業などに使用されたりしています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-dehani50}"/>
+			<car char="無" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-to50}"/>
+			
+			<composition>Ａ</composition>
+			<composition>Ａ無</composition>
+		</config>
+	</contribution>
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-deha50}">
+		<company>Ichibata Electric Railway</company>
+		<type>DEHA 50 Series</type>
+		<name></name>
+		<author>Shikashika</author>
+		<description>昭和03年日本車輌製造の荷物合造車デハニ52を、お座敷列車に改造したものです。畳は難燃性のものを使用しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-deha50}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 一畑電気鉄道 デハ1形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-deha1}">
+		<picture src="deha1.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 一畑電気鉄道 デハ1形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-deha1}" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-deha1}">
+		<company>Ichibata Electric Railway</company>
+		<type>DEHA 1 Series</type>
+		<name>Daisha Line</name>
+		<author>Shikashika</author>
+		<description>昭和02年日本車輌製造。昭和53年にアルナ工機でワンマン化の改造がされ、大社線専用車となりました。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-deha1}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 一畑電気鉄道 デハ10形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-deha10}">
+		<picture src="deha10.bmp" />
+	</contribution>
+	<!-- 一畑電気鉄道 クハ110形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-kuha110}">
+		<picture src="kuha110.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 一畑電気鉄道 デハ10形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha10}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-deha10}" />
+		</sprite>
+		<capacity>110</capacity>
+	</contribution>
+	<!-- 一畑電気鉄道 クハ110形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha110}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-kuha110}" />
+		</sprite>
+		<capacity>110</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha110-R}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha110}"/>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-deha10}">
+		<company>Ichibata Electric Railway</company>
+		<type>DEHA 10 Series + KUHA 110 Series</type>
+		<name></name>
+		<author>Shikashika</author>
+		<description>デハ10形とクハ110形の編成。デハ11は、昭和05年日本車輌製造のデハニ54を昭和42年に改造して製造されました。クハ111は、昭和03年日本車輌製造の制御車クハ101を昭和23年に電動車デハ7に改造し、それを昭和37年に再び制御車として改造して製造されました。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-deha10}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha110-R}"/>
+			
+			<composition>ＡＢ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 一畑電気鉄道 デハ20形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-deha20}">
+		<picture src="deha20.bmp" />
+	</contribution>
+	<!-- 一畑電気鉄道 クハ100形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-kuha100}">
+		<picture src="kuha100.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 一畑電気鉄道 デハ20形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha20}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-deha20}" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+	<!-- 一畑電気鉄道 クハ100形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha100}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-kuha100}" />
+		</sprite>
+		<capacity>110</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha100-R}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha100}"/>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-deha20}">
+		<company>Ichibata Electric Railway</company>
+		<type>DEHA 20 Series + KUHA 100 Series</type>
+		<name>Matsue Line</name>
+		<author>Shikashika</author>
+		<description>デハ20形とクハ100形の編成。デハ20形は、日本車輌製造のデハニ50形やデハ1形を、長距離輸送用に2扉セミクロスシートにナニワ工機で改造して製造されました。クハ100形は、昭和15年木南車両製造の武蔵野鉄道クハ5860形(西部1235～)を昭和33年～34年に移籍し、昭和37年には両運転台だったものを片運転台に改造してスペースを確保し、車椅子にも対応しています。どちらの車両もドアは手動です。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-deha20}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha100-R}"/>
+			
+			<composition>Ａ</composition>
+			<composition>ＡＢ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 一畑電気鉄道 デハ60系 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-deha60}">
+		<picture src="deha60.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 一畑電気鉄道 デハ60系 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha60}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-deha60}" />
+		</sprite>
+		<capacity>147</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-deha60}">
+		<company>Ichibata Electric Railway</company>
+		<type>DEHA 60 Series</type>
+		<name></name>
+		<author>Shikashika</author>
+		<description>昭和36年西武所沢車輌工場製造の元西武鉄道クモハ551系です。クモハ552に551の、554に553の運転台を搭載して両運転台の車両に改造して、昭和61年に入線しました。当初はデハ92と93でしたが、改番されました。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-deha60}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 一畑電気鉄道 デハ70系 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-deha70}">
+		<picture src="deha70.bmp" />
+	</contribution>
+	<!-- 一畑電気鉄道 クハ170系 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-kuha170}">
+		<picture src="kuha170.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 一畑電気鉄道 デハ70系 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha70}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-deha70}" />
+		</sprite>
+		<capacity>120</capacity>
+	</contribution>
+	<!-- 一畑電気鉄道 クハ170系 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha170}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-kuha170}" />
+		</sprite>
+		<capacity>120</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha170-R}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha170}"/>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-deha70}">
+		<company>Ichibata Electric Railway</company>
+		<type>DEHA 70 Series + KUHA 170 Series</type>
+		<name>松江線</name>
+		<author>Shikashika</author>
+		<description>デハ70系とクハ170系の編成。デハ70系は、元武蔵野鉄道の制御車のクハ5570系で、昭和22年に電装化され西武モハ300系(クモハ300系)になり、昭和39年に西武所沢車両工場で改造して入線しました。クハ170系は、同じく元武蔵野鉄道クハ5570系で、電装化されていた西武モハ300系(クモハ300系)を電装解除して、再び制御車に改造されました。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-deha70}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha170-R}"/>
+			
+			<composition>ＡＢ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 一畑電気鉄道 デハ80系 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-deha80}">
+		<picture src="deha80.bmp" />
+	</contribution>
+	<!-- 一畑電気鉄道 クハ180系 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-kuha180}">
+		<picture src="kuha180.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 一畑電気鉄道 デハ80系 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha80}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-deha80}" />
+		</sprite>
+		<capacity>160</capacity>
+	</contribution>
+	<!-- 一畑電気鉄道 クハ180系 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha180}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-kuha180}" />
+		</sprite>
+		<capacity>160</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha180-R}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha180}"/>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-deha80}">
+		<company>Ichibata Electric Railway</company>
+		<type>DEHA 80 Series + KUHA 180 Series</type>
+		<name></name>
+		<author>Shikashika</author>
+		<description>昭和34年西武所沢車輌工場製造の元西武鉄道451系です。昭和57年に入線しました。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-deha80}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha180-R}"/>
+			<car char="Ｃ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-deha60}"/>
+			
+			<composition>ＡＢ</composition>
+			<composition>ＡＢＣ</composition>
+			<composition>ＡＢＡＢ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 一畑電気鉄道 デハ90系 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-deha90}">
+		<picture src="deha90.bmp" />
+	</contribution>
+	<!-- 一畑電気鉄道 クハ190系 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-kuha190}">
+		<picture src="kuha190.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 一畑電気鉄道 デハ90系 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha90}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-deha90}" />
+		</sprite>
+		<capacity>160</capacity>
+	</contribution>
+	<!-- 一畑電気鉄道 クハ190系 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha190}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-kuha190}" />
+		</sprite>
+		<capacity>160</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha190-R}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha190}"/>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-deha90}">
+		<company>Ichibata Electric Railway</company>
+		<type>DEHA 90 Series + KUHA 190 Series</type>
+		<name></name>
+		<author>Shikashika</author>
+		<description>昭和37年西武所沢車輌工場製造の元西武鉄道551系です。昭和60年に入線しました。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-deha90}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-kuha190-R}"/>
+			<car char="Ｃ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-deha60}"/>
+			
+			<composition>ＡＢ</composition>
+			<composition>ＡＢＣ</composition>
+			<composition>ＡＢＡＢ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 一畑電気鉄道 デハ2100系 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-deha2101}">
+		<picture src="deha2101.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-deha2103}">
+		<picture src="deha2103.bmp" />
+	</contribution>
+	<!-- 一畑電気鉄道 デハ2110系 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-deha2111}">
+		<picture src="deha2111.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-deha2113}">
+		<picture src="deha2113.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 一畑電気鉄道 デハ2100系 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha2101}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-deha2101}" />
+		</sprite>
+		<capacity>126</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha2103}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-deha2103}" />
+		</sprite>
+		<capacity>126</capacity>
+	</contribution>
+	<!-- 一畑電気鉄道 デハ2110系 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha2111}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-deha2111}" />
+		</sprite>
+		<capacity>126</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha2111-R}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-deha2111}"/>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha2113}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-deha2113}" />
+		</sprite>
+		<capacity>126</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha2113-R}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-deha2113}"/>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-deha2101}">
+		<company>Ichibata Electric Railway</company>
+		<type>DEHA 2100+2110 Series</type>
+		<name>3-door</name>
+		<author>Shikashika</author>
+		<description>昭和43年日本車輌製造の元京王電鉄5000系です。平成06年に入線しました。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-deha2101}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-deha2111-R}"/>
+			
+			<composition>ＡＢ</composition>
+		</config>
+	</contribution>
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-deha2103}">
+		<company>Ichibata Electric Railway</company>
+		<type>DEHA 2100+2110 Series</type>
+		<name>2-door</name>
+		<author>Shikashika</author>
+		<description>昭和43年日本車輌製造の元京王電鉄5000系です。平成07年に入線しました。2扉に改造され座席定員が増えています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-deha2103}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-deha2113-R}"/>
+			
+			<composition>ＡＢ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 一畑電気鉄道 デハ3000系 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-deha3000}">
+		<picture src="deha3000.bmp" />
+	</contribution>
+	<!-- 一畑電気鉄道 デハ3010系 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-deha3010}">
+		<picture src="deha3010.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 一畑電気鉄道 デハ3000系 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha3000}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-deha3000}" />
+		</sprite>
+		<capacity>126</capacity>
+	</contribution>
+	<!-- 一畑電気鉄道 デハ3010系 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha3010}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-deha3010}" />
+		</sprite>
+		<capacity>126</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha3010-R}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-deha3010}"/>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-deha3010}">
+		<company>Ichibata Electric Railway</company>
+		<type>DEHA 3000+3010 Series</type>
+		<name></name>
+		<author>Shikashika</author>
+		<description>昭和34年帝国車輌製造の元南海電鉄21000系です。平成08年に入線しました。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-deha3000}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-deha3010-R}"/>
+			
+			<composition>ＡＢ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 一畑電気鉄道 デハ5000系 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-deha5000}">
+		<picture src="deha5000.bmp" />
+	</contribution>
+	<!-- 一畑電気鉄道 デハ5100系 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-deha5100}">
+		<picture src="deha5100.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 一畑電気鉄道 デハ5000系 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha5000}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-deha5000}" />
+		</sprite>
+		<capacity>110</capacity>
+	</contribution>
+	<!-- 一畑電気鉄道 デハ5100系 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha5100}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-deha5100}" />
+		</sprite>
+		<capacity>110</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-deha5100-R}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-deha5100}"/>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-deha5000}">
+		<company>Ichibata Electric Railway</company>
+		<type>DEHA 5000+5100 Series</type>
+		<name>Izumo Oyashiro</name>
+		<author>Shikashika</author>
+		<description>昭和42年日本車輌製造の元京王電鉄5000系です。平成10年に入線しました。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-deha5000}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-deha5100-R}"/>
+			
+			<composition>ＡＢ</composition>
+		</config>
+	</contribution>
+
+</plug-in>

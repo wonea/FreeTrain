@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<plug-in>
+	<title>テスト</title>
+ 	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+
+	<!-- トワイライト中間車両 -->
+	<contribution type="trainCar" id="{F9427702-D023-431D-BD3C-9E0A4C654D84}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<picture src="trainef81b.bmp" origin="0,0"/>
+		<capacity>60</capacity>
+	</contribution>
+
+	<!-- トワイライト最後尾 -->
+	<contribution type="trainCar" id="{CC80D97A-461B-4E87-9B0A-52D12228C7E8}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<picture src="trainef81c.bmp" origin="0,0"/>
+		<capacity>60</capacity>
+	</contribution>
+
+	<!-- EF81-->
+	<contribution type="trainCar" id="{27397861-4908-4C61-A5B6-749B7D6F1BF9}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<picture src="trainef81a.bmp" origin="0,0"/>
+		<capacity>0</capacity>
+	</contribution>
+
+	<contribution type="train" id="{4161129C-2C3C-493A-B703-16825455D353}">
+		<company>JR西日本</company>
+		<type>EF81</type>
+		<name>トワイライト専用色</name>
+		<author>ては</author>
+		<description>大阪～札幌間を走行する豪華寝台特急。ホテル並みの設備を揃える。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{27397861-4908-4C61-A5B6-749B7D6F1BF9}"/>
+			<body carRef="{F9427702-D023-431D-BD3C-9E0A4C654D84}"/>
+			<tail carRef="{CC80D97A-461B-4E87-9B0A-52D12228C7E8}"/>
+		</composition>
+	</contribution>
+
+</plug-in>

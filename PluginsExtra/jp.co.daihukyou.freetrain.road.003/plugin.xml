@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Road</title>
+	<author>Daifukyo(original:PC-9801FA)</author>
+	<homepage>http://www3.to/FreeTrain/</homepage>
+	
+	<contribution type="road" id="{daihukyou-road-4BC1-8160-9706FDF6FB6B}">
+		<class name="freetrain.contributions.road.A3RoadContribution" />
+		<name>2 lane road (orange line,lights)</name>
+		<description>orange lined 2 lane road with street light</description>
+		<picture src="a3road_d.bmp">
+			<override when="night" src="a3road_n.bmp"/>
+		</picture>
+	</contribution>
+</plug-in>

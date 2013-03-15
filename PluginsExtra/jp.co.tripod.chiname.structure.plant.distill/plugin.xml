@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY pm-distill '
+	<group>Plant-Distillation tower</group>
+	<structure>
+		<category byname="Chemical Plants"/>
+	</structure>
+	<size>1,1</size>
+	<price>1600</price>
+	<computerCannotBuild/>
+'>
+]>
+<plug-in>
+	<title>Plant Distillation tower</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+	
+	<contribution type="picture" id="{D6D7F90F-1923-4B30-C477-91146BFC0BFD}">
+		<picture src="plant_distill.bmp" >
+			<override when="night" src="plant_distill.n.bmp" />
+		</picture>
+	</contribution>
+<!-- distilling tower -->
+	<contribution type="GenericStructure" id="{ACBF75F4-9DE8-4972-C477-12633D583C38}-0">
+		&pm-distill;
+		<height>5</height>
+		<sprite origin="0,0" offset="72">
+			<picture ref="{D6D7F90F-1923-4B30-C477-91146BFC0BFD}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{ACBF75F4-9DE8-4972-C477-12633D583C38}-1">
+		&pm-distill;
+		<height>5</height>
+		<sprite origin="32,0" offset="72">
+			<picture ref="{D6D7F90F-1923-4B30-C477-91146BFC0BFD}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{ACBF75F4-9DE8-4972-C477-12633D583C38}-2">
+		&pm-distill;
+		<height>5</height>
+		<sprite origin="64,0" offset="72">
+			<picture ref="{D6D7F90F-1923-4B30-C477-91146BFC0BFD}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{ACBF75F4-9DE8-4972-C477-12633D583C38}-3">
+		&pm-distill;
+		<height>5</height>
+		<sprite origin="96,0" offset="72">
+			<picture ref="{D6D7F90F-1923-4B30-C477-91146BFC0BFD}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{ACBF75F4-9DE8-4972-C477-12633D583C38}-4">
+		&pm-distill;
+		<height>4</height>
+		<sprite origin="128,16" offset="56">
+			<picture ref="{D6D7F90F-1923-4B30-C477-91146BFC0BFD}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{ACBF75F4-9DE8-4972-C477-12633D583C38}-5">
+		&pm-distill;
+		<height>4</height>
+		<sprite origin="160,16" offset="56">
+			<picture ref="{D6D7F90F-1923-4B30-C477-91146BFC0BFD}"/>
+		</sprite>
+	</contribution>
+	
+</plug-in>

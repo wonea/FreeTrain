@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Railroad facilities (Amarube iron bridge)</title>
+	<author>Hiro Ayase</author>
+	<homepage>http://www14.big.or.jp/~ayase/freetrain/</homepage>
+
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-RailStructureImg-AmarubeBridge}">
+		<picture src="amarube.bmp"/>
+	</contribution>
+
+	<contribution type="railStationary" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-AmarubeBridge-1}">
+		<group>Amarube iron bridge</group>
+		<price>1000</price>
+		<size>3,1</size>
+		<height>5</height>
+		<sprite origin="0,0" offset="112">
+			<picture ref="{FreeTrain-AYASE-Hiro-RailStructureImg-AmarubeBridge}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+	<contribution type="railStationary" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-AmarubeBridge-2}">
+		<group>Amarube iron bridge</group>
+		<price>1000</price>
+		<size>1,3</size>
+		<height>5</height>
+		<sprite origin="64,0" offset="96">
+			<picture ref="{FreeTrain-AYASE-Hiro-RailStructureImg-AmarubeBridge}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+</plug-in>

@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY Price '
+	<price>10</price>
+	<computerCannotBuild/>
+'>
+<!ENTITY ClassDef '
+		<class name="freetrain.contributions.land.StaticLandBuilder"/>
+		&Price;
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>1</base>
+		</population>
+		<computerCannotBuild/>
+'>
+]>
+
+<plug-in>
+	<title>Seashore and Riverbank structures</title>
+	<author>HEUER</author>
+	<homepage>http://freetrain.finito-web.com/</homepage>
+	
+	<contribution type="picture" id="{LAND0001-8058-11D7-BB78-0090FE1AB959}">
+		<picture src="seaside.bmp">
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{LAND0002-8058-11D7-BB78-0090FE1AB959}">
+		<picture src="riverbank.bmp">
+			<override when="autumn" src="riverbank_a.bmp" />
+			<override when="winter" src="riverbank_w.bmp" />
+		</picture>
+	</contribution>
+	
+	<contribution type="land" id="{LAND0101-8058-11D7-BB78-0090FE1AB959}">
+		<group>Sandy beach</group>
+		&ClassDef;
+		<sprite origin=" 0, 0" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0102-8058-11D7-BB78-0090FE1AB959}">
+		<group>Sandy beach</group>
+		&ClassDef;
+		<sprite origin="32, 0" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0103-8058-11D7-BB78-0090FE1AB959}">
+		<group>Sandy beach</group>
+		&ClassDef;
+		<sprite origin="64, 0" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>	
+	<contribution type="land" id="{LAND0104-8058-11D7-BB78-0090FE1AB959}">
+		<group>Sandy beach</group>
+		&ClassDef;
+		<sprite origin="96, 0" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0105-8058-11D7-BB78-0090FE1AB959}">
+		<group>Sandy beach</group>
+		&ClassDef;
+		<sprite origin=" 0,16" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0106-8058-11D7-BB78-0090FE1AB959}">
+		<group>Sandy beach</group>
+		&ClassDef;
+		<sprite origin="32,16" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0107-8058-11D7-BB78-0090FE1AB959}">
+		<group>Sandy beach</group>
+		&ClassDef;
+		<sprite origin="64,16" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>	
+	<contribution type="land" id="{LAND0108-8058-11D7-BB78-0090FE1AB959}">
+		<group>Sandy beach</group>
+		&ClassDef;
+		<sprite origin="96,16" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0109-8058-11D7-BB78-0090FE1AB959}">
+		<group>Sandy beach</group>
+		&ClassDef;
+		<sprite origin=" 0,32" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0110-8058-11D7-BB78-0090FE1AB959}">
+		<group>Sandy beach</group>
+		&ClassDef;
+		<sprite origin="32,32" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0111-8058-11D7-BB78-0090FE1AB959}">
+		<group>Sandy beach</group>
+		&ClassDef;
+		<sprite origin="64,32" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>	
+	<contribution type="land" id="{LAND0112-8058-11D7-BB78-0090FE1AB959}">
+		<group>Sandy beach</group>
+		&ClassDef;
+		<sprite origin="96,32" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0113-8058-11D7-BB78-0090FE1AB959}">
+		<group>Sandy beach</group>
+		&ClassDef;
+		<sprite origin=" 0,48" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0114-8058-11D7-BB78-0090FE1AB959}">
+		<group>Wave dissipating blocks</group>
+		&ClassDef;
+		<sprite origin="32,48" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0115-8058-11D7-BB78-0090FE1AB959}">
+		<group>Wave dissipating blocks</group>
+		&ClassDef;
+		<sprite origin="64,48" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0116-8058-11D7-BB78-0090FE1AB959}">
+		<group>Wave dissipating blocks</group>
+		&ClassDef;
+		<sprite origin="96,48" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0117-8058-11D7-BB78-0090FE1AB959}">
+		<group>Wave dissipating blocks</group>
+		&ClassDef;
+		<sprite origin=" 0,64" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0118-8058-11D7-BB78-0090FE1AB959}">
+		<group>Wave dissipating blocks</group>
+		&ClassDef;
+		<sprite origin="32,64" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0119-8058-11D7-BB78-0090FE1AB959}">
+		<group>Wave dissipating blocks</group>
+		&ClassDef;
+		<sprite origin="64,64" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0120-8058-11D7-BB78-0090FE1AB959}">
+		<group>Wave dissipating blocks</group>
+		&ClassDef;
+		<sprite origin="96,64" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0121-8058-11D7-BB78-0090FE1AB959}">
+		<group>Wave dissipating blocks</group>
+		&ClassDef;
+		<sprite origin=" 0,80" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0122-8058-11D7-BB78-0090FE1AB959}">
+		<group>Wave dissipating blocks</group>
+		&ClassDef;
+		<sprite origin="32,80" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0123-8058-11D7-BB78-0090FE1AB959}">
+		<group>Wave dissipating blocks</group>
+		&ClassDef;
+		<sprite origin="64,80" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0124-8058-11D7-BB78-0090FE1AB959}">
+		<group>Wave dissipating blocks</group>
+		&ClassDef;
+		<sprite origin="96,80" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0125-8058-11D7-BB78-0090FE1AB959}">
+		<group>Wave dissipating blocks</group>
+		&ClassDef;
+		<sprite origin=" 0,96" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0126-8058-11D7-BB78-0090FE1AB959}">
+		<group>Wave dissipating blocks</group>
+		&ClassDef;
+		<sprite origin="32,96" offset="0">
+			<picture ref="{LAND0001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0201-8058-11D7-BB78-0090FE1AB959}">
+		<group>Riverbank</group>
+		&ClassDef;
+		<sprite origin=" 0, 0" offset="0">
+			<picture ref="{LAND0002-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0202-8058-11D7-BB78-0090FE1AB959}">
+		<group>Riverbank</group>
+		&ClassDef;
+		<sprite origin="32, 0" offset="0">
+			<picture ref="{LAND0002-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0203-8058-11D7-BB78-0090FE1AB959}">
+		<group>Riverbank</group>
+		&ClassDef;
+		<sprite origin="64, 0" offset="0">
+			<picture ref="{LAND0002-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>	
+	<contribution type="land" id="{LAND0204-8058-11D7-BB78-0090FE1AB959}">
+		<group>Riverbank</group>
+		&ClassDef;
+		<sprite origin="96, 0" offset="0">
+			<picture ref="{LAND0002-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0205-8058-11D7-BB78-0090FE1AB959}">
+		<group>Riverbank</group>
+		&ClassDef;
+		<sprite origin=" 0,16" offset="0">
+			<picture ref="{LAND0002-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0206-8058-11D7-BB78-0090FE1AB959}">
+		<group>Riverbank</group>
+		&ClassDef;
+		<sprite origin="32,16" offset="0">
+			<picture ref="{LAND0002-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0207-8058-11D7-BB78-0090FE1AB959}">
+		<group>Riverbank</group>
+		&ClassDef;
+		<sprite origin="64,16" offset="0">
+			<picture ref="{LAND0002-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>	
+	<contribution type="land" id="{LAND0208-8058-11D7-BB78-0090FE1AB959}">
+		<group>Riverbank</group>
+		&ClassDef;
+		<sprite origin="96,16" offset="0">
+			<picture ref="{LAND0002-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0209-8058-11D7-BB78-0090FE1AB959}">
+		<group>Riverbank</group>
+		&ClassDef;
+		<sprite origin=" 0,32" offset="0">
+			<picture ref="{LAND0002-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0210-8058-11D7-BB78-0090FE1AB959}">
+		<group>Riverbank</group>
+		&ClassDef;
+		<sprite origin="32,32" offset="0">
+			<picture ref="{LAND0002-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND0211-8058-11D7-BB78-0090FE1AB959}">
+		<group>Riverbank</group>
+		&ClassDef;
+		<sprite origin="64,32" offset="0">
+			<picture ref="{LAND0002-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>	
+	<contribution type="land" id="{LAND0212-8058-11D7-BB78-0090FE1AB959}">
+		<group>Riverbank</group>
+		&ClassDef;
+		<sprite origin="96,32" offset="0">
+			<picture ref="{LAND0002-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+</plug-in>

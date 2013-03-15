@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<plug-in>
+  <title>TYPE1500</title> 
+  <author>Shino</author> 
+  <homepage></homepage>
+ 
+<!-- 1500先頭車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9A44-TYPE1500}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a2_1.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution>
+<!-- 1500最後尾車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9A44-TYPE1500}-B">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a1_1.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution> 
+<!--1500中間車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9A44-TYPE1500}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500b_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--1500パンタA車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9A44-TYPE1500}-P1">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p1_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--1500パンタB車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9A44-TYPE1500}-P2">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p2_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{1A68G5B0-0E5E-402D-87CB-525CA403F917}">
+<company>Keihin Electric Express Railway</company>
+<type>1500 Series; may run on competitors' lines (slow)</type>
+<name>Keikyu Line</name>
+<author>Shino</author>
+<description>Introduced in 1985, 1500 Series train ran on second generation Toei Asakusa, Keisei, and Hokuso-Kodan lines. It has until date seen its specifications change occasionally. The first 20 carriages were manufactured in steel, while the following were in aluminum alloy. There are three set formations of 4, 6, and 8 cars. Of these, the 8 car formation has an emergency mode that can bring the train up to speeds of 120 km/h. Widely used as everything from local service to rapid express. (low-speed version with field chopper control; can run on competitors' lines)</description>
+<fare>140</fare>
+<price>1900</price>
+<speed>slow</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{6F2F2667-05F0-4595-9A44-TYPE1500}-A"/>
+<car char="中" ref="{6F2F2667-05F0-4595-9A44-TYPE1500}-C"/>
+<car char="後" ref="{6F2F2667-05F0-4595-9A44-TYPE1500}-B"/> 
+<car char="A" ref="{6F2F2667-05F0-4595-9A44-TYPE1500}-P1"/> 
+<car char="B" ref="{6F2F2667-05F0-4595-9A44-TYPE1500}-P2"/> 
+<composition>前中A後</composition>
+<composition>前中B中A後</composition>
+<composition>前中A中A中A後</composition>
+</config>
+</contribution>
+
+<!-- 1500先頭車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9B44-TYPE1500}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a2_1.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution>
+<!-- 1500最後尾車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9B44-TYPE1500}-B">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a1_1.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution> 
+<!--1500中間車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9B44-TYPE1500}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500b_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--1500パンタA車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9B44-TYPE1500}-P1">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p1_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--1500パンタB車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9B44-TYPE1500}-P2">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p2_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{2A68G5B0-0E5E-402D-87CB-525CA403F917}">
+<company>Keihin Electric Express Railway</company>
+<type>1500 Series; may run on competitor's lines (medium)</type>
+<name>Keikyu Line</name>
+<author>Shino</author>
+<description>Introduced in 1985, 1500 Series ran on second generation Toei Asakusa, Keisei, and Hokuso-Kodan lines. It has until date seen its specifications change occasionally. The first 20 carriages were manufactured in steel, while the following were in aluminum alloy. There are three set formations of 4, 6, and 8 cars. Of these, the 8 car formation has an emergency mode that can bring the train up to speeds of 120 km/h. Widely used as everything from local service to rapid express. (medium-speed version with field chopper control; can run on competitors' lines)</description>
+<fare>140</fare>
+<price>1900</price>
+<speed>medium</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{6F2F2667-05F0-4595-9B44-TYPE1500}-A"/>
+<car char="中" ref="{6F2F2667-05F0-4595-9B44-TYPE1500}-C"/>
+<car char="後" ref="{6F2F2667-05F0-4595-9B44-TYPE1500}-B"/> 
+<car char="A" ref="{6F2F2667-05F0-4595-9B44-TYPE1500}-P1"/> 
+<car char="B" ref="{6F2F2667-05F0-4595-9B44-TYPE1500}-P2"/> 
+<composition>前中A後</composition>
+<composition>前中B中A後</composition>
+<composition>前中A中A中A後</composition>
+</config>
+</contribution>
+
+<!-- 1500先頭車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9C44-TYPE1500}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a2_1.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution>
+<!-- 1500最後尾車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9C44-TYPE1500}-B">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a1_1.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution> 
+<!--1500中間車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9C44-TYPE1500}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500b_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--1500パンタA車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9C44-TYPE1500}-P1">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p1_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--1500パンタB車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9C44-TYPE1500}-P2">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p2_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{3A68G5B0-0E5E-402D-87CB-525CA403F917}">
+<company>Keihin Electric Express Railway</company>
+<type>1500 Series; may run on competitor's lines (fast)</type>
+<name>Keikyu Line</name>
+<author>Shino</author>
+<description>Introduced in 1985, 1500 Series ran on second generation Toei Asakusa, Keisei, and Hokuso-Kodan lines. It has until date seen its specifications change occasionally. The first 20 carriages were manufactured in steel, while the following were in aluminum alloy. There are three set formations of 4, 6, and 8 cars. Of these, the 8 car formation has an emergency mode that can bring the train up to speeds of 120 km/h. Widely used as everything from local service to rapid express. (high-speed version with field chopper control; can run on competitors' lines)</description>
+<fare>140</fare>
+<price>1900</price>
+<speed>fast</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{6F2F2667-05F0-4595-9C44-TYPE1500}-A"/>
+<car char="中" ref="{6F2F2667-05F0-4595-9C44-TYPE1500}-C"/>
+<car char="後" ref="{6F2F2667-05F0-4595-9C44-TYPE1500}-B"/> 
+<car char="A" ref="{6F2F2667-05F0-4595-9C44-TYPE1500}-P1"/> 
+<car char="B" ref="{6F2F2667-05F0-4595-9C44-TYPE1500}-P2"/> 
+<composition>前中A後</composition>
+<composition>前中B中A後</composition>
+<composition>前中A中A中A後</composition>
+</config>
+</contribution>
+
+<!-- 1500先頭車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9D44-TYPE1500}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a2_2.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution>
+<!-- 1500最後尾車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9D44-TYPE1500}-B">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a1_2.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution> 
+<!--1500中間車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9D44-TYPE1500}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500b_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--1500パンタA車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9D44-TYPE1500}-P1">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p1_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--1500パンタC車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9D44-TYPE1500}-P3">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p3_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{4A68G5B0-0E5E-402D-87CB-525CA403F917}">
+<company>Keihin Electric Express Railway</company>
+<type>1500 Series 1700 Model (slow)</type>
+<name>Keikyu Line</name>
+<author>Shino</author>
+<description>Completed in 1990, the 1700 Model had a VVVF inverter installed to save energy and simplify maintenance. The front of the train has a skirt attached and the from the second carriage, bucket seats installed. This VVVF inverter setup was used for 600 Series as well. A set formation of 8 cars, it also has an emergency mode that can bring the train up to speeds of 120 km/h. Today, it is used on Toei Line on nonstop routes during the night and express during the day. (low-speed version with VVF inverter)</description>
+<fare>130</fare>
+<price>2000</price>
+<speed>slow</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{6F2F2667-05F0-4595-9D44-TYPE1500}-A"/>
+<car char="中" ref="{6F2F2667-05F0-4595-9D44-TYPE1500}-C"/>
+<car char="後" ref="{6F2F2667-05F0-4595-9D44-TYPE1500}-B"/> 
+<car char="A" ref="{6F2F2667-05F0-4595-9D44-TYPE1500}-P1"/> 
+<car char="C" ref="{6F2F2667-05F0-4595-9D44-TYPE1500}-P3"/>
+<composition>前中中中C中A後</composition>
+</config>
+</contribution>
+
+<!-- 1500先頭車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9E44-TYPE1500}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a2_2.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution>
+<!-- 1500最後尾車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9E44-TYPE1500}-B">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a1_2.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution> 
+<!--1500中間車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9E44-TYPE1500}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500b_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--1500パンタA車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9E44-TYPE1500}-P1">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p1_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--1500パンタC車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9E44-TYPE1500}-P3">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p3_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{5A68G5B0-0E5E-402D-87CB-525CA403F917}">
+<company>Keihin Electric Express Railway</company>
+<type>1500 Series 1700 Model (medium)</type>
+<name>Keikyu Line</name>
+<author>Shino</author>
+<description>Completed in 1990, the 1700 Model had a VVVF inverter installed to save energy and simplify maintenance. The front of the train has a skirt attached and the from the second carriage, bucket seats installed. This VVVF inverter setup was used for 600 Series as well. A set formation of 8 cars, it also has an emergency mode that can bring the train up to speeds of 120 km/h. Today, it is used on Toei Line on nonstop routes during the night and express during the day. (medium-speed version with VVF inverter)</description>
+<fare>130</fare>
+<price>2000</price>
+<speed>medium</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{6F2F2667-05F0-4595-9E44-TYPE1500}-A"/>
+<car char="中" ref="{6F2F2667-05F0-4595-9E44-TYPE1500}-C"/>
+<car char="後" ref="{6F2F2667-05F0-4595-9E44-TYPE1500}-B"/> 
+<car char="A" ref="{6F2F2667-05F0-4595-9E44-TYPE1500}-P1"/> 
+<car char="C" ref="{6F2F2667-05F0-4595-9E44-TYPE1500}-P3"/>
+<composition>前中中中C中A後</composition>
+</config>
+</contribution>
+
+<!-- 1500先頭車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9F44-TYPE1500}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a2_2.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution>
+<!-- 1500最後尾車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9F44-TYPE1500}-B">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a1_2.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution> 
+<!--1500中間車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9F44-TYPE1500}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500b_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--1500パンタA車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9F44-TYPE1500}-P1">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p1_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--1500パンタC車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9F44-TYPE1500}-P3">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p3_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{6A68G5B0-0E5E-402D-87CB-525CA403F917}">
+<company>Keihin Electric Express Railway</company>
+<type>1500 Series 1700 Model (fast)</type>
+<name>Keikyu Line</name>
+<author>Shino</author>
+<description>Completed in 1990, the 1700 Model had a VVVF inverter installed to save energy and simplify maintenance. The front of the train has a skirt attached and the from the second carriage, bucket seats installed. This VVVF inverter setup was used for 600 Series as well. A set formation of 8 cars, it also has an emergency mode that can bring the train up to speeds of 120 km/h. Today, it is used on Toei Line on nonstop routes during the night and express during the day. (high-speed version with VVF inverter)</description>
+<fare>130</fare>
+<price>2000</price>
+<speed>fast</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{6F2F2667-05F0-4595-9F44-TYPE1500}-A"/>
+<car char="中" ref="{6F2F2667-05F0-4595-9F44-TYPE1500}-C"/>
+<car char="後" ref="{6F2F2667-05F0-4595-9F44-TYPE1500}-B"/> 
+<car char="A" ref="{6F2F2667-05F0-4595-9F44-TYPE1500}-P1"/> 
+<car char="C" ref="{6F2F2667-05F0-4595-9F44-TYPE1500}-P3"/>
+<composition>前中中中C中A後</composition>
+</config>
+</contribution>
+
+<!-- 1500先頭車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9G44-TYPE1500}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a2_3.bmp" /> 
+  </sprite>
+  <capacity>156</capacity> 
+  </contribution>
+<!-- 1500最後尾車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9G44-TYPE1500}-B">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a1_3.bmp" /> 
+  </sprite>
+  <capacity>156</capacity> 
+  </contribution> 
+<!--1500中間車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9G44-TYPE1500}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500b_2.bmp" /> 
+  </sprite>
+  <capacity>174</capacity> 
+  </contribution>
+<!--1500パンタA車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9G44-TYPE1500}-P1">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p1_2.bmp" /> 
+  </sprite>
+  <capacity>174</capacity> 
+  </contribution>
+<!--1500パンタC車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9G44-TYPE1500}-P3">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p3_2.bmp" /> 
+  </sprite>
+  <capacity>174</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{7A68G5B0-0E5E-402D-87CB-525CA403F917}">
+<company>Keihin Electric Express Railway</company>
+<type>1500 Series Refurbished (slow)</type>
+<name>Keikyu Line</name>
+<author>Shino</author>
+<description>Starting in 2001, a complete refurbishment of the 20 steel cars in the series was carried out. The window shutters unique for the steel cars were covered and so were the windows next to the connectors. Instead, fall protection hoods were installed. For accessibility, digital information boards, door chimes, and wheelchair space were also installed. Just like 2100 Series and the new 1000 Series, the motorman's seat got an emergency switch. All 1500 Series carriages are scheduled for this refurbishment. (low-speed refurbished 1500 Series)</description>
+<fare>100</fare>
+<price>2400</price>
+<speed>slow</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{6F2F2667-05F0-4595-9G44-TYPE1500}-A"/>
+<car char="中" ref="{6F2F2667-05F0-4595-9G44-TYPE1500}-C"/>
+<car char="後" ref="{6F2F2667-05F0-4595-9G44-TYPE1500}-B"/> 
+<car char="A" ref="{6F2F2667-05F0-4595-9G44-TYPE1500}-P1"/> 
+<car char="C" ref="{6F2F2667-05F0-4595-9G44-TYPE1500}-P3"/>
+<composition>前中A後</composition>
+<composition>前中A中A後</composition>
+<composition>前中中中C中A後</composition>
+<composition>前中中中C中A後前中A後</composition>
+</config>
+</contribution>
+
+<!-- 1500先頭車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9H44-TYPE1500}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a2_3.bmp" /> 
+  </sprite>
+  <capacity>156</capacity> 
+  </contribution>
+<!-- 1500最後尾車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9H44-TYPE1500}-B">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a1_3.bmp" /> 
+  </sprite>
+  <capacity>156</capacity> 
+  </contribution> 
+<!--1500中間車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9H44-TYPE1500}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500b_2.bmp" /> 
+  </sprite>
+  <capacity>174</capacity> 
+  </contribution>
+<!--1500パンタA車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9H44-TYPE1500}-P1">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p1_2.bmp" /> 
+  </sprite>
+  <capacity>174</capacity> 
+  </contribution>
+<!--1500パンタC車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9H44-TYPE1500}-P3">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p3_2.bmp" /> 
+  </sprite>
+  <capacity>174</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{8A68G5B0-0E5E-402D-87CB-525CA403F917}">
+<company>Keihin Electric Express Railway</company>
+<type>1500 Series Refurbished (medium)</type>
+<name>Keikyu Line</name>
+<author>Shino</author>
+<description>Starting in 2001, a complete refurbishment of the 20 steel cars in the series was carried out. The window shutters unique for the steel cars were covered and so were the windows next to the connectors. Instead, fall protection hoods were installed. For accessibility, digital information boards, door chimes, and wheelchair space were also installed. Just like 2100 Series and the new 1000 Series, the motorman's seat got an emergency switch. All 1500 Series carriages are scheduled for this refurbishment. (medium-speed refurbished 1500 Series)</description>
+<fare>100</fare>
+<price>2400</price>
+<speed>medium</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{6F2F2667-05F0-4595-9H44-TYPE1500}-A"/>
+<car char="中" ref="{6F2F2667-05F0-4595-9H44-TYPE1500}-C"/>
+<car char="後" ref="{6F2F2667-05F0-4595-9H44-TYPE1500}-B"/> 
+<car char="A" ref="{6F2F2667-05F0-4595-9H44-TYPE1500}-P1"/> 
+<car char="C" ref="{6F2F2667-05F0-4595-9H44-TYPE1500}-P3"/>
+<composition>前中A後</composition>
+<composition>前中A中A後</composition>
+<composition>前中中中C中A後</composition>
+<composition>前中中中C中A後前中A後</composition>
+</config>
+</contribution>
+
+<!-- 1500先頭車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9I44-TYPE1500}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a2_3.bmp" /> 
+  </sprite>
+  <capacity>156</capacity> 
+  </contribution>
+<!-- 1500最後尾車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9I44-TYPE1500}-B">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a1_3.bmp" /> 
+  </sprite>
+  <capacity>156</capacity> 
+  </contribution> 
+<!--1500中間車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9I44-TYPE1500}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500b_2.bmp" /> 
+  </sprite>
+  <capacity>174</capacity> 
+  </contribution>
+<!--1500パンタA車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9I44-TYPE1500}-P1">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p1_2.bmp" /> 
+  </sprite>
+  <capacity>174</capacity> 
+  </contribution>
+<!--1500パンタC車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9I44-TYPE1500}-P3">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p3_2.bmp" /> 
+  </sprite>
+  <capacity>174</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{9A68G5B0-0E5E-402D-87CB-525CA403F917}">
+<company>Keihin Electric Express Railway</company>
+<type>1500 Series Refurbished (fast)</type>
+<name>Keikyu Line</name>
+<author>Shino</author>
+<description>Starting in 2001, a complete refurbishment of the 20 steel cars in the series was carried out. The window shutters unique for the steel cars were covered and so were the windows next to the connectors. Instead, fall protection hoods were installed. For accessibility, digital information boards, door chimes, and wheelchair space were also installed. Just like 2100 Series and the new 1000 Series, the motorman's seat got an emergency switch. All 1500 Series carriages are scheduled for this refurbishment. (high-speed refurbished 1500 Series)</description>
+<fare>100</fare>
+<price>2400</price>
+<speed>fast</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{6F2F2667-05F0-4595-9I44-TYPE1500}-A"/>
+<car char="中" ref="{6F2F2667-05F0-4595-9I44-TYPE1500}-C"/>
+<car char="後" ref="{6F2F2667-05F0-4595-9I44-TYPE1500}-B"/> 
+<car char="A" ref="{6F2F2667-05F0-4595-9I44-TYPE1500}-P1"/> 
+<car char="C" ref="{6F2F2667-05F0-4595-9I44-TYPE1500}-P3"/> 
+<composition>前中A後</composition>
+<composition>前中A中A後</composition>
+<composition>前中中中C中A後</composition>
+<composition>前中中中C中A後前中A後</composition>
+</config>
+</contribution>
+
+<!-- 1500先頭車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9J44-TYPE1500}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a2_1.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution>
+<!-- 1500最後尾車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9J44-TYPE1500}-B">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a1_1.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution> 
+<!--1500中間車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9J44-TYPE1500}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500b_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--1500パンタA車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9J44-TYPE1500}-P1">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p1_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--1500パンタC車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9J44-TYPE1500}-P3">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p3_1.bmp" /> 
+  </sprite>
+  <capacity>174</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{10A68G5B0-0E5E-402D-87CB-525CA403F917}">
+<company>Keihin Electric Express Railway</company>
+<type>1500 Series (slow)</type>
+<name>Keikyu Line</name>
+<author>Shino</author>
+<description>Introduced in 1985, 1500 Series train ran on second generation Toei Asakusa, Keisei, and Hokuso-Kodan lines. It has until date seen its specifications change occasionally. The first 20 carriages were manufactured in steel, while the following were in aluminum alloy. There are three set formations of 4, 6, and 8 cars. Of these, the 8 car formation has an emergency mode that can bring the train up to speeds of 120 km/h. Widely used as everything from local service to rapid express. (low-speed version with field chopper control)</description>
+<fare>140</fare>
+<price>1900</price>
+<speed>slow</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{6F2F2667-05F0-4595-9J44-TYPE1500}-A"/>
+<car char="中" ref="{6F2F2667-05F0-4595-9J44-TYPE1500}-C"/>
+<car char="後" ref="{6F2F2667-05F0-4595-9J44-TYPE1500}-B"/> 
+<car char="A" ref="{6F2F2667-05F0-4595-9J44-TYPE1500}-P1"/> 
+<car char="C" ref="{6F2F2667-05F0-4595-9J44-TYPE1500}-P3"/> 
+<composition>前中A後</composition>
+<composition>前中A中A後</composition>
+<composition>前中中中C中A後</composition>
+<composition>前中中中C中A後前中A後</composition>
+</config>
+</contribution>
+
+<!-- 1500先頭車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9K44-TYPE1500}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a2_1.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution>
+<!-- 1500最後尾車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9K44-TYPE1500}-B">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a1_1.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution> 
+<!--1500中間車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9K44-TYPE1500}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500b_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--1500パンタA車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9K44-TYPE1500}-P1">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p1_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--1500パンタC車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9K44-TYPE1500}-P3">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p3_1.bmp" /> 
+  </sprite>
+  <capacity>174</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{11A68G5B0-0E5E-402D-87CB-525CA403F917}">
+<company>Keihin Electric Express Railway</company>
+<type>1500 Series (medium)</type>
+<name>Keikyu Line</name>
+<author>Shino</author>
+<description>Introduced in 1985, 1500 Series train ran on second generation Toei Asakusa, Keisei, and Hokuso-Kodan lines. It has until date seen its specifications change occasionally. The first 20 carriages were manufactured in steel, while the following were in aluminum alloy. There are three set formations of 4, 6, and 8 cars. Of these, the 8 car formation has an emergency mode that can bring the train up to speeds of 120 km/h. Widely used as everything from local service to rapid express. (medium-speed version with field chopper control)</description>
+<fare>140</fare>
+<price>1900</price>
+<speed>medium</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{6F2F2667-05F0-4595-9K44-TYPE1500}-A"/>
+<car char="中" ref="{6F2F2667-05F0-4595-9K44-TYPE1500}-C"/>
+<car char="後" ref="{6F2F2667-05F0-4595-9K44-TYPE1500}-B"/> 
+<car char="A" ref="{6F2F2667-05F0-4595-9K44-TYPE1500}-P1"/> 
+<car char="C" ref="{6F2F2667-05F0-4595-9K44-TYPE1500}-P3"/> 
+<composition>前中A後</composition>
+<composition>前中A中A後</composition>
+<composition>前中中中C中A後</composition>
+<composition>前中中中C中A後前中A後</composition>
+</config>
+</contribution>
+
+<!-- 1500先頭車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9L44-TYPE1500}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a2_1.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution>
+<!-- 1500最後尾車 --> 
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9L44-TYPE1500}-B">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500a1_1.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution> 
+<!--1500中間車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9L44-TYPE1500}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500b_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--1500パンタA車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9L44-TYPE1500}-P1">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p1_1.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--1500パンタC車-->
+　<contribution type="trainCar" id="{6F2F2667-05F0-4595-9L44-TYPE1500}-P3">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="kei 1500p3_1.bmp" /> 
+  </sprite>
+  <capacity>174</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{12A68G5B0-0E5E-402D-87CB-525CA403F917}">
+<company>Keihin Electric Express Railway</company>
+<type>1500 Series (fast)</type>
+<name>Keikyu Line</name>
+<author>Shino</author>
+<description>Introduced in 1985, 1500 Series train ran on second generation Toei Asakusa, Keisei, and Hokuso-Kodan lines. It has until date seen its specifications change occasionally. The first 20 carriages were manufactured in steel, while the following were in aluminum alloy. There are three set formations of 4, 6, and 8 cars. Of these, the 8 car formation has an emergency mode that can bring the train up to speeds of 120 km/h. Widely used as everything from local service to rapid express. (high-speed version with field chopper control)</description>
+<fare>140</fare>
+<price>1900</price>
+<speed>fast</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{6F2F2667-05F0-4595-9L44-TYPE1500}-A"/>
+<car char="中" ref="{6F2F2667-05F0-4595-9L44-TYPE1500}-C"/>
+<car char="後" ref="{6F2F2667-05F0-4595-9L44-TYPE1500}-B"/> 
+<car char="A" ref="{6F2F2667-05F0-4595-9L44-TYPE1500}-P1"/> 
+<car char="C" ref="{6F2F2667-05F0-4595-9L44-TYPE1500}-P3"/> 
+<composition>前中A後</composition>
+<composition>前中A中A後</composition>
+<composition>前中中中C中A後</composition>
+<composition>前中中中C中A後前中A後</composition>
+</config>
+</contribution>
+
+</plug-in>

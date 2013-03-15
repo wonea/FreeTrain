@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE plug-in [
+
+<!ENTITY fb-white '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="237,235,236"/>
+</spriteType>
+'>
+<!ENTITY wall-greyyellow '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="198,195,164"/>
+</spriteType>
+'>
+<!ENTITY wall-warmbrown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="174,143,122"/>
+</spriteType>
+'>
+<!ENTITY wall-darkbrown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="143,134,125"/>
+</spriteType>
+'>
+
+]>
+
+
+
+<plug-in>
+
+<author>Shikashika</author>
+<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+<title>Buildings(Research)</title>
+
+
+<!-- Observatories -->
+
+<!-- Astronomical Observatories(1x1) -->
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-astronomicalobservatory-001}">
+	<picture  src="astronomicalobservatory_001.bmp">
+		<override when="night" src="astronomicalobservatory_001n.bmp"/>
+	</picture>
+</contribution>
+
+<!-- Astronomical Observatories(1x1) -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-astronomicalobservatory-001a}">
+	<group>Astronomical Observatories</group>
+	<name>Astronomical Observatories(1x1)</name>
+	<design>Astronomical telescope dome A</design>
+	<structure>
+		<category byname="Astronomical Observatories"/>
+	</structure>
+	<price>10000</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>10</base>
+		</population>
+	</population>
+	&fb-white;
+	&wall-greyyellow;
+	&wall-warmbrown;
+	&wall-darkbrown;
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-001}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-001}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-001}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-astronomicalobservatory-001b}">
+	<group>Astronomical Observatories</group>
+	<name>Astronomical Observatories(1x1)</name>
+	<design>Astronomical telescope dome B</design>
+	<structure>
+		<category byname="Astronomical Observatories"/>
+	</structure>
+	<price>10000</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>10</base>
+		</population>
+	</population>
+	&fb-white;
+	&wall-greyyellow;
+	&wall-warmbrown;
+	&wall-darkbrown;
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-001}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-001}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-001}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-astronomicalobservatory-001c}">
+	<group>Astronomical Observatories</group>
+	<name>Astronomical Observatories(1x1)</name>
+	<design>Astronomical telescope dome C</design>
+	<structure>
+		<category byname="Astronomical Observatories"/>
+	</structure>
+	<price>10000</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>10</base>
+		</population>
+	</population>
+	&fb-white;
+	&wall-greyyellow;
+	&wall-warmbrown;
+	&wall-darkbrown;
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-001}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-001}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-001}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-astronomicalobservatory-001d}">
+	<group>Astronomical Observatories</group>
+	<name>Astronomical Observatories(1x1)</name>
+	<design>Astronomical telescope dome D</design>
+	<structure>
+		<category byname="Astronomical Observatories"/>
+	</structure>
+	<price>10000</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>10</base>
+		</population>
+	</population>
+	&fb-white;
+	&wall-greyyellow;
+	&wall-warmbrown;
+	&wall-darkbrown;
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-001}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-001}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-001}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-001}"/>
+	</sprite>
+
+</contribution>
+
+<!-- Astronomical Observatories(2x2) -->
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-astronomicalobservatory-002}">
+	<picture  src="astronomicalobservatory_002.bmp">
+		<override when="night" src="astronomicalobservatory_002n.bmp"/>
+	</picture>
+</contribution>
+
+<!-- Astronomical Observatories(2x2) -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-astronomicalobservatory-002a}">
+	<group>Astronomical Observatories</group>
+	<name>Astronomical Observatories(2x2)</name>
+	<design>Large astronomical telescope dome A</design>
+	<structure>
+		<category byname="Astronomical Observatories"/>
+	</structure>
+	<price>20000</price>
+	<size>2,2</size>
+	<height>2</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>10</base>
+		</population>
+	</population>
+	&fb-white;
+	&wall-greyyellow;
+	&wall-warmbrown;
+	&wall-darkbrown;
+
+	<sprite origin="0,0" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-002}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-002}"/>
+	</sprite>
+
+	<sprite origin="128,0" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-002}"/>
+	</sprite>
+
+	<sprite origin="192,0" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-002}"/>
+	</sprite>
+
+</contribution>
+
+<!-- Astronomical Observatories(2x2) -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-astronomicalobservatory-002b}">
+	<group>Astronomical Observatories</group>
+	<name>Astronomical Observatories(2x2)</name>
+	<design>Large astronomical telescope dome B</design>
+	<structure>
+		<category byname="Astronomical Observatories"/>
+	</structure>
+	<price>20000</price>
+	<size>2,2</size>
+	<height>2</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>10</base>
+		</population>
+	</population>
+	&fb-white;
+	&wall-greyyellow;
+	&wall-warmbrown;
+	&wall-darkbrown;
+
+	<sprite origin="0,64" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-002}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-002}"/>
+	</sprite>
+
+	<sprite origin="128,64" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-002}"/>
+	</sprite>
+
+	<sprite origin="192,64" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-astronomicalobservatory-002}"/>
+	</sprite>
+
+</contribution>
+
+</plug-in>

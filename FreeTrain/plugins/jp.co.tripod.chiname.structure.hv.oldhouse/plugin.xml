@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY housePopulation3 '
+	<population>
+		<class name="freetrain.contributions.population.ResidentialPopulation"/>
+		<base>3</base>
+	</population>
+'>
+<!ENTITY housePopulation6 '
+	<population>
+		<class name="freetrain.contributions.population.ResidentialPopulation"/>
+		<base>6</base>
+	</population>
+'>
+
+]>
+
+<plug-in>
+	<title>Half-tile Houses</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>	
+	<depend on="jp.co.tripod.chiname.lib.halfvoxel" />	
+	
+	<contribution type="picture" id="{170B8A99-4A14-42EE-C477-AA5C3FB3F387}">
+		<picture src="oldhouses_hv.bmp"/>
+	</contribution>
+
+	<contribution type="HalfVoxelStructure" id="{A5AD425E-BE10-4470-C477-204D881878E5}-0">
+		<group>Half-tile structures</group>
+		<subgroup>Old downtown house</subgroup>
+		<name>gabled roof 2 floors A</name>
+		<price>25</price>
+		<height>1</height>
+		&housePopulation3;
+		<sprite>
+			<picture ref="{170B8A99-4A14-42EE-C477-AA5C3FB3F387}"/>
+			<pattern direction="west" side="either" origin="0,4"/>
+			<pattern direction="south" side="either" origin="24,4"/>
+			<pattern direction="east" side="either" origin="48,4"/>
+			<pattern direction="north" side="either" origin="72,4"/>
+		</sprite>
+	</contribution>
+	<contribution type="HalfVoxelStructure" id="{A5AD425E-BE10-4470-C477-204D881878E5}-1">
+		<group>Half-tile structures</group>
+		<subgroup>Old downtown house</subgroup>
+		<name>gabled roof two-story B</name>
+		<price>25</price>
+		<height>1</height>
+		&housePopulation3;
+		<sprite>
+			<picture ref="{170B8A99-4A14-42EE-C477-AA5C3FB3F387}"/>
+			<pattern direction="west" side="either" origin="0,36"/>
+			<pattern direction="south" side="either" origin="24,36"/>
+			<pattern direction="east" side="either" origin="48,36"/>
+			<pattern direction="north" side="either" origin="72,36"/>
+		</sprite>
+	</contribution>
+	<contribution type="HalfVoxelStructure" id="{A5AD425E-BE10-4470-C477-204D881878E5}-2">
+		<group>Half-tile structures</group>
+		<subgroup>Old downtown house</subgroup>
+		<name>gabled roof two-story C</name>
+		<price>25</price>
+		<height>1</height>
+		&housePopulation3;
+		<sprite>
+			<picture ref="{170B8A99-4A14-42EE-C477-AA5C3FB3F387}"/>
+			<pattern direction="west" side="either" origin="0,68"/>
+			<pattern direction="south" side="either" origin="24,68"/>
+			<pattern direction="east" side="either" origin="48,68"/>
+			<pattern direction="north" side="either" origin="72,68"/>
+		</sprite>
+	</contribution>
+	<contribution type="HalfVoxelStructure" id="{A5AD425E-BE10-4470-C477-204D881878E5}-3">
+		<group>Half-tile structures</group>
+		<subgroup>Old downtown house</subgroup>
+		<name>gabled roof two-story D</name>
+		<price>25</price>
+		<height>1</height>
+		&housePopulation3;
+		<sprite>
+			<picture ref="{170B8A99-4A14-42EE-C477-AA5C3FB3F387}"/>
+			<pattern direction="west" side="either" origin="0,100"/>
+			<pattern direction="south" side="either" origin="24,100"/>
+			<pattern direction="east" side="either" origin="48,100"/>
+			<pattern direction="north" side="either" origin="72,100"/>
+		</sprite>
+	</contribution>
+	<contribution type="HalfVoxelStructure" id="{A5AD425E-BE10-4470-C477-204D881878E5}-4">
+		<group>Half-tile structures</group>
+		<subgroup>Old downtown house</subgroup>
+		<name>gabled roof two-story E</name>
+		<price>25</price>
+		<height>1</height>
+		&housePopulation3;
+		<sprite>
+			<picture ref="{170B8A99-4A14-42EE-C477-AA5C3FB3F387}"/>
+			<pattern direction="west" side="either" origin="0,132"/>
+			<pattern direction="south" side="either" origin="24,132"/>
+			<pattern direction="east" side="either" origin="48,132"/>
+			<pattern direction="north" side="either" origin="72,132"/>
+		</sprite>
+	</contribution>
+	<contribution type="HalfVoxelStructure" id="{A5AD425E-BE10-4470-C477-204D881878E5}-5">
+		<group>Half-tile structures</group>
+		<subgroup>Old downtown house</subgroup>
+		<name>gabled roof two-story F</name>
+		<price>25</price>
+		<height>1</height>
+		&housePopulation3;
+		<sprite>
+			<picture ref="{170B8A99-4A14-42EE-C477-AA5C3FB3F387}"/>
+			<pattern direction="west" side="either" origin="0,164"/>
+			<pattern direction="south" side="either" origin="24,164"/>
+			<pattern direction="east" side="either" origin="48,164"/>
+			<pattern direction="north" side="either" origin="72,164"/>
+		</sprite>
+	</contribution>
+	<contribution type="HalfVoxelStructure" id="{A5AD425E-BE10-4470-C477-204D881878E5}-6">
+		<group>Half-tile structures</group>
+		<subgroup>Old downtown house</subgroup>
+		<name>gabled roof two-story G</name>
+		<price>25</price>
+		<height>1</height>
+		&housePopulation3;
+		<sprite>
+			<picture ref="{170B8A99-4A14-42EE-C477-AA5C3FB3F387}"/>
+			<pattern direction="west" side="either" origin="0,196"/>
+			<pattern direction="south" side="either" origin="24,196"/>
+			<pattern direction="east" side="either" origin="48,196"/>
+			<pattern direction="north" side="either" origin="72,196"/>
+		</sprite>
+	</contribution>
+	<contribution type="HalfVoxelStructure" id="{A5AD425E-BE10-4470-C477-204D881878E5}-7">
+		<group>Half-tile structures</group>
+		<subgroup>Old downtown house</subgroup>
+		<name>gabled roof two-story H</name>
+		<price>25</price>
+		<height>1</height>
+		&housePopulation3;
+		<sprite>
+			<picture ref="{170B8A99-4A14-42EE-C477-AA5C3FB3F387}"/>
+			<pattern direction="west" side="either" origin="0,228"/>
+			<pattern direction="south" side="either" origin="24,228"/>
+			<pattern direction="east" side="either" origin="48,228"/>
+			<pattern direction="north" side="either" origin="72,228"/>
+		</sprite>
+	</contribution>
+
+</plug-in>

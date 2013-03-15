@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<plug-in>
+
+<title>Ballast (road)</title>
+<author>Takeuchi Tomonori</author>
+<homepage>http://t-tomonori.hp.infoseek.co.jp/</homepage>
+
+
+<!-- ballast -->
+
+<contribution type="road" id="{Tomonori-road-gb-ballast}">
+<class name="freetrain.contributions.road.A3RoadContribution" />
+<name>railway track/gray+brown</name>
+<description>ballast</description>
+<picture src="ballast_g+b.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{Tomonori-road-ob-ballast}">
+<class name="freetrain.contributions.road.A3RoadContribution" />
+<name>railway track/khaki+brown</name>
+<description>ballast</description>
+<picture src="ballast_o+b.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{Tomonori-road-brown-ballast}">
+<class name="freetrain.contributions.road.A3RoadContribution" />
+<name>railway track/brown</name>
+<description>ballast</description>
+<picture src="ballast_brown.bmp" size="32,32" offset="16" />
+</contribution>
+
+</plug-in>

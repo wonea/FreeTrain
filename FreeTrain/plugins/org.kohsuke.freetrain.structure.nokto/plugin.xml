@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Mirror Building &amp; Factory</title>
+	<author>nokto</author>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="picture" id="{5971C7C1-7D60-4785-ADE5-D450BB06F09C}">
+		<picture src="building_mod.bmp"/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{C6ECBE6F-7034-4d94-8F00-E89BAF06D3A2}">
+		<name>Mirror Building</name>
+		<design>1x3</design>
+		<structure>
+			<category byname="Corporate Offices"/>
+		</structure>
+		<price>1600</price>
+		<size>1,3</size>
+		<height>4</height>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>400</base>
+		</population>
+		<sprite origin="0,0" offset="64">
+			<picture ref="{5971C7C1-7D60-4785-ADE5-D450BB06F09C}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{4CAB3529-BCA0-4C8B-931F-5E27C56905B1}">
+		<picture src="building2.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{AD825AF4-A4C9-438a-8F0C-B2DD581F2192}">
+		<name>Mirror Building</name>
+		<design>1x1</design>
+		<structure>
+			<category byname="Corporate Offices"/>
+		</structure>
+		<price>600</price>
+		<size>1,1</size>
+		<height>5</height>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>180</base>
+		</population>
+		<sprite origin="0,0" offset="80">
+			<picture ref="{4CAB3529-BCA0-4C8B-931F-5E27C56905B1}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{FFF98BAB-010D-4A2A-822E-42FC51EE2D67}">
+		<picture src="factory.bmp"/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{235CBE6F-7AD4-4334-8FFB-E54B2F0643A2}">
+		<group>Factory</group>
+		<design>Heavy industry type factory</design>
+		<structure>
+			<category byname="Factories"/>
+		</structure>
+		<price>3400</price>
+		<size>2,3</size>
+		<height>3</height>
+			<base>400</base>
+		<sprite origin="0,0" offset="27">
+			<picture ref="{FFF98BAB-010D-4A2A-822E-42FC51EE2D67}" />
+		</sprite>
+	</contribution>
+		
+	
+</plug-in>

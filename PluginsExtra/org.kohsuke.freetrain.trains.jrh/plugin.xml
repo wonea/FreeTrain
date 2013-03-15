@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>JR Hokkaido Train Kit</title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	
+	
+	<!-- JR Hokkaido 711系 -->
+	<contribution type="trainCar" id="{63503270-F912-429C-BDB3-23E026BED21E}">
+		<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+		<colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-1" base="240,0,0" line1="255,248,244" line2="236,0,0" line3="240,0,0" />
+		<capacity>99</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{734ED621-D6D6-4F11-8485-12F057F387F0}">
+		<company>JR Hokkaido</company>
+		<type>711 Series</type>
+		<name></name>
+		<author>Nanashi-san@Hokkaido</author>
+		<description>
+在来線初の交流専用車。3両で1ユニットを組み、普通列車や快速で運転されている。中には3扉化改造やロングシート化などが図られている車両もある。
+		</description>
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{63503270-F912-429C-BDB3-23E026BED21E}"/>
+		</composition>
+	</contribution>
+	
+	
+	
+	
+	<!-- 721系 -->
+	<contribution type="trainCar" id="{611CCBFC-82F8-4589-ACB3-CFE2A346488B}">
+		<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+		<colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-6" base="192,192,192" line1="0,255,0" line2="0,255,0" line3="192,192,192" />
+		<capacity>99</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{A7AC0005-8FCA-4e60-907C-2EF681CAC9AE}">
+		<company>JR Hokkaido</company>
+		<type>721 Series</type>
+		<name></name>
+		<author>Nanashi-san@Hokkaido</author>
+		<description>
+輸送近代化などのため昭和63年に登場。空港アクセス列車にも使用されるため、大きな荷物を持った乗客に対応できるようになっている。
+		</description>
+		<price>1</price>
+		<speed>fast</speed>
+		<composition>
+			<body carRef="{611CCBFC-82F8-4589-ACB3-CFE2A346488B}"/>
+		</composition>
+	</contribution>
+	
+
+	<!-- JR Hokkaido キハ40系日高線 -->
+	<contribution type="trainCar" id="{185A56CF-FBAA-42ac-B684-B8B66800B9E7}">
+		<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+		<colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-1" base="255,255,255" line1="255,0,128" line2="0,128,255" line3="0,128,255" />
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{61B9A951-B0B2-4190-B35F-CA83E5B9DC0A}">
+		<company>JR Hokkaido</company>
+		<type>KIHA 40 Series</type>
+		<name>Hidaka Line Colors</name>
+		<author>Nanashi-san@Hokkaido</author>
+		<description>
+北海道の日高線(苫小牧-様似)を走っている列車です。
+		</description>
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{185A56CF-FBAA-42ac-B684-B8B66800B9E7}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- JR Hokkaido キハ40系北海道色 -->
+	<contribution type="trainCar" id="{D7DBBF2A-BD25-417e-AFEE-4D400EE9AD3B}">
+		<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+		<colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-6" base="255,255,255" line1="128,255,0" line2="0,128,255" line3="0,128,255" />
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{09503B8F-57FE-44a5-B82A-5109F3044D8D}">
+		<company>JR Hokkaido</company>
+		<type>KIHA 40 Series</type>
+		<name>Hokkaido Colors</name>
+		<author>Nanashi-san@Hokkaido</author>
+		<description>
+北海道各地を走る列車です。
+		</description>
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{D7DBBF2A-BD25-417e-AFEE-4D400EE9AD3B}"/>
+		</composition>
+	</contribution>
+
+	<!-- キハ281系先頭車両 -->
+	<contribution type="trainCar" id="{F74FCD8F-F9D7-4a78-8D09-97A8D6FF05A7}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="D281a.bmp" />
+		</sprite>
+		<capacity>48</capacity>
+	</contribution>
+	
+	<!-- キハ281系中間車両 -->
+	<contribution type="trainCar" id="{F74FCD8F-F9D7-4a78-8D09-97A8D6FF05A7}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="D281b.bmp" />
+		</sprite>
+		<capacity>48</capacity>
+	</contribution>
+	
+	<!-- キハ281系後尾車両 -->
+	<contribution type="trainCar" id="{F74FCD8F-F9D7-4a78-8D09-97A8D6FF05A7}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{F74FCD8F-F9D7-4a78-8D09-97A8D6FF05A7}-h"/>
+		<capacity>48</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{F74FCD8F-F9D7-4a78-8D09-97A8D6FF05A7}">
+		<company>JR Hokkaido</company>
+		<type>KIHA 281 Series</type>
+		<name>Super Hokuto</name>
+		<author>Nanashi-san@Hokkaido</author>
+		<description>
+札幌-函館間を結ぶ振り子式特急。最高速度130km/h。
+		</description>
+		<price>1</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{F74FCD8F-F9D7-4a78-8D09-97A8D6FF05A7}-h"/>
+			<body carRef="{F74FCD8F-F9D7-4a78-8D09-97A8D6FF05A7}-m"/>
+			<tail carRef="{F74FCD8F-F9D7-4a78-8D09-97A8D6FF05A7}-t"/>
+		</composition>
+	</contribution>
+</plug-in>

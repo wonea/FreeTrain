@@ -1,0 +1,1513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+
+<!ENTITY station_001hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,172,122"/>
+	</spriteType>
+'>
+
+<!ENTITY station_001hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="181,203,226"/>
+	</spriteType>
+'>
+
+<!ENTITY station_001hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,171,62"/>
+	</spriteType>
+'>
+
+<!ENTITY station_001hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="157,90,70"/>
+	</spriteType>
+'>
+
+
+
+<!ENTITY station_002hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="234,81,89"/>
+	</spriteType>
+'>
+
+<!ENTITY station_002hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="60,152,204"/>
+	</spriteType>
+'>
+
+<!ENTITY station_002hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,121,69"/>
+	</spriteType>
+'>
+
+<!ENTITY station_002hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="0,230,169"/>
+	</spriteType>
+'>
+
+<!ENTITY station_002hueTransform_005 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="138,77,87"/>
+	</spriteType>
+'>
+
+<!ENTITY station_002hueTransform_006 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="121,90,74"/>
+	</spriteType>
+'>
+
+
+<!ENTITY station_003hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="162,80,80"/>
+	</spriteType>
+'>
+
+<!ENTITY station_003hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="76,99,132"/>
+	</spriteType>
+'>
+
+<!ENTITY station_003hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="71,134,106"/>
+	</spriteType>
+'>
+
+<!ENTITY station_003hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="99,93,82"/>
+	</spriteType>
+'>
+
+<!ENTITY station_003hueTransform_005 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="213,93,77"/>
+	</spriteType>
+'>
+
+<!ENTITY station_003hueTransform_006 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="55,132,151"/>
+	</spriteType>
+'>
+
+<!ENTITY station_003hueTransform_007 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="170,119,59"/>
+	</spriteType>
+'>
+
+<!ENTITY station_003hueTransform_008 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="98,105,77"/>
+	</spriteType>
+'>
+
+
+<!ENTITY station_004hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="187,106,66"/>
+	</spriteType>
+'>
+
+<!ENTITY station_004hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="90,236,61"/>
+	</spriteType>
+'>
+
+<!ENTITY station_004hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="58,197,39"/>
+	</spriteType>
+'>
+
+<!ENTITY station_004hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,114,0"/>
+	</spriteType>
+'>
+
+<!ENTITY station_004hueTransform_005 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="70,131,255"/>
+	</spriteType>
+'>
+
+<!ENTITY station_004hueTransform_006 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="88,202,255"/>
+	</spriteType>
+'>
+
+<!ENTITY station_004hueTransform_007 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,63,63"/>
+	</spriteType>
+'>
+
+
+
+	<!ENTITY station_001-R '
+		<group>Suburban station (right)</group>
+		<price>2300</price>
+		<height>1</height>
+		<operationCost>800</operationCost>
+	 '>
+
+<!ENTITY station_001-L '
+		<group>Suburban station (left)</group>
+		<price>2300</price>
+		<height>1</height>
+		<operationCost>800</operationCost>
+	 '>
+
+
+	<!ENTITY station_002 '
+		<group>Country station 2</group>
+		<price>2800</price>
+		<height>1</height>
+		<operationCost>2000</operationCost>
+	 '>
+
+
+	<!ENTITY station_003 '
+		<group>Country station 3</group>
+		<price>1800</price>
+		<height>1</height>
+		<operationCost>800</operationCost>
+	 '>
+
+
+	<!ENTITY station_004 '
+		<group>Country station 4</group>
+		<price>500</price>
+		<height>1</height>
+		<operationCost>300</operationCost>
+	 '>
+
+
+
+
+
+]>
+
+
+
+<plug-in>
+	<title>FreeTrain-Sousaku Kan, Rail facilities</title>
+	<author>haru</author>
+	<homepage>http://hb4.seikyou.ne.jp/home/Go-Ro/FreeTrain/</homepage>
+	<depends on="org.kohsuke.freetrain.rail.electricPole" />
+	
+
+<!-- Layerd viaduct pier -->
+	<contribution type="electricPole" id="{electricPole_001-electricPole-C000-0000-4C8B212DD67q}">
+		<name>Layered viaduct pier</name>
+		<sprite>
+			<picture src="electricPole_001.bmp"/>
+		</sprite>
+	</contribution>
+	
+
+
+	
+<!-- Station over-bridge -->
+	<contribution type="picture" id="{electricPole_002-picture-C000-0000-4C8B212Dharu}">
+		<picture src="electricPole_002.bmp">
+			<override when="night" src="electricPole_002n.bmp"/>
+		</picture>
+	</contribution>
+
+	<contribution type="electricPole" id="{electricPole_002-electricPole-C000-0000-4C8B212Dharu}">
+		<name>Station over-bridge</name>
+		<sprite>
+			<picture ref="{electricPole_002-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+	</contribution>
+	
+
+
+
+
+
+<!-- Suburban station -->
+	<contribution type="picture" id="{station_001-pcon-C000-0000-4C8B212Dharu}">
+		<picture src="station_001.bmp">
+			<override when="night" src="station_001n.bmp" />
+		</picture>
+	</contribution>
+
+
+
+	<contribution type="station" id="{station_001-station-C001-000a-4C8B212Dharu}">
+		<name>Suburban station (right)[salmon]</name>
+		<size>1,2</size>
+                &station_001-R;
+		<sprite origin="0, 0" offset="16">
+				&station_001hueTransform_001;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_001-station-C001-000b-4C8B212Dharu}">
+		<name>Suburban station (right)[salmon]</name>
+		<size>2,1</size>
+                &station_001-R;
+		<sprite origin="48, 0" offset="24">
+				&station_001hueTransform_001;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_001-station-C001-000c-4C8B212Dharu}">
+		<name>Suburban station (right)[salmon]</name>
+		<size>1,2</size>
+                &station_001-R;
+		<sprite origin="96, 0" offset="16">
+				&station_001hueTransform_001;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_001-station-C001-000d-4C8B212Dharu}">
+		<name>Suburban station (right)[salmon]</name>
+		<size>2,1</size>
+                &station_001-R;
+		<sprite origin="144, 0" offset="24">
+				&station_001hueTransform_001;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+
+
+	<contribution type="station" id="{station_001-station-C001-000e-4C8B212Dharu}">
+		<name>Suburban station (left)[salmon]</name>
+		<size>1,2</size>
+                &station_001-L;
+		<sprite origin="0, 48" offset="16">
+				&station_001hueTransform_001;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_001-station-C001-000f-4C8B212Dharu}">
+		<name>Suburban station (left)[salmon]</name>
+		<size>2,1</size>
+                &station_001-L;
+		<sprite origin="48, 48" offset="24">
+				&station_001hueTransform_001;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_001-station-C001-000g-4C8B212Dharu}">
+		<name>Suburban station (left)[salmon]</name>
+		<size>1,2</size>
+                &station_001-L;
+		<sprite origin="96, 48" offset="16">
+				&station_001hueTransform_001;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_001-station-C001-000h-4C8B212Dharu}">
+		<name>Suburban station (left)[salmon]</name>
+		<size>2,1</size>
+                &station_001-L;
+		<sprite origin="144, 48" offset="24">
+				&station_001hueTransform_001;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+
+
+
+
+	<contribution type="station" id="{station_001-station-C002-000a-4C8B212Dharu}">
+		<name>Suburban station (right)[rusty-closet]</name>
+		<size>1,2</size>
+                &station_001-R;
+		<sprite origin="0, 0" offset="16">
+				&station_001hueTransform_002;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_001-station-C002-000b-4C8B212Dharu}">
+		<name>Suburban station (right)[rusty-closet]</name>
+		<size>2,1</size>
+                &station_001-R;
+		<sprite origin="48, 0" offset="24">
+				&station_001hueTransform_002;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_001-station-C002-000c-4C8B212Dharu}">
+		<name>Suburban station (right)[rusty-closet]</name>
+		<size>1,2</size>
+                &station_001-R;
+		<sprite origin="96, 0" offset="16">
+				&station_001hueTransform_002;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_001-station-C002-000d-4C8B212Dharu}">
+		<name>Suburban station (right)[rusty-closet]</name>
+		<size>2,1</size>
+                &station_001-R;
+		<sprite origin="144, 0" offset="24">
+				&station_001hueTransform_002;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+
+
+	<contribution type="station" id="{station_001-station-C002-000e-4C8B212Dharu}">
+		<name>Suburban station (left)[rusty-closet]</name>
+		<size>1,2</size>
+                &station_001-L;
+		<sprite origin="0, 48" offset="16">
+				&station_001hueTransform_002;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_001-station-C002-000f-4C8B212Dharu}">
+		<name>Suburban station (left)[rusty-closet]</name>
+		<size>2,1</size>
+                &station_001-L;
+		<sprite origin="48, 48" offset="24">
+				&station_001hueTransform_002;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_001-station-C002-000g-4C8B212Dharu}">
+		<name>Suburban station (left)[rusty-closet]</name>
+		<size>1,2</size>
+                &station_001-L;
+		<sprite origin="96, 48" offset="16">
+				&station_001hueTransform_002;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_001-station-C002-000h-4C8B212Dharu}">
+		<name>Suburban station (left)[rusty-closet]</name>
+		<size>2,1</size>
+                &station_001-L;
+		<sprite origin="144, 48" offset="24">
+				&station_001hueTransform_002;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+
+
+
+
+
+
+	<contribution type="station" id="{station_001-station-C003-000a-4C8B212Dharu}">
+		<name>Suburban station (right)[turmeric]</name>
+		<size>1,2</size>
+                &station_001-R;
+		<sprite origin="0, 0" offset="16">
+				&station_001hueTransform_003;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_001-station-C003-000b-4C8B212Dharu}">
+		<name>Suburban station (right)[turmeric]</name>
+		<size>2,1</size>
+                &station_001-R;
+		<sprite origin="48, 0" offset="24">
+				&station_001hueTransform_003;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_001-station-C003-000c-4C8B212Dharu}">
+		<name>Suburban station (right)[turmeric]</name>
+		<size>1,2</size>
+                &station_001-R;
+		<sprite origin="96, 0" offset="16">
+				&station_001hueTransform_003;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_001-station-C003-000d-4C8B212Dharu}">
+		<name>Suburban station (right)[turmeric]</name>
+		<size>2,1</size>
+                &station_001-R;
+		<sprite origin="144, 0" offset="24">
+				&station_001hueTransform_003;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+
+
+	<contribution type="station" id="{station_001-station-C003-000e-4C8B212Dharu}">
+		<name>Suburban station (left)[turmeric]</name>
+		<size>1,2</size>
+                &station_001-L;
+		<sprite origin="0, 48" offset="16">
+				&station_001hueTransform_003;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_001-station-C003-000f-4C8B212Dharu}">
+		<name>Suburban station (left)[turmeric]</name>
+		<size>2,1</size>
+                &station_001-L;
+		<sprite origin="48, 48" offset="24">
+				&station_001hueTransform_003;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_001-station-C003-000g-4C8B212Dharu}">
+		<name>Suburban station (left)[turmeric]</name>
+		<size>1,2</size>
+                &station_001-L;
+		<sprite origin="96, 48" offset="16">
+				&station_001hueTransform_003;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_001-station-C003-000h-4C8B212Dharu}">
+		<name>Suburban station (left)[turmeric]</name>
+		<size>2,1</size>
+                &station_001-L;
+		<sprite origin="144, 48" offset="24">
+				&station_001hueTransform_003;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+
+
+
+
+
+	<contribution type="station" id="{station_001-station-C004-000a-4C8B212Dharu}">
+		<name>Suburban station (right)[brown]</name>
+		<size>1,2</size>
+                &station_001-R;
+		<sprite origin="0, 0" offset="16">
+				&station_001hueTransform_004;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_001-station-C004-000b-4C8B212Dharu}">
+		<name>Suburban station (right)[brown]</name>
+		<size>2,1</size>
+                &station_001-R;
+		<sprite origin="48, 0" offset="24">
+				&station_001hueTransform_004;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_001-station-C004-000c-4C8B212Dharu}">
+		<name>Suburban station (right)[brown]</name>
+		<size>1,2</size>
+                &station_001-R;
+		<sprite origin="96, 0" offset="16">
+				&station_001hueTransform_004;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_001-station-C004-000d-4C8B212Dharu}">
+		<name>Suburban station (right)[brown]</name>
+		<size>2,1</size>
+                &station_001-R;
+		<sprite origin="144, 0" offset="24">
+				&station_001hueTransform_004;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+
+
+	<contribution type="station" id="{station_001-station-C004-000e-4C8B212Dharu}">
+		<name>Suburban station (left)[brown]</name>
+		<size>1,2</size>
+                &station_001-L;
+		<sprite origin="0, 48" offset="16">
+				&station_001hueTransform_004;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_001-station-C004-000f-4C8B212Dharu}">
+		<name>Suburban station (left)[brown]</name>
+		<size>2,1</size>
+                &station_001-L;
+		<sprite origin="48, 48" offset="24">
+				&station_001hueTransform_004;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_001-station-C004-000g-4C8B212Dharu}">
+		<name>Suburban station (left)[brown]</name>
+		<size>1,2</size>
+                &station_001-L;
+		<sprite origin="96, 48" offset="16">
+				&station_001hueTransform_004;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_001-station-C004-000h-4C8B212Dharu}">
+		<name>Suburban station (left)[brown]</name>
+		<size>2,1</size>
+                &station_001-L;
+		<sprite origin="144, 48" offset="24">
+				&station_001hueTransform_004;
+			<picture ref="{station_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+
+
+<!-- Country station 2 -->
+	<contribution type="picture" id="{station_002-pcon-C000-0000-4C8B212Dharu}">
+		<picture src="station_002.bmp">
+			<override when="night" src="station_002n.bmp" />
+		</picture>
+	</contribution>
+
+
+	<contribution type="station" id="{station_002-station-C001-000a-4C8B212Dharu}">
+		<name>Country station 2 (red)</name>
+		<size>1,3</size>
+                &station_002;
+		<sprite origin="0, 0" offset="5">
+				&station_002hueTransform_001;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_002-station-C001-000b-4C8B212Dharu}">
+		<name>Country station 2 (red)</name>
+		<size>3,1</size>
+                &station_002;
+		<sprite origin="64, 0" offset="21">
+				&station_002hueTransform_001;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_002-station-C001-000c-4C8B212Dharu}">
+		<name>Country station 2 (red)</name>
+		<size>1,3</size>
+                &station_002;
+		<sprite origin="128, 0" offset="5">
+				&station_002hueTransform_001;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_002-station-C001-000d-4C8B212Dharu}">
+		<name>Country station 2 (red)</name>
+		<size>3,1</size>
+                &station_002;
+		<sprite origin="192, 0" offset="21">
+				&station_002hueTransform_001;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="station" id="{station_002-station-C002-000a-4C8B212Dharu}">
+		<name>Country station 2(blue)</name>
+		<size>1,3</size>
+                &station_002;
+		<sprite origin="0, 0" offset="5">
+				&station_002hueTransform_002;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_002-station-C002-000b-4C8B212Dharu}">
+		<name>Country station 2(blue)</name>
+		<size>3,1</size>
+                &station_002;
+		<sprite origin="64, 0" offset="21">
+				&station_002hueTransform_002;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_002-station-C002-000c-4C8B212Dharu}">
+		<name>Country station 2(blue)</name>
+		<size>1,3</size>
+                &station_002;
+		<sprite origin="128, 0" offset="5">
+				&station_002hueTransform_002;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_002-station-C002-000d-4C8B212Dharu}">
+		<name>Country station 2(blue)</name>
+		<size>3,1</size>
+                &station_002;
+		<sprite origin="192, 0" offset="21">
+				&station_002hueTransform_002;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="station" id="{station_002-station-C003-000a-4C8B212Dharu}">
+		<name>Country station 2(yellow)</name>
+		<size>1,3</size>
+                &station_002;
+		<sprite origin="0, 0" offset="5">
+				&station_002hueTransform_003;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_002-station-C003-000b-4C8B212Dharu}">
+		<name>Country station 2(yellow)</name>
+		<size>3,1</size>
+                &station_002;
+		<sprite origin="64, 0" offset="21">
+				&station_002hueTransform_003;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_002-station-C003-000c-4C8B212Dharu}">
+		<name>Country station 2(yellow)</name>
+		<size>1,3</size>
+                &station_002;
+		<sprite origin="128, 0" offset="5">
+				&station_002hueTransform_003;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_002-station-C003-000d-4C8B212Dharu}">
+		<name>Country station 2(yellow)</name>
+		<size>3,1</size>
+                &station_002;
+		<sprite origin="192, 0" offset="21">
+				&station_002hueTransform_003;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="station" id="{station_002-station-C004-000a-4C8B212Dharu}">
+		<name>Country station 2(green)</name>
+		<size>1,3</size>
+                &station_002;
+		<sprite origin="0, 0" offset="5">
+				&station_002hueTransform_004;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_002-station-C004-000b-4C8B212Dharu}">
+		<name>Country station 2(green)</name>
+		<size>3,1</size>
+                &station_002;
+		<sprite origin="64, 0" offset="21">
+				&station_002hueTransform_004;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_002-station-C004-000c-4C8B212Dharu}">
+		<name>Country station 2(green)</name>
+		<size>1,3</size>
+                &station_002;
+		<sprite origin="128, 0" offset="5">
+				&station_002hueTransform_004;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_002-station-C004-000d-4C8B212Dharu}">
+		<name>Country station 2(green)</name>
+		<size>3,1</size>
+                &station_002;
+		<sprite origin="192, 0" offset="21">
+				&station_002hueTransform_004;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="station" id="{station_002-station-C005-000a-4C8B212Dharu}">
+		<name>Country station 2(plum)</name>
+		<size>1,3</size>
+                &station_002;
+		<sprite origin="0, 0" offset="5">
+				&station_002hueTransform_005;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_002-station-C005-000b-4C8B212Dharu}">
+		<name>Country station 2(plum)</name>
+		<size>3,1</size>
+                &station_002;
+		<sprite origin="64, 0" offset="21">
+				&station_002hueTransform_005;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_002-station-C005-000c-4C8B212Dharu}">
+		<name>Country station 2(plum)</name>
+		<size>1,3</size>
+                &station_002;
+		<sprite origin="128, 0" offset="5">
+				&station_002hueTransform_005;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_002-station-C005-000d-4C8B212Dharu}">
+		<name>Country station 2(plum)</name>
+		<size>3,1</size>
+                &station_002;
+		<sprite origin="192, 0" offset="21">
+				&station_002hueTransform_005;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="station" id="{station_002-station-C006-000a-4C8B212Dharu}">
+		<name>Country station 2 (brown)</name>
+		<size>1,3</size>
+                &station_002;
+		<sprite origin="0, 0" offset="5">
+				&station_002hueTransform_006;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_002-station-C006-000b-4C8B212Dharu}">
+		<name>Country station 2 (brown)</name>
+		<size>3,1</size>
+                &station_002;
+		<sprite origin="64, 0" offset="21">
+				&station_002hueTransform_006;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_002-station-C006-000c-4C8B212Dharu}">
+		<name>Country station 2 (brown)</name>
+		<size>1,3</size>
+                &station_002;
+		<sprite origin="128, 0" offset="5">
+				&station_002hueTransform_006;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_002-station-C006-000d-4C8B212Dharu}">
+		<name>Country station 2 (brown)</name>
+		<size>3,1</size>
+                &station_002;
+		<sprite origin="192, 0" offset="21">
+				&station_002hueTransform_006;
+			<picture ref="{station_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+
+<!-- Country station 3 -->
+	<contribution type="picture" id="{station_003-picture-C000-0000-4C8B212Dharu}">
+		<picture src="station_003.bmp">
+			<override when="night" src="station_003n-SUM.bmp" />
+		</picture>
+	</contribution>
+
+
+
+	<contribution type="station" id="{station_003-station-C001-000a-4C8B212Dharu}">
+		<name>Country station 3(wine)</name>
+		<size>1,2</size>
+                &station_003;
+		<sprite origin="0, 0" offset="6">
+				&station_003hueTransform_001;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_003-station-C001-000b-4C8B212Dharu}">
+		<name>Country station 3(wine)</name>
+		<size>2,1</size>
+                &station_003;
+		<sprite origin="48, 0" offset="14">
+				&station_003hueTransform_001;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_003-station-C001-000c-4C8B212Dharu}">
+		<name>Country station 3(wine)</name>
+		<size>1,2</size>
+                &station_003;
+		<sprite origin="96, 0" offset="6">
+				&station_003hueTransform_001;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_003-station-C001-000d-4C8B212Dharu}">
+		<name>Country station 3(wine)</name>
+		<size>2,1</size>
+                &station_003;
+		<sprite origin="144, 0" offset="14">
+				&station_003hueTransform_001;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="station" id="{station_003-station-C002-000a-4C8B212Dharu}">
+		<name>Country station 3(peacock blue)</name>
+		<size>1,2</size>
+                &station_003;
+		<sprite origin="0, 0" offset="6">
+				&station_003hueTransform_002;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_003-station-C002-000b-4C8B212Dharu}">
+		<name>Country station 3(peacock blue)</name>
+		<size>2,1</size>
+                &station_003;
+		<sprite origin="48, 0" offset="14">
+				&station_003hueTransform_002;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_003-station-C002-000c-4C8B212Dharu}">
+		<name>Country station 3(peacock blue)</name>
+		<size>1,2</size>
+                &station_003;
+		<sprite origin="96, 0" offset="6">
+				&station_003hueTransform_002;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_003-station-C002-000d-4C8B212Dharu}">
+		<name>Country station 3(peacock blue)</name>
+		<size>2,1</size>
+                &station_003;
+		<sprite origin="144, 0" offset="14">
+				&station_003hueTransform_002;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="station" id="{station_003-station-C003-000a-4C8B212Dharu}">
+		<name>Country station 3(teal green)</name>
+		<size>1,2</size>
+                &station_003;
+		<sprite origin="0, 0" offset="6">
+				&station_003hueTransform_003;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_003-station-C003-000b-4C8B212Dharu}">
+		<name>Country station 3(teal green)</name>
+		<size>2,1</size>
+                &station_003;
+		<sprite origin="48, 0" offset="14">
+				&station_003hueTransform_003;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_003-station-C003-000c-4C8B212Dharu}">
+		<name>Country station 3(teal green)</name>
+		<size>1,2</size>
+                &station_003;
+		<sprite origin="96, 0" offset="6">
+				&station_003hueTransform_003;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_003-station-C003-000d-4C8B212Dharu}">
+		<name>Country station 3(teal green)</name>
+		<size>2,1</size>
+                &station_003;
+		<sprite origin="144, 0" offset="14">
+				&station_003hueTransform_003;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="station" id="{station_003-station-C004-000a-4C8B212Dharu}">
+		<name>Country station 3(sepia)</name>
+		<size>1,2</size>
+                &station_003;
+		<sprite origin="0, 0" offset="6">
+				&station_003hueTransform_004;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_003-station-C004-000b-4C8B212Dharu}">
+		<name>Country station 3(sepia)</name>
+		<size>2,1</size>
+                &station_003;
+		<sprite origin="48, 0" offset="14">
+				&station_003hueTransform_004;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_003-station-C004-000c-4C8B212Dharu}">
+		<name>Country station 3(sepia)</name>
+		<size>1,2</size>
+                &station_003;
+		<sprite origin="96, 0" offset="6">
+				&station_003hueTransform_004;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_003-station-C004-000d-4C8B212Dharu}">
+		<name>Country station 3(sepia)</name>
+		<size>2,1</size>
+                &station_003;
+		<sprite origin="144, 0" offset="14">
+				&station_003hueTransform_004;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="station" id="{station_003-station-C005-000a-4C8B212Dharu}">
+		<name>Country station 3 (red)</name>
+		<size>1,2</size>
+                &station_003;
+		<sprite origin="0, 0" offset="6">
+				&station_003hueTransform_005;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_003-station-C005-000b-4C8B212Dharu}">
+		<name>Country station 3 (red)</name>
+		<size>2,1</size>
+                &station_003;
+		<sprite origin="48, 0" offset="14">
+				&station_003hueTransform_005;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_003-station-C005-000c-4C8B212Dharu}">
+		<name>Country station 3 (red)</name>
+		<size>1,2</size>
+                &station_003;
+		<sprite origin="96, 0" offset="6">
+				&station_003hueTransform_005;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_003-station-C005-000d-4C8B212Dharu}">
+		<name>Country station 3 (red)</name>
+		<size>2,1</size>
+                &station_003;
+		<sprite origin="144, 0" offset="14">
+				&station_003hueTransform_005;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="station" id="{station_003-station-C006-000a-4C8B212Dharu}">
+		<name>Country station 3 (mint blue)</name>
+		<size>1,2</size>
+                &station_003;
+		<sprite origin="0, 0" offset="6">
+				&station_003hueTransform_006;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_003-station-C006-000b-4C8B212Dharu}">
+		<name>Country station 3 (mint blue)</name>
+		<size>2,1</size>
+                &station_003;
+		<sprite origin="48, 0" offset="14">
+				&station_003hueTransform_006;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_003-station-C006-000c-4C8B212Dharu}">
+		<name>Country station 3 (mint blue)</name>
+		<size>1,2</size>
+                &station_003;
+		<sprite origin="96, 0" offset="6">
+				&station_003hueTransform_006;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_003-station-C006-000d-4C8B212Dharu}">
+		<name>Country station 3 (mint blue)</name>
+		<size>2,1</size>
+                &station_003;
+		<sprite origin="144, 0" offset="14">
+				&station_003hueTransform_006;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="station" id="{station_003-station-C007-000a-4C8B212Dharu}">
+		<name>Country station 3 (yellow ocher)</name>
+		<size>1,2</size>
+                &station_003;
+		<sprite origin="0, 0" offset="6">
+				&station_003hueTransform_007;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_003-station-C007-000b-4C8B212Dharu}">
+		<name>Country station 3 (yellow ocher)</name>
+		<size>2,1</size>
+                &station_003;
+		<sprite origin="48, 0" offset="14">
+				&station_003hueTransform_007;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_003-station-C007-000c-4C8B212Dharu}">
+		<name>Country station 3 (yellow ocher)</name>
+		<size>1,2</size>
+                &station_003;
+		<sprite origin="96, 0" offset="6">
+				&station_003hueTransform_007;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_003-station-C007-000d-4C8B212Dharu}">
+		<name>Country station 3 (yellow ocher)</name>
+		<size>2,1</size>
+                &station_003;
+		<sprite origin="144, 0" offset="14">
+				&station_003hueTransform_007;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="station" id="{station_003-station-C008-000a-4C8B212Dharu}">
+		<name>Country station 3 (olive green)</name>
+		<size>1,2</size>
+                &station_003;
+		<sprite origin="0, 0" offset="6">
+				&station_003hueTransform_008;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_003-station-C008-000b-4C8B212Dharu}">
+		<name>Country station 3 (olive green)</name>
+		<size>2,1</size>
+                &station_003;
+		<sprite origin="48, 0" offset="14">
+				&station_003hueTransform_008;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_003-station-C008-000c-4C8B212Dharu}">
+		<name>Country station 3 (olive green)</name>
+		<size>1,2</size>
+                &station_003;
+		<sprite origin="96, 0" offset="6">
+				&station_003hueTransform_008;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_003-station-C008-000d-4C8B212Dharu}">
+		<name>Country station 3 (olive green)</name>
+		<size>2,1</size>
+                &station_003;
+		<sprite origin="144, 0" offset="14">
+				&station_003hueTransform_008;
+			<picture ref="{station_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+
+
+
+<!-- Country station 4 -->
+	<contribution type="picture" id="{station_004-picture-C000-0000-4C8B212Dharu}">
+		<picture src="station_004.bmp">
+			<override when="night" src="station_004n.bmp" />
+		</picture>
+	</contribution>
+
+
+
+	<contribution type="station" id="{station_004-station-C001-000a-4C8B212Dharu}">
+		<name>Country station 4 (brown)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="0, 0" offset="5">
+				&station_004hueTransform_001;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_004-station-C001-000b-4C8B212Dharu}">
+		<name>Country station 4 (brown)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="32, 0" offset="5">
+				&station_004hueTransform_001;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_004-station-C001-000c-4C8B212Dharu}">
+		<name>Country station 4 (brown)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="64, 0" offset="5">
+				&station_004hueTransform_001;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_004-station-C001-000d-4C8B212Dharu}">
+		<name>Country station 4 (brown)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="96, 0" offset="5">
+				&station_004hueTransform_001;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+
+
+	<contribution type="station" id="{station_004-station-C002-000a-4C8B212Dharu}">
+		<name>Country station 4 (Hokkaido)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="0, 0" offset="5">
+				&station_004hueTransform_002;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_004-station-C002-000b-4C8B212Dharu}">
+		<name>Country station 4 (Hokkaido)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="32, 0" offset="5">
+				&station_004hueTransform_002;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_004-station-C002-000c-4C8B212Dharu}">
+		<name>Country station 4 (Hokkaido)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="64, 0" offset="5">
+				&station_004hueTransform_002;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_004-station-C002-000d-4C8B212Dharu}">
+		<name>Country station 4 (Hokkaido)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="96, 0" offset="5">
+				&station_004hueTransform_002;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+
+
+	<contribution type="station" id="{station_004-station-C003-000a-4C8B212Dharu}">
+		<name>Country station 4 (East Japan)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="0, 0" offset="5">
+				&station_004hueTransform_003;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_004-station-C003-000b-4C8B212Dharu}">
+		<name>Country station 4 (East Japan)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="32, 0" offset="5">
+				&station_004hueTransform_003;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_004-station-C003-000c-4C8B212Dharu}">
+		<name>Country station 4 (East Japan)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="64, 0" offset="5">
+				&station_004hueTransform_003;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_004-station-C003-000d-4C8B212Dharu}">
+		<name>Country station 4 (East Japan)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="96, 0" offset="5">
+				&station_004hueTransform_003;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+
+
+	<contribution type="station" id="{station_004-station-C004-000a-4C8B212Dharu}">
+		<name>Country station 4 (Central Japan)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="0, 0" offset="5">
+				&station_004hueTransform_004;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_004-station-C004-000b-4C8B212Dharu}">
+		<name>Country station 4 (Central Japan)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="32, 0" offset="5">
+				&station_004hueTransform_004;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_004-station-C004-000c-4C8B212Dharu}">
+		<name>Country station 4 (Central Japan)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="64, 0" offset="5">
+				&station_004hueTransform_004;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_004-station-C004-000d-4C8B212Dharu}">
+		<name>Country station 4 (Central Japan)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="96, 0" offset="5">
+				&station_004hueTransform_004;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+
+
+	<contribution type="station" id="{station_004-station-C005-000a-4C8B212Dharu}">
+		<name>Country station 4 (West Japan)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="0, 0" offset="5">
+				&station_004hueTransform_005;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_004-station-C005-000b-4C8B212Dharu}">
+		<name>Country station 4 (West Japan)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="32, 0" offset="5">
+				&station_004hueTransform_005;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_004-station-C005-000c-4C8B212Dharu}">
+		<name>Country station 4 (West Japan)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="64, 0" offset="5">
+				&station_004hueTransform_005;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_004-station-C005-000d-4C8B212Dharu}">
+		<name>Country station 4 (West Japan)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="96, 0" offset="5">
+				&station_004hueTransform_005;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+
+
+	<contribution type="station" id="{station_004-station-C006-000a-4C8B212Dharu}">
+		<name>Country station 4 (Shikoku)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="0, 0" offset="5">
+				&station_004hueTransform_006;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_004-station-C006-000b-4C8B212Dharu}">
+		<name>Country station 4 (Shikoku)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="32, 0" offset="5">
+				&station_004hueTransform_006;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_004-station-C006-000c-4C8B212Dharu}">
+		<name>Country station 4 (Shikoku)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="64, 0" offset="5">
+				&station_004hueTransform_006;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_004-station-C006-000d-4C8B212Dharu}">
+		<name>Country station 4 (Shikoku)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="96, 0" offset="5">
+				&station_004hueTransform_006;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+
+
+	<contribution type="station" id="{station_004-station-C007-000a-4C8B212Dharu}">
+		<name>Country station 4 (Kyushu)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="0, 0" offset="5">
+				&station_004hueTransform_007;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_004-station-C007-000b-4C8B212Dharu}">
+		<name>Country station 4 (Kyushu)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="32, 0" offset="5">
+				&station_004hueTransform_007;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{station_004-station-C007-000c-4C8B212Dharu}">
+		<name>Country station 4 (Kyushu)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="64, 0" offset="5">
+				&station_004hueTransform_007;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{station_004-station-C007-000d-4C8B212Dharu}">
+		<name>Country station 4 (Kyushu)</name>
+		<size>1,1</size>
+                &station_004;
+		<sprite origin="96, 0" offset="5">
+				&station_004hueTransform_007;
+			<picture ref="{station_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+
+
+
+
+
+</plug-in>

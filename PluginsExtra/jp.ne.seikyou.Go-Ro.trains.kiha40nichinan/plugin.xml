@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>KIHA 40 Nichinan Colors (dependent)</title>
+	<author>haru(qra_ra)</author>
+	<homepage>http://hb4.seikyou.ne.jp/home/Go-Ro/FreeTrain/</homepage>
+
+	<depend on="org.kohsuke.freetrain.trains.qra"/>
+		<!--  ↑利用するコントリビューション（絵や車両など）のあるプラグイン名を書く -->
+
+
+
+	<!-- kiha40 日南色-->
+
+	<contribution type="trainCar" id="{kiha40-trainCar-nichinan-000a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="250,30,0" to="255,230,23"/>
+<map from="233,28,0" to="238,214,21"/>
+<map from="214,26,0" to="218,197,19"/>
+<map from="199,24,0" to="203,183,18"/>
+<map from="177,21,0" to="181,163,16"/>
+<map from="180,174,174" to="134,131,128"/>
+<map from="87,83,83" to="134,131,128"/>
+<map from="149,18,0" to="152,138,14"/>
+<map from="176,171,171" to="115,112,110"/>
+<map from="218,218,216" to="218,197,19"/>
+<map from="152,152,151" to="152,138,14"/>
+<map from="155,19,0" to="158,143,14"/>
+<map from="238,238,235" to="238,214,21"/>
+<map from="158,158,157" to="158,143,14"/>
+<map from="149,0,238" to="238,214,21"/>
+<map from="137,0,218" to="218,197,19"/>
+<map from="96,0,152" to="152,138,14"/>
+<map from="99,0,158" to="158,143,14"/>
+<map from="181,181,178" to="181,163,16"/>
+<map from="23,55,173" to="203,183,18"/>
+<map from="16,38,122" to="143,129,13"/>
+<map from="113,0,181" to="181,163,16"/>
+<map from="203,203,200" to="203,183,18"/>
+<map from="127,0,203" to="203,183,18"/>
+<map from="25,59,186" to="218,197,19"/>
+<map from="27,163,0" to="181,163,16"/>
+<map from="20,120,0" to="133,120,12"/>
+<map from="18,41,129" to="152,138,14"/>
+<map from="30,183,0" to="203,183,18"/>
+<map from="0,218,0" to="218,197,19"/>
+<map from="0,152,0" to="152,138,14"/>
+<map from="21,129,0" to="143,129,13"/>
+<map from="0,151,203" to="203,183,18"/>
+<map from="0,107,143" to="143,129,13"/>
+<map from="18,43,135" to="158,143,14"/>
+<map from="0,158,0" to="158,143,14"/>
+<map from="0,203,0" to="203,183,18"/>
+<map from="23,138,0" to="152,138,14"/>
+<map from="0,114,152" to="152,138,14"/>
+<map from="21,49,153" to="181,163,16"/>
+<map from="0,181,0" to="181,163,16"/>
+<map from="0,135,181" to="181,163,16"/>
+<map from="24,143,0" to="158,143,14"/>
+<map from="0,118,158" to="158,143,14"/>
+<map from="27,64,202" to="238,214,21"/>
+<map from="33,197,0" to="218,197,19"/>
+<map from="36,214,0" to="238,214,21"/>
+<map from="149,142,113" to="181,163,16"/>
+<map from="196,186,149" to="238,214,21"/>
+<map from="180,171,137" to="218,197,19"/>
+<map from="167,159,127" to="203,183,18"/>
+<map from="255,255,252" to="255,230,23"/>
+<map from="210,200,160" to="255,230,23"/>
+<map from="130,124,99" to="158,143,14"/>
+			</spriteType>
+
+			<picture ref="{57AF9516-5742-4081-A08D-1572882A3159}" />
+				<!--    ↑「org.kohsuke.freetrain.trains.qra」にある「kiha40.bmp」の絵を定義した"picture"コントリビューションのID -->
+
+		</sprite>
+		<capacity>65</capacity>
+	</contribution>
+
+	<contribution type="train" id="{kiha40-train-nichinan-0001-4C8B212Dharu}">
+		<name>Nichinan Colors</name>
+		<price>1400</price>
+                <fare>100</fare>
+		<speed>slow</speed>
+		<author>haru</author>
+		<type>KIHA 40 Series</type>
+		<company>JR Kyushu</company>
+		<description></description>
+		<composition>
+			<body carRef="{kiha40-trainCar-nichinan-000a-4C8B212Dharu}"/>
+		</composition>
+	</contribution>
+
+
+
+
+
+
+	<!-- kiha40 九州色+日南色-->
+
+	<contribution type="train" id="{kiha40-train-nichinan-0002-4C8B212Dharu}">
+		<name>Kyushu Colors + Nichinan Colors</name>
+		<price>1400</price>
+                <fare>100</fare>
+		<speed>slow</speed>
+		<author>haru</author>
+		<type>KIHA 40 Series</type>
+		<company>JR Kyushu</company>
+		<description>２～５両購入可</description>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+
+		<config>
+			<car char="日" ref="{kiha40-trainCar-nichinan-000a-4C8B212Dharu}"/>
+			<car char="九" ref="{ADF65878-9F9C-456A-9B79-72F846A0479D}"/>
+				<!--         ↑「org.kohsuke.freetrain.trains.qra」にある、九州色のキハ40形車両を定義した"trainCar"コントリビューションのID -->
+		
+			<composition>日九</composition>
+			<composition>日日九</composition>
+			<composition>日日九九</composition>
+			<composition>日日九日九</composition>
+		</config>
+	</contribution>
+
+
+</plug-in>

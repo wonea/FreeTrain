@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Road</title>
+	<author>TAKUROU(for XML file)/477 and RougetsuRouya(images)</author>
+	<homepage>http://www14.big.oir.jp/~ayase/</homepage>
+	
+	<!-- This file was originaly wrote by TAKUROU and modified by Rougetsu. -->
+	<!-- The image 'rail paving stones 4' is originaly created by 477 -->
+	
+	<!-- New paving stones -->
+	<contribution type="road" id="{FreeTrain-TAKUROU-RoadImg-Isi}">
+		<class name="freetrain.contributions.road.A3RoadContribution" />
+		<name>Rail paving stones1</name>
+		<description>Rail paving stones</description>
+		<picture src="road_isi.bmp" size="32,32" offset="16" />
+	</contribution>
+	
+	<!-- A bit rusted paving stones -->
+	<contribution type="road" id="{FreeTrain-TAKUROU-RoadImg-Isi}-2">
+		<class name="freetrain.contributions.road.A3RoadContribution" />
+		<name>Rail paving stones2</name>
+		<description>Rail paving stones</description>
+		<picture src="road_isi2.bmp" size="32,32" offset="16" />
+	</contribution>	
+	
+	<!-- Wasted paving stones -->
+	<contribution type="road" id="{FreeTrain-TAKUROU-RoadImg-Isi}-3">
+		<class name="freetrain.contributions.road.A3RoadContribution" />
+		<name>Rail paving stones3</name>
+		<description>Rail paving stones</description>
+		<picture src="road_isi3.bmp" size="32,32" offset="16" />
+	</contribution>	
+	
+	<!-- 477 created -->
+	<contribution type="road" id="{FreeTrain-TAKUROU-RoadImg-Isi}-4">
+		<class name="freetrain.contributions.road.A3RoadContribution" />
+		<name>Rail paving stones4</name>
+		<description>Rail paving stones</description>
+		<picture src="road_isi4.bmp" size="32,32" offset="16" />
+	</contribution>	
+		
+</plug-in>

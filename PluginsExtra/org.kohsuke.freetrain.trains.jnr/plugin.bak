@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<plug-in>
+	<title></title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	
+	
+	
+	<!-- 80系湘南型電車 -->
+	<contribution type="trainCar" id="{27D5058D-41B9-47eb-B632-02B8DF3DE1E9}">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="80_2.bmp" origin="0,0"/>
+		<capacity>81</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{8B8C5CB2-F81D-43a5-A287-4528788BF74E}">
+		<company>旧日本国有鉄道</company>
+		<type>80系</type>
+		<name>湘南電車(2枚窓タイプ)</name>
+		<author>暇</author>
+		<description>
+国鉄が製作した最初の長距離電車。途中から製作された2枚窓のスタイルは私鉄を中心にブームになった。
+		</description>
+		<price>1000</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{27D5058D-41B9-47eb-B632-02B8DF3DE1E9}"/>
+		</composition>
+	</contribution>
+</plug-in>

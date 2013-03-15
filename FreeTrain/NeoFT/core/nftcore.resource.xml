@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<properties name="core">
+	<properties name="direction">
+		<property name="names" type="string" readonly="true">北,東,南,西,北東,南東,南西,北西,北北東,東南東,南南西,西北西,東北東,南南東,西南西,北北西</property>
+	</properties>
+	<properties name="world">
+		<property name="district_replace_prompt" type="string" readonly="true">置き換えによって、地域マップ『{0}』のデータは破棄されます。
+		よろしいですか？</property>
+		<property name="create_districts_prompt" type="string" readonly="true">今までのマップは全て破棄します。
+		よろしいですか？</property>
+	</properties>
+</properties>

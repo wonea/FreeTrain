@@ -1,0 +1,1474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<author>Shikashika</author>
+ 	<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+	<title>Street Cars</title>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 50形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-51}">
+		<picture src="51.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-52}">
+		<picture src="52.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 50形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-51}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-51}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-52}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-52}" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-51}">
+		<company>Hiroshima Electric Railway</company>
+		<type>KA 50 Series</type>
+		<name>Open Car</name>
+		<author>Shikashika</author>
+		<description>昭和4年梅鉢鉄工所･富永田造船所製造の元大阪市電の1600型で、昭和40年に広電に移籍し750形となり、昭和55年に無蓋貨車として改造され貨50形となりました。花電車としてフラワーフェスティバルや交通安全運動、カープなどの優勝パレードに運用されています。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-51}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-52}">
+		<company>Hiroshima Electric Railway</company>
+		<type>KA 50 Series</type>
+		<name>Open Car (with test roof)</name>
+		<author>Shikashika</author>
+		<description>昭和4年梅鉢鉄工所･富永田造船所製造の元大阪市電の1600型で、昭和40年に広電に移籍し750形となり、昭和54年に無蓋貨車として改造され貨50形となりました。花電車としてフラワーフェスティバルや交通安全運動、カープなどの優勝パレードに運用されています。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-52}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 70形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-70A}">
+		<picture src="70A.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-70C}">
+		<picture src="70C.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 70形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-76A}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-70A}" />
+		</sprite>
+		<capacity>50</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-76C}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-70C}" />
+		</sprite>
+		<capacity>50</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-76B}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-76A}"/>
+	</contribution>
+
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-77A}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-70A}" />
+		<spriteType name="colorMapped">
+			<map from="177,185,185" to="135,113,82"/>
+			<map from="196,205,205" to="155,133,94"/>
+			<map from="205,215,215" to="165,143,100"/>
+			<map from="225,235,235" to="185,163,112"/>
+			<map from="179,195,195" to="175,153,106"/>
+			<map from="188,203,205" to="185,157,112"/>
+			<map from="198,213,215" to="195,164,118"/>
+			<map from="207,223,225" to="205,176,124"/>
+			<map from="167,187,190" to="190,190,145"/>
+			<map from="185,207,210" to="210,210,160"/>
+			<map from="194,217,220" to="220,220,168"/>
+			<map from="211,237,240" to="240,240,183"/>
+			<map from="154,172,175" to="175,175,133"/>
+			<map from="172,191,195" to="195,195,149"/>
+			<map from="180,202,205" to="205,205,156"/>
+			<map from="110,30,55" to="60,52,36"/>
+			<map from="110,30,40" to="210,210,162"/>
+			<map from="140,38,72" to="90,81,54"/>
+			<map from="140,38,55" to="230,230,177"/>
+			<map from="105,28,54" to="55,51,33"/>
+			<map from="105,28,41" to="205,205,158"/>
+			<map from="125,34,64" to="75,68,45"/>
+			<map from="125,34,48" to="225,225,173"/>
+			<map from="150,170,170" to="100,84,36"/>
+			<map from="176,200,200" to="130,115,46"/>
+			<map from="145,165,165" to="95,81,33"/>
+			<map from="162,185,185" to="115,99,41"/>
+			<map from="200,200,192" to="100,87,60"/>
+			<map from="230,230,220" to="130,112,79"/>
+			<map from="195,195,187" to="95,95,57"/>
+			<map from="225,225,216" to="125,111,75"/>
+		</spriteType>
+		</sprite>
+		<capacity>50</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-77C}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-70C}" />
+		<spriteType name="colorMapped">
+			<map from="177,185,185" to="135,113,82"/>
+			<map from="196,205,205" to="155,133,94"/>
+			<map from="205,215,215" to="165,143,100"/>
+			<map from="225,235,235" to="185,163,112"/>
+			<map from="179,195,195" to="175,153,106"/>
+			<map from="188,203,205" to="185,157,112"/>
+			<map from="198,213,215" to="195,164,118"/>
+			<map from="207,223,225" to="205,176,124"/>
+			<map from="167,187,190" to="190,190,145"/>
+			<map from="185,207,210" to="210,210,160"/>
+			<map from="194,217,220" to="220,220,168"/>
+			<map from="211,237,240" to="240,240,183"/>
+			<map from="154,172,175" to="175,175,133"/>
+			<map from="172,191,195" to="195,195,149"/>
+			<map from="180,202,205" to="205,205,156"/>
+			<map from="110,30,55" to="60,52,36"/>
+			<map from="110,30,40" to="210,210,162"/>
+			<map from="140,38,72" to="90,81,54"/>
+			<map from="140,38,55" to="230,230,177"/>
+			<map from="105,28,54" to="55,51,33"/>
+			<map from="105,28,41" to="205,205,158"/>
+			<map from="125,34,64" to="75,68,45"/>
+			<map from="125,34,48" to="225,225,173"/>
+			<map from="150,170,170" to="100,84,36"/>
+			<map from="176,200,200" to="130,115,46"/>
+			<map from="145,165,165" to="95,81,33"/>
+			<map from="162,185,185" to="115,99,41"/>
+			<map from="200,200,192" to="100,87,60"/>
+			<map from="230,230,220" to="130,112,79"/>
+			<map from="195,195,187" to="95,95,57"/>
+			<map from="225,225,216" to="125,111,75"/>
+		</spriteType>
+		</sprite>
+		<capacity>50</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-77B}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-77A}"/>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-76}">
+		<company>Hiroshima Electric Railway</company>
+		<type>70 Series</type>
+		<name>Ex-Dortmund City Works (Silver)</name>
+		<author>Shikashika</author>
+		<description>元西ドイツのドルトムント市のドルトムント都市事業のＧＴ－８形です。昭和34年デュワグ社製造で、アルナ工機で改造されて昭和56年に広電に移籍しています。76号は車体が銀色です。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-76A}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-76B}"/>
+			<car char="Ｃ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-76C}"/>
+			
+			<composition>ＡＣＢ</composition>
+		</config>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-77}">
+		<company>Hiroshima Electric Railway</company>
+		<type>70 Series</type>
+		<name>Ex-Dortmund City Works (Brown)</name>
+		<author>Shikashika</author>
+		<description>元西ドイツのドルトムント市のドルトムント都市事業のＧＴ－８形です。昭和34年デュワグ社製造で、アルナ工機で改造されて昭和56年に広電に移籍しています。77号は車体が茶色です。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-77A}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-77B}"/>
+			<car char="Ｃ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-77C}"/>
+			
+			<composition>ＡＣＢ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 100形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-101}">
+		<picture src="101.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 100形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-101}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-101}" />
+		</sprite>
+		<capacity>42</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-101}">
+		<company>Hiroshima Electric Railway</company>
+		<type>100 Series</type>
+		<name>Taisho Train</name>
+		<author>Shikashika</author>
+		<description>大正1年の｢広島電気軌道株式会社｣の開業時に走っていた、明治45年製造の2重屋根単車A形101号を復元したものです。車両は、大正14年梅鉢鉄工所製造で昭和46年に廃車となり交通公園に展示されていた被爆電車の157をベースにして、昭和59年に大阪車両で改造したものです。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-101}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 150形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-156}">
+		<picture src="156.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 150形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-156}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-156}" />
+		</sprite>
+		<capacity>42</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-156}">
+		<company>Hiroshima Electric Railway</company>
+		<type>150 Series</type>
+		<name>A-bombed Train</name>
+		<author>Shikashika</author>
+		<description>大正14年梅鉢鉄工所製造。昭和46年に一度廃車にされましたが、昭和62年に改良され車籍が復活しました。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-156}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 200形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-238}">
+		<picture src="238.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 200形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-238}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-238}" />
+		</sprite>
+		<capacity>46</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-238}">
+		<company>Hiroshima Electric Railway</company>
+		<type>200 Series</type>
+		<name>Ex-Hanover Transit Works</name>
+		<author>Shikashika</author>
+		<description>元西ドイツのハノーバー市のハノーバー交通事業の路面電車です。昭和3年製造ですが第２次大戦で被災し、昭和25年にデュワグ社で再生、昭和51年には廃車となりハノーバー市市電博物館で保存されていました。広島市とハノーバー市の姉妹都市提携5周年を記念して、平成1年に贈与されたものです(ちなみに広島市からは昭和63年に茶室を贈呈、その返礼)。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-238}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 200形 クリスマス電車-->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-238x}">
+		<picture src="238x.bmp">
+                <override when="night" src="238xn.bmp"/>
+                </picture>
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 200形 クリスマス電車-->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-238x}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-238x}" />
+		</sprite>
+		<capacity>46</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-238x}">
+		<company>Hiroshima Electric Railway</company>
+		<type>200 Series</type>
+		<name>Christmas Train</name>
+		<author>Shikashika</author>
+		<description>元西ドイツのハノーバー市のハノーバー交通事業の路面電車です。クリスマスになると電飾で飾られ、大量のサンタを乗せて(お客は乗せません)市内を巡回します。電飾のイルミネーションが綺麗です。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-238x}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 350形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-351}">
+		<picture src="351.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 350形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-351}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-351}" />
+		</sprite>
+		<capacity>80</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-351}">
+		<company>Hiroshima Electric Railway</company>
+		<type>350 Series</type>
+		<name>Streetcar</name>
+		<author>Shikashika</author>
+		<description>昭和33年ナニワ工機製造。当初は850形で、昭和37年には宮島線直通運転用として直通色(オリエントピーチ)に塗られていましが、昭和46年に350形に改番され、市内線色にされました。乙種免許の教習車としても使用されています。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-571}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 550形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-551}">
+		<picture src="551.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 550形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-551}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-551}" />
+		</sprite>
+		<capacity>80</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-551}">
+		<company>Hiroshima Electric Railway</company>
+		<type>550 Series</type>
+		<name>Streetcar</name>
+		<author>Shikashika</author>
+		<description>昭和30年ナニワ工機製造で、広電初の全金属製電車です。市内線としては初めてパンタグラフを装備しました。また、車体側面の広告は、半透明アクリル板で裏側から蛍光灯で照らし出す｢照明広告｣でしたが、現在は全車撤去されています。
+
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-571}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 570形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-571}">
+		<picture src="571.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 570形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-571}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-571}" />
+		</sprite>
+		<capacity>88</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-571}">
+		<company>Hiroshima Electric Railway</company>
+		<type>570 Series</type>
+		<name>Ex-Kobe City Train</name>
+		<author>Shikashika</author>
+		<description>昭和35年大阪車輌製造。元神戸市電の500形で、昭和46年に広電に移籍しています。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-571}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 600形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-601}">
+		<picture src="601.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 600形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-601}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-601}" />
+		</sprite>
+		<capacity>80</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-601}">
+		<company>Hiroshima Electric Railway</company>
+		<type>600 Series</type>
+		<name>Ex-Nishi-Nippon Railroad Fukuoka City Line</name>
+		<author>Shikashika</author>
+		<description>昭和23年汽車会社製造。元西鉄の500形で、昭和51年に広電に移籍しています。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-601}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+ 	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 650形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-651}">
+		<picture src="651.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 650形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-651}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-651}" />
+		</sprite>
+		<capacity>80</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-651}">
+		<company>Hiroshima Electric Railway</company>
+		<type>650 Series</type>
+		<name>A-bombed Train</name>
+		<author>Shikashika</author>
+		<description>昭和17年木南車輌製造。昭和20年に全5両被爆しながらも、同年8月中に652号が、他3両も翌年の3月までには復旧、爆心地に近く全焼だった655も昭和23年11月には復旧しました。残念なことに655号は昭和42年に事故に遭い廃車となっています。速度はゆっくりで年代を感じさせます…。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-651}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+ 	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 700形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-701}">
+		<picture src="701.bmp" />
+	</contribution>		
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 700形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-701}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-701}" />
+		</sprite>
+		<capacity>91</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-701}">
+		<company>Hiroshima Electric Railway</company>
+		<type>700 Series</type>
+		<name>Light Train</name>
+		<author>Shikashika</author>
+		<description>昭和57年アルナ工機製造。省エネルギー・低騒音の軽快電車です。パンタフラフが菱形になっています。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-701}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+ 	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 800形(旧) -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-801}">
+		<picture src="801.bmp" />
+	</contribution>		
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 800形(旧) -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-801}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-801}" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-801}">
+		<company>Hiroshima Electric Railway</company>
+		<type>800 Series (old)</type>
+		<name>Streetcar</name>
+		<author>Shikashika</author>
+		<description>昭和26年ナニワ工機製造の旧800形です。元々は前後扉でしたが、昭和51年に803号は中扉増設と後扉封鎖の改造がなされ、801号に改番されました。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-801}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+ 	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 800形(新) -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-802}">
+		<picture src="802.bmp" />
+	</contribution>		
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 800形(新) -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-802}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-802}" />
+		</sprite>
+		<capacity>91</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-802}">
+		<company>Hiroshima Electric Railway</company>
+		<type>800 Series</type>
+		<name>Light Train</name>
+		<author>Shikashika</author>
+		<description>昭和58年アルナ工機製造。省エネルギー・低騒音の軽快電車です。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-802}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+ 	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 800形(新) -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-803}">
+		<picture src="803.bmp" />
+	</contribution>
+		
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 800形(新) -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-803}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-803}" />
+		</sprite>
+		<capacity>69</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-803}">
+		<company>Hiroshima Electric Railway</company>
+		<type>800 Series</type>
+		<name>Light Train 2nd</name>
+		<author>Shikashika</author>
+		<description>昭和62年アルナ工機製造。省エネルギー・低騒音の軽快電車です。801と前面のデザインなどが変更されています。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-803}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 900形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-901}">
+		<picture src="901.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 900形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-901}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-901}" />
+		</sprite>
+		<capacity>80</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-901}">
+		<company>Hiroshima Electric Railway</company>
+		<type>900 Series</type>
+		<name>Ex-Osaka City Train</name>
+		<author>Shikashika</author>
+		<description>昭和32年大阪車両製造。元大阪市電の2600形で、昭和44年に広電に移籍しています。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-901}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 1100形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-1103}">
+		<picture src="1103.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 1100形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-1103}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-1103}" />
+		</sprite>
+		<capacity>88</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-1103}">
+		<company>Hiroshima Electric Railway</company>
+		<type>1100 Series</type>
+		<name>Ex-Kobe City Train</name>
+		<author>Shikashika</author>
+		<description>昭和29年川崎車輌製造。元神戸市電の1100形で、昭和46年に広電に移籍しています。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-1103}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 1900形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-1901}">
+		<picture src="1901.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 1900形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-1901}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-1901}" />
+		</sprite>
+		<capacity>85</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-1901}">
+		<company>Hiroshima Electric Railway</company>
+		<type>1900 Series</type>
+		<name>Ex-Kyoto City Train</name>
+		<author>Shikashika</author>
+		<description>昭和32年ナニワ工機製造。元京都市電の1900形で、昭和52～53年に広電に移籍しています。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-1901}"/>
+			
+			<composition>Ａ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 2000形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-2001}">
+		<picture src="2001.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-2002}">
+		<picture src="2002.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 2000形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-2001}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-2001}" />
+		</sprite>
+		<capacity>80</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-2002}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-2002}" />
+		</sprite>
+		<capacity>87</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-2003}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-2002}"/>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-2001}">
+		<company>Hiroshima Electric Railway</company>
+		<type>2000 Series</type>
+		<name>Nonstop Colors</name>
+		<author>Shikashika</author>
+		<description>昭和35年ナニワ工機製造。もともとは単車両でしたが、昭和49年に広電で片側運転台を撤去して2連接車化する改造がされています。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-2002}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-2003}"/>
+			<car char="Ｃ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-2001}"/>
+			
+			<composition>Ｃ</composition>
+			<composition>ＡＢ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 3000形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-3001A}">
+		<picture src="3001A.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-3001C}">
+		<picture src="3001C.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 3000形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3001A}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-3001A}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3001B}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-3001A}"/>
+	</contribution>
+
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3001C}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-3001C}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-3001}">
+		<company>Hiroshima Electric Railway</company>
+		<type>3000 Series</type>
+		<name>Ex-Nishi-Nippon Railroad Fukuoka City Line</name>
+		<author>Shikashika</author>
+		<description>昭和38年日立製作所と汽車製造製造の西鉄の1100,1200,1300形を昭和54年～58年に大阪車両で3連接車両に改造したものです。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3001A}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3001B}"/>
+			<car char="Ｃ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3001C}"/>
+			
+			<composition>ＡＣＢ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 3000形 イルミネーション電飾電車 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-3001Ax}">
+		<picture src="3001xA.bmp">
+                <override when="night" src="3001xAn.bmp"/>
+                </picture>
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-3001Cx}">
+		<picture src="3001xC.bmp">
+                <override when="night" src="3001xCn.bmp"/>
+                </picture>
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 3000形 イルミネーション電飾電車 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3001Ax}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-3001Ax}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3001Bx}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-3001Ax}"/>
+	</contribution>
+
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3001Cx}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-3001Cx}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-3001x}">
+		<company>Hiroshima Electric Railway</company>
+		<type>3000 Series</type>
+		<name>Illumination Train</name>
+		<author>Shikashika</author>
+		<description>3006号(旧西鉄福岡市内電車)です。ライトアップ事業の一環として、冬場に電飾で飾られ運行されます。一般客も乗車できます。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3001Ax}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3001Bx}"/>
+			<car char="Ｃ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3001Cx}"/>
+			
+			<composition>ＡＣＢ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 3100形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-3101A}">
+		<picture src="3101A.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-3101C}">
+		<picture src="3101C.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 3100形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3101A}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-3101A}" />
+		</sprite>
+		<capacity>50</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3101B}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-3101A}"/>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3101C}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-3101C}" />
+		</sprite>
+		<capacity>30</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-3101}">
+		<company>Hiroshima Electric Railway</company>
+		<type>3100 Series</type>
+		<name>Green Liner</name>
+		<author>Shikashika</author>
+		<description>元々は昭和36年ナニワ工機製造の2500形２連接車であったものを、昭和60年に大阪車両で３連接車に改造したものです。昔はオリエントピーチに塗られていましたが、ぐりーんらいなー色に塗り替えられました。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3101A}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3101B}"/>
+			<car char="Ｃ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3101C}"/>
+			
+			<composition>ＡＣＢ</composition>
+		</config>
+	</contribution>
+
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 3500形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-3501A}">
+		<picture src="3501A.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-3501C}">
+		<picture src="3501C.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 3500形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3501A}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-3501A}" />
+		</sprite>
+		<capacity>52</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3501B}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-3501A}"/>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3501C}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-3501C}" />
+		</sprite>
+		<capacity>52</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-3501}">
+		<company>Hiroshima Electric Railway</company>
+		<type>3500 Series</type>
+		<name>Green Liner</name>
+		<author>Shikashika</author>
+		<description>日本鉄道技術協会が開発した日本初の軽快電車で、昭和55年アルナ工機と川崎重工製造。1編成のみ試作されました。宮島線･市内線直通用のぐりーんらいなーです。3連接車で、本当は中間車がもっと短いです。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3501A}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3501B}"/>
+			<car char="Ｃ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3501C}"/>
+			
+			<composition>ＡＣＢ</composition>
+		</config>
+	</contribution>
+
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 3700形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-3701A}">
+		<picture src="3701A.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-3701C}">
+		<picture src="3701C.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 3700形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3701A}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-3701A}" />
+		</sprite>
+		<capacity>50</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3701B}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-3701A}"/>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3701C}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-3701C}" />
+		</sprite>
+		<capacity>40</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-3701}">
+		<company>Hiroshima Electric Railway</company>
+		<type>3700 Series</type>
+		<name>Green Liner</name>
+		<author>Shikashika</author>
+		<description>昭和59年アルナ工機製造。宮島線･市内線直通用のぐりーんらいなーです。3連接車で、本当は中間車がもっと短いです。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3701A}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3701B}"/>
+			<car char="Ｃ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3701C}"/>
+			
+			<composition>ＡＣＢ</composition>
+		</config>
+	</contribution>
+
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 3800形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-3801A}">
+		<picture src="3801A.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-3801C}">
+		<picture src="3801C.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 3800形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3801A}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-3801A}" />
+		</sprite>
+		<capacity>50</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3801B}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-3801A}"/>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3801C}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-3801C}" />
+		</sprite>
+		<capacity>40</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-3801}">
+		<company>Hiroshima Electric Railway</company>
+		<type>3800 Series</type>
+		<name>Green Liner</name>
+		<author>Shikashika</author>
+		<description>昭和62年アルナ工機製造。広電初のVVVFインバータ制御の3連接車で、本当は中間車がもっと短いです。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3801A}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3801B}"/>
+			<car char="Ｃ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3801C}"/>
+			
+			<composition>ＡＣＢ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 3900形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-3901A}">
+		<picture src="3901A.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-3901C}">
+		<picture src="3901C.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 3900形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3901A}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-3901A}" />
+		</sprite>
+		<capacity>51</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3901B}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-3901A}"/>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3901C}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-3901C}" />
+		</sprite>
+		<capacity>50</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-3901}">
+		<company>Hiroshima Electric Railway</company>
+		<type>3900 Series</type>
+		<name>Green Liner</name>
+		<author>Shikashika</author>
+		<description>平成2年アルナ工機製造。VVVFインバータ制御の3連接車で、本当は中間車がもっと短いです。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3901A}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3901B}"/>
+			<car char="Ｃ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3901C}"/>
+			
+			<composition>ＡＣＢ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 3950形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-3951A}">
+		<picture src="3951A.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-3951C}">
+		<picture src="3951C.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 3950形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3951A}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-3951A}" />
+		</sprite>
+		<capacity>51</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3951B}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-3951A}"/>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-3951C}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-3951C}" />
+		</sprite>
+		<capacity>50</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-3951}">
+		<company>Hiroshima Electric Railway</company>
+		<type>3950 Series</type>
+		<name>Green Liner</name>
+		<author>Shikashika</author>
+		<description>平成09年アルナ工機製造。車両デザインはデザイン総研広島です。3連接車で、本当は中間車がもっと短いです。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3951A}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3951B}"/>
+			<car char="Ｃ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-3951C}"/>
+			
+			<composition>ＡＣＢ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 5000形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-5001A}">
+		<picture src="5001A.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-5001CED}">
+		<picture src="5001CED.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 5000形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-5001A}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-5001A}" />
+		</sprite>
+		<capacity>51</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-5001B}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FreeTrain-Streetcar-Tramcar-TrainCar-5001A}"/>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-5001CED}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-5001CED}" />
+		</sprite>
+		<capacity>51</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-5000}">
+		<company>Hiroshima Electric Railway</company>
+		<type>5000 Series</type>
+		<name>GREEN MOVER</name>
+		<author>Shikashika</author>
+		<description>平成11年デュワグ(独)とアルナ工機製造。車両設計はシーメンス(独)、車両デザインはデザイン総研広島です。広電初、日本でも2番目の超低床電車です。本当は5連接車ですが、真ん中の1両に中間車3両分を無理矢理まとめて表現してるのでかなり無理が…。1999年グッドデザイン賞、ユニバーサルデザイン賞、2000年ローレル賞を受賞しています。
+
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="Ａ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-5001A}"/>
+			<car char="Ｂ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-5001B}"/>
+			<car char="Ｃ" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-5001CED}"/>
+			
+			<composition>ＡＣＢ</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 1030形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-1031}">
+		<picture src="1031.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 1030形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-1031}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-1031}" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-1030}">
+		<company>Hiroshima Electric Railway</company>
+		<type>1030 Series</type>
+		<name>Takayuka Car</name>
+		<author>Shikashika</author>
+		<description>昭和5年宮島線の開業に伴い川崎車輌と藤永田造船所で製造された半鋼製車の高床車です。当時はH形でしたが昭和14年に1030形に改番されました。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="１" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-1031}"/>
+			
+			<composition>１</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 1050形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-1051}">
+		<picture src="1051.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-1053}">
+		<picture src="1053.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-1054}">
+		<picture src="1054.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 1050形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-1051}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-1051}" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-1053}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-1053}" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-1054}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-1054}" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-1050}">
+		<company>Hiroshima Electric Railway</company>
+		<type>1050 Series</type>
+		<name>Ex-Keihanshin Kyuko Railway Takayuka</name>
+		<author>Shikashika</author>
+		<description>元京阪神急行電鉄の木造車100,200型。高床車、宮島線専用車両です。昭和22年に広電に移籍し1050形となり、昭和28年にナニワ工機で全金属製車体に改造されています。昭和54年には2連接化もされましたが、昭和57年に1090形に改番されました。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="１" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-1051}"/>
+			<car char="３" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-1053}"/>
+			<car char="４" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-1054}"/>
+			
+			<composition>１</composition>
+			<composition>３４</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 1060形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-1061}">
+		<picture src="1061.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 1060形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-1061}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-1061}" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-1060}">
+		<company>Hiroshima Electric Railway</company>
+		<type>1060 Series</type>
+		<name>Takayuka Car</name>
+		<author>Shikashika</author>
+		<description>昭和32年ナニワ工機製造。高床車、宮島線専用車両です。運転台が半室になっていて、残り半分のスペースは車端部まで座席がありました。高性能電車だったのですが1両しか製造されませんでした。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="１" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-1061}"/>
+			
+			<composition>１</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 1070形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-1071}">
+		<picture src="1071.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-1072}">
+		<picture src="1072.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 1070形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-1071}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-1071}" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-1072}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-1072}" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-1070}">
+		<company>Hiroshima Electric Railway</company>
+		<type>1070 Series</type>
+		<name>Ex-Hankyu Corporation Takayuka Car</name>
+		<author>Shikashika</author>
+		<description>昭和13年川崎車輌製造の元阪急電鉄の500形で、昭和42年に広電に移籍しナニワ工機で改造されています。高床車、宮島線専用車両です。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="１" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-1071}"/>
+			<car char="２" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-1072}"/>
+			
+			<composition>１２</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 1080形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-1081}">
+		<picture src="1081.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-1082}">
+		<picture src="1082.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 1080形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-1081}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-1081}" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-1082}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-1082}" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-1080}">
+		<company>Hiroshima Electric Railway</company>
+		<type>1080 Series</type>
+		<name>Ex-Hankyu Corporation Takayuka Car</name>
+		<author>Shikashika</author>
+		<description>昭和31年ナニワ工機製造の元阪急電鉄の210形で廃車となり、昭和51年に広電に移籍しています。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="１" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-1081}"/>
+			<car char="２" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-1082}"/>
+			
+			<composition>１２</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 広島電鉄 1090形 -->
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-1091}">
+		<picture src="1091.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-Streetcar-Tramcar-picture-1092}">
+		<picture src="1092.bmp" />
+	</contribution>
+ 	<!-- 車両定義 -->
+	<!-- 広島電鉄 1090形 -->
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-1091}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-1091}" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+	<contribution type="trainCar" id="{FreeTrain-Streetcar-Tramcar-TrainCar-1092}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Streetcar-Tramcar-picture-1092}" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+	<!-- 旅客列車の定義 -->
+	<contribution type="train" id="{FreeTrain-Streetcar-Tramcar-Train-1091}">
+		<company>Hiroshima Electric Railway</company>
+		<type>1090 Series</type>
+		<name>Ex-Keihanshin Kyuko Railway Takayuka</name>
+		<author>Shikashika</author>
+		<description>元京阪神急行電鉄の木造車100,200型。高床車、宮島線専用車両です。昭和22年に広電に移籍し1050形となり、昭和57年に自社工場で２連結化し改番され1090形となりました。高床車では、唯一冷房化されています。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="１" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-1091}"/>
+			<car char="２" ref="{FreeTrain-Streetcar-Tramcar-TrainCar-1092}"/>
+			
+			<composition>１２</composition>
+		</config>
+	</contribution>
+
+</plug-in>

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>FT-Construction Road plugins</title>
+	<author>HEUER</author>
+	<homepage>http://freetrain.finito-web.com/</homepage>
+	
+	<!--path between fields-->
+	<contribution type="road" id="{ROAD0001-8058-11D7-BB78-0090FE1AB959}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>path between fields/unpaved/bank,flowers</name>
+		<style name="footpath"/>
+		<description>path between fields(unpaved)</description>
+		<picture src="un-paving.bmp" size="32,16" offset="0">
+			<override when="autumn" src="un-paving-a.bmp"/>
+			<override when="winter" src="un-paving-w.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="road" id="{ROAD0002-8058-11D7-BB78-0090FE1AB959}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>path between fields/unpaved/bank,grass</name>
+		<style name="footpath"/>
+		<description>path between fields(unpaved)</description>
+		<picture src="un-paving2.bmp" size="32,16" offset="0">
+			<override when="autumn" src="un-paving2-a.bmp"/>
+			<override when="winter" src="un-paving2-w.bmp"/>
+		</picture>
+	</contribution>
+
+	<!--One lane town street-->
+	<contribution type="road" id="{ROAD1001-8058-11D7-BB78-0090FE1AB959}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>town street/nolights</name>
+		<style name="street" sidewalk="shoulder" lanes="1"/>
+		<description>town street(nolights)</description>
+		<picture src="road1.bmp" size="32,16" offset="0" />
+	</contribution>
+
+	<!--Two lane road-->
+	<contribution type="road" id="{ROAD2001-8058-11D7-BB78-0090FE1AB959}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Two lane road/white dotted/lights</name>
+		<style name="street" sidewalk="shoulder" lanes="2"/>
+		<description>White dotted 2-lane road</description>
+		<picture src="road2.bmp" size="32,32" offset="16">
+			<override when="night" src="road2n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="road" id="{ROAD2001-8058-11D7-BB78-0090FE1AB959A}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Two lane road/white dotted/nolights</name>
+		<style name="street" sidewalk="shoulder" lanes="2"/>
+		<description>White dotted 2-lane road</description>
+		<picture src="road2a.bmp" size="32,32" offset="16">
+		</picture>
+	</contribution>
+	<contribution type="road" id="{ROAD2002-8058-11D7-BB78-0090FE1AB959}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Two lane road/white solid/lights</name>
+		<style name="street" sidewalk="shoulder" lanes="2"/>
+		<description>White lined 2-lane road</description>
+		<picture src="road3.bmp" size="32,32" offset="16">
+			<override when="night" src="road3n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="road" id="{ROAD2002-8058-11D7-BB78-0090FE1AB959A}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Two lane road/white solid/nolights</name>
+		<style name="street" sidewalk="shoulder" lanes="2"/>
+		<description>White lined 2-lane road</description>
+		<picture src="road3a.bmp" size="32,32" offset="16">
+		</picture>
+	</contribution>
+	<contribution type="road" id="{ROAD2003-8058-11D7-BB78-0090FE1AB959}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Two lane road/orange solid/lights</name>
+		<style name="street" sidewalk="shoulder" lanes="2"/>
+		<description>Orange lined 2-lane road</description>
+		<picture src="road4.bmp" size="32,32" offset="16">
+			<override when="night" src="road4n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="road" id="{ROAD2003-8058-11D7-BB78-0090FE1AB959A}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Two lane road/orange solid/nolights</name>
+		<style name="street" sidewalk="shoulder" lanes="2"/>
+		<description>White lined 2-lane road</description>
+		<picture src="road4a.bmp" size="32,32" offset="16">
+		</picture>
+	</contribution>
+
+	<!--Expressway-->
+	<contribution type="road" id="{ROAD3001-8058-11D7-BB78-0090FE1AB959}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Expressway(White dotted)</name>
+		<style name="highway" lanes="2"/>
+		<description>Expressway(white dotted lines)</description>
+		<picture src="road10.bmp" size="32,32" offset="16">
+			<override when="night" src="road10n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="road" id="{ROAD3002-8058-11D7-BB78-0090FE1AB959}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Expressway(1-lane,left)</name>
+		<style name="highway" lanes="1"/>
+		<description>Expressway(1-lane,left side)</description>
+		<picture src="road11.bmp" size="32,32" offset="16">
+			<override when="night" src="road11n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="road" id="{ROAD3003-8058-11D7-BB78-0090FE1AB959}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Expressway(1-lane,right)</name>
+		<style name="highway" lanes="1"/>
+		<description>Expressway(1-lane,right side)</description>
+		<picture src="road12.bmp" size="32,32" offset="16">
+			<override when="night" src="road12n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="road" id="{ROAD3004-8058-11D7-BB78-0090FE1AB959}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Expressway(2-lane,left)</name>
+		<style name="highway" lanes="2"/>
+		<description>Expressway(2-lane,left side)</description>
+		<picture src="road13.bmp" size="32,32" offset="16">
+			<override when="night" src="road13n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="road" id="{ROAD3005-8058-11D7-BB78-0090FE1AB959}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Expressway(2-lane,right)</name>
+		<style name="highway" lanes="2"/>
+		<description>Expressway(2-lane,right side)</description>
+		<picture src="road14.bmp" size="32,32" offset="16">
+			<override when="night" src="road14n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="road" id="{ROAD3006-8058-11D7-BB78-0090FE1AB959}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Expressway(2-lane,orange-line)</name>
+		<style name="highway" lanes="2"/>
+		<description>Expressway facing oncoming traffic</description>
+		<picture src="road15.bmp" size="32,32" offset="16">
+			<override when="night" src="road15n.bmp"/>
+		</picture>
+	</contribution>
+</plug-in>

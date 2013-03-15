@@ -1,0 +1,93 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFT.Core", "Core\NFT.Core.csproj", "{21EF6ED4-D1FC-4CF4-9E30-A89F99DB79FB}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFT.UI", "ui_jp\NFT.UI.csproj", "{98255547-B12F-41A8-B61B-90193C213886}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectDraw.AlphaBlend", "..\lib\DirectDraw.AlphaBlend\DirectDraw.AlphaBlend.vcproj", "{76CB19BD-60DD-44E1-AB7A-9E1A73D77CFD}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFT.DirectDraw", "directx\NFT.DirectDraw\NFT.DirectDraw.csproj", "{C4219F4F-FDB1-4DB1-BFF9-429C7A2C6CE3}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFT.Framework", "framework\NFT.Framework.csproj", "{BCA22298-65E0-4AF7-931C-E35DF4672991}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win32Util", "Win32Util\Win32Util.csproj", "{9EEB5794-AE76-41E5-A27A-54089978C1FE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFT.Controls", "Controls\NFT.Controls.csproj", "{7CEE9543-A9B8-4849-B4B3-B4F2D6A469F6}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectAudio.net", "..\lib\DirectAudio.net\DirectAudio.net.csproj", "{0616A314-BDF0-466D-AB4B-9FA1B071A8A2}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFT.Starter", "starter\NFT.Starter.csproj", "{17B6AE46-0110-4C40-98EB-5F7E4E16C050}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeTrain.Controls", "..\lib\Controls\FreeTrain.Controls.csproj", "{D3B86CCE-530E-4472-AE8E-3FA5F903C206}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{21EF6ED4-D1FC-4CF4-9E30-A89F99DB79FB}.Debug.ActiveCfg = Debug|.NET
+		{21EF6ED4-D1FC-4CF4-9E30-A89F99DB79FB}.Debug.Build.0 = Debug|.NET
+		{21EF6ED4-D1FC-4CF4-9E30-A89F99DB79FB}.Release.ActiveCfg = Release|.NET
+		{21EF6ED4-D1FC-4CF4-9E30-A89F99DB79FB}.Release.Build.0 = Release|.NET
+		{98255547-B12F-41A8-B61B-90193C213886}.Debug.ActiveCfg = Debug|.NET
+		{98255547-B12F-41A8-B61B-90193C213886}.Debug.Build.0 = Debug|.NET
+		{98255547-B12F-41A8-B61B-90193C213886}.Release.ActiveCfg = Release|.NET
+		{98255547-B12F-41A8-B61B-90193C213886}.Release.Build.0 = Release|.NET
+		{76CB19BD-60DD-44E1-AB7A-9E1A73D77CFD}.Debug.ActiveCfg = Debug|Win32
+		{76CB19BD-60DD-44E1-AB7A-9E1A73D77CFD}.Debug.Build.0 = Debug|Win32
+		{76CB19BD-60DD-44E1-AB7A-9E1A73D77CFD}.Release.ActiveCfg = Release|Win32
+		{76CB19BD-60DD-44E1-AB7A-9E1A73D77CFD}.Release.Build.0 = Release|Win32
+		{C4219F4F-FDB1-4DB1-BFF9-429C7A2C6CE3}.Debug.ActiveCfg = Debug|.NET
+		{C4219F4F-FDB1-4DB1-BFF9-429C7A2C6CE3}.Debug.Build.0 = Debug|.NET
+		{C4219F4F-FDB1-4DB1-BFF9-429C7A2C6CE3}.Release.ActiveCfg = Release|.NET
+		{C4219F4F-FDB1-4DB1-BFF9-429C7A2C6CE3}.Release.Build.0 = Release|.NET
+		{BCA22298-65E0-4AF7-931C-E35DF4672991}.Debug.ActiveCfg = Debug|.NET
+		{BCA22298-65E0-4AF7-931C-E35DF4672991}.Debug.Build.0 = Debug|.NET
+		{BCA22298-65E0-4AF7-931C-E35DF4672991}.Release.ActiveCfg = Release|.NET
+		{BCA22298-65E0-4AF7-931C-E35DF4672991}.Release.Build.0 = Release|.NET
+		{9EEB5794-AE76-41E5-A27A-54089978C1FE}.Debug.ActiveCfg = Debug|.NET
+		{9EEB5794-AE76-41E5-A27A-54089978C1FE}.Debug.Build.0 = Debug|.NET
+		{9EEB5794-AE76-41E5-A27A-54089978C1FE}.Release.ActiveCfg = Release|.NET
+		{9EEB5794-AE76-41E5-A27A-54089978C1FE}.Release.Build.0 = Release|.NET
+		{7CEE9543-A9B8-4849-B4B3-B4F2D6A469F6}.Debug.ActiveCfg = Debug|.NET
+		{7CEE9543-A9B8-4849-B4B3-B4F2D6A469F6}.Debug.Build.0 = Debug|.NET
+		{7CEE9543-A9B8-4849-B4B3-B4F2D6A469F6}.Release.ActiveCfg = Release|.NET
+		{7CEE9543-A9B8-4849-B4B3-B4F2D6A469F6}.Release.Build.0 = Release|.NET
+		{0616A314-BDF0-466D-AB4B-9FA1B071A8A2}.Debug.ActiveCfg = Debug|.NET
+		{0616A314-BDF0-466D-AB4B-9FA1B071A8A2}.Debug.Build.0 = Debug|.NET
+		{0616A314-BDF0-466D-AB4B-9FA1B071A8A2}.Release.ActiveCfg = Release|.NET
+		{0616A314-BDF0-466D-AB4B-9FA1B071A8A2}.Release.Build.0 = Release|.NET
+		{17B6AE46-0110-4C40-98EB-5F7E4E16C050}.Debug.ActiveCfg = Debug|.NET
+		{17B6AE46-0110-4C40-98EB-5F7E4E16C050}.Debug.Build.0 = Debug|.NET
+		{17B6AE46-0110-4C40-98EB-5F7E4E16C050}.Release.ActiveCfg = Release|.NET
+		{17B6AE46-0110-4C40-98EB-5F7E4E16C050}.Release.Build.0 = Release|.NET
+		{D3B86CCE-530E-4472-AE8E-3FA5F903C206}.Debug.ActiveCfg = Debug|.NET
+		{D3B86CCE-530E-4472-AE8E-3FA5F903C206}.Debug.Build.0 = Debug|.NET
+		{D3B86CCE-530E-4472-AE8E-3FA5F903C206}.Release.ActiveCfg = Release|.NET
+		{D3B86CCE-530E-4472-AE8E-3FA5F903C206}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

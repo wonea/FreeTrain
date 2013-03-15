@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Structure Set</title>
+	<author>EshiMinarai</author>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="picture" id="{EF08A2C3-87D5-4BCB-BB37-0B3243EF1E22}">
+		<picture src="yoshinoya1.bmp"/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{DD1224B9-2F1A-4c25-9E65-4E604F3342C7}">
+		<group>Gyudon restaurant</group>
+		<design>Yoshinoya (urban)</design>
+		<structure>
+			<category byname="Fast Food"/>
+			<category byname="Offices for Rent" hide="true"/>
+		</structure>
+		<price>250</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="21">
+			<picture ref="{EF08A2C3-87D5-4BCB-BB37-0B3243EF1E22}" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+	</contribution>
+	
+	<contribution type="picture" id="{1F4ACA6C-53D3-41C8-B5F1-DE9CE98E83AD}">
+		<picture src="yosinoya2.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{19F42929-9606-4cfb-A2F0-EFE323487DC6}">
+		<group>Gyudon restaurant</group>
+		<design>Yoshinoya (suburban)</design>
+		<structure>
+			<category byname="Fast Food"/>
+		</structure>
+		<price>400</price>
+		<size>1,2</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{1F4ACA6C-53D3-41C8-B5F1-DE9CE98E83AD}" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>70</base>
+		</population>
+	</contribution>
+	
+	
+</plug-in>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<plug-in>
+	<title>西日本鉄道 車両キット</title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	
+	
+	<!-- 西鉄 5000形/6000系/6050系 -->
+	<contribution type="trainCar" id="{3D986977-0EB5-423b-97C9-9694C3D3AD24}">
+		<class name="freetrain.framework.plugin.impl.ColoredTrainCarImpl" />
+		<colorMap picture="1" base="64,242,202" line1="255,0,0" line2="64,242,202" line3="64,242,202" />
+		<capacity>120</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{A99766D7-C2A4-415d-BF85-0A80B35CA154}">
+		<company>西日本鉄道</company>
+		<type>5000形/6000系/6050系</type>
+		<name>標準色</name>
+		<author>Minさん</author>
+		<description>天神大牟田線を走る電車。ラッシュ時の特急から普通まで幅広く使用される。</description>
+
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{3D986977-0EB5-423b-97C9-9694C3D3AD24}"/>
+		</composition>
+	</contribution>
+	
+	
+	
+	
+	<!-- 西鉄 600形 -->
+	<contribution type="trainCar" id="{C2DDE39A-C617-49d9-A9E2-143745240F21}">
+		<class name="freetrain.framework.plugin.impl.ColoredTrainCarImpl" />
+		<colorMap picture="1" base="64,242,202" line1="255,0,0" line2="64,242,202" line3="64,242,202" />
+		<capacity>110</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{C8C28E0C-09E4-415a-BA48-1D7039B3D7EC}">
+		<company>西日本鉄道</company>
+		<type>600形</type>
+		<name>標準色</name>
+		<author>Minさん</author>
+		<description>天神大牟田線・甘木線を走る電車。ワンマン運転が可能。徐々に本数を減らしている。</description>
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{C2DDE39A-C617-49d9-A9E2-143745240F21}"/>
+		</composition>
+	</contribution>
+	
+
+	<!-- 西鉄 2000形 -->
+	<contribution type="trainCar" id="{7FB180D4-9D11-49da-B3BA-994B09412AE7}">
+		<class name="freetrain.framework.plugin.impl.ColoredTrainCarImpl" />
+		<colorMap picture="4" base="254,230,133" line1="255,0,0" line2="254,230,133" line3="254,230,133" />
+		<capacity>120</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{D5429C22-40B3-4d36-BCBB-B61968CA3F65}">
+		<company>西日本鉄道</company>
+		<type>2000形</type>
+		<name>標準色</name>
+		<author>Minさん</author>
+		<description>天神大牟田線を走る電車。主に急行などに使用される。中央に運転台がある。</description>
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{7FB180D4-9D11-49da-B3BA-994B09412AE7}"/>
+		</composition>
+	</contribution>
+
+
+</plug-in>

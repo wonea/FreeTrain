@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+     <title>Sanyo Electric Railway</title>
+     <author>Tomonori Takeuchi</author>
+     <homepage>http://t-tomonori.hp.infoseek.co.jp</homepage>
+
+     <!--  5030 先頭 --> 
+     <contribution type="trainCar" id="{tomonori-sanyo-5030-5030-1570012E5289}-h">
+         <class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+         <sprite origin="0,0">
+             <picture src="sanyo5630.bmp" /> 
+         </sprite>
+         <capacity>36</capacity> 
+     </contribution>
+
+     <!--  5030 中間 --> 
+     <contribution type="trainCar" id="{tomonori-sanyo-5030-5030-1570012E5289}-m">
+         <class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+         <sprite origin="0,0">
+             <picture src="sanyo5230.bmp" /> 
+         </sprite>
+         <capacity>42</capacity> 
+     </contribution>
+
+     <!--  5030 後ろ --> 
+     <contribution type="trainCar" id="{tomonori-sanyo-5030-5030-1570012E5289}-i">
+         <class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+         <sprite origin="0,0">
+             <picture src="sanyo5630.bmp" /> 
+         </sprite>
+         <capacity>36</capacity> 
+     </contribution>
+
+     <contribution type="trainCar" id="{tomonori-sanyo-5030-5030-1570012E5289}-t">
+         <class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+         <base carRef="{tomonori-sanyo-5030-5030-1570012E5289}-i" /> 
+     </contribution>
+
+     <contribution type="train" id="{tomonori-sanyo-5030-5030-1570012E5289}">
+         <name>Nonstop Limited Express</name>
+         <fare>180</fare> 
+         <price>1800</price> 
+         <speed>medium</speed> 
+         <author>Tomonori Takeuchi</author> 
+         <type>5030 Series</type> 
+         <company>Sanyo Electric Railway</company> 
+         <description>
+阪神電鉄との直通運転の際、5000マイチェン版として登場。
+最大の特徴は富士電機製のVVVFインバータを搭載したこと、座席が1+2であることです。
+        </description> 
+        <composition>
+            <head carRef="{tomonori-sanyo-5030-5030-1570012E5289}-h" /> 
+            <body carRef="{tomonori-sanyo-5030-5030-1570012E5289}-m" />
+            <tail carRef="{tomonori-sanyo-5030-5030-1570012E5289}-t" /> 
+        </composition>
+    </contribution>
+
+</plug-in>

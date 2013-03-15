@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title></title>
+	<author>T.Hara</author>
+ 	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+
+	<contribution type="picture" id="{72DAC5B6-A34C-48A0-8C08-9695EB557322}">
+		<picture src="12000_1.bmp" />
+	</contribution>
+
+	<contribution type="picture" id="{23658F82-05CB-433C-8854-DB55FEF37463}">
+		<picture src="train12400_2.bmp" />
+	</contribution>
+
+	<!-- 12000系先頭 -->
+	<contribution type="trainCar" id="{130F22AC-42AF-4935-B8A7-648D184721FE}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="193,193,193" to="172,142,28"/>
+<map from="128,117,128" to="252,206,44"/>
+
+<map from="152,90,76" to="76,62,108"/>
+<map from="141,141,152" to="52,70,212"/>
+<map from="148,141,114" to="44,62,188"/>
+<map from="155,176,165" to="252,174,92"/>
+<map from="134,169,93" to="220,146,76"/>
+<map from="176,145,117" to="60,82,244"/>
+<map from="128,131,165" to="252,174,92"/>
+
+<map from="107,93,90" to="196,130,68"/>
+			</spriteType>
+			<picture ref="{72DAC5B6-A34C-48A0-8C08-9695EB557322}" />
+		</sprite>
+		<capacity>56</capacity>
+	</contribution>
+
+	<!-- 12000系中間 (12400系と共通)-->
+	<contribution type="trainCar" id="{130F22AC-42AF-4935-B8A7-648D184721FE}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{23658F82-05CB-433C-8854-DB55FEF37463}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+
+	<!-- 12000系最後尾 -->
+	<contribution type="trainCar" id="{130F22AC-42AF-4935-B8A7-648D184721FE}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+	<base carRef="{130F22AC-42AF-4935-B8A7-648D184721FE}-h" />
+	</contribution>
+
+	<contribution type="train" id="{0D5E7A3E-FC17-4196-85B2-106A1C6CBBAE}">
+		<company>Kintetsu Corporation</company>
+		<type>12000 Series</type>
+		<name>Snack Car</name>
+              <fare>1000</fare> 
+		<author>T.Hara</author>
+		<description>
+		</description>
+		<price>1500</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{130F22AC-42AF-4935-B8A7-648D184721FE}-h"/>
+			<body carRef="{130F22AC-42AF-4935-B8A7-648D184721FE}-m"/>
+			<tail carRef="{130F22AC-42AF-4935-B8A7-648D184721FE}-t"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 30000先頭 -->
+	<contribution type="trainCar" id="{DD44A2F7-2F7B-44FD-9060-F61842B006DB}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="193,193,193" to="172,142,28"/>
+<map from="128,117,128" to="252,206,44"/>
+
+<map from="152,90,76" to="76,62,108"/>
+<map from="141,141,152" to="52,70,212"/>
+<map from="148,141,114" to="44,62,188"/>
+<map from="155,176,165" to="252,174,92"/>
+<map from="134,169,93" to="220,146,76"/>
+<map from="176,145,117" to="60,82,244"/>
+<map from="128,131,165" to="252,174,92"/>
+
+<map from="107,93,90" to="196,130,68"/>
+<map from="90,93,86" to="220,146,76"/>
+<map from="100,62,34" to="220,146,76"/>
+
+<map from="114,100,114" to="236,158,84"/>
+<map from="138,107,138" to="128,131,165"/>
+			</spriteType>
+			<picture ref="{72DAC5B6-A34C-48A0-8C08-9695EB557322}" />
+		</sprite>
+		<capacity>56</capacity>
+	</contribution>
+
+	<!-- 30000中間 -->
+	<contribution type="trainCar" id="{DD44A2F7-2F7B-44FD-9060-F61842B006DB}-m">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="train30000_2.bmp" />
+		</sprite>
+		<capacity>86</capacity>
+	</contribution>
+
+	<!-- 30000中間2 -->
+	<contribution type="trainCar" id="{DD44A2F7-2F7B-44FD-9060-F61842B006DB}-s">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+	<base carRef="{DD44A2F7-2F7B-44FD-9060-F61842B006DB}-m" />
+	</contribution>
+
+	<!-- 30000最後尾 -->
+	<contribution type="trainCar" id="{DD44A2F7-2F7B-44FD-9060-F61842B006DB}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+	<base carRef="{DD44A2F7-2F7B-44FD-9060-F61842B006DB}-h" />
+	</contribution>
+
+	<contribution type="train" id="{93CD3ED6-A252-40C0-B9DF-3DA8762FB1D8}">
+		<company>Kintetsu Corporation</company>
+		<type>30000 Series</type>
+		<name>Vista Car III</name>
+		<author>T.Hara</author>
+		<description>
+		</description>
+		<price>1500</price>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+		<car char="Ａ" ref="{DD44A2F7-2F7B-44FD-9060-F61842B006DB}-h"/>
+		<car char="Ｂ" ref="{DD44A2F7-2F7B-44FD-9060-F61842B006DB}-t"/>
+		<car char="Ｃ" ref="{DD44A2F7-2F7B-44FD-9060-F61842B006DB}-m"/>
+		<car char="Ｄ" ref="{DD44A2F7-2F7B-44FD-9060-F61842B006DB}-s"/>
+		<car char="Ｅ" ref="{83122F9D-566B-4437-B2FB-5B265A854247}"/>
+
+		<composition>ＡＣＤＢ</composition>
+		<composition>ＡＣＤＥＢ</composition>
+		<composition>ＡＣＤＢＡＣＤＢ</composition>
+		</config>
+	</contribution>
+
+
+	<!-- 12400系先頭 -->
+	<contribution type="trainCar" id="{70B35EC5-280E-4C60-9613-9E90047C3138}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="193,193,193" to="172,142,28"/>
+<map from="128,117,128" to="252,206,44"/>
+
+<map from="152,90,76" to="76,62,108"/>
+<map from="141,141,152" to="52,70,212"/>
+<map from="148,141,114" to="44,62,188"/>
+<map from="155,176,165" to="52,70,212"/>
+<map from="134,169,93" to="44,62,188"/>
+<map from="176,145,117" to="60,82,244"/>
+<map from="128,131,165" to="252,174,92"/>
+			</spriteType>
+			<picture ref="{72DAC5B6-A34C-48A0-8C08-9695EB557322}" />
+		</sprite>
+		<capacity>56</capacity>
+	</contribution>
+
+	<!-- 12400系中間 -->
+	<contribution type="trainCar" id="{83122F9D-566B-4437-B2FB-5B265A854247}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="train12400_2.bmp" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+
+	<!-- 12400最後尾 -->
+	<contribution type="trainCar" id="{37633D60-42D1-4FDE-81F4-2E31D1E504FA}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+	<base carRef="{70B35EC5-280E-4C60-9613-9E90047C3138}" />
+	</contribution>
+
+	<contribution type="train" id="{43F6F375-0F31-41F1-86D0-D367068EAA35}">
+		<company>Kintetsu Corporation</company>
+		<type>12400 Series</type>
+		<name>Sunny Car</name>
+		<author>T.Hara</author>
+		<description>
+		</description>
+		<price>1100</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{70B35EC5-280E-4C60-9613-9E90047C3138}"/>
+			<body carRef="{83122F9D-566B-4437-B2FB-5B265A854247}"/>
+			<tail carRef="{37633D60-42D1-4FDE-81F4-2E31D1E504FA}"/>
+		</composition>
+	</contribution>
+
+	<!-- 22000系先頭 -->
+	<contribution type="trainCar" id="{69E4346C-453F-40BA-939C-1D3C2406DBE5}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="train22000_1.bmp" />
+		</sprite>
+		<capacity>58</capacity>
+	</contribution>
+
+	<!-- 22000系中間 -->
+	<contribution type="trainCar" id="{69E4346C-453F-40BA-939C-1D3C2406DBE5}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="train22000_2.bmp" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+
+	<!-- 22000系最後尾 -->
+	<contribution type="trainCar" id="{69E4346C-453F-40BA-939C-1D3C2406DBE5}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+	<base carRef="{69E4346C-453F-40BA-939C-1D3C2406DBE5}-h" />
+	</contribution>
+
+	<contribution type="train" id="{0845A7E9-7E6D-48C1-BA93-89BB1E5A4F1A}">
+		<company>Kintetsu Corporation</company>
+		<type>22000 Series</type>
+		<name>A C E</name>
+		<author>T.Hara</author>
+		<description>
+		</description>
+		<price>1500</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{69E4346C-453F-40BA-939C-1D3C2406DBE5}-h"/>
+			<body carRef="{69E4346C-453F-40BA-939C-1D3C2406DBE5}-m"/>
+			<tail carRef="{69E4346C-453F-40BA-939C-1D3C2406DBE5}-t"/>
+		</composition>
+	</contribution>
+</plug-in>

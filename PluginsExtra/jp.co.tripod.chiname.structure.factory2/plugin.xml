@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY NormalFactory '
+	<price>500</price>
+	<structure>
+		<category byname="Factory Components"/>
+	</structure>
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>20</base>
+	</population>
+	<height>1</height>
+	<size>1,1</size>
+	<computerCannotBuild/>
+'>
+<!ENTITY OldFactory '
+	<price>400</price>
+	<structure>
+		<category byname="Factory Components"/>
+	</structure>
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>20</base>
+	</population>
+	<height>1</height>
+	<size>1,1</size>
+	<computerCannotBuild/>
+'>
+<!ENTITY crSkyBlue '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="25,185,218"/>
+	</spriteType>	
+'>
+<!ENTITY crWineRed '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="196,38,67"/>
+	</spriteType>	
+'>
+<!ENTITY crGray '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="128,128,128"/>
+	</spriteType>	
+'>
+<!ENTITY crDirtyBrown '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="152,120,128"/>
+	</spriteType>	
+'>
+<!ENTITY crDirtyYellow '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="142,154,118"/>
+	</spriteType>	
+'>
+
+]>
+<plug-in>
+
+	<title>Factories 2</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+		
+	<contribution type="picture" id="{25229E91-5548-468B-C477-3D2DC45327B5}">
+		<picture src="factory03.bmp">
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{7EA54E1B-AF22-4B08-C477-90C8FC9AA7AD}">
+		<picture src="factory03opt.bmp">
+			<override when="night" src="factory03opt_n.bmp"/>
+		</picture>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{6DC0B940-3DD3-45DF-A67C-2A633C466036}-00">
+		<group>Factory building(saw-roof)</group>
+		<design>door A</design>
+		&NormalFactory;
+		&crSkyBlue;
+		&crWineRed;
+		&crGray;
+		<sprite origin="0,0" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="64,0" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="96,0" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{6DC0B940-3DD3-45DF-A67C-2A633C466036}-01">
+		<group>Factory building(saw-roof)</group>
+		<design>door B</design>
+		&NormalFactory;
+		&crSkyBlue;
+		&crWineRed;
+		&crGray;
+		<sprite origin="0,32" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="32,32" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="64,32" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="96,32" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{6DC0B940-3DD3-45DF-A67C-2A633C466036}-02">
+		<group>Factory building(saw-roof)</group>
+		<design>ventilators on roof</design>
+		&NormalFactory;
+		&crSkyBlue;
+		&crWineRed;
+		&crGray;
+		<sprite origin="0,64" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="32,64" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="64,64" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="96,64" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{6DC0B940-3DD3-45DF-A67C-2A633C466036}-03">
+		<group>Factory building(saw-roof)</group>
+		<design>front side</design>
+		&NormalFactory;
+		&crSkyBlue;
+		&crWineRed;
+		&crGray;
+		<sprite origin="0,96" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="32,96" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="64,96" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="96,96" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{6DC0B940-3DD3-45DF-A67C-2A633C466036}-04">
+		<group>Factory building(saw-roof)</group>
+		<design>front side with door</design>
+		&NormalFactory;
+		&crSkyBlue;
+		&crWineRed;
+		&crGray;
+		<sprite origin="0,128" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="32,128" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="64,128" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="96,128" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{6DC0B940-3DD3-45DF-A67C-2A633C466036}-05">
+		<group>Factory building(saw-roof)</group>
+		<design>behind side</design>
+		&NormalFactory;
+		&crSkyBlue;
+		&crWineRed;
+		&crGray;
+		<sprite origin="0,160" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="32,160" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="64,160" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="96,160" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{6DC0B940-3DD3-45DF-A67C-2A633C466036}-06">
+		<group>Factory building(saw-roof)</group>
+		<design>rear</design>
+		&NormalFactory;
+		&crSkyBlue;
+		&crWineRed;
+		&crGray;
+		<sprite origin="0,192" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="32,192" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="64,192" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="96,192" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{6DC0B940-3DD3-45DF-A67C-2A633C466036}-07">
+		<group>Factory building(saw-roof)</group>
+		<design>corner</design>
+		&NormalFactory;
+		&crSkyBlue;
+		&crWineRed;
+		&crGray;
+		<sprite origin="0,224" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="32,224" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="64,224" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="96,224" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{6DC0B940-3DD3-45DF-A67C-2A633C466036}-08">
+		<group>Factory building(saw-roof)</group>
+		<design>corner</design>
+		&NormalFactory;
+		&crSkyBlue;
+		&crWineRed;
+		&crGray;
+		<sprite origin="0,256" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="32,256" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="64,256" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+		<sprite origin="96,256" offset="16">
+			<picture ref="{25229E91-5548-468B-C477-3D2DC45327B5}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{6DC0B940-3DD3-45DF-A67C-2A633C466036}-09">
+		<group>Factory building(saw-roof)</group>
+		<design>delivery entrance</design>
+		&NormalFactory;
+		&crSkyBlue;
+		&crWineRed;
+		&crGray;
+		<sprite origin="0,0" offset="16">
+			<picture ref="{7EA54E1B-AF22-4B08-C477-90C8FC9AA7AD}"/>
+		</sprite>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{7EA54E1B-AF22-4B08-C477-90C8FC9AA7AD}"/>
+		</sprite>
+		<sprite origin="64,0" offset="16">
+			<picture ref="{7EA54E1B-AF22-4B08-C477-90C8FC9AA7AD}"/>
+		</sprite>
+		<sprite origin="96,0" offset="16">
+			<picture ref="{7EA54E1B-AF22-4B08-C477-90C8FC9AA7AD}"/>
+		</sprite>
+	</contribution>
+</plug-in>

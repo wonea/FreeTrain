@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY robby '
+		<price>600</price>
+		<size>2,1</size>
+		<height>2</height>
+		<structure>
+			<category byname="Passanger Terminals"/>
+		</structure>	
+		<computerCannotBuild/>
+'>
+<!ENTITY hall '
+		<price>100000</price>
+		<size>5,7</size>
+		<height>2</height>
+		<structure>
+			<category byname="Passanger Terminals"/>
+		</structure>	
+		<computerCannotBuild/>
+'>
+
+]>
+
+<plug-in>
+	<title>Airport terminal B</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+
+	<contribution type="picture" id="{278D9A05-BD93-400B-C477-029AC72C275F}-01">
+		<picture src="terminal_hallB.bmp">
+			<override when="night" src="terminal_hallB_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{278D9A05-BD93-400B-C477-029AC72C275F}-02">
+		<picture src="terminal_hallB2.bmp">
+			<override when="night" src="terminal_hallB2_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{278D9A05-BD93-400B-C477-029AC72C275F}-03">
+		<picture src="terminal_robbyB.bmp">
+			<override when="night" src="terminal_robbyB_n.bmp"/>
+		</picture>
+	</contribution>
+		
+	<!--メインドーム-->
+	<contribution type="GenericStructure" id="{DC4BD38D-FA51-4CDC-C477-9D6F5FFC8A34}">
+		<group>International Airport terminal</group>
+		<design>main hall</design>
+		&hall;
+		<sprite origin="0,8" offset="56">
+			<picture ref="{278D9A05-BD93-400B-C477-029AC72C275F}-01"/>
+		</sprite>		
+		<sprite origin="224,8" offset="72" opposite="true">
+			<picture ref="{278D9A05-BD93-400B-C477-029AC72C275F}-01"/>
+		</sprite>		
+		<sprite origin="0,136" offset="72" opposite="true">
+			<picture ref="{278D9A05-BD93-400B-C477-029AC72C275F}-01"/>
+		</sprite>		
+		<sprite origin="224,136" offset="56">
+			<picture ref="{278D9A05-BD93-400B-C477-029AC72C275F}-01"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{D73E9558-7685-4A09-C477-54902A0FAF7B}">
+		<group>International Airport terminal</group>
+		<design>hall expansion</design>
+		&hall;
+		<sprite origin="0,8" offset="56">
+			<picture ref="{278D9A05-BD93-400B-C477-029AC72C275F}-02"/>
+		</sprite>		
+		<sprite origin="224,8" offset="72" opposite="true">
+			<picture ref="{278D9A05-BD93-400B-C477-029AC72C275F}-02"/>
+		</sprite>		
+		<sprite origin="0,136" offset="72" opposite="true">
+			<picture ref="{278D9A05-BD93-400B-C477-029AC72C275F}-02"/>
+		</sprite>		
+		<sprite origin="224,136" offset="56">
+			<picture ref="{278D9A05-BD93-400B-C477-029AC72C275F}-02"/>
+		</sprite>		
+	</contribution>
+	<!--出発ロビー-->
+	<contribution type="GenericStructure" id="{731CF80D-81C9-41B0-C477-E06FB565850D}">
+		<group>Airport departure lobby</group>
+		<design>mirror glass</design>
+		&robby;
+		<sprite origin="0,0" offset="32">
+			<picture ref="{278D9A05-BD93-400B-C477-029AC72C275F}-03"/>
+		</sprite>		
+		<sprite origin="48,0" offset="24" opposite="true">
+			<picture ref="{278D9A05-BD93-400B-C477-029AC72C275F}-03"/>
+		</sprite>		
+		<sprite origin="96,0" offset="32">
+			<picture ref="{278D9A05-BD93-400B-C477-029AC72C275F}-03"/>
+		</sprite>		
+		<sprite origin="144,0" offset="24" opposite="true">
+			<picture ref="{278D9A05-BD93-400B-C477-029AC72C275F}-03"/>
+		</sprite>		
+	</contribution>
+</plug-in>

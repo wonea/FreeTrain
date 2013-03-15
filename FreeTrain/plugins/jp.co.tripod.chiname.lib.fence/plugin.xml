@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE plug-in [
+<!ENTITY crWhite '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,255,255"/>
+	</spriteType>	
+'>
+<!ENTITY crDkGray '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="64,64,64"/>
+	</spriteType>	
+'>
+<!ENTITY crGray '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="176,170,152"/>
+	</spriteType>	
+'>
+<!ENTITY crKhaki '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="208,198,174"/>
+	</spriteType>
+'>
+]>
+
+<plug-in>
+	<title>Fencing</title>
+	<!--!<title>柵</title>-->
+	<author>C477</author>
+	<!--!<author>C477@2両目</author>-->
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>	
+		
+	<contribution type="contribution" id="{29DD61E1-B0FD-41D8-C477-4EA0506614A8}">
+		<name>fence</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.contributions.fence.FenceBuilder"
+			codebase="bin/Debug/Fence.DLL" />
+	</contribution>
+	
+	<contribution type="picture" id="{01E8916B-4691-4618-C477-92F80E6AE3EF}">
+		<picture src="fence.remover.bmp" >
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{43177B60-6CBD-4506-C477-637AE8FB0E93}-0">
+		<picture src="ConstructionFence.bmp" >
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{43177B60-6CBD-4506-C477-637AE8FB0E93}-1">
+		<picture src="fence0.bmp" >
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{43177B60-6CBD-4506-C477-637AE8FB0E93}-2">
+		<picture src="fence1.bmp" >
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{43177B60-6CBD-4506-C477-637AE8FB0E93}-3">
+		<picture src="fence2.bmp" >
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{43177B60-6CBD-4506-C477-637AE8FB0E93}-4">
+		<picture src="hedge0.bmp" >
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{43177B60-6CBD-4506-C477-637AE8FB0E93}-5">
+		<picture src="hedge1.bmp" >
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{43177B60-6CBD-4506-C477-637AE8FB0E93}-6">
+		<picture src="wall0.bmp" >
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{43177B60-6CBD-4506-C477-637AE8FB0E93}-7">
+		<picture src="wall1.bmp" >
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{43177B60-6CBD-4506-C477-637AE8FB0E93}-8">
+		<picture src="fence.trees.bmp" >
+			<override when="winter" src="fence.trees.WIN.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{43177B60-6CBD-4506-C477-637AE8FB0E93}-8a">
+		<picture src="fence1trees.bmp" >
+			<override when="winter" src="fence1trees.WIN.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{43177B60-6CBD-4506-C477-637AE8FB0E93}-8b">
+		<picture src="hedge0trees.bmp" >
+			<override when="winter" src="hedge0trees.WIN.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{43177B60-6CBD-4506-C477-637AE8FB0E93}-8c">
+		<picture src="wall0trees.bmp" >
+			<override when="winter" src="wall0trees.WIN.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{43177B60-6CBD-4506-C477-637AE8FB0E93}-8d">
+		<picture src="wall1trees.bmp" >
+			<override when="winter" src="wall1trees.WIN.bmp" />
+		</picture>
+	</contribution>
+		
+	<!--削除用▼-->
+	<contribution type="land" id="{1CEA6341-70DA-4C06-C477-D67403CBD03E}">
+		<group>Fencing</group>
+		<name>Remove</name>
+		<!--!<group>柵</group>
+		<name>削除</name>-->
+		<computerCannotBuild/>
+		<class name="freetrain.contributions.fence.FenceRemover"
+			codebase="bin/Debug/Fence.DLL"/>
+		<picture ref="{01E8916B-4691-4618-C477-92F80E6AE3EF}" offset="16" >
+			<right_front>0,0</right_front>
+			<left_front>32,0</left_front>
+			<left_back>64,0</left_back>
+			<right_back>96,0</right_back>
+		</picture>
+		<price>1</price>
+	</contribution>
+	<!--▲削除用-->
+
+	<contribution type="land" id="{3C004934-9F91-46C1-C477-CA3AD090FC3A}-0">
+		<group>Fencing</group>
+		<name>Construction site</name>
+		<!--!<group>柵</group>
+		<name>工事現場</name>-->
+		<computerCannotBuild/>
+		<class name="freetrain.contributions.fence.FenceBuilder"
+			codebase="bin/Debug/Fence.DLL"/>
+		<picture ref="{43177B60-6CBD-4506-C477-637AE8FB0E93}-0" offset="16" >
+			<left_back>0,0</left_back>
+			<right_back>32,0</right_back>
+			<right_front>64,0</right_front>
+			<left_front>96,0</left_front>
+		</picture>
+		<price>1</price>
+	</contribution>
+
+	<contribution type="land" id="{3C004934-9F91-46C1-C477-CA3AD090FC3A}-1a">
+		<group>Fencing</group>
+		<name>Fence</name>
+		<!--!<group>柵</group>
+		<name>柵</name>-->
+		<computerCannotBuild/>
+		<class name="freetrain.contributions.fence.FenceBuilder"
+			codebase="bin/Debug/Fence.DLL"/>
+		&crWhite;
+		<picture ref="{43177B60-6CBD-4506-C477-637AE8FB0E93}-1" offset="16" >
+			<right_front>0,0</right_front>
+			<left_front>32,0</left_front>
+			<left_back>64,0</left_back>
+			<right_back>96,0</right_back>
+		</picture>
+		<price>1</price>
+	</contribution>
+	<contribution type="land" id="{3C004934-9F91-46C1-C477-CA3AD090FC3A}-1b">
+		<group>Fencing</group>
+		<name>Fence</name>
+		<!--!<group>柵</group>
+		<name>柵</name>-->
+		<computerCannotBuild/>
+		<class name="freetrain.contributions.fence.FenceBuilder"
+			codebase="bin/Debug/Fence.DLL"/>
+		&crDkGray;
+		<picture ref="{43177B60-6CBD-4506-C477-637AE8FB0E93}-1" offset="16" >
+			<right_front>0,0</right_front>
+			<left_front>32,0</left_front>
+			<left_back>64,0</left_back>
+			<right_back>96,0</right_back>
+		</picture>
+		<price>1</price>
+	</contribution>
+	<contribution type="land" id="{3C004934-9F91-46C1-C477-CA3AD090FC3A}-2">
+		<group>Fencing</group>
+		<name>Wire netting</name>
+		<!--!<group>柵</group>
+		<name>金網</name>-->
+		<computerCannotBuild/>
+		<class name="freetrain.contributions.fence.FenceBuilder"
+			codebase="bin/Debug/Fence.DLL"/>
+		<picture ref="{43177B60-6CBD-4506-C477-637AE8FB0E93}-2" offset="16" >
+			<right_front>0,0</right_front>
+			<left_front>32,0</left_front>
+			<left_back>64,0</left_back>
+			<right_back>96,0</right_back>
+		</picture>
+		<price>1</price>
+	</contribution>
+	<contribution type="land" id="{3C004934-9F91-46C1-C477-CA3AD090FC3A}-3">
+		<group>Fencing</group>
+		<name>Fenced wall</name>
+		<!--!<group>柵</group>
+		<name>柵付き塀</name>-->
+		<computerCannotBuild/>
+		<class name="freetrain.contributions.fence.FenceBuilder"
+			codebase="bin/Debug/Fence.DLL"/>
+		&crDkGray;
+		<picture ref="{43177B60-6CBD-4506-C477-637AE8FB0E93}-3" offset="16" >
+			<right_front>0,0</right_front>
+			<left_front>32,0</left_front>
+			<left_back>64,0</left_back>
+			<right_back>96,0</right_back>
+		</picture>
+		<price>1</price>
+	</contribution>
+	<contribution type="land" id="{3C004934-9F91-46C1-C477-CA3AD090FC3A}-4">
+		<group>Fencing</group>
+		<name>Hedge (low)</name>
+		<!--!<group>柵</group>
+		<name>生垣(低)</name>-->
+		<computerCannotBuild/>
+		<class name="freetrain.contributions.fence.FenceBuilder"
+			codebase="bin/Debug/Fence.DLL"/>
+		&crDkGray;
+		<picture ref="{43177B60-6CBD-4506-C477-637AE8FB0E93}-4" offset="16" >
+			<right_front>0,0</right_front>
+			<left_front>32,0</left_front>
+			<left_back>64,0</left_back>
+			<right_back>96,0</right_back>
+		</picture>
+		<price>1</price>
+	</contribution>
+	<contribution type="land" id="{3C004934-9F91-46C1-C477-CA3AD090FC3A}-5">
+		<group>Fencing</group>
+		<name>Hedge (high)</name>
+		<!--!<group>柵</group>
+		<name>生垣(高)</name>-->
+		<computerCannotBuild/>
+		<class name="freetrain.contributions.fence.FenceBuilder"
+			codebase="bin/Debug/Fence.DLL"/>
+		&crDkGray;
+		<picture ref="{43177B60-6CBD-4506-C477-637AE8FB0E93}-5" offset="16" >
+			<right_front>0,0</right_front>
+			<left_front>32,0</left_front>
+			<left_back>64,0</left_back>
+			<right_back>96,0</right_back>
+		</picture>
+		<price>1</price>
+	</contribution>
+	<contribution type="land" id="{3C004934-9F91-46C1-C477-CA3AD090FC3A}-6a">
+		<group>Fencing</group>
+		<name>Concrete wall</name>
+		<!--!<group>柵</group>
+		<name>コンクリ塀</name>-->
+		<computerCannotBuild/>
+		<class name="freetrain.contributions.fence.FenceBuilder"
+			codebase="bin/Debug/Fence.DLL"/>
+		&crWhite;
+		<picture ref="{43177B60-6CBD-4506-C477-637AE8FB0E93}-6" offset="16" >
+			<right_front>0,0</right_front>
+			<left_front>32,0</left_front>
+			<left_back>64,0</left_back>
+			<right_back>96,0</right_back>
+		</picture>
+		<price>1</price>
+	</contribution>
+	<contribution type="land" id="{3C004934-9F91-46C1-C477-CA3AD090FC3A}-6b">
+		<group>Fencing</group>
+		<name>Block wall</name>
+		<!--!<group>柵</group>
+		<name>ブロック塀</name>-->
+		<computerCannotBuild/>
+		<class name="freetrain.contributions.fence.FenceBuilder"
+			codebase="bin/Debug/Fence.DLL"/>
+		&crKhaki;
+		<picture ref="{43177B60-6CBD-4506-C477-637AE8FB0E93}-6" offset="16" >
+			<right_front>0,0</right_front>
+			<left_front>32,0</left_front>
+			<left_back>64,0</left_back>
+			<right_back>96,0</right_back>
+		</picture>
+		<price>1</price>
+	</contribution>
+	<contribution type="land" id="{3C004934-9F91-46C1-C477-CA3AD090FC3A}-7">
+		<group>Fencing</group>
+		<name>Brick wall</name>
+		<!--!<group>柵</group>
+		<name>レンガ塀</name>-->
+		<computerCannotBuild/>
+		<class name="freetrain.contributions.fence.FenceBuilder"
+			codebase="bin/Debug/Fence.DLL"/>
+		<picture ref="{43177B60-6CBD-4506-C477-637AE8FB0E93}-7" offset="16" >
+			<right_front>0,0</right_front>
+			<left_front>32,0</left_front>
+			<left_back>64,0</left_back>
+			<right_back>96,0</right_back>
+		</picture>
+		<price>1</price>
+	</contribution>
+	<contribution type="land" id="{3C004934-9F91-46C1-C477-CA3AD090FC3A}-8">
+		<group>Fencing</group>
+		<name>Overgrown</name>
+		<!--!<group>柵</group>
+		<name>植込</name>-->
+		<computerCannotBuild/>
+		<class name="freetrain.contributions.fence.FenceBuilder"
+			codebase="bin/Debug/Fence.DLL"/>
+		<picture ref="{43177B60-6CBD-4506-C477-637AE8FB0E93}-8" offset="16" >
+			<right_front>0,0</right_front>
+			<left_front>32,0</left_front>
+			<left_back>64,0</left_back>
+			<right_back>96,0</right_back>
+		</picture>
+		<price>1</price>
+	</contribution>
+	<contribution type="land" id="{3C004934-9F91-46C1-C477-CA3AD090FC3A}-8a">
+		<group>Fencing</group>
+		<name>Overgrown wire netting</name>
+		<!--!<group>柵</group>
+		<name>植込+金網</name>-->
+		<computerCannotBuild/>
+		<class name="freetrain.contributions.fence.FenceBuilder"
+			codebase="bin/Debug/Fence.DLL"/>
+		<picture ref="{43177B60-6CBD-4506-C477-637AE8FB0E93}-8a" offset="16" >
+			<right_front>0,0</right_front>
+			<left_front>32,0</left_front>
+			<left_back>64,0</left_back>
+			<right_back>96,0</right_back>
+		</picture>
+		<price>1</price>
+	</contribution>
+	<contribution type="land" id="{3C004934-9F91-46C1-C477-CA3AD090FC3A}-8b">
+		<group>Fencing</group>
+		<name>Overgrown hedge</name>
+		<!--!<group>柵</group>
+		<name>植込+生垣</name>-->
+		<computerCannotBuild/>
+		<class name="freetrain.contributions.fence.FenceBuilder"
+			codebase="bin/Debug/Fence.DLL"/>
+		<picture ref="{43177B60-6CBD-4506-C477-637AE8FB0E93}-8b" offset="16" >
+			<right_front>0,0</right_front>
+			<left_front>32,0</left_front>
+			<left_back>64,0</left_back>
+			<right_back>96,0</right_back>
+		</picture>
+		<price>1</price>
+	</contribution>
+	<contribution type="land" id="{3C004934-9F91-46C1-C477-CA3AD090FC3A}-8c">
+		<group>Fencing</group>
+		<name>Overgrown concrete wall</name>
+		<!--!<group>柵</group>
+		<name>植込+コンクリ塀</name>-->
+		<computerCannotBuild/>
+		<class name="freetrain.contributions.fence.FenceBuilder"
+			codebase="bin/Debug/Fence.DLL"/>
+		&crWhite;
+		<picture ref="{43177B60-6CBD-4506-C477-637AE8FB0E93}-8c" offset="16" >
+			<right_front>0,0</right_front>
+			<left_front>32,0</left_front>
+			<left_back>64,0</left_back>
+			<right_back>96,0</right_back>
+		</picture>
+		<price>1</price>
+	</contribution>
+	<contribution type="land" id="{3C004934-9F91-46C1-C477-CA3AD090FC3A}-8c2">
+		<group>Fencing</group>
+		<name>Overgrown block wall</name>
+		<!--!<group>柵</group>
+		<name>植込+ブロック塀</name>-->
+		<computerCannotBuild/>
+		<class name="freetrain.contributions.fence.FenceBuilder"
+			codebase="bin/Debug/Fence.DLL"/>
+		&crKhaki;
+		<picture ref="{43177B60-6CBD-4506-C477-637AE8FB0E93}-8c" offset="16" >
+			<right_front>0,0</right_front>
+			<left_front>32,0</left_front>
+			<left_back>64,0</left_back>
+			<right_back>96,0</right_back>
+		</picture>
+		<price>1</price>
+	</contribution>
+	<contribution type="land" id="{3C004934-9F91-46C1-C477-CA3AD090FC3A}-8d">
+		<group>Fencing</group>
+		<name>Overgrown brick wall</name>
+		<!--!<group>柵</group>
+		<name>植込+レンガ塀</name>-->
+		<computerCannotBuild/>
+		<class name="freetrain.contributions.fence.FenceBuilder"
+			codebase="bin/Debug/Fence.DLL"/>
+		<picture ref="{43177B60-6CBD-4506-C477-637AE8FB0E93}-8d" offset="16" >
+			<right_front>0,0</right_front>
+			<left_front>32,0</left_front>
+			<left_back>64,0</left_back>
+			<right_back>96,0</right_back>
+		</picture>
+		<price>1</price>
+	</contribution>
+
+</plug-in>

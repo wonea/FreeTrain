@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE plug-in [
+
+<!ENTITY wall-khaki '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="202,189,158"/>
+</spriteType>
+'>
+<!ENTITY wall-steelblue '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="181,203,226"/>
+</spriteType>
+'>
+<!ENTITY wall-brown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="157,90,70"/>
+</spriteType>
+'>
+<!ENTITY wall-salmonpink '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="255,172,122"/>
+</spriteType>
+'>
+<!ENTITY wall-yelloworange '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="255,171,62"/>
+</spriteType>
+'>
+<!ENTITY fb-skyblue '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="188,234,232"/>
+</spriteType>
+'>
+<!ENTITY fb-white '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="237,235,236"/>
+</spriteType>
+'>
+<!ENTITY fb-concrete '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="195,187,171"/>
+</spriteType>
+'>
+<!ENTITY fb-vermilion '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="221,86,56"/>
+</spriteType>
+'>
+<!ENTITY wall-greyyellow '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="198,195,164"/>
+</spriteType>
+'>
+<!ENTITY wall-warmbrown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="174,143,122"/>
+</spriteType>
+'>
+<!ENTITY wall-greywarmbrown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="213,205,184"/>
+</spriteType>
+'>
+<!ENTITY wall-darkbrown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="143,134,125"/>
+</spriteType>
+'>
+<!ENTITY wall-lightyelloworange '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="246,228,164"/>
+</spriteType>
+'>
+<!ENTITY ta-white '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="244,234,218"/>
+</spriteType>
+'>
+<!ENTITY ta-silvergreen '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="198,198,184"/>
+</spriteType>
+'>
+<!ENTITY wall-brownbeige '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="217,197,173"/>
+</spriteType>
+'>
+<!ENTITY wall-redbrick '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="94,65,41"/>
+</spriteType>
+'>
+<!ENTITY wall-ivory '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="212,215,194"/>
+</spriteType>
+'>
+<!ENTITY wall-urbanstone '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="196,180,167"/>
+</spriteType>
+'>
+<!ENTITY wall-tiled '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="203,170,124"/>
+</spriteType>
+'>
+<!ENTITY wall-pastelgray '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="191,206,200"/>
+</spriteType>
+'>
+<!ENTITY wall-lightgrayishpink '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="244,201,178"/>
+</spriteType>
+'>
+<!ENTITY wall-lightredbrick '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="170,104,78"/>
+</spriteType>
+'>
+<!ENTITY wall-palesky '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="233,240,255"/>
+</spriteType>
+'>
+<!ENTITY wall-palegrayishpink '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="212,165,147"/>
+</spriteType>
+'>
+<!ENTITY wall-lightgrayishblue '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="183,185,193"/>
+</spriteType>
+'>
+<!ENTITY wall-grayishbrown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="152,124,102"/>
+</spriteType>
+'> 
+<!ENTITY wall-wood001 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="191,138,85"/>
+</spriteType>
+'>
+<!ENTITY wall-wood002 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="191,175,85"/>
+</spriteType>
+'>
+<!ENTITY wall-wood003 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="204,150,97"/>
+</spriteType>
+'>
+<!ENTITY wall-wood004 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="199,178,153"/>
+</spriteType>
+'>
+<!ENTITY wall-wood005 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="138,110,61"/>
+</spriteType>
+'>
+<!ENTITY wall-wood006 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="114,99,88"/>
+</spriteType>
+'>
+<!ENTITY wall-wood007 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="160,151,104"/>
+</spriteType>
+'>
+<!ENTITY wall-wood008 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="93,79,65"/>
+</spriteType>
+'>
+<!ENTITY wall-wood009 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="120,96,72"/>
+</spriteType>
+'>
+<!ENTITY wall-wood010 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="148,114,80"/>
+</spriteType>
+'>
+<!ENTITY tent-yellow '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="230,220,30"/>
+</spriteType>
+'>
+<!ENTITY tent-orange '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="220,109,57"/>
+</spriteType>
+'>
+<!ENTITY tent-green '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="30,160,94"/>
+</spriteType>
+'>
+<!ENTITY tent-skyblue '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="30,180,221"/>
+</spriteType>
+'>
+
+<!ENTITY component_park_001 '
+	<group>Parks</group>
+	<name>Park(1x1)</name>
+	<structure>
+		<category byname="Parks"/>
+	</structure>
+	<price>1000</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>10</base>
+		</population>
+	<computerCannotBuild />
+	</population>
+'>
+<!ENTITY component_park_002 '
+	<group>Parks</group>
+	<name>Park(1x1)</name>
+	<structure>
+		<category byname="Parks"/>
+	</structure>
+	<price>1500</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>15</base>
+		</population>
+	<computerCannotBuild />
+	</population>
+'>
+<!ENTITY component_park_003 '
+	<group>Parks</group>
+	<name>Park(1x1)</name>
+	<structure>
+		<category byname="Parks"/>
+	</structure>
+	<price>1200</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>15</base>
+		</population>
+	</population>
+	<computerCannotBuild />
+'>
+]>
+
+
+
+<plug-in>
+
+<author>Shikashika</author>
+<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+<title>Buildings(Recreation)</title>
+
+
+<!-- Groves -->
+
+<!-- Park(1x1) -->
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-amusement-park-001}">
+	<picture src = "campsite_001.bmp">
+		<override when="spring" src="park_001spring.bmp">
+			<override when="night" src="park_001spring_night.bmp"/>
+		</override>
+		<override when="summer" src="park_001summer.bmp">
+			<override when="night" src="park_001summer_night.bmp"/>
+		</override>
+		<override when="autumn" src="park_001autumn.bmp">
+			<override when="night" src="park_001autumn_night.bmp"/>
+		</override>
+		<override when="winter" src="park_001winter.bmp">
+			<override when="night" src="park_001winter_night.bmp"/>
+		</override>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-amusement-park-002}">
+	<picture src = "campsite_002.bmp">
+		<override when="spring" src="park_002spring.bmp">
+			<override when="night" src="park_002spring_night.bmp"/>
+		</override>
+		<override when="summer" src="park_002summer.bmp">
+			<override when="night" src="park_002summer_night.bmp"/>
+		</override>
+		<override when="autumn" src="park_002autumn.bmp">
+			<override when="night" src="park_002autumn_night.bmp"/>
+		</override>
+		<override when="winter" src="park_002winter.bmp">
+			<override when="night" src="park_002winter_night.bmp"/>
+		</override>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-amusement-park-003}">
+	<picture src = "campsite_003.bmp">
+		<override when="spring" src="park_003spring.bmp">
+			<override when="night" src="park_003spring_night.bmp"/>
+		</override>
+		<override when="summer" src="park_003summer.bmp">
+			<override when="night" src="park_003summer_night.bmp"/>
+		</override>
+		<override when="autumn" src="park_003autumn.bmp">
+			<override when="night" src="park_003autumn_night.bmp"/>
+		</override>
+		<override when="winter" src="park_003winter.bmp">
+			<override when="night" src="park_003winter_night.bmp"/>
+		</override>
+	</picture>
+</contribution>
+
+
+<!-- Park(1x1) -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-amusement-park-001straight}">
+&component_park_001;
+	<design>Park(straight)</design>
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-001}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-001}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-001}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-amusement-park-001crossroads}">
+&component_park_001;
+	<design>Park(crossing)</design>
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-001}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-001}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-001}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-amusement-park-001t-shape}">
+&component_park_001;
+	<design>Park(T-crossing)</design>
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-001}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-001}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-001}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-amusement-park-001corner}">
+&component_park_001;
+	<design>Park(corner)</design>
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-001}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-001}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-001}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-001}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-amusement-park-002flowerclock}">
+&component_park_002;
+	<design>Park(flower garden)</design>
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-002}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-002}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-002}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-002}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-amusement-park-002fountain}">
+&component_park_002;
+	<design>Park(fountain)</design>
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-002}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-002}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-002}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-002}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-amusement-park-002brat}">
+&component_park_002;
+	<design>Park(statuette)</design>
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-002}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-002}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-002}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-002}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-amusement-park-002bench}">
+&component_park_002;
+	<design>Park(bench)</design>
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-002}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-002}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-002}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-002}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-amusement-park-003gate-a}">
+&component_park_003;
+	<design>Park(gate)A</design>
+	&fb-white;
+	&wall-greywarmbrown;
+	&wall-lightredbrick;
+	&wall-tiled;
+	&ta-silvergreen;
+	&wall-darkbrown;
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-003}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-003}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-003}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-003}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-amusement-park-003gate-b}">
+&component_park_003;
+	<design>Park(gate)B</design>
+
+	&fb-white;
+	&wall-greywarmbrown;
+	&wall-lightredbrick;
+	&wall-tiled;
+	&ta-silvergreen;
+	&wall-darkbrown;
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-003}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-003}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-003}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-003}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-amusement-park-003toilets}">
+&component_park_003;
+	<design>Park(WC)</design>
+
+	&fb-white;
+	&wall-greywarmbrown;
+	&wall-lightredbrick;
+	&wall-tiled;
+	&ta-silvergreen;
+	&wall-darkbrown;
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-003}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-003}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-003}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-003}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-amusement-park-003post}">
+&component_park_003;
+	<design>Park(car buffer)</design>
+
+	&fb-white;
+	&wall-greywarmbrown;
+	&wall-lightredbrick;
+	&wall-tiled;
+	&ta-silvergreen;
+	&wall-darkbrown;
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-003}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-003}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-003}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-amusement-park-003}"/>
+	</sprite>
+
+</contribution>
+
+</plug-in>

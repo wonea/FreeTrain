@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+	<!ENTITY Station_04 '
+		<price>500</price>
+		<height>1</height>
+		<operationCost>10</operationCost>
+	'>	
+	<!ENTITY crOrange '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,139,0"/>
+	</spriteType>
+	'>	
+	<!ENTITY crDkGreen '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="62,161,45"/>
+	</spriteType>
+	'>	
+	<!ENTITY crLtBlue '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="81,190,227"/>
+	</spriteType>
+	'>	
+	<!ENTITY crRed '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="226,71,76"/>
+	</spriteType>
+	'>	
+]>
+<plug-in>
+	<title>European wooden station</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+
+	<contribution type="picture" id="{FC522DC0-8CB6-4106-C477-E2FCA3848D1E}">
+		<picture src="station04.bmp">
+			<override when="night" src="station04_n.bmp"/>
+		</picture>
+	</contribution>
+
+	<contribution type="station" id="{2A279F76-C913-4692-C477-04FF49922523}-1a">
+		<group>European wooden station A</group>
+		&Station_04;
+		<size>1,2</size>
+		<sprite origin="  0,0" offset="16">
+			&crOrange;
+			<picture ref="{FC522DC0-8CB6-4106-C477-E2FCA3848D1E}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{2A279F76-C913-4692-C477-04FF49922523}-0a">
+		<group>European wooden station A</group>
+		&Station_04;
+		<size>2,1</size>
+		<sprite origin=" 48,0" offset="24">
+			&crOrange;
+			<picture ref="{FC522DC0-8CB6-4106-C477-E2FCA3848D1E}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{2A279F76-C913-4692-C477-04FF49922523}-2a">
+		<group>European wooden station A</group>
+		&Station_04;
+		<size>1,2</size>
+		<sprite origin=" 96,0" offset="16">
+			&crOrange;
+			<picture ref="{FC522DC0-8CB6-4106-C477-E2FCA3848D1E}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{2A279F76-C913-4692-C477-04FF49922523}-3a">
+		<group>European wooden station A</group>
+		&Station_04;
+		<size>2,1</size>
+		<sprite origin="144,0" offset="24">
+			&crOrange;
+			<picture ref="{FC522DC0-8CB6-4106-C477-E2FCA3848D1E}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{2A279F76-C913-4692-C477-04FF49922523}-1b">
+		<group>European wooden station A</group>
+		&Station_04;
+		<size>1,2</size>
+		<sprite origin="  0,0" offset="16">
+			&crRed;
+			<picture ref="{FC522DC0-8CB6-4106-C477-E2FCA3848D1E}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{2A279F76-C913-4692-C477-04FF49922523}-0b">
+		<group>European wooden station A</group>
+		&Station_04;
+		<size>2,1</size>
+		<sprite origin=" 48,0" offset="24">
+			&crRed;
+			<picture ref="{FC522DC0-8CB6-4106-C477-E2FCA3848D1E}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{2A279F76-C913-4692-C477-04FF49922523}-2b">
+		<group>European wooden station A</group>
+		&Station_04;
+		<size>1,2</size>
+		<sprite origin=" 96,0" offset="16">
+			&crRed;
+			<picture ref="{FC522DC0-8CB6-4106-C477-E2FCA3848D1E}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{2A279F76-C913-4692-C477-04FF49922523}-3b">
+		<group>European wooden station A</group>
+		&Station_04;
+		<size>2,1</size>
+		<sprite origin="144,0" offset="24">
+			&crRed;
+			<picture ref="{FC522DC0-8CB6-4106-C477-E2FCA3848D1E}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{2A279F76-C913-4692-C477-04FF49922523}-1c">
+		<group>European wooden station A</group>
+		&Station_04;
+		<size>1,2</size>
+		<sprite origin="  0,0" offset="16">
+			&crDkGreen;
+			<picture ref="{FC522DC0-8CB6-4106-C477-E2FCA3848D1E}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{2A279F76-C913-4692-C477-04FF49922523}-0c">
+		<group>European wooden station A</group>
+		&Station_04;
+		<size>2,1</size>
+		<sprite origin=" 48,0" offset="24">
+			&crDkGreen;
+			<picture ref="{FC522DC0-8CB6-4106-C477-E2FCA3848D1E}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{2A279F76-C913-4692-C477-04FF49922523}-2c">
+		<group>European wooden station A</group>
+		&Station_04;
+		<size>1,2</size>
+		<sprite origin=" 96,0" offset="16">
+			&crDkGreen;
+			<picture ref="{FC522DC0-8CB6-4106-C477-E2FCA3848D1E}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{2A279F76-C913-4692-C477-04FF49922523}-3c">
+		<group>European wooden station A</group>
+		&Station_04;
+		<size>2,1</size>
+		<sprite origin="144,0" offset="24">
+			&crDkGreen;
+			<picture ref="{FC522DC0-8CB6-4106-C477-E2FCA3848D1E}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{2A279F76-C913-4692-C477-04FF49922523}-1d">
+		<group>European wooden station A</group>
+		&Station_04;
+		<size>1,2</size>
+		<sprite origin="  0,0" offset="16">
+			&crLtBlue;
+			<picture ref="{FC522DC0-8CB6-4106-C477-E2FCA3848D1E}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{2A279F76-C913-4692-C477-04FF49922523}-0d">
+		<group>European wooden station A</group>
+		&Station_04;
+		<size>2,1</size>
+		<sprite origin=" 48,0" offset="24">
+			&crLtBlue;
+			<picture ref="{FC522DC0-8CB6-4106-C477-E2FCA3848D1E}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{2A279F76-C913-4692-C477-04FF49922523}-2d">
+		<group>European wooden station A</group>
+		&Station_04;
+		<size>1,2</size>
+		<sprite origin=" 96,0" offset="16">
+			&crLtBlue;
+			<picture ref="{FC522DC0-8CB6-4106-C477-E2FCA3848D1E}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{2A279F76-C913-4692-C477-04FF49922523}-3d">
+		<group>European wooden station A</group>
+		&Station_04;
+		<size>2,1</size>
+		<sprite origin="144,0" offset="24">
+			&crLtBlue;
+			<picture ref="{FC522DC0-8CB6-4106-C477-E2FCA3848D1E}" />
+		</sprite>
+	</contribution>
+
+</plug-in>

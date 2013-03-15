@@ -1,0 +1,1 @@
+DirectShow source filter component that allows the client to send series of bitmaps and produce a video out of them. See the testClient/ directory for the usage.

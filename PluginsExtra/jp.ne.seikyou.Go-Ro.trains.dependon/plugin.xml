@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Trains (dependent)</title>
+	<author>haru(qra_ra)</author>
+	<homepage>http://hb4.seikyou.ne.jp/home/Go-Ro/FreeTrain/</homepage>
+
+	<depend on="org.kohsuke.freetrain.trains.qra"/>
+
+
+
+	<!-- 381系スーパーくろしお -->
+
+	<contribution type="picture" id="{381-picture-S_kuroshio-000c-4C8B212Dharu}">
+		<picture src="381S-kuro.bmp" />
+	</contribution>
+	
+	<!-- クロ380系 -->
+	<contribution type="trainCar" id="{381-trainCar-S_kuroshio-000c-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{381-picture-S_kuroshio-000c-4C8B212Dharu}" />
+		</sprite>
+		<capacity>48</capacity>
+	</contribution>
+
+	<contribution type="train" id="{381-train-S_kuroshio-0001-4C8B212Dharu}">
+		<name>Super Kuroshio</name>
+		<price>12000</price>
+                <fare>1100</fare>
+		<speed>fast</speed>
+		<author>haru</author>
+		<type>381 Series</type>
+		<company>JR West</company>
+		<description>4,5,6,9両編成のみ購入可能</description>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="パ" ref="{381-trainCar-S_kuroshio-000c-4C8B212Dharu}"/>
+			<car char="－" ref="{ADF87135-9F9C-003A-9B45-04F846A0479D}-m"/>
+			<car char="＞" ref="{ADF87135-9F9C-003A-9B45-04F846A0479D}-t"/>
+		
+			<composition>パ－－＞</composition>
+			<composition>パ－－－＞</composition>
+			<composition>パ－－－－＞</composition>
+			<composition>パ－－－－＞－－＞</composition>
+		</config>
+	</contribution>
+
+
+	<!-- キハ58月山色 -->
+	<contribution type="trainCar" id="{kiha58-trainCar-gassan-000a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="255,229,157" to="255,253,250"/>
+<map from="240,216,148" to="240,238,236"/>
+<map from="224,201,138" to="224,222,220"/>
+<map from="211,190,130" to="211,210,207"/>
+<map from="200,179,123" to="213,213,213"/>
+<map from="202,183,123" to="182,182,182"/>
+<map from="193,173,119" to="193,191,189"/>
+<map from="215,194,131" to="193,193,193"/>
+<map from="189,169,109" to="169,169,169"/>
+<map from="152,135,88" to="135,135,135"/>
+<map from="177,157,102" to="157,157,157"/>
+<map from="166,148,96" to="148,148,148"/>
+<map from="244,221,149" to="220,220,220"/>
+<map from="184,167,113" to="166,166,166"/>
+<map from="169,152,104" to="169,168,166"/>
+<map from="224,63,20" to="88,163,0"/>
+<map from="169,48,15" to="66,123,0"/>
+<map from="240,68,21" to="94,174,0"/>
+<map from="224,87,20" to="224,222,220"/>
+<map from="169,66,15" to="169,168,166"/>
+<map from="174,156,107" to="174,173,171"/>
+<map from="201,179,116" to="179,179,179"/>
+<map from="240,140,21" to="240,238,236"/>
+<map from="174,102,15" to="174,173,171"/>
+<map from="190,129,51" to="93,164,0"/>
+<map from="240,93,21" to="240,238,236"/>
+<map from="161,145,99" to="161,160,158"/>
+<map from="174,67,15" to="174,173,171"/>
+<map from="174,49,15" to="68,126,0"/>
+<map from="193,75,17" to="193,191,189"/>
+<map from="193,54,17" to="75,140,0"/>
+<map from="208,142,56" to="102,180,0"/>
+<map from="74,38,28" to="44,60,32"/>
+<map from="152,124,101" to="130,150,103"/>
+<map from="121,98,80" to="103,119,82"/>
+<map from="211,82,19" to="211,210,207"/>
+<map from="211,59,19" to="83,153,0"/>
+<map from="186,56,21" to="83,153,0"/>
+<map from="122,28,3" to="63,111,0"/>
+<map from="166,136,111" to="142,164,113"/>
+<map from="113,111,107" to="47,47,47"/>
+<map from="89,88,85" to="38,37,37"/>
+<map from="127,104,85" to="109,125,87"/>
+<map from="181,60,28" to="0,8,0"/>
+<map from="123,122,118" to="52,51,51"/>
+<map from="94,93,90" to="40,39,39"/>
+<map from="93,48,35" to="54,75,40"/>
+<map from="133,109,89" to="114,131,91"/>
+<map from="152,35,4" to="79,139,0"/>
+<map from="169,51,19" to="75,140,0"/>
+<map from="99,97,94" to="42,41,41"/>
+<map from="137,112,91" to="117,135,94"/>
+<map from="102,100,97" to="43,42,42"/>
+<map from="221,150,60" to="108,191,0"/>
+<map from="98,51,38" to="58,80,42"/>
+<map from="162,38,4" to="83,148,0"/>
+<map from="184,162,99" to="150,150,150"/>
+<map from="197,173,106" to="161,161,161"/>
+<map from="251,171,68" to="123,217,0"/>
+<map from="119,65,50" to="78,112,53"/>
+<map from="148,81,63" to="98,139,67"/>
+<map from="139,32,4" to="72,127,0"/>
+<map from="173,40,4" to="89,158,0"/>
+<map from="177,144,118" to="151,174,120"/>
+<map from="197,60,23" to="88,163,0"/>
+<map from="126,29,3" to="65,115,0"/>
+<map from="236,161,64" to="116,204,0"/>
+<map from="189,154,126" to="162,186,129"/>
+<map from="172,117,46" to="84,148,0"/>
+<map from="131,129,125" to="55,54,54"/>
+<map from="140,138,134" to="59,58,58"/>
+<map from="131,109,91" to="105,121,83"/>
+<map from="144,122,105" to="130,153,100"/>
+<map from="179,153,131" to="162,190,124"/>
+<map from="163,136,113" to="131,151,103"/>
+<map from="230,208,140" to="207,207,207"/>
+<map from="107,59,46" to="71,101,48"/>
+<map from="138,75,59" to="91,130,62"/>
+			</spriteType>
+			<picture ref="{40AF8687-58B2-3311-A95D-1570512E5210}" />
+		</sprite>
+		<capacity>65</capacity>
+	</contribution>
+	
+	<!-- キハ58月山色後尾車両 -->
+	<contribution type="trainCar" id="{kiha58-trainCar-gassan-001a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{kiha58-trainCar-gassan-000a-4C8B212Dharu}"/>
+	</contribution>
+
+
+	<contribution type="train" id="{kiha58-train-gassan-0001-4C8B212Dharu}">
+		<name>Gessan Colors</name>
+		<price>2200</price>
+                <fare>460</fare>
+		<speed>slow</speed>
+		<author>haru</author>
+		<type>KIHA 58 Series</type>
+		<company>JR East</company>
+		<description>2,3両編成のみ購入可能</description>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{kiha58-trainCar-gassan-000a-4C8B212Dharu}"/>
+			<car char="＞" ref="{kiha58-trainCar-gassan-001a-4C8B212Dharu}"/>
+		
+			<composition>＜＞</composition>
+			<composition>＜＜＞</composition>
+		</config>
+	</contribution>
+
+
+</plug-in>

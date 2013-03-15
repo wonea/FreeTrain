@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" xmlns:Conversion="urn:Conversion" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4380999E-CA4C-4AA2-8848-12FFABF72535}</ProjectGuid>
+    <RootNamespace>freetrain.world.rail.cttrain</RootNamespace>
+    <AssemblyName>FreeTrain.ColorTestTrain</AssemblyName>
+    <OutputType>Library</OutputType>
+    <ApplicationIcon />
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <StartupObject />
+    <NoConfig>false</NoConfig>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <NoStdLib>false</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn />
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <OutputPath>bin\Debug\</OutputPath>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <NoStdLib>false</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn />
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <OutputPath>bin\Release\</OutputPath>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\AssemblyInfo.cs" />
+    <Compile Include="src\ColorConfigCommand.cs" />
+    <Compile Include="src\ColorConfigDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="src\ColorConfigDialog.resx">
+      <DependentUpon>ColorConfigDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="src\ColorTestTrainCar.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\FreeTrain.Core.csproj">
+      <Project>{7746CF50-D84E-4E7B-83FB-AB43DB854DA8}</Project>
+      <Name>FreeTrain.Core</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+</Project>

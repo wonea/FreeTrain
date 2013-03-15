@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title></title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+
+
+	<!-- 153系電車 -->
+
+
+	<contribution type="picture" id="{Freetrain-T153-JNR-Kuha153}">
+		<picture src="kuha153.bmp" />
+	</contribution>
+
+	<contribution type="trainCar" id="{Freetrain-Type153-JNR-shonan-kuha153}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{Freetrain-T153-JNR-Kuha153}" />
+		</sprite>
+		<capacity>76</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{Freetrain-Type153-JNR-shonan-kuha153B}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{Freetrain-Type153-JNR-shonan-kuha153}"/>
+	</contribution>
+	
+
+	<contribution type="trainCar" id="{Freetrain-Type153-JNR-shonan-moha153}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="moha153.bmp" />
+		</sprite>
+		<capacity>84</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{Freetrain-Type153-JNR-shonan-moha152}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="moha152.bmp" />
+		</sprite>
+		<capacity>84</capacity>
+	</contribution>
+
+
+	<contribution type="trainCar" id="{Freetrain-Type153-JNR-shonan-sahashi153}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="sahashi153.bmp" />
+		</sprite>
+		<capacity>36</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{Freetrain-Type153-JNR-shonan-saro153}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="saro153.bmp" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{Freetrain-Type153-JNR-shonan-saro153-900}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="saro153-900.bmp" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{Freetrain-Type153-JNR-shonan-saro152}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="saro152.bmp" />
+		</sprite>
+		<capacity>48</capacity>
+	</contribution>
+
+
+	<contribution type="train" id="{Freetrain-ytpe153-JNR-shounan-express}">
+		<company>Japanese National Railways</company>
+		<type>153 Series</type>
+		<name>153 Series 0 Model Sahashi-Mura</name>
+		<author>––</author>
+		<description>Developed as a replacement for 80 Series on
+level terrain.
+Initially a local express, but as the local express class was discontinued,
+it was later converted into an express train.
+At the time of introduction it had a low motorman's seat. However, as a
+countermeasure for railway crossing accidents, the subsequent 500 Model had
+a high motorman's seat.
+During its heyday it was coupled with for example the newly developed SARO
+163 as SAHASHI 153 and 163 Series, which was JNR's first train that served
+buffets. However, due to aging and gradual replacement by 165 Series, it
+was finally taken out of service in 1984.
+		</description>
+		<price>200</price>
+		<speed>medium</speed>
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+
+			<car char="1" ref="{Freetrain-Type153-JNR-shonan-kuha153}"/>
+			<car char="M" ref="{Freetrain-Type153-JNR-shonan-moha153}"/> 
+			<car char="P" ref="{Freetrain-Type153-JNR-shonan-moha152}"/> 
+			<car char="S" ref="{Freetrain-Type153-JNR-shonan-saro152}"/> 
+			<car char="B" ref="{Freetrain-Type153-JNR-shonan-sahashi153}"/> 
+			<car char="F" ref="{Freetrain-Type153-JNR-shonan-kuha153B}"/> 
+		
+
+			<composition>1PMSSBPMF</composition>
+			<composition>1PMSSBPMPMF</composition>
+			<composition>1PMSSBPMFPMF</composition>
+		</config>
+	</contribution>
+
+
+	<contribution type="train" id="{Freetrain-ytpe153-JNR-saro153-900-express}">
+		<company>Japanese National Railways</company>
+		<type>153 Series</type>
+		<name>153 Series 0 Model (incl. SARO 153-900)</name>
+		<author>––</author>
+		<description>An experimental formation including SARO 153-900
+to test a stainless steel body.
+Stainless steel carriages were at the time extremely rare and only two of this model were ever produced.
+In the end, it was painted in Shonan colors and coupled with 113 Series as
+SARO 110-900.
+		</description>
+		<price>250</price>
+		<speed>medium</speed>
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+
+			<car char="1" ref="{Freetrain-Type153-JNR-shonan-kuha153}"/>
+			<car char="9" ref="{Freetrain-Type153-JNR-shonan-saro153-900}"/> 
+			<car char="M" ref="{Freetrain-Type153-JNR-shonan-moha153}"/> 
+			<car char="P" ref="{Freetrain-Type153-JNR-shonan-moha152}"/> 
+			<car char="S" ref="{Freetrain-Type153-JNR-shonan-saro153}"/> 
+			<car char="F" ref="{Freetrain-Type153-JNR-shonan-kuha153B}"/> 
+	
+			<composition>1PMS9PMF</composition>
+			<composition>1PMS9PMPMF</composition>
+			<composition>1PMS9PMFPMF</composition>
+			<composition>1PMS9PMFMPMF</composition>
+
+		</config>
+	</contribution>
+
+
+	<contribution type="train" id="{Freetrain-ytpe153-JNR-shounan-express-nosaro}">
+		<company>Japanese National Railways</company>
+		<type>153 Series</type>
+		<name>153 Series 0 Model (w/o SARO)</name>
+		<author>––</author>
+		<description>The 153 Series express train served during its
+later years in short formations and 'mono class' as Boso Express.
+		</description>
+		<price>150</price>
+		<speed>medium</speed>
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+
+			<car char="1" ref="{Freetrain-Type153-JNR-shonan-kuha153}"/>
+			<car char="M" ref="{Freetrain-Type153-JNR-shonan-moha153}"/> 
+			<car char="P" ref="{Freetrain-Type153-JNR-shonan-moha152}"/> 
+			<car char="F" ref="{Freetrain-Type153-JNR-shonan-kuha153B}"/> 
+		
+			<composition>1PMF</composition>
+			<composition>1PMFPMF</composition>
+			<composition>1PMF1PMF</composition>
+			<composition>1PMF1PMFPMF</composition>
+		</config>
+	</contribution>
+
+
+
+	<!-- 165系電車 -->
+
+	<!--非冷房-->
+	<contribution type="picture" id="{Freetrain-T165-JNR-Kumoha165}">
+		<picture src="kumoha165.bmp" />
+	</contribution>
+
+	<contribution type="trainCar" id="{Freetrain-Type165-JNR-shonan-kuha165}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{Freetrain-T165-JNR-Kumoha165}" />
+		</sprite>
+		<capacity>76</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{Freetrain-Type165-JNR-kumoha165}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{Freetrain-Type165-JNR-shonan-kuha165}"/>
+	</contribution>
+	
+	<!--非冷房-->
+	<contribution type="trainCar" id="{Freetrain-Type165-JNR-moha164-800}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="moha164-800.bmp" />
+		</sprite>
+		<capacity>84</capacity>
+	</contribution>
+
+	<!--冷房-->
+	<contribution type="picture" id="{Freetrain-T165-JNR-Kumoha165C}">
+		<picture src="kumoha165-c.bmp" />
+	</contribution>
+
+	<contribution type="trainCar" id="{Freetrain-Type165-JNR-shonan-kuha165C}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{Freetrain-T165-JNR-Kumoha165C}" />
+		</sprite>
+		<capacity>76</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{Freetrain-Type165-JNR-kumoha165C}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{Freetrain-Type165-JNR-shonan-kuha165C}"/>
+	</contribution>
+
+	<!--冷房-->
+	<contribution type="trainCar" id="{Freetrain-Type165-JNR-moha164-800C}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="moha164.bmp" />
+		</sprite>
+		<capacity>84</capacity>
+	</contribution>
+
+
+	<!--冷房-->
+	<contribution type="trainCar" id="{Freetrain-Type165-JNR-moha165}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="moha165.bmp" />
+		</sprite>
+		<capacity>84</capacity>
+	</contribution>
+
+
+	<!--冷房-->
+	<contribution type="trainCar" id="{Freetrain-Type165-JNR-moha164}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="moha164-0.bmp" />
+		</sprite>
+		<capacity>84</capacity>
+	</contribution>
+
+
+	<contribution type="train" id="{Freetrain-ytpe165-JNR-chouou-express}">
+		<company>Japanese National Railways</company>
+		<type>165 Series</type>
+		<name>165 Series Sonan Colors (MOHA 164-800 Model)</name>
+		<author>Nanashi</author>
+		<description>Developed as a mountain climbing train by
+increasing the output of 153 Series. Originally lacking air conditioner,
+one was subsequently installed.
+Incorporated into SAHASHI/SARO and put in use on Chuo Line as 'Alps Express'.
+It became widely used an express train on all direct current lines, but with
+the privatization of the national railways the express trains disappeared and
+the last train was taken out of service in 2003.
+
+This is the MOHA 164-800 Model 'Alps Express' formation with low roof and
+pantograph.
+The 7 car formation is a fully air-conditioned Tokai Express with 2 SARO carriages. The 8 car formation is a partially air-conditioned Shinshu Express
+with 2 SARO carriages. The 11 car formation lacks air-conditioning, SAHASHI,
+and has 1 SARO carriage. The 12 car formation has 2 SARO carriages, SAHASHI,
+and has partial experimental air-conditioning.
+		</description>
+		<price>150</price>
+		<speed>medium</speed>
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+
+			<car char="1" ref="{Freetrain-Type165-JNR-shonan-kuha165}"/>
+			<car char="2" ref="{Freetrain-Type165-JNR-kumoha165}"/> 
+			<car char="C" ref="{Freetrain-Type165-JNR-moha164-800C}"/> 
+			<car char="P" ref="{Freetrain-Type165-JNR-moha164-800}"/> 
+			<car char="M" ref="{Freetrain-Type153-JNR-shonan-moha153}"/> 
+			<car char="S" ref="{Freetrain-Type153-JNR-shonan-saro152}"/> 
+			<car char="B" ref="{Freetrain-Type153-JNR-shonan-sahashi153}"/> 
+			<car char="F" ref="{Freetrain-Type165-JNR-shonan-kuha165C}"/>
+			<car char="T" ref="{Freetrain-Type165-JNR-kumoha165C}"/> 
+			
+			<!-- ←松本・静岡・甲府　-->
+			<composition>1PM2</composition>
+			<composition>1PMP2</composition>
+			<composition>FCTSSCT</composition>
+			<composition>1SSM21C2</composition>
+			<composition>11P21P21SP2</composition>
+			<composition>1FCT1P2BSSP2</composition>
+		</config>
+	</contribution>
+
+
+	<contribution type="train" id="{Freetrain-ytpe165-JNR-tokai-express}">
+		<company>Japanese National Railways</company>
+		<type>165 Series</type>
+		<name>165 Series Sonan Colors (Tokaido/Sanyo Line)</name>
+		<author>Nanashi</author>
+		<description>Express formation coupled with MOHA 164-0.
+
+The 7 car formation is a Sanyo Express and lacks air-conditioning. The 12 car
+formation is a fully air-conditioned Tokai Express from 1983.
+		</description>
+		<price>150</price>
+		<speed>medium</speed>
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="1" ref="{Freetrain-Type165-JNR-shonan-kuha165}"/>
+			<car char="2" ref="{Freetrain-Type165-JNR-kumoha165}"/> 
+			<car char="P" ref="{Freetrain-Type165-JNR-moha164}"/> 
+			<car char="C" ref="{Freetrain-Type165-JNR-moha165}"/> 
+			<car char="M" ref="{Freetrain-Type153-JNR-shonan-moha152}"/> 
+			<car char="S" ref="{Freetrain-Type153-JNR-shonan-saro152}"/> 
+			<car char="F" ref="{Freetrain-Type165-JNR-shonan-kuha165C}"/>
+			<car char="T" ref="{Freetrain-Type165-JNR-kumoha165C}"/> 
+		
+			<!-- ←静岡・下関　-->
+			<composition>1M2S1M2</composition>
+			<composition>FPTSSPCTFPCT</composition>
+		</config>
+	</contribution>
+
+
+	<contribution type="train" id="{Freetrain-ytpe165-JNR-shounan-express}">
+		<company>Japanese National Railways</company>
+		<type>165 Series</type>
+		<name>165 Series Sonan Colors (no SARO/SAHASHI)</name>
+		<author>Nanashi</author>
+		<description>This formation is a mono class MOHA 164 with
+air-conditioning and normal roof.			
+		</description>
+		<price>150</price>
+		<speed>medium</speed>
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+
+			<car char="1" ref="{Freetrain-Type165-JNR-shonan-kuha165C}"/>
+			<car char="P" ref="{Freetrain-Type165-JNR-moha164}"/> 
+			<car char="M" ref="{Freetrain-Type165-JNR-moha165}"/> 
+			<car char="2" ref="{Freetrain-Type165-JNR-kumoha165C}"/> 
+		
+
+			<composition>1P2</composition>
+			<composition>1PM2</composition>
+			<composition>1P21P2</composition>
+			<composition>1P21PM2</composition>
+			<composition>1PM21PM2</composition>
+			<composition>1PM21PM21P2</composition>
+		</config>
+	</contribution>
+
+
+
+
+</plug-in>

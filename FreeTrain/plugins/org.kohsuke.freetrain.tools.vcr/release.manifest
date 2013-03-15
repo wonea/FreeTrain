@@ -1,0 +1,6 @@
+*.bmp
+plugin.xml
+bin/Debug/FreeTrain.VCR.*
+bin/Debug/BitmapWriter.TypeLib.dll
+bin/Debug/DirectShowLib.dll
+bin/Debug/Interop.QuartzTypeLib.dll

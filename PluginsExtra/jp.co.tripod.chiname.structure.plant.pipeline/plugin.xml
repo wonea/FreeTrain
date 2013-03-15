@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Plant Pipeline</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+	
+	<contribution type="road" id="{3B7AC01D-FB25-453B-C477-7FBD850FE893}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Pipeline (blue)</name>
+		<description>blue pipes</description>
+		<picture src="plant_pipe1.bmp" size="32,32" offset="16">
+		</picture>
+	</contribution>
+	
+	<contribution type="road" id="{F53F79E8-CCAA-40BD-C477-1F749B1D03B7}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Pipeline silver</name>
+		<description>silver pipes</description>
+		<picture src="plant_pipe2.bmp" size="32,32" offset="16">
+		</picture>
+	</contribution>
+	
+</plug-in>

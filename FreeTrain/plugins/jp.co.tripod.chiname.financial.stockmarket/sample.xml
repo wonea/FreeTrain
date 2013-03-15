@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+このファイルを読み込ませるにはplugin.xmlの<data>タグ群の最後に以下の行を追加します。
+<data file="sample.xml"/>
+-->
+<!-- 
+<business>タグは業種を定義します。
+記述例：
+	<business id="000" name="業種名">
+		<account fixed="0.25"/>
+		<market scale="10000000" cycle="100" amplitude="5" ex_dependency="5" progressivity="1" />
+		<weight brand="5" marketing="4" quality="3" />
+	</business>
+
+	id：companyタグのtype属性から参照される文字列
+	name：業種名
+	fixed:売上規模に対する固定経費率(0-1)
+	scale：市場規模(円貨)−同業種で売上げを分配します
+	cycle：業種固有の景気周期(日)
+	ampliture：業種固有の景気振幅(0-10)
+	ex_dependency：景気影響度(0-10)−全体の景気指数による影響の受け安さ
+	progressivity：業界の進歩性(0-10)−業界の栄枯盛衰の激しさ
+	brand：ブランドの重要性(0-10)−競争においてブランド力が占める影響度
+	marketing：販売力の重要性(0-10)−競争において販売力が占める影響度
+	quality：品質の重要性(0-10)−競争において企業または製品の品質が占める影響度
+-->
+<!--
+<company>タグは上場企業を定義します。
+記述例：
+	<company id="0000" name="会社名" type="000">
+		<performance capital="10000000" sales="1000000" />
+		<capacity brand="5" marketing="5" quality="5" rationality="5" development="5" />
+		<stock total="100000" share="50000" />
+	</company>
+
+	id：企業コード(未使用)
+	name：会社名＝銘柄
+	type：特定のbusinessタグを指すid文字列
+	capital：資本金(円貨)−会社の規模を端的に表します
+	sales：売上げ(円貨)−ライバルがいない場合に到達可能な売上げ
+	
+	brand：ブランド力(0-10)−知名度、好感度、人気
+	marketing：販売力(0-10)−既得販売ルート、営業力など
+	quality：品質(0-10)−サービスまたは製品の品質
+	rationality：合理化度(0-10)−売上げの何割が利益になるか
+				(ただし、最終利益はここからdevelopment投資分が消費されたもの)
+	development：発展性(0-10)−上記４能力の上昇しやすさ
+	
+	total：総発行株数(株)
+	share：自社株保有数(株)−半永久的に売る気のない株主の持ち分も含める
+-->
+<companies>
+	<company id="9998" name="Sample Marine" type="010">
+	<!--!<company id="9998" name="サンプル水産" type="010">-->
+		<performance capital="10000000" sales="1000000" />
+		<capacity brand="5" marketing="5" quality="5" rationality="5" development="5" />
+		<stock total="100000" share="50000" />
+	</company>
+	<business id="999" name="Sample Business Category">
+	<!--!<business id="999" name="サンプル業種">-->
+		<account fixed="0.25"/>
+		<market scale="10000000" cycle="365" amplitude="5" ex_dependency="5" progressivity="5" />
+		<weight brand="5" marketing="5" quality="5" />
+	</business>
+	<company id="9999" name="Sample Corporation" type="999">
+	<!--!<company id="9999" name="サンプル企業" type="999">-->
+		<performance capital="10000000" sales="1000000" />
+		<capacity brand="5" marketing="5" quality="5" rationality="5" development="5" />
+		<stock total="100000" share="50000" />
+	</company>
+</companies>

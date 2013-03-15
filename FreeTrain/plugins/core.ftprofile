@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+	FreeTrain launch configuration profile.
+	
+	This profile limits the plug-in to the "core set" that gets bundled with
+	the FreeTrain distribution.
+-->
+<profile>
+	<plugin dir="." includes="org.kohsuke.freetrain.*" />
+	<plugin dir="." includes="system" />
+	<plugin dir="." includes="jp.co.tripod.chiname.financial.bank" />
+</profile>

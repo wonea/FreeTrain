@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY oldhouseM '
+	<group>Old downtown house (medium)</group>
+	<price>50</price>
+	<size>1,1</size>
+	<structure>
+		<category byname="Single Houses"/>
+	</structure>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.ResidentialPopulation"/>
+		<base>6</base>
+	</population>
+'>
+<!ENTITY oldhouseS '
+	<group>Old downtown house (small)</group>
+	<price>40</price>
+	<size>1,1</size>
+	<structure>
+		<category byname="Single Houses"/>
+	</structure>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.ResidentialPopulation"/>
+		<base>6</base>
+	</population>
+'>]>
+
+<plug-in>
+	<title>Old downtown house</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+		
+	<contribution type="picture" id="{84083099-B583-4B22-C477-23869F3F3969}">
+		<picture src="oldhouses01.bmp"/>
+	</contribution>
+	<contribution type="picture" id="{1BB503C0-C7D4-4718-C477-C5713418370A}">
+		<picture src="oldhouses02.bmp"/>
+	</contribution>
+
+	
+	<contribution type="GenericStructure" id="{E8559DE8-A6B8-4E7B-C477-A5428F39532D}">
+		&oldhouseM;
+		<sprite origin="0,0" offset="8">
+			<picture ref="{84083099-B583-4B22-C477-23869F3F3969}"/>
+		</sprite>
+		<sprite origin="32,0" offset="8">
+			<picture ref="{84083099-B583-4B22-C477-23869F3F3969}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{B3F304DE-B926-410D-C477-666367C04482}">
+		&oldhouseM;
+		<sprite origin="0,32" offset="8">
+			<picture ref="{84083099-B583-4B22-C477-23869F3F3969}"/>
+		</sprite>
+		<sprite origin="32,32" offset="8">
+			<picture ref="{84083099-B583-4B22-C477-23869F3F3969}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{46D34864-565B-4072-C477-2612C9193E63}">
+		&oldhouseM;
+		<sprite origin="0,64" offset="8">
+			<picture ref="{84083099-B583-4B22-C477-23869F3F3969}"/>
+		</sprite>
+		<sprite origin="32,64" offset="8">
+			<picture ref="{84083099-B583-4B22-C477-23869F3F3969}"/>
+		</sprite>
+	</contribution>
+	
+	<!--半ボクセルx2-->
+	<contribution type="GenericStructure" id="{58311256-1E0E-44A9-C477-A8CAB001ACAB}">
+		&oldhouseS;
+		<sprite origin="0,0" offset="16">
+			<picture ref="{1BB503C0-C7D4-4718-C477-C5713418370A}"/>
+		</sprite>
+		<sprite origin="0,32" offset="16">
+			<picture ref="{1BB503C0-C7D4-4718-C477-C5713418370A}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{00CB2BBA-5AA2-4BBD-C477-0D6395349335}">
+		&oldhouseS;
+		<sprite origin="32,0" offset="16">
+			<picture ref="{1BB503C0-C7D4-4718-C477-C5713418370A}"/>
+		</sprite>
+		<sprite origin="32,32" offset="16">
+			<picture ref="{1BB503C0-C7D4-4718-C477-C5713418370A}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{57250B12-BBA0-4A66-C477-56633AFA3608}">
+		&oldhouseS;
+		<sprite origin="64,0" offset="16">
+			<picture ref="{1BB503C0-C7D4-4718-C477-C5713418370A}"/>
+		</sprite>
+		<sprite origin="64,32" offset="16">
+			<picture ref="{1BB503C0-C7D4-4718-C477-C5713418370A}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{5FFC393B-DBE2-4800-C477-99439031AC1F}">
+		&oldhouseS;
+		<sprite origin="96,0" offset="16">
+			<picture ref="{1BB503C0-C7D4-4718-C477-C5713418370A}"/>
+		</sprite>
+		<sprite origin="96,32" offset="16">
+			<picture ref="{1BB503C0-C7D4-4718-C477-C5713418370A}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{B7AC1EAC-C05E-48EE-C477-C2C68ABA0B8C}">
+		&oldhouseS;
+		<sprite origin="128,0" offset="16">
+			<picture ref="{1BB503C0-C7D4-4718-C477-C5713418370A}"/>
+		</sprite>
+		<sprite origin="128,32" offset="16">
+			<picture ref="{1BB503C0-C7D4-4718-C477-C5713418370A}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{20F08AEF-BC30-47DA-C477-82EC60AE30A1}">
+		&oldhouseS;
+		<sprite origin="160,0" offset="16">
+			<picture ref="{1BB503C0-C7D4-4718-C477-C5713418370A}"/>
+		</sprite>
+		<sprite origin="160,32" offset="16">
+			<picture ref="{1BB503C0-C7D4-4718-C477-C5713418370A}"/>
+		</sprite>
+	</contribution>
+</plug-in>

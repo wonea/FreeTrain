@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Large station building</title>
+   	<author>TKZ</author>
+	<homepage></homepage>
+
+	<contribution type="station" id="{555F21B3-142D-40FD-B690-0C67B68BC32F}">
+　		<name>Station building</name>
+　		<price>30000</price>
+　		<size>4,5</size>
+　		<height>2</height>
+　		<operationCost>1000</operationCost>
+　		<sprite origin="0,0" offset="55">
+　　			<picture src="station.bmp" origin="0,0" offset="55">
+　			<override when="night" src="station_n.bmp" />
+			</picture>
+　		</sprite>
+	</contribution>
+</plug-in>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Rail Gantry</title>
+	<author>Hima</author>
+	<homepage></homepage>
+	
+	<depends on="org.kohsuke.freetrain.rail.electricPole" />
+	
+
+	<contribution type="electricPole" id="{200305100047-0001}">
+		<name>Single Track Gantry</name>
+		<sprite>
+			<picture src="GantryA.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{200305100047-0002}">
+		<name>Double Track Gantry (Left)</name>
+		<sprite>
+			<picture src="GantryAL.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{200305100047-0003}">
+		<name>Double Track Gantry (Center)</name>
+		<sprite>
+			<picture src="GantryAC.bmp"/>
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{200305100047-0004}">
+		<name>Double Track Gantry (Right)</name>
+		<sprite>
+			<picture src="GantryAR.bmp"/>
+		</sprite>
+	</contribution>
+
+</plug-in>

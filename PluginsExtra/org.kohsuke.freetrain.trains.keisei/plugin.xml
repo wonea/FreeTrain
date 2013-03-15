@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Keisei Electric Railway Train Set</title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	<depend on="org.kohsuke.freetrain.trains.trainshare" />
+
+	<!-- 3700形 -->
+	 <contribution type="trainCar" id="{3700-keisei-iw200309301109}">
+	<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+	<colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-5" base="192,192,192" line1="255,0,0" line2="192,192,192" line3="0,0,255"/>
+	 <capacity>400</capacity>
+	</contribution>
+
+	<contribution type="train" id="{3700-keisei-iw200309301114}">
+		<company>Keisei Electric Railway</company>
+		<type>3700 Series</type>
+		<name>Limited Express, etc.</name>
+		<author>iwasaki</author>
+		<description>特急などに活躍している電車です。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{3700-keisei-iw200309301109}"/>
+		</composition>
+	</contribution>
+
+</plug-in>

@@ -1,0 +1,862 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY wall-khaki '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="202,189,158"/>
+</spriteType>
+'>
+<!ENTITY wall-steelblue '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="181,203,226"/>
+</spriteType>
+'>
+<!ENTITY wall-brown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="157,90,70"/>
+</spriteType>
+'>
+<!ENTITY wall-salmonpink '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="255,172,122"/>
+</spriteType>
+'>
+<!ENTITY wall-yelloworange '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="255,171,62"/>
+</spriteType>
+'>
+<!ENTITY fb-skyblue '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="188,234,232"/>
+</spriteType>
+'>
+<!ENTITY fb-white '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="237,235,236"/>
+</spriteType>
+'>
+<!ENTITY fb-concrete '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="195,187,171"/>
+</spriteType>
+'>
+<!ENTITY fb-vermilion '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="221,86,56"/>
+</spriteType>
+'>
+<!ENTITY wall-greyyellow '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="198,195,164"/>
+</spriteType>
+'>
+<!ENTITY wall-warmbrown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="174,143,122"/>
+</spriteType>
+'>
+<!ENTITY wall-greywarmbrown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="213,205,184"/>
+</spriteType>
+'>
+<!ENTITY wall-darkbrown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="143,134,125"/>
+</spriteType>
+'>
+<!ENTITY wall-lightyelloworange '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="246,228,164"/>
+</spriteType>
+'>
+<!ENTITY ta-white '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="244,234,218"/>
+</spriteType>
+'>
+<!ENTITY ta-silvergreen '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="198,198,184"/>
+</spriteType>
+'>
+<!ENTITY wall-brownbeige '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="217,197,173"/>
+</spriteType>
+'>
+<!ENTITY wall-redbrick '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="94,65,41"/>
+</spriteType>
+'>
+<!ENTITY wall-ivory '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="212,215,194"/>
+</spriteType>
+'>
+<!ENTITY wall-urbanstone '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="196,180,167"/>
+</spriteType>
+'>
+<!ENTITY wall-tiled '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="203,170,124"/>
+</spriteType>
+'>
+<!ENTITY wall-pastelgray '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="191,206,200"/>
+</spriteType>
+'>
+<!ENTITY wall-lightgrayishpink '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="244,201,178"/>
+</spriteType>
+'>
+<!ENTITY wall-lightredbrick '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="170,104,78"/>
+</spriteType>
+'>
+<!ENTITY wall-palesky '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="233,240,255"/>
+</spriteType>
+'>
+<!ENTITY wall-palegrayishpink '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="212,165,147"/>
+</spriteType>
+'>
+<!ENTITY wall-lightgrayishblue '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="183,185,193"/>
+</spriteType>
+'>
+<!ENTITY wall-grayishbrown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="152,124,102"/>
+</spriteType>
+'> 
+<!ENTITY wall-wood001 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="191,138,85"/>
+</spriteType>
+'>
+<!ENTITY wall-wood002 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="191,175,85"/>
+</spriteType>
+'>
+<!ENTITY wall-wood003 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="204,150,97"/>
+</spriteType>
+'>
+<!ENTITY wall-wood004 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="199,178,153"/>
+</spriteType>
+'>
+<!ENTITY wall-wood005 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="138,110,61"/>
+</spriteType>
+'>
+<!ENTITY wall-wood006 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="114,99,88"/>
+</spriteType>
+'>
+<!ENTITY wall-wood007 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="160,151,104"/>
+</spriteType>
+'>
+<!ENTITY wall-wood008 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="93,79,65"/>
+</spriteType>
+'>
+<!ENTITY wall-wood009 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="120,96,72"/>
+</spriteType>
+'>
+<!ENTITY wall-wood010 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="148,114,80"/>
+</spriteType>
+'>
+<!ENTITY tent-yellow '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="230,220,30"/>
+</spriteType>
+'>
+<!ENTITY tent-orange '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="220,109,57"/>
+</spriteType>
+'>
+<!ENTITY tent-green '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="30,160,94"/>
+</spriteType>
+'>
+<!ENTITY tent-skyblue '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="30,180,221"/>
+</spriteType>
+'>
+
+<!ENTITY component_shintoshrine_001 '
+	<group>Religious Institutions</group>
+	<name>Shinto shrine(3x3)</name>
+	<structure>
+		<category byname="Religious Institutions"/>
+	</structure>
+	<price>1000</price>
+	<size>3,3</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>20</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+'>
+<!ENTITY component_shintoshrine_002 '
+	<group>Religious Institutions</group>
+	<name>Shinto shrine(1x1)</name>
+	<structure>
+		<category byname="Religious Institutions"/>
+	</structure>
+	<price>300</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>5</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>1</base>
+		</population>
+	</population>
+'>
+<!ENTITY component_postoffice_001 '
+	<group>Post Offices</group>
+	<name>Post Offices(1x1)</name>
+	<structure>
+		<category byname="Post Offices"/>
+	</structure>
+	<price>800</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>120</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>60</base>
+		</population>
+	</population>
+'>
+
+<!ENTITY component_villageoffice_001 '
+	<group>Public Offices</group>
+	<name>Village Office(1x1)</name>
+	<structure>
+		<category byname="Public Offices"/>
+	</structure>
+	<price>200000</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>60</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>180</base>
+		</population>
+	</population>
+	<computerCannotBuild />
+'>
+
+<!ENTITY component_townoffice_001 '
+	<group>Public Offices</group>
+	<name>Town hall(1x2)</name>
+	<structure>
+		<category byname="Public Offices"/>
+	</structure>
+	<price>400000</price>
+	<size>1,2</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>120</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>360</base>
+		</population>
+	</population>
+	<computerCannotBuild />
+'>
+
+<!ENTITY component_cityoffice_001 '
+	<group>Public Offices</group>
+	<name>City hall(2x2)</name>
+	<structure>
+		<category byname="Public Offices"/>
+	</structure>
+	<price>1000000</price>
+	<size>2,2</size>
+	<height>2</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>1100</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>3300</base>
+		</population>
+	</population>
+	<computerCannotBuild />
+'>
+
+<!ENTITY component_prefecturaloffice_001 '
+	<group>Public Offices</group>
+	<name>Prefectural government office(3x7)</name>
+	<structure>
+		<category byname="Public Offices"/>
+	</structure>
+	<price>156900000</price>
+	<size>3,7</size>
+	<height>16</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>12000</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>20000</base>
+		</population>
+	</population>
+	<computerCannotBuild />
+'>
+
+<!ENTITY component_prefecturaloffice_002 '
+	<group>Public Offices</group>
+	<name>Prefectural government office(3x7)</name>
+	<structure>
+		<category byname="Public Offices"/>
+	</structure>
+	<price>110000000</price>
+	<size>3,7</size>
+	<height>11</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>8400</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>14000</base>
+		</population>
+	</population>
+	<computerCannotBuild />
+'>
+
+]>
+
+<plug-in>
+
+<author>Shikashika</author>
+<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+<title>Buildings(Public Facilities)</title>
+
+<!-- Shinto shrine -->
+
+<!-- Shinto shrine(3x3) -->
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-shrine-shinto-shintoshrine-01}">
+	<picture  src="shintoshrine_01spring.bmp">
+		<override when="spring" src="shintoshrine_01spring.bmp"/>
+		<override when="summer" src="shintoshrine_01summer.bmp"/>
+		<override when="autumn" src="shintoshrine_01autumn.bmp"/>
+		<override when="winter" src="shintoshrine_01winter.bmp"/>
+	</picture>
+</contribution>
+
+<!-- Shinto shrine(3x3) -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-shrine-shinto-shintoshrine01}">
+&component_shintoshrine_001;
+	<design>Shinto shrine</design>
+	<spriteType name="hueTransform">
+		<map  from="*,0,0"  to="222,87,57"/>
+	</spriteType>
+	<spriteType name="hueTransform">
+		<map  from="*,0,0"  to="107,77,37"/>
+	</spriteType>
+
+	<sprite origin="0,0" offset="32">
+		<picture ref="{FreeTrain-Shika-picture-structure-shrine-shinto-shintoshrine-01}"/>
+	</sprite>
+	<sprite origin="96,0" offset="32">
+		<picture ref="{FreeTrain-Shika-picture-structure-shrine-shinto-shintoshrine-01}"/>
+	</sprite>
+	<sprite origin="192,0" offset="32">
+		<picture ref="{FreeTrain-Shika-picture-structure-shrine-shinto-shintoshrine-01}"/>
+	</sprite>
+	<sprite origin="288,0" offset="32">
+		<picture ref="{FreeTrain-Shika-picture-structure-shrine-shinto-shintoshrine-01}"/>
+	</sprite>
+</contribution>
+
+
+<!-- Shinto shrine(1x1) -->
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-shrine-shinto-shintoshrine-02}">
+	<picture  src="shintoshrine_02.bmp">
+		<override when="night" src="shintoshrine_02n.bmp"/>
+	</picture>
+</contribution>
+
+<!-- Shinto shrine(1x1) -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-shrine-shinto-shintoshrine02a}">
+&component_shintoshrine_002;
+	<design>Shinto shrine(red painted)</design>
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-shrine-shinto-shintoshrine-02}"/>
+	</sprite>
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-shrine-shinto-shintoshrine-02}"/>
+	</sprite>
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-shrine-shinto-shintoshrine-02}"/>
+	</sprite>
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-shrine-shinto-shintoshrine-02}"/>
+	</sprite>
+</contribution>
+
+<!-- Shinto shrine(1x1) -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-shrine-shinto-shintoshrine02b}">
+&component_shintoshrine_002;
+	<design>Shinto shrine(wooden)</design>
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-shrine-shinto-shintoshrine-02}"/>
+	</sprite>
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-shrine-shinto-shintoshrine-02}"/>
+	</sprite>
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-shrine-shinto-shintoshrine-02}"/>
+	</sprite>
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-shrine-shinto-shintoshrine-02}"/>
+	</sprite>
+</contribution>
+
+
+<!-- Post Offices -->
+
+<!-- Post Offices(1x1) -->
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-publicfacilities-postoffice-01}">
+	<picture  src="postoffice_01.bmp">
+		<override when="night" src="postoffice_01n.bmp"/>
+	</picture>
+</contribution>
+
+<!-- Post Offices(1x1) -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-publicfacilities-postoffice01a}">
+&component_postoffice_001;
+	<design>Post Offices(2floor)A</design>
+	&wall-greyyellow;
+	&wall-warmbrown;
+	&wall-greywarmbrown;
+	&wall-darkbrown;
+	&wall-lightyelloworange;
+	&wall-ivory;
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicfacilities-postoffice-01}"/>
+	</sprite>
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicfacilities-postoffice-01}"/>
+	</sprite>
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicfacilities-postoffice-01}"/>
+	</sprite>
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicfacilities-postoffice-01}"/>
+	</sprite>
+</contribution>
+
+<!-- Post Offices(1x1) -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-publicfacilities-postoffice01b}">
+&component_postoffice_001;
+	<design>Post Offices(2floor)B</design>
+	&wall-greyyellow;
+	&wall-warmbrown;
+	&wall-greywarmbrown;
+	&wall-darkbrown;
+	&wall-lightyelloworange;
+	&wall-ivory;
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicfacilities-postoffice-01}"/>
+	</sprite>
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicfacilities-postoffice-01}"/>
+	</sprite>
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicfacilities-postoffice-01}"/>
+	</sprite>
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicfacilities-postoffice-01}"/>
+	</sprite>
+</contribution>
+
+<!-- Post Offices(1x1) -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-publicfacilities-postoffice01c}">
+&component_postoffice_001;
+	<design>Post Offices(3floor)A</design>
+	&wall-greyyellow;
+	&wall-warmbrown;
+	&wall-greywarmbrown;
+	&wall-darkbrown;
+	&wall-lightyelloworange;
+	&wall-ivory;
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicfacilities-postoffice-01}"/>
+	</sprite>
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicfacilities-postoffice-01}"/>
+	</sprite>
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicfacilities-postoffice-01}"/>
+	</sprite>
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicfacilities-postoffice-01}"/>
+	</sprite>
+</contribution>
+
+<!-- Post Offices(1x1) -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-publicfacilities-postoffice01d}">
+&component_postoffice_001;
+	<design>Post Offices(3floor)B</design>
+	&wall-greyyellow;
+	&wall-warmbrown;
+	&wall-greywarmbrown;
+	&wall-darkbrown;
+	&wall-lightyelloworange;
+	&wall-ivory;
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicfacilities-postoffice-01}"/>
+	</sprite>
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicfacilities-postoffice-01}"/>
+	</sprite>
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicfacilities-postoffice-01}"/>
+	</sprite>
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicfacilities-postoffice-01}"/>
+	</sprite>
+</contribution>
+
+
+<!-- Public Offices -->
+
+<!-- Village Office(1x1) -->
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-publicoffice-villageoffice-01}">
+	<picture  src="villageoffice_01.bmp">
+		<override when="night" src="villageoffice_01n.bmp"/>
+	</picture>
+</contribution>
+
+<!-- Village Office(1x1) -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-publicoffice-villageoffice01a}">
+&component_villageoffice_001;
+	<design>Village Office(wooden,1floor)A</design>
+	&wall-wood010;
+	&wall-wood009;
+	&wall-wood007;
+	&wall-wood006;
+	&wall-wood004;
+	&wall-wood001;
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-villageoffice-01}"/>
+	</sprite>
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-villageoffice-01}"/>
+	</sprite>
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-villageoffice-01}"/>
+	</sprite>
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-villageoffice-01}"/>
+	</sprite>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-publicoffice-villageoffice01b}">
+&component_villageoffice_001;
+	<design>Village Office(wooden,1floor)B</design>
+	&wall-wood010;
+	&wall-wood009;
+	&wall-wood006;
+	&wall-wood004;
+	&wall-wood002;
+	&wall-wood001;
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-villageoffice-01}"/>
+	</sprite>
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-villageoffice-01}"/>
+	</sprite>
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-villageoffice-01}"/>
+	</sprite>
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-villageoffice-01}"/>
+	</sprite>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-publicoffice-villageoffice01c}">
+&component_villageoffice_001;
+	<design>Village Office(reinforced,2floor)A</design>
+	&wall-lightgrayishpink;
+	&wall-palegrayishpink;
+	&wall-lightyelloworange;
+	&wall-brownbeige;
+	&wall-ivory;
+	&wall-warmbrown;
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-villageoffice-01}"/>
+	</sprite>
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-villageoffice-01}"/>
+	</sprite>
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-villageoffice-01}"/>
+	</sprite>
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-villageoffice-01}"/>
+	</sprite>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-publicoffice-villageoffice01d}">
+&component_villageoffice_001;
+	<design>Village Office(reinforced,2floor)B</design>
+	&wall-lightredbrick;
+	&wall-palesky;
+	&wall-redbrick;
+	&wall-brownbeige;
+	&wall-grayishbrown;
+	&wall-darkbrown;
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-villageoffice-01}"/>
+	</sprite>
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-villageoffice-01}"/>
+	</sprite>
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-villageoffice-01}"/>
+	</sprite>
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-villageoffice-01}"/>
+	</sprite>
+</contribution>
+
+<!-- Town hall(1x2) -->
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-publicoffice-townoffice-01}">
+	<picture  src="townoffice_01.bmp">
+		<override when="night" src="townoffice_01n.bmp"/>
+	</picture>
+</contribution>
+
+<!-- Town hall(1x2) -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-publicoffice-townoffice01a}">
+&component_townoffice_001;
+	<design>Town hall A</design>
+	&wall-palegrayishpink;
+	&wall-redbrick;
+	&wall-urbanstone;
+	&wall-lightyelloworange;
+	&ta-white;
+	&wall-lightredbrick;
+
+	<sprite origin="0,0" offset="24">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-townoffice-01}"/>
+	</sprite>
+	<sprite origin="48,0" offset="32" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-townoffice-01}"/>
+	</sprite>
+	<sprite origin="96,0" offset="24">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-townoffice-01}"/>
+	</sprite>
+	<sprite origin="144,0" offset="32" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-townoffice-01}"/>
+	</sprite>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-publicoffice-townoffice01b}">
+&component_townoffice_001;
+	<design>Town hall B</design>
+	&wall-palesky;
+	&wall-pastelgray;
+	&wall-greywarmbrown;
+	&ta-silvergreen;
+	&wall-ivory;
+	&wall-lightgrayishblue;
+
+	<sprite origin="0,48" offset="24">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-townoffice-01}"/>
+	</sprite>
+	<sprite origin="48,48" offset="32" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-townoffice-01}"/>
+	</sprite>
+	<sprite origin="96,48" offset="24">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-townoffice-01}"/>
+	</sprite>
+	<sprite origin="144,48" offset="32" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-townoffice-01}"/>
+	</sprite>
+</contribution>
+
+<!-- City hall(2x2) -->
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-publicoffice-cityoffice-01}">
+	<picture  src="cityoffice_01.bmp">
+		<override when="night" src="cityoffice_01n.bmp"/>
+	</picture>
+</contribution>
+
+<!-- City hall(2x2) -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-publicoffice-cityoffice01a}">
+&component_cityoffice_001;
+	<design>City hall A</design>
+	&ta-white;
+	&wall-brownbeige;
+	&wall-darkbrown;
+	&wall-ivory;
+	&wall-lightyelloworange;
+	&wall-grayishbrown;
+
+	<sprite origin="0,0" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-cityoffice-01}"/>
+	</sprite>
+	<sprite origin="64,0" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-cityoffice-01}"/>
+	</sprite>
+	<sprite origin="128,0" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-cityoffice-01}"/>
+	</sprite>
+	<sprite origin="192,0" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-cityoffice-01}"/>
+	</sprite>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-publicoffice-cityoffice01b}">
+&component_cityoffice_001;
+	<design>City hall B</design>
+	&wall-lightgrayishblue;
+	&wall-grayishbrown;
+	&wall-brownbeige;
+	&wall-darkbrown;
+	&wall-ivory;
+	&wall-greyyellow;
+
+	<sprite origin="0,64" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-cityoffice-01}"/>
+	</sprite>
+	<sprite origin="64,64" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-cityoffice-01}"/>
+	</sprite>
+	<sprite origin="128,64" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-cityoffice-01}"/>
+	</sprite>
+	<sprite origin="192,64" offset="40">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-cityoffice-01}"/>
+	</sprite>
+</contribution>
+
+<!-- Prefectural government office(7x3) -->
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-publicoffice-prefecturaloffice-01}">
+	<picture  src="prefecturaloffice_01.bmp">
+		<override when="night" src="prefecturaloffice_01n.bmp"/>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-publicoffice-prefecturaloffice-02}">
+	<picture  src="prefecturaloffice_02.bmp">
+		<override when="night" src="prefecturaloffice_02n.bmp"/>
+	</picture>
+</contribution>
+
+<!-- Prefectural government office(7x3) -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-publicoffice-prefecturaloffice01}">
+&component_prefecturaloffice_001;
+	<design>Tokyo government office 1st building</design>
+
+	<sprite origin="0,0" offset="288">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-prefecturaloffice-01}"/>
+	</sprite>
+	<sprite origin="160,0" offset="320" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-prefecturaloffice-01}"/>
+	</sprite>
+	<sprite origin="320,0" offset="288">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-prefecturaloffice-01}"/>
+	</sprite>
+	<sprite origin="480,0" offset="320" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-prefecturaloffice-01}"/>
+	</sprite>
+</contribution>
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-publicoffice-prefecturaloffice02}">
+&component_prefecturaloffice_002;
+	<design>Tokyo government office 2nd building</design>
+
+	<sprite origin="0,0" offset="176">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-prefecturaloffice-02}"/>
+	</sprite>
+	<sprite origin="160,0" offset="208" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-prefecturaloffice-02}"/>
+	</sprite>
+	<sprite origin="320,0" offset="176">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-prefecturaloffice-02}"/>
+	</sprite>
+	<sprite origin="480,0" offset="208" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-structure-publicoffice-prefecturaloffice-01}"/>
+	</sprite>
+</contribution>
+
+</plug-in>

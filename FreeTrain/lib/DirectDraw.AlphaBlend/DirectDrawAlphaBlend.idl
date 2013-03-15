@@ -1,0 +1,90 @@
+// DirectDraw.AlphaBlend.idl : DirectDraw.AlphaBlend の IDL ソース
+//
+
+// このファイルは、タイプ ライブラリ (DirectDraw.AlphaBlend.tlb) およびマーシャリング コードを
+// 作成するために MIDL ツールによって処理されます。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+
+[
+	uuid(EF1510AF-E75F-4974-BE7A-A2F4E88EBFB4),
+	version(1.0),
+	helpstring("DirectDrawAlphaBlend 1.0 Type Library")
+]
+library DirectDrawAlphaBlendLib
+{
+	importlib("dx7vb.dll");
+	importlib("stdole2.tlb");
+
+	//typedef struct {
+	//	int sz;
+	//	[size_is(sz)] int values[];
+	//} IntArray;
+
+	[
+		object,
+		uuid(2D16CEE2-F54C-425F-84A7-61692CF1D82C),
+		dual,
+		nonextensible,
+		helpstring("IAlphaBlender Interface"),
+		pointer_default(unique)
+	]
+	interface IAlphaBlender : IDispatch{
+		[id(1)]
+		HRESULT bltAlphaFast(
+				[in] DirectDrawSurface7* pDDSDest,
+				[in] DirectDrawSurface7* pDDSSource,
+				[in] int iDestX,
+				[in] int iDestY,
+				[in] int sourceX1, [in] int sourceY1, [in] int sourceX2, [in] int sourceY2,
+				[in] int colorKey );
+
+		[id(2)]
+		HRESULT bltShape(
+				[in] DirectDrawSurface7* lpDDSDest,
+				[in] DirectDrawSurface7* lpDDSSource,
+				[in] int iDestX,
+				[in] int iDestY,
+				[in] int sourceX1, [in] int sourceY1, [in] int sourceX2, [in] int sourceY2,
+				[in] int fillColor,
+				[in] int colorKey );
+
+		[id(3)]
+		HRESULT bltColorTransform(
+				[in] DirectDrawSurface7* lpDDSDest,
+				[in] DirectDrawSurface7* lpDDSSource,
+				[in] int iDestX,
+				[in] int iDestY,
+				[in] int sourceX1, [in] int sourceY1, [in] int sourceX2, [in] int sourceY2,
+				[in,size_is(colorsLen)] int* srcColors,
+//				[in] int srcColorsLen,
+				[in,size_is(colorsLen)] int* dstColors,
+				[in] int colorsLen,
+				//[in] IntArray* srcColors,
+				//[in] IntArray* dstColors,
+				[in] int colorKey,
+				[in] bool vflip );
+
+		//[id(4)]
+		//HRESULT buildNightImage(
+		//		[in] DirectDrawSurface7* lpSurface,
+		//		[in] int x1, [in] int y1, [in] int x2, [in] int y2 );
+
+		//[id()]
+		//HRESULT init(
+		//		[in] DirectDrawSurface7* lpSurface );
+	};
+
+
+
+	[
+		uuid(B6803A0F-671C-4730-A802-BB0C2C4BDAC4),
+		helpstring("AlphaBlender Class")
+	]
+	coclass AlphaBlender
+	{
+		[default] interface IAlphaBlender;
+	};
+};

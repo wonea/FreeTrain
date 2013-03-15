@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY HouseStatus '
+		<group>Single house</group>
+		<structure>
+			<category byname="Single Houses"/>
+		</structure>
+		<price>100</price>
+		<size>1,1</size>
+		<height>1</height>
+'>
+]>
+
+<plug-in>
+	<title>Single House Set</title>
+	<author>Hima</author>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="picture" id="{2D8E28EB-4D14-4BCA-AC25-C7A210A58A14}">
+		<picture src="house.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{3D8FA264-BE4A-4a4f-97E6-950779C89599}">
+		&HouseStatus;
+		<sprite origin="0,0" offset="10">
+			<picture ref="{2D8E28EB-4D14-4BCA-AC25-C7A210A58A14}"/>
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{8B0106A0-64A4-4680-B258-232B1A5E0B0E}">
+		&HouseStatus;
+		<sprite origin="32,0" offset="10">
+			<picture ref="{2D8E28EB-4D14-4BCA-AC25-C7A210A58A14}"/>
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{982E924F-BA22-4ace-A71C-4523719A8444}">
+		&HouseStatus;
+		<sprite origin="64,0" offset="10">
+			<picture ref="{2D8E28EB-4D14-4BCA-AC25-C7A210A58A14}"/>
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{F193C000-DFEB-4588-B658-D11CD80C39D5}">
+		&HouseStatus;
+		<sprite origin="96,0" offset="10">
+			<picture ref="{2D8E28EB-4D14-4BCA-AC25-C7A210A58A14}"/>
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+	</contribution>
+	
+</plug-in>

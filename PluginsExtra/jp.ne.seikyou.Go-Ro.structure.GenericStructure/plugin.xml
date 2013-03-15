@@ -1,0 +1,3639 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+
+
+<!ENTITY home_001colorMap001 '
+	<spriteType name="colorMapped">
+<map from="255,236,178" to="255,173,107"/>
+<map from="140,130,98" to="140,95,58"/>
+<map from="197,183,137" to="197,134,83"/>
+<map from="140,0,0" to="140,95,58"/>
+<map from="255,0,0" to="255,173,107"/>
+<map from="111,0,0" to="111,75,47"/>
+
+	</spriteType>
+'>
+<!ENTITY home_001hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="143,133,169"/>
+	</spriteType>
+'>
+<!ENTITY home_001hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="175,92,123"/>
+	</spriteType>
+'>
+
+<!ENTITY Apartment_001hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="150,209,223"/>
+	</spriteType>
+'>
+<!ENTITY Apartment_001hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="213,147,79"/>
+	</spriteType>
+'>
+<!ENTITY Apartment_001hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,184,165"/>
+	</spriteType>
+'>
+<!ENTITY Apartment_001hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="205,198,224"/>
+	</spriteType>
+'>
+<!ENTITY Apartment_001hueTransform_005 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="205,219,66"/>
+	</spriteType>
+'>
+<!ENTITY Apartment_001hueTransform_006 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,198,23"/>
+	</spriteType>
+'>
+
+<!ENTITY vhbi_001hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="155,212,192"/>
+		<map from="0,0,*" to="185,185,185"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_001hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="186,202,249"/>
+		<map from="0,0,*" to="185,185,185"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_001hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="234,201,199"/>
+		<map from="0,0,*" to="198,187,167"/>
+	</spriteType>
+'>
+
+<!ENTITY vhbi_005hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="0,0,*" to="208,202,237"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_005hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="0,0,*" to="220,200,205"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_005hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="0,0,*" to="219,183,127"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_005hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="0,0,*" to="230,193,180"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_005hueTransform_005 '
+	<spriteType name="hueTransform">
+		<map from="0,0,*" to="255,244,211"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_005hueTransform_006 '
+	<spriteType name="hueTransform">
+		<map from="0,0,*" to="204,223,232"/>
+	</spriteType>
+'>
+
+<!ENTITY CreditA_001hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="244,126,62"/>
+		<map from="0,*,0" to="0,220,41"/>
+		<map from="0,0,*" to="97,78,62"/>
+	</spriteType>
+'>
+<!ENTITY CreditA_001hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,244,211"/>
+		<map from="0,*,0" to="0,120,255"/>
+		<map from="0,0,*" to="79,79,79"/>
+	</spriteType>
+'>
+<!ENTITY CreditA_001hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="165,180,207"/>
+		<map from="0,*,0" to="255,30,109"/>
+		<map from="0,0,*" to="75,78,84"/>
+	</spriteType>
+'>
+<!ENTITY CreditA_001hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="206,84,101"/>
+		<map from="0,*,0" to="0,120,255"/>
+		<map from="0,0,*" to="83,64,70"/>
+	</spriteType>
+'>
+
+<!ENTITY hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,255,255"/>
+	</spriteType>
+'>
+<!ENTITY hueTransform_005 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,175,100"/>
+	</spriteType>
+'>
+<!ENTITY hueTransform_006 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="213,182,141"/>
+	</spriteType>
+'>
+<!ENTITY hueTransform_007 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="128,128,128"/>
+	</spriteType>
+'>
+<!ENTITY hueTransform_008 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="219,69,86"/>
+	</spriteType>
+'>
+<!ENTITY hueTransform_009 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="99,139,178"/>
+	</spriteType>
+'>
+<!ENTITY restaurant_001-hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="129,129,129"/>
+	</spriteType>
+'>
+<!ENTITY restaurant_001-hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="95,151,140"/>
+	</spriteType>
+'>
+<!ENTITY restaurant_001-hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="128,93,75"/>
+	</spriteType>
+'>
+<!ENTITY hueTransform_014 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="196,87,76"/>
+	</spriteType>
+'>
+<!ENTITY hueTransform_015 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="147,151,175"/>
+	</spriteType>
+'>
+<!ENTITY hueTransform_017 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,54,54"/>
+	</spriteType>
+'>
+<!ENTITY hueTransform_018 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="63,81,255"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_007hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="204,226,233"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_007hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,255,255"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_007hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,233,201"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_007hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="179,131,92"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_003hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,183,81"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_003hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="240,168,136"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_003hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="188,143,86"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_003hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="216,191,214"/>
+	</spriteType>
+'>
+<!ENTITY Apartment_002hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="75,166,197"/>
+	</spriteType>
+'>
+<!ENTITY Apartment_002hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,84,88"/>
+	</spriteType>
+'>
+<!ENTITY hueTransform_902 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="217,188,157"/>
+	</spriteType>
+'>
+<!ENTITY hueTransform_903 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="203,203,207"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_009-hT_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="184,86,90"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_009-hT_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="241,140,72"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_009-hT_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="163,103,68"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_009-hT_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="225,200,229"/>
+	</spriteType>
+'>
+
+<!ENTITY DepartmentStore_001hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,47,76"/>
+	</spriteType>
+'>
+
+<!ENTITY DepartmentStore_001hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="26,145,255"/>
+	</spriteType>
+'>
+
+<!ENTITY DepartmentStore_001hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="217,48,127"/>
+	</spriteType>
+'>
+
+<!ENTITY DepartmentStore_001hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="0,207,107"/>
+	</spriteType>
+'>
+
+<!ENTITY DepartmentStore_001hueTransform_005 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="84,0,255"/>
+	</spriteType>
+'>
+<!ENTITY home_005hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="191,65,77"/>
+	</spriteType>
+'>
+<!ENTITY home_005hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="213,88,57"/>
+	</spriteType>
+'>
+<!ENTITY home_005hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="108,77,47"/>
+	</spriteType>
+'>
+<!ENTITY home_005hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="97,95,92"/>
+	</spriteType>
+'>
+<!ENTITY home_005hueTransform_005 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="89,107,144"/>
+	</spriteType>
+'>
+<!ENTITY home_005hueTransform_006 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="77,147,102"/>
+	</spriteType>
+'>
+
+<!ENTITY home_003hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="208,194,226"/>
+	</spriteType>
+'>
+<!ENTITY home_003hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="194,219,234"/>
+	</spriteType>
+'>
+<!ENTITY home_003hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="201,224,112"/>
+	</spriteType>
+'>
+<!ENTITY home_003hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,209,119"/>
+	</spriteType>
+'>
+<!ENTITY home_003hueTransform_005 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="211,185,135"/>
+	</spriteType>
+'>
+<!ENTITY home_003hueTransform_006 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,164,124"/>
+	</spriteType>
+'>
+
+<!ENTITY home_004hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="183,87,121"/>
+	</spriteType>
+'>
+<!ENTITY home_004hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="193,87,70"/>
+	</spriteType>
+'>
+<!ENTITY home_004hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="207,121,58"/>
+	</spriteType>
+'>
+<!ENTITY home_004hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="158,142,118"/>
+	</spriteType>
+'>
+<!ENTITY home_004hueTransform_005 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="129,170,62"/>
+	</spriteType>
+'>
+<!ENTITY home_004hueTransform_006 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="123,114,181"/>
+	</spriteType>
+'>
+
+
+<!ENTITY home_006hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="110,116,245"/>
+	</spriteType>
+'>
+<!ENTITY home_006hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="74,163,87"/>
+	</spriteType>
+'>
+<!ENTITY home_006hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="149,229,198"/>
+	</spriteType>
+'>
+<!ENTITY home_006hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="203,153,82"/>
+	</spriteType>
+'>
+<!ENTITY home_006hueTransform_005 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,140,47"/>
+	</spriteType>
+'>
+<!ENTITY home_006hueTransform_006 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="237,94,101"/>
+	</spriteType>
+'>
+
+<!ENTITY home_007hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="219,93,104"/>
+	</spriteType>
+'>
+<!ENTITY home_007hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,156,102"/>
+	</spriteType>
+'>
+<!ENTITY home_007hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="241,161,58"/>
+	</spriteType>
+'>
+<!ENTITY home_007hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="201,176,109"/>
+	</spriteType>
+'>
+<!ENTITY home_007hueTransform_005 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="122,189,197"/>
+	</spriteType>
+'>
+<!ENTITY home_007hueTransform_006 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="147,104,233"/>
+	</spriteType>
+'>
+
+<!ENTITY restaurant_002hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="88,115,111"/>
+	</spriteType>
+'>
+<!ENTITY restaurant_002hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="75,162,137"/>
+	</spriteType>
+'>
+<!ENTITY restaurant_002hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="153,103,83"/>
+	</spriteType>
+'>
+<!ENTITY restaurant_002hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="202,95,42"/>
+	</spriteType>
+'>
+
+<!ENTITY vhbi_010hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,96,47"/>
+	</spriteType>
+'>
+
+<!ENTITY vhbi_011hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="236,255,250"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_011hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="229,228,255"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_011hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="253,228,255"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_011hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,233,216"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_011hueTransform_005 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,247,215"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_011hueTransform_006 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="241,255,216"/>
+	</spriteType>
+'>
+
+<!ENTITY vhbi_012hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="0,0,*" to="255,167,54"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_012hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="0,0,*" to="121,216,69"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_012hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="0,0,*" to="235,124,159"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_012hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="0,0,*" to="171,138,225"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_012hueTransform_005 '
+	<spriteType name="hueTransform">
+		<map from="0,0,*" to="71,201,207"/>
+	</spriteType>
+'>
+
+<!ENTITY vhbi_013hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="0,0,*" to="181,153,134"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_013hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="0,0,*" to="153,153,153"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_013hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="0,0,*" to="157,171,193"/>
+	</spriteType>
+'>
+<!ENTITY vhbi_013hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="0,0,*" to="231,231,231"/>
+	</spriteType>
+'>
+
+<!ENTITY ampark_BalloonTower_001hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,102,125"/>
+		<map from="0,*,0" to="58,107,255"/>
+		<map from="0,0,*" to="255,255,255"/>
+	</spriteType>
+'>
+<!ENTITY ampark_BalloonTower_001hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,102,125"/>
+		<map from="0,*,0" to="87,87,87"/>
+		<map from="0,0,*" to="255,255,255"/>
+	</spriteType>
+'>
+<!ENTITY ampark_BalloonTower_001hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="134,124,205"/>
+		<map from="0,*,0" to="0,190,112"/>
+		<map from="0,0,*" to="255,255,255"/>
+	</spriteType>
+'>
+<!ENTITY ampark_BalloonTower_001hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="134,124,205"/>
+		<map from="0,*,0" to="255,69,66"/>
+		<map from="0,0,*" to="255,69,66"/>
+	</spriteType>
+'>
+<!ENTITY ampark_BalloonTower_001hueTransform_005 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="21,170,119"/>
+		<map from="0,*,0" to="152,98,62"/>
+		<map from="0,0,*" to="255,255,255"/>
+	</spriteType>
+'>
+<!ENTITY ampark_BalloonTower_001hueTransform_006 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="21,170,119"/>
+		<map from="0,*,0" to="255,255,255"/>
+		<map from="0,0,*" to="232,111,111"/>
+	</spriteType>
+'>
+
+<!ENTITY ampark_SpaceShot_001hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,0,60"/>
+		<map from="0,*,0" to="20,52,249"/>
+		<map from="0,0,*" to="255,85,125"/>
+	</spriteType>
+'>
+<!ENTITY ampark_SpaceShot_001hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,255,255"/>
+		<map from="0,*,0" to="191,191,191"/>
+		<map from="0,0,*" to="107,211,180"/>
+	</spriteType>
+'>
+<!ENTITY ampark_SpaceShot_001hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="77,219,255"/>
+		<map from="0,*,0" to="255,227,99"/>
+		<map from="0,0,*" to="255,255,255"/>
+	</spriteType>
+'>
+<!ENTITY ampark_SpaceShot_001hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="29,204,255"/>
+		<map from="0,*,0" to="156,190,233"/>
+		<map from="0,0,*" to="249,220,88"/>
+	</spriteType>
+'>
+<!ENTITY ampark_SpaceShot_001hueTransform_005 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,0,198"/>
+		<map from="0,*,0" to="179,161,79"/>
+		<map from="0,0,*" to="69,121,238"/>
+	</spriteType>
+'>
+
+<!ENTITY ampark_entrance_001hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,111,54"/>
+		<map from="0,*,0" to="0,211,209"/>
+		<map from="0,0,*" to="0,78,255"/>
+	</spriteType>
+'>
+<!ENTITY ampark_entrance_001hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="24,201,112"/>
+		<map from="0,*,0" to="255,228,0"/>
+		<map from="0,0,*" to="255,90,0"/>
+	</spriteType>
+'>
+<!ENTITY ampark_entrance_001hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,74,81"/>
+		<map from="0,*,0" to="255,255,0"/>
+		<map from="0,0,*" to="0,156,255"/>
+	</spriteType>
+'>
+<!ENTITY ampark_entrance_001hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="94,97,185"/>
+		<map from="0,*,0" to="255,120,0"/>
+		<map from="0,0,*" to="255,0,0"/>
+	</spriteType>
+'>
+
+<!ENTITY ampark_AstroFighter_001hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,62,94"/>
+		<map from="0,*,0" to="0,255,100"/>
+		<map from="0,0,*" to="255,234,0"/>
+	</spriteType>
+'>
+<!ENTITY ampark_AstroFighter_001hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,162,0"/>
+		<map from="0,*,0" to="94,255,68"/>
+		<map from="0,0,*" to="241,84,255"/>
+	</spriteType>
+'>
+<!ENTITY ampark_AstroFighter_001hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="20,175,255"/>
+		<map from="0,*,0" to="20,175,255"/>
+		<map from="0,0,*" to="20,175,255"/>
+	</spriteType>
+'>
+
+<!ENTITY ampark_GameCenter_001hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="119,97,202"/>
+		<map from="0,*,0" to="255,234,92"/>
+		<map from="0,0,*" to="237,38,38"/>
+	</spriteType>
+'>
+<!ENTITY ampark_GameCenter_001hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,128,64"/>
+		<map from="0,*,0" to="93,255,204"/>
+		<map from="0,0,*" to="204,0,255"/>
+	</spriteType>
+'>
+<!ENTITY ampark_GameCenter_001hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="146,109,66"/>
+		<map from="0,*,0" to="255,210,0"/>
+		<map from="0,0,*" to="0,144,137"/>
+	</spriteType>
+'>
+<!ENTITY ampark_GameCenter_001hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="73,178,179"/>
+		<map from="0,*,0" to="255,255,83"/>
+		<map from="0,0,*" to="255,128,64"/>
+	</spriteType>
+'>
+<!ENTITY ampark_GameCenter_001hueTransform_005 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="73,178,179"/>
+		<map from="0,*,0" to="255,255,255"/>
+		<map from="0,0,*" to="255,255,255"/>
+	</spriteType>
+'>
+<!ENTITY ampark_GameCenter_001hueTransform_006 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="147,141,129"/>
+		<map from="0,*,0" to="213,84,106"/>
+		<map from="0,0,*" to="213,84,106"/>
+	</spriteType>
+'>
+<!ENTITY ampark_GameCenter_001hueTransform_007 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="87,160,190"/>
+		<map from="0,*,0" to="117,214,255"/>
+		<map from="0,0,*" to="117,214,255"/>
+	</spriteType>
+'>
+
+<!ENTITY ampark_Parasol_001hueTransform_001 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,255,255"/>
+		<map from="0,0,*" to="0,204,255"/>
+	</spriteType>
+'>
+<!ENTITY ampark_Parasol_001hueTransform_002 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,255,255"/>
+		<map from="0,0,*" to="0,255,132"/>
+	</spriteType>
+'>
+<!ENTITY ampark_Parasol_001hueTransform_003 '
+	<spriteType name="hueTransform">
+		<map from="0,0,*" to="255,255,255"/>
+	</spriteType>
+'>
+<!ENTITY ampark_Parasol_001hueTransform_004 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="75,75,255"/>
+		<map from="0,0,*" to="255,255,255"/>
+	</spriteType>
+'>
+<!ENTITY ampark_Parasol_001hueTransform_005 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="60,211,0"/>
+		<map from="0,0,*" to="255,255,255"/>
+	</spriteType>
+'>
+<!ENTITY ampark_Parasol_001hueTransform_006 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,138,0"/>
+		<map from="0,0,*" to="255,255,255"/>
+	</spriteType>
+'>
+<!ENTITY ampark_Parasol_001hueTransform_007 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,22,82"/>
+		<map from="0,0,*" to="255,22,82"/>
+	</spriteType>
+'>
+<!ENTITY ampark_Parasol_001hueTransform_008 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="68,72,255"/>
+		<map from="0,0,*" to="68,72,255"/>
+	</spriteType>
+'>
+<!ENTITY ampark_Parasol_001hueTransform_009 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="56,207,84"/>
+		<map from="0,0,*" to="56,207,84"/>
+	</spriteType>
+'>
+<!ENTITY ampark_Parasol_001hueTransform_010 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,138,0"/>
+		<map from="0,0,*" to="255,138,0"/>
+	</spriteType>
+'>
+<!ENTITY ampark_Parasol_001hueTransform_011 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="86,181,255"/>
+		<map from="0,0,*" to="86,181,255"/>
+	</spriteType>
+'>
+<!ENTITY ampark_Parasol_001hueTransform_012 '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="0,255,186"/>
+		<map from="0,0,*" to="0,255,186"/>
+	</spriteType>
+'>
+
+
+
+
+
+
+]>
+
+
+
+<plug-in>
+	<title>FreeTrain-Sousaku Kan, Primary Buildings</title>
+	<author>haru</author>
+	<homepage>http://hb4.seikyou.ne.jp/home/Go-Ro/FreeTrain/</homepage>
+	<depend on="jp.ne.seikyou.Go-Ro.structure"/>
+	<depend on="jp.ne.seikyou.Go-Ro.structure.dependon"/>
+
+
+
+<!-- Rental office building -->
+	<contribution type="GenericStructure" id="{vhbi_001-GenericStructure-C000-000a-4C8B212Dharu}">
+		<name>Rental office building</name>
+		<design>Rental office building 1</design>
+			<structure>
+				<category byname="Rental Offices"/>
+			</structure>
+		<price>270</price>
+		<size>1,1</size>
+		<minHeight>2</minHeight>
+		<maxHeight>3</maxHeight>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>40</base>
+		</population>
+				&vhbi_001hueTransform_001;
+				&vhbi_001hueTransform_002;
+				&vhbi_001hueTransform_003;
+		<pictures>
+			<top    origin=" 0, 2" offset="9">
+				<picture ref="{vhbi_001-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 0, 34" offset="9">
+				<picture ref="{vhbi_001-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 0, 66" offset="9">
+				<picture ref="{vhbi_001-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 32, 0" offset="11">
+				<picture ref="{vhbi_001-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 32, 34" offset="9">
+				<picture ref="{vhbi_001-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 32, 66" offset="9">
+				<picture ref="{vhbi_001-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 64, 0" offset="11">
+				<picture ref="{vhbi_001-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 64, 34" offset="9">
+				<picture ref="{vhbi_001-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 64, 66" offset="9">
+				<picture ref="{vhbi_001-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 96, 0" offset="11">
+				<picture ref="{vhbi_001-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 96, 34" offset="9">
+				<picture ref="{vhbi_001-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 96, 66" offset="9">
+				<picture ref="{vhbi_001-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+
+
+
+<!-- Cafe -->
+	<contribution type="GenericStructure" id="{CfeS_001-GenericStructure-C000-000a-4C8B212Dharu}">
+		<name>Cafe</name>
+		<structure>
+			<category byname="Restaurants"/>
+		</structure>
+		<price>180</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+		<sprite origin="0,0" offset="7">
+			<picture ref="{CfeS_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+	</contribution>
+
+
+
+<!-- Single House(home_001) -->
+	<contribution type="GenericStructure" id="{home_001-GenericStructure-C000-000a-4C8B212Dharu}">
+		<name>Single House</name>
+		<design>Type A</design>
+		<structure>
+			<category byname="Single Houses"/>
+		</structure>
+		<price>96</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>5</base>
+		</population>
+				&home_001hueTransform_001;
+				&home_001colorMap001;
+				&home_001hueTransform_002;
+		<sprite origin="0,0" offset="8">
+			<picture ref="{home_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="32,0" offset="8">
+			<picture ref="{home_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="64,0" offset="8">
+			<picture ref="{home_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="96,0" offset="8">
+			<picture ref="{home_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+	</contribution>
+
+
+
+<!-- Tower of the Sun -->
+	<contribution type="GenericStructure" id="{taiyo-GenericStructure-C000-000a-4C8B212Dharu}">
+		<name>Tower of the Sun</name>
+		<structure>
+			<category byname="Landmarks"/>
+		</structure>
+		<price>3000</price>
+		<size>2,4</size>
+		<height>6</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>10</base>
+		</population>
+		<sprite origin="0,0" offset="75">
+			<picture ref="{885A55E5-F548-1276-83FD-001854178F24}"/>
+		</sprite>
+		<sprite origin="96,0" offset="91" opposite="true">
+			<picture ref="{885A55E5-F548-1276-83FD-001854178F24}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+
+
+<!-- two lane road slope -->
+	<contribution type="GenericStructure" id="{slope_a3road_d-GenericStructure-C000-000a-4C8B212Dharu}">
+		<name>Road slope (2-lane)</name>
+		<structure>
+			<category byname="Road Accessories"/>
+		</structure>
+		<price>1000</price>
+		<height>2</height>
+		<size>1,4</size>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>0</base>
+		</population>
+		<computerCannotBuild/>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{slope_a3road_d-pcon-C000-0000-4C8B212DD67q}"/>
+		</sprite>
+		<sprite origin="80,0" offset="48" opposite="true">
+			<picture ref="{slope_a3road_d-pcon-C000-0000-4C8B212DD67q}"/>
+		</sprite>
+		<sprite origin="160,0" offset="24">
+			<picture ref="{slope_a3road_d-pcon-C000-0000-4C8B212DD67q}"/>
+		</sprite>
+		<sprite origin="240,0" offset="48" opposite="true">
+			<picture ref="{slope_a3road_d-pcon-C000-0000-4C8B212DD67q}"/>
+		</sprite>
+	</contribution>
+
+
+
+<!-- Apartment -->
+	<contribution type="GenericStructure" id="{Apartment_001-GenericStructure-C000-000a-4C8B212Dharu}">
+		<name>Apartment</name>
+		<design>Type A</design>
+		<structure>
+			<category byname="Rental Apartments"/>
+		</structure>
+		<price>140</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>8</base>
+		</population>
+			&Apartment_001hueTransform_001;
+			&Apartment_001hueTransform_002;
+			&Apartment_001hueTransform_003;
+			&Apartment_001hueTransform_004;
+			&Apartment_001hueTransform_005;
+			&Apartment_001hueTransform_006;
+		<sprite origin="0,0" offset="8">
+			<picture ref="{Apartment_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="32,0" offset="8">
+			<picture ref="{Apartment_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="64,0" offset="8">
+			<picture ref="{Apartment_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="96,0" offset="8">
+			<picture ref="{Apartment_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+	</contribution>
+
+
+
+<!-- Small-Scale Factories -->
+	<contribution type="GenericStructure" id="{factory_001-GenericStructure-C000-000A-4C8B212DD67q}">
+		<name>Small-Scale Factories</name>
+		<structure>
+			<category byname="Small-Scale Factories"/>
+		</structure>
+		<price>100</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>9</base>
+		</population>
+		<sprite origin="0,0" offset="8">
+			<picture ref="{factory_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="32,0" offset="8">
+			<picture ref="{factory_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="64,0" offset="8">
+			<picture ref="{factory_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="96,0" offset="8">
+			<picture ref="{factory_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+	</contribution>
+
+
+
+<!-- Multi purpose warehouse (open) -->
+	<contribution type="GenericStructure" id="{warehouse_001-GenericStructure-C000-000A-4C8B212DD67q}">
+		<name>Warehouse</name>
+		<design>Multi purpose warehouse (open)</design>
+		<structure>
+			<category byname="Warehouses"/>
+		</structure>
+		<price>120</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>9</base>
+		</population>
+		<sprite origin="32,0" offset="9">
+			<picture ref="{warehouse_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="0,0" offset="9">
+			<picture ref="{warehouse_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+	</contribution>
+
+
+<!-- Multi purpose warehouse (close) -->
+	<contribution type="GenericStructure" id="{warehouse_001-GenericStructure-C000-000B-4C8B212DD67q}">
+		<name>Warehouse</name>
+		<design>Multi purpose warehouse (close)</design>
+		<structure>
+			<category byname="Warehouses"/>
+		</structure>
+		<price>120</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>9</base>
+		</population>
+		<sprite origin="96,0" offset="9">
+			<picture ref="{warehouse_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="64,0" offset="9">
+			<picture ref="{warehouse_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+	</contribution>
+
+
+
+<!-- Cowshed -->
+	<contribution type="GenericStructure" id="{FarmStr_001-GenericStructure-C000-000A-4C8B212DD67q}">
+		<name>Farm</name>
+		<design>Cowshed</design>
+		<structure>
+			<category byname="Livestock Farms"/>
+		</structure>
+		<price>100</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.AgriculturalPopulation"/>
+			<base>4</base>
+		</population>
+		<computerCannotBuild/>
+		<sprite origin="32,0" offset="7">
+			<picture ref="{FarmStr_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="0,0" offset="7">
+			<picture ref="{FarmStr_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+	</contribution>
+
+
+<!-- Pasture -->
+	<contribution type="GenericStructure" id="{FarmStr_002-GenericStructure-C000-000a-4C8B212DD67q}">
+		<name>Farm</name>
+		<design>Pasture</design>
+		<structure>
+			<category byname="Livestock Farms"/>
+		</structure>
+		<price>160</price>
+		<height>1</height>
+		<size>4,8</size>
+		<population>
+			<class name="freetrain.contributions.population.AgriculturalPopulation"/>
+			<base>4</base>
+		</population>
+		<computerCannotBuild />
+		<sprite origin="192,0" offset="24">
+			<picture ref="{FarmStr_002-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="0,0" offset="56" opposite="true">
+			<picture ref="{FarmStr_002-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+	</contribution>
+
+
+<!-- Silo -->
+	<contribution type="GenericStructure" id="{FarmStr_003-GenericStructure-C000-000a-4C8B212DD67q}">
+		<name>Farm</name>
+		<design>Silo</design>
+		<structure>
+			<category byname="Livestock Farms"/>
+		</structure>
+		<price>200</price>
+		<size>1,1</size>
+		<height>2</height>
+		<population>
+			<class name="freetrain.contributions.population.AgriculturalPopulation"/>
+			<base>2</base>
+		</population>
+		<computerCannotBuild />
+		<sprite origin="0,0" offset="22">
+			<picture ref="{FarmStr_003-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="32,0" offset="22">
+			<picture ref="{FarmStr_003-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="64,0" offset="22">
+			<picture ref="{FarmStr_003-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="96,0" offset="22">
+			<picture ref="{FarmStr_003-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+	</contribution>
+
+
+
+<!-- Intelligent building -->
+	<contribution type="GenericStructure" id="{vhbi_005-GenericStructure-C001-000A-4C8B212DD67q}">
+		<name>Intelligent building</name>
+		<design>Type A</design>
+		<structure>
+			<category byname="Rental Offices"/>
+		</structure>
+		<price>1250</price>
+		<size>2,2</size>
+		<minHeight>3</minHeight>
+		<maxHeight>10</maxHeight>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>120</base>
+		</population>
+			&vhbi_005hueTransform_001;
+			&vhbi_005hueTransform_002;
+			&vhbi_005hueTransform_003;
+			&vhbi_005hueTransform_004;
+			&vhbi_005hueTransform_005;
+			&vhbi_005hueTransform_006;
+		<pictures>
+			<top    origin=" 0, 4" offset="12">
+				<picture ref="{vhbi_005-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 0, 36" offset="12">
+				<picture ref="{vhbi_005-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 0, 68" offset="12">
+				<picture ref="{vhbi_005-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 64, 4" offset="12">
+				<picture ref="{vhbi_005-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 64, 36" offset="12">
+				<picture ref="{vhbi_005-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 64, 68" offset="12">
+				<picture ref="{vhbi_005-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+
+
+
+<!-- Rental video chain shop -->
+	<contribution type="GenericStructure" id="{RentalVideoShop_001-GenericStructure-C000-000A-4C8B212DD67q}">
+		<name>Rental video chain shop</name>
+		<design>TATUYA</design>
+		<structure>
+			<category byname="Specialty Chain Stores"/>
+		</structure>
+		<price>200</price>
+		<size>1,2</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>50</base>
+		</population>
+		<sprite origin="0,0" offset="10">
+			<picture ref="{RentalVideoShop_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="48,0" offset="18" opposite="true">
+			<picture ref="{RentalVideoShop_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="96,0" offset="10">
+			<picture ref="{RentalVideoShop_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="144,0" offset="18" opposite="true">
+			<picture ref="{RentalVideoShop_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+	</contribution>
+
+
+
+<!-- Credit association -->
+	<contribution type="GenericStructure" id="{CreditA_001-GenericStructure-C000-000A-4C8B212DD67q}">
+		<name>Credit association</name>
+		<structure>
+			<category byname="Banks"/>
+		</structure>
+		<price>220</price>
+		<size>1,1</size>
+		<height>2</height>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>40</base>
+		</population>
+				&CreditA_001hueTransform_001;
+				&CreditA_001hueTransform_002;
+				&CreditA_001hueTransform_003;
+				&CreditA_001hueTransform_004;
+		<sprite origin="0,0" offset="21">
+			<picture ref="{CreditA_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="32,0" offset="21">
+			<picture ref="{CreditA_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="64,0" offset="21">
+			<picture ref="{CreditA_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="96,0" offset="21">
+			<picture ref="{CreditA_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+	</contribution>
+
+
+
+<!-- Men's wear chain shop -->
+	<contribution type="GenericStructure" id="{MensWearShop_001-GenericStructure-C000-000A-4C8B212DD67q}">
+		<name>Men's wear chain shop</name>
+		<design>Type A</design>
+		<structure>
+			<category byname="Specialty Chain Stores"/>
+		</structure>
+		<price>160</price>
+		<size>1,1</size>
+		<height>2</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>35</base>
+		</population>
+		<sprite origin="0,2" offset="14">
+			<picture ref="{MensWearShop_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="32,2" offset="14">
+			<picture ref="{MensWearShop_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="64,0" offset="16">
+			<picture ref="{MensWearShop_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="96,0" offset="16">
+			<picture ref="{MensWearShop_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+	</contribution>
+
+
+
+<!-- Large Supermarket -->
+	<contribution type="GenericStructure" id="{supermarket_001-GenericStructure-C001-000A-4C8B212DD67q}">
+		<name>Large Supermarket</name>
+		<structure>
+			<category byname="Supermarkets"/>
+		</structure>
+		<price>1160</price>
+		<size>2,2</size>
+		<height>3</height>
+		<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+			<population>
+				<class name="freetrain.contributions.population.ShopperPopulation"/>
+				<base>520</base>
+			</population>
+			<population>
+				<class name="freetrain.contributions.population.OfficePopulation"/>
+				<base>30</base>
+			</population>
+		</population>
+			&hueTransform_004;
+			&hueTransform_005;
+			&hueTransform_006;
+		<sprite origin="0,0" offset="41">
+			<picture ref="{supermarket_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="64,0" offset="41">
+			<picture ref="{supermarket_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="128,0" offset="41">
+			<picture ref="{supermarket_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="192,0" offset="41">
+			<picture ref="{supermarket_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+	</contribution>
+
+
+
+<!-- Single House(home_002) -->
+	<contribution type="GenericStructure" id="{home_002-GenericStructure-C001-000A-4C8B212DD67q}">
+		<name>Single House</name>
+		<design>Type B</design>
+		<structure>
+			<category byname="Single Houses"/>
+		</structure>
+		<price>88</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>6</base>
+		</population>
+			&hueTransform_007;
+			&hueTransform_008;
+			&hueTransform_009;
+		<sprite origin="0,0" offset="9">
+			<picture ref="{home_002-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="32,0" offset="9">
+			<picture ref="{home_002-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="64,0" offset="9">
+			<picture ref="{home_002-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="96,0" offset="9">
+			<picture ref="{home_002-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+	</contribution>
+
+
+
+<!-- Japanese food restaurant -->
+	<contribution type="GenericStructure" id="{restaurant_001-GenericStructure-C001-000A-4C8B212DD67q}">
+		<name>Japanese food restaurant</name>
+		<structure>
+			<category byname="Restaurants"/>
+		</structure>
+		<price>560</price>
+		<size>2,2</size>
+		<height>2</height>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>120</base>
+		</population>
+			&restaurant_001-hueTransform_001;
+			&restaurant_001-hueTransform_002;
+			&restaurant_001-hueTransform_003;
+		<sprite origin="0,0" offset="26">
+			<picture ref="{restaurant_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="64,0" offset="26">
+			<picture ref="{restaurant_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="128,0" offset="26">
+			<picture ref="{restaurant_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="192,0" offset="26">
+			<picture ref="{restaurant_001-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+	</contribution>
+
+
+
+<!-- Donuts chain shop -->
+	<contribution type="GenericStructure" id="{DoughnutShop-GenericStructure-C000-000A-4C8B212DD67q}">
+		<name>Donuts chain shop</name>
+		<design>Tester Dounuts shop</design>
+		<structure>
+			<category byname="Fast Food"/>
+		</structure>
+		<price>175</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>45</base>
+		</population>
+		<sprite origin="0,0" offset="9">
+			<picture ref="{DoughnutShop-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="32,0" offset="9">
+			<picture ref="{DoughnutShop-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="64,0" offset="9">
+			<picture ref="{DoughnutShop-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+		<sprite origin="96,0" offset="9">
+			<picture ref="{DoughnutShop-pcon-C000-0000-4C8B212DD67q}" />
+		</sprite>
+	</contribution>
+
+
+
+<!-- Rental office building 2 -->
+	<contribution type="GenericStructure" id="{vhbi_002-GenericStructure-C001-000A-4C8B212DD67q}">
+		<name>Rental office building</name>
+		<design>Rental office building 2</design>
+		<structure>
+			<category byname="Rental Offices"/>
+			<category byname="Service Counters" hide="true"/>
+		</structure>
+		<price>250</price>
+		<size>1,1</size>
+		<minHeight>2</minHeight>
+		<maxHeight>3</maxHeight>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>40</base>
+		</population>
+			&hueTransform_017;
+			&hueTransform_018;
+		<pictures>
+			<top    origin=" 0, 4" offset="7">
+				<picture ref="{vhbi_002-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 0, 32" offset="11">
+				<picture ref="{vhbi_002-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 0, 64" offset="11">
+				<picture ref="{vhbi_002-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 32, 0" offset="11">
+				<picture ref="{vhbi_002-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 32, 32" offset="11">
+				<picture ref="{vhbi_002-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 32, 64" offset="11">
+				<picture ref="{vhbi_002-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 64, 0" offset="11">
+				<picture ref="{vhbi_002-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 64, 32" offset="11">
+				<picture ref="{vhbi_002-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 64, 64" offset="11">
+				<picture ref="{vhbi_002-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 96, 4" offset="7">
+				<picture ref="{vhbi_002-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 96, 32" offset="11">
+				<picture ref="{vhbi_002-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 96, 64" offset="11">
+				<picture ref="{vhbi_002-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+
+
+
+<!-- Rental office building 3 -->
+	<contribution type="GenericStructure" id="{vhbi_004-GenericStructure-C001-000A-4C8B212DD67q}">
+		<name>Rental office building</name>
+		<design>Rental office building 3</design>
+		<structure>
+			<category byname="Rental Offices"/>
+			<category byname="Business Services" hide="true"/>
+		</structure>
+		<price>270</price>
+		<size>1,1</size>
+		<minHeight>2</minHeight>
+		<maxHeight>3</maxHeight>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>36</base>
+		</population>
+			&hueTransform_014;
+			&hueTransform_015;
+		<pictures>
+			<top    origin=" 0, 1" offset="9">
+				<picture ref="{vhbi_004-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 0, 33" offset="9">
+				<picture ref="{vhbi_004-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 0, 65" offset="9">
+				<picture ref="{vhbi_004-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 32, 0" offset="10">
+				<picture ref="{vhbi_004-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 32, 33" offset="9">
+				<picture ref="{vhbi_004-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 32, 65" offset="9">
+				<picture ref="{vhbi_004-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 96, 1" offset="9">
+				<picture ref="{vhbi_004-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 96, 33" offset="9">
+				<picture ref="{vhbi_004-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 96, 65" offset="9">
+				<picture ref="{vhbi_004-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 64, 1" offset="9">
+				<picture ref="{vhbi_004-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 64, 33" offset="9">
+				<picture ref="{vhbi_004-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 64, 65" offset="9">
+				<picture ref="{vhbi_004-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+
+
+
+<!-- Rental office building 4 -->
+	<contribution type="GenericStructure" id="{vhbi_007-GenericStructure-C001-000A-4C8B212DD67q}">
+		<name>Rental office building</name>
+		<design>Rental office building 4</design>
+		<structure>
+			<category byname="Rental Offices"/>
+		</structure>
+		<price>180</price>
+		<size>1,1</size>
+		<minHeight>2</minHeight>
+		<maxHeight>3</maxHeight>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>36</base>
+		</population>
+			&vhbi_007hueTransform_001;
+			&vhbi_007hueTransform_002;
+			&vhbi_007hueTransform_003;
+			&vhbi_007hueTransform_004;
+		<pictures>
+			<top    origin=" 0, 0" offset="16">
+				<picture ref="{vhbi_007-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 0, 32" offset="16">
+				<picture ref="{vhbi_007-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 0, 64" offset="16">
+				<picture ref="{vhbi_007-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 32, 0" offset="16">
+				<picture ref="{vhbi_007-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 32, 32" offset="16">
+				<picture ref="{vhbi_007-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 32, 64" offset="16">
+				<picture ref="{vhbi_007-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 64, 0" offset="16">
+				<picture ref="{vhbi_007-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 64, 32" offset="16">
+				<picture ref="{vhbi_007-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 64, 64" offset="16">
+				<picture ref="{vhbi_007-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 96, 0" offset="16">
+				<picture ref="{vhbi_007-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 96, 32" offset="16">
+				<picture ref="{vhbi_007-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 96, 64" offset="16">
+				<picture ref="{vhbi_007-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+
+
+
+<!-- Rental Apartment -->
+	<contribution type="GenericStructure" id="{vhbi_003-GenericStructure-C001-000A-4C8B212DD67q}">
+		<name>Rental Apartment</name>
+		<structure>
+			<category byname="Rental Housing"/>
+		</structure>
+		<price>290</price>
+		<size>1,1</size>
+		<minHeight>2</minHeight>
+		<maxHeight>4</maxHeight>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>32</base>
+		</population>
+			&vhbi_003hueTransform_001;
+			&vhbi_003hueTransform_002;
+			&vhbi_003hueTransform_003;
+			&vhbi_003hueTransform_004;
+		<pictures>
+			<top    origin=" 0, 0" offset="7">
+				<picture ref="{vhbi_003-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 0, 28" offset="11">
+				<picture ref="{vhbi_003-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 0, 60" offset="11">
+				<picture ref="{vhbi_003-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 32, 0" offset="7">
+				<picture ref="{vhbi_003-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 32, 28" offset="11">
+				<picture ref="{vhbi_003-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 32, 60" offset="11">
+				<picture ref="{vhbi_003-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 64, 0" offset="7">
+				<picture ref="{vhbi_003-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 64, 28" offset="11">
+				<picture ref="{vhbi_003-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 64, 60" offset="11">
+				<picture ref="{vhbi_003-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 96, 0" offset="7">
+				<picture ref="{vhbi_003-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 96, 28" offset="11">
+				<picture ref="{vhbi_003-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 96, 60" offset="11">
+				<picture ref="{vhbi_003-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+
+
+
+<!-- Small rental apartment -->
+	<contribution type="GenericStructure" id="{Apartment_002-GenericStructure-C001-000a-4C8B212Dharu}">
+		<name>Small rental apartment</name>
+		<design>Small rental apartment</design>
+		<structure>
+			<category byname="Rental Apartments"/>
+		</structure>
+		<price>110</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>8</base>
+		</population>
+				&Apartment_002hueTransform_001;
+				&Apartment_002hueTransform_002;
+		<sprite origin="0,0" offset="8">
+			<picture ref="{Apartment_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="32,0" offset="8">
+			<picture ref="{Apartment_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="64,0" offset="8">
+			<picture ref="{Apartment_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="96,0" offset="8">
+			<picture ref="{Apartment_002-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+
+<!-- Landmark building -->
+	<contribution type="GenericStructure" id="{bldgVH02-GenericStructure-C001-000a-4C8B212Dharu}">
+		<name>Landmark building</name>
+		<structure>
+			<category byname="Rental Offices"/>
+			<category byname="Private Specialty Stores" hide="true"/>
+			<category byname="Specialty Chain Stores" hide="true"/>
+			<category byname="Restaurants" hide="true"/>
+		</structure>
+		<price>5000</price>
+		<size>3,2</size>
+		<minHeight>3</minHeight>
+		<maxHeight>10</maxHeight>
+		<population>
+			<class name="freetrain.contributions.population.CombinationPopulation"/>
+			<population>
+				<class name="freetrain.contributions.population.OfficePopulation"/>
+				<base>150</base>
+			</population>
+			<population>
+				<class name="freetrain.contributions.population.RestaurantPopulation"/>
+				<base>50</base>
+			</population>
+			<population>
+				<class name="freetrain.contributions.population.ShopperPopulation"/>
+				<base>70</base>
+			</population>
+		</population>
+			&hueTransform_902;
+		<pictures>
+			<top    origin="  0,  0" offset="19">
+				<picture ref="{0E9F632F-78F8-4B61-8B5B-450D85850002}"/>
+			</top>
+			<middle origin="  0, 48" offset="24">
+				<picture ref="{0E9F632F-78F8-4B61-8B5B-450D85850004}"/>
+			</middle>
+			<bottom origin="  0, 96" offset="24">
+				<picture ref="{0E9F632F-78F8-4B61-8B5B-450D85850004}"/>
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top    origin=" 0,  0" offset="11">
+				<picture ref="{0E9F632F-78F8-4B61-8B5B-450D85850002}"/>
+			</top>
+			<middle origin=" 80, 48" offset="16">
+			&hueTransform_902;
+				<picture ref="{0E9F632F-78F8-4B61-8B5B-450D85850004}"/>
+			</middle>
+			<bottom origin=" 80, 96" offset="16">
+			&hueTransform_902;
+				<picture ref="{0E9F632F-78F8-4B61-8B5B-450D85850004}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+
+
+
+<!-- Rental office building (heliport) -->
+	<contribution type="GenericStructure" id="{bldgVH02-GenericStructure-C001-000b-4C8B212Dharu}">
+		<name>Rental office building (heliport)</name>
+		<design>Type B</design>
+		<structure>
+			<category byname="Rental Offices"/>
+		</structure>
+		<price>4600</price>
+		<size>3,2</size>
+		<minHeight>3</minHeight>
+		<maxHeight>10</maxHeight>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>240</base>
+		</population>
+			&hueTransform_903;
+		<pictures>
+			<top    origin="  0,  0" offset="24">
+				<picture ref="{0E9F632F-78F8-4B61-8B5B-450D85850004}"/>
+			</top>
+			<middle origin="  0, 48" offset="24">
+				<picture ref="{0E9F632F-78F8-4B61-8B5B-450D85850004}"/>
+			</middle>
+			<bottom origin="  0, 96" offset="24">
+				<picture ref="{0E9F632F-78F8-4B61-8B5B-450D85850004}"/>
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top    origin=" 80,  0" offset="16">
+				<picture ref="{0E9F632F-78F8-4B61-8B5B-450D85850004}"/>
+			</top>
+			<middle origin=" 80, 48" offset="16">
+				<picture ref="{0E9F632F-78F8-4B61-8B5B-450D85850004}"/>
+			</middle>
+			<bottom origin=" 80, 96" offset="16">
+				<picture ref="{0E9F632F-78F8-4B61-8B5B-450D85850004}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+
+
+
+<!-- Business Hotel -->
+	<contribution type="GenericStructure" id="{vhbi_009-GenericStructure-C001-000A-4C8B212DD67q}">
+		<name>Business Hotel</name>
+		<structure>
+			<category byname="Business Hotels"/>
+			<category byname="Restaurants" hide="true"/>
+		</structure>
+		<price>4800</price>
+		<size>2,1</size>
+		<minHeight>3</minHeight>
+		<maxHeight>5</maxHeight>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>28</base>
+		</population>
+			&vhbi_009-hT_001;
+			&vhbi_009-hT_002;
+			&vhbi_009-hT_003;
+			&vhbi_009-hT_004;
+		<pictures>
+			<top    origin=" 0, 0" offset="20">
+				<picture ref="{vhbi_009-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 0, 36" offset="16">
+				<picture ref="{vhbi_009-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 0, 68" offset="16">
+				<picture ref="{vhbi_009-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top    origin=" 48, 0" offset="12">
+				<picture ref="{vhbi_009-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 48, 36" offset="8">
+				<picture ref="{vhbi_009-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 48, 68" offset="8">
+				<picture ref="{vhbi_009-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 96, 0" offset="20">
+				<picture ref="{vhbi_009-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 96, 36" offset="16">
+				<picture ref="{vhbi_009-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 96, 68" offset="16">
+				<picture ref="{vhbi_009-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+ 		<pictures opposite="true">
+			<top    origin=" 144, 0" offset="12">
+				<picture ref="{vhbi_009-pcon-C000-0000-4C8B212DD67q}"/>
+			</top>
+			<middle origin=" 144, 36" offset="8">
+				<picture ref="{vhbi_009-pcon-C000-0000-4C8B212DD67q}"/>
+			</middle>
+			<bottom origin=" 144, 68" offset="8">
+				<picture ref="{vhbi_009-pcon-C000-0000-4C8B212DD67q}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+
+
+
+<!-- Henhouse -->
+	<contribution type="GenericStructure" id="{FarmStr_004-GenericStructure-C001-000a-4C8B212Dharu}">
+		<name>Henhouse</name>
+		<design>Open henhouse</design>
+		<structure>
+			<category byname="Livestock Farms"/>
+		</structure>
+		<price>60</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>4</base>
+		</population>
+		<sprite origin="0,0" offset="10">
+			<picture ref="{FarmStr_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="32,0" offset="10">
+			<picture ref="{FarmStr_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+
+	<contribution type="GenericStructure" id="{FarmStr_004-GenericStructure-C001-000b-4C8B212Dharu}">
+		<name>Henhouse</name>
+		<design>Open henhouse (with feed tank)</design>
+		<structure>
+			<category byname="Livestock Farms"/>
+		</structure>
+		<price>60</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>4</base>
+		</population>
+		<sprite origin="64,0" offset="10">
+			<picture ref="{FarmStr_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="96,0" offset="10">
+			<picture ref="{FarmStr_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="128,0" offset="10">
+			<picture ref="{FarmStr_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="160,0" offset="10">
+			<picture ref="{FarmStr_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+
+<!-- Control tower -->
+	<contribution type="GenericStructure" id="{airport_ControlTower-GenericStructure-C001-000a-4C8B212Dharu}">
+		<name>Control tower</name>
+		<design>Type A</design>
+		<structure>
+			<category byname="Air Traffic Control Units"/>
+		</structure>
+		<size>1,1</size>
+		<price>300</price>
+		<height>4</height>
+		<population>
+ 	 		<class name="freetrain.contributions.population.OfficePopulation"/>
+  			<base>40</base>
+		</population>
+		<sprite origin="0,0" offset="51">
+			<picture ref="{airport_ControlTower-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+ 		<computerCannotBuild/>
+	</contribution>
+
+
+<!-- Department Store -->
+	<contribution type="GenericStructure" id="{DepartmentStore_001-GenericStructure-C001-000a-4C8B212Dharu}">
+		<group>Department Store</group>
+		<name>Department Store</name>
+		<structure>
+			<category byname="Department Stores"/>
+			<category byname="Cinemas" hide="true"/>
+		</structure>
+		<size>2,3</size>
+		<price>5000</price>
+		<height>4</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>1000</base>
+		</population>
+				&DepartmentStore_001hueTransform_001;
+				&DepartmentStore_001hueTransform_002;
+				&DepartmentStore_001hueTransform_003;
+				&DepartmentStore_001hueTransform_004;
+				&DepartmentStore_001hueTransform_005;
+		<sprite origin="0,0" offset="69">
+			<picture ref="{DepartmentStore_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="80,0" offset="77" opposite="true">
+			<picture ref="{DepartmentStore_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="160,0" offset="69">
+			<picture ref="{DepartmentStore_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="240,0" offset="77" opposite="true">
+			<picture ref="{DepartmentStore_001-pcon-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+<!-- Single House(home_005)　-->
+	<contribution type="GenericStructure" id="{home_005-GenericStructure-C001-000a-4C8B212Dharu}">
+		<name>Single House</name>
+		<design>Type C-1</design>
+		<structure>
+			<category byname="Single Houses"/>
+		</structure>
+		<price>100</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+			&home_005hueTransform_001;
+			&home_005hueTransform_002;
+			&home_005hueTransform_003;
+			&home_005hueTransform_004;
+			&home_005hueTransform_005;
+			&home_005hueTransform_006;
+		<sprite origin="0,0" offset="8">
+			<picture ref="{home_005-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="32,0" offset="8">
+			<picture ref="{home_005-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="64,0" offset="8">
+			<picture ref="{home_005-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="96,0" offset="8">
+			<picture ref="{home_005-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{home_005-GenericStructure-C001-001a-4C8B212Dharu}">
+		<name>Single House</name>
+		<design>Type C-2</design>
+		<structure>
+			<category byname="Single Houses"/>
+		</structure>
+		<price>100</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+			&home_005hueTransform_001;
+			&home_005hueTransform_002;
+			&home_005hueTransform_003;
+			&home_005hueTransform_004;
+			&home_005hueTransform_005;
+			&home_005hueTransform_006;
+		<sprite origin="0,32" offset="8">
+			<picture ref="{home_005-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="32,32" offset="8">
+			<picture ref="{home_005-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="64,32" offset="8">
+			<picture ref="{home_005-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="96,32" offset="8">
+			<picture ref="{home_005-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+<!-- Single House(home_003)　-->
+	<contribution type="GenericStructure" id="{home_003-GenericStructure-C001-000a-4C8B212Dharu}">
+		<name>Single House</name>
+		<design>Type D-1</design>
+		<structure>
+			<category byname="Single Houses"/>
+		</structure>
+		<price>140</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+			&home_003hueTransform_001;
+			&home_003hueTransform_002;
+			&home_003hueTransform_003;
+			&home_003hueTransform_004;
+			&home_003hueTransform_005;
+			&home_003hueTransform_006;
+		<sprite origin="0,0" offset="8">
+			<picture ref="{home_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="32,0" offset="8">
+			<picture ref="{home_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="64,0" offset="8">
+			<picture ref="{home_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="96,0" offset="8">
+			<picture ref="{home_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{home_003-GenericStructure-C001-001a-4C8B212Dharu}">
+		<name>Single House</name>
+		<design>Type D-2</design>
+		<structure>
+			<category byname="Single Houses"/>
+		</structure>
+		<price>140</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+			&home_003hueTransform_001;
+			&home_003hueTransform_002;
+			&home_003hueTransform_003;
+			&home_003hueTransform_004;
+			&home_003hueTransform_005;
+			&home_003hueTransform_006;
+		<sprite origin="0,24" offset="16">
+			<picture ref="{home_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="32,24" offset="16">
+			<picture ref="{home_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="64,24" offset="16">
+			<picture ref="{home_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="96,24" offset="16">
+			<picture ref="{home_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+<!-- Single House(home_004)　-->
+	<contribution type="GenericStructure" id="{home_004-GenericStructure-C001-000a-4C8B212Dharu}">
+		<name>Single House</name>
+		<design>Type E-1</design>
+		<structure>
+			<category byname="Single Houses"/>
+		</structure>
+		<price>130</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+			&home_004hueTransform_001;
+			&home_004hueTransform_002;
+			&home_004hueTransform_003;
+			&home_004hueTransform_004;
+			&home_004hueTransform_005;
+			&home_004hueTransform_006;
+		<sprite origin="0,0" offset="8">
+			<picture ref="{home_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="32,0" offset="8">
+			<picture ref="{home_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="64,0" offset="8">
+			<picture ref="{home_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="96,0" offset="8">
+			<picture ref="{home_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{home_004-GenericStructure-C001-001a-4C8B212Dharu}">
+		<name>Single House</name>
+		<design>Type E-2</design>
+		<structure>
+			<category byname="Single Houses"/>
+		</structure>
+		<price>130</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+			&home_004hueTransform_001;
+			&home_004hueTransform_002;
+			&home_004hueTransform_003;
+			&home_004hueTransform_004;
+			&home_004hueTransform_005;
+			&home_004hueTransform_006;
+		<sprite origin="0,24" offset="16">
+			<picture ref="{home_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="32,24" offset="16">
+			<picture ref="{home_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="64,24" offset="16">
+			<picture ref="{home_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="96,24" offset="16">
+			<picture ref="{home_004-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+<!-- Single House(home_006)　-->
+	<contribution type="GenericStructure" id="{home_006-GenericStructure-C001-000a-4C8B212Dharu}">
+		<name>Single House</name>
+		<design>Type F-1</design>
+		<structure>
+			<category byname="Single Houses"/>
+		</structure>
+		<price>140</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+			&home_006hueTransform_001;
+			&home_006hueTransform_002;
+			&home_006hueTransform_003;
+			&home_006hueTransform_004;
+			&home_006hueTransform_005;
+			&home_006hueTransform_006;
+		<sprite origin="0,0" offset="11">
+			<picture ref="{home_006-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="32,0" offset="11">
+			<picture ref="{home_006-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="64,0" offset="11">
+			<picture ref="{home_006-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="96,0" offset="11">
+			<picture ref="{home_006-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{home_006-GenericStructure-C001-001a-4C8B212Dharu}">
+		<name>Single House</name>
+		<design>Type F-2</design>
+		<structure>
+			<category byname="Single Houses"/>
+		</structure>
+		<price>140</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+			&home_006hueTransform_001;
+			&home_006hueTransform_002;
+			&home_006hueTransform_003;
+			&home_006hueTransform_004;
+			&home_006hueTransform_005;
+			&home_006hueTransform_006;
+		<sprite origin="0,27" offset="16">
+			<picture ref="{home_006-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="32,27" offset="16">
+			<picture ref="{home_006-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="64,27" offset="16">
+			<picture ref="{home_006-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="96,27" offset="16">
+			<picture ref="{home_006-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+<!-- Single House(home_007)　-->
+	<contribution type="GenericStructure" id="{home_007-GenericStructure-C001-000a-4C8B212Dharu}">
+		<name>Single House</name>
+		<design>Type G-1</design>
+		<structure>
+			<category byname="Single Houses"/>
+		</structure>
+		<price>120</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+			&home_007hueTransform_001;
+			&home_007hueTransform_002;
+			&home_007hueTransform_003;
+			&home_007hueTransform_004;
+			&home_007hueTransform_005;
+			&home_007hueTransform_006;
+		<sprite origin="0,0" offset="8">
+			<picture ref="{home_007-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="32,0" offset="8">
+			<picture ref="{home_007-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="64,0" offset="8">
+			<picture ref="{home_007-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="96,0" offset="8">
+			<picture ref="{home_007-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{home_007-GenericStructure-C001-001a-4C8B212Dharu}">
+		<name>Single House</name>
+		<design>Type G-2</design>
+		<structure>
+			<category byname="Single Houses"/>
+		</structure>
+		<price>120</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+			&home_007hueTransform_001;
+			&home_007hueTransform_002;
+			&home_007hueTransform_003;
+			&home_007hueTransform_004;
+			&home_007hueTransform_005;
+			&home_007hueTransform_006;
+		<sprite origin="0,24" offset="16">
+			<picture ref="{home_007-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="32,24" offset="16">
+			<picture ref="{home_007-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="64,24" offset="16">
+			<picture ref="{home_007-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="96,24" offset="16">
+			<picture ref="{home_007-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+<!-- Family Restaurant　-->
+	<contribution type="GenericStructure" id="{restaurant_002-GenericStructure-C001-000a-4C8B212Dharu}">
+		<name>Family Restaurant</name>
+		<design>Skyluck restaurant</design>
+		<structure>
+			<category byname="Family Restaurants"/>
+		</structure>
+		<price>800</price>
+		<size>2,2</size>
+		<height>2</height>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>300</base>
+		</population>
+			&restaurant_002hueTransform_001;
+			&restaurant_002hueTransform_002;
+			&restaurant_002hueTransform_003;
+			&restaurant_002hueTransform_004;
+		<sprite origin="0,0" offset="32">
+			<picture ref="{restaurant_002-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="64,0" offset="32">
+			<picture ref="{restaurant_002-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="128,0" offset="32">
+			<picture ref="{restaurant_002-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="192,0" offset="32">
+			<picture ref="{restaurant_002-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+<!-- Corner building(1x1)1 -->
+	<contribution type="GenericStructure" id="{vhbi_010-GenericStructure-C001-0000-4C8B212Dharu}">
+		<name>Corner building(1x1)</name>
+		<design>Type A</design>
+		<structure>
+			<category byname="Rental Offices"/>
+		</structure>
+		<price>280</price>
+		<size>1,1</size>
+		<minHeight>2</minHeight>
+		<maxHeight>3</maxHeight>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>40</base>
+		</population>
+				&DepartmentStore_001hueTransform_001;
+				&DepartmentStore_001hueTransform_002;
+				&DepartmentStore_001hueTransform_003;
+				&DepartmentStore_001hueTransform_004;
+				&DepartmentStore_001hueTransform_005;
+				&vhbi_010hueTransform_001;
+		<pictures>
+			<top    origin=" 0, 0" offset="9">
+				<picture ref="{vhbi_010-picture-C000-0000-4C8B212Dharu}"/>
+			</top>
+			<middle origin=" 0, 32" offset="9">
+				<picture ref="{vhbi_010-picture-C000-0000-4C8B212Dharu}"/>
+			</middle>
+			<bottom origin=" 0, 64" offset="9">
+				<picture ref="{vhbi_010-picture-C000-0000-4C8B212Dharu}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 32, 0" offset="9">
+				<picture ref="{vhbi_010-picture-C000-0000-4C8B212Dharu}"/>
+			</top>
+			<middle origin=" 32, 32" offset="9">
+				<picture ref="{vhbi_010-picture-C000-0000-4C8B212Dharu}"/>
+			</middle>
+			<bottom origin=" 32, 64" offset="9">
+				<picture ref="{vhbi_010-picture-C000-0000-4C8B212Dharu}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 64, 0" offset="9">
+				<picture ref="{vhbi_010-picture-C000-0000-4C8B212Dharu}"/>
+			</top>
+			<middle origin=" 64, 32" offset="9">
+				<picture ref="{vhbi_010-picture-C000-0000-4C8B212Dharu}"/>
+			</middle>
+			<bottom origin=" 64, 64" offset="9">
+				<picture ref="{vhbi_010-picture-C000-0000-4C8B212Dharu}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 96, 0" offset="9">
+				<picture ref="{vhbi_010-picture-C000-0000-4C8B212Dharu}"/>
+			</top>
+			<middle origin=" 96, 32" offset="9">
+				<picture ref="{vhbi_010-picture-C000-0000-4C8B212Dharu}"/>
+			</middle>
+			<bottom origin=" 96, 64" offset="9">
+				<picture ref="{vhbi_010-picture-C000-0000-4C8B212Dharu}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+
+
+<!-- Corner building(1x1)2 -->
+	<contribution type="GenericStructure" id="{vhbi_011-GenericStructure-C000-0000-4C8B212Dharu}">
+		<name>Corner building(1x1)</name>
+		<design>Type B</design>
+		<structure>
+			<category byname="Rental Offices"/>
+		</structure>
+		<price>260</price>
+		<size>1,1</size>
+		<minHeight>2</minHeight>
+		<maxHeight>3</maxHeight>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>38</base>
+		</population>
+				&vhbi_011hueTransform_001;
+				&vhbi_011hueTransform_002;
+				&vhbi_011hueTransform_003;
+				&vhbi_011hueTransform_004;
+				&vhbi_011hueTransform_005;
+				&vhbi_011hueTransform_006;
+		<pictures>
+			<top    origin=" 0, 0" offset="8">
+				<picture ref="{vhbi_011-picture-C000-0000-4C8B212Dharu}"/>
+			</top>
+			<middle origin=" 0, 32" offset="8">
+				<picture ref="{vhbi_011-picture-C000-0000-4C8B212Dharu}"/>
+			</middle>
+			<bottom origin=" 0, 64" offset="8">
+				<picture ref="{vhbi_011-picture-C000-0000-4C8B212Dharu}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 32, 0" offset="8">
+				<picture ref="{vhbi_011-picture-C000-0000-4C8B212Dharu}"/>
+			</top>
+			<middle origin=" 32, 32" offset="8">
+				<picture ref="{vhbi_011-picture-C000-0000-4C8B212Dharu}"/>
+			</middle>
+			<bottom origin=" 32, 64" offset="8">
+				<picture ref="{vhbi_011-picture-C000-0000-4C8B212Dharu}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 64, 0" offset="8">
+				<picture ref="{vhbi_011-picture-C000-0000-4C8B212Dharu}"/>
+			</top>
+			<middle origin=" 64, 32" offset="8">
+				<picture ref="{vhbi_011-picture-C000-0000-4C8B212Dharu}"/>
+			</middle>
+			<bottom origin=" 64, 64" offset="8">
+				<picture ref="{vhbi_011-picture-C000-0000-4C8B212Dharu}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 96, 0" offset="8">
+				<picture ref="{vhbi_011-picture-C000-0000-4C8B212Dharu}"/>
+			</top>
+			<middle origin=" 96, 32" offset="8">
+				<picture ref="{vhbi_011-picture-C000-0000-4C8B212Dharu}"/>
+			</middle>
+			<bottom origin=" 96, 64" offset="8">
+				<picture ref="{vhbi_011-picture-C000-0000-4C8B212Dharu}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+
+
+<!-- Rental office building3x4 -->
+	<contribution type="GenericStructure" id="{vhbi_012-GenericStructure-C001-0000-4C8B212Dharu}">
+		<name>Rental office building(3x4)</name>
+		<design>Type A</design>
+		<structure>
+			<category byname="Rental Offices"/>
+			<category byname="Restaurants" hide="true"/>
+			<category byname="Stores" hide="true"/>
+		</structure>
+		<price>7800</price>
+		<size>3,4</size>
+		<minHeight>4</minHeight>
+		<maxHeight>10</maxHeight>
+		<population>
+			<class name="freetrain.contributions.population.CombinationPopulation"/>
+			<population>
+				<class name="freetrain.contributions.population.OfficePopulation"/>
+				<base>500</base>
+			</population>
+			<population>
+				<class name="freetrain.contributions.population.ShopperPopulation"/>
+				<base>120</base>
+			</population>
+		</population>
+				&vhbi_012hueTransform_001;
+				&vhbi_012hueTransform_002;
+				&vhbi_012hueTransform_003;
+				&vhbi_012hueTransform_004;
+				&vhbi_012hueTransform_005;
+		<pictures>
+			<top    origin=" 0, 0" offset="32">
+				<picture ref="{vhbi_012-picture-C000-0000-4C8B212Dharu}"/>
+			</top>
+			<middle origin=" 0, 64" offset="32">
+				<picture ref="{vhbi_012-picture-C000-0000-4C8B212Dharu}"/>
+			</middle>
+			<bottom origin=" 0, 128" offset="32">
+				<picture ref="{vhbi_012-picture-C000-0000-4C8B212Dharu}"/>
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top    origin=" 112, 0" offset="40">
+				<picture ref="{vhbi_012-picture-C000-0000-4C8B212Dharu}"/>
+			</top>
+			<middle origin=" 112, 64" offset="40">
+				<picture ref="{vhbi_012-picture-C000-0000-4C8B212Dharu}"/>
+			</middle>
+			<bottom origin=" 112, 128" offset="40">
+				<picture ref="{vhbi_012-picture-C000-0000-4C8B212Dharu}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 224, 0" offset="32">
+				<picture ref="{vhbi_012-picture-C000-0000-4C8B212Dharu}"/>
+			</top>
+			<middle origin=" 224, 64" offset="32">
+				<picture ref="{vhbi_012-picture-C000-0000-4C8B212Dharu}"/>
+			</middle>
+			<bottom origin=" 224, 128" offset="32">
+				<picture ref="{vhbi_012-picture-C000-0000-4C8B212Dharu}"/>
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top    origin=" 336, 0" offset="40">
+				<picture ref="{vhbi_012-picture-C000-0000-4C8B212Dharu}"/>
+			</top>
+			<middle origin=" 336, 64" offset="40">
+				<picture ref="{vhbi_012-picture-C000-0000-4C8B212Dharu}"/>
+			</middle>
+			<bottom origin=" 336, 128" offset="40">
+				<picture ref="{vhbi_012-picture-C000-0000-4C8B212Dharu}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+
+
+<!-- Sapporo clock tower　-->
+	<contribution type="GenericStructure" id="{tokeidai-GenericStructure-C000-0000-4C8B212Dharu}">
+		<name>Clock tower</name>
+		<design>Sapporo</design>
+		<structure>
+			<category byname="Historic Sites"/>
+		</structure>
+		<price>2500</price>
+		<size>3,2</size>
+		<height>2</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>150</base>
+		</population>
+		<computerCannotBuild />
+		<sprite origin="0,0" offset="25">
+			<picture ref="{tokeidai-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="80,0" offset="17" opposite="true">
+			<picture ref="{tokeidai-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="160,0" offset="25">
+			<picture ref="{tokeidai-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="240,0" offset="17" opposite="true">
+			<picture ref="{tokeidai-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+<!-- Rental office building3x3[A] -->
+	<contribution type="GenericStructure" id="{vhbi_013-GenericStructure-C001-0000-4C8B212Dharu}">
+		<name>Rental office building(3x3)</name>
+		<design>Type A</design>
+		<structure>
+			<category byname="Rental Offices"/>
+		</structure>
+		<price>10000</price>
+		<size>3,3</size>
+		<minHeight>3</minHeight>
+		<maxHeight>11</maxHeight>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>200</base>
+		</population>
+				&vhbi_013hueTransform_001;
+				&vhbi_013hueTransform_002;
+				&vhbi_013hueTransform_003;
+				&vhbi_013hueTransform_004;
+		<pictures>
+			<top    origin=" 0, 0" offset="32">
+				<picture ref="{vhbi_013-picture-C000-0000-4C8B212Dharu}"/>
+			</top>
+			<middle origin=" 0, 64" offset="32">
+				<picture ref="{vhbi_013-picture-C000-0000-4C8B212Dharu}"/>
+			</middle>
+			<bottom origin=" 0, 128" offset="32">
+				<picture ref="{vhbi_013-picture-C000-0000-4C8B212Dharu}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 96, 0" offset="32">
+				<picture ref="{vhbi_013-picture-C000-0000-4C8B212Dharu}"/>
+			</top>
+			<middle origin=" 96, 64" offset="32">
+				<picture ref="{vhbi_013-picture-C000-0000-4C8B212Dharu}"/>
+			</middle>
+			<bottom origin=" 96, 128" offset="32">
+				<picture ref="{vhbi_013-picture-C000-0000-4C8B212Dharu}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 192, 0" offset="32">
+				<picture ref="{vhbi_013-picture-C000-0000-4C8B212Dharu}"/>
+			</top>
+			<middle origin=" 192, 64" offset="32">
+				<picture ref="{vhbi_013-picture-C000-0000-4C8B212Dharu}"/>
+			</middle>
+			<bottom origin=" 192, 128" offset="32">
+				<picture ref="{vhbi_013-picture-C000-0000-4C8B212Dharu}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 288, 0" offset="32">
+				<picture ref="{vhbi_013-picture-C000-0000-4C8B212Dharu}"/>
+			</top>
+			<middle origin=" 288, 64" offset="32">
+				<picture ref="{vhbi_013-picture-C000-0000-4C8B212Dharu}"/>
+			</middle>
+			<bottom origin=" 288, 128" offset="32">
+				<picture ref="{vhbi_013-picture-C000-0000-4C8B212Dharu}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+
+
+<!-- Casual wear shop　-->
+	<contribution type="GenericStructure" id="{ClothingStore_001-GenericStructure-C001-000a-4C8B212Dharu}">
+		<name>Casual wear shop</name>
+		<design>Uniloqu (Type A)</design>
+		<structure>
+			<category byname="Specialty Chain Stores"/>
+		</structure>
+		<price>900</price>
+		<size>2,2</size>
+		<height>2</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>370</base>
+		</population>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{ClothingStore_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="64,0" offset="24">
+			<picture ref="{ClothingStore_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="128,0" offset="24">
+			<picture ref="{ClothingStore_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="192,0" offset="24">
+			<picture ref="{ClothingStore_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{ClothingStore_002-GenericStructure-C001-000a-4C8B212Dharu}">
+		<name>Casual wear shop</name>
+		<design>Uniloqu (Type B)</design>
+		<structure>
+			<category byname="Specialty Chain Stores"/>
+		</structure>
+		<price>700</price>
+		<size>2,2</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>280</base>
+		</population>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{ClothingStore_002-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="64,0" offset="16">
+			<picture ref="{ClothingStore_002-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="128,0" offset="16">
+			<picture ref="{ClothingStore_002-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="192,0" offset="16">
+			<picture ref="{ClothingStore_002-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{ClothingStore_003-GenericStructure-C001-000a-4C8B212Dharu}">
+		<name>Casual wear shop</name>
+		<design>Uniloqu (signboard)</design>
+		<structure>
+			<category byname="Specialty Chain Stores"/>
+		</structure>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>30</base>
+		</population>
+		<computerCannotBuild />
+		<sprite origin="0,0" offset="16">
+			<picture ref="{ClothingStore_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{ClothingStore_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="64,0" offset="16">
+			<picture ref="{ClothingStore_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="96,0" offset="16">
+			<picture ref="{ClothingStore_003-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+<!-- Shoes shop　-->
+	<contribution type="GenericStructure" id="{ShoesShop_001-GenericStructure-C000-0000-4C8B212Dharu}">
+		<name>Shoes shop</name>
+		<design>FOOTMARK</design>
+		<structure>
+			<category byname="Specialty Chain Stores"/>
+		</structure>
+		<price>230</price>
+		<size>2,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>60</base>
+		</population>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{ShoesShop_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="48,0" offset="16" opposite="true">
+			<picture ref="{ShoesShop_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="96,0" offset="24">
+			<picture ref="{ShoesShop_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="144,0" offset="16" opposite="true">
+			<picture ref="{ShoesShop_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{ShoesShop_002-GenericStructure-C000-0000-4C8B212Dharu}">
+		<name>Shoes shop</name>
+		<design>Tokyo shoe sales center</design>
+		<structure>
+			<category byname="Specialty Chain Stores"/>
+		</structure>
+		<price>160</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>35</base>
+		</population>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{ShoesShop_002-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{ShoesShop_002-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="64,0" offset="16">
+			<picture ref="{ShoesShop_002-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="96,0" offset="16">
+			<picture ref="{ShoesShop_002-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+<!-- Balloon tower　-->
+	<contribution type="GenericStructure" id="{ampark_BalloonTower_001-GenericStructure-C001-000a-4C8B212Dharu}">
+		<name>Balloon tower</name>
+		<design>Type A</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>800</price>
+		<size>2,2</size>
+		<height>3</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>26</base>
+		</population>
+		<computerCannotBuild/>
+				&ampark_BalloonTower_001hueTransform_001;
+				&ampark_BalloonTower_001hueTransform_002;
+				&ampark_BalloonTower_001hueTransform_003;
+				&ampark_BalloonTower_001hueTransform_004;
+				&ampark_BalloonTower_001hueTransform_005;
+				&ampark_BalloonTower_001hueTransform_006;
+		<sprite origin="0,0" offset="48">
+			<picture ref="{ampark_BalloonTower_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="64,0" offset="48">
+			<picture ref="{ampark_BalloonTower_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="128,0" offset="48">
+			<picture ref="{ampark_BalloonTower_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="192,0" offset="48">
+			<picture ref="{ampark_BalloonTower_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+<!-- Space shot　-->
+	<contribution type="GenericStructure" id="{ampark_SpaceShot_001-GenericStructure-C001-000a-4C8B212Dharu}">
+		<name>Space shot</name>
+		<design>Type A</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>800</price>
+		<size>1,1</size>
+		<height>4</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>26</base>
+		</population>
+		<computerCannotBuild/>
+				&ampark_SpaceShot_001hueTransform_001;
+				&ampark_SpaceShot_001hueTransform_002;
+				&ampark_SpaceShot_001hueTransform_003;
+				&ampark_SpaceShot_001hueTransform_004;
+				&ampark_SpaceShot_001hueTransform_005;
+		<sprite origin="0,0" offset="59">
+			<picture ref="{ampark_SpaceShot_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="32,0" offset="59">
+			<picture ref="{ampark_SpaceShot_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="64,0" offset="59">
+			<picture ref="{ampark_SpaceShot_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="96,0" offset="59">
+			<picture ref="{ampark_SpaceShot_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+<!-- Amusement Parks Entrance　-->
+	<contribution type="GenericStructure" id="{ampark_entrance_001-GenericStructure-C001-000a-4C8B212Dharu}">
+		<name>Entrance</name>
+		<design>Type A</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>400</price>
+		<size>1,3</size>
+		<height>2</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>100</base>
+		</population>
+		<computerCannotBuild/>
+				&ampark_entrance_001hueTransform_001;
+				&ampark_entrance_001hueTransform_002;
+				&ampark_entrance_001hueTransform_003;
+				&ampark_entrance_001hueTransform_004;
+		<sprite origin="0,0" offset="16">
+			<picture ref="{ampark_entrance_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="64,0" offset="32" opposite="true">
+			<picture ref="{ampark_entrance_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="128,0" offset="16">
+			<picture ref="{ampark_entrance_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+		<sprite origin="192,0" offset="32" opposite="true">
+			<picture ref="{ampark_entrance_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+<!-- Astro fighter -->
+	<contribution type="GenericStructure" id="{ampark_AstroFighter_001-GenericStructure-C001-000b-4C8B212Dharu}">
+		<name>Astro fighter</name>
+		<design>stopping</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>750</price>
+		<size>2,2</size>
+		<height>1</height>
+		<computerCannotBuild/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>24</base>
+		</population>
+				&ampark_AstroFighter_001hueTransform_001;
+				&ampark_AstroFighter_001hueTransform_002;
+				&ampark_AstroFighter_001hueTransform_003;
+		<sprite origin="0,48" offset="24">
+			<picture ref="{ampark_AstroFighter_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="64,48" offset="24">
+			<picture ref="{ampark_AstroFighter_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="128,48" offset="24">
+			<picture ref="{ampark_AstroFighter_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="192,48" offset="24">
+			<picture ref="{ampark_AstroFighter_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{ampark_AstroFighter_001-GenericStructure-C001-000a-4C8B212Dharu}">
+		<name>Astro fighter</name>
+		<design>driving</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>750</price>
+		<size>2,2</size>
+		<height>1</height>
+		<computerCannotBuild/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>24</base>
+		</population>
+				&ampark_AstroFighter_001hueTransform_001;
+				&ampark_AstroFighter_001hueTransform_002;
+				&ampark_AstroFighter_001hueTransform_003;
+		<sprite origin="0,0" offset="24">
+			<picture ref="{ampark_AstroFighter_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="64,0" offset="24">
+			<picture ref="{ampark_AstroFighter_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="128,0" offset="24">
+			<picture ref="{ampark_AstroFighter_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="192,0" offset="24">
+			<picture ref="{ampark_AstroFighter_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+	</contribution>
+
+
+<!-- Amusement Arcade -->
+	<contribution type="GenericStructure" id="{ampark_GameCenter_001-GenericStructure-C001-0000-4C8B212Dharu}">
+		<name>Arcade game hall</name>
+		<design>Type A</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>1000</price>
+		<size>3,3</size>
+		<height>2</height>
+		<computerCannotBuild/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>56</base>
+		</population>
+				&ampark_GameCenter_001hueTransform_001;
+				&ampark_GameCenter_001hueTransform_002;
+				&ampark_GameCenter_001hueTransform_003;
+				&ampark_GameCenter_001hueTransform_004;
+				&ampark_GameCenter_001hueTransform_005;
+				&ampark_GameCenter_001hueTransform_006;
+				&ampark_GameCenter_001hueTransform_007;
+		<sprite origin="0,0" offset="32">
+			<picture ref="{ampark_GameCenter_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="96,0" offset="32">
+			<picture ref="{ampark_GameCenter_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="192,0" offset="32">
+			<picture ref="{ampark_GameCenter_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="288,0" offset="32">
+			<picture ref="{ampark_GameCenter_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+	</contribution>
+
+
+<!-- Amusement Parks Parasols -->
+	<contribution type="GenericStructure" id="{ampark_Parasol_001-GenericStructure-C001-001a-4C8B212Dharu}">
+		<name>Parasols</name>
+		<design>1-A</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>1</price>
+		<size>1,1</size>
+		<height>1</height>
+		<computerCannotBuild/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>2</base>
+		</population>
+				&ampark_Parasol_001hueTransform_001;
+				&ampark_Parasol_001hueTransform_002;
+				&ampark_Parasol_001hueTransform_003;
+				&ampark_Parasol_001hueTransform_004;
+				&ampark_Parasol_001hueTransform_005;
+				&ampark_Parasol_001hueTransform_006;
+				&ampark_Parasol_001hueTransform_007;
+				&ampark_Parasol_001hueTransform_008;
+				&ampark_Parasol_001hueTransform_009;
+				&ampark_Parasol_001hueTransform_010;
+				&ampark_Parasol_001hueTransform_011;
+				&ampark_Parasol_001hueTransform_012;
+		<sprite origin="0,0" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{ampark_Parasol_001-GenericStructure-C001-001b-4C8B212Dharu}">
+		<name>Parasols</name>
+		<design>1-b</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>1</price>
+		<size>1,1</size>
+		<height>1</height>
+		<computerCannotBuild/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>2</base>
+		</population>
+				&ampark_Parasol_001hueTransform_001;
+				&ampark_Parasol_001hueTransform_002;
+				&ampark_Parasol_001hueTransform_003;
+				&ampark_Parasol_001hueTransform_004;
+				&ampark_Parasol_001hueTransform_005;
+				&ampark_Parasol_001hueTransform_006;
+				&ampark_Parasol_001hueTransform_007;
+				&ampark_Parasol_001hueTransform_008;
+				&ampark_Parasol_001hueTransform_009;
+				&ampark_Parasol_001hueTransform_010;
+				&ampark_Parasol_001hueTransform_011;
+				&ampark_Parasol_001hueTransform_012;
+		<sprite origin="128,0" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="160,0" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="192,0" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="224,0" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{ampark_Parasol_001-GenericStructure-C001-001c-4C8B212Dharu}">
+		<name>Parasols</name>
+		<design>1-c</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>1</price>
+		<size>1,1</size>
+		<height>1</height>
+		<computerCannotBuild/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>2</base>
+		</population>
+				&ampark_Parasol_001hueTransform_001;
+				&ampark_Parasol_001hueTransform_002;
+				&ampark_Parasol_001hueTransform_003;
+				&ampark_Parasol_001hueTransform_004;
+				&ampark_Parasol_001hueTransform_005;
+				&ampark_Parasol_001hueTransform_006;
+				&ampark_Parasol_001hueTransform_007;
+				&ampark_Parasol_001hueTransform_008;
+				&ampark_Parasol_001hueTransform_009;
+				&ampark_Parasol_001hueTransform_010;
+				&ampark_Parasol_001hueTransform_011;
+				&ampark_Parasol_001hueTransform_012;
+		<sprite origin="128,128" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="160,128" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="192,128" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="224,128" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{ampark_Parasol_001-GenericStructure-C001-002a-4C8B212Dharu}">
+		<name>Parasols</name>
+		<design>2-a</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>1</price>
+		<size>1,1</size>
+		<height>1</height>
+		<computerCannotBuild/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>4</base>
+		</population>
+				&ampark_Parasol_001hueTransform_001;
+				&ampark_Parasol_001hueTransform_002;
+				&ampark_Parasol_001hueTransform_003;
+				&ampark_Parasol_001hueTransform_004;
+				&ampark_Parasol_001hueTransform_005;
+				&ampark_Parasol_001hueTransform_006;
+				&ampark_Parasol_001hueTransform_007;
+				&ampark_Parasol_001hueTransform_008;
+				&ampark_Parasol_001hueTransform_009;
+				&ampark_Parasol_001hueTransform_010;
+				&ampark_Parasol_001hueTransform_011;
+				&ampark_Parasol_001hueTransform_012;
+		<sprite origin="0,32" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="32,32" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{ampark_Parasol_001-GenericStructure-C001-002b-4C8B212Dharu}">
+		<name>Parasols</name>
+		<design>2-b</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>1</price>
+		<size>1,1</size>
+		<height>1</height>
+		<computerCannotBuild/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>4</base>
+		</population>
+				&ampark_Parasol_001hueTransform_001;
+				&ampark_Parasol_001hueTransform_002;
+				&ampark_Parasol_001hueTransform_003;
+				&ampark_Parasol_001hueTransform_004;
+				&ampark_Parasol_001hueTransform_005;
+				&ampark_Parasol_001hueTransform_006;
+				&ampark_Parasol_001hueTransform_007;
+				&ampark_Parasol_001hueTransform_008;
+				&ampark_Parasol_001hueTransform_009;
+				&ampark_Parasol_001hueTransform_010;
+				&ampark_Parasol_001hueTransform_011;
+				&ampark_Parasol_001hueTransform_012;
+		<sprite origin="64,32" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="96,32" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{ampark_Parasol_001-GenericStructure-C001-002c-4C8B212Dharu}">
+		<name>Parasols</name>
+		<design>2-c</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>1</price>
+		<size>1,1</size>
+		<height>1</height>
+		<computerCannotBuild/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>4</base>
+		</population>
+				&ampark_Parasol_001hueTransform_001;
+				&ampark_Parasol_001hueTransform_002;
+				&ampark_Parasol_001hueTransform_003;
+				&ampark_Parasol_001hueTransform_004;
+				&ampark_Parasol_001hueTransform_005;
+				&ampark_Parasol_001hueTransform_006;
+				&ampark_Parasol_001hueTransform_007;
+				&ampark_Parasol_001hueTransform_008;
+				&ampark_Parasol_001hueTransform_009;
+				&ampark_Parasol_001hueTransform_010;
+				&ampark_Parasol_001hueTransform_011;
+				&ampark_Parasol_001hueTransform_012;
+		<sprite origin="0,64" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="32,64" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="64,64" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="96,64" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{ampark_Parasol_001-GenericStructure-C001-002d-4C8B212Dharu}">
+		<name>Parasols</name>
+		<design>2-d</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>1</price>
+		<size>1,1</size>
+		<height>1</height>
+		<computerCannotBuild/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>4</base>
+		</population>
+				&ampark_Parasol_001hueTransform_001;
+				&ampark_Parasol_001hueTransform_002;
+				&ampark_Parasol_001hueTransform_003;
+				&ampark_Parasol_001hueTransform_004;
+				&ampark_Parasol_001hueTransform_005;
+				&ampark_Parasol_001hueTransform_006;
+				&ampark_Parasol_001hueTransform_007;
+				&ampark_Parasol_001hueTransform_008;
+				&ampark_Parasol_001hueTransform_009;
+				&ampark_Parasol_001hueTransform_010;
+				&ampark_Parasol_001hueTransform_011;
+				&ampark_Parasol_001hueTransform_012;
+		<sprite origin="128,32" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="160,32" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="192,32" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="224,32" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{ampark_Parasol_001-GenericStructure-C001-003a-4C8B212Dharu}">
+		<name>Parasols</name>
+		<design>3-a</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>1</price>
+		<size>1,1</size>
+		<height>1</height>
+		<computerCannotBuild/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>6</base>
+		</population>
+				&ampark_Parasol_001hueTransform_001;
+				&ampark_Parasol_001hueTransform_002;
+				&ampark_Parasol_001hueTransform_003;
+				&ampark_Parasol_001hueTransform_004;
+				&ampark_Parasol_001hueTransform_005;
+				&ampark_Parasol_001hueTransform_006;
+				&ampark_Parasol_001hueTransform_007;
+				&ampark_Parasol_001hueTransform_008;
+				&ampark_Parasol_001hueTransform_009;
+				&ampark_Parasol_001hueTransform_010;
+				&ampark_Parasol_001hueTransform_011;
+				&ampark_Parasol_001hueTransform_012;
+		<sprite origin="0,96" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="32,96" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="64,96" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="96,96" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{ampark_Parasol_001-GenericStructure-C001-003b-4C8B212Dharu}">
+		<name>Parasols</name>
+		<design>3-b</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>1</price>
+		<size>1,1</size>
+		<height>1</height>
+		<computerCannotBuild/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>6</base>
+		</population>
+				&ampark_Parasol_001hueTransform_001;
+				&ampark_Parasol_001hueTransform_002;
+				&ampark_Parasol_001hueTransform_003;
+				&ampark_Parasol_001hueTransform_004;
+				&ampark_Parasol_001hueTransform_005;
+				&ampark_Parasol_001hueTransform_006;
+				&ampark_Parasol_001hueTransform_007;
+				&ampark_Parasol_001hueTransform_008;
+				&ampark_Parasol_001hueTransform_009;
+				&ampark_Parasol_001hueTransform_010;
+				&ampark_Parasol_001hueTransform_011;
+				&ampark_Parasol_001hueTransform_012;
+		<sprite origin="0,128" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="32,128" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="64,128" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="96,128" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{ampark_Parasol_001-GenericStructure-C001-003c-4C8B212Dharu}">
+		<name>Parasols</name>
+		<design>3-c</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>1</price>
+		<size>1,1</size>
+		<height>1</height>
+		<computerCannotBuild/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>6</base>
+		</population>
+				&ampark_Parasol_001hueTransform_001;
+				&ampark_Parasol_001hueTransform_002;
+				&ampark_Parasol_001hueTransform_003;
+				&ampark_Parasol_001hueTransform_004;
+				&ampark_Parasol_001hueTransform_005;
+				&ampark_Parasol_001hueTransform_006;
+				&ampark_Parasol_001hueTransform_007;
+				&ampark_Parasol_001hueTransform_008;
+				&ampark_Parasol_001hueTransform_009;
+				&ampark_Parasol_001hueTransform_010;
+				&ampark_Parasol_001hueTransform_011;
+				&ampark_Parasol_001hueTransform_012;
+		<sprite origin="128,64" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="160,64" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="192,64" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="224,64" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{ampark_Parasol_001-GenericStructure-C001-004a-4C8B212Dharu}">
+		<name>Parasols</name>
+		<design>4-a</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>1</price>
+		<size>1,1</size>
+		<height>1</height>
+		<computerCannotBuild/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>8</base>
+		</population>
+				&ampark_Parasol_001hueTransform_001;
+				&ampark_Parasol_001hueTransform_002;
+				&ampark_Parasol_001hueTransform_003;
+				&ampark_Parasol_001hueTransform_004;
+				&ampark_Parasol_001hueTransform_005;
+				&ampark_Parasol_001hueTransform_006;
+				&ampark_Parasol_001hueTransform_007;
+				&ampark_Parasol_001hueTransform_008;
+				&ampark_Parasol_001hueTransform_009;
+				&ampark_Parasol_001hueTransform_010;
+				&ampark_Parasol_001hueTransform_011;
+				&ampark_Parasol_001hueTransform_012;
+		<sprite origin="32,0" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{ampark_Parasol_001-GenericStructure-C001-004b-4C8B212Dharu}">
+		<name>Parasols</name>
+		<design>4-b</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>1</price>
+		<size>1,1</size>
+		<height>1</height>
+		<computerCannotBuild/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>8</base>
+		</population>
+				&ampark_Parasol_001hueTransform_001;
+				&ampark_Parasol_001hueTransform_002;
+				&ampark_Parasol_001hueTransform_003;
+				&ampark_Parasol_001hueTransform_004;
+				&ampark_Parasol_001hueTransform_005;
+				&ampark_Parasol_001hueTransform_006;
+				&ampark_Parasol_001hueTransform_007;
+				&ampark_Parasol_001hueTransform_008;
+				&ampark_Parasol_001hueTransform_009;
+				&ampark_Parasol_001hueTransform_010;
+				&ampark_Parasol_001hueTransform_011;
+				&ampark_Parasol_001hueTransform_012;
+		<sprite origin="96,0" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{ampark_Parasol_001-GenericStructure-C001-004c-4C8B212Dharu}">
+		<name>Parasols</name>
+		<design>4-c</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>1</price>
+		<size>1,1</size>
+		<height>1</height>
+		<computerCannotBuild/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>8</base>
+		</population>
+				&ampark_Parasol_001hueTransform_001;
+				&ampark_Parasol_001hueTransform_002;
+				&ampark_Parasol_001hueTransform_003;
+				&ampark_Parasol_001hueTransform_004;
+				&ampark_Parasol_001hueTransform_005;
+				&ampark_Parasol_001hueTransform_006;
+				&ampark_Parasol_001hueTransform_007;
+				&ampark_Parasol_001hueTransform_008;
+				&ampark_Parasol_001hueTransform_009;
+				&ampark_Parasol_001hueTransform_010;
+				&ampark_Parasol_001hueTransform_011;
+				&ampark_Parasol_001hueTransform_012;
+		<sprite origin="128,96" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="160,96" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="192,96" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+		<sprite origin="224,96" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{ampark_Parasol_001-GenericStructure-C001-005a-4C8B212Dharu}">
+		<name>Parasols</name>
+		<design>5-a</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>1</price>
+		<size>1,1</size>
+		<height>1</height>
+		<computerCannotBuild/>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>10</base>
+		</population>
+				&ampark_Parasol_001hueTransform_001;
+				&ampark_Parasol_001hueTransform_002;
+				&ampark_Parasol_001hueTransform_003;
+				&ampark_Parasol_001hueTransform_004;
+				&ampark_Parasol_001hueTransform_005;
+				&ampark_Parasol_001hueTransform_006;
+				&ampark_Parasol_001hueTransform_007;
+				&ampark_Parasol_001hueTransform_008;
+				&ampark_Parasol_001hueTransform_009;
+				&ampark_Parasol_001hueTransform_010;
+				&ampark_Parasol_001hueTransform_011;
+				&ampark_Parasol_001hueTransform_012;
+		<sprite origin="64,0" offset="1">
+			<picture ref="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}"/>
+		</sprite>
+	</contribution>
+
+
+<!-- Fountain square　-->
+	<contribution type="GenericStructure" id="{square_001-GenericStructure-C000-0000-4C8B212Dharu}">
+		<name>Fountain square</name>
+		<design>Type A</design>
+		<structure>
+			<category byname="Recreation"/>
+		</structure>
+		<price>900</price>
+		<size>3,3</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>40</base>
+		</population>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{square_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+<!-- Park Fountain square　-->
+	<contribution type="GenericStructure" id="{ampark_square_001-GenericStructure-C000-0000-4C8B212Dharu}">
+		<name>Fountain square (park pavement)</name>
+		<design>Type A</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>900</price>
+		<size>3,3</size>
+		<height>1</height>
+		<computerCannotBuild/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>40</base>
+		</population>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{ampark_square_001-picture-C000-0000-4C8B212Dharu}" />
+		</sprite>
+	</contribution>
+
+
+
+
+
+
+
+</plug-in>
+	

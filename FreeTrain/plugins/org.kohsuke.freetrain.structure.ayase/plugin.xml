@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Structure Plugin</title>
+	<author>Hiro Ayase</author>
+	<homepage>http://www14.big.or.jp/~ayase/freetrain/</homepage>
+	
+	<contribution type="picture" id="{000000-2002-1212-AYASE-Structure-img01}">
+		<picture src="minato.bmp" origin="0,0" offset="16" />
+	</contribution>
+
+	<contribution type="picture" id="{000000-2002-1212-AYASE-Structure-img02}">
+		<picture src="minato2.bmp" origin="0,0" offset="16" />
+	</contribution>
+	
+	<contribution type="picture" id="{000000-2002-1212-AYASE-Structure-img03}">
+		<picture src="sohko.bmp" origin="0,0" offset="16" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{DBE8EACF-C94D-4e02-AA29-43AC34F96AC9}">
+		<group>Container wharf</group>
+		<structure>
+			<category byname="Cargo Piers"/>
+		</structure>
+		<price>10000</price>
+		<size>2,4</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="8">
+			<picture ref="{000000-2002-1212-AYASE-Structure-img01}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{24146DB8-A1CB-4355-8B26-705F2FB885D7}">
+		<group>Container wharf</group>
+		<structure>
+			<category byname="Cargo Piers"/>
+		</structure>
+		<price>10000</price>
+		<size>4,2</size>
+		<height>2</height>
+		<sprite origin="96,0" offset="24">
+			<picture ref="{000000-2002-1212-AYASE-Structure-img01}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{B32B765C-C74C-4BD9-84C6-E75A3E6DFC27}">
+		<group>Railroad pier</group>
+		<structure>
+			<category byname="Other Shipping Facilities"/>
+		</structure>
+		<price>5000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{000000-2002-1212-AYASE-Structure-img02}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{82B5ED65-8576-4494-BCD2-E2B9233FD787}">
+		<group>Railroad pier</group>
+		<structure>
+			<category byname="Other Shipping Facilities"/>
+		</structure>
+		<price>5000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{000000-2002-1212-AYASE-Structure-img02}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{E0F69A4B-A3EE-4605-8987-7E63737EA481}">
+		<group>Passenger wharf</group>
+		<structure>
+			<category byname="Passenger Piers"/>
+		</structure>
+		<price>20000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="64,0" offset="16">
+			<picture ref="{000000-2002-1212-AYASE-Structure-img02}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{472DCA58-DE17-487C-BD22-BEACFBBC8C0B}">
+		<group>Passenger wharf</group>
+		<structure>
+			<category byname="Passenger Piers"/>
+		</structure>
+		<price>20000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="96,0" offset="16">
+			<picture ref="{000000-2002-1212-AYASE-Structure-img02}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{32D21DEE-99A5-414F-BAF7-6BBD705A7485}">
+		<group>Warehouses</group>
+		<structure>
+			<category byname="Other Shipping Facilities"/>
+		</structure>
+		<price>1000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{000000-2002-1212-AYASE-Structure-img03}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{6DFD12E5-505C-43CA-9E07-23D737D408FB}">
+		<group>Warehouses</group>
+		<structure>
+			<category byname="Other Shipping Facilities"/>
+		</structure>
+		<price>1000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{000000-2002-1212-AYASE-Structure-img03}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{29D7FEFA-2491-4ED0-8479-596FD805ED03}">
+		<group>Warehouses</group>
+		<structure>
+			<category byname="Other Shipping Facilities"/>
+		</structure>
+		<price>1000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="64,0" offset="16">
+			<picture ref="{000000-2002-1212-AYASE-Structure-img03}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{76EA313D-CA8B-4C93-94FF-3452054615D4}">
+		<group>Warehouses</group>
+		<structure>
+			<category byname="Other Shipping Facilities"/>
+		</structure>
+		<price>1000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="96,0" offset="16">
+			<picture ref="{000000-2002-1212-AYASE-Structure-img03}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{D7A9451D-6EAB-4A50-8B4F-F1F30764C105}">
+		<group>Warehouses</group>
+		<structure>
+			<category byname="Other Shipping Facilities"/>
+		</structure>
+		<price>1000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="128,0" offset="16">
+			<picture ref="{000000-2002-1212-AYASE-Structure-img03}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{B7E5EE5A-0F6F-463B-ABFF-6968EE9F655D}">
+		<group>Warehouses</group>
+		<structure>
+			<category byname="Other Shipping Facilities"/>
+		</structure>
+		<price>1000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="160,0" offset="16">
+			<picture ref="{000000-2002-1212-AYASE-Structure-img03}"/>
+		</sprite>
+	</contribution>
+</plug-in>

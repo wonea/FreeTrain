@@ -1,0 +1,53 @@
+2006/5/3
+#1.
+In fixed size structure, var height structure, and land contributions,
+offset attribute at the sprite tag can be omitted.
+(Only applicable when the image height is h*16+(x+y)*8 for structues,
+ Height is zero for land contributions.)
+#2.
+Fix bug that an exception occurs when remove rails by bulldozer in which trains are included.
+#3.
+Change window title and text in the about dialog from "FreeTrain" to "FreeTrainEX".
+#4.
+Do not terminate applications even if there are some minor plugin errors.
+Show author and title of plugin when the plugin cause some errors.
+
+2006/5/9
+#5.
+Calculate percentage of progress on PluginManager.
+Show progress bars on splash window.
+
+2006/7/29
+#6.
+Modify layout of diagram form.
+#7.
+Modification of PluginManager and Plugin class for the tool, PluginMaker.
+(Subdivide initialization process, change accessibility of some methods.
+ No functional change.)
+ 
+2006/8/13
+#8.
+When lower pier of rail-slope or rail-bridge is removed by bulldozer,
+All above pires and rails are removed together.
+
+2006/8/16
+
+2007/5/1
+#9.
+Translated to English. Many UI elements modified to accomodate for the new language.
+
+2007/5/22
+#10.
+Convert structure plugins to the 'generic' format.
+#11.
+Merge the two main window toolbars and add an icon for the timer button.
+#12.
+Fix crashes when using an empty build dialog.
+
+2007/6/4
+#13.
+Repair the broken train trading dialog.
+#14.
+Merge a number of standard plugins with improved versions from the 'extra' package.
+#15.
+Change the about name of the game to 'FreeTrain SE' and make URLs in the code to point to our own website.

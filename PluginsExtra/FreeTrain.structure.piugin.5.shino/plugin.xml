@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY building2x2Param '
+	<group>Rental office (2x2)</group>
+	<structure>
+		<category byname="Rental Offices"/>
+	</structure>
+	<price>3200</price>
+	<size>2,2</size>
+	<minHeight>3</minHeight>
+	<maxHeight>10</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>150</base>
+	</population>
+'>
+]>
+	
+<plug-in>
+	<title>Office Buildings 3</title>
+	<author>Shino</author>
+	<homepage></homepage>
+
+
+	<contribution type="picture" id="{91787706-22C5-4195-940F-81CCE16AAB7E}">
+		<picture src="2x2buil(4).bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{0290147F-5B99-463B-978A-E4900510D64E}">
+		&building2x2Param;
+		<pictures>
+			<top    origin="0,  0" offset="26">
+				<picture ref="{91787706-22C5-4195-940F-81CCE16AAB7E}"/>
+			</top>
+			<middle origin="0, 50" offset="16">
+				<picture ref="{91787706-22C5-4195-940F-81CCE16AAB7E}"/>
+			</middle>
+			<bottom origin="0, 90" offset="16">
+				<picture ref="{91787706-22C5-4195-940F-81CCE16AAB7E}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="64,  0" offset="26">
+				<picture ref="{91787706-22C5-4195-940F-81CCE16AAB7E}"/>
+			</top>
+			<middle origin="64, 50" offset="16">
+				<picture ref="{91787706-22C5-4195-940F-81CCE16AAB7E}"/>
+			</middle>
+			<bottom origin="64, 90" offset="16">
+				<picture ref="{91787706-22C5-4195-940F-81CCE16AAB7E}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="128,  0" offset="26">
+				<picture ref="{91787706-22C5-4195-940F-81CCE16AAB7E}"/>
+			</top>
+			<middle origin="128, 50" offset="16">
+				<picture ref="{91787706-22C5-4195-940F-81CCE16AAB7E}"/>
+			</middle>
+			<bottom origin="128, 90" offset="16">
+				<picture ref="{91787706-22C5-4195-940F-81CCE16AAB7E}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="192,  0" offset="26">
+				<picture ref="{91787706-22C5-4195-940F-81CCE16AAB7E}"/>
+			</top>
+			<middle origin="192, 50" offset="16">
+				<picture ref="{91787706-22C5-4195-940F-81CCE16AAB7E}"/>
+			</middle>
+			<bottom origin="192, 90" offset="16">
+				<picture ref="{91787706-22C5-4195-940F-81CCE16AAB7E}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+	
+</plug-in>

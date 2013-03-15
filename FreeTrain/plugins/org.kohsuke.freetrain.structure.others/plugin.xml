@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Structure Set</title>
+	<author>Anonymous</author>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="picture" id="{1E4B2FFE-CF89-4358-B7EA-6215484A7990}">
+		<picture src="store_h.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{B83A15E9-9284-4569-A1BF-266DF9B1560A}">
+		<name>Bento shop</name>
+		<design>Hokka Hokka Tei</design>
+		<structure>
+			<category byname="Fast Food"/>
+		</structure>
+		<price>210</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{1E4B2FFE-CF89-4358-B7EA-6215484A7990}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{B92070FD-1829-4914-B893-C9044E4990A7}">
+		<picture src="mans.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{8CE18936-7C28-4a91-8B40-9CCED1F48968}">
+		<name>Condo (4x2)</name>
+		<design>High-class condo</design>
+		<structure>
+			<category byname="Condominiums"/>
+		</structure>
+		<price>4000</price>
+		<size>4,2</size>
+		<height>3</height>
+		<sprite origin="0,0" offset="54">
+			<picture ref="{B92070FD-1829-4914-B893-C9044E4990A7}" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>220</base>
+		</population>
+	</contribution>
+</plug-in>

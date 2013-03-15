@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Odakyu, Keio: City-Operated 10-000 Series Train Set</title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<!-- 小田急1000/2000形 -->
+	<contribution type="trainCar" id="{70D1B4B8-1D26-4655-B62E-90DB66262649}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                <picture src="OER1000.bmp" />
+                </sprite>
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{7ABFBCE1-B07B-4FA1-8D3B-5917B826E911}">
+		<company>Odakyu Electric Railway</company>
+		<type>Commuter Type 1000/2000 Series</type>
+		<name></name>
+		<author>Ken</author>
+		<description>
+小田急電鉄初のステンレス車両。1000形は千代田線乗り入れにも使用
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{70D1B4B8-1D26-4655-B62E-90DB66262649}"/>
+		</composition>
+	</contribution>
+
+
+
+	<!-- 小田急3000形 -->
+	<contribution type="trainCar" id="{0E9923D1-7139-45CA-B718-0DE6673B8E58}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                <picture src="OER3000.bmp" />
+                </sprite>
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{ABFAA473-2E1F-41D2-B4A4-2874F74A1CC3}">
+		<company>Odakyu Electric Railway</company>
+		<type>Commuter Type 3000 Series</type>
+		<name></name>
+		<author>Ken</author>
+		<description>
+コストダウンを図った新車両。６両運転。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{0E9923D1-7139-45CA-B718-0DE6673B8E58}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 小田急8000形 -->
+	<contribution type="trainCar" id="{3E89215C-5340-4FC0-AD07-2CD115D5314E}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                <picture src="OER8000.bmp" />
+                </sprite>
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{1B9DF948-F938-4085-99ED-FB5A696C6E7D}">
+		<company>Odakyu Electric Railway</company>
+		<type>Commuter Type 8000 Series</type>
+		<name></name>
+		<author>Ken</author>
+		<description>
+急行・準急・各停と様々に使用されている
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{3E89215C-5340-4FC0-AD07-2CD115D5314E}"/>
+		</composition>
+	</contribution>
+
+
+
+	<!-- 小田急9000形 -->
+	<contribution type="trainCar" id="{6FCB8050-4643-46CE-8E78-646701A2B303}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                <picture src="OER9000.bmp" />
+                </sprite>
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{91EFFA09-946A-4444-B965-486B79D31C66}">
+		<company>Odakyu Electric Railway</company>
+		<type>Commuter Type 9000 Series</type>
+		<name></name>
+		<author>Ken</author>
+		<description>
+1000系登場前の千代田線乗り入れ車両。現在は本線運用
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{6FCB8050-4643-46CE-8E78-646701A2B303}"/>
+		</composition>
+	</contribution>
+
+	<!-- 京王6000系 -->
+	<contribution type="trainCar" id="{E791842A-1A4D-41BE-980E-5E798411368F}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                <picture src="KEIO6000.bmp" />
+                </sprite>
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{27DD5817-E649-4FB1-8C07-3FE597ED699D}">
+		<company>Keio Corporation</company>
+		<type>6000 Series</type>
+		<name></name>
+		<author>Ken</author>
+		<description>
+京王初の20メートル車。都営新宿線乗り入れ車でもある
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{E791842A-1A4D-41BE-980E-5E798411368F}"/>
+		</composition>
+	</contribution>
+
+	<!-- 京王7000系 -->
+	<contribution type="trainCar" id="{7EC056FE-B02E-4AA4-9DCD-82997A05C8A8}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                <picture src="KEIO7000.bmp" />
+                </sprite>
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{E0201566-0AD4-4B50-90F0-D3704107A6B5}">
+		<company>Keio Corporation</company>
+		<type>7000 Series</type>
+		<name></name>
+		<author>Ken</author>
+		<description>
+京王初のステンレス車両。特急から各停まで幅広く使用されている
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{7EC056FE-B02E-4AA4-9DCD-82997A05C8A8}"/>
+		</composition>
+	</contribution>
+
+	<!-- 京王8000系 -->
+	<contribution type="trainCar" id="{A755E7F9-27E9-4C6D-80FD-49392A44C58E}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                <picture src="KEIO8000.bmp" />
+                </sprite>
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{4409ACC3-5483-4D7A-A8FF-EE134D5E7FDF}">
+		<company>Keio Corporation</company>
+		<type>8000 Series</type>
+		<name></name>
+		<author>Ken</author>
+		<description>
+特急、準特急を中心に、各停でも使用されている
+		</description>
+		<price>200</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{A755E7F9-27E9-4C6D-80FD-49392A44C58E}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 京王9000系 -->
+	<contribution type="trainCar" id="{10A35BFA-75B2-441A-8D98-A935763D0138}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                <picture src="KEIO9000.bmp" />
+                </sprite>
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{209831C3-14F6-4EF9-8E62-39558ED98FC3}">
+		<company>Keio Corporation</company>
+		<type>9000 Series</type>
+		<name></name>
+		<author>Ken</author>
+		<description>
+6000系置き換えを目的とした新車両。将来は都営新宿線乗り入れも計画。
+		</description>
+		<price>200</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{10A35BFA-75B2-441A-8D98-A935763D0138}"/>
+		</composition>
+	</contribution>
+
+	<!-- 都営10-000系 -->
+	<contribution type="trainCar" id="{7F09A821-9302-4299-BD80-BE84DFBF7206}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                <picture src="TOEI10.bmp" />
+                </sprite>
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{8063B116-42D9-4AD7-906E-7CDF0B07D986}">
+		<company>Tokyo Metropolitan Bureau of Transportation</company>
+		<type>Shinjuku Line 10-000 Series</type>
+		<name></name>
+		<author>Ken</author>
+		<description>
+都営新宿線車両。本八幡から京王線笹塚、橋本まで乗り入れ運転。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{7F09A821-9302-4299-BD80-BE84DFBF7206}"/>
+		</composition>
+	</contribution>
+
+	<!-- 都営10-270系 -->
+	<contribution type="trainCar" id="{54C4A608-B851-4084-8186-DBF8E2F3AAA5}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                <picture src="TOEI10-27.bmp" />
+                </sprite>
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{B06094CB-D763-4829-BAAA-9C59FCFBB690}">
+		<company>Tokyo Metropolitan Bureau of Transportation</company>
+		<type>Shinjuku Line 10-270 Series</type>
+		<name></name>
+		<author>Ken</author>
+		<description>
+都営新宿線更新車
+		</description>
+		<price>200</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{54C4A608-B851-4084-8186-DBF8E2F3AAA5}"/>
+		</composition>
+	</contribution>
+
+
+</plug-in>

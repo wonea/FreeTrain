@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Railway Signal</title>
+	<author>Kei</author>
+	<homepage></homepage>
+	
+	<depend on="org.kohsuke.freetrain.rail.signal"/>	
+
+	<contribution type="railSignal" id="{D73E8459-D03E-4080-8147-CC76CD851C29}">
+		<name>Small Semaphore</name>
+		<side>left</side>
+		<picture src="RailSignal.bmp"/>
+	</contribution>
+	<contribution type="railSignal" id="{BC140A67-69E6-430E-A012-85D60577C7F5}">
+		<name>Small Semaphore</name>
+		<side>left</side>
+		<picture src="RailSignal2.bmp"/>
+	</contribution>
+</plug-in>

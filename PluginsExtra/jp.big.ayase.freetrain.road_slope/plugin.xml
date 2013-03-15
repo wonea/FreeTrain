@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Slope road</title>
+	<author>Hiro Ayase</author>
+	<homepage>http://www14.big.or.jp/~ayase/freetrain/</homepage>
+	
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-RoadImg-Slope}">
+		<picture src="slope_road.bmp" origin="0,0" offset="0" />
+	</contribution>
+	
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-RoadImg-Slope2}">
+		<picture src="slope_road2.bmp" origin="0,0" offset="0" >
+			<override when="night" src="slope_road2_n.bmp"/>
+		</picture>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{FreeTrain-AYASE-Hiro-RoadImg-SlopeN}">
+		<group>Slope road(normal)</group>
+		<price>1000</price>
+		<size>1,4</size>
+		<height>1</height>
+		<structure>
+			<category byname="Road Accessories"/>
+		</structure>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Slope}"/>
+		</sprite>
+		<sprite origin="80,0" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Slope}"/>
+		</sprite>
+		<sprite origin="160,0" offset="24">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Slope}"/>
+		</sprite>
+		<sprite origin="240,0" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Slope}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{FreeTrain-AYASE-Hiro-RoadImg-Slope2N}">
+		<group>Slope road(expressway)</group>
+		<price>1000</price>
+		<size>1,4</size>
+		<height>2</height>
+		<structure>
+			<category byname="Road Accessories"/>
+		</structure>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Slope2}"/>
+		</sprite>
+		<sprite origin="80,0" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Slope2}"/>
+		</sprite>
+		<sprite origin="160,0" offset="24">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Slope2}"/>
+		</sprite>
+		<sprite origin="240,0" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Slope2}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+</plug-in>

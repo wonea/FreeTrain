@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Kintetsu Train Kit</title>
+
+	<homepage/>
+	
+	
+	<!-- 近鉄 12200系 新スナックカー -->
+	<contribution type="trainCar" id="{01BC4BE0-C3CF-40fc-A47B-D041FE9CB0F4}">
+		<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+		<colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-1" base="255,128,0" line1="255,128,0" line2="0,0,128" line3="255,128,0" />
+		<capacity>99</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{0F9CA3B7-1674-48b0-9E8F-5AB781CA5590}">
+		<company>Kintetsu Corporation</company>
+		<type>12200 Series</type>
+		<name>New Snack Car</name>
+		<author>Nanashi-san-no-Yabou</author>
+		<description>
+新幹線登場後乗客が減った名阪間の利用を増やすため車内にスナックコーナーという簡易ビュッフェを設置した車両。しかし経費増大などの理由でこのスナックコーナーは廃止、一般座席に改装し現在も運転されている。
+		</description>
+		<price>1</price>
+		<speed>fast</speed>
+		<composition>
+			<body carRef="{01BC4BE0-C3CF-40fc-A47B-D041FE9CB0F4}"/>
+		</composition>
+	</contribution>
+	
+	
+	
+	
+	<!-- 3200系先頭車両 -->
+	<contribution type="trainCar" id="{2BE05AC0-1ABD-4437-AE45-C7630C136952}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kt3200a.bmp"/>
+                </sprite>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<!-- 3200系中間車両 -->
+	<contribution type="trainCar" id="{2BE05AC0-1ABD-4437-AE45-C7630C136952}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kt3200b.bmp"/>
+                </sprite>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<!-- 3200系後尾車両 -->
+	<contribution type="trainCar" id="{2BE05AC0-1ABD-4437-AE45-C7630C136952}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{2BE05AC0-1ABD-4437-AE45-C7630C136952}-h"/>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{2BE05AC0-1ABD-4437-AE45-C7630C136952}">
+		<company>Kintetsu Corporation</company>
+		<type>3200 Series</type>
+		<name></name>
+		<author>ima</author>
+		<description>
+京都線内で京都市交通局烏丸線と相互直通運転するため製作された車両。この車両は多数の部分が今の通勤車両に受け継がれ、今のVVVF車の原点とも言える車両。登場時は4両編成だったが相互直通開始前に6両固定編成となった。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{2BE05AC0-1ABD-4437-AE45-C7630C136952}-h"/>
+			<body carRef="{2BE05AC0-1ABD-4437-AE45-C7630C136952}-m"/>
+			<tail carRef="{2BE05AC0-1ABD-4437-AE45-C7630C136952}-t"/>
+		</composition>
+	</contribution>
+	<!-- 1020系先頭車両 -->
+	<contribution type="trainCar" id="{04CFD232-9837-40d7-B5F8-465C081D688F}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kt1026a.bmp"/>
+                </sprite>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<!-- 1020系中間車両 -->
+	<contribution type="trainCar" id="{04CFD232-9837-40d7-B5F8-465C081D688F}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kt1026b.bmp"/>
+                </sprite>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<!-- 1020系後尾車両 -->
+	<contribution type="trainCar" id="{04CFD232-9837-40d7-B5F8-465C081D688F}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{04CFD232-9837-40d7-B5F8-465C081D688F}-h"/>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{04CFD232-9837-40d7-B5F8-465C081D688F}">
+		<company>Kintetsu Corporation</company>
+		<type>1020 Series, 6400 Series, etc.</type>
+		<name></name>
+		<author>Hima</author>
+		<description>
+近鉄のほぼ全線で見られる。全線共通車体に見えても鋼製であったり裾を絞ってなかったり、果ては同じ形で系式が違うことも多々あり、ここでは○○系と一概に言えない。2～4,6両編成が存在する。これで再現可能な形式は1420,1220,1230,1020,1430,1620,6400,6620,1400,1200,2050,8810,9000,9200,6600系。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{04CFD232-9837-40d7-B5F8-465C081D688F}-h"/>
+			<body carRef="{04CFD232-9837-40d7-B5F8-465C081D688F}-m"/>
+			<tail carRef="{04CFD232-9837-40d7-B5F8-465C081D688F}-t"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 8000系先頭車両 -->
+	<contribution type="trainCar" id="{79F5A6B4-89E3-42ec-A9D0-072511836B55}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kt8000a.bmp"/>
+                </sprite>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<!-- 8000系中間車両 -->
+	<contribution type="trainCar" id="{79F5A6B4-89E3-42ec-A9D0-072511836B55}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kt8000b.bmp"/>
+                </sprite>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<!-- 8000系後尾車両 -->
+	<contribution type="trainCar" id="{79F5A6B4-89E3-42ec-A9D0-072511836B55}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{79F5A6B4-89E3-42ec-A9D0-072511836B55}-h"/>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{79F5A6B4-89E3-42ec-A9D0-072511836B55}">
+		<company>Kintetsu Corporation</company>
+		<type>Steel Commuter Electrical Train</type>
+		<name></name>
+		<author>Hima</author>
+		<description>
+近鉄の鋼製車両。やや四角い前面が特徴である。全線で見られる顔(裾絞りの有無を含め)で、非常に沢山形式が存在する。2両、3両、4両編成。クーラーの種類等に若干違いがあるが再現可能系式は2410,2800,2400,2610,1481,2430,2600,2050,1000,2000,1810,2680,1010,2470,1480,8600,8400,8000,8800,900,6200,6020,6000,860系。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{79F5A6B4-89E3-42ec-A9D0-072511836B55}-h"/>
+			<body carRef="{79F5A6B4-89E3-42ec-A9D0-072511836B55}-m"/>
+			<tail carRef="{79F5A6B4-89E3-42ec-A9D0-072511836B55}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 23000系先頭車両 -->
+	<contribution type="trainCar" id="{9F65AF1F-FCB7-48a1-83FC-3A2BD7F057D5}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kt23000a.bmp"/>
+                </sprite>
+		<capacity>50</capacity>
+	</contribution>
+	
+	<!-- 23000系中間車両 -->
+	<contribution type="trainCar" id="{9F65AF1F-FCB7-48a1-83FC-3A2BD7F057D5}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kt23000b.bmp"/>
+                </sprite>
+		<capacity>50</capacity>
+	</contribution>
+	
+	<!-- 23000系後尾車両 -->
+	<contribution type="trainCar" id="{9F65AF1F-FCB7-48a1-83FC-3A2BD7F057D5}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{9F65AF1F-FCB7-48a1-83FC-3A2BD7F057D5}-h"/>
+		<capacity>50</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{9F65AF1F-FCB7-48a1-83FC-3A2BD7F057D5}">
+		<company>Kintetsu Corporation</company>
+		<type>23000 Series</type>
+		<name>Ise Shima Liner</name>
+		<author>Hima</author>
+		<description>
+近鉄が製作した私鉄初の130km/h運転車両。観光特急としての性格が強く、座席は華やかでカラーリングも黄色に白とかなり明るい。運転室仕切りはガラスとなっていて前面展望を楽しめる。6両固定編成。
+		</description>
+		<price>2300</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{9F65AF1F-FCB7-48a1-83FC-3A2BD7F057D5}-h"/>
+			<body carRef="{9F65AF1F-FCB7-48a1-83FC-3A2BD7F057D5}-m"/>
+			<tail carRef="{9F65AF1F-FCB7-48a1-83FC-3A2BD7F057D5}-t"/>
+		</composition>
+	</contribution>
+	
+	<!-- 30000系先頭車両 -->
+	<contribution type="trainCar" id="{A02260C4-A40D-4d13-9C4C-AA1F5E7EC535}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kt30000a.bmp"/>
+                </sprite>
+		<capacity>50</capacity>
+	</contribution>
+	
+	<!-- 30000系中間車両 -->
+	<contribution type="trainCar" id="{A02260C4-A40D-4d13-9C4C-AA1F5E7EC535}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kt30000b.bmp"/>
+                </sprite>
+		<capacity>50</capacity>
+	</contribution>
+	
+	<!-- 30000系後尾車両 -->
+	<contribution type="trainCar" id="{A02260C4-A40D-4d13-9C4C-AA1F5E7EC535}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{A02260C4-A40D-4d13-9C4C-AA1F5E7EC535}-h"/>
+		<capacity>50</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{A02260C4-A40D-4d13-9C4C-AA1F5E7EC535}">
+		<company>Kintetsu Corporation</company>
+		<type>30000 Series</type>
+		<name>Vista EX</name>
+		<author>Hima</author>
+		<description>
+
+		</description>
+		<price>2300</price>
+		<speed>fast</speed>
+
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{A02260C4-A40D-4d13-9C4C-AA1F5E7EC535}-h"/>
+			<car char="B" ref="{A02260C4-A40D-4d13-9C4C-AA1F5E7EC535}-m"/>
+			<car char="C" ref="{A02260C4-A40D-4d13-9C4C-AA1F5E7EC535}-t"/>
+			
+			<composition>ABBC</composition>
+			<composition>ABBBC</composition>
+			<composition>ABBCABBC</composition>
+			<composition>ABBCABBCABBC</composition>
+		</config>
+
+	</contribution>
+	<!-- 3220系先頭車両 -->
+	<contribution type="trainCar" id="{71DCD39C-9534-49d8-B055-AC8D561D20A7}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kt3220.bmp"/>
+                </sprite>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<!-- 3220系中間車両 -->
+	<contribution type="trainCar" id="{71DCD39C-9534-49d8-B055-AC8D561D20A7}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kt9020b.bmp"/>
+                </sprite>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<!-- 3220系後尾車両 -->
+	<contribution type="trainCar" id="{71DCD39C-9534-49d8-B055-AC8D561D20A7}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{71DCD39C-9534-49d8-B055-AC8D561D20A7}-h"/>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{71DCD39C-9534-49d8-B055-AC8D561D20A7}">
+		<company>Kintetsu Corporation</company>
+		<type>3220 Series</type>
+		<name>Series 21</name>
+		<author>Hima</author>
+		<description>
+近鉄の次世代通勤型車両、シリーズ21の先行投入車。京都市営地下鉄に乗り入れることができ、3200系と共通運用されている。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{71DCD39C-9534-49d8-B055-AC8D561D20A7}-h"/>
+			<body carRef="{71DCD39C-9534-49d8-B055-AC8D561D20A7}-m"/>
+			<tail carRef="{71DCD39C-9534-49d8-B055-AC8D561D20A7}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 9020系先頭車両 -->
+	<contribution type="trainCar" id="{7CFEDA31-6B73-4e40-BA03-4B1DFB7BFCAB}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kt9020a.bmp"/>
+                </sprite>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<!-- 9020系中間車両 -->
+	<contribution type="trainCar" id="{7CFEDA31-6B73-4e40-BA03-4B1DFB7BFCAB}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kt9020b.bmp"/>
+                </sprite>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<!-- 9020系後尾車両 -->
+	<contribution type="trainCar" id="{7CFEDA31-6B73-4e40-BA03-4B1DFB7BFCAB}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{7CFEDA31-6B73-4e40-BA03-4B1DFB7BFCAB}-h"/>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{7CFEDA31-6B73-4e40-BA03-4B1DFB7BFCAB}">
+		<company>Kintetsu Corporation</company>
+		<type>9020 Series</type>
+		<name>Series 21</name>
+		<author>Hima</author>
+		<description>
+近鉄の次世代通勤型車両。9020系は2両編成で、2+2の4両や付属編成として使用されるが、たまに3編成つないで6両ということも。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{7CFEDA31-6B73-4e40-BA03-4B1DFB7BFCAB}-h"/>
+			<car char="B" ref="{7CFEDA31-6B73-4e40-BA03-4B1DFB7BFCAB}-m"/>
+			<car char="C" ref="{7CFEDA31-6B73-4e40-BA03-4B1DFB7BFCAB}-t"/>
+			<composition>AC</composition>
+			<composition>ACAC</composition>
+			<composition>ACABC</composition>
+			<composition>ACACAC</composition>
+			<composition>ACACACAC</composition>
+			<composition>ACACACACAC</composition>
+		</config>
+	</contribution>
+
+	<!-- 9820/5820系先頭車両 -->
+	<contribution type="trainCar" id="{FBBCA305-EB52-4b8e-87F4-03FF8F84A98A}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kt9020a.bmp"/>
+                </sprite>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<!-- 9820/5820系中間車両 -->
+	<contribution type="trainCar" id="{FBBCA305-EB52-4b8e-87F4-03FF8F84A98A}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kt9020b.bmp"/>
+                </sprite>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<!-- 9820/5820系後尾車両 -->
+	<contribution type="trainCar" id="{FBBCA305-EB52-4b8e-87F4-03FF8F84A98A}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FBBCA305-EB52-4b8e-87F4-03FF8F84A98A}-h"/>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{FBBCA305-EB52-4b8e-87F4-03FF8F84A98A}">
+		<company>Kintetsu Corporation</company>
+		<type>9820/5820 Series</type>
+		<name>Series 21</name>
+		<author>Hima</author>
+		<description>
+近鉄の次世代通勤型車両。9820系と5820系はともに6両編成で、奈良・京都線の主力になっている。9820系はロングシート、5820系はL/Cカーである。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{FBBCA305-EB52-4b8e-87F4-03FF8F84A98A}-h"/>
+			<car char="B" ref="{FBBCA305-EB52-4b8e-87F4-03FF8F84A98A}-m"/>
+			<car char="C" ref="{FBBCA305-EB52-4b8e-87F4-03FF8F84A98A}-t"/>
+			<composition>ABBBC</composition>
+			<composition>ABBBBC</composition>
+			<composition>ABBBBCAC</composition>
+			<composition>ABBBBCACAC</composition>
+			<composition>ABBBBCABBBBC</composition>
+		</config>
+	</contribution>
+	<!-- 3000系先頭車両 -->
+	<contribution type="trainCar" id="{8D7AE30D-D12E-4208-A2DE-216CA85ECDF5}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kt3000a.bmp"/>
+                </sprite>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<!-- 3000系中間車両 -->
+	<contribution type="trainCar" id="{8D7AE30D-D12E-4208-A2DE-216CA85ECDF5}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kt3000b.bmp"/>
+                </sprite>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<!-- 3000系後尾車両 -->
+	<contribution type="trainCar" id="{8D7AE30D-D12E-4208-A2DE-216CA85ECDF5}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{8D7AE30D-D12E-4208-A2DE-216CA85ECDF5}-h"/>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{8D7AE30D-D12E-4208-A2DE-216CA85ECDF5}">
+		<company>Kintetsu Corporation</company>
+		<type>3000 Series</type>
+		<name></name>
+		<author>Hima</author>
+		<description>
+近鉄に4両1編成だけ存在する、チョッパ制御試験のため1979年に製作された車両。3+1両で登場したが、1991年にMc車をM車化し4両固定編成化された。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{8D7AE30D-D12E-4208-A2DE-216CA85ECDF5}-h"/>
+			<body carRef="{8D7AE30D-D12E-4208-A2DE-216CA85ECDF5}-m"/>
+			<tail carRef="{8D7AE30D-D12E-4208-A2DE-216CA85ECDF5}-t"/>
+		</composition>
+	</contribution>
+</plug-in>

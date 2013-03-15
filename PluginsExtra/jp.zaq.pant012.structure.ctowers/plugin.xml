@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>JR Central Towers building</title>
+	<author>T.Hara</author>
+	<homepage>http://www.cwo.zaq.ne.jp/pant012/freetrain/</homepage>
+	
+	<contribution type="picture" id="{5FCF7163-155E-4A4F-9F2A-BDF3636B4D25}">
+		<picture src="ctowers.bmp" />
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{F5776500-E8E5-4D5E-B30A-A0036A6ECDEB}">
+		<group>JR Central Towers</group>
+		<price>5000</price>
+		<size>5,2</size>
+		<height>10</height>
+		<structure>
+			<category byname="Rental Offices"/>
+			<category byname="Restaurants" hide="true"/>
+			<category byname="Stores" hide="true"/>
+		</structure>
+		<sprite origin="0,0" offset="186">
+		<picture ref="{5FCF7163-155E-4A4F-9F2A-BDF3636B4D25}" />
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+</plug-in>

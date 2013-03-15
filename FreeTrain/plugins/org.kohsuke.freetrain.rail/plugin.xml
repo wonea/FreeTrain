@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Bridges &amp; Tunnels</title>
+	<!--!<title>鉄橋・トンネル</title>-->
+	<author>C477</author>
+	<!--!<author>477さん</author>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="specialRail" id="{874B8BFD-1EF4-4828-9C5A-D0EA1049D28D}">
+		<class name="freetrain.world.rail.BridgeRailContributionImpl" />
+	</contribution>
+	
+	<contribution type="specialRail" id="{7FD493FF-D6A7-4a13-A471-FB737641D8A0}">
+		<class name="freetrain.world.rail.StealSupportedRailContributionImpl" />
+	</contribution>
+	
+	<contribution type="specialRail" id="{3E66FC7A-2B58-4182-8A8E-2D5A01BE78E5}">
+		<class name="freetrain.world.rail.TunnelRailContributionImpl" />
+	</contribution>
+</plug-in>

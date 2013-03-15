@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Terraces &amp; Cuts</title>
+	<!--!<title>雛壇と切り通し</title>-->
+	<author>C477</author>
+	<!--!<author>477さん</author>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="specialStructure" id="{28AF2E4F-AAF2-4007-84B8-5CCBD1DB10B0}">
+		<class name="freetrain.world.terrain.terrace.TerraceContributionImpl"
+			codebase="bin/Debug/FreeTrain.Terrace.dll" />
+	</contribution>
+</plug-in>

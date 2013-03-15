@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY crBlack '
+	<colorVariation><spriteType name="colorMapped">
+		<map from="137,0,0" to="0,0,0"/>
+		<map from="209,0,0" to="24,24,24"/>
+		<map from="255,0,0" to="47,47,47"/>
+		<map from="255,151,151" to="123,123,123"/>
+		<map from="255,96,96" to="95,95,95"/>
+	</spriteType></colorVariation>
+'>
+<!ENTITY crCream '
+	<colorVariation><spriteType name="colorMapped">
+		<map from="137,0,0" to="94,84,59"/>
+		<map from="209,0,0" to="167,153,108"/>
+		<map from="255,0,0" to="198,190,135"/>
+		<map from="255,151,151" to="255,255,255"/>
+		<map from="255,96,96" to="241,242,223"/>
+	</spriteType></colorVariation>
+'>
+<!ENTITY crDarkBlue '
+	<colorVariation><spriteType name="colorMapped">
+		<map from="137,0,0" to="4,4,42"/>
+		<map from="209,0,0" to="11,11,97"/>
+		<map from="255,0,0" to="14,14,132"/>
+		<map from="255,151,151" to="85,94,151"/>
+		<map from="255,96,96" to="42,56,141"/>
+	</spriteType></colorVariation>
+'>
+<!ENTITY crOlive '
+	<colorVariation><spriteType name="colorMapped">
+		<map from="137,0,0" to="51,80,46"/>
+		<map from="209,0,0" to="78,122,70"/>
+		<map from="255,0,0" to="94,149,85"/>
+		<map from="255,151,151" to="177,199,173"/>
+		<map from="255,96,96" to="147,181,141"/>
+	</spriteType></colorVariation>
+'>
+<!ENTITY crPaleBlue '
+	<colorVariation><spriteType name="colorMapped">
+		<map from="137,0,0" to="32,71,86"/>
+		<map from="209,0,0" to="66,125,149"/>
+		<map from="255,0,0" to="89,160,189"/>
+		<map from="255,151,151" to="212,237,237"/>
+		<map from="255,96,96" to="167,211,220"/>
+	</spriteType></colorVariation>
+'>
+<!ENTITY crPurple '
+	<colorVariation><spriteType name="colorMapped">
+		<map from="137,0,0" to="45,0,73"/>
+		<map from="209,0,0" to="98,0,142"/>
+		<map from="255,0,0" to="134,1,186"/>
+		<map from="255,151,151" to="200,146,222"/>
+		<map from="255,96,96" to="175,92,209"/>
+	</spriteType></colorVariation>
+'>
+<!ENTITY crRed '
+	<colorVariation/>
+'>
+<!ENTITY crSilver '
+	<colorVariation><spriteType name="colorMapped">
+		<map from="137,0,0" to="74,74,74"/>
+		<map from="209,0,0" to="106,106,106"/>
+		<map from="255,0,0" to="127,127,127"/>
+		<map from="255,151,151" to="194,194,194"/>
+		<map from="255,96,96" to="169,169,169"/>
+	</spriteType></colorVariation>
+'>
+<!ENTITY crWhite '
+	<colorVariation><spriteType name="colorMapped">
+		<map from="137,0,0" to="95,91,91"/>
+		<map from="209,0,0" to="152,145,145"/>
+		<map from="255,0,0" to="188,178,178"/>
+		<map from="255,151,151" to="255,255,255"/>
+		<map from="255,96,96" to="255,254,254"/>
+	</spriteType></colorVariation>
+'>
+]>
+
+<plug-in>
+	<title>Automobiles (static)</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>	
+	<depend on="jp.co.tripod.chiname.lib" />	
+	
+	<contribution type="picture" id="{4564C1E0-448F-4295-C477-FA9010ACD1B9}">
+		<picture src="cars_base.bmp"/>
+	</contribution>
+
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-0,0">
+		<name>Station wagon (front)</name>
+		<sprite origin="0, 0" offset="0">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crCream;
+			&crDarkBlue;
+			&crPaleBlue;
+			&crPurple;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-1,0">
+		<name>Station wagon (rear)</name>
+		<sprite origin="64, 0" offset="0">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crCream;
+			&crDarkBlue;
+			&crPaleBlue;
+			&crPurple;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-0,1">
+		<name>Minivan (front)</name>
+		<sprite origin="0,16" offset="0">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crDarkBlue;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-1,1">
+		<name>Minivan (rear)</name>
+		<sprite origin="64,16" offset="0">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crDarkBlue;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-0,2">
+		<name>Sedan (front)</name>
+		<sprite origin="0,32" offset="0">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crCream;
+			&crDarkBlue;
+			&crOlive;
+			&crPaleBlue;
+			&crPurple;
+			&crRed;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-1,2">
+		<name>Sedan (rear)</name>
+		<sprite origin="64,32" offset="0">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crCream;
+			&crDarkBlue;
+			&crOlive;
+			&crPaleBlue;
+			&crPurple;
+			&crRed;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-0,3">
+		<name>Minicar (static) (front)</name>
+		<sprite origin="0,48" offset="0">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crCream;
+			&crDarkBlue;
+			&crOlive;
+			&crPaleBlue;
+			&crPurple;
+			&crRed;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-1,3">
+		<name>Minicar (static) (rear)</name>
+		<sprite origin="64,48" offset="0">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crCream;
+			&crDarkBlue;
+			&crOlive;
+			&crPaleBlue;
+			&crPurple;
+			&crRed;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-0,4">
+		<name>Trailer (front)</name>
+		<sprite origin="0,64" offset="8">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crOlive;
+			&crPaleBlue;
+			&crPurple;
+			&crRed;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-1,4">
+		<name>Trailer (rear)</name>
+		<sprite origin="64,64" offset="8">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crOlive;
+			&crPaleBlue;
+			&crPurple;
+			&crRed;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-0,5">
+		<name>Bus (front)</name>
+		<sprite origin="0,104" offset="8">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crCream;
+			&crOlive;
+			&crPaleBlue;
+			&crRed;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-1,5">
+		<name>Bus (rear)</name>
+		<sprite origin="64,104" offset="8">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crCream;
+			&crOlive;
+			&crPaleBlue;
+			&crRed;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-2,0">
+		<name>Station wagon* (front)</name>
+		<sprite origin="128, 0" offset="0">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crCream;
+			&crDarkBlue;
+			&crPaleBlue;
+			&crPurple;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-3,0">
+		<name>Station wagon* (rear)</name>
+		<sprite origin="192, 0" offset="0">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crCream;
+			&crDarkBlue;
+			&crPaleBlue;
+			&crPurple;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-2,1">
+		<name>Minivan* (front)</name>
+		<sprite origin="128,16" offset="0">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crDarkBlue;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-3,1">
+		<name>Minivan* (rear)</name>
+		<sprite origin="192,16" offset="0">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crDarkBlue;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-2,2">
+		<name>Sedan (front)*</name>
+		<sprite origin="128,32" offset="0">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crCream;
+			&crDarkBlue;
+			&crOlive;
+			&crPaleBlue;
+			&crPurple;
+			&crRed;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-3,2">
+		<name>Sedan (rear)*</name>
+		<sprite origin="192,32" offset="0">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crCream;
+			&crDarkBlue;
+			&crOlive;
+			&crPaleBlue;
+			&crPurple;
+			&crRed;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-2,3">
+		<name>Minicar (static) (front)*</name>
+		<sprite origin="128,48" offset="0">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crCream;
+			&crDarkBlue;
+			&crOlive;
+			&crPaleBlue;
+			&crPurple;
+			&crRed;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-3,3">
+		<name>Minicar (static) (rear)*</name>
+		<sprite origin="192,48" offset="0">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crCream;
+			&crDarkBlue;
+			&crOlive;
+			&crPaleBlue;
+			&crPurple;
+			&crRed;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-2,4">
+		<name>Trailer (front)*</name>
+		<sprite origin="128,64" offset="8">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crOlive;
+			&crPaleBlue;
+			&crPurple;
+			&crRed;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-3,4">
+		<name>Trailer (rear)*</name>
+		<sprite origin="192,64" offset="8">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crBlack;
+			&crOlive;
+			&crPaleBlue;
+			&crPurple;
+			&crRed;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-2,5">
+		<name>Bus (front)*</name>
+		<sprite origin="128,104" offset="8">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crCream;
+			&crOlive;
+			&crPaleBlue;
+			&crRed;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+	<contribution type="DummyCar" id="{FE805631-E213-4930-C477-9699E6F37DF8}-3,5">
+		<name>Bus (rear)*</name>
+		<sprite origin="192,104" offset="8">
+			<picture src="cars_base.bmp"/>
+			<variations>
+			&crCream;
+			&crOlive;
+			&crPaleBlue;
+			&crRed;
+			&crSilver;
+			&crWhite;
+			</variations>
+		</sprite>
+	</contribution>
+	
+</plug-in>

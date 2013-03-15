@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>FreeTrain-Sousaku Kan, Buildings (modification of 477's image)</title>
+	<author>qra_ra</author>
+	<homepage>http://hb4.seikyou.ne.jp/home/Go-Ro/FreeTrain/</homepage>
+
+
+	<contribution type="picture" id="{0E9F632F-78F8-4B61-8B5B-450D85850002}">
+		<picture src="bldgVH02h-2.bmp"/>
+	</contribution>
+
+
+	<contribution type="picture" id="{0E9F632F-78F8-4B61-8B5B-450D85850004}">
+		<picture src="bldgVH02-3.bmp"/>
+	</contribution>
+	
+		
+</plug-in>

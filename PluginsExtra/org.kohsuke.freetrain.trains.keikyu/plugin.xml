@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title></title>
+	<author>Nanashi-no-Hito</author>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<!-- 600形 iwasaki氏-->
+	 <contribution type="trainCar" id="{600-keikyu-iw200309301103}">
+	<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+	<colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-1" base="255,0,0" line1="255,255,255" line2="255,255,255" line3="255,255,255" />
+	 <capacity>300</capacity>
+	</contribution>
+
+	<contribution type="train" id="{600-keikyu-iw200309301107}">
+		<company>Keihin Electric Express Railway</company>
+		<type>600 Series</type>
+		<name>Keikyu 600 Series</name>
+		<author>iwasaki</author>
+		<description>いろいろな形で使われている電車。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{600-keikyu-iw200309301103}"/>
+		</composition>
+	</contribution>
+
+	
+	
+	<!-- 京急快特タイプ -->
+	<contribution type="trainCar" id="{3A3397CC-8800-4a73-B6F8-0F49320A2D40}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="KEIKYU01.bmp"/>
+                </sprite>
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{8684A084-CCC1-4a80-ACA0-7F8E038C54C8}">
+		<company>Keihin Electric Express Railway</company>
+		<type>Limited Express Type</type>
+		<name></name>
+		<author>Nanashi-no-Hito</author>
+		<description>
+京急の快特タイプ。
+		</description>
+		<price>1100</price>
+		<speed>fast</speed>
+		<composition>
+			<body carRef="{3A3397CC-8800-4a73-B6F8-0F49320A2D40}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 2100系先頭車両 -->
+	<contribution type="trainCar" id="{D89A6A3E-2972-441b-8468-24C4289EC5FA}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="kq2100.bmp"/>
+                </sprite>
+		<capacity>120</capacity>
+	</contribution>
+	
+	<!-- 2100系中間車両 -->
+	<contribution type="trainCar" id="{D89A6A3E-2972-441b-8468-24C4289EC5FA}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+       		    <picture src="kq2100b.bmp"/>
+                </sprite>
+		<capacity>111</capacity>
+	</contribution>
+	
+	<!-- 2100系後尾車両 -->
+	<contribution type="trainCar" id="{D89A6A3E-2972-441b-8468-24C4289EC5FA}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{D89A6A3E-2972-441b-8468-24C4289EC5FA}-h"/>
+		<capacity>120</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{D89A6A3E-2972-441b-8468-24C4289EC5FA}">
+		<company>Keihin Electric Express Railway</company>
+		<type>2100 Series</type>
+		<name></name>
+		<author>Hima</author>
+		<description>
+1998年に製造された京急の快特用車両で、居住性の向上を第一にコストおよびメンテナンス低減を図り、外国製品を多々導入している。運転最高速度は時速120kmだが高速化を見込み時速130kmでも均衡できるようになっている。8両固定編成で主に快特に運用されている。
+		</description>
+		<price>100</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{D89A6A3E-2972-441b-8468-24C4289EC5FA}-h"/>
+			<body carRef="{D89A6A3E-2972-441b-8468-24C4289EC5FA}-m"/>
+			<tail carRef="{D89A6A3E-2972-441b-8468-24C4289EC5FA}-t"/>
+		</composition>
+	</contribution>
+
+	
+
+
+	<!-- 1000形 -->
+	 <contribution type="trainCar" id="{0405301934}dfyu3432413">
+	<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+	<colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-2" base="255,0,0" line1="255,255,255" line2="255,0,0" line3="255,0,0" />
+	 <capacity>300</capacity>
+	</contribution>
+
+	<contribution type="train" id="{0405301938}ljkyl5374632">
+		<company>Keihin Electric Express Railway</company>
+		 <name>Keikyu 1000 Series</name>
+		 <capacity>170</capacity>
+		 <type>1000 Series</type>
+		 <author>Hatena-kun</author>
+		 <description>京急を代表する形式で、2、4、6、8両の各固定編成を組み普通から快速特急まで幅広く使用されている車両。</description>
+		 <price>1500</price>
+		 <speed>medium</speed>
+		<composition>
+			<body carRef="{0405301934}dfyu3432413"/>
+		</composition>
+	</contribution>
+
+</plug-in>

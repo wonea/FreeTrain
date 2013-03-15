@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plug-in [
+<!ENTITY Population '
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+'>
+]>
+<plug-in>
+	<title>Farmhouses &amp; Greenhouses</title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	<author>C477</author>
+	
+	<contribution type="picture" id="{5981B3EA-5CCF-4DB2-94DC-B7EC854987D7}">
+		<picture src="vinylhouse.bmp" />
+	</contribution>
+	
+	<contribution type="land" id="{66B81CAD-8B41-416C-8624-137C2D8110F2}">
+		<group>Greenhouse</group>
+		<class name="freetrain.world.land.vinylhouse.XVinylHouseBuilder"
+			codebase="bin/Debug/FreeTrain.VinylHouse.dll"/>
+		<picture ref="{5981B3EA-5CCF-4DB2-94DC-B7EC854987D7}" offset="0" />
+		<price>20</price>
+		<population>
+			<class name="freetrain.contributions.population.AgriculturalPopulation"/>
+			<base>5</base>
+		</population>
+	</contribution>
+	
+	<contribution type="land" id="{4F97D7DD-749E-4B65-BF13-5733B10D8570}">
+		<group>Greenhouse</group>
+		<class name="freetrain.world.land.vinylhouse.YVinylHouseBuilder"
+			codebase="bin/Debug/FreeTrain.VinylHouse.dll"/>
+		<picture ref="{5981B3EA-5CCF-4DB2-94DC-B7EC854987D7}" offset="32" />
+		<price>20</price>
+		<population>
+			<class name="freetrain.contributions.population.AgriculturalPopulation"/>
+			<base>5</base>
+		</population>
+	</contribution>
+	
+	
+	
+	
+	
+	<contribution type="picture" id="{BBDB4BE4-FAFE-490B-916F-4B11DCFB8182}">
+		<picture src="farmhouse01.bmp" >
+			<override when="winter" src="farmhouse01.WIN.bmp" />
+		</picture>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{7775E0B1-AF3E-46A4-A0E6-06AF87989A7E}">
+		<name>Farmhouse (L)</name>
+		<structure>
+			<category byname="Agriculture"/>
+			<category byname="Single Houses"/>
+		</structure>
+		<price>100</price>
+		<size>2,2</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{BBDB4BE4-FAFE-490B-916F-4B11DCFB8182}"  />
+		</sprite>
+		<sprite origin="64,0" offset="16">
+			<picture ref="{BBDB4BE4-FAFE-490B-916F-4B11DCFB8182}"  />
+		</sprite>
+		&Population;
+	</contribution>
+	
+	
+	
+	
+	<contribution type="picture" id="{29ECCBC4-BCCB-4E72-AF90-7325A811194E}">
+		<picture src="farmhouse02.bmp" >
+			<override when="winter" src="farmhouse02.WIN.bmp" />
+		</picture>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{01799382-3860-4BF6-BE11-F2E40DA093E7}">
+		<name>Farmhouse (L)</name>
+		<structure>
+			<category byname="Agriculture"/>
+			<category byname="Single Houses"/>
+		</structure>
+		<price>100</price>
+		<size>2,2</size>
+		<height>1</height>
+		<sprite origin=" 0,0" offset="16">
+			<picture ref="{29ECCBC4-BCCB-4E72-AF90-7325A811194E}" />
+		</sprite>
+		<sprite origin="64,0" offset="16">
+			<picture ref="{29ECCBC4-BCCB-4E72-AF90-7325A811194E}" />
+		</sprite>
+		&Population;
+	</contribution>
+	
+	
+	
+	
+	<contribution type="picture" id="{171F794F-5305-4DCE-8BBD-9CFEB33BC5C2}">
+		<picture src="farmhouse03.bmp">
+			<override when="winter" src="farmhouse03.WIN.bmp" />
+		</picture>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{95F5EF63-1B4D-4EE3-8BF3-4BD5B7AC5311}">
+		<name>Farmhouse (M)</name>
+		<structure>
+			<category byname="Agriculture"/>
+			<category byname="Single Houses"/>
+		</structure>
+		<price>100</price>
+		<size>2,1</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="32">
+			<picture ref="{171F794F-5305-4DCE-8BBD-9CFEB33BC5C2}"/>
+		</sprite>
+		<sprite origin="48,0" offset="24" opposite="true">
+			<picture ref="{171F794F-5305-4DCE-8BBD-9CFEB33BC5C2}"/>
+		</sprite>
+		<sprite origin="96,0" offset="32">
+			<picture ref="{171F794F-5305-4DCE-8BBD-9CFEB33BC5C2}"/>
+		</sprite>
+		<sprite origin="144,0" offset="24" opposite="true">
+			<picture ref="{171F794F-5305-4DCE-8BBD-9CFEB33BC5C2}"/>
+		</sprite>
+		&Population;
+	</contribution>
+	
+	
+	
+	
+	<contribution type="picture" id="{8A2DF9AA-92CA-4760-8064-7973A52AF760}">
+		<picture src="farmhouse04.bmp" >
+			<override when="winter" src="farmhouse04.WIN.bmp" />
+		</picture>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{D730EC7C-97BD-471D-A4C1-BB2CCD17EAE7}">
+		<name>Farmhouse (M)</name>
+		<structure>
+			<category byname="Agriculture"/>
+			<category byname="Single Houses"/>
+		</structure>
+		<price>100</price>
+		<size>2,1</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="32">
+			<picture ref="{8A2DF9AA-92CA-4760-8064-7973A52AF760}"/>
+		</sprite>
+		<sprite origin="48,0" offset="24" opposite="true">>
+			<picture ref="{8A2DF9AA-92CA-4760-8064-7973A52AF760}"/>
+		</sprite>
+		<sprite origin="96,0" offset="32">
+			<picture ref="{8A2DF9AA-92CA-4760-8064-7973A52AF760}"/>
+		</sprite>
+		<sprite origin="144,0" offset="24" opposite="true">>
+			<picture ref="{8A2DF9AA-92CA-4760-8064-7973A52AF760}"/>
+		</sprite>
+		&Population;
+	</contribution>
+	
+</plug-in>

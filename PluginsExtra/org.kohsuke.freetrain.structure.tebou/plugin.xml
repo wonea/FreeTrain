@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Water gate</title>
+	<author>HanabishiRekka</author>
+	<homepage></homepage>
+	
+	
+	<contribution type="picture" id="{A254EC86-9804-4871-84A0-D07B9175CE4E}">
+		<picture src="teibou_haru.bmp" >
+			<override when="summer" src="teibou_natu.bmp"/>
+			<override when="autumn" src="teibou_kaki.bmp"/>
+			<override when="winter" src="teibou_huyu.bmp"/>
+		</picture>
+	</contribution>
+	
+	<contribution type="picture" id="{8539F184-7897-454A-9666-12F031559161}">
+		<picture src="teibou_haru01.bmp" >
+			<override when="summer" src="teibou_natu01.bmp"/>
+			<override when="autumn" src="teibou_kaki01.bmp"/>
+			<override when="winter" src="teibou_huyu01.bmp"/>
+		</picture>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{S5776500-11118-hana-C300-A0036A6ECDEB}">
+		<group>Water gate</group>
+		<price>5000</price>
+		<size>3,3</size>
+		<height>2</height>
+		<structure>
+			<category byname="Flood Control Facilities"/>
+		</structure>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{A254EC86-9804-4871-84A0-D07B9175CE4E}" />
+		</sprite>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{8539F184-7897-454A-9666-12F031559161}" />
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="picture" id="{36861C94-D665-4313-B97A-DAF60AEC9A4D}">
+		<picture src="teibou_A01.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{9C79A13F-DD53-43AC-9C0F-CE7F15EDDA9F}">
+		<picture src="teibou_A02.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{S5776500-11118-hana-C302-A0036A6ECDEB}">
+		<group>Water gate</group>
+		<price>250</price>
+		<size>1,1</size>
+		<height>2</height>
+		<structure>
+			<category byname="Flood Control Facilities"/>
+		</structure>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{36861C94-D665-4313-B97A-DAF60AEC9A4D}" />
+		</sprite>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{9C79A13F-DD53-43AC-9C0F-CE7F15EDDA9F}" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+	</contribution>
+	
+	<contribution type="picture" id="{7288909A-7254-4A59-94CA-EA8666A02D21}">
+		<picture src="teibou_A03.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{B9CA5F75-341B-4EAE-BDBF-0C88BDE3D48F}">
+		<picture src="teibou_A04.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{S5776500-11118-hana-C304-A0036A6ECDEB}">
+		<group>Water gate</group>
+		<price>250</price>
+		<size>1,1</size>
+		<height>2</height>
+		<structure>
+			<category byname="Flood Control Facilities"/>
+		</structure>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{7288909A-7254-4A59-94CA-EA8666A02D21}" />
+		</sprite>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{B9CA5F75-341B-4EAE-BDBF-0C88BDE3D48F}" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+	</contribution>
+	
+	<contribution type="picture" id="{9803DB2F-1CA1-4361-81B3-77D082F236CA}">
+		<picture src="teibou_A05.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{BB8A1625-8304-4CB0-AB27-2A3DA263C2BD}">
+		<picture src="teibou_A06.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{S5776500-11118-hana-C306-A0036A6ECDEB}">
+		<group>Water gate</group>
+		<price>250</price>
+		<size>1,1</size>
+		<height>2</height>
+		<structure>
+			<category byname="Flood Control Facilities"/>
+		</structure>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{9803DB2F-1CA1-4361-81B3-77D082F236CA}" />
+		</sprite>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{BB8A1625-8304-4CB0-AB27-2A3DA263C2BD}" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+	</contribution>
+	
+	<contribution type="picture" id="{A0E46E82-BEB8-4A96-A2C5-CB68C92EA9AD}">
+		<picture src="teibou_A07.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{BF797CC4-5B24-4F90-832C-40EA2F9927E1}">
+		<picture src="teibou_A08.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{S5776500-11118-hana-C308-A0036A6ECDEB}">
+		<group>Water gate</group>
+		<price>250</price>
+		<size>1,1</size>
+		<height>2</height>
+		<structure>
+			<category byname="Flood Control Facilities"/>
+		</structure>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{A0E46E82-BEB8-4A96-A2C5-CB68C92EA9AD}" />
+		</sprite>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{BF797CC4-5B24-4F90-832C-40EA2F9927E1}" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+	</contribution>
+	
+	<contribution type="picture" id="{09D398F8-5D83-4A7E-B1F9-9CF490C6E735}">
+		<picture src="teibou_A09.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{6A54F948-4074-497C-AC37-645B148E9B05}">
+		<picture src="teibou_A10.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{S5776500-11118-hana-C310-A0036A6ECDEB}">
+		<group>Water gate</group>
+		<price>250</price>
+		<size>1,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Flood Control Facilities"/>
+		</structure>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{09D398F8-5D83-4A7E-B1F9-9CF490C6E735}" />
+		</sprite>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{6A54F948-4074-497C-AC37-645B148E9B05}" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+	</contribution>
+	
+	<contribution type="picture" id="{7221EEAD-EEAF-422A-A388-B480FE1BD8D0}">
+		<picture src="teibou_A11.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{EE912303-150D-4212-92C9-A7FF68E5710D}">
+		<picture src="teibou_A12.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{S5776500-11118-hana-C312-A0036A6ECDEB}">
+		<group>Water gate</group>
+		<price>250</price>
+		<size>1,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Flood Control Facilities"/>
+		</structure>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{7221EEAD-EEAF-422A-A388-B480FE1BD8D0}" />
+		</sprite>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{EE912303-150D-4212-92C9-A7FF68E5710D}" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+	</contribution>
+
+</plug-in>

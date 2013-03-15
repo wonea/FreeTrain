@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+	<!ENTITY unmannedStation "
+		<group>Under-viaduct station (shinkansen)</group>
+		<price>200</price>
+		<height>1</height>
+		<operationCost>10</operationCost>
+	">
+]>
+<plug-in>
+	<title>Under-viaduct station</title>
+	<author>Hiro Ayase</author>
+	<homepage>http://www14.big.or.jp/~ayase/freetrain/</homepage>
+	
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-RailStructureImage-Station-02}">
+		<picture src="koukasita.bmp" origin="0,0" offset="16" />
+	</contribution>
+
+	
+	<contribution type="station" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-Station-02a}">
+		&unmannedStation;
+		<size>1,2</size>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-RailStructureImage-Station-02}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-Station-02b}">
+		&unmannedStation;
+		<size>2,1</size>
+		<sprite origin="48,0" offset="24">
+			<picture ref="{FreeTrain-AYASE-Hiro-RailStructureImage-Station-02}"/>
+		</sprite>
+	</contribution>
+</plug-in>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Road</title>
+	<!--!<title>道路</title>-->
+	<author>PC-9801FA</author>
+	<!--!<author>PC-9801FAさん</author>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="road" id="{8DB8AF0F-B615-4BC1-8160-9706FDF6FB6B}">
+		<class name="freetrain.contributions.road.A3RoadContribution" />
+		<name>Two-lane road</name>
+		<description>Road with two lanes</description>
+		<!--!<name>二車線道路</name>
+		<description>二車線の道路</description>-->
+		<picture src="a3road_d.bmp">
+			<override when="night" src="a3road_n.bmp"/>
+		</picture>
+	</contribution>
+</plug-in>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Nagoya Railroad Train Kit</title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+
+	<!-- 1000系先頭車両 -->
+	<contribution type="trainCar" id="{EB30F347-A83A-46e2-8E3B-35BAF50E96BC}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="Train_m1000a.bmp"/>
+                </sprite>
+		<capacity>56</capacity>
+	</contribution>
+	
+	<!-- 1000系中間車両 -->
+	<contribution type="trainCar" id="{EB30F347-A83A-46e2-8E3B-35BAF50E96BC}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="Train_m1000b.bmp"/>
+                </sprite>
+		<capacity>56</capacity>
+	</contribution>
+	
+	<!-- 1000系後尾車両 -->
+	<contribution type="trainCar" id="{EB30F347-A83A-46e2-8E3B-35BAF50E96BC}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{EB30F347-A83A-46e2-8E3B-35BAF50E96BC}-h"/>
+		<capacity>56</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{EB30F347-A83A-46e2-8E3B-35BAF50E96BC}">
+		<company>Nagoya Railroad</company>
+		<type>1000 Series</type>
+		<name>Panorama Super</name>
+		<author>477</author>
+		<description>昭和63年、7000系の後継車として登場した名鉄の看板車両。
+車内電話、飲料水販売機、ＬＥＤ式案内装置など
+車内設備も7000系に比べ格段に充実した特急専用車。
+先頭部ハイデッカー構造の展望席となっており(運転席は１階)
+パノラマsuperの愛称で呼ばれる。
+		</description>
+		<price>100</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{EB30F347-A83A-46e2-8E3B-35BAF50E96BC}-h"/>
+			<body carRef="{EB30F347-A83A-46e2-8E3B-35BAF50E96BC}-m"/>
+			<tail carRef="{EB30F347-A83A-46e2-8E3B-35BAF50E96BC}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 7500系先頭車両 -->
+	<contribution type="trainCar" id="{50313BB1-442B-4017-BB52-D158809C6724}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+                <sprite origin="0,0">
+ 		     <picture src="Train_m7500a.bmp"/>
+                </sprite>
+		<capacity>100</capacity>
+	</contribution>
+	
+	<!-- 7500系中間車両 -->
+	<contribution type="trainCar" id="{50313BB1-442B-4017-BB52-D158809C6724}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+		     <picture src="Train_m7500b.bmp"/>
+                </sprite>
+		<capacity>100</capacity>
+	</contribution>
+	
+	<!-- 7500系後尾車両 -->
+	<contribution type="trainCar" id="{50313BB1-442B-4017-BB52-D158809C6724}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{50313BB1-442B-4017-BB52-D158809C6724}-h"/>
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{50313BB1-442B-4017-BB52-D158809C6724}">
+		<company>Nagoya Railroad</company>
+		<type>7500 Series</type>
+		<name>Panorama Car</name>
+		<author>477</author>
+		<description>昭和38年、7000系をベースに定速度制御（現在は撤去）、
+回生ブレーキなど下回りを大幅に改良して登場。
+外見は7000系に似るが、低重心化のため床が低い。
+先頭車両に展望席を持ち、パノラマカーの愛称で呼ばれる。
+全Ｍ組成。
+		</description>
+		<price>100</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{50313BB1-442B-4017-BB52-D158809C6724}-h"/>
+			<body carRef="{50313BB1-442B-4017-BB52-D158809C6724}-m"/>
+			<tail carRef="{50313BB1-442B-4017-BB52-D158809C6724}-t"/>
+		</composition>
+	</contribution>
+
+
+</plug-in>

@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+
+<!ENTITY br-red '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="202,83,74"/>
+</spriteType>
+'>
+<!ENTITY br-green '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="83,172,173"/>
+</spriteType>
+'>
+<!ENTITY br-navyblue '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="75,101,143"/>
+</spriteType>
+'>
+<!ENTITY br-skyblue '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="189,217,221"/>
+</spriteType>
+'>
+<!ENTITY br-gray '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="190,185,170"/>
+</spriteType>
+'>
+<!ENTITY br-white '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="237,235,236"/>
+</spriteType>
+'>
+]>
+
+<plug-in>
+
+<title>Bridge</title>
+<author>Shikashika</author>
+<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+<!-- Warren truss brdige -->
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge1r-a}">
+<name>Bridge-truss1(red,front)</name>
+<sprite>&br-red;
+<picture src="r_a_trussbridge1a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge1r-b}">
+<name>Bridge-truss1(red,medium)</name>
+<sprite>&br-red;
+<picture src="r_a_trussbridge1b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge1r-c}">
+<name>Bridge-truss1(red,back)</name>
+<sprite>&br-red;
+<picture src="r_a_trussbridge1c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge1g-a}">
+<name>Bridge-truss1(green,front)</name>
+<sprite>&br-green;
+<picture src="r_a_trussbridge1a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge1g-b}">
+<name>Bridge-truss1(green,medium)</name>
+<sprite>&br-green;
+<picture src="r_a_trussbridge1b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge1g-c}">
+<name>Bridge-truss1(green,back)</name>
+<sprite>&br-green;
+<picture src="r_a_trussbridge1c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge1b-a}">
+<name>Bridge-truss1(indigo,front)</name>
+<sprite>&br-navyblue;
+<picture src="r_a_trussbridge1a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge1b-b}">
+<name>Bridge-truss1(indigo,medium)</name>
+<sprite>&br-navyblue;
+<picture src="r_a_trussbridge1b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge1b-c}">
+<name>Bridge-truss1(indigo,back)</name>
+<sprite>&br-navyblue;
+<picture src="r_a_trussbridge1c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge1s-a}">
+<name>Bridge-truss1(cyan,front)</name>
+<sprite>&br-skyblue;
+<picture src="r_a_trussbridge1a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge1s-b}">
+<name>Bridge-truss1(cyan,medium)</name>
+<sprite>&br-skyblue;
+<picture src="r_a_trussbridge1b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge1s-c}">
+<name>Bridge-truss1(cyan,back)</name>
+<sprite>&br-skyblue;
+<picture src="r_a_trussbridge1c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge1gr-a}">
+<name>Bridge-truss1(gray,front)</name>
+<sprite>&br-gray;
+<picture src="r_a_trussbridge1a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge1gr-b}">
+<name>Bridge-truss1(gray,medium)</name>
+<sprite>&br-gray;
+<picture src="r_a_trussbridge1b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge1gr-c}">
+<name>Bridge-truss1(gray,back)</name>
+<sprite>&br-gray;
+<picture src="r_a_trussbridge1c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge1w-a}">
+<name>Bridge-truss1(white,front)</name>
+<sprite>&br-white;
+<picture src="r_a_trussbridge1a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge1w-b}">
+<name>Bridge-truss1(white,medium)</name>
+<sprite>&br-white;
+<picture src="r_a_trussbridge1b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge1w-c}">
+<name>Bridge-truss1(white,back)</name>
+<sprite>&br-white;
+<picture src="r_a_trussbridge1c.bmp"/>
+</sprite></contribution>
+
+<!-- Warren(with virtical pier) trussBridge -->
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge2r-a}">
+<name>Bridge-truss2(red,front)</name>
+<sprite>&br-red;
+<picture src="r_a_trussbridge2a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge2r-b}">
+<name>Bridge-truss2(red,medium)</name>
+<sprite>&br-red;
+<picture src="r_a_trussbridge2b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge2r-c}">
+<name>Bridge-truss2(red,back)</name>
+<sprite>&br-red;
+<picture src="r_a_trussbridge2c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge2g-a}">
+<name>Bridge-truss2(green,front)</name>
+<sprite>&br-green;
+<picture src="r_a_trussbridge2a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge2g-b}">
+<name>Bridge-truss2(green,medium)</name>
+<sprite>&br-green;
+<picture src="r_a_trussbridge2b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge2g-c}">
+<name>Bridge-truss2(green,back)</name>
+<sprite>&br-green;
+<picture src="r_a_trussbridge2c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge2b-a}">
+<name>Bridge-truss2(indigo,front)</name>
+<sprite>&br-navyblue;
+<picture src="r_a_trussbridge2a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge2b-b}">
+<name>Bridge-truss2(indigo,medium)</name>
+<sprite>&br-navyblue;
+<picture src="r_a_trussbridge2b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge2b-c}">
+<name>Bridge-truss2(indigo,back)</name>
+<sprite>&br-navyblue;
+<picture src="r_a_trussbridge2c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge2s-a}">
+<name>Bridge-truss2(cyan,front)</name>
+<sprite>&br-skyblue;
+<picture src="r_a_trussbridge2a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge2s-b}">
+<name>Bridge-truss2(cyan,medium)</name>
+<sprite>&br-skyblue;
+<picture src="r_a_trussbridge2b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge2s-c}">
+<name>Bridge-truss2(cyan,back)</name>
+<sprite>&br-skyblue;
+<picture src="r_a_trussbridge2c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge2gr-a}">
+<name>Bridge-truss2(gray,front)</name>
+<sprite>&br-gray;
+<picture src="r_a_trussbridge2a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge2gr-b}">
+<name>Bridge-truss2(gray,medium)</name>
+<sprite>&br-gray;
+<picture src="r_a_trussbridge2b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge2gr-c}">
+<name>Bridge-truss2(gray,back)</name>
+<sprite>&br-gray;
+<picture src="r_a_trussbridge2c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge2w-a}">
+<name>Bridge-truss2(white,front)</name>
+<sprite>&br-white;
+<picture src="r_a_trussbridge2a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge2w-b}">
+<name>Bridge-truss2(white,medium)</name>
+<sprite>&br-white;
+<picture src="r_a_trussbridge2b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-trussbridge2w-c}">
+<name>Bridge-truss2(white,back)</name>
+<sprite>&br-white;
+<picture src="r_a_trussbridge2c.bmp"/>
+</sprite></contribution>
+
+<!-- Arch(loshe) Bridge -->
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-indigobridge1r-a}">
+<name>Bridge-loshe(red,front)</name>
+<sprite>&br-red;
+<picture src="r_a_indigobridge1a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-indigobridge1r-b}">
+<name>Bridge-loshe(red,medium)</name>
+<sprite>&br-red;
+<picture src="r_a_indigobridge1b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-indigobridge1r-c}">
+<name>Bridge-loshe(red,back)</name>
+<sprite>&br-red;
+<picture src="r_a_indigobridge1c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-indigobridge1g-a}">
+<name>Bridge-loshe(green,front)</name>
+<sprite>&br-green;
+<picture src="r_a_indigobridge1a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-indigobridge1g-b}">
+<name>Bridge-loshe(green,medium)</name>
+<sprite>&br-green;
+<picture src="r_a_indigobridge1b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-indigobridge1g-c}">
+<name>Bridge-loshe(green,back)</name>
+<sprite>&br-green;
+<picture src="r_a_indigobridge1c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-indigobridge1b-a}">
+<name>Bridge-loshe(indigo,front)</name>
+<sprite>&br-navyblue;
+<picture src="r_a_indigobridge1a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-indigobridge1b-b}">
+<name>Bridge-loshe(indigo,medium)</name>
+<sprite>&br-navyblue;
+<picture src="r_a_indigobridge1b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-indigobridge1b-c}">
+<name>Bridge-loshe(indigo,back)</name>
+<sprite>&br-navyblue;
+<picture src="r_a_indigobridge1c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-indigobridge1s-a}">
+<name>Bridge-loshe(cyan,front)</name>
+<sprite>&br-skyblue;
+<picture src="r_a_indigobridge1a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-indigobridge1s-b}">
+<name>Bridge-loshe(cyan,medium)</name>
+<sprite>&br-skyblue;
+<picture src="r_a_indigobridge1b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-indigobridge1s-c}">
+<name>Bridge-loshe(cyan,back)</name>
+<sprite>&br-skyblue;
+<picture src="r_a_indigobridge1c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-indigobridge1gr-a}">
+<name>Bridge-loshe(gray,front)</name>
+<sprite>&br-gray;
+<picture src="r_a_indigobridge1a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-indigobridge1gr-b}">
+<name>Bridge-loshe(gray,medium)</name>
+<sprite>&br-gray;
+<picture src="r_a_indigobridge1b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-indigobridge1gr-c}">
+<name>Bridge-loshe(gray,back)</name>
+<sprite>&br-gray;
+<picture src="r_a_indigobridge1c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-indigobridge1w-a}">
+<name>Bridge-loshe(white,front)</name>
+<sprite>&br-white;
+<picture src="r_a_indigobridge1a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-indigobridge1w-b}">
+<name>Bridge-loshe(white,medium)</name>
+<sprite>&br-white;
+<picture src="r_a_indigobridge1b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-indigobridge1w-c}">
+<name>Bridge-loshe(white,back)</name>
+<sprite>&br-white;
+<picture src="r_a_indigobridge1c.bmp"/>
+</sprite></contribution>
+
+<!-- GirderBridge -->
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-GirderBridge1gr-a}">
+<name>Bridge-girder1(gray,front)</name>
+<sprite>&br-gray;
+<picture src="r_a_girderbridge1a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-GirderBridge1gr-b}">
+<name>Bridge-girder1(gray,medium)</name>
+<sprite>&br-gray;
+<picture src="r_a_girderbridge1b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-GirderBridge1gr-c}">
+<name>Bridge-girder1(gray,back)</name>
+<sprite>&br-gray;
+<picture src="r_a_girderbridge1c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-GirderBridge1w-a}">
+<name>Bridge-girder1(white,front)</name>
+<sprite>&br-white;
+<picture src="r_a_girderbridge1a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-GirderBridge1w-b}">
+<name>Bridge-girder1(white,medium)</name>
+<sprite>&br-white;
+<picture src="r_a_girderbridge1b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-GirderBridge1w-c}">
+<name>Bridge-girder1(white,back)</name>
+<sprite>&br-white;
+<picture src="r_a_girderbridge1c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-GirderBridge2gr-a}">
+<name>Bridge-girder2(gray,front)</name>
+<sprite>&br-gray;
+<picture src="r_a_girderbridge2a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-GirderBridge2gr-b}">
+<name>Bridge-girder2(gray,medium)</name>
+<sprite>&br-gray;
+<picture src="r_a_girderbridge2b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-GirderBridge2gr-c}">
+<name>Bridge-girder2(gray,back)</name>
+<sprite>&br-gray;
+<picture src="r_a_girderbridge2c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-GirderBridge2w-a}">
+<name>Bridge-girder2(white,front)</name>
+<sprite>&br-white;
+<picture src="r_a_girderbridge2a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-GirderBridge2w-b}">
+<name>Bridge-girder2(white,medium)</name>
+<sprite>&br-white;
+<picture src="r_a_girderbridge2b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-GirderBridge2w-c}">
+<name>Bridge-girder2(white,back)</name>
+<sprite>&br-white;
+<picture src="r_a_girderbridge2c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-GirderBridge3gr-a}">
+<name>Bridge-girder3(gray,front)</name>
+<sprite>&br-gray;
+<picture src="r_a_girderbridge3a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-GirderBridge3gr-b}">
+<name>Bridge-girder3(gray,medium)</name>
+<sprite>&br-gray;
+<picture src="r_a_girderbridge3b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-GirderBridge3gr-c}">
+<name>Bridge-girder3(gray,back)</name>
+<sprite>&br-gray;
+<picture src="r_a_girderbridge3c.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-GirderBridge3w-a}">
+<name>Bridge-girder3(white,front)</name>
+<sprite>&br-white;
+<picture src="r_a_girderbridge3a.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-GirderBridge3w-b}">
+<name>Bridge-girder3(white,medium)</name>
+<sprite>&br-white;
+<picture src="r_a_girderbridge3b.bmp"/>
+</sprite></contribution>
+
+<contribution type="roadAccessory" id="{FreeTrain-Shika-Road-Accessory-GirderBridge3w-c}">
+<name>Bridge-girder3(white,back)</name>
+<sprite>&br-white;
+<picture src="r_a_girderbridge3c.bmp"/>
+</sprite></contribution>
+
+
+</plug-in>

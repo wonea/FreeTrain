@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<plug-in>
+	<title>JR東日本 車両キット</title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	<!-- 415系-->
+	<contribution type="trainCar" id="{0AD4AAB1-CBB4-418d-A5B1-1E1C93EF3184}">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="..\..\\trainshare\415.bmp" origin="0,0"/>
+		<capacity>95</capacity> 
+	</contribution>
+
+	<contribution type="train" id="{7930B221-9B08-4969-8832-19EA7D16164A}">
+		<company>JR東日本</company>
+		<type>415系</type>
+		<name>標準色</name>
+		<author>Minさん</author>
+		<speed>medium</speed>  
+		<description>主に常磐線を走る電車。交直流区間を走ることができる。</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{0AD4AAB1-CBB4-418d-A5B1-1E1C93EF3184}"/>
+		</composition>
+	</contribution>
+	
+	<!-- 165系-->
+	<contribution type="trainCar" id="{08989AC4-D372-42ec-98B1-F52CC826F6D0}">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="..\..\\trainshare\165syo.bmp" origin="0,0"/>
+		<capacity>90</capacity> 
+	</contribution>
+
+	<contribution type="train" id="{98FD607D-4A3F-484c-8557-486E7CF5FE52}">
+		<company>JR東日本</company>
+		<type>165系</type>
+		<name>湘南色</name>
+		<author>Minさん</author>
+		<speed>medium</speed>  
+		<description>急行型電車。現在この色での定期運用はないはず。</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{08989AC4-D372-42ec-98B1-F52CC826F6D0}"/>
+		</composition>
+	</contribution>
+	<!-- 485系先頭車両 -->
+	<contribution type="trainCar" id="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-h">
+		<class name="freetrain.framework.plugin.impl.AsymTrainCarImpl" />
+		<picture src="..\..\\trainshare\485a.bmp" origin="0,0"/>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 485系中間車両 -->
+	<contribution type="trainCar" id="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-m">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="..\..\\trainshare\485b.bmp" origin="0,0"/>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 485系後尾車両 -->
+	<contribution type="trainCar" id="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-t">
+		<class name="freetrain.framework.plugin.impl.ReverseTrainCarImpl" />
+		<base carRef="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-h"/>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}">
+		<company>JR東日本</company>
+		<type>485系</type>
+		<name>前面ボンネット無・いなほ等</name>
+		<author>暇</author>
+		<description>
+昭和43年に登場した交直両用特急電車。登場以来数々の特急の代名詞となった。塗色変更も多数行われ全国で運転されている。
+		</description>
+		<price>1</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-h"/>
+			<body carRef="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-m"/>
+			<tail carRef="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-t"/>
+		</composition>
+	</contribution>
+	
+	
+	
+	
+	<!-- 113系(横須賀線) -->
+	<contribution type="trainCar" id="{3BDE50C0-999A-4203-8FC6-C31C1E9A1F22}">
+		<class name="freetrain.framework.plugin.impl.ColoredTrainCarImpl" />
+		<colorMap picture="1" base="51,83,123" line1="227,227,179" line2="227,227,179" line3="0,0,0" />
+		<capacity>99</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{64F236E3-52C9-4f53-9B19-762445E26F5A}">
+		<company>JR東日本</company>
+		<type>113系</type>
+		<name>横須賀色</name>
+		<author>川口耕介さん</author>
+		<description>
+首都圏の各地で見られる車両。111系を出力増強した形式だが、E217系などの登場により活躍の場が減っている。
+		</description>
+
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{3BDE50C0-999A-4203-8FC6-C31C1E9A1F22}"/>
+		</composition>
+	</contribution>
+	
+	
+	
+	<!-- 113系(湘南色) -->
+	<contribution type="trainCar" id="{72BBFF84-714E-4f94-BCBD-B7261D285544}">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="113sho.bmp" origin="0,0"/>
+		<capacity>99</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{74783521-233A-4e40-8CDD-296816AF2D4A}">
+		<company>JR東日本</company>
+		<type>113系</type>
+		<name>湘南色</name>
+		<author>暇</author>
+		<description>
+JR東日本では主に東海道本線や御殿場線などで使用されている。
+		</description>
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{72BBFF84-714E-4f94-BCBD-B7261D285544}"/>
+		</composition>
+	</contribution>
+	
+	
+</plug-in>

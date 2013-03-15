@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!-- 1x1 Condo Parameters -->
+<!ENTITY smallMansion '
+		<group>Condo (1x1)</group>
+		<structure>
+			<category byname="Condominiums"/>
+		</structure>
+		<price>250</price>
+		<size>1,1</size>
+		<minHeight>2</minHeight>
+		<maxHeight>5</maxHeight>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>120</base>
+		</population>
+'>
+<!-- 2x2 Condo Parameters -->
+<!ENTITY middleMansion '
+		<group>Condo (2x2)</group>
+		<structure>
+			<category byname="Condominiums"/>
+		</structure>
+		<price>2900</price>
+		<size>2,2</size>
+		<minHeight>3</minHeight>
+		<maxHeight>10</maxHeight>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>500</base>
+		</population>
+'>
+<!-- Large Condo Parameters -->
+<!ENTITY largeMansion '
+		<group>Condo (3x2)</group>
+		<structure>
+			<category byname="Condominiums"/>
+		</structure>
+		<size>3,2</size>
+		<price>6200</price>
+		<minHeight>2</minHeight>
+		<maxHeight>8</maxHeight>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>1100</base>
+		</population>
+'>
+]>
+<plug-in>
+	<title>Condo Set</title>
+	<author>Miha</author>
+	<homepage>http://www5.ocn.ne.jp/~mihata/</homepage>
+	
+	<contribution type="picture" id="{74F42731-5B61-4D88-8F60-8CCFE9A73412}">
+		<picture src="makushisu.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{551BB418-4604-4fca-88AC-5F71068FE04A}">
+		<group>Condo (1x3)</group>
+		<design>Maxis Tower</design>
+		<structure>
+			<category byname="Condominiums"/>
+		</structure>
+		<price>2400</price>
+		<size>1,3</size>
+		<height>4</height>
+		<sprite origin="0,0" offset="65">
+			<picture ref="{74F42731-5B61-4D88-8F60-8CCFE9A73412}" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>250</base>
+		</population>
+	</contribution>
+	
+	<contribution type="picture" id="{6FAF9E6C-6AAF-4DE3-A9DD-600994FCA1B9}">
+		<picture src="saikaihatu.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{8BC1629A-BD98-462c-985A-CCD03F1B8C22}">
+		<group>Condo (2x2)</group>
+		<design>View Tower Hachioji</design>
+		<structure>
+			<category byname="Condominiums"/>			
+			<category byname="Stores" hide="true"/>
+			<category byname="Restaurants" hide="true"/>
+		</structure>
+		<price>2720</price>
+		<size>2,2</size>
+		<height>6</height>
+		<sprite origin="1,0" offset="104">
+			<picture ref="{6FAF9E6C-6AAF-4DE3-A9DD-600994FCA1B9}"/>
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>250</base>
+		</population>
+	</contribution>
+	
+	<contribution type="picture" id="{E70630D2-4649-4336-BBE8-842E0664326A}">
+		<picture src="mansyon.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{C7536844-7CD0-49e0-8982-2819F5792B32}">
+		&smallMansion;
+		<pictures>
+			<top    origin="  0,  0" offset="13">
+				<picture ref="{E70630D2-4649-4336-BBE8-842E0664326A}"/>
+			</top>
+			<middle origin="  0, 38" offset=" 7">
+				<picture ref="{E70630D2-4649-4336-BBE8-842E0664326A}"/>
+			</middle>
+			<bottom origin="  0, 70" offset=" 7">
+				<picture ref="{E70630D2-4649-4336-BBE8-842E0664326A}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 36,  0" offset="13">
+				<picture ref="{E70630D2-4649-4336-BBE8-842E0664326A}"/>
+			</top>
+			<middle origin=" 36, 38" offset=" 7">
+				<picture ref="{E70630D2-4649-4336-BBE8-842E0664326A}"/>
+			</middle>
+			<bottom origin=" 36, 70" offset=" 7">
+				<picture ref="{E70630D2-4649-4336-BBE8-842E0664326A}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{74915C78-348C-4696-8C19-75B9098FB79C}">
+		&smallMansion;
+		<pictures>
+			<top    origin=" 72,  0" offset="13">
+				<picture ref="{E70630D2-4649-4336-BBE8-842E0664326A}"/>
+			</top>
+			<middle origin=" 72, 38" offset=" 7">
+				<picture ref="{E70630D2-4649-4336-BBE8-842E0664326A}"/>
+			</middle>
+			<bottom origin=" 72, 70" offset=" 7">
+				<picture ref="{E70630D2-4649-4336-BBE8-842E0664326A}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="108,  0" offset="13">
+				<picture ref="{E70630D2-4649-4336-BBE8-842E0664326A}"/>
+			</top>
+			<middle origin="108, 38" offset=" 7">
+				<picture ref="{E70630D2-4649-4336-BBE8-842E0664326A}"/>
+			</middle>
+			<bottom origin="108, 70" offset=" 7">
+				<picture ref="{E70630D2-4649-4336-BBE8-842E0664326A}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+	<contribution type="picture" id="{FF966461-7818-4BE7-BDBC-CC23A38B0B96}">
+		<picture src="mansyon2.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{985CAC71-11BD-44b7-917E-D6D455CE0143}">
+		&middleMansion;
+		<pictures>
+			<top    origin="  0,  0" offset="34">
+				<picture ref="{FF966461-7818-4BE7-BDBC-CC23A38B0B96}"/>
+			</top>
+			<middle origin="  0, 57" offset=" 9">
+				<picture ref="{FF966461-7818-4BE7-BDBC-CC23A38B0B96}"/>
+			</middle>
+			<bottom origin="  0, 89" offset=" 9">
+				<picture ref="{FF966461-7818-4BE7-BDBC-CC23A38B0B96}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin=" 65,  0" offset="34">
+				<picture ref="{FF966461-7818-4BE7-BDBC-CC23A38B0B96}"/>
+			</top>
+			<middle origin=" 65, 57" offset=" 9">
+				<picture ref="{FF966461-7818-4BE7-BDBC-CC23A38B0B96}"/>
+			</middle>
+			<bottom origin=" 65, 89" offset=" 9">
+				<picture ref="{FF966461-7818-4BE7-BDBC-CC23A38B0B96}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+	<contribution type="picture" id="{EBCCE888-BCC7-4C65-8AEF-A6521C616DBD}">
+		<picture src="mansyon3.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{712E0D9A-1A79-4fd5-A1A5-B08B3336F047}">
+		&largeMansion;
+		<pictures>
+			<top    origin="  0,  0" offset="39">
+				<picture ref="{EBCCE888-BCC7-4C65-8AEF-A6521C616DBD}"/>
+			</top>
+			<middle origin="  0, 52" offset="18">
+				<picture ref="{EBCCE888-BCC7-4C65-8AEF-A6521C616DBD}"/>
+			</middle>
+			<bottom origin="  0, 84" offset="18">
+				<picture ref="{EBCCE888-BCC7-4C65-8AEF-A6521C616DBD}"/>
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top    origin=" 81,  0" offset="28">
+				<picture ref="{EBCCE888-BCC7-4C65-8AEF-A6521C616DBD}"/>
+			</top>
+			<middle origin=" 81, 52" offset="10">
+				<picture ref="{EBCCE888-BCC7-4C65-8AEF-A6521C616DBD}"/>
+			</middle>
+			<bottom origin=" 81, 84" offset="10">
+				<picture ref="{EBCCE888-BCC7-4C65-8AEF-A6521C616DBD}"/>
+			</bottom>
+		</pictures>
+	</contribution>	
+	
+</plug-in>

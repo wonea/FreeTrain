@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY hangar_L '
+		<price>1600</price>
+		<size>6,6</size>
+		<height>2</height>
+		<structure>
+			<category byname="Hangars"/>
+		</structure>	
+		<computerCannotBuild/>
+'>
+<!ENTITY hangar_M '
+		<price>1200</price>
+		<height>2</height>
+		<structure>
+			<category byname="Hangars"/>
+		</structure>	
+		<computerCannotBuild/>
+'>
+<!ENTITY crWhite '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="255,255,255"/>
+	</spriteType>	
+'>
+<!ENTITY crLtBlue '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="60,130,250"/>
+	</spriteType>	
+'>
+<!ENTITY crSkyBlue '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="0,180,230"/>
+	</spriteType>	
+'>
+<!ENTITY crDkGreen '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="0,190,60"/>
+	</spriteType>	
+'>
+
+]>
+
+<plug-in>
+	<title>Airport Hangars</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+
+	<contribution type="picture" id="{6B576D34-4544-4FB9-C477-6FA7DA640201}-01">
+		<picture src="airport_hangarL1.bmp"/>
+	</contribution>
+	<contribution type="picture" id="{6B576D34-4544-4FB9-C477-6FA7DA640201}-02">
+		<picture src="airport_hangarL2.bmp"/>
+	</contribution>
+	<contribution type="picture" id="{6B576D34-4544-4FB9-C477-6FA7DA640201}-03">
+		<picture src="airport_hangarM1.bmp"/>
+	</contribution>
+	<contribution type="picture" id="{6B576D34-4544-4FB9-C477-6FA7DA640201}-04">
+		<picture src="airport_hangarM2.bmp"/>
+	</contribution>
+		
+	<contribution type="GenericStructure" id="{1C33D56E-01ED-4ECA-C477-5C80C7E52854}-l1">
+		<group>Passenger plane hanger</group>
+		<design>big-A</design>
+		&hangar_L;
+		&crLtBlue;
+		&crSkyBlue;
+		&crWhite;
+		<sprite origin="0,128" offset="72">
+			<picture ref="{6B576D34-4544-4FB9-C477-6FA7DA640201}-01"/>
+		</sprite>		
+		<sprite origin="192,128" offset="72">
+			<picture ref="{6B576D34-4544-4FB9-C477-6FA7DA640201}-01"/>
+		</sprite>		
+		<sprite origin="0,0" offset="72">
+			<picture ref="{6B576D34-4544-4FB9-C477-6FA7DA640201}-01"/>
+		</sprite>		
+		<sprite origin="192,0" offset="72">
+			<picture ref="{6B576D34-4544-4FB9-C477-6FA7DA640201}-01"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{1C33D56E-01ED-4ECA-C477-5C80C7E52854}-l2">
+		<group>Passenger plane hanger</group>
+		<design>big-B</design>
+		&hangar_L;
+		&crLtBlue;
+		&crSkyBlue;
+		&crWhite;
+		<sprite origin="0,128" offset="72">
+			<picture ref="{6B576D34-4544-4FB9-C477-6FA7DA640201}-02"/>
+		</sprite>		
+		<sprite origin="192,128" offset="72">
+			<picture ref="{6B576D34-4544-4FB9-C477-6FA7DA640201}-02"/>
+		</sprite>		
+		<sprite origin="0,0" offset="72">
+			<picture ref="{6B576D34-4544-4FB9-C477-6FA7DA640201}-02"/>
+		</sprite>		
+		<sprite origin="192,0" offset="72">
+			<picture ref="{6B576D34-4544-4FB9-C477-6FA7DA640201}-02"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{1C33D56E-01ED-4ECA-C477-5C80C7E52854}-m1">
+		<group>Passenger plane hanger</group>
+		<design>medium-A</design>
+		&hangar_M;
+		&crLtBlue;
+		&crSkyBlue;
+		&crDkGreen;
+		<size>5,4</size>
+		<sprite origin="0,112" offset="64">
+			<picture ref="{6B576D34-4544-4FB9-C477-6FA7DA640201}-03"/>
+		</sprite>		
+		<sprite origin="144,112" offset="56" opposite="true">
+			<picture ref="{6B576D34-4544-4FB9-C477-6FA7DA640201}-03"/>
+		</sprite>		
+		<sprite origin="0,0" offset="64">
+			<picture ref="{6B576D34-4544-4FB9-C477-6FA7DA640201}-03"/>
+		</sprite>		
+		<sprite origin="144,0" offset="56" opposite="true">
+			<picture ref="{6B576D34-4544-4FB9-C477-6FA7DA640201}-03"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{1C33D56E-01ED-4ECA-C477-5C80C7E52854}-m2">
+		<group>Passenger plane hanger</group>
+		<design>medium-B</design>
+		&hangar_M;
+		<size>5,5</size>
+		&crLtBlue;
+		&crSkyBlue;
+		&crDkGreen;
+		<sprite origin="0,112" offset="64">
+			<picture ref="{6B576D34-4544-4FB9-C477-6FA7DA640201}-04"/>
+		</sprite>		
+		<sprite origin="160,112" offset="64">
+			<picture ref="{6B576D34-4544-4FB9-C477-6FA7DA640201}-04"/>
+		</sprite>		
+		<sprite origin="0,0" offset="64">
+			<picture ref="{6B576D34-4544-4FB9-C477-6FA7DA640201}-04"/>
+		</sprite>		
+		<sprite origin="160,0" offset="64">
+			<picture ref="{6B576D34-4544-4FB9-C477-6FA7DA640201}-04"/>
+		</sprite>		
+	</contribution>
+	
+</plug-in>

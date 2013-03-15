@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Soccer Stadium</title>
+	<!--!<title>サッカースタジアム</title>-->
+	<author>PremierSuki &amp; Kohsuke Kawaguchi</author>
+	<!--!<author>プレミア好きさん＆川口耕介</author>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="specialStructure" id="{458C17B4-9426-4060-97B5-9A7090664175}">
+		<class name="freetrain.world.soccerstadium.ContributionImpl"
+			codebase="bin/Debug/FreeTrain.SoccerStadium.dll" />
+	</contribution>
+	
+	<!--
+		スタジアムの建物コントリビューション。
+		勝手に建設されないようにcommercialではなくanonymous扱いにする
+	-->
+	<contribution type="anonymous" id="{0EB17496-838E-43c8-941F-896EAF9396AF}">
+		<class name="freetrain.world.soccerstadium.StructureContributionImpl"
+			codebase="bin/Debug/FreeTrain.SoccerStadium.dll" />
+		<name>Soccer Stadium</name>
+		<!--!<name>サッカースタジアム</name>-->
+		<price>2000000</price><!--680*4-->
+		<size>10,6</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="78">
+			<picture src="stadium.bmp">
+				<override when="night" src="stadium_n.bmp"/>
+			</picture>
+		</sprite>
+		<population>
+			<!-- スタジアムの集客性は特別なので特別な人口特性を実装 -->
+			<class name="freetrain.world.soccerstadium.PopulationImpl"
+				codebase="bin/Debug/FreeTrain.SoccerStadium.dll"/>
+		</population>
+	</contribution>
+
+	<contribution type="accountGenre" id="{2669F15B-66F2-4c77-8A48-1A20783EB9F5}">
+		<name>Soccer Team</name>
+		<!--!<name>サッカーチーム</name>-->
+	</contribution>
+</plug-in>

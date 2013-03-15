@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY cv_small_suburb '
+	<group>Convenience Stores (suburban)</group>
+	<structure>
+		<category byname="Convenience Stores"/>
+	</structure>
+	<price>180</price>
+	<size>2,1</size>
+	<height>1</height>
+	<population>
+		<!--Convenience Storesの客は電車ではこないだろうから、勤務者のみ登録-->
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>1</base>
+	</population>
+'>
+
+]>
+<plug-in>
+	<title>Convenience Stores</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+	<contribution type="picture" id="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}">
+		<picture src="conveni_s01.bmp">
+			<override when="night" src="conveni_s01_n.bmp" />
+		</picture>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{E853F67E-FA07-4365-C477-79EEA8EDA0F5}-0">
+		&cv_small_suburb;
+		<design>amqm</design>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="48,0" offset="16" opposite="true">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="96,0" offset="24">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="144,0" offset="16" opposite="true">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{E853F67E-FA07-4365-C477-79EEA8EDA0F5}-1">
+		&cv_small_suburb;
+		<design>Circle-J</design>
+		<sprite origin="0,40" offset="24">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="48,40" offset="16" opposite="true">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="96,40" offset="24">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="144,40" offset="16" opposite="true">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{E853F67E-FA07-4365-C477-79EEA8EDA0F5}-2">
+		&cv_small_suburb;
+		<design>Dailyshop</design>
+		<sprite origin="0,80" offset="24">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="48,80" offset="16" opposite="true">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="96,80" offset="24">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="144,80" offset="16" opposite="true">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{E853F67E-FA07-4365-C477-79EEA8EDA0F5}-3">
+		&cv_small_suburb;
+		<design>Fancymart</design>
+		<sprite origin="0,120" offset="24">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="48,120" offset="16" opposite="true">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="96,120" offset="24">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="144,120" offset="16" opposite="true">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{E853F67E-FA07-4365-C477-79EEA8EDA0F5}-4">
+		&cv_small_suburb;
+		<design>Rawson</design>
+		<sprite origin="0,160" offset="24">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="48,160" offset="16" opposite="true">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="96,160" offset="24">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="144,160" offset="16" opposite="true">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{E853F67E-FA07-4365-C477-79EEA8EDA0F5}-5">
+		&cv_small_suburb;
+		<design>Minishop</design>
+		<sprite origin="0,200" offset="24">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="48,200" offset="16" opposite="true">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="96,200" offset="24">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="144,200" offset="16" opposite="true">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{E853F67E-FA07-4365-C477-79EEA8EDA0F5}-6">
+		&cv_small_suburb;
+		<design>SevenEven</design>
+		<sprite origin="0,240" offset="24">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="48,240" offset="16" opposite="true">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="96,240" offset="24">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="144,240" offset="16" opposite="true">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{E853F67E-FA07-4365-C477-79EEA8EDA0F5}-7">
+		&cv_small_suburb;
+		<design>Santus</design>
+		<sprite origin="0,280" offset="24">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="48,280" offset="16" opposite="true">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="96,280" offset="24">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+		<sprite origin="144,280" offset="16" opposite="true">
+			<picture ref="{C1661A11-F8F4-4C9A-C477-A7AD0CEFC0D1}"/>
+		</sprite>
+	</contribution>
+</plug-in>

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+<author>Shikashika</author>
+<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+<depend on="shikashika.freetrain.traincar.locomotive"/>
+<depend on="shikashika.freetrain.traincar.passenger"/>
+<depend on="shikashika.freetrain.traincar.freight"/>
+
+<title>JR Hokkaido</title>
+
+<!-- 旅客列車の定義 -->
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-DD51-hokuto-Cassiopeia-1}">
+		<company>JR Hokkaido</company>
+		<type>DD 51</type>
+		<name>Casiopea</name>
+		<author>Shikashika</author>
+		<description>Diesel Locomotive DD51 (Hokutosei Color) hauls 2-Level Sleeper Train.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="0" ref="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-hokuto}"/>
+			<car char="1" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuronehuE26-1}"/>
+			<car char="2" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE26-1}"/>
+			<car char="3" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mashiE26-1}"/>
+			<car char="4" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-1}"/>
+			<car char="5" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-101}"/>
+			<car char="6" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-401}"/>
+			<car char="7" ref="{FreeTrain-Shika-PassengerCar-TrainCar-kahahuE26-1}"/>
+			<car char="8" ref="{FreeTrain-Shika-PassengerCar-TrainCar-kaya27-501}"/>
+
+			<composition>0</composition>
+			<composition>07</composition>
+			<composition>017</composition>
+			<composition>0137</composition>
+			<composition>01357</composition>
+			<composition>012357</composition>
+			<composition>0123567</composition>
+			<composition>01235647</composition>
+			<composition>001235647</composition>
+			<composition>0012356447</composition>
+			<composition>00123564447</composition>
+			<composition>001235644467</composition>
+			<composition>0012356444647</composition>
+			<composition>00123564446447</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-DD51-hokuto-Cassiopeia-2}">
+		<company>JR Hokkaido</company>
+		<type>DD 51</type>
+		<name>Casiopea (reserve)</name>
+		<author>Shikashika</author>
+		<description>Diesel Locomotive DD51 (Hokutosei Color) hauls 2-Level Sleeper Train. The power car has a Kaya27 in reserve.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="0" ref="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-hokuto}"/>
+			<car char="1" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuronehuE26-1}"/>
+			<car char="2" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE26-1}"/>
+			<car char="3" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mashiE26-1}"/>
+			<car char="4" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-1}"/>
+			<car char="5" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-101}"/>
+			<car char="6" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-401}"/>
+			<car char="7" ref="{FreeTrain-Shika-PassengerCar-TrainCar-kahahuE26-1}"/>
+			<car char="8" ref="{FreeTrain-Shika-PassengerCar-TrainCar-kaya27-501}"/>
+
+			<composition>0</composition>
+			<composition>08</composition>
+			<composition>018</composition>
+			<composition>0138</composition>
+			<composition>01358</composition>
+			<composition>012358</composition>
+			<composition>0123568</composition>
+			<composition>01235648</composition>
+			<composition>001235648</composition>
+			<composition>0012356448</composition>
+			<composition>00123564448</composition>
+			<composition>001235644468</composition>
+			<composition>0012356444648</composition>
+			<composition>00123564446448</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-ED79-0-Cassiopeia-1}">
+		<company>JR Hokkaido</company>
+		<type>ED 79</type>
+		<name>Casiopea</name>
+		<author>Shikashika</author>
+		<description>The ED79 hauls a 2-Level Sleeper Train on the Tsugaru Ikyou Line
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="0" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-ED79-0}"/>
+			<car char="1" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuronehuE26-1}"/>
+			<car char="2" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE26-1}"/>
+			<car char="3" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mashiE26-1}"/>
+			<car char="4" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-1}"/>
+			<car char="5" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-101}"/>
+			<car char="6" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-401}"/>
+			<car char="7" ref="{FreeTrain-Shika-PassengerCar-TrainCar-kahahuE26-1}"/>
+			<car char="8" ref="{FreeTrain-Shika-PassengerCar-TrainCar-kaya27-501}"/>
+
+			<composition>0</composition>
+			<composition>07</composition>
+			<composition>017</composition>
+			<composition>0137</composition>
+			<composition>01357</composition>
+			<composition>012357</composition>
+			<composition>0123567</composition>
+			<composition>01235647</composition>
+			<composition>012356447</composition>
+			<composition>0123564447</composition>
+			<composition>01235644467</composition>
+			<composition>012356444647</composition>
+			<composition>0123564446447</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-ED79-0-Cassiopeia-2}">
+		<company>JR Hokkaido</company>
+		<type>ED 79</type>
+		<name>Casiopea (reserve)</name>
+		<author>Shikashika</author>
+		<description>The ED79 hauls a 2-Level Sleeper Train on the Tsugaru Ikyou Line. The power car has a Kaya27 in reserve.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="0" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-ED79-0}"/>
+			<car char="1" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuronehuE26-1}"/>
+			<car char="2" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE26-1}"/>
+			<car char="3" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mashiE26-1}"/>
+			<car char="4" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-1}"/>
+			<car char="5" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-101}"/>
+			<car char="6" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-401}"/>
+			<car char="7" ref="{FreeTrain-Shika-PassengerCar-TrainCar-kahahuE26-1}"/>
+			<car char="8" ref="{FreeTrain-Shika-PassengerCar-TrainCar-kaya27-501}"/>
+
+			<composition>0</composition>
+			<composition>08</composition>
+			<composition>018</composition>
+			<composition>0138</composition>
+			<composition>01358</composition>
+			<composition>012358</composition>
+			<composition>0123568</composition>
+			<composition>01235648</composition>
+			<composition>012356448</composition>
+			<composition>0123564448</composition>
+			<composition>01235644468</composition>
+			<composition>012356444648</composition>
+			<composition>0123564446448</composition>
+		</config>
+	</contribution>
+
+<!-- 貨物列車の定義 -->
+
+</plug-in>

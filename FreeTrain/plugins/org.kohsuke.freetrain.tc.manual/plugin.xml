@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Manually-Operated Diagram</title>
+	<!--!<title>手動運転ダイヤグラム</title>-->
+	<author>Kohsuke Kawaguchi</author>
+	<!--!<author>川口耕介</author>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="trainController" id="{5567FE11-FC2C-4a1d-836F-722EF9DC957C}">
+		<class name="freetrain.world.rail.manualtc.TrainConrollerContributionImpl"
+			codebase="bin/Debug/FreeTrain.ManualTrainController.dll" />
+	</contribution>
+</plug-in>

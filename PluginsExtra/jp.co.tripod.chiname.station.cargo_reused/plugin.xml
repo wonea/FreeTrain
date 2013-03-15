@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+	<!ENTITY StationCargoReused '
+		<price>15</price>
+		<height>1</height>
+		<operationCost>1</operationCost>
+	'>
+	<!ENTITY crHalfSkyBlue '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="94,250,240"/>
+		<map from="0,0,*" to="0,0,255"/>
+	</spriteType>
+	'>
+	<!ENTITY crAllSkyBlue '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="94,250,240"/>
+		<map from="0,0,*" to="94,250,240"/>
+	</spriteType>
+	'>
+	<!ENTITY crGrape '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="120,88,124"/>
+	</spriteType>
+	'>
+	<!ENTITY crBlueLine '
+	<spriteType name="colorMapped">
+		<map from="49,55,53" to="55,49,51"/>
+		<map from="65,72,70" to="72,65,67"/>
+		<map from="34,37,36" to="37,34,34"/>
+		<map from="61,67,66" to="67,61,62"/>
+		<map from="98,109,106" to="109,98,100"/>
+		<map from="93,104,101" to="104,93,96"/>
+		<map from="116,128,125" to="128,116,119"/>
+		<map from="138,154,150" to="154,138,142"/>
+		<map from="139,154,151" to="154,139,143"/>
+		<map from="110,54,34" to="34,50,110"/>
+		<map from="130,144,141" to="144,130,133"/>
+		<map from="63,31,19" to="19,29,63"/>
+		<map from="203,100,63" to="63,93,203"/>
+		<map from="104,116,113" to="116,104,107"/>
+		<map from="92,46,29" to="29,42,92"/>
+		<map from="218,108,67" to="67,100,218"/>
+		<map from="90,44,28" to="28,41,90"/>
+		<map from="43,21,13" to="13,20,43"/>
+		<map from="133,66,41" to="41,61,133"/>
+		<map from="83,41,26" to="26,38,83"/>
+		<map from="207,102,64" to="64,95,207"/>
+		<map from="12,14,13" to="14,12,13"/>
+		<map from="16,18,18" to="18,16,17"/>
+		<map from="15,17,17" to="17,15,16"/>
+		<map from="25,27,27" to="27,25,25"/>
+		<map from="23,26,25" to="26,23,24"/>
+		<map from="29,32,31" to="32,29,30"/>
+		<map from="35,39,38" to="39,35,36"/>
+		<map from="28,14,9" to="9,13,28"/>
+		<map from="33,36,35" to="36,33,33"/>
+		<map from="16,8,5" to="5,7,16"/>
+		<map from="51,25,16" to="16,23,51"/>
+		<map from="26,29,28" to="29,26,27"/>
+		<map from="23,12,7" to="7,11,23"/>
+		<map from="55,27,17" to="17,25,55"/>
+		<map from="23,11,7" to="7,10,23"/>
+		<map from="11,5,3" to="3,5,11"/>
+		<map from="33,17,10" to="10,15,33"/>
+		<map from="21,10,7" to="7,10,21"/>
+		<map from="52,26,16" to="16,24,52"/>
+	</spriteType>
+	'>
+	<!ENTITY crSkyBlueLine '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="96,210,198"/>
+		<map from="0,*,0" to="160,255,250"/>
+	</spriteType>
+	'>
+	<!ENTITY crOrangeLine '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,255,255"/>
+		<map from="0,*,0" to="232,164,25"/>
+	</spriteType>
+	'>
+	<!ENTITY crGreenLine '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="20,196,20"/>
+		<map from="0,*,0" to="168,255,168"/>
+	</spriteType>
+	'>
+	<!ENTITY crCremeLine '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="247,241,213"/>
+		<map from="0,*,0" to="247,241,213"/>
+	</spriteType>
+	'>
+]>
+
+<plug-in>
+	<title>Boxcar recycled station</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+		
+	<contribution type="picture" id="{1F2DD8BC-F9C7-4AD0-C477-89777F7B02F1}">
+		<picture src="station_cargo01.bmp">
+			<override when="night" src="station_cargo01_n.bmp"/>
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="{E66A550F-A6E1-40A5-C477-3DC1CDE793C9}">
+		<picture src="station_cargo02.bmp">
+			<override when="night" src="station_cargo02_n.bmp"/>
+		</picture>
+	</contribution>
+	
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-a0">
+		<group>Boxcar recycled station (skyblue,A)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin=" 0, 0" offset="16">
+			&crAllSkyBlue;
+			<picture ref="{1F2DD8BC-F9C7-4AD0-C477-89777F7B02F1}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-a1">
+		<group>Boxcar recycled station (skyblue,A)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="32, 0" offset="16">
+			&crAllSkyBlue;
+			<picture ref="{1F2DD8BC-F9C7-4AD0-C477-89777F7B02F1}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-a2">
+		<group>Boxcar recycled station (skyblue,A)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="64, 0" offset="16">
+			&crAllSkyBlue;
+			<picture ref="{1F2DD8BC-F9C7-4AD0-C477-89777F7B02F1}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-a3">
+		<group>Boxcar recycled station (skyblue,A)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="96, 0" offset="16">
+			&crAllSkyBlue;
+			<picture ref="{1F2DD8BC-F9C7-4AD0-C477-89777F7B02F1}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-a4">
+		<group>Boxcar recycled station (2tone,A)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin=" 0, 0" offset="16">
+			&crHalfSkyBlue;
+			<picture ref="{1F2DD8BC-F9C7-4AD0-C477-89777F7B02F1}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-a5">
+		<group>Boxcar recycled station (2tone,A)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="32, 0" offset="16">
+			&crHalfSkyBlue;
+			<picture ref="{1F2DD8BC-F9C7-4AD0-C477-89777F7B02F1}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-a6">
+		<group>Boxcar recycled station (2tone,A)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="64, 0" offset="16">
+			&crHalfSkyBlue;
+			<picture ref="{1F2DD8BC-F9C7-4AD0-C477-89777F7B02F1}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-a7">
+		<group>Boxcar recycled station (2tone,A)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="96, 0" offset="16">
+			&crHalfSkyBlue;
+			<picture ref="{1F2DD8BC-F9C7-4AD0-C477-89777F7B02F1}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-b0">
+		<group>Boxcar recycled station (red-line,B)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin=" 0, 0" offset="16">
+			<picture ref="{E66A550F-A6E1-40A5-C477-3DC1CDE793C9}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-b1">
+		<group>Boxcar recycled station (red-line,B)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="32, 0" offset="16">
+			<picture ref="{E66A550F-A6E1-40A5-C477-3DC1CDE793C9}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-b2">
+		<group>Boxcar recycled station (red-line,B)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="64, 0" offset="16">
+			<picture ref="{E66A550F-A6E1-40A5-C477-3DC1CDE793C9}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-b3">
+		<group>Boxcar recycled station (red-line,B)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="96, 0" offset="16">
+			<picture ref="{E66A550F-A6E1-40A5-C477-3DC1CDE793C9}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-b4">
+		<group>Boxcar recycled station (blue-line,B)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin=" 0, 0" offset="16">
+			&crBlueLine;
+			<picture ref="{E66A550F-A6E1-40A5-C477-3DC1CDE793C9}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-b5">
+		<group>Boxcar recycled station (blue-line,B)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="32, 0" offset="16">
+			&crBlueLine;
+			<picture ref="{E66A550F-A6E1-40A5-C477-3DC1CDE793C9}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-b6">
+		<group>Boxcar recycled station (blue-line,B)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="64, 0" offset="16">
+			&crBlueLine;
+			<picture ref="{E66A550F-A6E1-40A5-C477-3DC1CDE793C9}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-b7">
+		<group>Boxcar recycled station (blue-line,B)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="96, 0" offset="16">
+			&crBlueLine;
+			<picture ref="{E66A550F-A6E1-40A5-C477-3DC1CDE793C9}" />
+		</sprite>
+	</contribution>
+
+	<!--第二弾-->
+		
+	<contribution type="picture" id="{4FBA987B-DD5D-4762-C477-F9E0AD2FFCB2}">
+		<picture src="station_cargo03.bmp">
+			<override when="night" src="station_cargo03_n.bmp"/>
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="{6354C733-6956-466C-C477-63FA39BF9689}">
+		<picture src="station_cargo04.bmp">
+			<override when="night" src="station_cargo04_n.bmp"/>
+		</picture>
+	</contribution>
+	
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-c0">
+		<group>Boxcar recycled station (orange-line,C)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin=" 0, 0" offset="16">
+			&crOrangeLine;
+			<picture ref="{4FBA987B-DD5D-4762-C477-F9E0AD2FFCB2}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-c1">
+		<group>Boxcar recycled station (orange-line,C)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="32, 0" offset="16">
+			&crOrangeLine;
+			<picture ref="{4FBA987B-DD5D-4762-C477-F9E0AD2FFCB2}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-c2">
+		<group>Boxcar recycled station (orange-line,C)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="64, 0" offset="16">
+			&crOrangeLine;
+			<picture ref="{4FBA987B-DD5D-4762-C477-F9E0AD2FFCB2}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-c3">
+		<group>Boxcar recycled station (orange-line,C)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="96, 0" offset="16">
+			&crOrangeLine;
+			<picture ref="{4FBA987B-DD5D-4762-C477-F9E0AD2FFCB2}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-c4">
+		<group>Boxcar recycled station (cyan-line,C)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin=" 0, 0" offset="16">
+			&crSkyBlueLine;
+			<picture ref="{4FBA987B-DD5D-4762-C477-F9E0AD2FFCB2}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-c5">
+		<group>Boxcar recycled station (cyan-line,C)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="32, 0" offset="16">
+			&crSkyBlueLine;
+			<picture ref="{4FBA987B-DD5D-4762-C477-F9E0AD2FFCB2}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-c6">
+		<group>Boxcar recycled station (cyan-line,C)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="64, 0" offset="16">
+			&crSkyBlueLine;
+			<picture ref="{4FBA987B-DD5D-4762-C477-F9E0AD2FFCB2}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-c7">
+		<group>Boxcar recycled station (cyan-line,C)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="96, 0" offset="16">
+			&crSkyBlueLine;
+			<picture ref="{4FBA987B-DD5D-4762-C477-F9E0AD2FFCB2}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-d0">
+		<group>Boxcar recycled station (green-line,D)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin=" 0, 0" offset="16">
+			&crGreenLine;
+			<picture ref="{6354C733-6956-466C-C477-63FA39BF9689}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-d1">
+		<group>Boxcar recycled station (green-line,D)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="32, 0" offset="16">
+			&crGreenLine;
+			<picture ref="{6354C733-6956-466C-C477-63FA39BF9689}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-d2">
+		<group>Boxcar recycled station (green-line,D)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="64, 0" offset="16">
+			&crGreenLine;
+			<picture ref="{6354C733-6956-466C-C477-63FA39BF9689}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-d3">
+		<group>Boxcar recycled station (green-line,D)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="96, 0" offset="16">
+			&crGreenLine;
+			<picture ref="{6354C733-6956-466C-C477-63FA39BF9689}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-d4">
+		<group>Boxcar recycled station (no-line,D)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin=" 0, 0" offset="16">
+			&crCremeLine;
+			<picture ref="{6354C733-6956-466C-C477-63FA39BF9689}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-d5">
+		<group>Boxcar recycled station (no-line,D)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="32, 0" offset="16">
+			&crCremeLine;
+			<picture ref="{6354C733-6956-466C-C477-63FA39BF9689}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-d6">
+		<group>Boxcar recycled station (no-line,D)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="64, 0" offset="16">
+			&crCremeLine;
+			<picture ref="{6354C733-6956-466C-C477-63FA39BF9689}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{66C569DC-6022-45D3-C477-595155F5AD3C}-d7">
+		<group>Boxcar recycled station (no-line,D)</group>
+		&StationCargoReused;
+		<size>1,1</size>
+		<sprite origin="96, 0" offset="16">
+			&crCremeLine;
+			<picture ref="{6354C733-6956-466C-C477-63FA39BF9689}" />
+		</sprite>
+	</contribution>
+
+</plug-in>

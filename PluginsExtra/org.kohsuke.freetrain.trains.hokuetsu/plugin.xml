@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Test</title>
+ 	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+
+	<!-- HK100 -->
+	<contribution type="trainCar" id="{A05DBEA1-6588-4CF6-A07B-551B12627C1D}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+                <sprite origin="0,0">
+  		     <picture src="hk100.bmp"/>
+                </sprite>
+		<capacity>133</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{601F4004-9318-417B-B027-9138F8D37C35}">
+		<company>Hokuetsu Express</company>
+		<type>HK100</type>
+		<name></name>
+		<author>T.Hara</author>
+		<description>
+高規格路線として設計されたほくほく線用に設計された車両。加速･ブレーキ性能に優れた車体である。
+		</description>
+		<price>1400</price>
+		<speed>fast</speed>
+		<composition>
+			<body carRef="{A05DBEA1-6588-4CF6-A07B-551B12627C1D}"/>
+		</composition>
+	</contribution>
+
+</plug-in>

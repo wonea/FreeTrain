@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Ferry</title>
+	<author>Shikashika</author>
+ 	<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 松大観光船 High Speed Vessel -->
+	<contribution type="picture" id="{FreeTrain-Ship-PassengerShip-picture-BlueShuttle}">
+		<picture src="BlueShuttle.bmp" />
+	</contribution>
+ 	<!-- 船舶定義 -->
+	<!-- 松大観光船 High Speed Vessel -->
+	<contribution type="trainCar" id="{FreeTrain-Ship-PassengerShip-Ship-BlueShuttle}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Ship-PassengerShip-picture-BlueShuttle}" />
+		</sprite>
+		<capacity>94</capacity>
+	</contribution>
+	<!-- 運航船舶の定義 -->
+	<contribution type="train" id="{FreeTrain-Ship-PassengerShip-Boat-BlueShuttle}">
+		<company>Matsudai Sightseeing</company>
+		<type>High Speed Vessel</type>
+		<name>Blue Shuttle</name>
+		<author>Shikashika</author>
+		<description>19 Ton, 94 Passengers, 68 Seats.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="B" ref="{FreeTrain-Ship-PassengerShip-Ship-BlueShuttle}"/>
+			
+			<composition>B</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- 松大観光船 フェリー -->
+	<contribution type="picture" id="{FreeTrain-Ship-PassengerShip-picture-itukushima}">
+		<picture src="itukushima.bmp" />
+	</contribution>
+ 	<!-- 船舶定義 -->
+	<!-- 松大観光船 フェリー -->
+	<contribution type="trainCar" id="{FreeTrain-Ship-PassengerShip-Ship-itukushima}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Ship-PassengerShip-picture-itukushima}" />
+		</sprite>
+		<capacity>350</capacity>
+	</contribution>
+	<!-- 運航船舶の定義 -->
+	<contribution type="train" id="{FreeTrain-Ship-PassengerShip-Ferry-itukushima}">
+		<company>Matsudai Sightseeing</company>
+		<type>Ferry</type>
+		<name>Itsukushima</name>
+		<author>Shikashika</author>
+		<description>Kamihara Shipbuilding, 197 Ton, 350 Passengers, 10 Small Cars
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="B" ref="{FreeTrain-Ship-PassengerShip-Ship-itukushima}"/>
+			
+			<composition>B</composition>
+		</config>
+	</contribution>
+
+	<!-- イメージ画像定義 --> 
+	<!-- JR連絡船 フェリー -->
+	<contribution type="picture" id="{FreeTrain-Ship-PassengerShip-picture-mishenmaru}">
+		<picture src="mishenmaru.bmp" />
+	</contribution>
+ 	<!-- 船舶定義 -->
+	<!-- JR連絡船 フェリー -->
+	<contribution type="trainCar" id="{FreeTrain-Ship-PassengerShip-Ship-mishenmaru}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{FreeTrain-Ship-PassengerShip-picture-mishenmaru}" />
+		</sprite>
+		<capacity>460</capacity>
+	</contribution>
+	<!-- 運航船舶の定義 -->
+	<contribution type="train" id="{FreeTrain-Ship-PassengerShip-Ferry-mishenmaru}">
+		<company>JR West</company>
+		<type>Ferry</type>
+		<name>Misen Maru</name>
+		<author>Shikashika</author>
+		<description>Naikai Shipbuilding, 218 Ton, 460 Passengers.
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="B" ref="{FreeTrain-Ship-PassengerShip-Ship-mishenmaru}"/>
+			
+			<composition>B</composition>
+		</config>
+	</contribution>
+
+</plug-in>

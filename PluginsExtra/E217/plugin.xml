@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<plug-in>
+  <title>E217 Series</title> 
+  <author>Itchy</author> 
+  <homepage>cyber_express_1703d@ybb.ne.jp</homepage> 
+<!-- E217先頭車 --> 
+　<contribution type="trainCar" id="{669D5BDE-23F1-43BD-AC36-B4B5A4-E217}-A">
+　<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="E217a.bmp" /> 
+  </sprite>
+  <capacity>142</capacity> 
+  </contribution>
+<!-- E217最後尾車 -->
+　<contribution type="trainCar" id="{669D5BDE-23F1-43BD-AC36-B4B5A4-E217}-B">
+　<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+  <base carRef="{669D5BDE-23F1-43BD-AC36-B4B5A4-E217}-A" />  
+  <capacity>142</capacity> 
+  </contribution> 
+<!--E217中間車-->
+　<contribution type="trainCar" id="{669D5BDE-23F1-43BD-AC36-B4B5A4-E217}-C">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="E217b.bmp" /> 
+  </sprite>
+  <capacity>162</capacity> 
+  </contribution>
+<!--E217G車-->
+　<contribution type="trainCar" id="{669D5BDE-23F1-43BD-AC36-B4B5A4-E217}-G">
+　<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+　<sprite origin="0,0">
+  <picture src="E217saro-w.bmp" /> 
+  </sprite>
+  <capacity>90</capacity> 
+  </contribution>
+
+  <contribution type="train" id="{669D5BDE-23F1-43BD-AC36-B4B5A4-E217-W}">
+<company>JR East</company>
+<type>E217 Series</type>
+<name>Sobu Rapid/Yokosuka Line</name>
+<author>Itchy</author>
+<description>This train was introduced to provide high-speed services for Sobu Rapid and
+Yokosuka Line to relieve the congestion there. On JR East's commuter route, it was the first
+to reach the speed of 120 km/h. Having a 209 Series style setup with four doors and long-
+seats, it also had a semi-closed carriage for long-distance commuters. On the Yokosuka line
+only, two two-floor 'Green Cars' were attached.
+Today, it runs on the Shonan-Shinjuku Line and stop at Shinjuku Station as well.
+There are three types of formations: 4 car, 11 car, and 15 car. The 4 car formation can be
+connected in sets of two or three to create 8 or 12 car formations.
+</description>
+<fare>700</fare>
+<price>60</price>
+<speed>fast</speed>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{669D5BDE-23F1-43BD-AC36-B4B5A4-E217}-A"/>
+<car char="中" ref="{669D5BDE-23F1-43BD-AC36-B4B5A4-E217}-C"/>
+<car char="後" ref="{669D5BDE-23F1-43BD-AC36-B4B5A4-E217}-B"/> 
+<car char="G" ref="{669D5BDE-23F1-43BD-AC36-B4B5A4-E217}-G"/> 
+<composition>前中中後</composition>
+<composition>前中中後前中中後</composition>
+<composition>前中中GG中中中中中後</composition>
+<composition>前中中後前中中後前中中後</composition>
+<composition>前中中後前中中GG中中中中中後</composition>
+</config>
+</contribution>
+</plug-in>

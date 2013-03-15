@@ -1,0 +1,775 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Railroad facilities</title>
+	<author>Hima, Ayase</author>
+	<homepage>http://suzukams.tripod.co.jp/FreeTrain/</homepage>
+	
+	<contribution type="picture" id="{75639857-5DB5-4fdd-9868-A30BE982BB99}">
+		<picture src="tsumesho1.bmp"/>
+	</contribution>
+	
+	<contribution type="railStationary" id="{75639857-5DB5-4fdd-9868-A30BE982BB99}-A">
+		<group>Station</group>
+		<price>80</price>
+		<size>1,2</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="12">
+			<picture ref="{75639857-5DB5-4fdd-9868-A30BE982BB99}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{75639857-5DB5-4fdd-9868-A30BE982BB99}-B">
+		<group>Station</group>
+		<price>80</price>
+		<size>1,2</size>
+		<height>1</height>
+		<sprite origin="48,0" offset="12">
+			<picture ref="{75639857-5DB5-4fdd-9868-A30BE982BB99}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{75639857-5DB5-4fdd-9868-A30BE982BB99}-C">
+		<group>Station</group>
+		<price>80</price>
+		<size>2,1</size>
+		<height>1</height>
+		<sprite origin="96,0" offset="19">
+			<picture ref="{75639857-5DB5-4fdd-9868-A30BE982BB99}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{75639857-5DB5-4fdd-9868-A30BE982BB99}-D">
+		<group>Station</group>
+		<price>80</price>
+		<size>2,1</size>
+		<height>1</height>
+		<sprite origin="144,0" offset="19">
+			<picture ref="{75639857-5DB5-4fdd-9868-A30BE982BB99}" />
+		</sprite>
+	</contribution>
+
+
+
+	<contribution type="picture" id="{E02D2B53-B41A-4071-9A4B-D63D20E84534}">
+		<picture src="kokakyoA1.bmp"/>
+	</contribution>
+	
+	<contribution type="railStationary" id="{E02D2B53-B41A-4071-9A4B-D63D20E84534}-A">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="20">
+			<picture ref="{E02D2B53-B41A-4071-9A4B-D63D20E84534}" />
+		</sprite>
+	</contribution>
+	
+
+	<contribution type="picture" id="{200306011157001}">
+		<picture src="kokakyoA1B.bmp"/>
+	</contribution>
+	
+	<contribution type="railStationary" id="{200306011157001}-A">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="20">
+			<picture ref="{200306011157001}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{200306011157001}-B">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="20">
+			<picture ref="{200306011157001}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{200306011157001}-C">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="64,0" offset="20">
+			<picture ref="{200306011157001}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{200306011157001}-D">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="96,0" offset="20">
+			<picture ref="{200306011157001}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{200306011157001}-E">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="128,0" offset="20">
+			<picture ref="{200306011157001}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{200306011157001}-F">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="160,0" offset="20">
+			<picture ref="{200306011157001}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{200306011157001}-G">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="192,0" offset="20">
+			<picture ref="{200306011157001}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{200306011157001}-H">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="224,0" offset="20">
+			<picture ref="{200306011157001}" />
+		</sprite>
+	</contribution>
+
+
+
+	<contribution type="picture" id="{D6CED176-6E27-4506-85B4-9952D5C4DEED}">
+		<picture src="kokakyoA2.bmp"/>
+	</contribution>
+	
+	<contribution type="railStationary" id="{D6CED176-6E27-4506-85B4-9952D5C4DEED}-A">
+		<group>Concrete elevated platform</group>
+		<price>50</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="37">
+			<picture ref="{D6CED176-6E27-4506-85B4-9952D5C4DEED}" />
+		</sprite>
+
+	</contribution>
+	
+
+	<contribution type="picture" id="{CFC253E0-0A2F-45be-8912-FCDBF51B3CD8}">
+		<picture src="kokakyoA2B.bmp"/>
+	</contribution>
+	
+	<contribution type="railStationary" id="{CFC253E0-0A2F-45be-8912-FCDBF51B3CD8}-A">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="37">
+			<picture ref="{CFC253E0-0A2F-45be-8912-FCDBF51B3CD8}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{CFC253E0-0A2F-45be-8912-FCDBF51B3CD8}-B">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="32,0" offset="37">
+			<picture ref="{CFC253E0-0A2F-45be-8912-FCDBF51B3CD8}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{CFC253E0-0A2F-45be-8912-FCDBF51B3CD8}-C">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="64,0" offset="37">
+			<picture ref="{CFC253E0-0A2F-45be-8912-FCDBF51B3CD8}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{CFC253E0-0A2F-45be-8912-FCDBF51B3CD8}-D">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="96,0" offset="37">
+			<picture ref="{CFC253E0-0A2F-45be-8912-FCDBF51B3CD8}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{CFC253E0-0A2F-45be-8912-FCDBF51B3CD8}-E">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="128,0" offset="37">
+			<picture ref="{CFC253E0-0A2F-45be-8912-FCDBF51B3CD8}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{CFC253E0-0A2F-45be-8912-FCDBF51B3CD8}-F">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="160,0" offset="37">
+			<picture ref="{CFC253E0-0A2F-45be-8912-FCDBF51B3CD8}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{CFC253E0-0A2F-45be-8912-FCDBF51B3CD8}-G">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="192,0" offset="37">
+			<picture ref="{CFC253E0-0A2F-45be-8912-FCDBF51B3CD8}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{CFC253E0-0A2F-45be-8912-FCDBF51B3CD8}-H">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="224,0" offset="37">
+			<picture ref="{CFC253E0-0A2F-45be-8912-FCDBF51B3CD8}" />
+		</sprite>
+	</contribution>
+
+
+
+
+
+
+
+
+	<contribution type="picture" id="{3044960A-56F4-43a4-923B-6049F933C619}">
+		<picture src="kokakyoB1.bmp"/>
+	</contribution>
+
+	
+	<contribution type="railStationary" id="{3044960A-56F4-43a4-923B-6049F933C619}-A">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="20">
+			<picture ref="{3044960A-56F4-43a4-923B-6049F933C619}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{3044960A-56F4-43a4-923B-6049F933C619}-B">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="20">
+			<picture ref="{3044960A-56F4-43a4-923B-6049F933C619}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{3044960A-56F4-43a4-923B-6049F933C619}-C">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="64,0" offset="20">
+			<picture ref="{3044960A-56F4-43a4-923B-6049F933C619}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{3044960A-56F4-43a4-923B-6049F933C619}-D">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="96,0" offset="20">
+			<picture ref="{3044960A-56F4-43a4-923B-6049F933C619}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{3044960A-56F4-43a4-923B-6049F933C619}-E">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="128,0" offset="20">
+			<picture ref="{3044960A-56F4-43a4-923B-6049F933C619}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{3044960A-56F4-43a4-923B-6049F933C619}-F">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="160,0" offset="20">
+			<picture ref="{3044960A-56F4-43a4-923B-6049F933C619}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{3044960A-56F4-43a4-923B-6049F933C619}-G">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="192,0" offset="20">
+			<picture ref="{3044960A-56F4-43a4-923B-6049F933C619}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{3044960A-56F4-43a4-923B-6049F933C619}-H">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="224,0" offset="20">
+			<picture ref="{3044960A-56F4-43a4-923B-6049F933C619}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{3044960A-56F4-43a4-923B-6049F933C619}-I">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="256,0" offset="20">
+			<picture ref="{3044960A-56F4-43a4-923B-6049F933C619}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{3044960A-56F4-43a4-923B-6049F933C619}-J">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="288,0" offset="20">
+			<picture ref="{3044960A-56F4-43a4-923B-6049F933C619}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="picture" id="{AAF3662D-C849-455f-B7AB-FF590BF409AC}">
+		<picture src="kokakyoB1B.bmp"/>
+	</contribution>
+	
+	<contribution type="railStationary" id="{AAF3662D-C849-455f-B7AB-FF590BF409AC}-A">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="20">
+			<picture ref="{AAF3662D-C849-455f-B7AB-FF590BF409AC}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{AAF3662D-C849-455f-B7AB-FF590BF409AC}-B">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="20">
+			<picture ref="{AAF3662D-C849-455f-B7AB-FF590BF409AC}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{AAF3662D-C849-455f-B7AB-FF590BF409AC}-C">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="64,0" offset="20">
+			<picture ref="{AAF3662D-C849-455f-B7AB-FF590BF409AC}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{AAF3662D-C849-455f-B7AB-FF590BF409AC}-D">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="96,0" offset="20">
+			<picture ref="{AAF3662D-C849-455f-B7AB-FF590BF409AC}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{AAF3662D-C849-455f-B7AB-FF590BF409AC}-E">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="128,0" offset="20">
+			<picture ref="{AAF3662D-C849-455f-B7AB-FF590BF409AC}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{AAF3662D-C849-455f-B7AB-FF590BF409AC}-F">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="160,0" offset="20">
+			<picture ref="{AAF3662D-C849-455f-B7AB-FF590BF409AC}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{AAF3662D-C849-455f-B7AB-FF590BF409AC}-G">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="192,0" offset="20">
+			<picture ref="{AAF3662D-C849-455f-B7AB-FF590BF409AC}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{AAF3662D-C849-455f-B7AB-FF590BF409AC}-H">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="224,0" offset="20">
+			<picture ref="{AAF3662D-C849-455f-B7AB-FF590BF409AC}" />
+		</sprite>
+	</contribution>
+
+
+
+
+
+	<contribution type="picture" id="{6E30E350-80B3-454e-B12B-AEB1976F0147}">
+		<picture src="kokakyoB2.bmp"/>
+	</contribution>
+	
+	<contribution type="railStationary" id="{6E30E350-80B3-454e-B12B-AEB1976F0147}-A">
+		<group>Concrete elevated platform</group>
+		<price>50</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="37">
+			<picture ref="{6E30E350-80B3-454e-B12B-AEB1976F0147}" />
+		</sprite>
+
+	</contribution>
+	
+	<contribution type="railStationary" id="{6E30E350-80B3-454e-B12B-AEB1976F0147}-B">
+		<group>Concrete elevated platform</group>
+		<price>50</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="32,0" offset="37">
+			<picture ref="{6E30E350-80B3-454e-B12B-AEB1976F0147}" />
+		</sprite>
+
+	</contribution>
+
+	<contribution type="railStationary" id="{6E30E350-80B3-454e-B12B-AEB1976F0147}-C">
+		<group>Concrete elevated platform</group>
+		<price>50</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="64,0" offset="37">
+			<picture ref="{6E30E350-80B3-454e-B12B-AEB1976F0147}" />
+		</sprite>
+
+	</contribution>
+
+	<contribution type="railStationary" id="{6E30E350-80B3-454e-B12B-AEB1976F0147}-D">
+		<group>Concrete elevated platform</group>
+		<price>50</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="96,0" offset="37">
+			<picture ref="{6E30E350-80B3-454e-B12B-AEB1976F0147}" />
+		</sprite>
+
+	</contribution>
+	<contribution type="railStationary" id="{6E30E350-80B3-454e-B12B-AEB1976F0147}-E">
+		<group>Concrete elevated platform</group>
+		<price>50</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="128,0" offset="37">
+			<picture ref="{6E30E350-80B3-454e-B12B-AEB1976F0147}" />
+		</sprite>
+
+	</contribution>
+
+	<contribution type="railStationary" id="{6E30E350-80B3-454e-B12B-AEB1976F0147}-F">
+		<group>Concrete elevated platform</group>
+		<price>50</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="160,0" offset="37">
+			<picture ref="{6E30E350-80B3-454e-B12B-AEB1976F0147}" />
+		</sprite>
+
+	</contribution>
+	<contribution type="railStationary" id="{6E30E350-80B3-454e-B12B-AEB1976F0147}-G">
+		<group>Concrete elevated platform</group>
+		<price>50</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="192,0" offset="37">
+			<picture ref="{6E30E350-80B3-454e-B12B-AEB1976F0147}" />
+		</sprite>
+
+	</contribution>
+	<contribution type="railStationary" id="{6E30E350-80B3-454e-B12B-AEB1976F0147}-H">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="224,0" offset="37">
+			<picture ref="{6E30E350-80B3-454e-B12B-AEB1976F0147}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{6E30E350-80B3-454e-B12B-AEB1976F0147}-I">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="256,0" offset="37">
+			<picture ref="{6E30E350-80B3-454e-B12B-AEB1976F0147}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{6E30E350-80B3-454e-B12B-AEB1976F0147}-J">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="288,0" offset="37">
+			<picture ref="{6E30E350-80B3-454e-B12B-AEB1976F0147}" />
+		</sprite>
+	</contribution>
+
+
+
+
+	<contribution type="picture" id="{30DCD867-290F-4bfa-B9BB-047B67126E46}">
+		<picture src="kokakyoB2B.bmp"/>
+	</contribution>
+	
+	<contribution type="railStationary" id="{30DCD867-290F-4bfa-B9BB-047B67126E46}-A">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="37">
+			<picture ref="{30DCD867-290F-4bfa-B9BB-047B67126E46}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{30DCD867-290F-4bfa-B9BB-047B67126E46}-B">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="32,0" offset="37">
+			<picture ref="{30DCD867-290F-4bfa-B9BB-047B67126E46}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{30DCD867-290F-4bfa-B9BB-047B67126E46}-C">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="64,0" offset="37">
+			<picture ref="{30DCD867-290F-4bfa-B9BB-047B67126E46}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{30DCD867-290F-4bfa-B9BB-047B67126E46}-D">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="96,0" offset="37">
+			<picture ref="{30DCD867-290F-4bfa-B9BB-047B67126E46}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{30DCD867-290F-4bfa-B9BB-047B67126E46}-E">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="128,0" offset="37">
+			<picture ref="{30DCD867-290F-4bfa-B9BB-047B67126E46}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{30DCD867-290F-4bfa-B9BB-047B67126E46}-F">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="160,0" offset="37">
+			<picture ref="{30DCD867-290F-4bfa-B9BB-047B67126E46}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{30DCD867-290F-4bfa-B9BB-047B67126E46}-G">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="192,0" offset="37">
+			<picture ref="{30DCD867-290F-4bfa-B9BB-047B67126E46}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{30DCD867-290F-4bfa-B9BB-047B67126E46}-H">
+		<group>Concrete elevated platform</group>
+		<price>30</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="224,0" offset="37">
+			<picture ref="{30DCD867-290F-4bfa-B9BB-047B67126E46}" />
+		</sprite>
+	</contribution>
+
+
+	
+
+	<contribution type="electricPole" id="{200306011051-0001}">
+		<name>Concrete Wall (Left)</name>
+		<sprite>
+			<picture src="WallAL.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{200306011051-0002}">
+		<name>Concrete Wall(Right)</name>
+		<sprite>
+			<picture src="WallAR.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{200306011051-0003}">
+		<name>Concrete Wall(Both Sides)</name>
+		<sprite>
+			<picture src="WallA.bmp"/>
+		</sprite>
+	</contribution>
+
+
+	<contribution type="electricPole" id="{200306011051-0004}">
+		<name>Steel wall and Catenary(Left)</name>
+		<sprite>
+			<picture src="WallAPL.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{200306011051-0005}">
+		<name>Steel wall and Catenary(Right)</name>
+		<sprite>
+			<picture src="WallAPR.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{200306011051-0006}">
+		<name>Steel wall and Catenary(Single)</name>
+		<sprite>
+			<picture src="WallAP.bmp"/>
+		</sprite>
+	</contribution>
+
+
+
+<!--新高架-->
+
+	<contribution type="electricPole" id="{200306011146-0001}">
+		<name>New Concrete Wall(Left)</name>
+		<sprite>
+			<picture src="WallBL.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{20030601146-0002}">
+		<name>New Concrete Wall(Right)</name>
+		<sprite>
+			<picture src="WallBR.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{200306011146-0003}">
+		<name>New Concrete Wall(Both)</name>
+		<sprite>
+			<picture src="WallB.bmp"/>
+		</sprite>
+	</contribution>
+
+
+	<contribution type="electricPole" id="{200306011146-0004}">
+		<name>Concrete Wall with Catenary(Left)</name>
+		<sprite>
+			<picture src="WallBPL.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{200306011146-0005}">
+		<name>Concrete Wall with Catenary(Right)</name>
+		<sprite>
+			<picture src="WallBPR.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{200306011146-0006}">
+		<name>Concrete Wall with Catenary(Single)</name>
+		<sprite>
+			<picture src="WallBP.bmp"/>
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{200306011146-0007}">
+		<name>Concrete Wall with Catenary(中)</name>
+		<sprite>
+			<picture src="WallBPC.bmp"/>
+		</sprite>
+	</contribution>
+
+
+	<contribution type="electricPole" id="{200306011051-0008}">
+		<name>Steel wall with Catenary(Left)</name>
+		<sprite>
+			<picture src="WallAP2L.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{200306011051-0009}">
+		<name>Steel wall with Catenary(Right)</name>
+		<sprite>
+			<picture src="WallAP2R.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{200306011051-0010}">
+		<name>Steel wall with Catenary(Single)</name>
+		<sprite>
+			<picture src="WallAP2.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{200306011051-0011}">
+		<name>Steel wall with Catenary(Double Left)</name>
+		<sprite>
+			<picture src="WallAP2WL.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{200306011051-0012}">
+		<name>Steel wall with Catenary(Double Right)</name>
+		<sprite>
+			<picture src="WallAP2WR.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{200306011051-0013}">
+		<name>Steel wall with Catenary(Middle)</name>
+		<sprite>
+			<picture src="WallAP2WC.bmp"/>
+		</sprite>
+	</contribution>
+</plug-in>

@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Gas Stations, Convenience Stores, etc.</title>
+	<author>Ken</author>
+	<homepage></homepage>
+
+	<contribution type="picture" id="{E6D105DA-77E2-41F0-9459-0FF29D5B81C6}">
+		<picture src="gs1.bmp"/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{3AAB6C26-8C58-4C8C-GSS1-94478B392AE7}-A">
+		<name>Gas Station</name>
+		<design>Nippon Oil SS</design>
+		<price>1500</price>
+		<size>1,2</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>16</base>
+		</population>
+		<structure>
+			<category byname="Gas Stations"/>
+		</structure>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{E6D105DA-77E2-41F0-9459-0FF29D5B81C6}"/>
+		</sprite>
+		<sprite origin="48,0" offset="24" opposite="true">
+			<picture ref="{E6D105DA-77E2-41F0-9459-0FF29D5B81C6}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{AE1549EB-F7F9-433F-GSS2-1E2A913013FF}-A">
+		<name>Gas Station</name>
+		<design>JOMO SS</design>
+		<price>1200</price>
+		<size>1,2</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>16</base>
+		</population>
+		<structure>
+			<category byname="Gas Stations"/>
+		</structure>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{E6D105DA-77E2-41F0-9459-0FF29D5B81C6}"/>
+		 <spriteType name="colorMapped">
+		   <map from="220,110,0" to="0,102,102"/>
+		   <map from="238,68,0" to="0,153,153"/>
+		 </spriteType>
+		</sprite>
+		<sprite origin="48,0" offset="24" opposite="true">
+			<picture ref="{E6D105DA-77E2-41F0-9459-0FF29D5B81C6}"/>
+		 <spriteType name="colorMapped">
+		   <map from="220,110,0" to="0,102,102"/>
+		   <map from="238,68,0" to="0,153,153"/>
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{52B9BF4A-7AB7-4828-GSS3-249A1A149A24}-A">
+		<name>Gas Station</name>
+		<design>Shell GS</design>
+		<price>1200</price>
+		<size>1,2</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>15</base>
+		</population>
+		<structure>
+			<category byname="Gas Stations"/>
+		</structure>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{E6D105DA-77E2-41F0-9459-0FF29D5B81C6}"/>
+		 <spriteType name="colorMapped">
+		   <map from="220,110,0" to="255,255,0"/>
+		   <map from="0,8,0" to="8,0,0"/>
+		   <map from="251,251,247" to="255,255,255"/>
+		   <map from="238,68,0" to="255,255,0"/>
+		 </spriteType>
+		</sprite>
+		<sprite origin="48,0" offset="24" opposite="true">
+			<picture ref="{E6D105DA-77E2-41F0-9459-0FF29D5B81C6}"/>
+		 <spriteType name="colorMapped">
+		   <map from="220,110,0" to="255,255,0"/>
+		   <map from="0,8,0" to="8,0,0"/>
+		   <map from="251,251,247" to="255,255,255"/>
+		   <map from="238,68,0" to="255,255,0"/>
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+	<contribution type="picture" id="{AD89EA02-301A-4B5F-A835-8F3385BDF006}">
+		<picture src="gs2.bmp"/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{3AAB6C26-8C58-4C8C-GSS4-94478B392AE7}-A">
+		<name>Gas Station</name>
+		<design>Cosmo Oil SS</design>
+		<price>1500</price>
+		<size>1,2</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>16</base>
+		</population>
+		<structure>
+			<category byname="Gas Stations"/>
+		</structure>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{AD89EA02-301A-4B5F-A835-8F3385BDF006}"/>
+		</sprite>
+		<sprite origin="48,0" offset="24" opposite="true">
+			<picture ref="{AD89EA02-301A-4B5F-A835-8F3385BDF006}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="picture" id="{EBADE9C9-F58D-42A9-B92B-2EA5E62F48B8}">
+		<picture src="gs3.bmp"/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{52B9BF4A-7AB7-4828-GSS5-249A1A149A24}-A">
+		<name>Gas Station</name>
+		<design>Mobil GS</design>
+		<price>1200</price>
+		<size>1,2</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>15</base>
+		</population>
+		<structure>
+			<category byname="Gas Stations"/>
+		</structure>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{EBADE9C9-F58D-42A9-B92B-2EA5E62F48B8}"/>
+		</sprite>
+		<sprite origin="48,0" offset="24" opposite="true">
+			<picture ref="{EBADE9C9-F58D-42A9-B92B-2EA5E62F48B8}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="picture" id="{317EF77D-E74E-47BC-9B66-0EBF7FEB0267}">
+		<picture src="cardr1.bmp"/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{7EDDCD3E-C592-4692-CDR1-9603E8E6CF18}-A">
+		<name>Car Dealers</name>
+		<design>Car Dealer (Red)</design>
+		<price>1500</price>
+		<size>1,2</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>20</base>
+		</population>
+		<structure>
+			<category byname="Car Dealers"/>
+		</structure>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{317EF77D-E74E-47BC-9B66-0EBF7FEB0267}"/>
+		</sprite>
+		<sprite origin="48,0" offset="24" opposite="true">
+			<picture ref="{317EF77D-E74E-47BC-9B66-0EBF7FEB0267}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{7EDDCD3E-C592-4692-CDR2-9603E8E6CF18}-A">
+		<name>Car Dealers</name>
+		<design>Car Dealer (Dark Blue)</design>
+		<price>1500</price>
+		<size>1,2</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>20</base>
+		</population>
+		<structure>
+			<category byname="Car Dealers"/>
+		</structure>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{317EF77D-E74E-47BC-9B66-0EBF7FEB0267}"/>
+		 <spriteType name="colorMapped">
+		   <map from="237,0,0" to="0,0,128"/>
+		 </spriteType>
+		</sprite>
+		<sprite origin="48,0" offset="24" opposite="true">
+			<picture ref="{317EF77D-E74E-47BC-9B66-0EBF7FEB0267}"/>
+		 <spriteType name="colorMapped">
+		   <map from="237,0,0" to="0,0,128"/>
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{7EDDCD3E-C592-4692-CDR3-9603E8E6CF18}-A">
+		<name>Car Dealers</name>
+		<design>Car Dealer (Green)</design>
+		<price>1500</price>
+		<size>1,2</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>20</base>
+		</population>
+		<structure>
+			<category byname="Car Dealers"/>
+		</structure>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{317EF77D-E74E-47BC-9B66-0EBF7FEB0267}"/>
+		 <spriteType name="colorMapped">
+		   <map from="237,0,0" to="0,128,128"/>
+		 </spriteType>
+		</sprite>
+		<sprite origin="48,0" offset="24" opposite="true">
+			<picture ref="{317EF77D-E74E-47BC-9B66-0EBF7FEB0267}"/>
+		 <spriteType name="colorMapped">
+		   <map from="237,0,0" to="0,128,128"/>
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{7EDDCD3E-C592-4692-CDR4-9603E8E6CF18}-A">
+		<name>Car Dealers</name>
+		<design>Car Dealer (Blue)</design>
+		<price>1500</price>
+		<size>1,2</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>20</base>
+		</population>
+		<structure>
+			<category byname="Car Dealers"/>
+		</structure>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{317EF77D-E74E-47BC-9B66-0EBF7FEB0267}"/>
+		 <spriteType name="colorMapped">
+		   <map from="237,0,0" to="0,0,255"/>
+		 </spriteType>
+		</sprite>
+		<sprite origin="48,0" offset="24" opposite="true">
+			<picture ref="{317EF77D-E74E-47BC-9B66-0EBF7FEB0267}"/>
+		 <spriteType name="colorMapped">
+			<map from="237,0,0" to="0,0,255"/>
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+
+	<contribution type="picture" id="{5AAB6C26-8C58-4C8C-8B46-94478B392AE7}">
+		<picture src="yubin1.bmp"/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{C193B660-3BFC-4F7C-BF2F-449BCED5AE9E}-A">
+		<name>Post Office</name>
+		<design>Small Post Office</design>
+		<price>500</price>
+		<size>1,2</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>20</base>
+		</population>
+		<structure>
+			<category byname="Post Offices"/>
+		</structure>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{5AAB6C26-8C58-4C8C-8B46-94478B392AE7}"/>
+		</sprite>
+		<sprite origin="48,0" offset="24" opposite="true">
+			<picture ref="{5AAB6C26-8C58-4C8C-8B46-94478B392AE7}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="picture" id="{E647843E-FCDC-400D-8DF6-CDE4800CACFD}">
+		<picture src="yubin2.bmp"/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{3AAB6C26-8C58-4C8C-YUB2-94478B392AE7}-A">
+		<name>Post Office</name>
+		<design>Large Post Office</design>
+		<price>1000</price>
+		<size>1,2</size>
+		<height>2</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>35</base>
+		</population>
+		<structure>
+			<category byname="Post Offices"/>
+		</structure>
+		<sprite origin="0,0" offset="19">
+			<picture ref="{E647843E-FCDC-400D-8DF6-CDE4800CACFD}"/>
+		</sprite>
+		<sprite origin="48,0" offset="27" opposite="true">
+			<picture ref="{E647843E-FCDC-400D-8DF6-CDE4800CACFD}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="picture" id="{4050A306-4D36-429F-B109-0AAAB6307EC2}">
+		<picture src="con2.bmp" >
+			<override when="night" src="con2n.bmp" />
+		</picture>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{568195AB-CEB3-42E9-CON2-5422C86D4DE9}-A">
+		<name>Convenience Stores</name>
+		<design>Lawson</design>
+		<price>700</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>25</base>
+		</population>
+		<structure>
+			<category byname="Convenience Stores"/>
+		</structure>
+		<sprite origin="0,0" offset="10">
+			<picture ref="{4050A306-4D36-429F-B109-0AAAB6307EC2}"/>
+		</sprite>
+		<sprite origin="32,0" offset="10">
+			<picture ref="{4050A306-4D36-429F-B109-0AAAB6307EC2}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="picture" id="{EACF1710-5CE9-44AC-8807-B76233C44258}">
+		<picture src="con1.bmp" >
+			<override when="night" src="con1n.bmp" />
+		</picture>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{EA3F5C47-D1EF-41A9-CON1-641E6CFEE22B}-A">
+		<name>Convenience Stores</name>
+		<design>Three F</design>
+		<price>700</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>25</base>
+		</population>
+		<structure>
+			<category byname="Convenience Stores"/>
+		</structure>
+		<sprite origin="0,0" offset="10">
+			<picture ref="{EACF1710-5CE9-44AC-8807-B76233C44258}"/>
+		</sprite>
+		<sprite origin="32,0" offset="10">
+			<picture ref="{EACF1710-5CE9-44AC-8807-B76233C44258}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="picture" id="{4DC846EA-50E4-461A-AAFB-17BF0251382A}">
+		<picture src="con6.bmp" >
+			<override when="night" src="con6n.bmp" />
+		</picture>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{578195AB-CEB3-42E9-CON6-5422C86D4DC5}-A">
+		<name>Convenience Stores</name>
+		<design>a m p m</design>
+		<price>700</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>22</base>
+		</population>
+		<structure>
+			<category byname="Convenience Stores"/>
+		</structure>
+		<sprite origin="0,0" offset="10">
+			<picture ref="{4DC846EA-50E4-461A-AAFB-17BF0251382A}"/>
+		</sprite>
+		<sprite origin="32,0" offset="10">
+			<picture ref="{4DC846EA-50E4-461A-AAFB-17BF0251382A}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="picture" id="{7FA80C27-1015-4D7D-87A3-B054630473DC}">
+		<picture src="con4.bmp" >
+			<override when="night" src="con4n.bmp" />
+		</picture>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{578195AB-CEB3-42E9-CON4-5422C86D4DC5}-A">
+		<name>Convenience Stores</name>
+		<design>MINISTOP</design>
+		<price>700</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>23</base>
+		</population>
+		<structure>
+			<category byname="Convenience Stores"/>
+		</structure>
+		<sprite origin="0,0" offset="10">
+			<picture ref="{7FA80C27-1015-4D7D-87A3-B054630473DC}"/>
+		</sprite>
+		<sprite origin="32,0" offset="10">
+			<picture ref="{7FA80C27-1015-4D7D-87A3-B054630473DC}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="picture" id="{14BB6ED7-129E-40D4-9DB7-DA4F2C7B3271}">
+		<picture src="con5.bmp" >
+			<override when="night" src="con5n.bmp" />
+		</picture>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{578195AB-CEB3-42E9-CON5-5422C86D4DC5}-A">
+		<name>Convenience Stores</name>
+		<design>CircleK</design>
+		<price>700</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>22</base>
+		</population>
+		<structure>
+			<category byname="Convenience Stores"/>
+		</structure>
+		<sprite origin="0,0" offset="10">
+			<picture ref="{14BB6ED7-129E-40D4-9DB7-DA4F2C7B3271}"/>
+		</sprite>
+		<sprite origin="32,0" offset="10">
+			<picture ref="{14BB6ED7-129E-40D4-9DB7-DA4F2C7B3271}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="picture" id="{EA19EBB2-5331-4BDA-823E-51656A987D8E}">
+		<picture src="con3.bmp" >
+			<override when="night" src="con3n.bmp" />
+		</picture>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{568195AB-CEB3-42E9-CON3-5422C86D4DC5}-A">
+		<name>Convenience Stores</name>
+		<design>Sunkus</design>
+		<price>700</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>23</base>
+		</population>
+		<structure>
+			<category byname="Convenience Stores"/>
+		</structure>
+		<sprite origin="0,0" offset="10">
+			<picture ref="{EA19EBB2-5331-4BDA-823E-51656A987D8E}"/>
+		</sprite>
+		<sprite origin="32,0" offset="10">
+			<picture ref="{EA19EBB2-5331-4BDA-823E-51656A987D8E}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="picture" id="{959C8B86-DD92-4555-B776-AC9CCB563A7B}">
+		<picture src="con7.bmp" >
+			<override when="night" src="con7n.bmp" />
+		</picture>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{578195AB-CEB3-42E9-CON7-5422C86D4DC5}-A">
+		<name>Convenience Stores</name>
+		<design>Daily Yamazaki</design>
+		<price>600</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>20</base>
+		</population>
+		<structure>
+			<category byname="Convenience Stores"/>
+		</structure>
+		<sprite origin="0,0" offset="10">
+			<picture ref="{959C8B86-DD92-4555-B776-AC9CCB563A7B}"/>
+		</sprite>
+		<sprite origin="32,0" offset="10">
+			<picture ref="{959C8B86-DD92-4555-B776-AC9CCB563A7B}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="picture" id="{FB569081-0309-4E3F-ACAC-954B530502C6}">
+		<picture src="rest1.bmp"/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{3AAB6C26-8C58-4C8C-RES1-94478B392AE7}-A">
+		<name>Restaurants</name>
+		<design>Restaurant</design>
+		<price>1000</price>
+		<size>1,2</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>50</base>
+		</population>
+		<structure>
+			<category byname="Restaurants"/>
+		</structure>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{FB569081-0309-4E3F-ACAC-954B530502C6}"/>
+		</sprite>
+		<sprite origin="48,0" offset="24" opposite="true">
+			<picture ref="{FB569081-0309-4E3F-ACAC-954B530502C6}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="picture" id="{79B1835F-2206-4065-9259-68C8C1B02FE8}">
+		<picture src="messe2.bmp"/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{3AAB6C26-8C58-4C8C-MES1-94478B392AE7}-A">
+		<name>Exhibition Halls</name>
+		<design>Fair</design>
+		<price>5000</price>
+		<size>1,2</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>2500</base>
+		</population>
+		<structure>
+			<category byname="Exhibition Halls"/>
+		</structure>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{79B1835F-2206-4065-9259-68C8C1B02FE8}"/>
+		</sprite>
+		<sprite origin="48,0" offset="24" opposite="true">
+			<picture ref="{79B1835F-2206-4065-9259-68C8C1B02FE8}"/>
+		</sprite>
+		<sprite origin="96,0" offset="16">
+			<picture ref="{79B1835F-2206-4065-9259-68C8C1B02FE8}"/>
+		</sprite>
+		<sprite origin="144,0" offset="24" opposite="true">
+			<picture ref="{79B1835F-2206-4065-9259-68C8C1B02FE8}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{3AAB6C26-8C58-4C8C-MES1-94478B392AE7}-E">
+		<name>Exhibition Halls</name>
+		<design>Fair</design>
+		<price>5000</price>
+		<size>1,2</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>2500</base>
+		</population>
+		<structure>
+			<category byname="Exhibition Halls"/>
+		</structure>
+		<sprite origin="192,0" offset="16">
+			<picture ref="{79B1835F-2206-4065-9259-68C8C1B02FE8}"/>
+		</sprite>
+		<sprite origin="240,0" offset="24" opposite="true">
+			<picture ref="{79B1835F-2206-4065-9259-68C8C1B02FE8}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{3AAB6C26-8C58-4C8C-MES1-94478B392AE7}-G">
+		<name>Exhibition Halls</name>
+		<design>Fair</design>
+		<price>5000</price>
+		<size>1,2</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>2500</base>
+		</population>
+		<structure>
+			<category byname="Exhibition Halls"/>
+		</structure>
+		<sprite origin="288,0" offset="16">
+			<picture ref="{79B1835F-2206-4065-9259-68C8C1B02FE8}"/>
+		</sprite>
+		<sprite origin="336,0" offset="24" opposite="true">
+			<picture ref="{79B1835F-2206-4065-9259-68C8C1B02FE8}"/>
+		</sprite>
+	</contribution>
+</plug-in>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Debug Info Window</title>
+	<!--!<title>デバッグ情報ウィンドウ</title>-->
+	<author>Kohsuke Kawaguchi</author>
+	<!--!<author>川口耕介</author>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="dockingContent" id="{4B81E56F-3F64-420C-9CB6-CF7DDB0EACF3}">
+		<name>Debug Window</name>
+		<menu name="Debug Window" location="view" />
+		<!--!<name>デバッグ情報</name>
+		<menu name="デバッグ情報" location="view" />-->
+		<class name="freetrain.views.debug.TraceWindow"
+			codebase="bin/Debug/FreeTrain.DebugWindow.dll" />
+	</contribution>
+</plug-in>

@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>FreeTrain-Sousaku Kan, pictures</title>
+	<author>haru</author>
+	<homepage>http://hb4.seikyou.ne.jp/home/Go-Ro/FreeTrain/</homepage>
+
+
+
+
+<!-- Cafe -->	
+	<contribution type="picture" id="{CfeS_001-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="CfeS_001.bmp"/>
+	</contribution>
+
+
+<!-- Rental office building 1 -->	
+	<contribution type="picture" id="{vhbi_001-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="vhbi_001.bmp">
+			<override when="night" src="vhbi_001n.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Single house (home_001) -->	
+	<contribution type="picture" id="{home_001-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="home_001.bmp"/>
+	</contribution>
+
+
+<!-- Tower of the Sun -->	
+	<contribution type="picture" id="{885A55E5-F548-1276-83FD-001854178F24}">
+		<picture src="taiyo.bmp">
+		 	<override when="summer" src="taiyo_SUM.bmp" />
+		 	<override when="autumn" src="taiyo_AUT.bmp" />
+			<override when="winter" src="taiyo_WIN.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- 2-lane road slope -->
+	<contribution type="picture" id="{slope_a3road_d-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="slope_a3road_d.bmp">
+			<override when="night" src="slope_a3road_n.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Apartment -->	
+	<contribution type="picture" id="{Apartment_001-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="Apartment_001.bmp">
+			<override when="winter" src="Apartment_001_WIN.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Small-scale factory -->	
+	<contribution type="picture" id="{factory_001-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="factory_001.bmp">
+			<override when="night" src="factory_001n.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Multi purpose warehouse -->	
+	<contribution type="picture" id="{warehouse_001-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="warehouse_001.bmp"/>
+	</contribution>
+
+
+<!-- Farm -->
+	<contribution type="picture" id="{FarmStr_001-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="FarmStr_001.bmp"/>
+	</contribution>
+
+	<contribution type="picture" id="{FarmStr_002-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="FarmStr_002.bmp">
+			<override when="autumn" src="FarmStr_002AUT.bmp" />
+			<override when="winter" src="FarmStr_002WIN.bmp" />
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="{FarmStr_003-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="FarmStr_003.bmp">
+			<override when="autumn" src="FarmStr_003AUT.bmp" />
+			<override when="winter" src="FarmStr_003WIN.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Intelligent building -->
+	<contribution type="picture" id="{vhbi_005-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="vhbi_005.bmp">
+		 <override when="spring">
+		  <override when="night" src="vhbi_005n.bmp"/>
+		 </override>
+		 <override when="summer">
+		  <override when="night" src="vhbi_005n.bmp"/>
+		 </override>
+		 <override when="autumn">
+		  <override when="night" src="vhbi_005n.bmp"/>
+		 </override>
+		 <override when="winter" src="vhbi_005_WIN.bmp">
+		  <override when="night" src="vhbi_005n_WIN.bmp"/>
+		 </override>
+		</picture>
+	</contribution>
+
+
+
+<!-- Rental video chain shop -->
+	<contribution type="picture" id="{RentalVideoShop_001-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="RentalVideoShop_001.bmp">
+			<override when="night" src="RentalVideoShop_001n.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Credit association -->
+	<contribution type="picture" id="{CreditA_001-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="CreditA_001.bmp">
+		 <override when="spring">
+			<override when="night" src="CreditA_001n.bmp" />
+		 </override>
+		 <override when="summer">
+			<override when="night" src="CreditA_001n.bmp" />
+		 </override>
+		 <override when="autumn">
+			<override when="night" src="CreditA_001n.bmp" />
+		 </override>
+		 <override when="winter" src="CreditA_001_WIN.bmp">
+		  <override when="night" src="CreditA_001n_WIN.bmp"/>
+		 </override>
+		</picture>
+	</contribution>
+
+
+<!-- Men's wear chain shop -->
+	<contribution type="picture" id="{MensWearShop_001-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="MensWearShop_001.bmp">
+			<override when="night" src="MensWearShop_001n.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Large Supermarket -->
+	<contribution type="picture" id="{supermarket_001-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="supermarket_001.bmp">
+			<override when="night" src="supermarket_001n.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Single House(home_002) -->
+	<contribution type="picture" id="{home_002-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="home_002.bmp">
+		</picture>
+	</contribution>
+
+
+<!-- Japanese food restaurant -->
+	<contribution type="picture" id="{restaurant_001-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="restaurant_001.bmp">
+			<override when="night" src="restaurant_001n.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Donuts chain shop -->
+	<contribution type="picture" id="{DoughnutShop-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="DoughnutShop.bmp">
+			<override when="night" src="DoughnutShopn.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Rental office building 2 -->
+	<contribution type="picture" id="{vhbi_002-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="vhbi_002.bmp">
+			<override when="night" src="vhbi_002n.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Rental office building 3 -->
+<contribution type="picture" id="{vhbi_004-pcon-C000-0000-4C8B212DD67q}">
+  <picture src="vhbi_004.bmp">
+    <override when="night" src="vhbi_004n.bmp" />
+  </picture>
+</contribution>
+
+
+<!-- Rental office building 4 -->
+	<contribution type="picture" id="{vhbi_007-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="vhbi_007.bmp">
+			<override when="night" src="vhbi_007n.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Rental Apartment -->
+	<contribution type="picture" id="{vhbi_003-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="vhbi_003.bmp">
+			<override when="night" src="vhbi_003n.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Small rental apartment -->
+	<contribution type="picture" id="{Apartment_002-pcon-C000-0000-4C8B212Dharu}">
+		<picture src="Apartment_002.bmp"/>
+	</contribution>
+
+
+<!-- Business Hotel -->
+	<contribution type="picture" id="{vhbi_009-pcon-C000-0000-4C8B212DD67q}">
+		<picture src="vhbi_009.bmp">
+			<override when="night" src="vhbi_009n.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Henhouse -->
+	<contribution type="picture" id="{FarmStr_004-picture-C000-0000-4C8B212Dharu}">
+		<picture src="FarmStr_004.bmp">
+			<override when="night" src="FarmStr_004n.bmp" />
+		</picture>
+	</contribution>
+
+
+
+<!-- Control tower -->
+	<contribution type="picture" id="{airport_ControlTower-picture-C000-0000-4C8B212Dharu}">
+		<picture src="airport_ControlTower.bmp">
+			<override when="night" src="airport_ControlTower_n.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Department Store -->
+	<contribution type="picture" id="{DepartmentStore_001-pcon-C000-0000-4C8B212Dharu}">
+		<picture src="DepartmentStore_001.bmp">
+			<override when="night" src="DepartmentStore_001n.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Single House(home_005)　-->
+<contribution type="picture" id="{home_005-picture-C000-0000-4C8B212Dharu}">
+  <picture src="home_005.bmp">
+    <override when="autumn" src="home_005AUT.bmp" />
+    <override when="winter" src="home_005WIN.bmp" />
+  </picture>
+</contribution>
+
+
+<!-- Single House(home_003)　-->
+	<contribution type="picture" id="{home_003-picture-C000-0000-4C8B212Dharu}">
+		<picture src="home_003.bmp">
+		</picture>
+	</contribution>
+
+
+<!-- Single House(home_004)　-->
+	<contribution type="picture" id="{home_004-picture-C000-0000-4C8B212Dharu}">
+		<picture src="home_004.bmp">
+		</picture>
+	</contribution>
+
+
+<!-- Single House(home_006)　-->
+	<contribution type="picture" id="{home_006-picture-C000-0000-4C8B212Dharu}">
+		<picture src="home_006.bmp">
+		</picture>
+	</contribution>
+
+
+<!-- Single House(home_007)　-->
+	<contribution type="picture" id="{home_007-picture-C000-0000-4C8B212Dharu}">
+		<picture src="home_007.bmp">
+		</picture>
+	</contribution>
+
+
+<!-- Family Restaurant　-->
+	<contribution type="picture" id="{restaurant_002-picture-C000-0000-4C8B212Dharu}">
+		<picture src="restaurant_002.bmp">
+			<override when="night" src="restaurant_002n.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Corner building(1x1)1 -->
+<contribution type="picture" id="{vhbi_010-picture-C000-0000-4C8B212Dharu}">
+  <picture src="vhbi_010.bmp">
+    <override when="night" src="vhbi_010n.bmp" />
+  </picture>
+</contribution>
+
+
+<!-- Corner building(1x1)2 -->
+	<contribution type="picture" id="{vhbi_011-picture-C000-0000-4C8B212Dharu}">
+		<picture src="vhbi_011.bmp">
+			<override when="night" src="vhbi_011n.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Rental office building(3x4) -->
+	<contribution type="picture" id="{vhbi_012-picture-C000-0000-4C8B212Dharu}">
+		<picture src="vhbi_012_SPR.bmp">
+		 <override when="spring">
+		  <override when="night" src="vhbi_012n_SPR.bmp"/>
+		 </override>
+		 <override when="summer">
+		  <override when="night" src="vhbi_012n_SPR.bmp"/>
+		 </override>
+		 <override when="autumn" src="vhbi_012_AUT.bmp">
+		  <override when="night" src="vhbi_012n_AUT.bmp"/>
+		 </override>
+		 <override when="winter" src="vhbi_012_WIN.bmp">
+		  <override when="night" src="vhbi_012n_WIN.bmp"/>
+		 </override>
+		</picture>
+	</contribution>
+
+
+<!-- Sapporo clock tower -->
+	<contribution type="picture" id="{tokeidai-picture-C000-0000-4C8B212Dharu}">
+		<picture src="tokeidai.bmp">
+		 <override when="spring">
+		  <override when="night" src="tokeidai-n.bmp"/>
+		 </override>
+		 <override when="summer">
+		  <override when="night" src="tokeidai-n.bmp"/>
+		 </override>
+		 <override when="autumn">
+		  <override when="night" src="tokeidai-n.bmp"/>
+		 </override>
+		 <override when="winter" src="tokeidai_WIN.bmp">
+		  <override when="night" src="tokeidai-n_WIN.bmp"/>
+		 </override>
+		</picture>
+	</contribution>
+
+
+<!-- Rental office building[A]-->
+	<contribution type="picture" id="{vhbi_013-picture-C000-0000-4C8B212Dharu}">
+		<picture src="vhbi_013.bmp">
+ 		 <override when="spring">
+		  <override when="night" src="vhbi_013n.bmp"/>
+		 </override>
+		 <override when="summer">
+		  <override when="night" src="vhbi_013n.bmp"/>
+		 </override>
+		 <override when="autumn">
+		  <override when="night" src="vhbi_013n.bmp"/>
+		 </override>
+		 <override when="winter" src="vhbi_013_WIN.bmp">
+		  <override when="night" src="vhbi_013n_WIN.bmp"/>
+		 </override>
+		</picture>
+	</contribution>
+
+
+<!-- Casual wear shop　-->
+	<contribution type="picture" id="{ClothingStore_001-picture-C000-0000-4C8B212Dharu}">
+		<picture src="ClothingStore_001.bmp">
+			<override when="night" src="ClothingStore_001n.bmp" />
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="{ClothingStore_002-picture-C000-0000-4C8B212Dharu}">
+		<picture src="ClothingStore_002.bmp">
+			<override when="night" src="ClothingStore_002n.bmp" />
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="{ClothingStore_003-picture-C000-0000-4C8B212Dharu}">
+		<picture src="ClothingStore_003.bmp">
+			<override when="spring">
+				<override when="night" src="ClothingStore_003n.bmp" />
+       			</override>
+			<override when="summer">
+				<override when="night" src="ClothingStore_003n.bmp" />
+       			</override>
+			<override when="autumn">
+				<override when="night" src="ClothingStore_003n.bmp" />
+       			</override>
+      			<override when="winter" src="ClothingStore_003WIN.bmp" >
+        			<override when="night" src="ClothingStore_003WIN-n.bmp" />
+　		        </override>
+ 		</picture>
+	</contribution>
+
+
+<!-- Shoes shop　-->
+	<contribution type="picture" id="{ShoesShop_001-picture-C000-0000-4C8B212Dharu}">
+		<picture src="ShoesShop_001.bmp">
+		  <override when="night" src="ShoesShop_001n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{ShoesShop_002-picture-C000-0000-4C8B212Dharu}">
+		<picture src="ShoesShop_002.bmp">
+		  <override when="night" src="ShoesShop_002n.bmp"/>
+		</picture>
+	</contribution>
+
+
+<!-- Balloon tower　-->
+	<contribution type="picture" id="{ampark_BalloonTower_001-picture-C000-0000-4C8B212Dharu}">
+		<picture src="ampark_BalloonTower_001.bmp">
+			<override when="night" src="ampark_BalloonTower_001n.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Space shot　-->
+	<contribution type="picture" id="{ampark_SpaceShot_001-picture-C000-0000-4C8B212Dharu}">
+		<picture src="ampark_SpaceShot_001.bmp">
+			<override when="night" src="ampark_SpaceShot_001n.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Amusement Parks Entrance　-->
+	<contribution type="picture" id="{ampark_entrance_001-picture-C000-0000-4C8B212Dharu}">
+		<picture src="ampark_entrance_001.bmp">
+			<override when="night" src="ampark_entrance_001n.bmp" />
+		</picture>
+	</contribution>
+
+
+<!-- Astro fighter -->
+	<contribution type="picture" id="{ampark_AstroFighter_001-picture-C000-0000-4C8B212Dharu}">
+ 		<picture src="ampark_AstroFighter_001.bmp">
+		  <override when="night" src="ampark_AstroFighter_001n.bmp"/>
+		</picture>
+	</contribution>
+
+
+<!-- Amusement Arcade -->
+	<contribution type="picture" id="{ampark_GameCenter_001-picture-C000-0000-4C8B212Dharu}">
+ 		<picture src="ampark_GameCenter_001.bmp">
+		  <override when="night" src="ampark_GameCenter_001n.bmp"/>
+		</picture>
+	</contribution>
+
+
+<!-- Amusement Parks Parasols -->
+	<contribution type="picture" id="{ampark_Parasol_001-picture-C000-0000-4C8B212Dharu}">
+ 		<picture src="ampark_Parasol_001.bmp">
+		  <override when="night" src="ampark_Parasol_001n.bmp"/>
+		</picture>
+	</contribution>
+
+
+<!-- Fountain square　-->
+	<contribution type="picture" id="{square_001-picture-C000-0000-4C8B212Dharu}">
+		<picture src="square_001.bmp">
+		 <override when="spring">
+		  <override when="night" src="square_001n.bmp"/>
+		 </override>
+		 <override when="summer">
+		  <override when="night" src="square_001n_SUM.bmp"/>
+		 </override>
+		 <override when="autumn">
+		  <override when="night" src="square_001n_AUT.bmp"/>
+		 </override>
+		 <override when="winter" src="square_001_WIN.bmp">
+		  <override when="night" src="square_001n_WIN.bmp"/>
+		 </override>
+		</picture>
+	</contribution>
+
+
+<!-- Park Fountain square　-->
+	<contribution type="picture" id="{ampark_square_001-picture-C000-0000-4C8B212Dharu}">
+		<picture src="ampark_square_001.bmp">
+		  <override when="night" src="ampark_square_001n.bmp"/>
+		</picture>
+	</contribution>
+
+
+
+
+
+
+
+
+
+</plug-in>
+	

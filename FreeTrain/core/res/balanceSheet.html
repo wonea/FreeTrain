@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title></title>
+		<style>
+			.caption {
+				background-color: activecaption;
+				color: captiontext;
+				font-weight: bold;
+				border: black solid 1px;
+				width: 100%;
+			}
+			.entry {
+				border-bottom: black solid 1px;
+				width: 100%;
+			}
+			.value {
+				text-align:right;
+				font-family: georgia;
+			}
+			.box {
+				width: 260px;
+			}
+			body {
+				border: none;
+				background-color: threedface;
+				margin-left: 0px;
+				margin-top:  0px;
+				cursor: default;
+			}
+		</style>
+	</head>
+	<body onselect="event.returnValue=false;event.cancelBubble=true;return false;">
+		<table><tr>
+			<td width="50%" valign=top>
+				<table class=box><tr><td>
+					<table class=caption><tr><td>
+						Asset Value
+						<!--!資産評価-->
+					</td><td class=value>
+						123
+					</td></tr></table>
+				</td></tr><tr><td>
+					<table class=entry><tr><td>
+						Funds
+						<!--!資金-->
+					</td><td class=value>
+						500,000,000
+					</td></tr></table>
+				</td></tr></table>
+			</td>
+			<td width="50%" valign=top>
+				<table class=box><tr><td>
+					<table class=caption><tr><td>
+						Liabilities
+						<!--!負債-->
+					</td><td class=value>
+						111
+					</td></tr></table>
+				</td></tr><tr><td>
+					yen
+					<!--!Y-->
+				</td></tr></table>
+			</td>
+		</tr></table>
+		<br>
+		Anybody should feel free to twiddle with the HTML to make this look better!
+		<!--!誰かHTMLをいじってデザインをかっこよくしてください！-->
+	</body>
+</html>

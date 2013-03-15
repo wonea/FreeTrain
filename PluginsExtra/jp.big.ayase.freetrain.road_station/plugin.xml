@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Structure Plugin</title>
+	<author>Hiro Ayase</author>
+	<homepage>http://www14.big.or.jp/~ayase/freetrain/</homepage>
+
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-RoadImg-Station}">
+		<picture src="ekimae.bmp"/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{FreeTrain-AYASE-Hiro-RoadImg-StationImpl01a1}">
+		<group>Station square (edge 1)</group>
+		<price>400</price>
+		<size>1,3</size>
+		<height>1</height>
+		<structure>
+			<category byname="Road Accessories"/>
+		</structure>
+		<sprite origin="0,0" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="64,0" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="128,0" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="192,0" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="256,0" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="320,0" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="384,0" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="448,0" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{FreeTrain-AYASE-Hiro-RoadImg-StationImpl01b1}">
+		<group>Station square (edge 2)</group>
+		<price>400</price>
+		<size>1,3</size>
+		<height>1</height>
+		<structure>
+			<category byname="Road Accessories"/>
+		</structure>
+		<sprite origin="0,64" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="64,64" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="128,64" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="192,64" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="256,64" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="320,64" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="384,64" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="448,64" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{FreeTrain-AYASE-Hiro-RoadImg-StationImpl01c1}">
+		<group>Station square (edge 3)</group>
+		<price>400</price>
+		<size>1,3</size>
+		<height>1</height>
+		<structure>
+			<category byname="Road Accessories"/>
+		</structure>
+		<sprite origin="0,128" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="64,128" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="128,128" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="192,128" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="256,128" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="320,128" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="384,128" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="448,128" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{FreeTrain-AYASE-Hiro-RoadImg-StationImpl01d1}">
+		<group>Station square (edge 4)</group>
+		<price>400</price>
+		<size>1,3</size>
+		<height>1</height>
+		<structure>
+			<category byname="Road Accessories"/>
+		</structure>
+		<sprite origin="0,192" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="64,192" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="128,192" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="192,192" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="256,192" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="320,192" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="384,192" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="448,192" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{FreeTrain-AYASE-Hiro-RoadImg-StationImpl02a1}">
+		<group>Station square (middle 1)</group>
+		<price>400</price>
+		<size>1,3</size>
+		<height>1</height>
+		<structure>
+			<category byname="Road Accessories"/>
+		</structure>
+		<sprite origin="0,256" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="64,256" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="128,256" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="192,256" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="256,256" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="320,256" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="384,256" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="448,256" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{FreeTrain-AYASE-Hiro-RoadImg-StationImpl02b1}">
+		<group>Station square (middle 2)</group>
+		<price>400</price>
+		<size>1,3</size>
+		<height>1</height>
+		<structure>
+			<category byname="Road Accessories"/>
+		</structure>
+		<sprite origin="0,320" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="64,320" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="128,320" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="192,320" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{FreeTrain-AYASE-Hiro-RoadImg-StationImpl02b5}">
+		<group>Station square (middle 2)</group>
+		<price>400</price>
+		<size>1,3</size>
+		<height>1</height>
+		<structure>
+			<category byname="Road Accessories"/>
+		</structure>
+		<sprite origin="256,320" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="320,320" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="384,320" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="448,320" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{FreeTrain-AYASE-Hiro-RoadImg-StationImpl02c1}">
+		<group>Station square (middle 3)</group>
+		<price>400</price>
+		<size>1,3</size>
+		<height>1</height>
+		<structure>
+			<category byname="Road Accessories"/>
+		</structure>
+		<sprite origin="0,384" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="64,384" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="128,384" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="192,384" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{FreeTrain-AYASE-Hiro-RoadImg-StationImpl02c5}">
+		<group>Station square (middle 3)</group>
+		<price>400</price>
+		<size>1,3</size>
+		<height>1</height>
+		<structure>
+			<category byname="Road Accessories"/>
+		</structure>
+		<sprite origin="256,384" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="320,384" offset="32">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="384,384" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<sprite origin="448,384" offset="48" opposite="true">
+			<picture ref="{FreeTrain-AYASE-Hiro-RoadImg-Station}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+</plug-in>
+

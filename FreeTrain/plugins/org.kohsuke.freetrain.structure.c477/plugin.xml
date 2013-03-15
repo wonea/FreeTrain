@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY colorMapTest '
+	<spriteType name="colorMapped">
+		<map from="213,205,186" to="196,202,216" />
+		<map from="188,175,150" to="165,175,193" />
+		<map from="188,174,144" to="160,170,192" />
+		<map from="170,159,134" to="150,158,177" />
+		<map from="166,149,116" to="135,148,172" />
+		<map from="162,148,121" to="140,150,170" />
+		<map from="143,127, 97" to="119,130,152" />
+		<map from="103, 91, 79" to="102,111,119" />
+		<map from=" 91, 78, 64" to=" 88, 97,108" />
+	</spriteType>
+'>
+<!ENTITY crKhaki '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="188,174,144"/>
+	</spriteType>
+'>
+<!ENTITY crLtBlue '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="144,158,188"/>
+	</spriteType>
+'>
+<!ENTITY crSilver '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="190,190,190"/>
+	</spriteType>
+'>
+<!ENTITY crCyan '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="166,189,203"/>
+	</spriteType>
+'>
+<!ENTITY crDkGray '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="90,90,90"/>
+	</spriteType>
+'>
+<!ENTITY crBrown '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="127,74,57"/>
+	</spriteType>
+'>
+
+<!ENTITY smallBuildingPopulation '
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>35</base>
+	</population>
+'>
+<!ENTITY officeBuildingAPopulation '
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>200</base>
+	</population>
+'>
+<!ENTITY officeBuildingWithHeliportPopulation '
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>250</base>
+	</population>
+'>
+
+]>
+
+
+
+
+<plug-in>	
+	<title>Structure Set</title>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+	<author>C477</author>
+	<depend on="org.kohsuke.freetrain.structure.osakaCastle"/>	
+	
+	<contribution type="picture" id="{5E1F4ECE-06AF-4D23-BF80-E9FC47E4B167}">
+		<picture src="store_s01.bmp" >
+			<override when="night" src="store_s01_n.bmp" />
+		</picture>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{BC43CE38-601A-42c7-992A-6049CCD29B94}">
+		<group>Residential convenience store</group>
+		<design>Seven Eleven</design>
+		<structure>
+			<category byname="Convenience Stores"/>
+			<category byname="Single Houses" hide="true"/>
+		</structure>
+		<price>200</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>35</base>
+		</population>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{5E1F4ECE-06AF-4D23-BF80-E9FC47E4B167}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="picture" id="{2888B890-524B-43C4-9FC7-7A82728E4EDB}">
+		<picture src="store_m01.bmp" >
+			<override when="night" src="store_m01_n.bmp" />
+		</picture>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{2C3ED0DA-FBA1-4586-9691-67DC93B851C9}">
+		<name>Shinise Department Store</name>
+		<structure>
+			<category byname="Department Stores"/>
+		</structure>
+		<price>2800</price>
+		<size>2,2</size>
+		<height>3</height>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>600</base>
+		</population>
+		<sprite origin="0,0" offset="49">
+			<picture ref="{2888B890-524B-43C4-9FC7-7A82728E4EDB}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="picture" id="{C9FC2889-10D0-4699-ACB6-C62A4273BED9}">
+		<picture src="mansn_m01.bmp">
+				<override when="night" src="mansn_m01_n.bmp"/>
+		</picture>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{9F3E82AD-2A49-4aef-954C-E872F535B3D8}">
+		<name>Condo (2x2)</name>
+		<design>Combined</design>
+		<structure>
+			<category byname="Condominiums"/>
+		</structure>
+		<price>2400</price>
+		<size>2,2</size>
+		<height>3</height>
+		<sprite origin="0,0" offset="40">
+			<picture ref="{C9FC2889-10D0-4699-ACB6-C62A4273BED9}" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>200</base>
+		</population>
+	</contribution>
+
+	<contribution type="picture" id="{A2C5271D-9EED-47AE-A5BB-A1BA0B776186}">
+		<picture src="house_s01.bmp" />
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{27D6D0C0-2B1A-4494-9257-14C208168075}">
+		<name>Single condo</name>
+		<structure>
+			<category byname="Single Houses"/>
+		</structure>
+		<price>110</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{A2C5271D-9EED-47AE-A5BB-A1BA0B776186}" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+	</contribution>
+	
+	<contribution type="picture" id="{B99FA2F7-F138-46a1-99F7-34AE23A157F6}">
+		&crSilver;
+		<picture src="bldg_m01.bmp">
+			<override when="night" src="bldg_m01_n.bmp"/>
+		</picture>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{258312FF-9F91-49C5-BA4D-C68CB8F947C1}">
+		<name>Medium-rise office building</name>
+		<structure>
+			<category byname="Rental Offices"/>
+		</structure>
+		<price>1600</price>
+		<size>2,2</size>
+		<height>3</height>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>300</base>
+		</population>
+		&crSilver;
+		&crCyan;
+		&crDkGray;
+		&crBrown;
+		<sprite origin="0,0" offset="48">
+			<picture ref="{B99FA2F7-F138-46a1-99F7-34AE23A157F6}"/>
+		</sprite>
+		<sprite origin="64,0" offset="48">
+			<picture ref="{B99FA2F7-F138-46a1-99F7-34AE23A157F6}"/>
+		</sprite>
+	</contribution>
+	
+	
+	<contribution type="picture" id="{2E8E24AC-4242-4801-A4DD-2947A0800794}">
+		<picture src="bldgVH01.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{442C7E12-A3BA-4c25-9129-C3803EA760BC}">
+		<group>Office building (A)</group>
+		<structure>
+			<category byname="Rental Offices"/>
+		</structure>
+		<price>3900</price>
+		<size>3,2</size>
+		<minHeight>2</minHeight>
+		<maxHeight>10</maxHeight>
+		&officeBuildingAPopulation;
+		&crKhaki;
+		&crLtBlue;
+		&crSilver;
+		<pictures>			
+			<top    origin=" 0,  0" offset="24">
+				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
+			</top>
+			<middle origin=" 0, 48" offset="24">
+				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
+			</middle>
+			<bottom origin=" 0, 96" offset="24">
+				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top    origin="80,  0" offset="16">
+				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
+			</top>
+			<middle origin="80, 48" offset="16">
+				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
+			</middle>
+			<bottom origin="80, 96" offset="16">
+				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="160,  0" offset="24">
+				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
+			</top>
+			<middle origin="160, 48" offset="24">
+				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
+			</middle>
+			<bottom origin="160, 96" offset="24">
+				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top    origin="240,  0" offset="16">
+				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
+			</top>
+			<middle origin="240, 48" offset="16">
+				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
+			</middle>
+			<bottom origin="240, 96" offset="16">
+				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+	
+	<contribution type="picture" id="{16D97ECA-5387-4D2C-B51D-E54663B21B2B}">
+		<picture src="bldgVH02.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{9BF4DD25-050A-4633-BC8B-0B8B226FC5E8}">
+		<group>Office building (with heliport)</group>
+		<structure>
+			<category byname="Rental Offices"/>
+			<category byname="Restaurants" hide="true"/>
+			<category byname="Private Specialty Stores" hide="true"/>
+		</structure>
+		<price>4800</price>
+		<size>3,2</size>
+		<minHeight>3</minHeight>
+		<maxHeight>10</maxHeight>
+		&officeBuildingWithHeliportPopulation;
+		<pictures>
+			<top    origin="  0,  0" offset="24">
+				<picture ref="{16D97ECA-5387-4D2C-B51D-E54663B21B2B}"/>
+			</top>
+			<middle origin="  0, 48" offset="24">
+				<picture ref="{16D97ECA-5387-4D2C-B51D-E54663B21B2B}"/>
+			</middle>
+			<bottom origin="  0, 96" offset="24">
+				<picture ref="{16D97ECA-5387-4D2C-B51D-E54663B21B2B}"/>
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top    origin=" 80,  0" offset="16">
+				<picture ref="{16D97ECA-5387-4D2C-B51D-E54663B21B2B}"/>
+			</top>
+			<middle origin=" 80, 48" offset="16">
+				<picture ref="{16D97ECA-5387-4D2C-B51D-E54663B21B2B}"/>
+			</middle>
+			<bottom origin=" 80, 96" offset="16">
+				<picture ref="{16D97ECA-5387-4D2C-B51D-E54663B21B2B}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+	
+	<contribution type="picture" id="{98D10236-1A52-455B-8D86-7FD3B9B26994}">
+		<picture src="bldgVH03.bmp">
+			<override when="night" src="bldgVH03_n.bmp" />
+		</picture>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{D57200E0-8E73-4899-8EEC-0E9AC95C3D40}">
+		<group>Shinjuku Mitsui Building</group>
+		<structure>
+			<category byname="Rental Offices"/>
+			<category byname="Restaurants" hide="true"/>
+			<category byname="Stores" hide="true"/>
+		</structure>
+		<price>39000</price>
+		<minHeight>3</minHeight>
+		<maxHeight>10</maxHeight>
+		<population>
+			<class name="freetrain.contributions.population.CombinationPopulation"/>
+			<population>
+				<class name="freetrain.contributions.population.OfficePopulation"/>
+				<base>1200</base>
+			</population>
+			<population>
+				<class name="freetrain.contributions.population.ShopperPopulation"/>
+				<base>300</base>
+			</population>
+		</population>
+		<size>5,6</size>
+		<pictures>
+			<top    origin="-32,  0" offset="24">
+				<picture ref="{98D10236-1A52-455B-8D86-7FD3B9B26994}"/>
+			</top>
+			<middle origin="-32, 88" offset=" 8">
+				<picture ref="{98D10236-1A52-455B-8D86-7FD3B9B26994}"/>
+			</middle>
+			<bottom origin="  0,264" offset="32">
+				<picture ref="{98D10236-1A52-455B-8D86-7FD3B9B26994}"/>
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top    origin="176,  0" offset="48" height="88">
+				<picture ref="{98D10236-1A52-455B-8D86-7FD3B9B26994}"/>
+			</top>
+			<middle origin="176, 88" offset="32">
+				<picture ref="{98D10236-1A52-455B-8D86-7FD3B9B26994}"/>
+			</middle>
+			<bottom origin="176,168" offset="40">
+				<picture ref="{98D10236-1A52-455B-8D86-7FD3B9B26994}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="  0,  0" offset="40" height="88">
+				<picture ref="{98D10236-1A52-455B-8D86-7FD3B9B26994}"/>
+			</top>
+			<middle origin="  0, 88" offset="24">
+				<picture ref="{98D10236-1A52-455B-8D86-7FD3B9B26994}"/>
+			</middle>
+			<bottom origin="  0,168" offset="32">
+				<picture ref="{98D10236-1A52-455B-8D86-7FD3B9B26994}"/>
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top    origin="208,  0" offset="32">
+				<picture ref="{98D10236-1A52-455B-8D86-7FD3B9B26994}"/>
+			</top>
+			<middle origin="208, 88" offset="16">
+				<picture ref="{98D10236-1A52-455B-8D86-7FD3B9B26994}"/>
+			</middle>
+			<bottom origin="176,264" offset="40">
+				<picture ref="{98D10236-1A52-455B-8D86-7FD3B9B26994}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+	<contribution type="picture" id="{6D2631CB-336E-4DD4-AEF7-B915EC5D8B25}">
+		<picture src="bldgVH04.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{C35B9F7A-7D69-4D1B-9B92-D05CBF4C20D7}">
+		<group>Shinjuku Sumitomo Building</group>
+		<structure>
+			<category byname="Rental Offices"/>
+			<category byname="Restaurants" hide="true"/>
+			<category byname="Stores" hide="true"/>
+		</structure>
+		<price>30000</price>
+		<size>5,5</size>
+		<minHeight>3</minHeight>
+		<maxHeight>10</maxHeight>
+		<population>
+			<class name="freetrain.contributions.population.CombinationPopulation"/>
+			<population>
+				<class name="freetrain.contributions.population.OfficePopulation"/>
+				<base>1000</base>
+			</population>
+			<population>
+				<class name="freetrain.contributions.population.ShopperPopulation"/>
+				<base>200</base>
+			</population>
+		</population>
+		&crKhaki;
+		&crSilver;
+		&crCyan;
+		<pictures>
+			<top    origin="  0, 88" offset="40">
+				<picture ref="{6D2631CB-336E-4DD4-AEF7-B915EC5D8B25}"/>
+			</top>
+			<middle origin="  0,272" offset="32">
+				<picture ref="{6D2631CB-336E-4DD4-AEF7-B915EC5D8B25}"/>
+			</middle>
+			<bottom origin="  0,448" offset="32">
+				<picture ref="{6D2631CB-336E-4DD4-AEF7-B915EC5D8B25}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="  0,  8" offset="40" height="80">
+				<picture ref="{6D2631CB-336E-4DD4-AEF7-B915EC5D8B25}"/>
+			</top>
+			<middle origin="  0,192" offset="32">
+				<picture ref="{6D2631CB-336E-4DD4-AEF7-B915EC5D8B25}"/>
+			</middle>
+			<bottom origin="  0,368" offset="32">
+				<picture ref="{6D2631CB-336E-4DD4-AEF7-B915EC5D8B25}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="160, 88" offset="40">
+				<picture ref="{6D2631CB-336E-4DD4-AEF7-B915EC5D8B25}"/>
+			</top>
+			<middle origin="160,272" offset="32">
+				<picture ref="{6D2631CB-336E-4DD4-AEF7-B915EC5D8B25}"/>
+			</middle>
+			<bottom origin="160,448" offset="32">
+				<picture ref="{6D2631CB-336E-4DD4-AEF7-B915EC5D8B25}"/>
+			</bottom>
+		</pictures>
+		<pictures>
+			<top    origin="160,  8" offset="40">
+				<picture ref="{6D2631CB-336E-4DD4-AEF7-B915EC5D8B25}"/>
+			</top>
+			<middle origin="160,192" offset="32">
+				<picture ref="{6D2631CB-336E-4DD4-AEF7-B915EC5D8B25}"/>
+			</middle>
+			<bottom origin="160,368" offset="32">
+				<picture ref="{6D2631CB-336E-4DD4-AEF7-B915EC5D8B25}"/>
+			</bottom>
+		</pictures>
+	</contribution>	
+
+</plug-in>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Station accessories</title>
+	<author>Hiro Ayase</author>
+	<homepage>http://www14.big.or.jp/~ayase/freetrain/</homepage>
+	
+	<depends on="org.kohsuke.freetrain.rail.electricPole" />
+	
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-StationOption-01a}">
+		<name>Bridge station (main)</name>
+		<sprite>
+			<picture src="hasiue_a.bmp"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-StationOption-01b}">
+		<name>Bridge station (stairs-right)</name>
+		<sprite>
+			<picture src="hasiue_b.bmp"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-StationOption-01c}">
+		<name>Bridge station (stairs-left)</name>
+		<sprite>
+			<picture src="hasiue_c.bmp"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-StationOption-01d}">
+		<name>Bridge station (stairs-right behind)</name>
+		<sprite>
+			<picture src="hasiue_d.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-StationOption-01e}">
+		<name>Bridge station (stairs-left behind)</name>
+		<sprite>
+			<picture src="hasiue_e.bmp"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-StationOption-01f}">
+		<name>Bridge station (wall)</name>
+		<sprite>
+			<picture src="hasiue_f.bmp"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-StationOption-02a}">
+		<name>Platform roof A1</name>
+		<sprite>
+			<picture src="yane_a1.bmp"/>
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-StationOption-02b}">
+		<name>Platform roof A2</name>
+		<sprite>
+			<picture src="yane_a2.bmp"/>
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-StationOption-02c}">
+		<name>Platform roof B1</name>
+		<sprite>
+			<picture src="yane_b1.bmp"/>
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-StationOption-02d}">
+		<name>Platform roof B2</name>
+		<sprite>
+			<picture src="yane_b2.bmp"/>
+		</sprite>
+	</contribution>
+</plug-in>

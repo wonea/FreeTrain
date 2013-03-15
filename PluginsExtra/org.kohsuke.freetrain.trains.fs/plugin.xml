@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Trenitalia Train Set</title>
+	<author>Hima</author>
+	<homepage></homepage>
+
+	
+	<!--Malpensa Express先頭車両 -->
+	<contribution type="trainCar" id="{Malpensa-Express0306192133}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="MalpensaExpressA.bmp" />
+		</sprite>
+		<capacity>65</capacity>
+	</contribution>
+	
+	<!-- Malpensa Express中間車両 -->
+	<contribution type="trainCar" id="{Malpensa-Express0306192133}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="MalpensaExpressB.bmp" />
+		</sprite>
+		<capacity>70</capacity>
+	</contribution>
+	
+	<!-- Malpensa Express後尾車両 -->
+	<contribution type="trainCar" id="{Malpensa-Express0306192133}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{Malpensa-Express0306192133}-h"/>
+	</contribution>
+	
+	<contribution type="train" id="{Malpensa-Express0306192133}">
+		<name>Malpensa Express</name>
+		<price>1</price>
+		<speed>fast</speed>
+		<author>Hima</author>
+		<type></type>
+		<company>Trenitalia</company>
+		<description>イタリアのマルペンサ空港とミラノを結ぶ空港特急。30分ごとに発車しており、その性格は「はるか」や「成田エクスプレス」とよく似ている。</description>
+		
+		<composition>
+
+			<head carRef="{Malpensa-Express0306192133}-h"/>
+			<body carRef="{Malpensa-Express0306192133}-m"/>
+
+			<tail carRef="{Malpensa-Express0306192133}-t"/>
+		</composition>
+	</contribution>
+
+</plug-in>

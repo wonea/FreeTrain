@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heat", "Heat.csproj", "{8987AC37-7E86-4DF7-8A71-6B4A681DD81C}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{8987AC37-7E86-4DF7-8A71-6B4A681DD81C}.Debug.ActiveCfg = Debug|.NET
+		{8987AC37-7E86-4DF7-8A71-6B4A681DD81C}.Debug.Build.0 = Debug|.NET
+		{8987AC37-7E86-4DF7-8A71-6B4A681DD81C}.Release.ActiveCfg = Release|.NET
+		{8987AC37-7E86-4DF7-8A71-6B4A681DD81C}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

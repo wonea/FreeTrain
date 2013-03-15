@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<plug-in>
+	<title>JR東海 車両キット</title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+
+	<!-- 165系-->
+	<contribution type="trainCar" id="{4FCC28AC-410D-4da9-89B7-8AD4E3F5E6D8}">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="..\..\\trainshare\165syo.bmp" origin="0,0"/>
+		<capacity>90</capacity> 
+	</contribution>
+
+	<contribution type="train" id="{7E7B6658-46A4-4e05-AFC3-8F24BE41100A}">
+		<company>JR東海</company>
+		<type>165系</type>
+		<name>湘南色</name>
+		<author>Minさん</author>
+		<speed>medium</speed>  
+		<description>急行型電車。現在この色での定期運用はないはず。</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{4FCC28AC-410D-4da9-89B7-8AD4E3F5E6D8}"/>
+		</composition>
+	</contribution>
+
+</plug-in>

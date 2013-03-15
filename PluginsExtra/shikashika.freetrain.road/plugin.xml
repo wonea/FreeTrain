@@ -1,0 +1,688 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<plug-in>
+
+<title>Road</title>
+<author>Shikashika</author>
+<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+
+<!-- stone pavement -->
+
+<contribution type="road" id="{FreeTrain-Shika-Road-stonepaved}">
+<class name="freetrain.contributions.road.A3RoadContribution" />
+<name>stone pavement/tramway/brown</name>
+<description>tramway stone pavement</description>
+<picture src="road_stonepaved001_ocher.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-stonepaved-grey}">
+<class name="freetrain.contributions.road.A3RoadContribution" />
+<name>stone pavement/tramway/gray</name>
+<description>tramway stone pavement</description>
+<picture src="road_stonepaved001_grey.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-stonepaved-entrancepath-ocher}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>stone pavement/shrine/brown</name>
+<style name="footpath"/>
+<description>Shrine approach</description>
+<picture src="road_stonepaved002_ocher.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-stonepaved-entrancepath-grey}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>stone pavement/Shrine approach/gray</name>
+<style name="footpath"/>
+<description>Shrine approach</description>
+<picture src="road_stonepaved002_grey.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-stonepaved-entrancepath-stonelantern-ocher}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>stone pavement/garden lantern/brown</name>
+<style name="footpath"/>
+<description>Shrine approach(with garden lantern)</description>
+<picture src="road_stonepaved003_ocher.bmp" size="32,32" offset="16">
+	<override when="night" src="road_stonepaved003_ocher_n.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-stonepaved-entrancepath-stonelantern-grey}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>stone pavement/garden lantern/gray</name>
+<style name="footpath"/>
+<description>Shrine approach(with garden lantern)</description>
+<picture src="road_stonepaved003_grey.bmp" size="32,32" offset="16">
+	<override when="night" src="road_stonepaved003_grey_n.bmp"/>
+</picture>
+</contribution>
+
+
+<!-- woodland path -->
+
+<contribution type="road" id="{FreeTrain-Shika-Road-woodlandpath-001}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>woodland path/unpaved</name>
+<style name="footpath"/>
+<description>woodland path(unpaved)</description>
+<picture src="road_woodlandpath_spring.bmp" size="32,32" offset="16">
+	<override when="spring" src="road_woodlandpath001_spring.bmp"/>
+	<override when="summer" src="road_woodlandpath001_summer.bmp"/>
+	<override when="autumn" src="road_woodlandpath001_autumn.bmp"/>
+	<override when="winter" src="road_woodlandpath001_winter.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-woodlandpath-002}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>woodland path/paved</name>
+<style name="footpath"/>
+<description>woodland path(paved)</description>
+<picture src="road_woodlandpath_spring.bmp" size="32,32" offset="16">
+	<override when="spring" src="road_woodlandpath002_spring.bmp"/>
+	<override when="summer" src="road_woodlandpath002_summer.bmp"/>
+	<override when="autumn" src="road_woodlandpath002_autumn.bmp"/>
+	<override when="winter" src="road_woodlandpath002_winter.bmp"/>
+</picture>
+</contribution>
+
+
+<!-- Avenue/nolight -->
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-concrete-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/nolight/sidewalk/concrete right</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Avenue concrete sidewalk</description>
+<picture src="road_a000_concrete_r.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-concrete-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/nolight/sidewalk/concrete left</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Avenue concrete sidewalk</description>
+<picture src="road_a000_concrete_l.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-walk-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/nolight/sidewalk/station area right</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Avenue sidewalk around station</description>
+<picture src="road_a000_walk_r.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-walk-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/nolight/sidewalk/station area left</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Avenue sidewalk around station</description>
+<picture src="road_a000_walk_l.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-entrance-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/nolight/sidewalk/station square right</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Road with station square</description>
+<picture src="road_a000_entrance_r.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-entrance-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/nolight/sidewalk/station square left</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Road with station square</description>
+<picture src="road_a000_entrance_l.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-lane-add-add}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/nolight/2lane/additional</name>
+<style name="street" sidewalk="none" lanes="2"/>
+<description>Road additional lane</description>
+<picture src="road_a000_add.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-passinglane-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/nolight/2lane/passing right</name>
+<style name="street" sidewalk="none" lanes="2"/>
+<description>Road passing lane</description>
+<picture src="road_a000_pl_r.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-passinglane-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/nolight/2lane/passing left</name>
+<style name="street" sidewalk="none" lanes="2"/>
+<description>Road passing lane</description>
+<picture src="road_a000_pl_l.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-passinglane-verge-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/nolight/2lane/passing,verge right</name>
+<style name="street" sidewalk="none" lanes="2"/>
+<description>Road passing lane</description>
+<picture src="road_a000_pl_r_spring.bmp" size="32,32" offset="16">
+	<override when="spring" src="road_a000_pl_r_spring.bmp" />
+	<override when="summer" src="road_a000_pl_r_summer.bmp" />
+	<override when="autumn" src="road_a000_pl_r_autumn.bmp" />
+	<override when="winter" src="road_a000_pl_r_winter.bmp" />
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-passinglane-verge-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/nolight/2lane/passing,verge left</name>
+<style name="street" sidewalk="none" lanes="2"/>
+<description>Road passing lane</description>
+<picture src="road_a000_pl_l_spring.bmp" size="32,32" offset="16">
+	<override when="spring" src="road_a000_pl_l_spring.bmp" />
+	<override when="summer" src="road_a000_pl_l_summer.bmp" />
+	<override when="autumn" src="road_a000_pl_l_autumn.bmp" />
+	<override when="winter" src="road_a000_pl_l_winter.bmp" />
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-center-white}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/nolight/center line/white</name>
+<style name="street" sidewalk="none" lanes="2"/>
+<description>center line white</description>
+<picture src="road_a000_c_white.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-center-orange}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/nolight/center line/orange</name>
+<style name="street" sidewalk="none" lanes="2"/>
+<description>center line orange</description>
+<picture src="road_a000_c_orange.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-verge-center}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/nolight/center line/median strip</name>
+<style name="street" sidewalk="none" lanes="2"/>
+<description>Median strip</description>
+<picture src="road_a000_c_spring.bmp" size="32,32" offset="16">
+	<override when="spring" src="road_a000_c_spring.bmp" />
+	<override when="summer" src="road_a000_c_summer.bmp" />
+	<override when="autumn" src="road_a000_c_autumn.bmp" />
+	<override when="winter" src="road_a000_c_winter.bmp" />
+</picture>
+</contribution>
+
+
+<!-- Avenue/with light -->
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-streetlamp-concrete-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/light/sidewalk/concrete right</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Avenue concrete sidewalk</description>
+<picture src="road_a001_concrete_r.bmp" size="32,32" offset="16">
+	<override when="night" src="road_a001_concrete_r_n.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-streetlamp-concrete-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/light/sidewalk/concrete left</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Avenue concrete sidewalk</description>
+<picture src="road_a001_concrete_l.bmp" size="32,32" offset="16">
+	<override when="night" src="road_a001_concrete_l_n.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-streetlamp-walk-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/light/sidewalk/station area right</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Avenue sidewalk around station</description>
+<picture src="road_a001_walk_r.bmp" size="32,32" offset="16">
+	<override when="night" src="road_a001_walk_r_n.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-streetlamp-walk-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/light/sidewalk/station area left</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Avenue sidewalk around station</description>
+<picture src="road_a001_walk_l.bmp" size="32,32" offset="16">
+	<override when="night" src="road_a001_walk_l_n.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-streetlamp-entrance-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/light/sidewalk/station square right</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Road with station square</description>
+<picture src="road_a001_entrance_r.bmp" size="32,32" offset="16">
+	<override when="night" src="road_a001_entrance_r_n.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-streetlamp-entrance-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/light/sidewalk/station square left</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Road with station square</description>
+<picture src="road_a001_entrance_l.bmp" size="32,32" offset="16">
+	<override when="night" src="road_a001_entrance_l_n.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-streetlamp-passinglane-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/light/2lane/passing right</name>
+<style name="street" sidewalk="none" lanes="2"/>
+<description>Road passing lane</description>
+<picture src="road_a001_pl_r.bmp" size="32,32" offset="16">
+	<override when="night" src="road_a001_pl_r_n.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue--streetlamp-passinglane-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/light/2lane/passing left</name>
+<style name="street" sidewalk="none" lanes="2"/>
+<description>Road passing lane</description>
+<picture src="road_a001_pl_l.bmp" size="32,32" offset="16">
+	<override when="night" src="road_a001_pl_l_n.bmp"/>
+</picture>
+</contribution>
+
+
+<!-- Avenue/with light and verge -->
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-streetlamp-verge-concrete-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/verge/sidewalk/concrete right</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Avenue concrete sidewalk</description>
+<picture src="road_a002_concrete_r_spring.bmp" size="32,32" offset="16">
+	<override when="spring" src="road_a002_concrete_r_spring.bmp">
+            <override when="night" src="road_a002_concrete_r_spring_n.bmp"/>
+        </override>
+	<override when="summer" src="road_a002_concrete_r_summer.bmp">
+            <override when="night" src="road_a002_concrete_r_summer_n.bmp"/>
+        </override>
+	<override when="autumn" src="road_a002_concrete_r_autumn.bmp">
+            <override when="night" src="road_a002_concrete_r_autumn_n.bmp"/>
+        </override>
+	<override when="winter" src="road_a002_concrete_r_winter.bmp">
+            <override when="night" src="road_a002_concrete_r_winter_n.bmp"/>
+        </override>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-streetlamp-verge-concrete-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/verge/sidewalk/concrete left</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Avenue concrete sidewalk</description>
+<picture src="road_a002_concrete_l_spring.bmp" size="32,32" offset="16">
+	<override when="spring" src="road_a002_concrete_l_spring.bmp">
+            <override when="night" src="road_a002_concrete_l_spring_n.bmp"/>
+        </override>
+	<override when="summer" src="road_a002_concrete_l_summer.bmp">
+            <override when="night" src="road_a002_concrete_l_summer_n.bmp"/>
+        </override>
+	<override when="autumn" src="road_a002_concrete_l_autumn.bmp">
+            <override when="night" src="road_a002_concrete_l_autumn_n.bmp"/>
+        </override>
+	<override when="winter" src="road_a002_concrete_l_winter.bmp">
+            <override when="night" src="road_a002_concrete_l_winter_n.bmp"/>
+        </override>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-streetlamp-verge-walk-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/verge/sidewalk/station area right</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Avenue sidewalk around station</description>
+<picture src="road_a002_walk_r_spring.bmp" size="32,32" offset="16">
+	<override when="spring" src="road_a002_walk_r_spring.bmp">
+            <override when="night" src="road_a002_walk_r_spring_n.bmp"/>
+        </override>
+	<override when="summer" src="road_a002_walk_r_summer.bmp">
+            <override when="night" src="road_a002_walk_r_summer_n.bmp"/>
+        </override>
+	<override when="autumn" src="road_a002_walk_r_autumn.bmp">
+            <override when="night" src="road_a002_walk_r_autumn_n.bmp"/>
+        </override>
+	<override when="winter" src="road_a002_walk_r_winter.bmp">
+            <override when="night" src="road_a002_walk_r_winter_n.bmp"/>
+        </override>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-streetlamp-verge-walk-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/verge/sidewalk/station area left</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Avenue sidewalk around station</description>
+<picture src="road_a002_walk_l_spring.bmp" size="32,32" offset="16">
+	<override when="spring" src="road_a002_walk_l_spring.bmp">
+            <override when="night" src="road_a002_walk_l_spring_n.bmp"/>
+        </override>
+	<override when="summer" src="road_a002_walk_l_summer.bmp">
+            <override when="night" src="road_a002_walk_l_summer_n.bmp"/>
+        </override>
+	<override when="autumn" src="road_a002_walk_l_autumn.bmp">
+            <override when="night" src="road_a002_walk_l_autumn_n.bmp"/>
+        </override>
+	<override when="winter" src="road_a002_walk_l_winter.bmp">
+            <override when="night" src="road_a002_walk_l_winter_n.bmp"/>
+        </override>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-streetlamp-verge-entrance-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/verge/sidewalk/station square right</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Road with station square</description>
+<picture src="road_a002_entrance_r_spring.bmp" size="32,32" offset="16">
+	<override when="spring" src="road_a002_entrance_r_spring.bmp">
+            <override when="night" src="road_a002_entrance_r_spring_n.bmp"/>
+        </override>
+	<override when="summer" src="road_a002_entrance_r_summer.bmp">
+            <override when="night" src="road_a002_entrance_r_summer_n.bmp"/>
+        </override>
+	<override when="autumn" src="road_a002_entrance_r_autumn.bmp">
+            <override when="night" src="road_a002_entrance_r_autumn_n.bmp"/>
+        </override>
+	<override when="winter" src="road_a002_entrance_r_winter.bmp">
+            <override when="night" src="road_a002_entrance_r_winter_n.bmp"/>
+        </override>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-streetlamp-verge-entrance-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/verge/sidewalk/station square left</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Road with station square</description>
+<picture src="road_a002_entrance_l_spring.bmp" size="32,32" offset="16">
+	<override when="spring" src="road_a002_entrance_l_spring.bmp">
+            <override when="night" src="road_a002_entrance_l_spring_n.bmp"/>
+        </override>
+	<override when="summer" src="road_a002_entrance_l_summer.bmp">
+            <override when="night" src="road_a002_entrance_l_summer_n.bmp"/>
+        </override>
+	<override when="autumn" src="road_a002_entrance_l_autumn.bmp">
+            <override when="night" src="road_a002_entrance_l_autumn_n.bmp"/>
+        </override>
+	<override when="winter" src="road_a002_entrance_l_winter.bmp">
+            <override when="night" src="road_a002_entrance_l_winter_n.bmp"/>
+        </override>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-streetlamp-passinglane-verge-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/verge/2lane/passing right</name>
+<style name="street" sidewalk="none" lanes="2"/>
+<description>passing lane</description>
+<picture src="road_a002_pl_r_spring.bmp" size="32,32" offset="16">
+	<override when="spring" src="road_a002_pl_r_spring.bmp">
+            <override when="night" src="road_a002_pl_r_spring_n.bmp"/>
+        </override>
+	<override when="summer" src="road_a002_pl_r_summer.bmp">
+            <override when="night" src="road_a002_pl_r_summer_n.bmp"/>
+        </override>
+	<override when="autumn" src="road_a002_pl_r_autumn.bmp">
+            <override when="night" src="road_a002_pl_r_autumn_n.bmp"/>
+        </override>
+	<override when="winter" src="road_a002_pl_r_winter.bmp">
+            <override when="night" src="road_a002_pl_r_winter_n.bmp"/>
+        </override>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-streetlamp-passinglane-verge-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/verge/2lane/passing left</name>
+<style name="street" sidewalk="none" lanes="2"/>
+<description>passing lane</description>
+<picture src="road_a002_pl_l_spring.bmp" size="32,32" offset="16">
+	<override when="spring" src="road_a002_pl_l_spring.bmp">
+            <override when="night" src="road_a002_pl_l_spring_n.bmp"/>
+        </override>
+	<override when="summer" src="road_a002_pl_l_summer.bmp">
+            <override when="night" src="road_a002_pl_l_summer_n.bmp"/>
+        </override>
+	<override when="autumn" src="road_a002_pl_l_autumn.bmp">
+            <override when="night" src="road_a002_pl_l_autumn_n.bmp"/>
+        </override>
+	<override when="winter" src="road_a002_pl_l_winter.bmp">
+            <override when="night" src="road_a002_pl_l_winter_n.bmp"/>
+        </override>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-streetlamp-verge-center}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/verge/center line/median strip</name>
+<style name="street" sidewalk="none" lanes="2"/>
+<description>Median strip</description>
+<picture src="road_a002_pl_c_spring.bmp" size="32,32" offset="16">
+	<override when="spring" src="road_a001_c_spring.bmp">
+            <override when="night" src="road_a001_c_spring_n.bmp"/>
+        </override>
+	<override when="summer" src="road_a001_c_summer.bmp">
+            <override when="night" src="road_a001_c_summer_n.bmp"/>
+        </override>
+	<override when="autumn" src="road_a001_c_autumn.bmp">
+            <override when="night" src="road_a001_c_autumn_n.bmp"/>
+        </override>
+	<override when="winter" src="road_a001_c_winter.bmp">
+            <override when="night" src="road_a001_c_winter_n.bmp"/>
+        </override>
+</picture>
+</contribution>
+
+
+<!-- Avenue/with piers -->
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-streetlamp-pier-concrete-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/pier/sidewalk/concrete right</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Avenue concrete sidewalk</description>
+<picture src="road_a003_concrete_r.bmp" size="32,32" offset="16">
+	<override when="night" src="road_a003_concrete_r_n.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-sidewalk-streetlamp-pier-concrete-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/pier/sidewalk/concrete left</name>
+<style name="street" sidewalk="pavement" lanes="1"/>
+<description>Avenue concrete sidewalk</description>
+<picture src="road_a003_concrete_l.bmp" size="32,32" offset="16">
+	<override when="night" src="road_a003_concrete_l_n.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-streetlamp-passinglane-verge-pier-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/pier/2lane/passing right</name>
+<style name="street" sidewalk="none" lanes="2"/>
+<description>passing lane</description>
+<picture src="road_a003_pl_r_spring.bmp" size="32,32" offset="16">
+	<override when="spring" src="road_a003_pl_r_spring.bmp">
+            <override when="night" src="road_a003_pl_r_spring_n.bmp"/>
+        </override>
+	<override when="summer" src="road_a003_pl_r_summer.bmp">
+            <override when="night" src="road_a003_pl_r_summer_n.bmp"/>
+        </override>
+	<override when="autumn" src="road_a003_pl_r_autumn.bmp">
+            <override when="night" src="road_a003_pl_r_autumn_n.bmp"/>
+        </override>
+	<override when="winter" src="road_a003_pl_r_winter.bmp">
+            <override when="night" src="road_a003_pl_r_winter_n.bmp"/>
+        </override>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-streetlamp-passinglane-verge-pier-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/pier/2lane/passing left</name>
+<style name="street" sidewalk="none" lanes="2"/>
+<description>passing lane</description>
+<picture src="road_a003_pl_l_spring.bmp" size="32,32" offset="16">
+	<override when="spring" src="road_a003_pl_l_spring.bmp">
+            <override when="night" src="road_a003_pl_l_spring_n.bmp"/>
+        </override>
+	<override when="summer" src="road_a003_pl_l_summer.bmp">
+            <override when="night" src="road_a003_pl_l_summer_n.bmp"/>
+        </override>
+	<override when="autumn" src="road_a003_pl_l_autumn.bmp">
+            <override when="night" src="road_a003_pl_l_autumn_n.bmp"/>
+        </override>
+	<override when="winter" src="road_a003_pl_l_winter.bmp">
+            <override when="night" src="road_a003_pl_l_winter_n.bmp"/>
+        </override>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-avenue-streetlamp-verge-pier-center}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Avenue/pier/center line/median strip</name>
+<style name="street" sidewalk="none" lanes="2"/>
+<description>Median strip</description>
+<picture src="road_a003_pl_c_spring.bmp" size="32,32" offset="16">
+	<override when="spring" src="road_a003_c_spring.bmp">
+            <override when="night" src="road_a003_c_spring_n.bmp"/>
+        </override>
+	<override when="summer" src="road_a003_c_summer.bmp">
+            <override when="night" src="road_a003_c_summer_n.bmp"/>
+        </override>
+	<override when="autumn" src="road_a003_c_autumn.bmp">
+            <override when="night" src="road_a003_c_autumn_n.bmp"/>
+        </override>
+	<override when="winter" src="road_a003_c_winter.bmp">
+            <override when="night" src="road_a003_c_winter_n.bmp"/>
+        </override>
+</picture>
+</contribution>
+
+
+<!-- Road under bridge piers-->
+
+<contribution type="road" id="{FreeTrain-Shika-Road-pier-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>under pier road/1lane/right</name>
+<style name="street" sidewalk="shoulder" lanes="1"/>
+<description>under pier road</description>
+<picture src="road_pier001_r.bmp" size="32,32" offset="16">
+	<override when="night" src="road_pier001_r_n.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-pier-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>under pier road/1lane/left</name>
+<style name="street" sidewalk="shoulder" lanes="1"/>
+<description>under pier road</description>
+<picture src="road_pier001_l.bmp" size="32,32" offset="16">
+	<override when="night" src="road_pier001_l_n.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-pier}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>under pier road/2lane/medium</name>
+<style name="street" sidewalk="shoulder" lanes="2"/>
+<description>under pier road</description>
+<picture src="road_pier001_c_spring.bmp" size="32,32" offset="16">
+	<override when="spring" src="road_pier001_c_spring.bmp">
+            <override when="night" src="road_pier001_c_spring_n.bmp"/>
+        </override>
+	<override when="summer" src="road_pier001_c_summer.bmp">
+            <override when="night" src="road_pier001_c_summer_n.bmp"/>
+        </override>
+	<override when="autumn" src="road_pier001_c_autumn.bmp">
+            <override when="night" src="road_pier001_c_autumn_n.bmp"/>
+        </override>
+	<override when="winter" src="road_pier001_c_winter.bmp">
+            <override when="night" src="road_pier001_c_winter_n.bmp"/>
+        </override>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-pier-lane2-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>under pier road/2lane/right</name>
+<style name="street" sidewalk="shoulder" lanes="2"/>
+<description>under pier road</description>
+<picture src="road_pier002_r.bmp" size="32,32" offset="16">
+	<override when="night" src="road_pier002_r_n.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-pier-lane2-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>under pier road/2lane/left</name>
+<style name="street" sidewalk="shoulder" lanes="2"/>
+<description>under pier road</description>
+<picture src="road_pier002_l.bmp" size="32,32" offset="16">
+	<override when="night" src="road_pier002_l_n.bmp"/>
+</picture>
+</contribution>
+
+<!-- Road under monorail -->
+
+<contribution type="road" id="{FreeTrain-Shika-Road-monorail-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>under pier road/under monorail/pier1 right</name>
+<style name="street" sidewalk="shoulder" lanes="2"/>
+<description>Road under monorail 1</description>
+<picture src="road_monorail001_r.bmp" size="32,32" offset="16">
+	<override when="night" src="road_monorail001_r_n.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-monorail-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>under pier road/under monorail/pier1 left</name>
+<style name="street" sidewalk="shoulder" lanes="2"/>
+<description>Road under monorail 1</description>
+<picture src="road_monorail001_l.bmp" size="32,32" offset="16">
+	<override when="night" src="road_monorail001_l_n.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-monorail2-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>under pier road/under monorail/pier2 right</name>
+<style name="street" sidewalk="shoulder" lanes="2"/>
+<description>Road under monorail 2</description>
+<picture src="road_monorail002_r.bmp" size="32,48" offset="32">
+	<override when="night" src="road_monorail002_r_n.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-monorail2-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>under pier road/under monorail/pier2 left</name>
+<style name="street" sidewalk="shoulder" lanes="2"/>
+<description>Road under monorail 2</description>
+<picture src="road_monorail002_l.bmp" size="32,48" offset="32">
+	<override when="night" src="road_monorail002_l_n.bmp"/>
+</picture>
+</contribution>
+
+</plug-in>

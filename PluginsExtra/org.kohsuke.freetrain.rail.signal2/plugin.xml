@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Railway Signals</title>
+	<author>HanabishiRekka</author>
+	<homepage></homepage>
+		
+	<!-- Station zone post -->
+	<contribution type="railSignal" id="{6FA55843-E694-4140-A121-0A3D0C613B22}-r">
+		<name>Station zone post</name> 
+ 		<side>left</side> 
+ 		<picture src="teisyaba.bmp" /> 
+ 	</contribution>
+
+	<!-- Calling-on signal -->
+	<contribution type="railSignal" id="{6FA55844-E695-4141-A122-0A3D0C613B23}-r">
+		<name>Calling-on signal</name> 
+ 		<side>left</side> 
+ 		<picture src="yuudou.bmp" /> 
+ 	</contribution>
+
+	<!-- Shunting signal -->
+	<contribution type="railSignal" id="{6FA55844-E695-4141-A133-0A3D0C613B23}-r">
+		<name>Shunting signal</name> 
+ 		<side>left</side> 
+ 		<picture src="iresin0.bmp" > 
+			<override when="night" src="iresin1.bmp" />
+		</picture>
+ 	</contribution>
+</plug-in>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+
+<plug-in>
+	<title>Station Buildings</title> 
+	<author>HanabishiRekka</author> 
+	<homepage></homepage> 
+	<contribution type="picture" id="{474B8BFD-2500-1010-8800-D0EA1049D28D}">
+		<picture src="to_eki.bmp" origin="0,0" offset="16" >
+			<override when="night" src="to_eki1.bmp" /> 
+  		</picture> 
+	</contribution>
+
+	<contribution type="station" id="{474B8BFD-2501-1010-8800-D0EA1049D28D}">
+	<group>Station under-viaduct (tomix)</group> 
+	<price>200</price> 
+	<height>1</height> 
+	<operationCost>10</operationCost> 
+	<size>1,2</size> 
+	<sprite origin="0,0" offset="16">
+		<picture ref="{474B8BFD-2500-1010-8800-D0EA1049D28D}" /> 
+	</sprite>
+	</contribution>
+
+	<contribution type="station" id="{474B8BFD-2502-1010-8800-D0EA1049D28D}">
+	<group>Station under-viaduct (tomix)</group> 
+	<price>200</price> 
+	<height>1</height> 
+	<operationCost>10</operationCost> 
+	<size>2,1</size> 
+	<sprite origin="48,0" offset="24">
+		<picture ref="{474B8BFD-2500-1010-8800-D0EA1049D28D}" /> 
+	</sprite>
+	</contribution>
+
+</plug-in>

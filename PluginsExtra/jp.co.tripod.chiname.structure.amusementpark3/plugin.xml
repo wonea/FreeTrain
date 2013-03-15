@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+
+<!ENTITY SpcShip '
+	<!--LtRed-Green-Blue-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="222,141,118"/>
+		<map from="0,*,0" to="106,231,93"/>
+		<map from="0,0,*" to="0,0,255"/>
+	</spriteType>	
+	<!--LtYellow-Blue-Red-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="216,174,92"/>
+		<map from="0,*,0" to="048,103,255"/>
+		<map from="0,0,*" to="196,059,044"/>
+	</spriteType>	
+	<!--LtGreen-Orange-Red-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="142,196,84"/>
+		<map from="0,*,0" to="247,116,087"/>
+		<map from="0,0,*" to="196,059,044"/>
+	</spriteType>	
+	<!--Cyan-Red-Yellow-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="117,195,198"/>
+		<map from="0,*,0" to="255,005,000"/>
+		<map from="0,0,*" to="209,210,000"/>
+	</spriteType>	
+	<!--LtBlue-Red-Blue-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="127,134,198"/>
+		<map from="0,*,0" to="255,82,000"/>
+		<map from="0,0,*" to="019,113,133"/>
+	</spriteType>	
+	<!--Pink-Green-Red-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="222,178,213"/>
+		<map from="0,*,0" to="114,207,202"/>
+		<map from="0,0,*" to="239,022,037"/>
+	</spriteType>
+	<!--Blown-Yellow-Green-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="143,062,060"/>
+		<map from="0,*,0" to="247,237,087"/>
+		<map from="0,0,*" to="024,166,034"/>
+	</spriteType>	
+	<!--DkYellow-Green-Blue-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="138,132,82"/>
+		<map from="0,*,0" to="111,222,179"/>
+		<map from="0,0,*" to="058,080,102"/>
+	</spriteType>	
+	<!--DkGreen-Wine-Wine-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="087,127,138"/>
+		<map from="0,*,0" to="235,099,234"/>
+		<map from="0,0,*" to="210,050,137"/>
+	</spriteType>	
+	<!--DkBlue-Yellow-Red-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="088,082,146"/>
+		<map from="0,*,0" to="254,254,000"/>
+		<map from="0,0,*" to="210,028,000"/>
+	</spriteType>	
+	<!--DkPurple-Green-Blue-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="150,042,146"/>
+		<map from="0,*,0" to="122,227,070"/>
+		<map from="0,0,*" to="019,113,133"/>
+	</spriteType>	
+	<!--Gray-Red-Blue-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="160,158,141"/>
+		<map from="0,*,0" to="255,002,048"/>
+		<map from="0,0,*" to="00,00,255"/>
+	</spriteType>	
+'>
+<!ENTITY Astro '
+	<!--LtRed-Green-Blue-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="222,141,118"/>
+		<map from="0,*,0" to="114,207,202"/>
+		<map from="0,0,*" to="000,255,037"/>
+	</spriteType>	
+	<!--LtYellow-Cyan-Red-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="216,174,92"/>
+		<map from="0,*,0" to="122,227,070"/>
+		<map from="0,0,*" to="255,255,255"/>
+	</spriteType>	
+	<!--LtGreen-Orange-Green-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="142,196,84"/>
+		<map from="0,*,0" to="0,0,255"/>
+		<map from="0,0,*" to="0,0,255"/>
+	</spriteType>	
+	<!--Cyan-Red-Yellow-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="117,195,198"/>
+		<map from="0,*,0" to="237,123,228"/>
+		<map from="0,0,*" to="210,028,000"/>
+	</spriteType>	
+	<!--LtBlue-Yellow-Red-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="127,134,198"/>
+		<map from="0,*,0" to="247,116,087"/>
+		<map from="0,0,*" to="255,255,044"/>
+	</spriteType>	
+	<!--Pink-Blue-LtOrange-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="222,178,213"/>
+		<map from="0,*,0" to="111,222,222"/>
+		<map from="0,0,*" to="058,080,102"/>
+	</spriteType>
+	<!--Blown-LtGreen-DkCyan-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="163,082,071"/>
+		<map from="0,*,0" to="255,002,048"/>
+		<map from="0,0,*" to="043,254,233"/>
+	</spriteType>	
+	<!--DkYellow-Cyan-DkBlue-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="138,132,82"/>
+		<map from="0,*,0" to="255,82,000"/>
+		<map from="0,0,*" to="255,122,208"/>
+	</spriteType>	
+	<!--DkGreen-Pink-Wine-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="087,127,138"/>
+		<map from="0,*,0" to="247,237,087"/>
+		<map from="0,0,*" to="247,237,087"/>
+	</spriteType>	
+	<!--DkBlue-LtOrange-Red-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="088,082,146"/>
+		<map from="0,*,0" to="048,205,000"/>
+		<map from="0,0,*" to="100,255,000"/>
+	</spriteType>	
+	<!--DkPurple-Yellow-Green-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="150,042,146"/>
+		<map from="0,*,0" to="000,235,235"/>
+		<map from="0,0,*" to="080,255,255"/>
+	</spriteType>	
+	<!--Gray-Red-Cyan-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="160,158,141"/>
+		<map from="0,*,0" to="235,099,234"/>
+		<map from="0,0,*" to="210,050,137"/>
+	</spriteType>	
+'>
+<!ENTITY CoffeeCup '
+	<!--Pink-White-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="170,113,113"/>
+		<map from="0,*,0" to="255,219,244"/>
+		<map from="0,0,*" to="223,222,222"/>
+	</spriteType>	
+	<!--Green-Yellow-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="177,192,70"/>
+		<map from="0,*,0" to="218,255,131"/>
+		<map from="0,0,*" to="102,222,100"/>
+	</spriteType>	
+	<!--Cyan-Pink-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="214,137,229"/>
+		<map from="0,*,0" to="134,255,200"/>
+		<map from="0,0,*" to="060,169,169"/>
+	</spriteType>	
+	<!--Cyan-Purple-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="050,151,250"/>
+		<map from="0,*,0" to="166,167,255"/>
+		<map from="0,0,*" to="103,105,177"/>
+	</spriteType>	
+	<!--Orange-DkGreen-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="192,150,000"/>
+		<map from="0,*,0" to="133,231,064"/>
+		<map from="0,0,*" to="046,165,058"/>
+	</spriteType>	
+	<!--LtGreen-White-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="112,206,132"/>
+		<map from="0,*,0" to="252,252,252"/>
+		<map from="0,0,*" to="250,250,250"/>
+	</spriteType>	
+'>
+<!ENTITY Swinger '
+	<!--LtRed-Green-Blue-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="222,141,118"/>
+		<map from="0,*,0" to="255,255,255"/>
+		<map from="0,0,*" to="0,0,255"/>
+	</spriteType>	
+	<!--LtYellow-Cyan-Red-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="216,174,92"/>
+		<map from="0,*,0" to="255,255,255"/>
+		<map from="0,0,*" to="019,113,133"/>
+	</spriteType>	
+	<!--LtGreen-Orange-Green-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="142,196,84"/>
+		<map from="0,*,0" to="255,207,255"/>
+		<map from="0,0,*" to="239,022,037"/>
+	</spriteType>	
+	<!--Cyan-Red-Yellow-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="117,195,198"/>
+		<map from="0,*,0" to="255,207,255"/>
+		<map from="0,0,*" to="243,134,000"/>
+	</spriteType>	
+	<!--LtBlue-Yellow-Red-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="127,134,198"/>
+		<map from="0,*,0" to="255,255,207"/>
+		<map from="0,0,*" to="255,187,034"/>
+	</spriteType>	
+	<!--Pink-Blue-LtOrange-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="222,178,213"/>
+		<map from="0,*,0" to="255,255,207"/>
+		<map from="0,0,*" to="196,059,044"/>
+	</spriteType>
+	<!--Blown-LtGreen-DkCyan-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="163,082,071"/>
+		<map from="0,*,0" to="255,255,255"/>
+		<map from="0,0,*" to="044,196,054"/>
+	</spriteType>	
+	<!--DkYellow-Cyan-DkBlue-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="138,132,82"/>
+		<map from="0,*,0" to="255,255,255"/>
+		<map from="0,0,*" to="058,080,102"/>
+	</spriteType>	
+	<!--DkGreen-Pink-Wine-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="087,127,138"/>
+		<map from="0,*,0" to="255,207,255"/>
+		<map from="0,0,*" to="210,050,137"/>
+	</spriteType>	
+	<!--DkBlue-LtOrange-Red-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="088,082,146"/>
+		<map from="0,*,0" to="255,207,255"/>
+		<map from="0,0,*" to="218,185,000"/>
+	</spriteType>	
+	<!--DkPurple-Yellow-Green-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="150,042,146"/>
+		<map from="0,*,0" to="255,255,207"/>
+		<map from="0,0,*" to="209,210,000"/>
+	</spriteType>	
+	<!--Gray-Red-Cyan-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="160,158,141"/>
+		<map from="0,*,0" to="255,255,207"/>
+		<map from="0,0,*" to="210,028,000"/>
+	</spriteType>	
+'>
+<!ENTITY SpSwing '
+	<!--LtRed-Cyan-Purple-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="222,141,118"/>
+		<map from="0,*,0" to="000,000,250"/>
+		<map from="0,0,*" to="255,240,000"/>
+	</spriteType>	
+	<!--LtYellow-Cyan-Blue-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="216,174,92"/>
+		<map from="0,*,0" to="000,200,230"/>
+		<map from="0,0,*" to="100,100,255"/>
+	</spriteType>	
+	<!--LtGreen-Orange-Green-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="142,196,84"/>
+		<map from="0,*,0" to="254,214,000"/>
+		<map from="0,0,*" to="210,028,000"/>
+	</spriteType>	
+	<!--Cyan-Red-Orange-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="117,195,198"/>
+		<map from="0,*,0" to="255,207,000"/>
+		<map from="0,0,*" to="130,000,255"/>
+	</spriteType>	
+	<!--LtBlue-Purple-Red-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="127,134,198"/>
+		<map from="0,*,0" to="254,128,210"/>
+		<map from="0,0,*" to="205,000,254"/>
+	</spriteType>	
+	<!--Pink-Blue-White-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="222,178,213"/>
+		<map from="0,*,0" to="064,086,187"/>
+		<map from="0,0,*" to="255,255,255"/>
+	</spriteType>
+	<!--Blown-LtGreen-DkCyan-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="163,082,071"/>
+		<map from="0,*,0" to="247,237,087"/>
+		<map from="0,0,*" to="044,196,054"/>
+	</spriteType>	
+	<!--DkYellow-Cyan-DkBlue-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="138,132,82"/>
+		<map from="0,*,0" to="111,222,179"/>
+		<map from="0,0,*" to="240,250,032"/>
+	</spriteType>	
+	<!--DkGreen-Pink-Wine-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="087,127,138"/>
+		<map from="0,*,0" to="235,229,000"/>
+		<map from="0,0,*" to="190,050,255"/>
+	</spriteType>	
+	<!--DkBlue-Cyan-Pink-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="088,082,146"/>
+		<map from="0,*,0" to="255,103,255"/>
+		<map from="0,0,*" to="103,255,255"/>
+	</spriteType>	
+	<!--DkPurple-White-Cyan-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="150,042,146"/>
+		<map from="0,*,0" to="255,255,255"/>
+		<map from="0,0,*" to="000,230,240"/>
+	</spriteType>	
+	<!--Gray-Red-Cyan-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="160,158,141"/>
+		<map from="0,*,0" to="255,002,048"/>
+		<map from="0,0,*" to="214,214,063"/>
+	</spriteType>	
+'>
+
+]>
+
+<plug-in>
+
+	<title>Amusement Park set 3</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+		
+	<contribution type="picture" id="{06BC1573-B9B4-42A5-C477-88B8DE5E0CB8}">
+		<picture src="ampark_spaceship.bmp">
+			<override when="night" src="ampark_spaceship_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{7F80EFF9-2D9E-43AB-C477-1640ADE50BE9}">
+		<picture src="ampark_coffeecup.bmp">
+			<override when="night" src="ampark_coffeecup_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{0AFF0469-A75B-4E42-C477-1932A8223F44}">
+		<picture src="ampark_swinger.bmp">
+			<override when="night" src="ampark_swinger_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{3E3C18A9-371C-4918-C477-0F7BE2F03817}">
+		<picture src="road_ampark_green.bmp">
+			<override when="night" src="road_ampark_green_n.bmp"/>
+			<override when="autumn" src="road_ampark_green_aut.bmp">
+				<override when="night" src="road_ampark_green_n.bmp"/>
+			</override>
+			<override when="winter" src="road_ampark_green_win.bmp">
+				<override when="night" src="road_ampark_green_win_n.bmp"/>
+			</override>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{32716E00-3D89-4B36-C477-D239FA0B2081}">
+		<picture src="road_ampark_trees.bmp">
+			<override when="night" src="road_ampark_trees_n.bmp"/>
+			<override when="autumn" src="road_ampark_trees_aut.bmp">
+				<override when="night" src="road_ampark_trees_n.bmp"/>
+			</override>
+			<override when="winter" src="road_ampark_trees_win.bmp">
+				<override when="night" src="road_ampark_trees_win_n.bmp"/>
+			</override>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{03713641-E4CB-40CD-C477-61162258C092}">
+		<picture src="road_ampark_fountain.bmp">
+			<override when="night" src="road_ampark_fountain_n.bmp"/>
+			<override when="winter" src="road_ampark_fountain_win.bmp">
+				<override when="night" src="road_ampark_fountain_win_n.bmp"/>
+			</override>
+		</picture>
+	</contribution>
+		
+	<contribution type="GenericStructure" id="{97BEE6FC-374C-466E-C477-FB44359ADB7A}">
+		<group>Attraction 2x2</group>
+		<design>plane tower</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>700</price>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>20</base>
+		</population>
+		<height>1</height>
+		<size>2,2</size>
+		<computerCannotBuild/>
+		&SpcShip;
+		<sprite origin="0,0" offset="24">
+			<picture ref="{06BC1573-B9B4-42A5-C477-88B8DE5E0CB8}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{1978F3FC-2AFA-4902-C477-EA2911D58A5E}">
+		<group>Attraction 2x2</group>
+		<design>para trooper</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>650</price>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>24</base>
+		</population>
+		<height>1</height>
+		<size>2,2</size>
+		<computerCannotBuild/>
+		&Astro;
+		<sprite origin="64,0" offset="24">
+			<picture ref="{06BC1573-B9B4-42A5-C477-88B8DE5E0CB8}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{1ECF7E51-A426-48F9-C477-95F20BB2F5E9}">
+		<group>Attraction 2x2</group>
+		<design>teacup</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>320</price>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>20</base>
+		</population>
+		<height>1</height>
+		<size>2,2</size>
+		<computerCannotBuild/>
+		&CoffeeCup;
+		<sprite origin="0,0" offset="8">
+			<picture ref="{7F80EFF9-2D9E-43AB-C477-1640ADE50BE9}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{BB3DB14A-555E-4C03-C477-68824A2A589A}">
+		<group>Attraction 2x2</group>
+		<design>wave swinger</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>750</price>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>24</base>
+		</population>
+		<height>1</height>
+		<size>2,2</size>
+		<computerCannotBuild/>
+		&Swinger;
+		<sprite origin="0,0" offset="24">
+			<picture ref="{0AFF0469-A75B-4E42-C477-1932A8223F44}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{6FCBB406-FB00-4B52-C477-00B631A6DFDF}">
+		<group>Attraction 2x2</group>
+		<design>super swing</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>500</price>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>20</base>
+		</population>
+		<height>1</height>
+		<size>2,2</size>
+		<computerCannotBuild/>
+		&SpSwing;
+		<sprite origin="64,0" offset="24">
+			<picture ref="{0AFF0469-A75B-4E42-C477-1932A8223F44}"/>
+		</sprite>
+	</contribution>
+
+	
+	<contribution type="road" id="{DD832F36-77AE-465C-C477-0830EAA652D1}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Amusement Park pavement(grass)</name>
+		<description>Pavement in Amusement Park</description>
+		<picture ref="{3E3C18A9-371C-4918-C477-0F7BE2F03817}" size="32,24" offset="8"/>
+	</contribution>
+	<contribution type="road" id="{383868BC-5662-42BD-C477-211A3356C8AA}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Amusement Park pavement(tree)</name>
+		<description>Pavement in Amusement Park</description>
+		<picture ref="{32716E00-3D89-4B36-C477-D239FA0B2081}" size="32,24" offset="8"/>
+	</contribution>
+	<contribution type="road" id="{6C2DC3D9-7836-4F79-C477-8C0580C248E8}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Amusement Park pavement(fountain)</name>
+		<description>Pavement in Amusement Park</description>
+		<picture ref="{03713641-E4CB-40CD-C477-61162258C092}" size="32,24" offset="8"/>
+	</contribution>
+
+</plug-in>

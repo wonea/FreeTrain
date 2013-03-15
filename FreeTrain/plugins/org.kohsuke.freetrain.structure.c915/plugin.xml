@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY smallHouse '
+	<group>Private house (S)</group>
+	<price>150</price>
+	<size>1,1</size>
+	<height>1</height>
+	<structure>
+		<category byname="Single Houses"/>
+	</structure>
+'>
+<!ENTITY smallBuildingParam '
+	<group>Office building (1x1)</group>
+	<structure>
+		<category byname="Rental Offices"/>
+	</structure>
+	<price>350</price>
+	<size>1,1</size>
+	<minHeight>2</minHeight>
+	<maxHeight>10</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>40</base>
+	</population>
+'>
+<!ENTITY building2x2Param '
+	<group>Office building (2x2)</group>
+	<structure>
+		<category byname="Rental Offices"/>
+	</structure>
+	<price>3000</price>
+	<size>2,2</size>
+	<minHeight>3</minHeight>
+	<maxHeight>10</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>150</base>
+	</population>
+'>
+]>
+<plug-in>	
+	<title>Temples/Houses/Offices</title>
+	<author>915</author>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="picture" id="{6A7D12A5-28E1-418F-B012-88DE648BBA8C}">
+		<picture src="tera.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{628C6F59-9B1A-48a8-8815-48AC0D15765E}">
+		<name>Temple</name>
+		<structure>
+			<category byname="Religious Institutions"/>
+		</structure>
+		<price>1600</price>
+		<size>2,2</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+		<sprite origin="0,0" offset="15">
+			<picture ref="{6A7D12A5-28E1-418F-B012-88DE648BBA8C}" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="picture" id="{A6ACEC64-C893-4BC2-8231-EC3440514BCA}">
+		<picture src="ie.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{DD8340A1-BD1A-4E2E-B42D-F162D6D6CE65}">
+		&smallHouse;
+		<sprite origin="0,0" offset="7">
+			<picture ref="{A6ACEC64-C893-4BC2-8231-EC3440514BCA}"/>
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{22532C5A-CE0B-4C4D-9DC8-C7FC7C5A3FE5}">
+		&smallHouse;
+		<sprite origin="32,0" offset="7">
+			<picture ref="{A6ACEC64-C893-4BC2-8231-EC3440514BCA}"/>
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{15D9C4FA-0F6E-4915-B19F-CDBB19C29AB4}">
+		&smallHouse;
+		<sprite origin="64,0" offset="7">
+			<picture ref="{A6ACEC64-C893-4BC2-8231-EC3440514BCA}"/>
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{FA1FDEDE-6E4E-48F2-A45C-DFEA3979D1D3}">
+		&smallHouse;
+		<sprite origin="96,0" offset="7">
+			<picture ref="{A6ACEC64-C893-4BC2-8231-EC3440514BCA}"/>
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{0C468024-EB7E-44BE-8026-326FC3F09539}">
+		&smallHouse;
+		<sprite origin="0,32" offset="7">
+			<picture ref="{A6ACEC64-C893-4BC2-8231-EC3440514BCA}"/>
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{924FBFF1-69E4-49C6-9067-86D915638A9A}">
+		&smallHouse;
+		<sprite origin="32,32" offset="7">
+			<picture ref="{A6ACEC64-C893-4BC2-8231-EC3440514BCA}"/>
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{26601128-3116-4EFA-AB8E-233BC566D031}">
+		&smallHouse;
+		<sprite origin="64,32" offset="7">
+			<picture ref="{A6ACEC64-C893-4BC2-8231-EC3440514BCA}"/>
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{91857E01-6499-40CE-8825-6D52247F80C9}">
+		&smallHouse;
+		<sprite origin="96,32" offset="7">
+			<picture ref="{A6ACEC64-C893-4BC2-8231-EC3440514BCA}"/>
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>10</base>
+		</population>
+	</contribution>
+	
+	<contribution type="picture" id="{163274A7-D640-4D6A-B500-002738A431F8}">
+		<picture src="building1.bmp"/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{4A00A798-AC00-437e-A888-D89BA53AE521}">
+		&smallBuildingParam;
+		<pictures>
+			<top    origin=" 0,0" offset="8">
+				<picture ref="{163274A7-D640-4D6A-B500-002738A431F8}"/>
+			</top>
+			<middle origin="32,0" offset="8">
+				<picture ref="{163274A7-D640-4D6A-B500-002738A431F8}"/>
+			</middle>
+			<bottom origin="64,0" offset="8">
+				<picture ref="{163274A7-D640-4D6A-B500-002738A431F8}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+	<contribution type="picture" id="{D82C9ECB-7759-4D4F-B1CB-283CF244BD40}">
+		<picture src="building2.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{8CA77980-AF45-4ee6-9835-05AE2265DE02}">
+		&smallBuildingParam;
+		<pictures>
+			<top    origin=" 0,0" offset="8">
+				<picture ref="{D82C9ECB-7759-4D4F-B1CB-283CF244BD40}"/>
+			</top>
+			<middle origin="32,0" offset="8">
+				<picture ref="{D82C9ECB-7759-4D4F-B1CB-283CF244BD40}"/>
+			</middle>
+			<bottom origin="64,0" offset="8">
+				<picture ref="{D82C9ECB-7759-4D4F-B1CB-283CF244BD40}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+	<contribution type="picture" id="{E72BE764-C88F-49BE-B963-842314DC179D}">
+		<picture src="building3.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{B33B8F45-ABEE-4c88-AD85-F37B06D1C0FB}">
+		&smallBuildingParam;
+		<pictures>
+			<top    origin=" 0,0" offset="8">
+				<picture ref="{E72BE764-C88F-49BE-B963-842314DC179D}"/>
+			</top>
+			<middle origin="32,0" offset="8">
+				<picture ref="{E72BE764-C88F-49BE-B963-842314DC179D}"/>
+			</middle>
+			<bottom origin="64,0" offset="8">
+				<picture ref="{E72BE764-C88F-49BE-B963-842314DC179D}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+	<contribution type="picture" id="{38D6BFC9-A384-466E-98FF-BF1929D3BF76}">
+		<picture src="building4.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{042F75D2-0C64-4e42-8A94-1F0245304F8B}">
+		&smallBuildingParam;
+		<pictures>
+			<top    origin=" 0,0" offset="8">
+				<picture ref="{38D6BFC9-A384-466E-98FF-BF1929D3BF76}"/>
+			</top>
+			<middle origin="32,0" offset="8">
+				<picture ref="{38D6BFC9-A384-466E-98FF-BF1929D3BF76}"/>
+			</middle>
+			<bottom origin="64,0" offset="8">
+				<picture ref="{38D6BFC9-A384-466E-98FF-BF1929D3BF76}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+	<contribution type="picture" id="{B6CA22DC-9E0A-4A13-8C97-DCB3D14FE44F}">
+		<picture src="building5.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{A39D0D3D-DEE7-4492-9EBC-678D331F3A52}">
+		&smallBuildingParam;
+		<pictures>
+			<top    origin=" 0,0" offset="8">
+				<picture ref="{B6CA22DC-9E0A-4A13-8C97-DCB3D14FE44F}"/>
+			</top>
+			<middle origin="32,0" offset="8">
+				<picture ref="{B6CA22DC-9E0A-4A13-8C97-DCB3D14FE44F}"/>
+			</middle>
+			<bottom origin="64,0" offset="8">
+				<picture ref="{B6CA22DC-9E0A-4A13-8C97-DCB3D14FE44F}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+	
+	<contribution type="picture" id="{2EDCD5A1-D32C-449E-A1A7-A049302F557D}">
+		<picture src="building6.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{ABD65D7D-DBFB-41A1-838C-F633CE2BF928}">
+		&smallBuildingParam;
+		<pictures>
+			<top    origin=" 0,0" offset="8">
+				<picture ref="{2EDCD5A1-D32C-449E-A1A7-A049302F557D}"/>
+			</top>
+			<middle origin="32,0" offset="8">
+				<picture ref="{2EDCD5A1-D32C-449E-A1A7-A049302F557D}"/>
+			</middle>
+			<bottom origin="64,0" offset="8">
+				<picture ref="{2EDCD5A1-D32C-449E-A1A7-A049302F557D}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+	<contribution type="picture" id="{28D56B34-9EA4-48A1-8D7F-559CC47A5477}">
+		<picture src="building7.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{AD743C11-C9A9-4E76-AD68-178CFA9F6E3E}">
+		&smallBuildingParam;
+		<pictures>
+			<top    origin=" 0,0" offset="8">
+				<picture ref="{28D56B34-9EA4-48A1-8D7F-559CC47A5477}"/>
+			</top>
+			<middle origin="32,0" offset="8">
+				<picture ref="{28D56B34-9EA4-48A1-8D7F-559CC47A5477}"/>
+			</middle>
+			<bottom origin="64,0" offset="8">
+				<picture ref="{28D56B34-9EA4-48A1-8D7F-559CC47A5477}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+
+	<contribution type="picture" id="{5FD2792F-EA81-4489-9A1E-D8535A8BE599}">
+		<picture src="2x2building1.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{9ECE312F-DB6A-415a-880A-E62FCE9AEB00}">
+		&building2x2Param;
+		<pictures>
+			<top    origin="0,  0" offset="27">
+				<picture ref="{5FD2792F-EA81-4489-9A1E-D8535A8BE599}"/>
+			</top>
+			<middle origin="0, 66" offset=" 9">
+				<picture ref="{5FD2792F-EA81-4489-9A1E-D8535A8BE599}"/>
+			</middle>
+			<bottom origin="0,114" offset=" 9">
+				<picture ref="{5FD2792F-EA81-4489-9A1E-D8535A8BE599}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+		
+	<contribution type="picture" id="{6420BDFF-83DA-4E37-A8EE-756ACC6B5932}">
+		<picture src="2x2building2.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{87F5416D-BEC0-4712-A6CB-B8E3E77EBB83}">
+		&building2x2Param;
+		<pictures>
+			<top    origin="0,  0" offset="26">
+				<picture ref="{6420BDFF-83DA-4E37-A8EE-756ACC6B5932}"/>
+			</top>
+			<middle origin="0, 50" offset="16">
+				<picture ref="{6420BDFF-83DA-4E37-A8EE-756ACC6B5932}"/>
+			</middle>
+			<bottom origin="0, 90" offset="16">
+				<picture ref="{6420BDFF-83DA-4E37-A8EE-756ACC6B5932}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{01C78302-65B7-473B-9426-A1BAB8F413BB}">
+		&building2x2Param;
+		<pictures>
+			<top    origin="64,  0" offset="26">
+				<picture ref="{6420BDFF-83DA-4E37-A8EE-756ACC6B5932}"/>
+			</top>
+			<middle origin="64, 50" offset="16">
+				<picture ref="{6420BDFF-83DA-4E37-A8EE-756ACC6B5932}"/>
+			</middle>
+			<bottom origin="64, 90" offset="16">
+				<picture ref="{6420BDFF-83DA-4E37-A8EE-756ACC6B5932}"/>
+			</bottom>
+		</pictures>
+	</contribution>
+	
+</plug-in>

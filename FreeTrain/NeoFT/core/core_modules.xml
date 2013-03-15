@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<modules>
+	<module name="DirectDraw7 Graphics">
+		<class name="nft.drawing.ddraw7.DD7GraphicManager" codebase=".DirectDraw"/>
+		<description>Microsoft DirectDraw(DirectX7) based Graphic Manager</description>
+		<option name="test">This is test.</option>
+	</module>
+</modules>

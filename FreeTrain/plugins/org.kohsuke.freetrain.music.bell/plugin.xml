@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plug-in>
+	<title>Departure Bell Set</title>
+	<!--!<title>発車ベルセット</title>-->
+	<author>915</author>
+	<!--!<author>915さん</author>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="trainDepartureBell" id="{607AA03D-4203-459E-A835-F4067A32E4B6}">
+		<name>Bell 1</name>
+		<!--!<name>ピリリリ</name>-->
+		<sound href="bell1.wav" />
+	</contribution>
+	
+	<contribution type="trainDepartureBell" id="{96B8B6EC-1793-445D-98B3-7F9330438CF9}">
+		<name>Bell 2</name>
+		<!--!<name>ポロロロ</name>-->
+		<sound href="bell2.wav" />
+	</contribution>
+	
+	<contribution type="trainDepartureBell" id="{3528F039-4F73-4592-BE7A-624877DB135A}">
+		<name>Bell 3</name>
+		<!--!<name>プー</name>-->
+		<sound href="eidan1.wav" />
+	</contribution>
+	
+	<contribution type="trainDepartureBell" id="{FC3471E1-D104-4C31-9055-FC3B5B83B97F}">
+		<name>Bell 4</name>
+		<!--!<name>ピー</name>-->
+		<sound href="eidan2.wav" />
+	</contribution>
+	
+</plug-in>

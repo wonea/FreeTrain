@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>車両プラグイン by HITNO その他</title>
+	<homepage>http://www4.ocn.ne.jp/~presto/ft/</homepage>
+	<author>Hinoto</author>
+
+
+<!-- 帝都高速交通営団　改め　東京地下鉄 -->
+
+	<!-- 06系 07系 08系 9000系etc　中間車 -->
+	<contribution type="picture" id="{E34523C0-5447-11D8-968B-444553540000-titech-0n}">
+		<picture src="eidan9000_b.bmp" /> 
+	</contribution>
+
+
+	<!-- 南北線 9000系 -->
+	<!-- 先頭車 -->
+	<contribution type="trainCar" id="{E34523C0-5447-11D8-968B-444553540000-titech-eidan9000}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="eidan9000_a.bmp" />
+		</sprite>
+		<capacity>140</capacity>
+	</contribution>
+	<!--　先頭車 逆向き -->
+	<contribution type="trainCar" id="{E34523C0-5447-11D8-968B-444553540000-titech-eidan9000}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{E34523C0-5447-11D8-968B-444553540000-titech-eidan9000}-h"/>
+	</contribution>
+	<!-- 中間車 --> 
+	<contribution type="trainCar" id="{E34523C0-5447-11D8-968B-444553540000-titech-eidan9000}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+		<sprite origin="0,0">
+			<picture ref="{E34523C0-5447-11D8-968B-444553540000-titech-0n}"/>
+		</sprite>
+		<capacity>150</capacity> 
+	</contribution>
+
+
+	<contribution type="train" id="{E34523C0-5447-11D8-968B-444553540000-titech-eidan9000}">
+		<company>帝都高速度交通営団</company>
+		<type>9000系</type>
+		<name>南北線</name>
+		<author>Hinoto</author>
+		<description></description>
+		<price>50000</price>
+          		<fare>400</fare> 
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{E34523C0-5447-11D8-968B-444553540000-titech-eidan9000}-h"/>
+			<body carRef="{E34523C0-5447-11D8-968B-444553540000-titech-eidan9000}-m"/>
+			<tail carRef="{E34523C0-5447-11D8-968B-444553540000-titech-eidan9000}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 半蔵門線 08系 -->
+	<!-- 先頭車 -->
+	<contribution type="trainCar" id="{E34523C0-5447-11D8-968B-444553540001-titech-eidan08}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="eidan08_a.bmp" />
+		</sprite>
+		<capacity>140</capacity>
+	</contribution>
+	<!--　先頭車 逆向き -->
+	<contribution type="trainCar" id="{E34523C0-5447-11D8-968B-444553540001-titech-eidan08}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{E34523C0-5447-11D8-968B-444553540001-titech-eidan08}-h"/>
+	</contribution>
+	<!-- 中間車 --> 
+	<contribution type="trainCar" id="{E34523C0-5447-11D8-968B-444553540001-titech-eidan08}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="0,185,92" to="195,15,105"/>
+				<map from="0,150,75" to="195,15,106"/>
+			</spriteType>
+			<picture ref="{E34523C0-5447-11D8-968B-444553540000-titech-0n}"/>
+		</sprite>
+		<capacity>150</capacity> 
+	</contribution>
+
+
+	<contribution type="train" id="{E34523C0-5447-11D8-968B-444553540001-titech-eidan08}">
+		<company>帝都高速度交通営団</company>
+		<type>08系</type>
+		<name>半蔵門線</name>
+		<author>Hinoto</author>
+		<description></description>
+		<price>58000</price>
+          		<fare>430</fare> 
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{E34523C0-5447-11D8-968B-444553540001-titech-eidan08}-h"/>
+			<body carRef="{E34523C0-5447-11D8-968B-444553540001-titech-eidan08}-m"/>
+			<tail carRef="{E34523C0-5447-11D8-968B-444553540001-titech-eidan08}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 東西線 08系 -->
+	<!-- 先頭車 -->
+	<contribution type="trainCar" id="{E34523C0-5447-11D8-968B-444553540002-titech-eidan05n}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="eidan05n_a.bmp" />
+		</sprite>
+		<capacity>140</capacity>
+	</contribution>
+	<!--　先頭車 逆向き -->
+	<contribution type="trainCar" id="{E34523C0-5447-11D8-968B-444553540002-titech-eidan05n}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{E34523C0-5447-11D8-968B-444553540002-titech-eidan05n}-h"/>
+	</contribution>
+	<!-- 中間車 --> 
+	<contribution type="trainCar" id="{E34523C0-5447-11D8-968B-444553540002-titech-eidan05n}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+		<sprite origin="0,0">
+			<picture src="eidan08_b.bmp"/>
+			<spriteType name="colorMapped">
+				<map from="0,185,92" to="14,67,228"/>
+				<map from="0,150,75" to="14,67,229"/>
+			</spriteType>
+		</sprite>
+		<capacity>150</capacity> 
+	</contribution>
+
+
+	<contribution type="train" id="{E34523C0-5447-11D8-968B-444553540002-titech-eidan05n}">
+		<company>帝都高速度交通営団</company>
+		<type>05系</type>
+		<name>東西線</name>
+		<author>Hinoto</author>
+		<description></description>
+		<price>58000</price>
+          		<fare>430</fare> 
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{E34523C0-5447-11D8-968B-444553540002-titech-eidan05n}-h"/>
+			<body carRef="{E34523C0-5447-11D8-968B-444553540002-titech-eidan05n}-m"/>
+			<tail carRef="{E34523C0-5447-11D8-968B-444553540002-titech-eidan05n}-t"/>
+		</composition>
+	</contribution>
+
+<!-- 万葉線 -->
+<!-- MLRV1000 -->
+	<!-- 先頭車 -->
+	<contribution type="trainCar" id="{E34523C0-5447-11D8-968B-444553540003-titech-mlrv1000}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="MLRV1000_a.bmp" />
+		</sprite>
+		<capacity>42</capacity>
+	</contribution>
+	<!--　先頭車 逆向き -->
+	<contribution type="trainCar" id="{E34523C0-5447-11D8-968B-444553540003-titech-mlrv1000}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{E34523C0-5447-11D8-968B-444553540003-titech-mlrv1000}-h"/>
+	</contribution>
+
+	<contribution type="train" id="{E34523C0-5447-11D8-968B-444553540003-titech-mlrv1000}">
+		<company>万葉線</company>
+		<type>MLRV1000</type>
+		<name></name>
+		<author>Hinoto</author>
+		<description>加越能鉄道を引き継いだ第三セクター万葉線のMLRV1000形は2003年12月に登場した超低床電車です。
+			基本的な部分は岡山電軌のMOMOと共通ですが、真っ赤な車体が印象的です。
+			ちなみにデザインは工業デザイナーの佐藤康三氏によるものです。</description>
+		<price>100000</price>
+          		<fare>350</fare> 
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl" /> 
+		<config>
+			<car char="A" ref="{E34523C0-5447-11D8-968B-444553540003-titech-mlrv1000}-h"/>
+			<car char="B" ref="{E34523C0-5447-11D8-968B-444553540003-titech-mlrv1000}-t"/>
+			<composition>AB</composition>
+		</config>
+	</contribution>
+
+
+	<!-- 関東鉄道　キハ300 --> 
+	<contribution type="trainCar" id="{E34523C0-5447-11D8-968B-444553540002-titech-kantetsu-kiha300}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+		<sprite origin="0,0">
+			<picture src="kt_kiha300.bmp" />
+		</sprite>
+		<capacity>130</capacity> 
+	</contribution>
+
+	<!-- 関東鉄道　キハ100 常総筑波カラー --> 
+	<contribution type="trainCar" id="{E34523C0-5447-11D8-968B-444553540002-titech-kantetsu-kiha100-jt}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" /> 
+		<sprite origin="0,0">
+			<picture src="kt_kiha100_jt.bmp" />
+		</sprite>
+		<capacity>130</capacity> 
+	</contribution>
+
+	<contribution type="train" id="{E34523C0-5447-11D8-968B-444553540002-titech-kantetsu-kiha300}">
+		<company>関東鉄道</company>
+		<type>キハ300</type>
+		<name></name>
+		<author>Hinoto</author>
+		<description></description>
+		<price>30000</price>
+          		<fare>320</fare> 
+		<speed>slow</speed>
+		<composition>
+			<body carRef="{E34523C0-5447-11D8-968B-444553540002-titech-kantetsu-kiha300}-m"/>
+		</composition>
+	</contribution>
+
+	<contribution type="train" id="{E34523C0-5447-11D8-968B-444553540002-titech-kantetsu-kiha100-jt}">
+		<company>関東鉄道</company>
+		<type>キハ100</type>
+		<name>常総筑波鉄道色</name>
+		<author>Hinoto</author>
+		<description></description>
+		<price>30000</price>
+          		<fare>320</fare> 
+		<speed>slow</speed>
+		<composition>
+			<body carRef="{E34523C0-5447-11D8-968B-444553540002-titech-kantetsu-kiha100-jt}-m"/>
+		</composition>
+	</contribution>
+
+
+
+</plug-in>

@@ -1,0 +1,3468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+<author>Shikashika</author>
+<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+<depend on="shikashika.freetrain.traincar.locomotive"/>
+<depend on="shikashika.freetrain.traincar.passenger"/>
+<depend on="shikashika.freetrain.traincar.freight"/>
+
+<title>Trains (Japanese National Railways)</title>
+
+	<!-- 旅客列車の定義 -->
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C622-LimitedExpressTrain-swallowangel}">
+		<company>Japanese National Railways</company>
+		<type>C 62</type>
+		<name>Limited Express 'Tsubame'</name>
+		<author>Shikashika</author>
+		<description>国鉄最大最後の旅客用機関車C62が牽引する、特急つばめです。客車はスハ44系で、最後尾には1等展望車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C622}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhani35}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha44}"/>
+			<car char="弐" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuro60}"/>
+			<car char="食" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mashi35}"/>
+			<car char="展" ref="{FreeTrain-Shika-PassengerCar-TrainCar-maite49}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸展</composition>
+			<composition>蒸荷展</composition>
+			<composition>蒸荷食展</composition>
+			<composition>蒸荷食弐展</composition>
+			<composition>蒸荷参食弐展</composition>
+			<composition>蒸荷参参食弐展</composition>
+			<composition>蒸荷参参参食弐展</composition>
+			<composition>蒸荷参参参食弐弐展</composition>
+			<composition>蒸荷参参参食弐弐弐展</composition>
+			<composition>蒸荷参参参弐食弐弐弐展</composition>
+			<composition>蒸荷参参参弐弐食弐弐弐展</composition>
+			<composition>蒸蒸荷参参参弐弐食弐弐弐展</composition>
+		</config>
+	</contribution>
+
+
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C622-LimitedExpressTrain-hatukari-B}">
+		<company>Japanese National Railways</company>
+		<type>C 62</type>
+		<name>Limited Express 'Hatsukari'</name>
+		<author>Shikashika</author>
+		<description>国鉄最大最後の旅客用機関車C62が牽引する、特急はつかりです。客車は客車はスハ44系で、昭和39年以降の青に塗り替えられたものです。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C622}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhani35-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha44-B}"/>
+			<car char="弐" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuro60-B}"/>
+			<car char="食" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mashi35-B}"/>
+			<car char="展" ref="{FreeTrain-Shika-PassengerCar-TrainCar-maite49-B}"/>
+			<car char="掌" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸掌</composition>
+			<composition>蒸荷掌</composition>
+			<composition>蒸荷食掌</composition>
+			<composition>蒸荷食弐掌</composition>
+			<composition>蒸荷参食弐掌</composition>
+			<composition>蒸荷参参食弐掌</composition>
+			<composition>蒸荷参参参食弐掌</composition>
+			<composition>蒸荷参参参食弐弐掌</composition>
+			<composition>蒸荷参参参食弐弐弐掌</composition>
+			<composition>蒸荷参参参弐食弐弐弐掌</composition>
+			<composition>蒸荷参参参弐弐食弐弐弐掌</composition>
+			<composition>蒸荷参参参参弐弐食弐弐弐掌</composition>
+			<composition>蒸蒸荷参参参参弐弐食弐弐弐掌</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C622-LocalTrein}">
+		<company>Japanese National Railways</company>
+		<type>C 62</type>
+		<name>Old Local Train (brown) Mail Car</name>
+		<author>Shikashika</author>
+		<description>国鉄最大最後の旅客用機関車C62が牽引する、客車普通列車です。客車は昭和26年から製造された急行用3等車(3等緩急車)スハ43系で、郵便車オユ10を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C622}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸急</composition>
+			<composition>蒸緩急</composition>
+			<composition>蒸郵緩急</composition>
+			<composition>蒸郵緩参急</composition>
+			<composition>蒸郵緩参参急</composition>
+			<composition>蒸郵緩参急緩急</composition>
+			<composition>蒸郵緩参参緩参急</composition>
+			<composition>蒸郵緩参参緩参参急</composition>
+			<composition>蒸郵緩参参緩参参参急</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C622-LocalTrein-mani60}">
+		<company>Japanese National Railways</company>
+		<type>C 62</type>
+		<name>Old Local Train (brown) Baggage Car</name>
+		<author>Shikashika</author>
+		<description>国鉄最大最後の旅客用機関車C62が牽引する、客車普通列車です。客車は昭和26年から製造された急行用3等車(3等緩急車)スハ43系で、荷物車マニ60を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C622}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸急</composition>
+			<composition>蒸荷急</composition>
+			<composition>蒸荷緩急</composition>
+			<composition>蒸荷緩参急</composition>
+			<composition>蒸荷緩参参急</composition>
+			<composition>蒸荷緩参急緩急</composition>
+			<composition>蒸荷緩参参緩参急</composition>
+			<composition>蒸荷緩参参緩参参急</composition>
+			<composition>蒸荷緩参参緩参参参急</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C622-LocalTrein-mani30}">
+		<company>Japanese National Railways</company>
+		<type>C 62</type>
+		<name>Old Local Train (brown) Cash Transport Car</name>
+		<author>Shikashika</author>
+		<description>国鉄最大最後の旅客用機関車C62が牽引する、客車普通列車です。客車は昭和26年から製造された急行用3等車(3等緩急車)スハ43系で、最後尾に現金輸送用荷物車マニ30を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C622}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸急</composition>
+			<composition>蒸急貨</composition>
+			<composition>蒸緩急貨</composition>
+			<composition>蒸緩参急貨</composition>
+			<composition>蒸緩参参急貨</composition>
+			<composition>蒸緩参急緩急貨</composition>
+			<composition>蒸緩参参緩参急貨</composition>
+			<composition>蒸緩参参緩参参急貨</composition>
+			<composition>蒸緩参参緩参参参急貨</composition>
+		</config>
+	</contribution>
+
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C622-LocalTrein-B}">
+		<company>Japanese National Railways</company>
+		<type>C 62</type>
+		<name>Old Local Train (blue) Baggage Car</name>
+		<author>Shikashika</author>
+		<description>国鉄最大最後の旅客用機関車C62が牽引する、客車普通列車です。客車はスハ43系で、改良を施して青に塗り替えられたものです。最後尾に荷物車を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C622}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸急</composition>
+			<composition>蒸緩急</composition>
+			<composition>蒸緩急荷</composition>
+			<composition>蒸緩参急荷</composition>
+			<composition>蒸緩参参急荷</composition>
+			<composition>蒸緩参急緩急荷</composition>
+			<composition>蒸緩参参緩参急荷</composition>
+			<composition>蒸緩参参緩参参急荷</composition>
+			<composition>蒸緩参参緩参参参急荷</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C622-LocalTrein-B-oyu10}">
+		<company>Japanese National Railways</company>
+		<type>C 62</type>
+		<name>Old Local Train (blue) Mail Car</name>
+		<author>Shikashika</author>
+		<description>国鉄最大最後の旅客用機関車C62が牽引する、客車普通列車です。客車はスハ43系で、改良を施して青に塗り替えられたものです。最後尾に郵便車オユ10を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C622}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸急</composition>
+			<composition>蒸急郵</composition>
+			<composition>蒸緩急郵</composition>
+			<composition>蒸緩参急郵</composition>
+			<composition>蒸緩参参急郵</composition>
+			<composition>蒸緩参急緩急郵</composition>
+			<composition>蒸緩参参緩参急郵</composition>
+			<composition>蒸緩参参緩参参急郵</composition>
+			<composition>蒸緩参参緩参参参急郵</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C622-LocalTrein-B-mani30}">
+		<company>Japanese National Railways</company>
+		<type>C 62</type>
+		<name>Old Local Train (blue) Cash Transport Car</name>
+		<author>Shikashika</author>
+		<description>国鉄最大最後の旅客用機関車C62が牽引する、客車普通列車です。客車はスハ43系で、改良を施して青に塗り替えられたものです。現金輸送用荷物車マニ30を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C622}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸急</composition>
+			<composition>蒸幣急</composition>
+			<composition>蒸幣緩急</composition>
+			<composition>蒸幣緩参急</composition>
+			<composition>蒸幣緩参参急</composition>
+			<composition>蒸幣緩参急緩急</composition>
+			<composition>蒸幣緩参参緩参急</composition>
+			<composition>蒸幣緩参参緩参参急</composition>
+			<composition>蒸幣緩参参緩参参参急</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C57-ExpressTrain-yamagutigou}">
+		<company>Japanese National Railways</company>
+		<type>C 57</type>
+		<name>SL Yamaguchi (blue)</name>
+		<author>Shikashika</author>
+		<description>貴婦人と呼ばれたC57が牽引するSL山口号です。C571号機には、白いラインが引かれ集煙装置が付けられています。客車は昭和44年に登場した12系の急行形客車を牽引しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="貴" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C571}"/>
+			<car char="８" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C581}"/>
+			<car char="掌" ref="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu13}"/>
+			<car char="客" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oha12}"/>
+			<car char="発" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu12}"/>
+			
+			<composition>貴</composition>
+			<composition>貴発</composition>
+			<composition>貴掌発</composition>
+			<composition>貴掌客発</composition>
+			<composition>貴掌客客発</composition>
+			<composition>貴掌客客客発</composition>
+			<composition>貴８掌客客客発</composition>
+
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C57-LocalTrein}">
+		<company>Japanese National Railways</company>
+		<type>C 57</type>
+		<name>Old Local Train (brown) Mail Car</name>
+		<author>Shikashika</author>
+		<description>貴婦人と呼ばれたC57が牽引する、客車普通列車です。客車は昭和26年から製造された急行用3等車(3等緩急車)スハ43系で、郵便車オユ10を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C572}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸急</composition>
+			<composition>蒸緩急</composition>
+			<composition>蒸郵緩急</composition>
+			<composition>蒸郵緩参急</composition>
+			<composition>蒸郵緩参参急</composition>
+			<composition>蒸郵緩参急緩急</composition>
+			<composition>蒸郵緩参参緩参急</composition>
+			<composition>蒸郵緩参参緩参参急</composition>
+			<composition>蒸郵緩参参緩参参参急</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C57-LocalTrein-mani60}">
+		<company>Japanese National Railways</company>
+		<type>C 57</type>
+		<name>Old Local Train (brown) Baggage Car</name>
+		<author>Shikashika</author>
+		<description>貴婦人と呼ばれたC57が牽引する、客車普通列車です。客車は昭和26年から製造された急行用3等車(3等緩急車)スハ43系で、荷物車マニ60を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C572}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸急</composition>
+			<composition>蒸荷急</composition>
+			<composition>蒸荷緩急</composition>
+			<composition>蒸荷緩参急</composition>
+			<composition>蒸荷緩参参急</composition>
+			<composition>蒸荷緩参急緩急</composition>
+			<composition>蒸荷緩参参緩参急</composition>
+			<composition>蒸荷緩参参緩参参急</composition>
+			<composition>蒸荷緩参参緩参参参急</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C57-LocalTrein-mani30}">
+		<company>Japanese National Railways</company>
+		<type>C 57</type>
+		<name>Old Local Train (brown) Cash Transport Car</name>
+		<author>Shikashika</author>
+		<description>貴婦人と呼ばれたC57が牽引する、客車普通列車です。客車は昭和26年から製造された急行用3等車(3等緩急車)スハ43系で、最後尾に現金輸送用荷物車マニ30を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C572}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸急</composition>
+			<composition>蒸急貨</composition>
+			<composition>蒸緩急貨</composition>
+			<composition>蒸緩参急貨</composition>
+			<composition>蒸緩参参急貨</composition>
+			<composition>蒸緩参急緩急貨</composition>
+			<composition>蒸緩参参緩参急貨</composition>
+			<composition>蒸緩参参緩参参急貨</composition>
+			<composition>蒸緩参参緩参参参急貨</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C57-LocalTrein-B}">
+		<company>Japanese National Railways</company>
+		<type>C 57</type>
+		<name>Old Local Train (blue) Baggage Car</name>
+		<author>Shikashika</author>
+		<description>貴婦人と呼ばれたC57が牽引する、客車普通列車です。客車はスハ43系で、改良を施して青に塗り替えられたものです。最後尾に荷物車マニ60を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C572}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸急</composition>
+			<composition>蒸緩急</composition>
+			<composition>蒸緩急荷</composition>
+			<composition>蒸緩参急荷</composition>
+			<composition>蒸緩参参急荷</composition>
+			<composition>蒸緩参急緩急荷</composition>
+			<composition>蒸緩参参緩参急荷</composition>
+			<composition>蒸緩参参緩参参急荷</composition>
+			<composition>蒸緩参参緩参参参急荷</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C57-LocalTrein-B-oyu10}">
+		<company>Japanese National Railways</company>
+		<type>C 57</type>
+		<name>Old Local Train (blue) Mail Car</name>
+		<author>Shikashika</author>
+		<description>貴婦人と呼ばれたC57が牽引する、客車普通列車です。客車はスハ43系で、改良を施して青に塗り替えられたものです。最後尾に郵便車オユ10を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C572}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸急</composition>
+			<composition>蒸急郵</composition>
+			<composition>蒸緩急郵</composition>
+			<composition>蒸緩参急郵</composition>
+			<composition>蒸緩参参急郵</composition>
+			<composition>蒸緩参急緩急郵</composition>
+			<composition>蒸緩参参緩参急郵</composition>
+			<composition>蒸緩参参緩参参急郵</composition>
+			<composition>蒸緩参参緩参参参急郵</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C57-LocalTrein-B-mani30}">
+		<company>Japanese National Railways</company>
+		<type>C 57</type>
+		<name>Old Local Train (blue)</name>
+		<author>Shikashika</author>
+		<description>貴婦人と呼ばれたC57が牽引する、客車普通列車です。客車はスハ43系で、改良を施して青に塗り替えられたものです。現金輸送用荷物車マニ30を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C572}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸急</composition>
+			<composition>蒸幣急</composition>
+			<composition>蒸幣緩急</composition>
+			<composition>蒸幣緩参急</composition>
+			<composition>蒸幣緩参参急</composition>
+			<composition>蒸幣緩参急緩急</composition>
+			<composition>蒸幣緩参参緩参急</composition>
+			<composition>蒸幣緩参参緩参参急</composition>
+			<composition>蒸幣緩参参緩参参参急</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C58-LocalTrein}">
+		<company>Japanese National Railways</company>
+		<type>C 58</type>
+		<name>Old Local Train (brown) Mail Car</name>
+		<author>Shikashika</author>
+		<description>客貨両用機関車のC58が牽引する、客車普通列車です。客車は昭和26年から製造された急行用3等車(3等緩急車)スハ43系で、郵便車オユ10を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C581}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸急</composition>
+			<composition>蒸緩急</composition>
+			<composition>蒸郵緩急</composition>
+			<composition>蒸郵緩参急</composition>
+			<composition>蒸郵緩参参急</composition>
+			<composition>蒸郵緩参急緩急</composition>
+			<composition>蒸郵緩参参緩参急</composition>
+			<composition>蒸郵緩参参緩参参急</composition>
+			<composition>蒸郵緩参参緩参参参急</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C58-LocalTrein-mani60}">
+		<company>Japanese National Railways</company>
+		<type>C 58</type>
+		<name>Old Local Train (brown) Baggage Car</name>
+		<author>Shikashika</author>
+		<description>客貨両用機関車のC58が牽引する、客車普通列車です。客車は昭和26年から製造された急行用3等車(3等緩急車)スハ43系で、荷物車マニ60を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C581}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸急</composition>
+			<composition>蒸荷急</composition>
+			<composition>蒸荷緩急</composition>
+			<composition>蒸荷緩参急</composition>
+			<composition>蒸荷緩参参急</composition>
+			<composition>蒸荷緩参急緩急</composition>
+			<composition>蒸荷緩参参緩参急</composition>
+			<composition>蒸荷緩参参緩参参急</composition>
+			<composition>蒸荷緩参参緩参参参急</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C58-LocalTrein-mani30}">
+		<company>Japanese National Railways</company>
+		<type>C 58</type>
+		<name>Old Local Train (brown) Cash Transport Car</name>
+		<author>Shikashika</author>
+		<description>客貨両用機関車のC58が牽引する、客車普通列車です。客車は昭和26年から製造された急行用3等車(3等緩急車)スハ43系で、最後尾に現金輸送用荷物車マニ30を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C581}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸急</composition>
+			<composition>蒸急貨</composition>
+			<composition>蒸緩急貨</composition>
+			<composition>蒸緩参急貨</composition>
+			<composition>蒸緩参参急貨</composition>
+			<composition>蒸緩参急緩急貨</composition>
+			<composition>蒸緩参参緩参急貨</composition>
+			<composition>蒸緩参参緩参参急貨</composition>
+			<composition>蒸緩参参緩参参参急貨</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C58-LocalTrein-B}">
+		<company>Japanese National Railways</company>
+		<type>C 58</type>
+		<name>Old Local Train (blue) Baggage Car</name>
+		<author>Shikashika</author>
+		<description>客貨両用機関車のC58が牽引する、客車普通列車です。客車はスハ43系で、改良を施して青に塗り替えられたものです。最後尾に荷物車を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C581}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸急</composition>
+			<composition>蒸緩急</composition>
+			<composition>蒸緩急荷</composition>
+			<composition>蒸緩参急荷</composition>
+			<composition>蒸緩参参急荷</composition>
+			<composition>蒸緩参急緩急荷</composition>
+			<composition>蒸緩参参緩参急荷</composition>
+			<composition>蒸緩参参緩参参急荷</composition>
+			<composition>蒸緩参参緩参参参急荷</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C58-LocalTrein-B-oyu10}">
+		<company>Japanese National Railways</company>
+		<type>C 58</type>
+		<name>Old Local Train (blue) Mail Car</name>
+		<author>Shikashika</author>
+		<description>客貨両用機関車のC58が牽引する、客車普通列車です。客車はスハ43系で、改良を施して青に塗り替えられたものです。郵便車オユ10を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C581}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸急</composition>
+			<composition>蒸郵急</composition>
+			<composition>蒸郵緩急</composition>
+			<composition>蒸郵緩参急</composition>
+			<composition>蒸郵緩参参急</composition>
+			<composition>蒸郵緩参急緩急</composition>
+			<composition>蒸郵緩参参緩参急</composition>
+			<composition>蒸郵緩参参緩参参急</composition>
+			<composition>蒸郵緩参参緩参参参急</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C58-LocalTrein-B-mani30}">
+		<company>Japanese National Railways</company>
+		<type>C 58</type>
+		<name>Old Local Train (blue) Cash Transport Car</name>
+		<author>Shikashika</author>
+		<description>客貨両用機関車のC58が牽引する、客車普通列車です。客車はスハ43系で、改良を施して青に塗り替えられたものです。最後尾に現金輸送用荷物車マニ30を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C581}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>蒸</composition>
+			<composition>蒸急</composition>
+			<composition>蒸急貨</composition>
+			<composition>蒸緩急貨</composition>
+			<composition>蒸緩参急貨</composition>
+			<composition>蒸緩参参急貨</composition>
+			<composition>蒸緩参急緩急貨</composition>
+			<composition>蒸緩参参緩参急貨</composition>
+			<composition>蒸緩参参緩参参急貨</composition>
+			<composition>蒸緩参参緩参参参急貨</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF58-LimitedExpressTrain-swallowangel}">
+		<company>Japanese National Railways</company>
+		<type>EF 58</type>
+		<name>Limited Express 'Tsubame'</name>
+		<author>Shikashika</author>
+		<description>昭和26年から製造された戦後初の急行旅客用機関車EF58が牽引する、特急つばめです。塗装はかつての電気機関車の標準色であったぶどう色です。客車はスハ44系で、最後尾には1等展望車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhani35}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha44}"/>
+			<car char="弐" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuro60}"/>
+			<car char="食" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mashi35}"/>
+			<car char="展" ref="{FreeTrain-Shika-PassengerCar-TrainCar-maite49}"/>
+
+			<composition>電</composition>
+			<composition>電展</composition>
+			<composition>電荷展</composition>
+			<composition>電荷食展</composition>
+			<composition>電荷食弐展</composition>
+			<composition>電荷参食弐展</composition>
+			<composition>電荷参参食弐展</composition>
+			<composition>電荷参参参食弐展</composition>
+			<composition>電荷参参参食弐弐展</composition>
+			<composition>電荷参参参食弐弐弐展</composition>
+			<composition>電荷参参参弐食弐弐弐展</composition>
+			<composition>電荷参参参弐弐食弐弐弐展</composition>
+			<composition>電荷参参参参弐弐食弐弐弐展</composition>
+			<composition>電荷参参参参参弐弐食弐弐弐展</composition>
+			<composition>電荷参参参参参弐弐弐食弐弐弐展</composition>
+			<composition>電荷参参参参参参弐弐弐食弐弐弐展</composition>
+			<composition>電荷参参参参参参参弐弐弐食弐弐弐展</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF58-LimitedExpressTrain-Pigeon-A}">
+		<company>Japanese National Railways</company>
+		<type>EF 58</type>
+		<name>Limited Express 'Hato'</name>
+		<author>Shikashika</author>
+		<description>EF58(青大将色)が牽引する、特急はとです。客車はスハ44系で、青大将と呼ばれた淡緑色に塗装されています。昭和31年東海道全線電化に伴い新設されました。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58-A}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhani35-A}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha44-A}"/>
+			<car char="弐" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuro60-A}"/>
+			<car char="食" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mashi35-A}"/>
+			<car char="展" ref="{FreeTrain-Shika-PassengerCar-TrainCar-maite49-A}"/>
+
+			<composition>電</composition>
+			<composition>電展</composition>
+			<composition>電荷展</composition>
+			<composition>電荷食展</composition>
+			<composition>電荷食弐展</composition>
+			<composition>電荷参食弐展</composition>
+			<composition>電荷参参食弐展</composition>
+			<composition>電荷参参参食弐展</composition>
+			<composition>電荷参参参食弐弐展</composition>
+			<composition>電荷参参参食弐弐弐展</composition>
+			<composition>電荷参参参弐食弐弐弐展</composition>
+			<composition>電荷参参参弐弐食弐弐弐展</composition>
+			<composition>電荷参参参参弐弐食弐弐弐展</composition>
+			<composition>電荷参参参参参弐弐食弐弐弐展</composition>
+			<composition>電荷参参参参参弐弐弐食弐弐弐展</composition>
+			<composition>電荷参参参参参参弐弐弐食弐弐弐展</composition>
+			<composition>電荷参参参参参参参弐弐弐食弐弐弐展</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF58-LimitedExpressTrain-hatukari-B}">
+		<company>Japanese National Railways</company>
+		<type>EF 58</type>
+		<name>Limited Express 'Hatsukari'</name>
+		<author>Shikashika</author>
+		<description>EF58(特急色)が牽引する、特急はつかりです。客車はスハ44系で、昭和39年以降の青に塗り替えられたものです。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58-B-ex}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhani35-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha44-B}"/>
+			<car char="弐" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuro60-B}"/>
+			<car char="食" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mashi35-B}"/>
+			<car char="展" ref="{FreeTrain-Shika-PassengerCar-TrainCar-maite49-B}"/>
+			<car char="掌" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B}"/>
+	
+			<composition>電</composition>
+			<composition>電掌</composition>
+			<composition>電荷掌</composition>
+			<composition>電荷食掌</composition>
+			<composition>電荷食弐掌</composition>
+			<composition>電荷参食弐掌</composition>
+			<composition>電荷参参食弐掌</composition>
+			<composition>電荷参参参食弐掌</composition>
+			<composition>電荷参参参食弐弐掌</composition>
+			<composition>電荷参参参食弐弐弐掌</composition>
+			<composition>電荷参参参弐食弐弐弐掌</composition>
+			<composition>電荷参参参弐弐食弐弐弐掌</composition>
+			<composition>電荷参参参参弐弐食弐弐弐掌</composition>
+			<composition>電荷参参参参参弐弐食弐弐弐掌</composition>
+			<composition>電荷参参参参参弐弐弐食弐弐弐掌</composition>
+			<composition>電荷参参参参参参弐弐弐食弐弐弐掌</composition>
+			<composition>電荷参参参参参参参弐弐弐食弐弐弐掌</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Railroad-Train-EF58-LocalTrein}">
+		<company>Japanese National Railways</company>
+		<type>EF 58</type>
+		<name>Old Local Train (brown) Mail Car</name>
+		<author>Shikashika</author>
+		<description>EF58(ぶどう色)が牽引する、客車普通列車です。客車はスハ43系で、昔のぶどう色のものです。郵便車オユ10を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>電</composition>
+			<composition>電急</composition>
+			<composition>電緩急</composition>
+			<composition>電郵緩急</composition>
+			<composition>電郵緩参急</composition>
+			<composition>電郵緩参参急</composition>
+			<composition>電郵緩参急緩急</composition>
+			<composition>電郵緩参参緩参急</composition>
+			<composition>電郵緩参参緩参参急</composition>
+			<composition>電郵緩参参緩参参参急</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Railroad-Train-EF58-LocalTrein-mini60}">
+		<company>Japanese National Railways</company>
+		<type>EF 58</type>
+		<name>Old Local Train (brown) Baggage Car</name>
+		<author>Shikashika</author>
+		<description>EF58(ぶどう色)が牽引する、客車普通列車です。客車はスハ43系で、昔のぶどう色のものです。荷物車マニ60を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>電</composition>
+			<composition>電急</composition>
+			<composition>電荷急</composition>
+			<composition>電荷緩急</composition>
+			<composition>電荷緩参急</composition>
+			<composition>電荷緩参参急</composition>
+			<composition>電荷緩参急緩急</composition>
+			<composition>電荷緩参参緩参急</composition>
+			<composition>電荷緩参参緩参参急</composition>
+			<composition>電荷緩参参緩参参参急</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Railroad-Train-EF58-LocalTrein-mani30}">
+		<company>Japanese National Railways</company>
+		<type>EF 58</type>
+		<name>Old Local Train (brown) Cash Transport Car</name>
+		<author>Shikashika</author>
+		<description>EF58(ぶどう色)が牽引する、客車普通列車です。客車はスハ43系で、昔のぶどう色のものです。現金輸送用荷物車マニ30を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>電</composition>
+			<composition>電急</composition>
+			<composition>電急貨</composition>
+			<composition>電緩急貨</composition>
+			<composition>電緩参急貨</composition>
+			<composition>電緩参参急貨</composition>
+			<composition>電緩参急緩急貨</composition>
+			<composition>電緩参参緩参急貨</composition>
+			<composition>電緩参参緩参参急貨</composition>
+			<composition>電緩参参緩参参参急貨</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Railroad-Train-EF58-LocalTrein-B}">
+		<company>Japanese National Railways</company>
+		<type>EF 58</type>
+		<name>Old Local Train (blue) Baggage Car</name>
+		<author>Shikashika</author>
+		<description>EF58(一般色)が牽引する、客車普通列車です。客車はスハ43系で、改良を施して青に塗り替えられたものです。荷物車マニ60を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58-B}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>電</composition>
+			<composition>電急</composition>
+			<composition>電緩急</composition>
+			<composition>電荷緩急</composition>
+			<composition>電荷緩参急</composition>
+			<composition>電荷緩参参急</composition>
+			<composition>電荷緩参急緩急</composition>
+			<composition>電荷緩参参緩参急</composition>
+			<composition>電荷緩参参緩参参急</composition>
+			<composition>電荷緩参参緩参参参急</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Railroad-Train-EF58-LocalTrein-B-oyu10}">
+		<company>Japanese National Railways</company>
+		<type>EF 58</type>
+		<name>Old Local Train (blue) Mail Car</name>
+		<author>Shikashika</author>
+		<description>EF58(一般色)が牽引する、客車普通列車です。客車はスハ43系で、改良を施して青に塗り替えられたものです。最後尾に郵便車オユ10を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58-B}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>電</composition>
+			<composition>電急</composition>
+			<composition>電急郵</composition>
+			<composition>電緩急郵</composition>
+			<composition>電緩参急郵</composition>
+			<composition>電緩参参急郵</composition>
+			<composition>電緩参急緩急郵</composition>
+			<composition>電緩参参緩参急郵</composition>
+			<composition>電緩参参緩参参急郵</composition>
+			<composition>電緩参参緩参参参急郵</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Railroad-Train-EF58-LocalTrein-B-mani30}">
+		<company>Japanese National Railways</company>
+		<type>EF 58</type>
+		<name>Old Local Train (blue) Cash Transport Car</name>
+		<author>Shikashika</author>
+		<description>EF58(一般色)が牽引する、客車普通列車です。客車はスハ43系で、改良を施して青に塗り替えられたものです。現金輸送用荷物車マニ30を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58-B}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="参" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuha43-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu42-B-R}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>電</composition>
+			<composition>電急</composition>
+			<composition>電幣急</composition>
+			<composition>電幣緩急</composition>
+			<composition>電幣緩参急</composition>
+			<composition>電幣緩参参急</composition>
+			<composition>電幣緩参急緩急</composition>
+			<composition>電幣緩参参緩参急</composition>
+			<composition>電幣緩参参緩参参急</composition>
+			<composition>電幣緩参参緩参参参急</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF58-B-ex-LimitedExpressTrain-tugaru}">
+		<company>Japanese National Railways</company>
+		<type>EF 58</type>
+		<name>Limited Express 'Tsugaru'</name>
+		<author>Shikashika</author>
+		<description>EF58(一般色)が牽引する、特急津軽です。客車は14系特急形寝台客車と14系特急形客車の併結です。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58-B-ex}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-suhanehu14}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-suhanehu14-R}"/>
+			<car char="Ｂ" ref="{FreeTrain-Shika-PassengerCar-TrainCar-ohane14}"/>
+			<car char="Ａ" ref="{FreeTrain-Shika-PassengerCar-TrainCar-orone14}"/>
+			<car char="食" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oshi14}"/>
+			<car char="掌" ref="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu15}"/>
+			<car char="座" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oha14}"/>
+			<car char="発" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu14}"/>
+
+			<composition>電</composition>
+			<composition>電掌</composition>
+			<composition>電急掌</composition>
+			<composition>電急Ｂ掌</composition>
+			<composition>電急Ｂ座掌</composition>
+			<composition>電急ＢＢ座掌</composition>
+			<composition>電急ＢＢ座座掌</composition>
+			<composition>電急ＢＢ座座座掌</composition>
+			<composition>電急ＢＢＢ座座座掌</composition>
+			<composition>電急ＢＢＢ座座座座掌</composition>
+			<composition>電急ＢＢＢ座座座座座掌</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF66-LimitedExpressTrain-sakura}">
+		<company>Japanese National Railways</company>
+		<type>EF 66</type>
+		<name>Limited Express 'Sakura'</name>
+		<author>Shikashika</author>
+		<description>高速貨車用大型電気機関車EF66が牽引する、特急さくらです。客車は14系特急形寝台客車です。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF66}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-suhanehu14}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-suhanehu14-R}"/>
+			<car char="Ｂ" ref="{FreeTrain-Shika-PassengerCar-TrainCar-ohane14}"/>
+			<car char="Ａ" ref="{FreeTrain-Shika-PassengerCar-TrainCar-orone14}"/>
+			<car char="食" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oshi14}"/>
+			<car char="掌" ref="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu15}"/>
+			<car char="座" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oha14}"/>
+			<car char="発" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu14}"/>
+
+			<composition>電</composition>
+			<composition>電緩</composition>
+			<composition>電急緩</composition>
+			<composition>電急食緩</composition>
+			<composition>電急Ａ食緩</composition>
+			<composition>電急ＡＢ食緩</composition>
+			<composition>電急ＡＢ食Ｂ緩</composition>
+			<composition>電急ＡＢＢ食Ｂ緩</composition>
+			<composition>電急ＡＢＢＢ食Ｂ緩</composition>
+			<composition>電急ＡＢＢ食Ｂ緩急緩</composition>
+			<composition>電急ＡＢＢＢ食Ｂ緩急緩</composition>
+			<composition>電急ＡＢＢＢ食Ｂ緩急Ｂ緩</composition>
+			<composition>電急ＡＢＢＢ食Ｂ緩急ＢＢ緩</composition>
+			<composition>電急ＡＢＢＢ食Ｂ緩急ＢＢＢ緩</composition>
+			<composition>電急ＡＢＢＢ食Ｂ緩急ＢＢＢＢ緩</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF66-LimitedExpressTrain-hayabusa}">
+		<company>Japanese National Railways</company>
+		<type>EF 66</type>
+		<name>Limited Express 'Hayabusa'</name>
+		<author>Shikashika</author>
+		<description>高速貨車用大型電気機関車EF66が牽引する、特急はやぶさです。客車は24系25形特急形寝台客車で、中間にロビーカーを連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF66}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-ohanehu25}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-ohanehu25-R}"/>
+			<car char="Ｂ" ref="{FreeTrain-Shika-PassengerCar-TrainCar-ohane25}"/>
+			<car char="ロ" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oha24}"/>
+			<car char="Ａ" ref="{FreeTrain-Shika-PassengerCar-TrainCar-orone25}"/>
+			<car char="食" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oshi24}"/>
+			<car char="発" ref="{FreeTrain-Shika-PassengerCar-TrainCar-kani24}"/>
+			<car char="源" ref="{FreeTrain-Shika-PassengerCar-TrainCar-kani24-R}"/>
+
+			<composition>電</composition>
+			<composition>電緩</composition>
+			<composition>電源緩</composition>
+			<composition>電源食緩</composition>
+			<composition>電源Ａ食緩</composition>
+			<composition>電源ＡＢ食緩</composition>
+			<composition>電源ＡＢ食ロ緩</composition>
+			<composition>電源ＡＢ食ロＢ緩</composition>
+			<composition>電源ＡＢＢ食ロＢ緩</composition>
+			<composition>電源ＡＢＢＢ食ロＢ緩</composition>
+			<composition>電源ＡＢＢＢＢ食ロＢ緩</composition>
+			<composition>電源ＡＢＢＢＢ食ロＢＢ緩</composition>
+			<composition>電源ＡＢＢＢ緩急食ロＢＢ緩</composition>
+			<composition>電源ＡＢＢＢＢ緩急食ロＢＢ緩</composition>
+			<composition>電源ＡＢＢＢＢ緩急食ロＢＢＢ緩</composition>
+			<composition>電源ＡＢＢＢＢ緩急食ロＢＢ緩Ｂ緩</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-DD51-LocalTrein-50-mani50}">
+		<company>Japanese National Railways</company>
+		<type>DD 51</type>
+		<name>Local Train (50 Series)</name>
+		<author>Shikashika</author>
+		<description>液体式ディーゼル機関車DD51が牽引する、客車普通列車です。客車は50系(オハ50、オハフ50)で、最後尾に荷物車マニ50を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="気" ref="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-JNR}"/>
+			<car char="客" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oha50}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu50}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu50-T}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani50}"/>
+			<car char="物" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani50-T}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>気</composition>
+			<composition>気急</composition>
+			<composition>気緩物</composition>
+			<composition>気緩緩物</composition>
+			<composition>気緩客緩物</composition>
+			<composition>気緩客客緩物</composition>
+			<composition>気緩客緩客緩物</composition>
+			<composition>気緩客客緩客緩物</composition>
+			<composition>気緩客緩客緩客緩物</composition>
+			<composition>気緩客客緩客緩客緩物</composition>
+			<composition>気緩客客緩客緩緩客緩物</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-DD51-745-LocalTrein-50-mani50}">
+		<company>Japanese National Railways</company>
+		<type>DD 51</type>
+		<name>Engine no.745 Local Train (50 Series)</name>
+		<author>Shikashika</author>
+		<description>三つ目(ヘッドライトが3灯ある)に改造された液体式ディーゼル機関車DD51-745号機が牽引する、客車普通列車です。客車は50系(オハ50、オハフ50)で、荷物車マニ50を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="気" ref="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-745}"/>
+			<car char="客" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oha50}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu50}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu50-T}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani50}"/>
+			<car char="物" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani50-T}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+			
+			<composition>気</composition>
+			<composition>気急</composition>
+			<composition>気荷急</composition>
+			<composition>気荷緩急</composition>
+			<composition>気荷緩客急</composition>
+			<composition>気荷緩客客急</composition>
+			<composition>気荷緩客緩客急</composition>
+			<composition>気荷緩客客緩客急</composition>
+			<composition>気荷緩客緩客緩客急</composition>
+			<composition>気荷緩客客緩客緩客急</composition>
+			<composition>気荷緩客客緩客緩緩客急</composition>
+		</config>
+	</contribution>
+
+	<!-- 貨物列車の定義 -->
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-D511115-Freight-Container}">
+		<company>Japanese National Railways</company>
+		<type>D 51</type>
+		<name>Container Freight Train</name>
+		<author>Shikashika</author>
+		<description>国鉄貨物用標準型機関車D51が牽引する、コンテナ貨物列車です。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="ナ" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-D51100}"/>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-D511115}"/>
+
+			<car char="か" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4JNR}"/>
+			<car char="き" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4JNR-R}"/>
+			<car char="く" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5JNR}"/>
+			<car char="け" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t3JNR}"/>
+			<car char="こ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t2JNR}"/>
+			<car char="さ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4g}"/>
+			<car char="し" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4g-R}"/>
+			<car char="す" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5g}"/>
+			<car char="た" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4w}"/>
+			<car char="ち" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4w-R}"/>
+			<car char="つ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5w}"/>
+			<car char="て" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t3w}"/>
+			<car char="と" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t2w}"/>
+
+			<composition>蒸</composition>
+			<composition>蒸か</composition>
+			<composition>蒸くか</composition>
+			<composition>蒸くすか</composition>
+			<composition>蒸くすてか</composition>
+			<composition>蒸くすけてか</composition>
+			<composition>蒸くすけてくか</composition>
+			<composition>蒸くすけてくこか</composition>
+			<composition>蒸ちくすけてくこか</composition>
+			<composition>蒸ちくつすけてくこか</composition>
+			<composition>蒸ちくつたすけてくこか</composition>
+			<composition>蒸ちくつたすけてくとこか</composition>
+			<composition>蒸ちくつたすけてくとこくか</composition>
+			<composition>蒸ナちくつたすけてくとこくか</composition>
+			<composition>蒸ナちくつたすけてくとこけくか</composition>
+			<composition>蒸ナちくつたすけてくとこくけくか</composition>
+			<composition>蒸ナちくつたすけてすくとこくけくか</composition>
+			<composition>蒸ナちくつたすけてすくつとこくけくか</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-D511115-Freight}">
+		<company>Japanese National Railways</company>
+		<type>D 51</type>
+		<name>Baggage Train</name>
+		<author>Shikashika</author>
+		<description>国鉄貨物用標準型機関車D51が牽引する、貨物列車です。最後尾に昭和50年に登場した車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="ナ" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-D51100}"/>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-D511115}"/>
+			<car char="急" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki1000}"/>
+			<car char="行" ref="{FreeTrain-Shika-FreightCar-TrainCar-wamuhu100}"/>
+			<car char="ワ" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki5000}"/>
+			<car char="高" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki8000}"/>
+			<car char="共" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki10000}"/>
+			<car char="室" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000}"/>
+			<car char="ト" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki15000}"/>
+			<car char="ド" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki25000}"/>
+			<car char="冷" ref="{FreeTrain-Shika-FreightCar-TrainCar-resha5000}"/>
+			<car char="凍" ref="{FreeTrain-Shika-FreightCar-TrainCar-remuhu10000}"/>
+			<car char="蔵" ref="{FreeTrain-Shika-FreightCar-TrainCar-remuhu10000-R}"/>
+			<car char="長" ref="{FreeTrain-Shika-FreightCar-TrainCar-chiki7000}"/>
+			<car char="容" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000b}"/>
+			<car char="器" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000k}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+			<car char="く" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5JNR}"/>
+			<car char="け" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t3JNR}"/>
+			<car char="こ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t2JNR}"/>
+			<car char="す" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5g}"/>
+			<car char="つ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5w}"/>
+			<car char="て" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t3w}"/>
+			<car char="と" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t2w}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+
+			<composition>蒸</composition>
+			<composition>蒸ヨ</composition>
+			<composition>蒸ワヨ</composition>
+			<composition>蒸ワ容ヨ</composition>
+			<composition>蒸ワワ容ヨ</composition>
+			<composition>蒸トワワ容ヨ</composition>
+			<composition>蒸トくワワ容ヨ</composition>
+			<composition>蒸トくワワ冷容ヨ</composition>
+			<composition>蒸トくワワ冷容共ヨ</composition>
+			<composition>蒸トくワワ冷冷容共ヨ</composition>
+			<composition>蒸トくワワ冷冷高容共ヨ</composition>
+			<composition>蒸トトくワワ冷冷高容共ヨ</composition>
+			<composition>蒸トトくワワ冷凍高容共高ヨ</composition>
+			<composition>蒸トトくワワ冷凍高容容共高ヨ</composition>
+			<composition>蒸ナトトくワワ冷凍高容容共高ヨ</composition>
+			<composition>蒸ナトトくワワ冷凍高容容共共高ヨ</composition>
+			<composition>蒸ナトトトくワワ冷凍高容容共共高ヨ</composition>
+			<composition>蒸ナトトトくワワ冷凍高容容容共共高ヨ</composition>
+			<composition>蒸ナトトトくけワワ冷凍高容容容共共高ヨ</composition>
+			<composition>蒸ナトトトくけワワ冷凍高高容容容共共高ヨ</composition>
+			<composition>蒸ナトトトつくけワワ冷凍高高容容容共共高ヨ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-D51-Freight-Tank}">
+		<company>Japanese National Railways</company>
+		<type>D 51</type>
+		<name>Tank Train</name>
+		<author>Shikashika</author>
+		<description>国鉄貨物用標準型機関車D51が牽引する、タンク貨物です。最後尾に昭和50年に登場した車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="ナ" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-D51100}"/>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-D511115}"/>
+			<car char="容" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000b}"/>
+			<car char="器" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000k}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+
+			<composition>蒸</composition>
+			<composition>蒸ヨ</composition>
+			<composition>蒸器ヨ</composition>
+			<composition>蒸器容ヨ</composition>
+			<composition>蒸器器容ヨ</composition>
+			<composition>蒸器器器容ヨ</composition>
+			<composition>蒸器器器器容ヨ</composition>
+			<composition>蒸器器器器器容ヨ</composition>
+			<composition>蒸器器器器器器容ヨ</composition>
+			<composition>蒸器器器器器器器容ヨ</composition>
+			<composition>蒸器器器器器器器容容ヨ</composition>
+			<composition>蒸器器器器器器器容容容ヨ</composition>
+			<composition>蒸器器器器器器器器容容容ヨ</composition>
+			<composition>蒸器器器器器器器器容容容容ヨ</composition>
+			<composition>蒸器器器器器器器器容容容容容ヨ</composition>
+			<composition>蒸器器器器器器器器器容容容容容ヨ</composition>
+			<composition>蒸器器器器器器器器器容容容容容容ヨ</composition>
+			<composition>蒸器器器器器器器器器容容容容容容容ヨ</composition>
+			<composition>蒸ナ器器器器器器器器器容容容容容容容ヨ</composition>
+			<composition>蒸ナ器器器器器器器器器容容容容容容容容ヨ</composition>
+			<composition>蒸ナ器器器器器器器器器器容容容容容容容容ヨ</composition>
+			<composition>蒸ナ器器器器器器器器器器容容容容容容容容容ヨ</composition>
+			<composition>蒸ナ器器器器器器器器器器容容容容容容容容容容ヨ</composition>
+			<composition>蒸ナ器器器器器器器器器器器容容容容容容容容容容ヨ</composition>
+			<composition>蒸ナ器器器器器器器器器器器容容容容容容容容容容容ヨ</composition>
+			<composition>蒸ナ器器器器器器器器器器器容容容容容容容容容容容容ヨ</composition>
+			<composition>蒸ナ器器器器器器器器器器器器容容容容容容容容容容容容ヨ</composition>
+			<composition>蒸ナ器器器器器器器器器器器器容容容容容容容容容容容容容ヨ</composition>
+			<composition>蒸ナ器器器器器器器器器器器器容容容容容容容容容容容容容容ヨ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-D51100-Freight}">
+		<company>Japanese National Railways</company>
+		<type>D 51</type>
+		<name>Baggage Train (Namekuji)</name>
+		<author>Shikashika</author>
+		<description>煙突からスチームドームまでカバーされたなめくじドームタイプのD51が牽引する貨物列車です。最後尾に昭和37年から製造された車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-D51100}"/>
+			<car char="デ" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-D511115}"/>
+			<car char="急" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki1000}"/>
+			<car char="行" ref="{FreeTrain-Shika-FreightCar-TrainCar-wamuhu100}"/>
+			<car char="ワ" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki5000}"/>
+			<car char="高" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki8000}"/>
+			<car char="共" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki10000}"/>
+			<car char="室" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000}"/>
+			<car char="ト" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki15000}"/>
+			<car char="ド" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki25000}"/>
+			<car char="冷" ref="{FreeTrain-Shika-FreightCar-TrainCar-resha5000}"/>
+			<car char="凍" ref="{FreeTrain-Shika-FreightCar-TrainCar-remuhu10000}"/>
+			<car char="蔵" ref="{FreeTrain-Shika-FreightCar-TrainCar-remuhu10000-R}"/>
+			<car char="長" ref="{FreeTrain-Shika-FreightCar-TrainCar-chiki7000}"/>
+			<car char="容" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000b}"/>
+			<car char="器" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000k}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+			<car char="く" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5JNR}"/>
+			<car char="け" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t3JNR}"/>
+			<car char="こ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t2JNR}"/>
+			<car char="す" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5g}"/>
+			<car char="つ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5w}"/>
+			<car char="て" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t3w}"/>
+			<car char="と" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t2w}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+
+			<composition>蒸</composition>
+			<composition>蒸よ</composition>
+			<composition>蒸共よ</composition>
+			<composition>蒸共器よ</composition>
+			<composition>蒸共共器よ</composition>
+			<composition>蒸ド共共器よ</composition>
+			<composition>蒸ドけ共共器よ</composition>
+			<composition>蒸ドけ共共冷器よ</composition>
+			<composition>蒸ドけ共共冷器高よ</composition>
+			<composition>蒸ドけ共共冷冷器高よ</composition>
+			<composition>蒸ドけ共共冷冷ワ器高よ</composition>
+			<composition>蒸ドドけ共共冷冷ワ器高よ</composition>
+			<composition>蒸ドドけ共共冷凍ワ器高ワよ</composition>
+			<composition>蒸ドドけ共共冷凍ワ器器高ワよ</composition>
+			<composition>蒸デドドけ共共冷凍ワ器器高ワよ</composition>
+			<composition>蒸デドドけ共共冷凍ワ器器高高ワよ</composition>
+			<composition>蒸デドドドけ共共冷凍ワ器器高高ワよ</composition>
+			<composition>蒸デドドドけ共共冷凍ワ器器器高高ワよ</composition>
+			<composition>蒸デドドドけく共共冷凍ワ器器器高高ワよ</composition>
+			<composition>蒸デドドドけく共共冷凍ワワ器器器高高ワよ</composition>
+			<composition>蒸デドドドけくて共共冷凍ワワ器器器高高ワよ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C58-Freight-Local}">
+		<company>Japanese National Railways</company>
+		<type>C 58</type>
+		<name>Baggage Train</name>
+		<author>Shikashika</author>
+		<description>国鉄客貨両用機関車C58が牽引する貨物です。ワキで編成しています。最後尾に緩急車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C581}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki1000}"/>
+			<car char="行" ref="{FreeTrain-Shika-FreightCar-TrainCar-wamuhu100}"/>
+			<car char="ワ" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki5000}"/>
+			<car char="高" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki8000}"/>
+			<car char="共" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki10000}"/>
+			<car char="室" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000}"/>
+			<car char="部" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000-R}"/>
+			<car char="冷" ref="{FreeTrain-Shika-FreightCar-TrainCar-resha5000}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+
+			<composition>蒸</composition>
+			<composition>蒸行</composition>
+			<composition>蒸急行</composition>
+			<composition>蒸ワ急行</composition>
+			<composition>蒸ワ郵急行</composition>
+			<composition>蒸荷ワ郵急行</composition>
+			<composition>蒸荷急ワ郵急行</composition>
+			<composition>蒸荷急ワ郵急ワ行</composition>
+			<composition>蒸荷急ワ郵急急ワ行</composition>
+			<composition>蒸荷急ワワ郵急急ワ行</composition>
+			<composition>蒸荷急ワワ郵急急急ワ行</composition>
+			<composition>蒸荷急ワワ郵急急急ワワ行</composition>
+			<composition>蒸荷急ワワ郵急急急急ワワ行</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C58-Freight-Local-mani30}">
+		<company>Japanese National Railways</company>
+		<type>C 58</type>
+		<name>Baggage Train with Cash Transport Car</name>
+		<author>Shikashika</author>
+		<description>国鉄客貨両用機関車C58が牽引する貨物です。ワキで編成しています。現金輸送用荷物車マニ30や、最後尾に緩急車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C581}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki1000}"/>
+			<car char="行" ref="{FreeTrain-Shika-FreightCar-TrainCar-wamuhu100}"/>
+			<car char="ワ" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki5000}"/>
+			<car char="高" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki8000}"/>
+			<car char="共" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki10000}"/>
+			<car char="室" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000}"/>
+			<car char="部" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000-R}"/>
+			<car char="冷" ref="{FreeTrain-Shika-FreightCar-TrainCar-resha5000}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+
+			<composition>蒸</composition>
+			<composition>蒸行</composition>
+			<composition>蒸急行</composition>
+			<composition>蒸幣急行</composition>
+			<composition>蒸幣ワ急行</composition>
+			<composition>蒸幣ワ郵急行</composition>
+			<composition>蒸幣荷ワ郵急行</composition>
+			<composition>蒸幣荷急ワ郵急行</composition>
+			<composition>蒸幣荷急ワ郵急ワ行</composition>
+			<composition>蒸幣荷急ワ郵急急ワ行</composition>
+			<composition>蒸幣荷急ワワ郵急急ワ行</composition>
+			<composition>蒸幣荷急ワワ郵急急急ワ行</composition>
+			<composition>蒸幣荷急ワワ郵急急急ワワ行</composition>
+			<composition>蒸幣荷急ワワ郵急急急急ワワ行</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C58-Freight-m}">
+		<company>Japanese National Railways</company>
+		<type>C 58</type>
+		<name>Open Freight Train</name>
+		<author>Shikashika</author>
+		<description>国鉄客貨両用機関車C58が牽引する、無蓋貨車です。最後尾には昭和34年に最高許容速度が85km/hに改造された車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C581}"/>
+			<car char="ト" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki15000}"/>
+			<car char="ド" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki25000}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+			<car char="用" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo9000}"/>
+
+			<composition>蒸</composition>
+			<composition>蒸掌</composition>
+			<composition>蒸ト掌</composition>
+			<composition>蒸トド掌</composition>
+			<composition>蒸トトド掌</composition>
+			<composition>蒸トトトド掌</composition>
+			<composition>蒸トトトドド掌</composition>
+			<composition>蒸トトトドドド掌</composition>
+			<composition>蒸トトトトドドド掌</composition>
+			<composition>蒸トトトトドドドド掌</composition>
+			<composition>蒸トトトトトドドドド掌</composition>
+			<composition>蒸トトトトトドドドドド掌</composition>
+			<composition>蒸トトトトトドドドドドド掌</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C58-Freight-long}">
+		<company>Japanese National Railways</company>
+		<type>C 58</type>
+		<name>Flatcar Train</name>
+		<author>Shikashika</author>
+		<description>客貨両用機関車C58が牽引する、長物輸送貨車(積荷は制作中の為、空荷)です。最後尾に昭和37年から製造された車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C581}"/>
+			<car char="長" ref="{FreeTrain-Shika-FreightCar-TrainCar-chiki7000}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+			<car char="用" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo9000}"/>
+
+			<composition>蒸</composition>
+			<composition>蒸よ</composition>
+			<composition>蒸長よ</composition>
+			<composition>蒸長長よ</composition>
+			<composition>蒸長長長よ</composition>
+			<composition>蒸長長長長よ</composition>
+			<composition>蒸長長長長長よ</composition>
+			<composition>蒸長長長長長長よ</composition>
+			<composition>蒸長長長長長長長よ</composition>
+			<composition>蒸長長長長長長長長よ</composition>
+			<composition>蒸長長長長長長長長長よ</composition>
+			<composition>蒸長長長長長長長長長長よ</composition>
+			<composition>蒸長長長長長長長長長長長よ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C58-Freight}">
+		<company>Japanese National Railways</company>
+		<type>C 58</type>
+		<name>Freight Train</name>
+		<author>Shikashika</author>
+		<description>客貨両用機関車C58が牽引する貨物です。最後尾に昭和50年に登場した車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C581}"/>
+			<car char="急" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki1000}"/>
+			<car char="行" ref="{FreeTrain-Shika-FreightCar-TrainCar-wamuhu100}"/>
+			<car char="ワ" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki5000}"/>
+			<car char="高" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki8000}"/>
+			<car char="共" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki10000}"/>
+			<car char="室" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000}"/>
+			<car char="ト" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki15000}"/>
+			<car char="ド" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki25000}"/>
+			<car char="冷" ref="{FreeTrain-Shika-FreightCar-TrainCar-resha5000}"/>
+			<car char="凍" ref="{FreeTrain-Shika-FreightCar-TrainCar-remuhu10000}"/>
+			<car char="蔵" ref="{FreeTrain-Shika-FreightCar-TrainCar-remuhu10000-R}"/>
+			<car char="長" ref="{FreeTrain-Shika-FreightCar-TrainCar-chiki7000}"/>
+			<car char="容" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000b}"/>
+			<car char="器" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000k}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+			<car char="用" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo9000}"/>
+			<car char="く" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5JNR}"/>
+			<car char="け" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t3JNR}"/>
+			<car char="こ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t2JNR}"/>
+			<car char="す" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5g}"/>
+			<car char="つ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5w}"/>
+			<car char="て" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t3w}"/>
+			<car char="と" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t2w}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+
+			<composition>蒸</composition>
+			<composition>蒸ヨ</composition>
+			<composition>蒸高ヨ</composition>
+			<composition>蒸高器ヨ</composition>
+			<composition>蒸高ワ器ヨ</composition>
+			<composition>蒸ド高ワ器ヨ</composition>
+			<composition>蒸ドく高ワ器ヨ</composition>
+			<composition>蒸ドく高冷ワ器ヨ</composition>
+			<composition>蒸ドく高冷ワ器共ヨ</composition>
+			<composition>蒸ドく高冷冷ワ器共ヨ</composition>
+			<composition>蒸ドく高高冷冷ワ器共ヨ</composition>
+			<composition>蒸ドトく高高冷冷ワ器共ヨ</composition>
+			<composition>蒸ドトく高高冷凍ワ器共ワヨ</composition>
+			<composition>蒸ドトく高高冷凍ワ容器共ワヨ</composition>
+			<composition>蒸蒸ドトく高高冷凍ワ容器共ワヨ</composition>
+			<composition>蒸蒸ドトく高高冷凍ワ容器共共ワヨ</composition>
+			<composition>蒸蒸ドトトく高高冷凍ワ容器共共ワヨ</composition>
+			<composition>蒸蒸ドトトく高高冷凍ワ容器器共共ワヨ</composition>
+			<composition>蒸蒸ドトトけく高高冷凍ワ容器器共共ワヨ</composition>
+			<composition>蒸蒸ドトトけく高高冷凍ワワ容器器共共ワヨ</composition>
+			<composition>蒸蒸ドトトけくと高高冷凍ワワ容器器共共ワヨ</composition>
+
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C58-Freight-Tank}">
+		<company>Japanese National Railways</company>
+		<type>C 58</type>
+		<name>Tank Train</name>
+		<author>Shikashika</author>
+		<description>客貨両用機関車C58が牽引する、タンク貨物です。最後尾に昭和37年から製造された車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C581}"/>
+			<car char="容" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000b}"/>
+			<car char="器" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000k}"/>
+			<car char="液" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000g}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="宝" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000takara}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+			<car char="用" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo9000}"/>
+
+			<composition>蒸</composition>
+			<composition>蒸よ</composition>
+			<composition>蒸容よ</composition>
+			<composition>蒸容器よ</composition>
+			<composition>蒸容容器よ</composition>
+			<composition>蒸容容容器よ</composition>
+			<composition>蒸容容容容器よ</composition>
+			<composition>蒸容容容容容器よ</composition>
+			<composition>蒸容容容容容容器よ</composition>
+			<composition>蒸容容容容容容容器よ</composition>
+			<composition>蒸容容容容容容容器器よ</composition>
+			<composition>蒸容容容容容容容器器器よ</composition>
+			<composition>蒸容容容容容容容器器器器よ</composition>
+			<composition>蒸容容容容容容容器器器器器よ</composition>
+			<composition>蒸容容容容容容容容器器器器器よ</composition>
+			<composition>蒸容容容容容容容容器器器器器器よ</composition>
+			<composition>蒸蒸容容容容容容容容器器器器器器よ</composition>
+			<composition>蒸蒸容容容容容容容容器器器器器器器よ</composition>
+			<composition>蒸蒸容容容容容容容容容器器器器器器器よ</composition>
+			<composition>蒸蒸容容容容容容容容容器器器器器器器器よ</composition>
+			<composition>蒸蒸容容容容容容容容容器器器器器器器器器よ</composition>
+			<composition>蒸蒸容容容容容容容容容容器器器器器器器器器よ</composition>
+			<composition>蒸蒸容容容容容容容容容容器器器器器器器器器器よ</composition>
+			<composition>蒸蒸容容容容容容容容容容器器器器器器器器器器器よ</composition>
+			<composition>蒸蒸容容容容容容容容容容容器器器器器器器器器器器よ</composition>
+			<composition>蒸蒸容容容容容容容容容容容器器器器器器器器器器器器よ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-C58-Freight-Test}">
+		<company>Japanese National Railways</company>
+		<type>C 58</type>
+		<name>Test Freight</name>
+		<author>Shikashika</author>
+		<description>客貨両用機関車C58が牽引する、貨車製作用テスト列車です。制作中の貨車のテスト走行に使用しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="蒸" ref="{FreeTrain-Shika-SteamLocomotive-TrainCar-C581}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki1000}"/>
+			<car char="行" ref="{FreeTrain-Shika-FreightCar-TrainCar-wamuhu100}"/>
+			<car char="ワ" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki5000}"/>
+			<car char="高" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki8000}"/>
+			<car char="共" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki10000}"/>
+			<car char="室" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000}"/>
+			<car char="部" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000-R}"/>
+			<car char="冷" ref="{FreeTrain-Shika-FreightCar-TrainCar-resha5000}"/>
+			<car char="凍" ref="{FreeTrain-Shika-FreightCar-TrainCar-remuhu10000}"/>
+			<car char="蔵" ref="{FreeTrain-Shika-FreightCar-TrainCar-remuhu10000-R}"/>
+			<car char="ト" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki15000}"/>
+			<car char="ド" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki25000}"/>
+			<car char="長" ref="{FreeTrain-Shika-FreightCar-TrainCar-chiki7000}"/>
+			<car char="容" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000b}"/>
+			<car char="器" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000k}"/>
+			<car char="液" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000g}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="宝" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000takara}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+			<car char="用" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo9000}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+
+			<car char="せ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki5500-5t5g}"/>
+			<car char="そ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki5500-5t2g}"/>
+
+			<car char="か" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4JNR}"/>
+			<car char="き" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4JNR-R}"/>
+			<car char="く" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5JNR}"/>
+			<car char="け" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t3JNR}"/>
+			<car char="こ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t2JNR}"/>
+			<car char="さ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4g}"/>
+			<car char="し" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4g-R}"/>
+			<car char="す" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5g}"/>
+			<car char="た" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4w}"/>
+			<car char="ち" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4w-R}"/>
+			<car char="つ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5w}"/>
+			<car char="て" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t3w}"/>
+			<car char="と" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t2w}"/>
+
+			<car char="が" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu50000-5t4JR}"/>
+			<car char="ぎ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu50000-5t4JR-R}"/>
+			<car char="ぐ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki50000-5t5JRa}"/>
+			<car char="ぶ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki50000-5t5JRb}"/>
+			<car char="げ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki50000-5t3JR}"/>
+			<car char="ご" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki50000-5t2JR}"/>
+			<car char="ざ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu50000-5t4b}"/>
+			<car char="じ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu50000-5t4b-R}"/>
+			<car char="ず" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki50000-5t5b}"/>
+			<car char="だ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu50000-5t4w}"/>
+			<car char="ぢ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu50000-5t4w-R}"/>
+			<car char="づ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki50000-5t5w}"/>
+			<car char="で" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki50000-5t3w}"/>
+			<car char="ど" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki50000-5t2w}"/>
+
+			<composition>蒸せそ</composition>
+			<composition>蒸トド長</composition>
+			<composition>蒸荷郵急行</composition>
+			<composition>蒸掌宝よヨ用</composition>
+			<composition>蒸容容器器液液</composition>
+			<composition>蒸部ワ高共室蔵冷凍</composition>
+			<composition>蒸かくけこきさすしたつてとち</composition>
+			<composition>蒸がぐぶげごぎざずしだづでどぢ</composition>
+			<composition>蒸荷郵急行ワ高共室トド冷凍蔵長容器液掌宝よヨ用せそかきくけこさしすたちつてとがぎぐぶげござじずだぢづでど</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EH10-Freight-takara}">
+		<company>Japanese National Railways</company>
+		<type>EH 10</type>
+		<name>Container Limited Express Freight 'Takara'</name>
+		<author>Shikashika</author>
+		<description>重貨物用電気機関車EH10が牽引する、コンテナ特急貨物列車たからです。コンテナと同じ色に塗られた車掌車を牽引しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH10}"/>
+			<car char="宝" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000takara}"/>
+
+			<car char="せ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki5500-5t5g}"/>
+			<car char="そ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki5500-5t2g}"/>
+
+			<composition>電</composition>
+			<composition>電宝</composition>
+			<composition>電せ宝</composition>
+			<composition>電せそ宝</composition>
+			<composition>電せせそ宝</composition>
+			<composition>電せせせそ宝</composition>
+			<composition>電せせせせそ宝</composition>
+			<composition>電そせせせせそ宝</composition>
+			<composition>電そせせせそせそ宝</composition>
+			<composition>電そせせせせそせそ宝</composition>
+			<composition>電そせせせせせそせそ宝</composition>
+			<composition>電そせせせせせそせせそ宝</composition>
+			<composition>電そせせせせせせそせせそ宝</composition>
+			<composition>電そせせせそせせせそせせそ宝</composition>
+			<composition>電そせせせそせせせせそせせそ宝</composition>
+			<composition>電そせせせそせせせせそせせせそ宝</composition>
+			<composition>電そせせせせそせせせせそせせせそ宝</composition>
+			<composition>電そせせせそせそせせせせそせせせそ宝</composition>
+			<composition>電そせせせそせそそせせせせそせせせそ宝</composition>
+			<composition>電そせせせせそせそそせせせせそせせせそ宝</composition>
+			<composition>電そせせせせそせそそせせせそせそせせせそ宝</composition>
+			<composition>電そせせせせそせそそせせせそそせそせせせそ宝</composition>
+			<composition>電そせせせせそせそそせせせせそそせそせせせそ宝</composition>
+			<composition>電そせせせせそせそそせせせせそそせせそせせせそ宝</composition>
+			<composition>電そせせせせそせせそそせせせせそそせせそせせせそ宝</composition>
+			<composition>電そせせせせそせせそそせせせせそそせせそせせせせそ宝</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EH10-Freight-Local}">
+		<company>Japanese National Railways</company>
+		<type>EH 10</type>
+		<name>Baggage Train</name>
+		<author>Shikashika</author>
+		<description>重貨物用電気機関車EH10が牽引する、荷物列車です。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH10}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki1000}"/>
+			<car char="行" ref="{FreeTrain-Shika-FreightCar-TrainCar-wamuhu100}"/>
+			<car char="ワ" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki5000}"/>
+			<car char="高" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki8000}"/>
+			<car char="共" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki10000}"/>
+			<car char="室" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000}"/>
+			<car char="部" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000-R}"/>
+			<car char="ト" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki15000}"/>
+			<car char="ド" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki25000}"/>
+			<car char="冷" ref="{FreeTrain-Shika-FreightCar-TrainCar-resha5000}"/>
+			<car char="凍" ref="{FreeTrain-Shika-FreightCar-TrainCar-remuhu10000}"/>
+			<car char="蔵" ref="{FreeTrain-Shika-FreightCar-TrainCar-remuhu10000-R}"/>
+			<car char="長" ref="{FreeTrain-Shika-FreightCar-TrainCar-chiki7000}"/>
+			<car char="容" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000b}"/>
+			<car char="器" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000k}"/>
+			<car char="液" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000g}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+			<car char="用" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo9000}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+
+			<composition>電</composition>
+			<composition>電よ</composition>
+			<composition>電高よ</composition>
+			<composition>電郵高よ</composition>
+			<composition>電郵高高よ</composition>
+			<composition>電郵共高高よ</composition>
+			<composition>電郵共高高器よ</composition>
+			<composition>電郵共高高器器よ</composition>
+			<composition>電郵共室高高器器よ</composition>
+			<composition>電郵共室高高器器ワよ</composition>
+			<composition>電郵共室高高ド器器ワよ</composition>
+			<composition>電郵共室高高ドド器器ワよ</composition>
+			<composition>電郵共室荷高高ドド器器ワよ</composition>
+			<composition>電郵共室荷高高ドドド器器ワよ</composition>
+			<composition>電郵共室荷急高高ドドド器器ワよ</composition>
+			<composition>電郵共室荷急急高高ドドド器器ワよ</composition>
+			<composition>電郵共室荷急急高高ドドド器器ワワよ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EH10-Freight-Local-mani30}">
+		<company>Japanese National Railways</company>
+		<type>EH 10</type>
+		<name>Baggage Train with Cash Transport Car</name>
+		<author>Shikashika</author>
+		<description>重貨物用電気機関車EH10が牽引する、荷物列車です。現金輸送用荷物車マニ30を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH10}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki1000}"/>
+			<car char="行" ref="{FreeTrain-Shika-FreightCar-TrainCar-wamuhu100}"/>
+			<car char="ワ" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki5000}"/>
+			<car char="高" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki8000}"/>
+			<car char="共" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki10000}"/>
+			<car char="室" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000}"/>
+			<car char="部" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000-R}"/>
+			<car char="ト" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki15000}"/>
+			<car char="ド" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki25000}"/>
+			<car char="冷" ref="{FreeTrain-Shika-FreightCar-TrainCar-resha5000}"/>
+			<car char="凍" ref="{FreeTrain-Shika-FreightCar-TrainCar-remuhu10000}"/>
+			<car char="蔵" ref="{FreeTrain-Shika-FreightCar-TrainCar-remuhu10000-R}"/>
+			<car char="長" ref="{FreeTrain-Shika-FreightCar-TrainCar-chiki7000}"/>
+			<car char="容" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000b}"/>
+			<car char="器" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000k}"/>
+			<car char="液" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000g}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+			<car char="用" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo9000}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+
+			<composition>電</composition>
+			<composition>電よ</composition>
+			<composition>電幣よ</composition>
+			<composition>電幣高よ</composition>
+			<composition>電幣郵高よ</composition>
+			<composition>電幣郵高高よ</composition>
+			<composition>電幣郵共高高よ</composition>
+			<composition>電幣郵共高高器よ</composition>
+			<composition>電幣郵共高高器器よ</composition>
+			<composition>電幣郵共室高高器器よ</composition>
+			<composition>電幣郵共室高高器器ワよ</composition>
+			<composition>電幣郵共室高高ド器器ワよ</composition>
+			<composition>電幣郵共室高高ドド器器ワよ</composition>
+			<composition>電幣郵共室荷高高ドド器器ワよ</composition>
+			<composition>電幣郵共室荷高高ドドド器器ワよ</composition>
+			<composition>電幣郵共室荷急高高ドドド器器ワよ</composition>
+			<composition>電幣郵共室荷急急高高ドドド器器ワよ</composition>
+			<composition>電幣郵共室荷急急高高ドドド器器ワワよ</composition>
+		</config>
+	</contribution>
+
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EH10-Freight-FreightLiner-Tank}">
+		<company>Japanese National Railways</company>
+		<type>EH 10</type>
+		<name>Tank Train</name>
+		<author>Shikashika</author>
+		<description>重貨物用電気機関車EH10が牽引する、タンク貨物です。最後尾に昭和34年に最高許容速度が85km/hに改造された車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH10}"/>
+			<car char="容" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000b}"/>
+			<car char="器" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000k}"/>
+			<car char="液" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000g}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="宝" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000takara}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+			<car char="用" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo9000}"/>
+
+			<composition>電</composition>
+			<composition>電掌</composition>
+			<composition>電器掌</composition>
+			<composition>電器容掌</composition>
+			<composition>電器器容掌</composition>
+			<composition>電器器器容掌</composition>
+			<composition>電器器器器容掌</composition>
+			<composition>電器器器器器容掌</composition>
+			<composition>電器器器器器器容掌</composition>
+			<composition>電器器器器器器器容掌</composition>
+			<composition>電器器器器器器器容容掌</composition>
+			<composition>電器器器器器器器容容容掌</composition>
+			<composition>電器器器器器器器器容容容掌</composition>
+			<composition>電器器器器器器器器容容容液掌</composition>
+			<composition>電器器器器器器器器容容容容液掌</composition>
+			<composition>電器器器器器器器器器容容容容液掌</composition>
+			<composition>電器器器器器器器器器容容容容液液掌</composition>
+			<composition>電器器器器器器器器器容容容容容液液掌</composition>
+			<composition>電器器器器器器器器器器容容容容容液液掌</composition>
+			<composition>電器器器器器器器器器器容容容容容液液液掌</composition>
+			<composition>電器器器器器器器器器器容容容容容容液液液掌</composition>
+			<composition>電器器器器器器器器器器器容容容容容容液液液掌</composition>
+			<composition>電器器器器器器器器器器器容容容容容容液液液液掌</composition>
+			<composition>電器器器器器器器器器器器容容容容容容容液液液液掌</composition>
+			<composition>電器器器器器器器器器器器器容容容容容容容液液液液掌</composition>
+			<composition>電器器器器器器器器器器器器容容容容容容容液液液液液掌</composition>
+			<composition>電器器器器器器器器器器器器容容容容容容容容液液液液液掌</composition>
+			<composition>電器器器器器器器器器器器器容容容容容容容容容液液液液液掌</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EH10-2-Freight-takara}">
+		<company>Japanese National Railways</company>
+		<type>EH 10</type>
+		<name>*2 Container Limited Express Freight 'Takara'</name>
+		<author>Shikashika</author>
+		<description>重貨物用電気機関車EH10が牽引する、コンテナ特急貨物列車たからです。コンテナと同じ色に塗られた車掌車を牽引しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH10-2a}"/>
+			<car char="気" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH10-2b-R}"/>
+			<car char="宝" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000takara}"/>
+
+			<car char="せ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki5500-5t5g}"/>
+			<car char="そ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki5500-5t2g}"/>
+
+			<composition>電気</composition>
+			<composition>電気宝</composition>
+			<composition>電気せ宝</composition>
+			<composition>電気せそ宝</composition>
+			<composition>電気せせそ宝</composition>
+			<composition>電気せせせそ宝</composition>
+			<composition>電気せせせせそ宝</composition>
+			<composition>電気そせせせせそ宝</composition>
+			<composition>電気そせせせそせそ宝</composition>
+			<composition>電気そせせせせそせそ宝</composition>
+			<composition>電気そせせせせせそせそ宝</composition>
+			<composition>電気そせせせせせそせせそ宝</composition>
+			<composition>電気そせせせせせせそせせそ宝</composition>
+			<composition>電気そせせせそせせせそせせそ宝</composition>
+			<composition>電気そせせせそせせせせそせせそ宝</composition>
+			<composition>電気そせせせそせせせせそせせせそ宝</composition>
+			<composition>電気そせせせせそせせせせそせせせそ宝</composition>
+			<composition>電気そせせせそせそせせせせそせせせそ宝</composition>
+			<composition>電気そせせせそせそそせせせせそせせせそ宝</composition>
+			<composition>電気そせせせせそせそそせせせせそせせせそ宝</composition>
+			<composition>電気そせせせせそせそそせせせそせそせせせそ宝</composition>
+			<composition>電気そせせせせそせそそせせせそそせそせせせそ宝</composition>
+			<composition>電気そせせせせそせそそせせせせそそせそせせせそ宝</composition>
+			<composition>電気そせせせせそせそそせせせせそそせせそせせせそ宝</composition>
+			<composition>電気そせせせせそせせそそせせせせそそせせそせせせそ宝</composition>
+			<composition>電気そせせせせそせせそそせせせせそそせせそせせせせそ宝</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EH10-2-Freight-Local}">
+		<company>Japanese National Railways</company>
+		<type>EH 10</type>
+		<name>*2 Baggage Train</name>
+		<author>Shikashika</author>
+		<description>重貨物用電気機関車EH10が牽引する、荷物列車です。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH10-2a}"/>
+			<car char="気" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH10-2b-R}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki1000}"/>
+			<car char="行" ref="{FreeTrain-Shika-FreightCar-TrainCar-wamuhu100}"/>
+			<car char="ワ" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki5000}"/>
+			<car char="高" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki8000}"/>
+			<car char="共" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki10000}"/>
+			<car char="室" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000}"/>
+			<car char="部" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000-R}"/>
+			<car char="ト" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki15000}"/>
+			<car char="ド" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki25000}"/>
+			<car char="冷" ref="{FreeTrain-Shika-FreightCar-TrainCar-resha5000}"/>
+			<car char="凍" ref="{FreeTrain-Shika-FreightCar-TrainCar-remuhu10000}"/>
+			<car char="蔵" ref="{FreeTrain-Shika-FreightCar-TrainCar-remuhu10000-R}"/>
+			<car char="長" ref="{FreeTrain-Shika-FreightCar-TrainCar-chiki7000}"/>
+			<car char="容" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000b}"/>
+			<car char="器" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000k}"/>
+			<car char="液" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000g}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+			<car char="用" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo9000}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+
+			<composition>電気</composition>
+			<composition>電気よ</composition>
+			<composition>電気高よ</composition>
+			<composition>電気郵高よ</composition>
+			<composition>電気郵高高よ</composition>
+			<composition>電気郵共高高よ</composition>
+			<composition>電気郵共高高器よ</composition>
+			<composition>電気郵共高高器器よ</composition>
+			<composition>電気郵共室高高器器よ</composition>
+			<composition>電気郵共室高高器器ワよ</composition>
+			<composition>電気郵共室高高ド器器ワよ</composition>
+			<composition>電気郵共室高高ドド器器ワよ</composition>
+			<composition>電気郵共室荷高高ドド器器ワよ</composition>
+			<composition>電気郵共室荷高高ドドド器器ワよ</composition>
+			<composition>電気郵共室荷急高高ドドド器器ワよ</composition>
+			<composition>電気郵共室荷急急高高ドドド器器ワよ</composition>
+			<composition>電気郵共室荷急急高高ドドド器器ワワよ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EH10-2-Freight-Local-mani30}">
+		<company>Japanese National Railways</company>
+		<type>EH 10</type>
+		<name>*2 Baggage Train with Cash Transport Car</name>
+		<author>Shikashika</author>
+		<description>重貨物用電気機関車EH10が牽引する、荷物列車です。現金輸送用荷物車マニ30を併結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH10-2a}"/>
+			<car char="気" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH10-2b-R}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki1000}"/>
+			<car char="行" ref="{FreeTrain-Shika-FreightCar-TrainCar-wamuhu100}"/>
+			<car char="ワ" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki5000}"/>
+			<car char="高" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki8000}"/>
+			<car char="共" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki10000}"/>
+			<car char="室" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000}"/>
+			<car char="部" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000-R}"/>
+			<car char="ト" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki15000}"/>
+			<car char="ド" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki25000}"/>
+			<car char="冷" ref="{FreeTrain-Shika-FreightCar-TrainCar-resha5000}"/>
+			<car char="凍" ref="{FreeTrain-Shika-FreightCar-TrainCar-remuhu10000}"/>
+			<car char="蔵" ref="{FreeTrain-Shika-FreightCar-TrainCar-remuhu10000-R}"/>
+			<car char="長" ref="{FreeTrain-Shika-FreightCar-TrainCar-chiki7000}"/>
+			<car char="容" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000b}"/>
+			<car char="器" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000k}"/>
+			<car char="液" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000g}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+			<car char="用" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo9000}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+
+			<composition>電気</composition>
+			<composition>電気よ</composition>
+			<composition>電気幣よ</composition>
+			<composition>電気幣高よ</composition>
+			<composition>電気幣郵高よ</composition>
+			<composition>電気幣郵高高よ</composition>
+			<composition>電気幣郵共高高よ</composition>
+			<composition>電気幣郵共高高器よ</composition>
+			<composition>電気幣郵共高高器器よ</composition>
+			<composition>電気幣郵共室高高器器よ</composition>
+			<composition>電気幣郵共室高高器器ワよ</composition>
+			<composition>電気幣郵共室高高ド器器ワよ</composition>
+			<composition>電気幣郵共室高高ドド器器ワよ</composition>
+			<composition>電気幣郵共室荷高高ドド器器ワよ</composition>
+			<composition>電気幣郵共室荷高高ドドド器器ワよ</composition>
+			<composition>電気幣郵共室荷急高高ドドド器器ワよ</composition>
+			<composition>電気幣郵共室荷急急高高ドドド器器ワよ</composition>
+			<composition>電気幣郵共室荷急急高高ドドド器器ワワよ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EH10-2-Freight-FreightLiner-Tank}">
+		<company>Japanese National Railways</company>
+		<type>EH 10</type>
+		<name>*2 Tank Train</name>
+		<author>Shikashika</author>
+		<description>重貨物用電気機関車EH10が牽引する、タンク貨物です。最後尾に昭和34年に最高許容速度が85km/hに改造された車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH10-2a}"/>
+			<car char="気" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH10-2b-R}"/>
+			<car char="容" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000b}"/>
+			<car char="器" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000k}"/>
+			<car char="液" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000g}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="宝" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000takara}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+			<car char="用" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo9000}"/>
+
+			<composition>電気</composition>
+			<composition>電気掌</composition>
+			<composition>電気器掌</composition>
+			<composition>電気器容掌</composition>
+			<composition>電気器器容掌</composition>
+			<composition>電気器器器容掌</composition>
+			<composition>電気器器器器容掌</composition>
+			<composition>電気器器器器器容掌</composition>
+			<composition>電気器器器器器器容掌</composition>
+			<composition>電気器器器器器器器容掌</composition>
+			<composition>電気器器器器器器器容容掌</composition>
+			<composition>電気器器器器器器器容容容掌</composition>
+			<composition>電気器器器器器器器器容容容掌</composition>
+			<composition>電気器器器器器器器器容容容液掌</composition>
+			<composition>電気器器器器器器器器容容容容液掌</composition>
+			<composition>電気器器器器器器器器器容容容容液掌</composition>
+			<composition>電気器器器器器器器器器容容容容液液掌</composition>
+			<composition>電気器器器器器器器器器容容容容容液液掌</composition>
+			<composition>電気器器器器器器器器器器容容容容容液液掌</composition>
+			<composition>電気器器器器器器器器器器容容容容容液液液掌</composition>
+			<composition>電気器器器器器器器器器器容容容容容容液液液掌</composition>
+			<composition>電気器器器器器器器器器器器容容容容容容液液液掌</composition>
+			<composition>電気器器器器器器器器器器器容容容容容容液液液液掌</composition>
+			<composition>電気器器器器器器器器器器器容容容容容容容液液液液掌</composition>
+			<composition>電気器器器器器器器器器器器器容容容容容容容液液液液掌</composition>
+			<composition>電気器器器器器器器器器器器器容容容容容容容液液液液液掌</composition>
+			<composition>電気器器器器器器器器器器器器容容容容容容容容液液液液液掌</composition>
+			<composition>電気器器器器器器器器器器器器容容容容容容容容容液液液液液掌</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF66-Freight-Freshfish}">
+		<company>Japanese National Railways</company>
+		<type>EF 66</type>
+		<name>Fresh Fish Limited Express Freight 'Tobiuo'</name>
+		<author>Shikashika</author>
+		<description>高速貨車用大型電気機関車EF66が牽引する、鮮魚特急貨物(通称とびうお号)です。冷凍魚や鮮魚輸送用の大型冷蔵車の編成で、前後に緩急車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF66}"/>
+			<car char="冷" ref="{FreeTrain-Shika-FreightCar-TrainCar-resha5000}"/>
+			<car char="凍" ref="{FreeTrain-Shika-FreightCar-TrainCar-remuhu10000}"/>
+			<car char="蔵" ref="{FreeTrain-Shika-FreightCar-TrainCar-remuhu10000-R}"/>
+
+			<composition>電</composition>
+			<composition>電凍</composition>
+			<composition>電蔵凍</composition>
+			<composition>電蔵冷凍</composition>
+			<composition>電蔵冷冷凍</composition>
+			<composition>電蔵冷冷冷凍</composition>
+			<composition>電蔵冷冷冷冷凍</composition>
+			<composition>電蔵冷冷冷冷冷凍</composition>
+			<composition>電蔵冷冷冷冷冷冷凍</composition>
+			<composition>電蔵冷冷冷冷冷冷冷凍</composition>
+			<composition>電蔵冷冷冷冷冷冷冷冷凍</composition>
+			<composition>電蔵冷冷冷冷冷冷冷冷冷凍</composition>
+			<composition>電蔵冷冷冷冷冷冷冷冷冷冷凍</composition>
+			<composition>電蔵冷冷冷冷冷冷冷冷冷冷冷凍</composition>
+			<composition>電蔵冷冷冷冷冷冷冷冷冷冷冷冷凍</composition>
+			<composition>電蔵冷冷冷冷冷冷冷冷冷冷冷冷冷凍</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF66-Freight-FreightLiner-Tank}">
+		<company>Japanese National Railways</company>
+		<type>EF 66</type>
+		<name>Tank Train</name>
+		<author>Shikashika</author>
+		<description>高速貨車用大型電気機関車EF66が牽引する、タンク貨物です。最後尾に昭和50年に登場した車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF66}"/>
+			<car char="容" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000b}"/>
+			<car char="器" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000k}"/>
+			<car char="液" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000g}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="宝" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000takara}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+			<car char="用" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo9000}"/>
+
+			<composition>電</composition>
+			<composition>電ヨ</composition>
+			<composition>電器ヨ</composition>
+			<composition>電器容ヨ</composition>
+			<composition>電器器容ヨ</composition>
+			<composition>電器器器容ヨ</composition>
+			<composition>電器器器器容ヨ</composition>
+			<composition>電器器器器器容ヨ</composition>
+			<composition>電器器器器器器容ヨ</composition>
+			<composition>電器器器器器器器容ヨ</composition>
+			<composition>電器器器器器器器容容ヨ</composition>
+			<composition>電器器器器器器器容容容ヨ</composition>
+			<composition>電器器器器器器器器容容容ヨ</composition>
+			<composition>電器器器器器器器器容容容液ヨ</composition>
+			<composition>電器器器器器器器器容容容容液ヨ</composition>
+			<composition>電器器器器器器器器器容容容容液ヨ</composition>
+			<composition>電器器器器器器器器器容容容容液液ヨ</composition>
+			<composition>電器器器器器器器器器容容容容容液液ヨ</composition>
+			<composition>電器器器器器器器器器器容容容容容液液ヨ</composition>
+			<composition>電器器器器器器器器器器容容容容容液液液ヨ</composition>
+			<composition>電器器器器器器器器器器容容容容容容液液液ヨ</composition>
+			<composition>電器器器器器器器器器器器容容容容容容液液液ヨ</composition>
+			<composition>電器器器器器器器器器器器容容容容容容液液液液ヨ</composition>
+			<composition>電器器器器器器器器器器器容容容容容容容液液液液ヨ</composition>
+			<composition>電器器器器器器器器器器器器容容容容容容容液液液液ヨ</composition>
+			<composition>電器器器器器器器器器器器器容容容容容容容液液液液液ヨ</composition>
+			<composition>電器器器器器器器器器器器器容容容容容容容容液液液液液ヨ</composition>
+			<composition>電器器器器器器器器器器器器容容容容容容容容容液液液液液ヨ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF66-Freight-FreightLiner}">
+		<company>Japanese National Railways</company>
+		<type>EF 66</type>
+		<name>Freight Liner</name>
+		<author>Shikashika</author>
+		<description>高速貨車用大型電気機関車EF66が牽引する、コンテナ貨物列車です。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF66}"/>
+			<car char="共" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki10000}"/>
+
+			<car char="か" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4JNR}"/>
+			<car char="き" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4JNR-R}"/>
+			<car char="く" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5JNR}"/>
+			<car char="け" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t3JNR}"/>
+			<car char="こ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t2JNR}"/>
+			<car char="さ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4g}"/>
+			<car char="し" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4g-R}"/>
+			<car char="す" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5g}"/>
+			<car char="た" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4w}"/>
+			<car char="ち" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4w-R}"/>
+			<car char="つ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5w}"/>
+			<car char="て" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t3w}"/>
+			<car char="と" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t2w}"/>
+
+			<composition>電</composition>
+			<composition>電か</composition>
+			<composition>電共か</composition>
+			<composition>電共くか</composition>
+			<composition>電共くつか</composition>
+			<composition>電共くつすか</composition>
+			<composition>電共しくつすか</composition>
+			<composition>電共しくつすてか</composition>
+			<composition>電共しくてすとてか</composition>
+			<composition>電共しくてたすとてか</composition>
+			<composition>電共共しくてたすとけか</composition>
+			<composition>電共共しくてたこすとけか</composition>
+			<composition>電共共しくてたこくすとけか</composition>
+			<composition>電共共しくてたこくすつとけか</composition>
+			<composition>電共共しくてたこくすつとくけか</composition>
+			<composition>電共共しくてたこくすつことくけか</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF58-Deck-Freight-Local}">
+		<company>Japanese National Railways</company>
+		<type>EF 58</type>
+		<name>Baggage Train (with deck)</name>
+		<author>Shikashika</author>
+		<description>電気機関車EF58(デッキ付)が牽引する、荷物列車です。最後尾に緩急車を連結しています。貨物ならFE18かもしれませんが…。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58-Deck}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki1000}"/>
+			<car char="行" ref="{FreeTrain-Shika-FreightCar-TrainCar-wamuhu100}"/>
+			<car char="ワ" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki5000}"/>
+			<car char="高" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki8000}"/>
+			<car char="共" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki10000}"/>
+			<car char="室" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000}"/>
+			<car char="部" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000-R}"/>
+			<car char="冷" ref="{FreeTrain-Shika-FreightCar-TrainCar-resha5000}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+
+			<composition>電</composition>
+			<composition>電行</composition>
+			<composition>電荷行</composition>
+			<composition>電荷郵行</composition>
+			<composition>電荷ワ郵行</composition>
+			<composition>電荷ワ郵荷行</composition>
+			<composition>電荷荷ワ郵荷行</composition>
+			<composition>電荷荷ワ郵荷荷行</composition>
+			<composition>電荷荷荷ワ郵荷荷行</composition>
+			<composition>電荷荷荷急ワ郵荷荷行</composition>
+			<composition>電部荷荷荷急ワ郵急荷荷行</composition>
+			<composition>電部ワ荷荷荷急ワ郵急荷荷行</composition>
+			<composition>電部ワワ荷荷荷急ワ郵急荷荷行</composition>
+			<composition>電部ワワワ荷荷荷急ワ郵急荷荷行</composition>
+			<composition>電部ワワワ荷荷荷急ワ郵急荷荷荷行</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF58-Deck-Freight-Local-mani30}">
+		<company>Japanese National Railways</company>
+		<type>EF 58</type>
+		<name>Baggage Train (with deck) with Cash Transport Car</name>
+		<author>Shikashika</author>
+		<description>電気機関車EF58(デッキ付)が牽引する、荷物列車です。現金輸送用荷物車マニ30や、最後尾には緩急車を連結しています。貨物ならFE18かもしれませんが…。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58-Deck}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki1000}"/>
+			<car char="行" ref="{FreeTrain-Shika-FreightCar-TrainCar-wamuhu100}"/>
+			<car char="ワ" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki5000}"/>
+			<car char="高" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki8000}"/>
+			<car char="共" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki10000}"/>
+			<car char="室" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000}"/>
+			<car char="部" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000-R}"/>
+			<car char="冷" ref="{FreeTrain-Shika-FreightCar-TrainCar-resha5000}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+
+			<composition>電</composition>
+			<composition>電貨</composition>
+			<composition>電幣行</composition>
+			<composition>電幣荷行</composition>
+			<composition>電幣荷郵行</composition>
+			<composition>電幣荷ワ郵行</composition>
+			<composition>電幣荷ワ郵荷行</composition>
+			<composition>電幣荷荷ワ郵荷行</composition>
+			<composition>電幣荷荷ワ郵荷荷行</composition>
+			<composition>電幣荷荷荷ワ郵荷荷行</composition>
+			<composition>電幣荷荷荷急ワ郵荷荷行</composition>
+			<composition>電幣部荷荷荷急ワ郵急荷荷行</composition>
+			<composition>電幣部ワ荷荷荷急ワ郵急荷荷行</composition>
+			<composition>電幣部ワワ荷荷荷急ワ郵急荷荷行</composition>
+			<composition>電幣部ワワワ荷荷荷急ワ郵急荷荷行</composition>
+			<composition>電幣部ワワワ荷荷荷急ワ郵急荷荷荷行</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF58-Freight-Local}">
+		<company>Japanese National Railways</company>
+		<type>EF 58</type>
+		<name>Baggage Train (brown)</name>
+		<author>Shikashika</author>
+		<description>電気機関車EF58(ぶどう色)が牽引する、荷物列車です。最後尾に緩急車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki1000}"/>
+			<car char="行" ref="{FreeTrain-Shika-FreightCar-TrainCar-wamuhu100}"/>
+			<car char="ワ" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki5000}"/>
+			<car char="高" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki8000}"/>
+			<car char="共" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki10000}"/>
+			<car char="室" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000}"/>
+			<car char="部" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000-R}"/>
+			<car char="冷" ref="{FreeTrain-Shika-FreightCar-TrainCar-resha5000}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+
+			<composition>電</composition>
+			<composition>電行</composition>
+			<composition>電荷行</composition>
+			<composition>電荷郵行</composition>
+			<composition>電荷高郵行</composition>
+			<composition>電荷高郵荷行</composition>
+			<composition>電荷荷高郵荷行</composition>
+			<composition>電荷荷高郵荷荷行</composition>
+			<composition>電荷荷荷高郵荷荷行</composition>
+			<composition>電荷荷荷荷高郵荷荷行</composition>
+			<composition>電部荷荷荷荷高郵荷荷荷行</composition>
+			<composition>電部高荷荷荷荷高郵荷荷荷行</composition>
+			<composition>電部高高荷荷荷荷高郵荷荷荷行</composition>
+			<composition>電部高高高荷荷荷荷高郵荷荷荷行</composition>
+			<composition>電部高高高荷荷荷荷高郵荷荷荷荷行</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF58-Freight-Local-mani30}">
+		<company>Japanese National Railways</company>
+		<type>EF 58</type>
+		<name>Baggage Train (brown) Cash Transport Car</name>
+		<author>Shikashika</author>
+		<description>電気機関車EF58(ぶどう色)が牽引する、荷物列車です。現金輸送用荷物車マニ30や、最後尾には緩急車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki1000}"/>
+			<car char="行" ref="{FreeTrain-Shika-FreightCar-TrainCar-wamuhu100}"/>
+			<car char="ワ" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki5000}"/>
+			<car char="高" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki8000}"/>
+			<car char="共" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki10000}"/>
+			<car char="室" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000}"/>
+			<car char="部" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000-R}"/>
+			<car char="冷" ref="{FreeTrain-Shika-FreightCar-TrainCar-resha5000}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+
+			<composition>電</composition>
+			<composition>電貨</composition>
+			<composition>電幣行</composition>
+			<composition>電幣荷行</composition>
+			<composition>電幣荷郵行</composition>
+			<composition>電幣荷高郵行</composition>
+			<composition>電幣荷高郵荷行</composition>
+			<composition>電幣荷荷高郵荷行</composition>
+			<composition>電幣荷荷高郵荷荷行</composition>
+			<composition>電幣荷荷荷高郵荷荷行</composition>
+			<composition>電幣荷荷荷荷高郵荷荷行</composition>
+			<composition>電幣部荷荷荷荷高郵荷荷荷行</composition>
+			<composition>電幣部高荷荷荷荷高郵荷荷荷行</composition>
+			<composition>電幣部高高荷荷荷荷高郵荷荷荷行</composition>
+			<composition>電幣部高高高荷荷荷荷高郵荷荷荷行</composition>
+			<composition>電幣部高高高荷荷荷荷高郵荷荷荷荷行</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF58-B-Freight-express}">
+		<company>Japanese National Railways</company>
+		<type>EF 58</type>
+		<name>Express Baggage Train (blue)</name>
+		<author>Shikashika</author>
+		<description>電気機関車EF58(一般色)が牽引する、急行荷物列車です。最後尾に緩急車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58-B}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki1000}"/>
+			<car char="行" ref="{FreeTrain-Shika-FreightCar-TrainCar-wamuhu100}"/>
+			<car char="ワ" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki5000}"/>
+			<car char="高" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki8000}"/>
+			<car char="共" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki10000}"/>
+			<car char="室" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000}"/>
+			<car char="部" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000-R}"/>
+			<car char="冷" ref="{FreeTrain-Shika-FreightCar-TrainCar-resha5000}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+
+			<composition>電</composition>
+			<composition>電室</composition>
+			<composition>電部室</composition>
+			<composition>電部高室</composition>
+			<composition>電部高郵室</composition>
+			<composition>電部高郵荷室</composition>
+			<composition>電部高高郵荷室</composition>
+			<composition>電部高高郵荷荷室</composition>
+			<composition>電部高高郵郵荷荷室</composition>
+			<composition>電部高高郵郵荷荷荷室</composition>
+			<composition>電部高高荷郵郵荷荷荷室</composition>
+			<composition>電部高高荷荷郵郵荷荷荷室</composition>
+			<composition>電部高高荷荷荷郵郵荷荷荷室</composition>
+			<composition>電部高高荷荷荷荷郵郵荷荷荷室</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF58-B-Freight-express-mani30}">
+		<company>Japanese National Railways</company>
+		<type>EF 58</type>
+		<name>Express Baggage Train (blue) with Cash Transport Car</name>
+		<author>Shikashika</author>
+		<description>電気機関車EF58(一般色)が牽引する、急行荷物列車です。現金輸送用荷物車マニ30や、最後尾には緩急車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58-B}"/>
+			<car char="荷" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani60}"/>
+			<car char="郵" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oyu10-B}"/>
+			<car char="急" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki1000}"/>
+			<car char="行" ref="{FreeTrain-Shika-FreightCar-TrainCar-wamuhu100}"/>
+			<car char="ワ" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki5000}"/>
+			<car char="高" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki8000}"/>
+			<car char="共" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki10000}"/>
+			<car char="室" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000}"/>
+			<car char="部" ref="{FreeTrain-Shika-FreightCar-TrainCar-washahu8000-R}"/>
+			<car char="冷" ref="{FreeTrain-Shika-FreightCar-TrainCar-resha5000}"/>
+			<car char="貨" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30}"/>
+			<car char="幣" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mani30-R}"/>
+
+			<composition>電</composition>
+			<composition>電室</composition>
+			<composition>電幣室</composition>
+			<composition>電幣部室</composition>
+			<composition>電幣部高室</composition>
+			<composition>電幣部高郵室</composition>
+			<composition>電幣部高郵荷室</composition>
+			<composition>電幣部高高郵荷室</composition>
+			<composition>電幣部高高郵荷荷室</composition>
+			<composition>電幣部高高郵郵荷荷室</composition>
+			<composition>電幣部高高郵郵荷荷荷室</composition>
+			<composition>電幣部高高荷郵郵荷荷荷室</composition>
+			<composition>電幣部高高荷荷郵郵荷荷荷室</composition>
+			<composition>電幣部高高荷荷荷郵郵荷荷荷室</composition>
+			<composition>電幣部高高荷荷荷荷郵郵荷荷荷室</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF58-Deck-Freight-FreightLiner}">
+		<company>Japanese National Railways</company>
+		<type>EF 58</type>
+		<name>Freight Liner</name>
+		<author>Shikashika</author>
+		<description>電気機関車EF58(デッキ付)が牽引する、コンテナ貨物列車です。貨物ならFE18かもしれませんが…。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58-Deck}"/>
+			<car char="共" ref="{FreeTrain-Shika-FreightCar-TrainCar-waki10000}"/>
+
+			<car char="か" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4JNR}"/>
+			<car char="き" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4JNR-R}"/>
+			<car char="く" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5JNR}"/>
+			<car char="け" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t3JNR}"/>
+			<car char="こ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t2JNR}"/>
+			<car char="さ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4g}"/>
+			<car char="し" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4g-R}"/>
+			<car char="す" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5g}"/>
+			<car char="た" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4w}"/>
+			<car char="ち" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-5t4w-R}"/>
+			<car char="つ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t5w}"/>
+			<car char="て" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t3w}"/>
+			<car char="と" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-5t2w}"/>
+
+			<composition>電</composition>
+			<composition>電か</composition>
+			<composition>電共か</composition>
+			<composition>電共くか</composition>
+			<composition>電共くつか</composition>
+			<composition>電共くつすか</composition>
+			<composition>電共しくつすか</composition>
+			<composition>電共しくつすてか</composition>
+			<composition>電共しくてすとてか</composition>
+			<composition>電共しくてたすとてか</composition>
+			<composition>電共共しくてたすとけか</composition>
+			<composition>電共共しくてたこすとけか</composition>
+			<composition>電共共しくてたこくすとけか</composition>
+			<composition>電共共しくてたこくすつとけか</composition>
+			<composition>電共共しくてたこくすつとくけか</composition>
+			<composition>電共共しくてたこくすつことくけか</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF81-300s-Freight-Container-koki10000}">
+		<company>Japanese National Railways</company>
+		<type>EF 81</type>
+		<name>Enginge no.303 Container Freight Train</name>
+		<author>Shikashika</author>
+		<description>関門海底トンネル区間用に煙害対策がされた交直両用電気機関車EF81(ステンレス無塗装)が牽引する、コンテナ貨物列車です。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-300s}"/>
+			<car char="あ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-0}"/>
+			<car char="か" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft2-jnr1}"/>
+			<car char="き" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft2-jnr2}"/>
+			<car char="く" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft2-jnr3}"/>
+			<car char="さ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft3-jnr1}"/>
+			<car char="し" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft3-jnr2}"/>
+			<car char="す" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft3-jnr3}"/>
+			<car char="た" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft4-jnr1}"/>
+			<car char="ち" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft4-jnr2}"/>
+			<car char="つ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft4-jnr3}"/>
+			<car char="な" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr1}"/>
+			<car char="に" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr2}"/>
+			<car char="ぬ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr3}"/>
+			<car char="ね" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr4}"/>
+			<car char="の" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr5}"/>
+
+			<car char="ア" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-0}"/>
+			<car char="イ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-0-R}"/>
+			<car char="ウ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-0t-R}"/>
+			<car char="カ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr1}"/>
+			<car char="キ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr1-R}"/>
+			<car char="ク" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr1t-R}"/>
+			<car char="ガ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr2}"/>
+			<car char="ギ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr2-R}"/>
+			<car char="グ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr2t-R}"/>
+			<car char="サ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr3}"/>
+			<car char="シ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr3-R}"/>
+			<car char="ス" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr3t-R}"/>
+			<car char="ザ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr1}"/>
+			<car char="ジ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr1-R}"/>
+			<car char="ズ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr1t-R}"/>
+			<car char="タ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr2}"/>
+			<car char="チ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr2-R}"/>
+			<car char="ツ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr2t-R}"/>
+			<car char="ダ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr3}"/>
+			<car char="ヂ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr3-R}"/>
+			<car char="ヅ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr3t-R}"/>
+
+			<composition>電</composition>
+			<composition>電グ</composition>
+			<composition>電ちグ</composition>
+			<composition>電ちぬグ</composition>
+			<composition>電ちすぬグ</composition>
+			<composition>電ちすたぬグ</composition>
+			<composition>電ちなすたぬグ</composition>
+			<composition>電サちなすたぬグ</composition>
+			<composition>電サちなジすたぬグ</composition>
+			<composition>電サちなジすしたぬグ</composition>
+			<composition>電サちなジすしたぬかグ</composition>
+			<composition>電サちなジすしきたぬかグ</composition>
+			<composition>電サちなジすしきたさぬかグ</composition>
+			<composition>電サちなジすしにきたさぬかグ</composition>
+			<composition>電サちなジすしにさきたさぬかグ</composition>
+			<composition>電サちなジすしにさきちたさぬかグ</composition>
+			<composition>電サちなジすしにさきちたくさぬかグ</composition>
+			<composition>電サちなジすしにさきちたくさぬかなグ</composition>
+			<composition>電サちなジすしにさきちたくさぬかつなグ</composition>
+			<composition>電サちなジすしにさきちたくさぬかつちなグ</composition>
+			<composition>電サちなジすしにさきちたくさぬかつちなくグ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF81-300s-Freight-Tank-kaki43000-yo8000}">
+		<company>Japanese National Railways</company>
+		<type>EF 81</type>
+		<name>Engine no.303 Tank Train</name>
+		<author>Shikashika</author>
+		<description>関門海底トンネル区間用に煙害対策がされた交直両用電気機関車EF81(ステンレス無塗装)が牽引する、タンク貨物です。最後尾に昭和50年に登場した車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-300s}"/>
+			<car char="容" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000b}"/>
+			<car char="器" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000k}"/>
+			<car char="液" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000g}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+
+			<composition>電</composition>
+			<composition>電ヨ</composition>
+			<composition>電器ヨ</composition>
+			<composition>電器容ヨ</composition>
+			<composition>電器器容ヨ</composition>
+			<composition>電器器器容ヨ</composition>
+			<composition>電器器器器容ヨ</composition>
+			<composition>電器器器器器容ヨ</composition>
+			<composition>電器器器器器器容ヨ</composition>
+			<composition>電器器器器器器器容ヨ</composition>
+			<composition>電器器器器器器器容容ヨ</composition>
+			<composition>電器器器器器器器容容容ヨ</composition>
+			<composition>電器器器器器器器器容容容ヨ</composition>
+			<composition>電器器器器器器器器容容容液ヨ</composition>
+			<composition>電器器器器器器器器容容容容液ヨ</composition>
+			<composition>電器器器器器器器器器容容容容液ヨ</composition>
+			<composition>電器器器器器器器器器容容容容液液ヨ</composition>
+			<composition>電器器器器器器器器器容容容容容液液ヨ</composition>
+			<composition>電器器器器器器器器器器容容容容容液液ヨ</composition>
+			<composition>電器器器器器器器器器器容容容容容液液液ヨ</composition>
+			<composition>電器器器器器器器器器器容容容容容容液液液ヨ</composition>
+			<composition>電器器器器器器器器器器器容容容容容容液液液ヨ</composition>
+			<composition>電器器器器器器器器器器器容容容容容容液液液液ヨ</composition>
+			<composition>電器器器器器器器器器器器容容容容容容容液液液液ヨ</composition>
+			<composition>電器器器器器器器器器器器器容容容容容容容液液液液ヨ</composition>
+			<composition>電器器器器器器器器器器器器容容容容容容容液液液液液ヨ</composition>
+			<composition>電器器器器器器器器器器器器容容容容容容容容液液液液液ヨ</composition>
+			<composition>電器器器器器器器器器器器器容容容容容容容容容液液液液液ヨ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF81-300s-Freight-m-toki25000-yo5000}">
+		<company>Japanese National Railways</company>
+		<type>EF 81</type>
+		<name>Engine no.303 Open Freight Train</name>
+		<author>Shikashika</author>
+		<description>関門海底トンネル区間用に煙害対策がされた交直両用電気機関車EF81(ステンレス無塗装)が牽引する、無蓋貨車です。最後尾には昭和34年に最高許容速度が85km/hに改造された車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-300s}"/>
+
+			<car char="ト" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki15000}"/>
+			<car char="ド" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki25000}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+
+			<composition>電</composition>
+			<composition>電掌</composition>
+			<composition>電ド掌</composition>
+			<composition>電ドド掌</composition>
+			<composition>電ドドド掌</composition>
+			<composition>電ドドドド掌</composition>
+			<composition>電ドドドドト掌</composition>
+			<composition>電ドドドドトト掌</composition>
+			<composition>電ドドドドドトト掌</composition>
+			<composition>電ドドドドドトトト掌</composition>
+			<composition>電ドドドドドトトドト掌</composition>
+			<composition>電ドドドドドドトトドト掌</composition>
+			<composition>電ドドドドドドトトドトド掌</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF81-300p-Freight-Container-koki10000}">
+		<company>Japanese National Railways</company>
+		<type>EF 81</type>
+		<name>Engine no.302 Container Freight Train</name>
+		<author>Shikashika</author>
+		<description>交直両用電気機関車EF81(ステンレス赤13号塗装)が牽引する、コンテナ貨物列車です。元々は関門海底トンネル区間用でしたが、常磐線転属で塗装されました。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-300p}"/>
+			<car char="あ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-0}"/>
+			<car char="か" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft2-jnr1}"/>
+			<car char="き" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft2-jnr2}"/>
+			<car char="く" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft2-jnr3}"/>
+			<car char="さ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft3-jnr1}"/>
+			<car char="し" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft3-jnr2}"/>
+			<car char="す" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft3-jnr3}"/>
+			<car char="た" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft4-jnr1}"/>
+			<car char="ち" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft4-jnr2}"/>
+			<car char="つ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft4-jnr3}"/>
+			<car char="な" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr1}"/>
+			<car char="に" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr2}"/>
+			<car char="ぬ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr3}"/>
+			<car char="ね" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr4}"/>
+			<car char="の" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr5}"/>
+
+			<car char="ア" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-0}"/>
+			<car char="イ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-0-R}"/>
+			<car char="ウ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-0t-R}"/>
+			<car char="カ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr1}"/>
+			<car char="キ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr1-R}"/>
+			<car char="ク" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr1t-R}"/>
+			<car char="ガ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr2}"/>
+			<car char="ギ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr2-R}"/>
+			<car char="グ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr2t-R}"/>
+			<car char="サ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr3}"/>
+			<car char="シ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr3-R}"/>
+			<car char="ス" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr3t-R}"/>
+			<car char="ザ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr1}"/>
+			<car char="ジ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr1-R}"/>
+			<car char="ズ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr1t-R}"/>
+			<car char="タ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr2}"/>
+			<car char="チ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr2-R}"/>
+			<car char="ツ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr2t-R}"/>
+			<car char="ダ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr3}"/>
+			<car char="ヂ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr3-R}"/>
+			<car char="ヅ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr3t-R}"/>
+
+			<composition>電</composition>
+			<composition>電ス</composition>
+			<composition>電なス</composition>
+			<composition>電なちス</composition>
+			<composition>電なすちス</composition>
+			<composition>電なすにちス</composition>
+			<composition>電なすにかちス</composition>
+			<composition>電タかすにかちス</composition>
+			<composition>電タかすキかにちス</composition>
+			<composition>電タかすキかしにちス</composition>
+			<composition>電タかすキかしにぬちス</composition>
+			<composition>電タかすキかしきにぬちス</composition>
+			<composition>電タかすキかしきにくぬちス</composition>
+			<composition>電タかすキかしにきにくぬちス</composition>
+			<composition>電タかすキかしにすきにくぬちス</composition>
+			<composition>電タかすキかしにすきさにくぬちス</composition>
+			<composition>電タかすキかしにすきさにたくぬちス</composition>
+			<composition>電タかすキかしにすきさにたくぬちなス</composition>
+			<composition>電タかすキかしにすきさにたくぬちたなス</composition>
+			<composition>電タかすキかしにすきさにたくぬちたちなス</composition>
+			<composition>電タかすキかしにすきさにたくぬちたちなくス</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF81-300p-Freight-Tank-kaki43000-yo5000}">
+		<company>Japanese National Railways</company>
+		<type>EF 81</type>
+		<name>Engine no.302 Tank Train</name>
+		<author>Shikashika</author>
+		<description>交直両用電気機関車EF81(ステンレス赤13号塗装)が牽引する、タンク貨物です。元々は関門海底トンネル区間用でしたが、常磐線転属で塗装されました。最後尾に昭和34年に最高許容速度が85km/hに改造された車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-300p}"/>
+			<car char="容" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000b}"/>
+			<car char="器" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000k}"/>
+			<car char="液" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000g}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+
+			<composition>電</composition>
+			<composition>電掌</composition>
+			<composition>電器掌</composition>
+			<composition>電器容掌</composition>
+			<composition>電器器容掌</composition>
+			<composition>電器器器容掌</composition>
+			<composition>電器器器器容掌</composition>
+			<composition>電器器器器器容掌</composition>
+			<composition>電器器器器器器容掌</composition>
+			<composition>電器器器器器器器容掌</composition>
+			<composition>電器器器器器器器容容掌</composition>
+			<composition>電器器器器器器器容容容掌</composition>
+			<composition>電器器器器器器器器容容容掌</composition>
+			<composition>電器器器器器器器器容容容液掌</composition>
+			<composition>電器器器器器器器器容容容容液掌</composition>
+			<composition>電器器器器器器器器器容容容容液掌</composition>
+			<composition>電器器器器器器器器器容容容容液液掌</composition>
+			<composition>電器器器器器器器器器容容容容容液液掌</composition>
+			<composition>電器器器器器器器器器器容容容容容液液掌</composition>
+			<composition>電器器器器器器器器器器容容容容容液液液掌</composition>
+			<composition>電器器器器器器器器器器容容容容容容液液液掌</composition>
+			<composition>電器器器器器器器器器器器容容容容容容液液液掌</composition>
+			<composition>電器器器器器器器器器器器容容容容容容液液液液掌</composition>
+			<composition>電器器器器器器器器器器器容容容容容容容液液液液掌</composition>
+			<composition>電器器器器器器器器器器器器容容容容容容容液液液液掌</composition>
+			<composition>電器器器器器器器器器器器器容容容容容容容液液液液液掌</composition>
+			<composition>電器器器器器器器器器器器器容容容容容容容容液液液液液掌</composition>
+			<composition>電器器器器器器器器器器器器容容容容容容容容容液液液液液掌</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF81-300p-Freight-m-toki25000-yo8000}">
+		<company>Japanese National Railways</company>
+		<type>EF 81</type>
+		<name>Engine no.302 Open Freight Train</name>
+		<author>Shikashika</author>
+		<description>交直両用電気機関車EF81(ステンレス赤13号塗装)が牽引する、無蓋貨車です。元々は関門海底トンネル区間用でしたが、常磐線転属で塗装されました。最後尾に昭和50年に登場した車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-300p}"/>
+
+			<car char="ト" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki15000}"/>
+			<car char="ド" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki25000}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+
+			<composition>電</composition>
+			<composition>電ヨ</composition>
+			<composition>電ドヨ</composition>
+			<composition>電ドドヨ</composition>
+			<composition>電ドドドヨ</composition>
+			<composition>電ドドトドヨ</composition>
+			<composition>電ドドドトドヨ</composition>
+			<composition>電ドドドトドトヨ</composition>
+			<composition>電ドドドトドトドヨ</composition>
+			<composition>電ドドドトドトドトヨ</composition>
+			<composition>電ドドドトドトドトトヨ</composition>
+			<composition>電ドドドトドトドトトトヨ</composition>
+			<composition>電ドドドトドトドトトトドヨ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF81-81-Freight-Container-koki10000}">
+		<company>Japanese National Railways</company>
+		<type>EF 81</type>
+		<name>Engine no.81 Container Freight Train</name>
+		<author>Shikashika</author>
+		<description>交直両用電気機関車EF81(81号機お召し塗装)が牽引する、コンテナ貨物列車です。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-81-omesi}"/>
+			<car char="あ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-0}"/>
+			<car char="か" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft2-jnr1}"/>
+			<car char="き" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft2-jnr2}"/>
+			<car char="く" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft2-jnr3}"/>
+			<car char="さ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft3-jnr1}"/>
+			<car char="し" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft3-jnr2}"/>
+			<car char="す" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft3-jnr3}"/>
+			<car char="た" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft4-jnr1}"/>
+			<car char="ち" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft4-jnr2}"/>
+			<car char="つ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft4-jnr3}"/>
+			<car char="な" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr1}"/>
+			<car char="に" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr2}"/>
+			<car char="ぬ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr3}"/>
+			<car char="ね" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr4}"/>
+			<car char="の" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr5}"/>
+
+			<car char="ア" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-0}"/>
+			<car char="イ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-0-R}"/>
+			<car char="ウ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-0t-R}"/>
+			<car char="カ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr1}"/>
+			<car char="キ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr1-R}"/>
+			<car char="ク" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr1t-R}"/>
+			<car char="ガ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr2}"/>
+			<car char="ギ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr2-R}"/>
+			<car char="グ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr2t-R}"/>
+			<car char="サ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr3}"/>
+			<car char="シ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr3-R}"/>
+			<car char="ス" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr3t-R}"/>
+			<car char="ザ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr1}"/>
+			<car char="ジ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr1-R}"/>
+			<car char="ズ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr1t-R}"/>
+			<car char="タ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr2}"/>
+			<car char="チ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr2-R}"/>
+			<car char="ツ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr2t-R}"/>
+			<car char="ダ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr3}"/>
+			<car char="ヂ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr3-R}"/>
+			<car char="ヅ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr3t-R}"/>
+
+			<composition>電</composition>
+			<composition>電ヅ</composition>
+			<composition>電たヅ</composition>
+			<composition>電たぬヅ</composition>
+			<composition>電たにぬヅ</composition>
+			<composition>電たにかぬヅ</composition>
+			<composition>電たにかさぬヅ</composition>
+			<composition>電カたにかさぬヅ</composition>
+			<composition>電カたにチかさぬヅ</composition>
+			<composition>電カたにチかねさぬヅ</composition>
+			<composition>電カたにチかねさつぬヅ</composition>
+			<composition>電カたにチかねなさつぬヅ</composition>
+			<composition>電カたにチかねなさくつぬヅ</composition>
+			<composition>電カたにチかねちなさくつぬヅ</composition>
+			<composition>電カたにチかねちしなさくつぬヅ</composition>
+			<composition>電カたにチかねちしなきさくつぬヅ</composition>
+			<composition>電カたにチかねちしなきさのくつぬヅ</composition>
+			<composition>電カたにチかねちしなきさのくつぬかヅ</composition>
+			<composition>電カたにチかねちしなきさのくつぬすかヅ</composition>
+			<composition>電カたにチかねちしなきさのくつぬすあかヅ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF81-81-Freight-Tank-kaki43000-yo6000}">
+		<company>Japanese National Railways</company>
+		<type>EF 81</type>
+		<name>Engine no.81 Tank Train</name>
+		<author>Shikashika</author>
+		<description>交直両用電気機関車EF81(81号機お召し塗装)が牽引する、タンク貨物です。最後尾に昭和37年から製造された車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-81-omesi}"/>
+
+			<car char="容" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000b}"/>
+			<car char="器" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000k}"/>
+			<car char="液" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000g}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+
+			<composition>電</composition>
+			<composition>電よ</composition>
+			<composition>電容よ</composition>
+			<composition>電容器よ</composition>
+			<composition>電容容器よ</composition>
+			<composition>電容容容器よ</composition>
+			<composition>電容容容容器よ</composition>
+			<composition>電容容容容容器よ</composition>
+			<composition>電容容容容容容器よ</composition>
+			<composition>電容容容容容容容器よ</composition>
+			<composition>電容容容容容容容器器よ</composition>
+			<composition>電容容容容容容容器器器よ</composition>
+			<composition>電容容容容容容容器器器器よ</composition>
+			<composition>電容容容容容容容器器器器器よ</composition>
+			<composition>電容容容容容容容容器器器器器よ</composition>
+			<composition>電容容容容容容容容器器器器器器よ</composition>
+			<composition>電容容容容容容容容器器器器器器器よ</composition>
+			<composition>電容容容容容容容容容器器器器器器器よ</composition>
+			<composition>電容容容容容容容容容器器器器器器器器よ</composition>
+			<composition>電容容容容容容容容容器器器器器器器器器よ</composition>
+			<composition>電容容容容容容容容容容器器器器器器器器器よ</composition>
+			<composition>電容容容容容容容容容容器器器器器器器器器器よ</composition>
+			<composition>電容容容容容容容容容容器器器器器器器器器器器よ</composition>
+			<composition>電容容容容容容容容容容容器器器器器器器器器器器よ</composition>
+			<composition>電容容容容容容容容容容容器器器器器器器器器器器器よ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF81-81-Freight-m-toki25000-yo5000}">
+		<company>Japanese National Railways</company>
+		<type>EF 81</type>
+		<name>Engine no.81 Open Freight Train</name>
+		<author>Shikashika</author>
+		<description>交直両用電気機関車EF81(81号機お召し塗装)が牽引する、無蓋貨車です。最後尾に昭和34年に最高許容速度が85km/hに改造された車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-81-omesi}"/>
+
+			<car char="ト" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki15000}"/>
+			<car char="ド" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki25000}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+
+			<composition>電</composition>
+			<composition>電掌</composition>
+			<composition>電ド掌</composition>
+			<composition>電ドド掌</composition>
+			<composition>電ドドド掌</composition>
+			<composition>電ドトドド掌</composition>
+			<composition>電ドトドドド掌</composition>
+			<composition>電ドトドドドト掌</composition>
+			<composition>電ドトドドドトド掌</composition>
+			<composition>電ドトドドドトドト掌</composition>
+			<composition>電ドトドドドトドトト掌</composition>
+			<composition>電ドトドドドトドトトト掌</composition>
+			<composition>電ドトドドドトドトトトド掌</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-DD51-745-Freight-Container-koki10000}">
+		<company>Japanese National Railways</company>
+		<type>DD 51</type>
+		<name>Engine no.745 Container Freight Train</name>
+		<author>Shikashika</author>
+		<description>三つ目(ヘッドライトが3灯ある)に改造された液体式ディーゼル機関車DD51-745号機が牽引する、コンテナ貨物列車です。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="気" ref="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-745}"/>
+			<car char="重" ref="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-JNR}"/>
+
+			<car char="あ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-0}"/>
+			<car char="か" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft2-jnr1}"/>
+			<car char="き" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft2-jnr2}"/>
+			<car char="く" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft2-jnr3}"/>
+			<car char="さ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft3-jnr1}"/>
+			<car char="し" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft3-jnr2}"/>
+			<car char="す" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft3-jnr3}"/>
+			<car char="た" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft4-jnr1}"/>
+			<car char="ち" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft4-jnr2}"/>
+			<car char="つ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft4-jnr3}"/>
+			<car char="な" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr1}"/>
+			<car char="に" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr2}"/>
+			<car char="ぬ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr3}"/>
+			<car char="ね" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr4}"/>
+			<car char="の" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr5}"/>
+
+			<car char="ア" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-0}"/>
+			<car char="イ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-0-R}"/>
+			<car char="ウ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-0t-R}"/>
+			<car char="カ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr1}"/>
+			<car char="キ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr1-R}"/>
+			<car char="ク" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr1t-R}"/>
+			<car char="ガ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr2}"/>
+			<car char="ギ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr2-R}"/>
+			<car char="グ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr2t-R}"/>
+			<car char="サ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr3}"/>
+			<car char="シ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr3-R}"/>
+			<car char="ス" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr3t-R}"/>
+			<car char="ザ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr1}"/>
+			<car char="ジ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr1-R}"/>
+			<car char="ズ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr1t-R}"/>
+			<car char="タ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr2}"/>
+			<car char="チ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr2-R}"/>
+			<car char="ツ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr2t-R}"/>
+			<car char="ダ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr3}"/>
+			<car char="ヂ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr3-R}"/>
+			<car char="ヅ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr3t-R}"/>
+
+			<composition>気</composition>
+			<composition>気ツ</composition>
+			<composition>気たツ</composition>
+			<composition>気たぬツ</composition>
+			<composition>気たにぬツ</composition>
+			<composition>気たにかぬツ</composition>
+			<composition>気たにかさぬツ</composition>
+			<composition>気ガたにかさぬツ</composition>
+			<composition>気ガたにジかさぬツ</composition>
+			<composition>気ガたにジかねさぬツ</composition>
+			<composition>気ガたにジかねさつぬツ</composition>
+			<composition>気ガたにジかねなさつぬツ</composition>
+			<composition>気ガたにジかねなさくつぬツ</composition>
+			<composition>気重ガたにジかねなさくつぬツ</composition>
+			<composition>気重ガたにジかねちなさくつぬツ</composition>
+			<composition>気重ガたにジかねちしなさくつぬツ</composition>
+			<composition>気重ガたにジかねちしなきさくつぬツ</composition>
+			<composition>気重ガたにジかねちしなきさのくつぬツ</composition>
+			<composition>気重ガたにジかねちしなきさのくつぬかツ</composition>
+			<composition>気重ガたにジかねちしなきさのくつぬすかツ</composition>
+			<composition>気重ガたにジかねちしなきさのくつぬすあかツ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-DD51-745-Freight-Tank-kaki43000-yo5000}">
+		<company>Japanese National Railways</company>
+		<type>DD 51</type>
+		<name>Engine no.745 Tank Train</name>
+		<author>Shikashika</author>
+		<description>三つ目(ヘッドライトが3灯ある)に改造された液体式ディーゼル機関車DD51-745号機が牽引する、タンク貨物です。最後尾に昭和34年に最高許容速度が85km/hに改造された車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="気" ref="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-745}"/>
+			<car char="重" ref="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-JNR}"/>
+			<car char="容" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000b}"/>
+			<car char="器" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000k}"/>
+			<car char="液" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000g}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+
+			<composition>気</composition>
+			<composition>気掌</composition>
+			<composition>気器掌</composition>
+			<composition>気器容掌</composition>
+			<composition>気器器容掌</composition>
+			<composition>気器器器容掌</composition>
+			<composition>気器器器器容掌</composition>
+			<composition>気器器器器器容掌</composition>
+			<composition>気器器器器器器容掌</composition>
+			<composition>気器器器器器器器容掌</composition>
+			<composition>気器器器器器器器容容掌</composition>
+			<composition>気器器器器器器器容容容掌</composition>
+			<composition>気器器器器器器器器容容容掌</composition>
+			<composition>気器器器器器器器器容容容液掌</composition>
+			<composition>気器器器器器器器器容容容容液掌</composition>
+			<composition>気器器器器器器器器器容容容容液掌</composition>
+			<composition>気器器器器器器器器器容容容容液液掌</composition>
+			<composition>気器器器器器器器器器容容容容容液液掌</composition>
+			<composition>気器器器器器器器器器器容容容容容液液掌</composition>
+			<composition>気重器器器器器器器器器器容容容容容液液掌</composition>
+			<composition>気重器器器器器器器器器器容容容容容液液液掌</composition>
+			<composition>気重器器器器器器器器器器容容容容容容液液液掌</composition>
+			<composition>気重器器器器器器器器器器器容容容容容容液液液掌</composition>
+			<composition>気重器器器器器器器器器器器容容容容容容液液液液掌</composition>
+			<composition>気重器器器器器器器器器器器容容容容容容容液液液液掌</composition>
+			<composition>気重器器器器器器器器器器器器容容容容容容容液液液液掌</composition>
+			<composition>気重器器器器器器器器器器器器容容容容容容容液液液液液掌</composition>
+			<composition>気重器器器器器器器器器器器器容容容容容容容容液液液液液掌</composition>
+			<composition>気重器器器器器器器器器器器器容容容容容容容容容液液液液液掌</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-DD51-745-Freight-m-toki250000-yo6000}">
+		<company>Japanese National Railways</company>
+		<type>DD 51</type>
+		<name>Engine no.745 Open Freight Train</name>
+		<author>Shikashika</author>
+		<description>三つ目(ヘッドライトが3灯ある)に改造された液体式ディーゼル機関車DD51-745号機が牽引する、無蓋貨車です。最後尾に昭和37年から製造された車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="気" ref="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-745}"/>
+			<car char="重" ref="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-JNR}"/>
+
+			<car char="ト" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki15000}"/>
+			<car char="ド" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki25000}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+
+			<composition>気</composition>
+			<composition>気よ</composition>
+			<composition>気トよ</composition>
+			<composition>気トドよ</composition>
+			<composition>気トドドよ</composition>
+			<composition>気トトドドよ</composition>
+			<composition>気トトドドトよ</composition>
+			<composition>気トトドドトドよ</composition>
+			<composition>気トトドドトドドよ</composition>
+			<composition>気トトドドトドドドよ</composition>
+			<composition>気トトドドトドドドドよ</composition>
+			<composition>気トトドドトドドドドトよ</composition>
+			<composition>気重トトドドトドドドドトよ</composition>
+			<composition>気重トトドドトドドドドトトよ</composition>
+			<composition>気重トトドドトドドドドトトトよ</composition>
+			<composition>気重トトドドトドドドドトトトトよ</composition>
+			<composition>気重トトドドトドドドドドトトトトよ</composition>
+			<composition>気重トトドドトドドドドドドトトトトよ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-DD51-592-Freight-Container-koki10000}">
+		<company>Japanese National Railways</company>
+		<type>DD 51</type>
+		<name>Euro Liner Container Freight Train</name>
+		<author>Shikashika</author>
+		<description>液体式ディーゼル機関車DD51(ユーロライナー)が牽引する、コンテナ貨物列車です。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="気" ref="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-Euroliner}"/>
+			<car char="重" ref="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-JNR}"/>
+
+			<car char="あ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-0}"/>
+			<car char="か" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft2-jnr1}"/>
+			<car char="き" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft2-jnr2}"/>
+			<car char="く" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft2-jnr3}"/>
+			<car char="さ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft3-jnr1}"/>
+			<car char="し" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft3-jnr2}"/>
+			<car char="す" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft3-jnr3}"/>
+			<car char="た" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft4-jnr1}"/>
+			<car char="ち" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft4-jnr2}"/>
+			<car char="つ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft4-jnr3}"/>
+			<car char="な" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr1}"/>
+			<car char="に" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr2}"/>
+			<car char="ぬ" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr3}"/>
+			<car char="ね" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr4}"/>
+			<car char="の" ref="{FreeTrain-Shika-FreightCar-TrainCar-koki10000-12ft5-jnr5}"/>
+
+			<car char="ア" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-0}"/>
+			<car char="イ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-0-R}"/>
+			<car char="ウ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-0t-R}"/>
+			<car char="カ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr1}"/>
+			<car char="キ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr1-R}"/>
+			<car char="ク" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr1t-R}"/>
+			<car char="ガ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr2}"/>
+			<car char="ギ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr2-R}"/>
+			<car char="グ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr2t-R}"/>
+			<car char="サ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr3}"/>
+			<car char="シ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr3-R}"/>
+			<car char="ス" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft2-jnr3t-R}"/>
+			<car char="ザ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr1}"/>
+			<car char="ジ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr1-R}"/>
+			<car char="ズ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr1t-R}"/>
+			<car char="タ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr2}"/>
+			<car char="チ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr2-R}"/>
+			<car char="ツ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr2t-R}"/>
+			<car char="ダ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr3}"/>
+			<car char="ヂ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr3-R}"/>
+			<car char="ヅ" ref="{FreeTrain-Shika-FreightCar-TrainCar-kokihu10000-12ft4-jnr3t-R}"/>
+
+			<composition>気</composition>
+			<composition>気ク</composition>
+			<composition>気のク</composition>
+			<composition>気のしク</composition>
+			<composition>気のきしク</composition>
+			<composition>気のきねしク</composition>
+			<composition>気のきなねしク</composition>
+			<composition>気ザのきなねしク</composition>
+			<composition>気ザのきキなねしク</composition>
+			<composition>気ザのきキなかねしク</composition>
+			<composition>気ザのきキなかねつしク</composition>
+			<composition>気ザのきキなかぬねつしク</composition>
+			<composition>気ザのきキなかぬねにつしク</composition>
+			<composition>気重ザのきキなかぬねにつしク</composition>
+			<composition>気重ザのきキなかさぬねにつしク</composition>
+			<composition>気重ザのきキなかたさぬねにつしク</composition>
+			<composition>気重ザのきキなかたさぬちねにつしク</composition>
+			<composition>気重ザのきキなかたさぬちねすにつしク</composition>
+			<composition>気重ザのきキなかたさぬちねすにつしかク</composition>
+			<composition>気重ザのきキなかたさぬちねすにつしくかク</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-DD51-592-Freight-Tank-kaki43000-yo8000}">
+		<company>Japanese National Railways</company>
+		<type>DD 51</type>
+		<name>Euro Liner Tank Train</name>
+		<author>Shikashika</author>
+		<description>液体式ディーゼル機関車DD51(ユーロライナー)が牽引する、タンク貨物です。最後尾に昭和50年に登場した車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="気" ref="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-Euroliner}"/>
+			<car char="重" ref="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-JNR}"/>
+			<car char="容" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000b}"/>
+			<car char="器" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000k}"/>
+			<car char="液" ref="{FreeTrain-Shika-FreightCar-TrainCar-taki43000g}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+
+			<composition>気</composition>
+			<composition>気ヨ</composition>
+			<composition>気液ヨ</composition>
+			<composition>気液器ヨ</composition>
+			<composition>気液液器ヨ</composition>
+			<composition>気液液器器ヨ</composition>
+			<composition>気液液液器器ヨ</composition>
+			<composition>気液液液液器器ヨ</composition>
+			<composition>気液液液液液器器ヨ</composition>
+			<composition>気液液液液液液器器ヨ</composition>
+			<composition>気液液液液液液液器器ヨ</composition>
+			<composition>気液液液液液液液器器器ヨ</composition>
+			<composition>気液液液液液液液液器器器ヨ</composition>
+			<composition>気液液液液液液液液器器器容ヨ</composition>
+			<composition>気液液液液液液液液器器器容容ヨ</composition>
+			<composition>気液液液液液液液液液器器器容容ヨ</composition>
+			<composition>気液液液液液液液液液器器器器容容ヨ</composition>
+			<composition>気液液液液液液液液液器器器器器容容ヨ</composition>
+			<composition>気重液液液液液液液液液器器器器器容容ヨ</composition>
+			<composition>気重液液液液液液液液液液器器器器器容容ヨ</composition>
+			<composition>気重液液液液液液液液液液器器器器器容容容ヨ</composition>
+			<composition>気重液液液液液液液液液液器器器器器容容容容ヨ</composition>
+			<composition>気重液液液液液液液液液液器器器器器容容容容容ヨ</composition>
+			<composition>気重液液液液液液液液液液器器器器器器容容容容容ヨ</composition>
+			<composition>気重液液液液液液液液液液液器器器器器器器容容容容ヨ</composition>
+			<composition>気重液液液液液液液液液液液液器器器器器器容容容容容ヨ</composition>
+			<composition>気重液液液液液液液液液液液液器器器器器器器容容容容容ヨ</composition>
+			<composition>気重液液液液液液液液液液液液器器器器器器器器容容容容容ヨ</composition>
+			<composition>気重液液液液液液液液液液液液器器器器器器器器器容容容容容ヨ</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-DD51-592-Freight-m-toki25000-yo5000}">
+		<company>Japanese National Railways</company>
+		<type>DD 51</type>
+		<name>Euro Liner Open Freight Train</name>
+		<author>Shikashika</author>
+		<description>液体式ディーゼル機関車DD51(ユーロライナー)が牽引する、無蓋貨車です。最後尾に昭和34年に最高許容速度が85km/hに改造された車掌車を連結しています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="気" ref="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-Euroliner}"/>
+			<car char="重" ref="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-JNR}"/>
+
+			<car char="ト" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki15000}"/>
+			<car char="ド" ref="{FreeTrain-Shika-FreightCar-TrainCar-toki25000}"/>
+			<car char="掌" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo5000}"/>
+			<car char="よ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo6000}"/>
+			<car char="ヨ" ref="{FreeTrain-Shika-FreightCar-TrainCar-yo8000}"/>
+
+			<composition>気</composition>
+			<composition>気掌</composition>
+			<composition>気ド掌</composition>
+			<composition>気ドド掌</composition>
+			<composition>気ドドト掌</composition>
+			<composition>気ドドドト掌</composition>
+			<composition>気ドドドトド掌</composition>
+			<composition>気ドドドトドド掌</composition>
+			<composition>気ドドドトドドド掌</composition>
+			<composition>気ドドドトドドドト掌</composition>
+			<composition>気ドドドトドドドトト掌</composition>
+			<composition>気ドドドトドドドトトト掌</composition>
+			<composition>気ドドドトドドドトトトト掌</composition>
+			<composition>気ドドドドトドドドトトトト掌</composition>
+			<composition>気重ドドドドトドドドトトトト掌</composition>
+			<composition>気重ドドドドドトドドドトトトト掌</composition>
+			<composition>気重ドドドドドトトドドドトトトト掌</composition>
+			<composition>気重ドドドドドトトドドドトトトトト掌</composition>
+			<composition>気重ドドドドドトトドドドドトトトトト掌</composition>
+			<composition>気重ドドドドドトトドドドドドトトトトト掌</composition>
+			<composition>気重ドドドドドトトドドドドドドトトトトト掌</composition>
+		</config>
+	</contribution>
+
+
+</plug-in>

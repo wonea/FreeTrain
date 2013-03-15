@@ -1,0 +1,33 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(CC73C1B4-92E4-409D-A3F4-126E3F5B5EF2),
+//	dual,
+	helpstring("IBitmapWriter インターフェイス"),
+	pointer_default(unique)
+] 
+interface IBitmapWriter : IUnknown /*: IDispatch*/ {
+	HRESULT  Init([in]int cx, [in]int cy, [in]int fps);
+	HRESULT  WriteBitmap([in]DWORD/*HBITMAP*/ hBitmap);
+};
+
+
+[ version(1.0), uuid(3F52B68A-0DBA-4552-99DD-FF77E484B899), helpstring("BitmapWriter.TypeLib 1.0 タイプ ライブラリ") ]
+library BitmapWriterTypeLib
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+	[
+		version(1.0),
+		uuid(06380559-657A-40F0-BC31-526E207BAC6E),
+		helpstring("BitmapWriter Class")
+	] 
+	coclass CBitmapWriter {
+		interface IBitmapWriter;
+	};
+
+}
+

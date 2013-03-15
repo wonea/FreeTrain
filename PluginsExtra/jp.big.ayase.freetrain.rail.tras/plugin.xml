@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Iron bridge</title>
+	<author>Hiro Ayase</author>
+	<homepage>http://www14.big.or.jp/~ayase/freetrain/</homepage>
+	
+	<depends on="org.kohsuke.freetrain.rail.electricPole" />
+
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-RailStructureImg-Tras-Center}">
+		<picture src="tras_c.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-RailStructureImg-Tras-Right}">
+		<picture src="tras_s.bmp" />
+	</contribution>
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-RailStructureImg-Tras-Left}">
+		<picture src="tras_e.bmp" />
+	</contribution>
+	
+	
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-Tras-Center-Red}">
+		<name>Iron bridge (red,middle)</name>
+		<sprite>
+			<picture ref="{FreeTrain-AYASE-Hiro-RailStructureImg-Tras-Center}"/>
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-Tras-Left-Red}">
+		<name>Iron bridge (red,left)</name>
+		<sprite>
+			<picture ref="{FreeTrain-AYASE-Hiro-RailStructureImg-Tras-Left}"/>
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-Tras-Right-Red}">
+		<name>Iron bridge (red,right)</name>
+		<sprite>
+			<picture ref="{FreeTrain-AYASE-Hiro-RailStructureImg-Tras-Right}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-Tras-Center-Green}">
+		<name>Iron bridge (green,middle)</name>
+		<sprite>
+			<picture ref="{FreeTrain-AYASE-Hiro-RailStructureImg-Tras-Center}"/>
+			<spriteType name="colorMapped">
+				<map from="255, 94, 94" to=" 68,178, 68"/>
+				<map from="191, 63, 63" to=" 48,156, 48"/>
+				<map from="255, 72, 72" to=" 46,202, 46"/>
+				<map from="159, 63, 63" to=" 60,110, 60"/>
+			</spriteType>
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-Tras-Left-Green}">
+		<name>Iron bridge (green,left)</name>
+		<sprite>
+			<picture ref="{FreeTrain-AYASE-Hiro-RailStructureImg-Tras-Left}"/>
+			<spriteType name="colorMapped">
+				<map from="255, 94, 94" to=" 68,178, 68"/>
+				<map from="191, 63, 63" to=" 48,156, 48"/>
+				<map from="255, 72, 72" to=" 46,202, 46"/>
+				<map from="159, 63, 63" to=" 60,110, 60"/>
+			</spriteType>
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-Tras-Right-Green}">
+		<name>Iron bridge (green,right)</name>
+		<sprite>
+			<picture ref="{FreeTrain-AYASE-Hiro-RailStructureImg-Tras-Right}"/>
+			<spriteType name="colorMapped">
+				<map from="255, 94, 94" to=" 68,178, 68"/>
+				<map from="191, 63, 63" to=" 48,156, 48"/>
+				<map from="255, 72, 72" to=" 46,202, 46"/>
+				<map from="159, 63, 63" to=" 60,110, 60"/>
+			</spriteType>
+		</sprite>
+	</contribution>
+</plug-in>

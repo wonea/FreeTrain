@@ -1,0 +1,29 @@
+HOW FREETRAIN HANDLES LOST DIRECTDRAW SURFACES
+==============================================
+
+Refer to MSDN for the background information about lost surfaces.
+
+DETECTION
+=========
+
+DirectDraw.net library doesn't provide any means for detecting lost surfaces in an OO way. It just throws a COMException whose error code indicates that the error is due to a lost surface. This design is primarily because of a perceived (but groundless) performance penalty in setting up a try-catch block at every DirectDraw invocation. The application is expected to catch such an exception and do the recovery by itself.
+
+FreeTrain does the recovery by setting up a try-catch block at the root of the drawing operation. One such place is at QuarterViewDrawer. In this way, we could save the number of try-catch overheads.
+
+Once a lost surface is detected, it is required to trigger the PictureManager.onSurfaceLost event.
+
+
+RECOVERY
+========
+
+Objects interested in being notified of a lost surface should register their event handler at the PictureManager.onSurfaceLost event.
+
+The PictureManager object takes care of all the picture objects. QuarterViewDrawer does the right thing, too. So only those who directly manipulate DirectDraw surfaces are required to handle them.
+
+
+TEST
+====
+
+To simulate surface lost, do the following procedure:
+
+Run FreeTrain, then run another full-screen DirectDraw/Direct3D program. This will force FreeTrain to loose surfaces.

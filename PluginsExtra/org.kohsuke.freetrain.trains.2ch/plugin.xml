@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Zonu</title>
+ 	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+
+	<!-- ゾヌー先頭 -->
+	<contribution type="trainCar" id="{0537DB61-A09F-408D-87C6-70512B076F71}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="train_ltd_exp_zonu1.bmp" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+
+	<!-- ゾヌー中間 -->
+	<contribution type="trainCar" id="{0537DB61-A09F-408D-87C6-70512B076F71}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="train_ltd_exp_zonu2.bmp" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+
+	<!-- ゾヌー最後尾 -->
+	<contribution type="trainCar" id="{0537DB61-A09F-408D-87C6-70512B076F71}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+	<base carRef="{0537DB61-A09F-408D-87C6-70512B076F71}-h" />
+	</contribution>
+
+	<contribution type="train" id="{3DCBE7F9-2977-42A3-BBD6-3FB0EB582213}">
+		<company>2ch</company>
+		<type>Super Limited Express</type>
+		<name>Zonuu</name>
+		<author>T.Hara</author>
+		<description>形に騙されては(・∀・)ｲｹﾅｲ、300km/hを余裕で超える高性能だ！びゅんびゅん速いぞ！
+		</description>
+		<price>5000</price>
+		<speed>superb</speed>
+		<composition>
+			<head carRef="{0537DB61-A09F-408D-87C6-70512B076F71}-h"/>
+			<body carRef="{0537DB61-A09F-408D-87C6-70512B076F71}-m"/>
+			<tail carRef="{0537DB61-A09F-408D-87C6-70512B076F71}-t"/>
+		</composition>
+	</contribution>
+</plug-in>

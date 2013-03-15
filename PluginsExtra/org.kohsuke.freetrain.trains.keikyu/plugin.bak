@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<plug-in>
+	<title></title>
+	<author>無名の人</author>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	
+	
+	
+	<!-- 京急快特タイプ -->
+	<contribution type="trainCar" id="{3A3397CC-8800-4a73-B6F8-0F49320A2D40}">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="KEIKYU01.bmp" origin="0,0"/>
+		<capacity>100</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{8684A084-CCC1-4a80-ACA0-7F8E038C54C8}">
+		<company>京浜急行電鉄</company>
+		<type>快特タイプ</type>
+		<name></name>
+		<author>無名の人さん</author>
+		<description>
+京急の快特タイプ。
+		</description>
+		<price>1100</price>
+		<speed>fast</speed>
+		<composition>
+			<body carRef="{3A3397CC-8800-4a73-B6F8-0F49320A2D40}"/>
+		</composition>
+	</contribution>
+</plug-in>

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY pm-silo '
+	<group>Plant-Silo</group>
+	<structure>
+		<category byname="Factory Components"/>
+	</structure>
+	<size>1,1</size>
+	<height>1</height>
+	<computerCannotBuild/>
+'>
+<!ENTITY pm-tank '
+	<group>Plant-Tank</group>
+	<structure>
+		<category byname="Factory Components"/>
+	</structure>
+	<size>1,1</size>
+	<height>1</height>
+	<computerCannotBuild/>
+'>
+]>
+<plug-in>
+	<title>PlantTank</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+	
+	<contribution type="picture" id="{FF3D7E3E-8BD3-4EBC-C477-4185D693B62B}">
+		<picture src="plant_tank.bmp"/>
+	</contribution>
+<!-- silo -->
+	<contribution type="GenericStructure" id="{1AA3CB42-243C-40AB-C477-8F0118B689A9}-0">
+		&pm-silo;
+		<price>8</price>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{FF3D7E3E-8BD3-4EBC-C477-4185D693B62B}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{1AA3CB42-243C-40AB-C477-8F0118B689A9}-1">
+		&pm-silo;
+		<price>8</price>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{FF3D7E3E-8BD3-4EBC-C477-4185D693B62B}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{1AA3CB42-243C-40AB-C477-8F0118B689A9}-2">
+		&pm-silo;
+		<price>16</price>
+		<sprite origin="64,0" offset="16">
+			<picture ref="{FF3D7E3E-8BD3-4EBC-C477-4185D693B62B}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{1AA3CB42-243C-40AB-C477-8F0118B689A9}-3">
+		&pm-silo;
+		<price>6</price>
+		<sprite origin="96,0" offset="16">
+			<picture ref="{FF3D7E3E-8BD3-4EBC-C477-4185D693B62B}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{1AA3CB42-243C-40AB-C477-8F0118B689A9}-4">
+		&pm-silo;
+		<price>6</price>
+		<sprite origin="128,0" offset="16">
+			<picture ref="{FF3D7E3E-8BD3-4EBC-C477-4185D693B62B}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{1AA3CB42-243C-40AB-C477-8F0118B689A9}-5">
+		&pm-silo;
+		<price>14</price>
+		<sprite origin="160,0" offset="16">
+			<picture ref="{FF3D7E3E-8BD3-4EBC-C477-4185D693B62B}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{1AA3CB42-243C-40AB-C477-8F0118B689A9}-6">
+		&pm-silo;
+		<price>14</price>
+		<sprite origin="192,0" offset="16">
+			<picture ref="{FF3D7E3E-8BD3-4EBC-C477-4185D693B62B}"/>
+		</sprite>
+	</contribution>
+	
+<!-- tank -->
+	<contribution type="GenericStructure" id="{4892DDB3-904E-447E-C477-D6C743D0C04F}-0">
+		&pm-tank;
+		<price>12</price>
+		<sprite origin="0,32" offset="16">
+			<picture ref="{FF3D7E3E-8BD3-4EBC-C477-4185D693B62B}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{4892DDB3-904E-447E-C477-D6C743D0C04F}-1">
+		&pm-tank;
+		<price>17</price>
+		<sprite origin="32,32" offset="16">
+			<picture ref="{FF3D7E3E-8BD3-4EBC-C477-4185D693B62B}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{4892DDB3-904E-447E-C477-D6C743D0C04F}-2">
+		&pm-tank;
+		<price>17</price>
+		<sprite origin="64,32" offset="16">
+			<picture ref="{FF3D7E3E-8BD3-4EBC-C477-4185D693B62B}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{4892DDB3-904E-447E-C477-D6C743D0C04F}-3">
+		&pm-tank;
+		<price>16</price>
+		<sprite origin="96,32" offset="16">
+			<picture ref="{FF3D7E3E-8BD3-4EBC-C477-4185D693B62B}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{4892DDB3-904E-447E-C477-D6C743D0C04F}-4">
+		&pm-tank;
+		<price>16</price>
+		<sprite origin="128,32" offset="16">
+			<picture ref="{FF3D7E3E-8BD3-4EBC-C477-4185D693B62B}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{4892DDB3-904E-447E-C477-D6C743D0C04F}-5">
+		&pm-tank;
+		<price>8</price>
+		<sprite origin="160,32" offset="16">
+			<picture ref="{FF3D7E3E-8BD3-4EBC-C477-4185D693B62B}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{4892DDB3-904E-447E-C477-D6C743D0C04F}-6">
+		&pm-tank;
+		<price>8</price>
+		<sprite origin="192,32" offset="16">
+			<picture ref="{FF3D7E3E-8BD3-4EBC-C477-4185D693B62B}"/>
+		</sprite>
+	</contribution>
+</plug-in>

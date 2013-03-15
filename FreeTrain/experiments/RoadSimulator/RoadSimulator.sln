@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadSimulator", "RoadSimulator.csproj", "{E06463FA-5C11-428F-A70E-8AF29797850C}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E06463FA-5C11-428F-A70E-8AF29797850C}.Debug.ActiveCfg = Debug|.NET
+		{E06463FA-5C11-428F-A70E-8AF29797850C}.Debug.Build.0 = Debug|.NET
+		{E06463FA-5C11-428F-A70E-8AF29797850C}.Release.ActiveCfg = Release|.NET
+		{E06463FA-5C11-428F-A70E-8AF29797850C}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

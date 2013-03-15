@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>FreeTrain-Sousaku Kan, Roads</title>
+	<author>haru</author>
+	<homepage>http://hb4.seikyou.ne.jp/home/Go-Ro/FreeTrain/</homepage>
+	
+	<contribution type="road" id="{9257AF06-6515-6BC1-8160-5336FDF6FB6B}">
+		<class name="freetrain.contributions.road.A3RoadContribution" />
+		<name>Arcaded street</name>
+		<style name="footpath"/>
+		<description>Arcaded street</description>
+		<picture src="arcade.bmp">
+			<override when="night" src="arcade_n.bmp"/>
+		</picture>
+	</contribution>
+	
+	<contribution type="road" id="{road_001-road-C000-0000-4C8B212DD67q}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Town street</name>
+		<style name="street" sidewalk="shoulder" lanes="1"/>
+		<description>Town street</description>
+		<picture src="road_001.bmp" size="32,32" offset="16" >
+			<override when="night" src="road_001n.bmp"/>
+		</picture>
+	</contribution>
+	
+	<contribution type="road" id="{road_002-road-C000-0000-4C8B212DD67q}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Bridge pier (multi layered)</name>
+		<style name="unknown"/>
+		<description>Bridge pier (multi layered)</description>
+		<picture src="road_002.bmp" size="32,32" offset="16" >
+		</picture>
+	</contribution>
+
+	
+	<contribution type="road" id="{road_003-road-C000-0000-4C8B212DD67q}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<style name="unknown"/>
+		<name>Viaduct pier</name>
+		<description>Viaduct pier</description>
+		<picture src="road_003.bmp" size="32,32" offset="16" />
+	</contribution>
+
+
+	<contribution type="road" id="{sidewalk_001-road-C000-0000-4C8B212DD67q}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Zelkova tree-lined street</name>
+		<style name="footpath"/>
+		<description>Zelkova tree-lined street</description>
+		<picture src="sidewalk_001.bmp" size="32,32" offset="16" >
+			<override when="summer" src="sidewalk_001sum.bmp"/>
+			<override when="autumn" src="sidewalk_001aut.bmp"/>
+			<override when="winter" src="sidewalk_001win.bmp"/>
+		</picture>
+	</contribution>
+
+</plug-in>

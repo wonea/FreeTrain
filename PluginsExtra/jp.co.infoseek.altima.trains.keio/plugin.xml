@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Keio Trains Plugin</title>
+	<author>Altima</author>
+	<homepage>http://zero-d.web.infoseek.co.jp/</homepage>
+
+
+	<contribution type="picture" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO6000PIC01}">
+		<picture src="keio6000a.bmp"/>
+	</contribution>
+
+	<contribution type="picture" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO6000PIC02}">
+		<picture src="keio6000b.bmp"/>
+	</contribution>
+
+	<contribution type="picture" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO7000PIC01}">
+		<picture src="keio7000a.bmp"/>
+	</contribution>
+
+	<contribution type="picture" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO7000PIC02}">
+		<picture src="keio7000b.bmp"/>
+	</contribution>
+
+
+	<!-- 6000系旧塗装先頭車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO11A006000}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>150</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="189,0,0" to="189,33,41"/>
+				<map from="189,41,82" to="214,214,189"/>
+				<map from="165,0,0" to="165,24,33"/>
+				<map from="198,0,0" to="198,33,41"/>
+				<map from="173,0,0" to="173,24,33"/>
+				<map from="181,0,0" to="181,33,33"/>
+				<map from="156,0,0" to="156,24,33"/>
+				<map from="222,49,99" to="247,247,222"/>
+				<map from="198,49,90" to="222,222,198"/>
+				<map from="231,57,99" to="255,255,231"/>
+				<map from="206,49,90" to="231,231,206"/>
+				<map from="214,49,99" to="239,239,214"/>
+			</spriteType>
+			<picture ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO6000PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 6000系旧塗装中間車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO12A006000}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>170</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="189,0,0" to="189,33,41"/>
+				<map from="156,0,0" to="156,24,33"/>
+				<map from="165,0,0" to="165,24,33"/>
+				<map from="198,0,0" to="198,33,41"/>
+				<map from="173,0,0" to="173,24,33"/>
+				<map from="181,0,0" to="181,33,33"/>
+			</spriteType>
+			<picture ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO6000PIC02}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 6000系旧塗装後尾車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO13A006000}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO11A006000}-h"/>
+	</contribution>
+
+	<contribution type="train" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO10A006000}">
+		<company>Keio Corporation</company>
+		<type>6000 Series</type>
+		<name>Keio Line, Sagami Line, etc.</name>
+		<author>Altima</author>
+		<description>Keio Corporation初の20ｍ車として1972年に登場。ワンハンドルマスコンの採用や都営新宿線直通を考慮した設計で、1次車は抵抗制御、2次車以降は界磁チョッパを採用している。5扉車や都営線乗り入れ車などもあり、最大304両の大所帯だったが、9000系と入れ替わるように徐々に廃車が進んでいる。</description>
+		<fare>390</fare>
+		<price>50</price>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO11A006000}-h"/>
+			<body carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO12A006000}-m"/>
+			<tail carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO13A006000}-t"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 6000系新塗装先頭車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO15A006000}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>150</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="189,33,41" to="222,49,99"/>
+				<map from="156,24,33" to="189,41,82"/>
+				<map from="198,33,41" to="231,57,99"/>
+				<map from="165,24,33" to="198,49,90"/>
+				<map from="189,0,0" to="247,247,222"/>
+				<map from="173,24,33" to="206,49,90"/>
+				<map from="181,33,33" to="214,49,99"/>
+				<map from="165,0,0" to="222,222,198"/>
+				<map from="198,0,0" to="255,255,231"/>
+				<map from="173,0,0" to="231,231,206"/>
+				<map from="181,0,0" to="239,239,214"/>
+				<map from="156,0,0" to="214,214,189"/>
+			</spriteType>
+			<picture ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO6000PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 6000系新塗装中間車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO16A006000}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>170</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="189,33,41" to="222,49,99"/>
+				<map from="156,24,33" to="189,41,82"/>
+				<map from="198,33,41" to="231,57,99"/>
+				<map from="165,24,33" to="198,49,90"/>
+				<map from="189,0,0" to="247,247,222"/>
+				<map from="173,24,33" to="206,49,90"/>
+				<map from="156,0,0" to="214,214,189"/>
+				<map from="181,33,33" to="214,49,99"/>
+				<map from="165,0,0" to="222,222,198"/>
+				<map from="198,0,0" to="255,255,231"/>
+				<map from="173,0,0" to="231,231,206"/>
+				<map from="181,0,0" to="239,239,214"/>
+			</spriteType>
+			<picture ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO6000PIC02}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 6000系新塗装後尾車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO17A006000}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO15A006000}-h"/>
+	</contribution>
+
+	<contribution type="train" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO14A006000}">
+		<company>Keio Corporation</company>
+		<type>6000 Series (New Colors)</type>
+		<name>Keio Line, etc.</name>
+		<author>Altima</author>
+		<description>2002年度中に全車が従来のエンジ帯から赤青2色帯に変更された。再塗装されたものとシールを貼り付けたものの2種類がある。</description>
+		<fare>390</fare>
+		<price>50</price>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO15A006000}-h"/>
+			<body carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO16A006000}-m"/>
+			<tail carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO17A006000}-t"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 7000系旧塗装先頭車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO11B007000}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>150</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="222,49,99" to="165,165,165"/>
+				<map from="189,41,82" to="132,132,132"/>
+				<map from="231,57,99" to="173,173,173"/>
+				<map from="198,49,90" to="140,140,140"/>
+				<map from="206,49,90" to="148,148,148"/>
+				<map from="214,49,99" to="156,156,156"/>
+			</spriteType>
+			<picture ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO7000PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 7000系旧塗装中間車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO12B007000}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>170</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="231,57,99" to="173,173,173"/>
+				<map from="198,49,90" to="140,140,140"/>
+				<map from="206,49,90" to="148,148,148"/>
+				<map from="222,49,99" to="165,165,165"/>
+				<map from="214,49,99" to="156,156,156"/>
+				<map from="189,41,82" to="132,132,132"/>
+			</spriteType>
+			<picture ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO7000PIC02}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 7000系旧塗装後尾車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO13B007000}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO11B007000}-h"/>
+	</contribution>
+
+	<contribution type="train" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO10B007000}">
+		<company>Keio Corporation</company>
+		<type>7000 Series</type>
+		<name>Keio Line, Sagami Line, etc.</name>
+		<author>Altima</author>
+		<description>1984年に登場。足回りなど基本的に6000系と同じ界磁チョッパで、ステンレス車体を採用して軽量化した。無塗装の銀色前面だったが、視認性向上のためアイボリーに塗られた。コルゲート車体からビートプレスに変更されスマートになった20番台(7020系)が後に登場。現在は2、4、6、8、10連が揃っている。</description>
+		<fare>410</fare>
+		<price>60</price>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO11B007000}-h"/>
+			<body carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO12B007000}-m"/>
+			<tail carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO13B007000}-t"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 7000系新塗装先頭車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO15B007000}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>150</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="189,33,41" to="222,49,99"/>
+				<map from="156,24,33" to="189,41,82"/>
+				<map from="198,33,41" to="231,57,99"/>
+				<map from="165,24,33" to="198,49,90"/>
+				<map from="173,24,33" to="206,49,90"/>
+				<map from="181,33,33" to="214,49,99"/>
+			</spriteType>
+			<picture ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO7000PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 7000系新塗装中間車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO16B007000}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>170</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="189,33,41" to="222,49,99"/>
+				<map from="156,24,33" to="189,41,82"/>
+				<map from="198,33,41" to="231,57,99"/>
+				<map from="165,24,33" to="198,49,90"/>
+				<map from="173,24,33" to="206,49,90"/>
+				<map from="181,33,33" to="214,49,99"/>
+			</spriteType>
+			<picture ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO7000PIC02}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 7000系新塗装後尾車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO17B007000}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO15B007000}-h"/>
+	</contribution>
+
+	<contribution type="train" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO14B007000}">
+		<company>Keio Corporation</company>
+		<type>7000 Series (New Colors)</type>
+		<name>Keio Line, etc.</name>
+		<author>Altima</author>
+		<description>2001年から初期の車両を中心に内外装の更新工事を実施、従来のエンジ帯から赤青2色帯に変更された。追って未更新の車両にも同様の塗色変更が行なわれた。</description>
+		<fare>410</fare>
+		<price>60</price>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO15B007000}-h"/>
+			<body carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO16B007000}-m"/>
+			<tail carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO17B007000}-t"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 8000系先頭車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO11C008000}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>143</capacity>
+		<sprite origin="0,0">
+			<picture src="keio8000a.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 8000系中間車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO12C008000}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>154</capacity>
+		<sprite origin="0,0">
+			<picture src="keio8000b.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 8000系後尾車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO13C008000}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO11C008000}-h"/>
+	</contribution>
+
+	<contribution type="train" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO10C008000}">
+		<company>Keio Corporation</company>
+		<type>8000 Series</type>
+		<name>Keio Line, Sagamihara Line, Takao Line</name>
+		<author>Altima</author>
+		<description>1992年に登場した京王初のGTO-VVVF車。新たなコーポレートカラーであるチェリーレッド、インディゴブルーの帯を巻き、90年代の京王のイメージリーダーとなった。6連＋4連、8連がある。都営新宿線内乗り入れには使われない。</description>
+		<fare>450</fare>
+		<price>90</price>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO11C008000}-h"/>
+			<body carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO12C008000}-m"/>
+			<tail carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO13C008000}-t"/>
+		</composition>
+	</contribution>
+
+
+	<contribution type="train" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO20C008000}">
+		<company>Keio Corporation</company>
+		<type>8000 Series (6 cars + 4 cars)</type>
+		<name></name>
+		<author>Altima</author>
+		<description>6連＋4連の10両編成を再現。(10両編成のみ購入可能)</description>
+		<fare>450</fare>
+		<price>90</price>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO11C008000}-h"/>
+			<car char="B" ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO12C008000}-m"/>
+			<car char="C" ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO13C008000}-t"/>
+		<composition>ABBBBCABBC</composition>
+		</config>
+	</contribution>
+
+
+	<!-- 9000系先頭車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO11D009000}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>141</capacity>
+		<sprite origin="0,0">
+			<picture src="keio9000a.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 9000系中間車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO12D009000}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>152</capacity>
+		<sprite origin="0,0">
+			<picture src="keio9000b.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 9000系後尾車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO13D009000}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO11D009000}-h"/>
+	</contribution>
+
+	<contribution type="train" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO10D009000}">
+		<company>Keio Corporation</company>
+		<type>9000 Series</type>
+		<name>Keio Line, Sagamihara Line, Takao Line</name>
+		<author>Altima</author>
+		<description>2000年に登場した京王の最新鋭車両。IGBT-VVVFや片持ち式シートを採用、8000系に比べて特にバリアフリーを強化している。都営新宿線乗り入れにも対応するが、都合によりまだ運用されていない。8両編成のみのため、10連運用するときは6000系または7000系2連を増結する。</description>
+		<fare>470</fare>
+		<price>100</price>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO11D009000}-h"/>
+			<body carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO12D009000}-m"/>
+			<tail carRef="{C8A90EE2-2C5E-4F1E-ALTM-KEO13D009000}-t"/>
+		</composition>
+	</contribution>
+
+
+	<contribution type="train" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO20D009000}">
+		<company>Keio Corporation</company>
+		<type>9000 Series + 6000 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>「特急」など優等列車として運用される時は主に6000系2連を増結し10両編成となる。(10両編成のみ購入可能)</description>
+		<fare>470</fare>
+		<price>100</price>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO11D009000}-h"/>
+			<car char="B" ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO12D009000}-m"/>
+			<car char="C" ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO13D009000}-t"/>
+			<car char="D" ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO15A006000}-h"/>
+			<car char="E" ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO17A006000}-t"/>
+		<composition>ABBBBBBCDE</composition>
+		</config>
+	</contribution>
+
+
+	<contribution type="train" id="{C8A90EE2-2C5E-4F1E-ALTM-KEO30D009000}">
+		<company>Keio Corporation</company>
+		<type>9000 Series + 7000 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>ごく稀に7000系2連を増結することもある。(10両編成のみ購入可能)</description>
+		<fare>470</fare>
+		<price>100</price>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO11D009000}-h"/>
+			<car char="B" ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO12D009000}-m"/>
+			<car char="C" ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO13D009000}-t"/>
+			<car char="D" ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO15B007000}-h"/>
+			<car char="E" ref="{C8A90EE2-2C5E-4F1E-ALTM-KEO17B007000}-t"/>
+		<composition>ABBBBBBCDE</composition>
+		</config>
+	</contribution>
+
+</plug-in>

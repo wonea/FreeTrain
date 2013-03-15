@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>255 Series Limited Express Plug-in</title>
+	<homepage>http://www.geocities.jp/cyber_express_1703d/freetrain/FT_plugin.html</homepage>
+
+
+	<!-- 255系先頭車 -->
+	<contribution type="trainCar" id="{187DF275-70DE-ec255-8F66-BF0E327B80CF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="255a.bmp" />
+		</sprite>
+		<capacity>64</capacity>
+	</contribution>
+	<!-- 255系中間車 -->
+	<contribution type="trainCar" id="{187DF275-70DE-ec255-8F66-BF0E327B80CF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="255b.bmp" />
+		</sprite>
+		<capacity>62</capacity>
+	</contribution>
+	<!-- 255系後尾車 -->
+	<contribution type="trainCar" id="{187DF275-70DE-ec255-8F66-BF0E327B80CF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{187DF275-70DE-ec255-8F66-BF0E327B80CF}-h"/>
+		<sprite origin="0,0">
+		</sprite>
+		<capacity>52</capacity>
+	</contribution>
+
+	<contribution type="train" id="{187DF275-70DE-ec255-8F66-BF0E327B80CF}">
+		<company>JR East</company>
+		<type>255 Series</type>
+		<name>Boso View Express</name>
+		<author>Itchy</author>
+		<description>This train was built in 1993 to replace the 183 Series in the Boso region. This train was designed for both
+sightseeing and commuting business men, using a concept called "hybrid mobility". 
+The first JR East Limited Express vehicle to adopt VVVF invertor control, reducing MT ratio in comparison with the conventional limited express car, assuring energy-saving conversion.
+The paint near the door (yellow) represents the flower and the green on the car edge, the blue represents the Pacific Ocean and the white represents the sandy beach seashore.
+It also runs a temporary service on the East Chuo Line when required. It's top speed is 130km/h.</description>
+		<price>100</price>
+           	<fare>1200</fare>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{187DF275-70DE-ec255-8F66-BF0E327B80CF}-h"/>
+			<body carRef="{187DF275-70DE-ec255-8F66-BF0E327B80CF}-m"/>
+			<tail carRef="{187DF275-70DE-ec255-8F66-BF0E327B80CF}-t"/>
+		</composition>
+	</contribution>
+</plug-in>

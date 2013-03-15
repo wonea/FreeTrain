@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Train Set No 3</title>
+	<homepage>http://typhoon.s19.xrea.com/ft/index.html</homepage>
+	<author>Typhoon</author>
+
+	<title>209 Series Base</title>
+	<contribution type="picture" id="{57644AE6-7FFA-A209-8FE0-7567171D3CEF}">
+		<picture src="209a.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{57644AE6-7FFA-209A-8FE0-7567171D3CEF}">
+		<picture src="209b.bmp" />
+	</contribution>
+	<title>KIHA 283 Series Base</title>
+	<contribution type="picture" id="{57644AE6-7FFA-283A-8FE0-7567171D3CEF}">
+		<picture src="k283a.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{57644AE6-7FFA-A283-8FE0-7567171D3CEF}">
+		<picture src="k283b.bmp" />
+	</contribution>
+
+
+
+	<!-- 京浜東北先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-209B-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="128,128,64" to="192,192,192"/>
+			<map from="160,160,64" to="224,224,224"/>
+			<map from="255,255,0" to="0,128,255"/>
+			<map from="224,224,0" to="0,128,192"/>
+			<map from="128,255,64" to="0,128,255"/>
+			<map from="64,192,0" to="0,128,192"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-A209-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>146</capacity>
+	</contribution>
+	<!-- 京浜東北中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-209B-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="255,255,0" to="0,128,255"/>
+			<map from="224,224,0" to="0,128,192"/>
+			<map from="128,255,64" to="0,128,255"/>
+			<map from="64,192,0" to="0,128,192"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-209A-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>156</capacity>
+	</contribution>
+	<!-- 京浜東北後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-209B-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-209B-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>146</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-B209-8FE0-7567171D3CEF}">
+		<company>JR East</company>
+		<type>209 Series</type>
+		<name>Keihin-Tohoku Line</name>
+		<author>Typhoon</author>
+		<description>水色ラインの京浜東北線用209系。</description>
+		<price>1</price>
+           		<fare>500</fare> 
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-209B-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-209B-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-209B-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- ハチ公先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-209C-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="128,128,64" to="192,192,192"/>
+			<map from="160,160,64" to="224,224,224"/>
+			<map from="255,255,0" to="64,224,64"/>
+			<map from="224,224,0" to="64,192,0"/>
+			<map from="0,128,255" to="255,128,0"/>
+			<map from="0,128,192" to="224,128,0"/>
+			<map from="128,255,64" to="64,224,64"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-A209-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>146</capacity>
+	</contribution>
+	<!-- ハチ公中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-209C-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="255,255,0" to="64,224,64"/>
+			<map from="224,224,0" to="64,192,0"/>
+			<map from="0,128,255" to="255,128,0"/>
+			<map from="0,128,192" to="224,128,0"/>
+			<map from="128,255,64" to="64,224,64"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-209A-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>156</capacity>
+	</contribution>
+	<!-- ハチ公後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-209C-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-209C-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>146</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-C209-8FE0-7567171D3CEF}">
+		<company>JR East</company>
+		<type>209 Series</type>
+		<name>Hachiko Line</name>
+		<author>Typhoon</author>
+		<description>緑とオレンジのラインの八高線用209系。</description>
+		<price>1</price>
+           		<fare>500</fare> 
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-209C-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-209C-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-209C-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+	<!-- 南武線先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-209D-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="128,128,64" to="192,192,192"/>
+			<map from="160,160,64" to="224,224,224"/>
+			<map from="0,128,255" to="224,224,0"/>
+			<map from="0,128,192" to="192,192,0"/>
+			<map from="128,255,64" to="255,160,0"/>
+			<map from="64,192,0" to="224,160,0"/>
+			<map from="224,224,0" to="192,192,0"/>
+			<map from="255,255,0" to="224,224,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-A209-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>146</capacity>
+	</contribution>
+	<!-- 南武線中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-209D-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="0,128,255" to="224,224,0"/>
+			<map from="0,128,192" to="192,192,0"/>
+			<map from="128,255,64" to="255,160,0"/>
+			<map from="64,192,0" to="224,160,0"/>
+			<map from="224,224,0" to="192,192,0"/>
+			<map from="255,255,0" to="224,224,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-209A-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>156</capacity>
+	</contribution>
+	<!-- 南武線後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-209D-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-209D-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>146</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-D209-8FE0-7567171D3CEF}">
+		<company>JR East</company>
+		<type>209 Series</type>
+		<name>Nambu Line</name>
+		<author>Typhoon</author>
+		<description>黄色とオレンジのラインの南武線用209系。</description>
+		<price>1</price>
+           		<fare>500</fare> 
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-209D-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-209D-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-209D-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- E501先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-501A-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="128,128,64" to="192,192,192"/>
+			<map from="160,160,64" to="224,224,224"/>
+			<map from="255,255,0" to="0,192,128"/>
+			<map from="224,224,0" to="0,160,128"/>
+			<map from="0,128,255" to="0,192,128"/>
+			<map from="0,128,192" to="0,192,128"/>
+			<map from="128,255,64" to="64,224,128"/>
+			<map from="64,192,0" to="64,192,128"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-A209-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>146</capacity>
+	</contribution>
+	<!-- E501中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-501A-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="255,255,0" to="0,192,128"/>
+			<map from="224,224,0" to="0,160,128"/>
+			<map from="0,128,255" to="0,192,128"/>
+			<map from="0,128,192" to="0,192,128"/>
+			<map from="128,255,64" to="64,224,128"/>
+			<map from="64,192,0" to="64,192,128"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-209A-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>156</capacity>
+	</contribution>
+	<!-- E501後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-501A-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-501A-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>146</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-A501-8FE0-7567171D3CEF}">
+		<company>JR East</company>
+		<type>E501 Series</type>
+		<name>Joban Line</name>
+		<author>Typhoon</author>
+		<description>　常磐線取手以遠にも投入できるように、209系をベースに交直両用、最高速度120kmとして制作された。</description>
+		<price>1</price>
+           		<fare>500</fare> 
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-501A-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-501A-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-501A-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- E231総武先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-231A-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="128,128,64" to="224,224,0"/>
+			<map from="160,160,64" to="192,192,0"/>
+			<map from="0,128,255" to="224,224,0"/>
+			<map from="0,128,192" to="192,192,0"/>
+			<map from="128,255,64" to="224,224,0"/>
+			<map from="64,192,0" to="192,192,0"/>
+			<map from="224,224,0" to="192,192,0"/>
+			<map from="255,255,0" to="224,224,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-A209-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>146</capacity>
+	</contribution>
+	<!-- E231総武中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-231A-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="0,128,255" to="224,224,0"/>
+			<map from="0,128,192" to="192,192,0"/>
+			<map from="128,255,64" to="224,224,0"/>
+			<map from="64,192,0" to="192,192,0"/>
+			<map from="224,224,0" to="192,192,0"/>
+			<map from="255,255,0" to="224,224,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-209A-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>156</capacity>
+	</contribution>
+	<!-- E231総武後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-231A-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-231A-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>146</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-A231-8FE0-7567171D3CEF}">
+		<company>JR East</company>
+		<type>E231 Series</type>
+		<name>Chuo / Sobu Line (Local)</name>
+		<author>Typhoon</author>
+		<description>黄色のラインの中央・総武線（緩行）用E231系。</description>
+		<price>1</price>
+           		<fare>500</fare> 
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-231A-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-231A-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-231A-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- E231山手先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-231B-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="128,128,64" to="192,192,192"/>
+			<map from="160,160,64" to="224,224,224"/>
+			<map from="255,255,0" to="64,224,64"/>
+			<map from="224,224,0" to="64,192,0"/>
+			<map from="0,128,255" to="64,224,64"/>
+			<map from="0,128,192" to="64,192,0"/>
+			<map from="128,255,64" to="64,224,64"/>
+			<map from="42,42,43" to="224,224,224"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-A209-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>146</capacity>
+	</contribution>
+	<!-- E231山手中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-231B-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="255,255,0" to="64,224,64"/>
+			<map from="224,224,0" to="64,192,0"/>
+			<map from="0,128,255" to="64,224,64"/>
+			<map from="0,128,192" to="64,192,0"/>
+			<map from="128,255,64" to="64,224,64"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-209A-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>156</capacity>
+	</contribution>
+	<!-- E231山手後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-231B-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-231B-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>146</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-B231-8FE0-7567171D3CEF}">
+		<company>JR East</company>
+		<type>E231 Series</type>
+		<name>Yamanote Line</name>
+		<author>Typhoon</author>
+		<description>黄緑色のラインのE231系。</description>
+		<price>1</price>
+           		<fare>500</fare> 
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-231B-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-231B-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-231B-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- E231東北先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-231C-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="128,128,64" to="0,160,0"/>
+			<map from="160,160,64" to="0,128,0"/>
+			<map from="255,255,0" to="0,160,0"/>
+			<map from="224,224,0" to="0,128,0"/>
+			<map from="0,128,255" to="255,128,0"/>
+			<map from="0,128,192" to="224,128,0"/>
+			<map from="128,255,64" to="0,160,0"/>
+			<map from="64,192,0" to="0,128,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-A209-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>146</capacity>
+	</contribution>
+	<!-- E231東北中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-231C-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="255,255,0" to="0,160,0"/>
+			<map from="224,224,0" to="0,128,0"/>
+			<map from="0,128,255" to="255,128,0"/>
+			<map from="0,128,192" to="224,128,0"/>
+			<map from="128,255,64" to="0,160,0"/>
+			<map from="64,192,0" to="0,128,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-209A-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>156</capacity>
+	</contribution>
+	<!-- E231東北後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-231C-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-231C-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>146</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-C231-8FE0-7567171D3CEF}">
+		<company>JR East</company>
+		<type>E231 Series</type>
+		<name>Tohoku / Takasaki Line</name>
+		<author>Typhoon</author>
+		<description>緑とオレンジの近郊型のE231系。</description>
+		<price>1</price>
+           		<fare>500</fare> 
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-231C-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-231C-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-231C-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- E231常磐先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-231D-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="128,128,64" to="0,192,128"/>
+			<map from="160,160,64" to="0,160,128"/>
+			<map from="255,255,0" to="0,192,128"/>
+			<map from="224,224,0" to="0,160,128"/>
+			<map from="0,128,255" to="0,192,128"/>
+			<map from="0,128,192" to="0,192,128"/>
+			<map from="128,255,64" to="0,160,0"/>
+			<map from="64,192,0" to="0,128,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-A209-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>146</capacity>
+	</contribution>
+	<!-- E231常磐中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-231D-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="255,255,0" to="0,192,128"/>
+			<map from="224,224,0" to="0,160,128"/>
+			<map from="0,128,255" to="0,192,128"/>
+			<map from="0,128,192" to="0,192,128"/>
+			<map from="128,255,64" to="0,160,0"/>
+			<map from="64,192,0" to="0,128,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-209A-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>156</capacity>
+	</contribution>
+	<!-- E231常磐後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-231D-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-231D-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>146</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-D231-8FE0-7567171D3CEF}">
+		<company>JR East</company>
+		<type>E231 Series</type>
+		<name>Joban Line (blue-green)</name>
+		<author>Typhoon</author>
+		<description>青緑と緑のE231系。</description>
+		<price>1</price>
+           		<fare>500</fare> 
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-231D-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-231D-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-231D-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- E231-800先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-231E-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="E231_800.bmp" />
+                         	 </sprite>
+		<capacity>146</capacity>
+	</contribution>
+	<!-- E231-800中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-231E-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="255,255,0" to="64,160,255"/>
+			<map from="224,224,0" to="0,128,255"/>
+			<map from="128,255,64" to="0,0,255"/>
+			<map from="64,192,0" to="0,0,192"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-209A-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>156</capacity>
+	</contribution>
+	<!-- E231-800後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-231E-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-231E-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>146</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-E231-8FE0-7567171D3CEF}">
+		<company>JR East</company>
+		<type>E231 Series</type>
+		<name>800 Model</name>
+		<author>Typhoon</author>
+		<description>地下鉄東西線に直通する301系、103系1200番台の置き換えとして用として投入された車両。</description>
+		<price>1</price>
+           		<fare>500</fare> 
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-231E-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-231E-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-231E-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!--キハ283先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-283B-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="64,128,64" to="64,0,255"/>
+			<map from="64,160,64" to="64,0,192"/>
+			<map from="64,64,64" to="102,102,102"/>
+			<map from="149,142,145" to="109,109,109"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-283A-8FE0-7567171D3CEF}"/>
+                         	 </sprite>
+		<capacity>48</capacity>
+	</contribution>
+	<!--キハ283中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-283B-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="64,64,64" to="102,102,102"/>
+			<map from="149,142,145" to="109,109,109"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-A283-8FE0-7567171D3CEF}"/>
+                         	 </sprite>
+		<capacity>60</capacity>
+	</contribution>
+	<!--キハ283後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-283B-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-283B-8FE0-7567171D3CEF}-h"/>
+		<capacity>48</capacity>
+	</contribution>
+	<contribution type="train" id="{57644AE6-7FFA-K283-8FE0-7567171D3CEF}">
+		<company>JR Hokkaido</company>
+		<type>KIHA 283 Series</type>
+		<name>Super Ozora, Super Kachi, etc.</name>
+		<author>Typhoon</author>
+		<description>石勝線、根室本線を高速化するために開発された。キハ281系をベースとした振り子車である。</description>
+		<price>1</price>
+           		<fare>1100</fare>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-283B-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-283B-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-283B-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- キハ261先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-261A-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="224,224,0"/>
+			<map from="224,0,0" to="224,224,0"/>
+			<map from="64,128,64" to="0,8,0"/>
+			<map from="64,160,64" to="0,8,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-283A-8FE0-7567171D3CEF}"/>
+                         	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+	<!-- キハ261中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-261A-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="224,224,0"/>
+			<map from="224,0,0" to="224,224,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-A283-8FE0-7567171D3CEF}"/>
+                         	 </sprite>
+		<capacity>60</capacity>
+	</contribution>
+	<!-- キハ261後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-261A-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-261A-8FE0-7567171D3CEF}-h"/>
+		<capacity>56</capacity>
+	</contribution>
+	<contribution type="train" id="{57644AE6-7FFA-K261-8FE0-7567171D3CEF}">
+		<company>JR Hokkaido</company>
+		<type>KIHA 261 Series</type>
+		<name>Super Soya, etc.</name>
+		<author>Typhoon</author>
+		<description>宗谷本線旭川～名寄間を高速化するために開発された。外見はキハ281系、キハ283系によく似ている。</description>
+		<price>1</price>
+           		<fare>1100</fare>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-261A-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-261A-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-261A-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!--789系先頭車 -->
+	<contribution type="trainCar" id="{cyber-express-1703d-040105-ec789}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="64,128,64" to="0,8,0"/>
+			<map from="64,160,64" to="0,8,0"/>
+			<map from="0,224,0" to="64,64,240"/>
+			<map from="255,0,0" to="64,64,240"/>
+			<map from="224,0,0" to="255,255,0"/>
+			<map from="0,192,0" to="255,224,0"/>
+			<map from="64,0,255" to="0,240,0"/>
+			<map from="64,0,192" to="0,224,0"/>
+			<map from="64,64,128" to="0,196,0"/>
+			<map from="32,32,96" to="0,178,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-283A-8FE0-7567171D3CEF}"/>
+                         	 </sprite>
+		<capacity>31</capacity>
+	</contribution>
+	<!--789系中間車 -->
+	<contribution type="trainCar" id="{cyber-express-1703d-040105-ec789}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="0,224,0" to="64,64,240"/>
+			<map from="255,0,0" to="64,64,240"/>
+			<map from="224,0,0" to="255,255,0"/>
+			<map from="0,192,0" to="255,224,0"/>
+			<map from="64,0,255" to="0,240,0"/>
+			<map from="64,0,192" to="0,224,0"/>
+			<map from="64,64,128" to="0,196,0"/>
+			<map from="32,32,96" to="0,178,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-A283-8FE0-7567171D3CEF}"/>
+                         	 </sprite>
+		<capacity>64</capacity>
+	</contribution>
+	<!--789系後尾車 -->
+	<contribution type="trainCar" id="{cyber-express-1703d-040105-ec789}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{cyber-express-1703d-040105-ec789}-h"/>
+		<capacity>56</capacity>
+	</contribution>
+	<contribution type="train" id="{cyber-express-1703d-040105-ec789}">
+		<company>JR Hokkaido</company>
+		<type>789 Series</type>
+		<name>Super Hakucho</name>
+		<author>Itchy</author>
+		<description>青函トンネル用車両。</description>
+		<price>1</price>
+           		<fare>1100</fare>
+		<speed>fast</speed>
+  		<class name="freetrain.contributions.train.PatternTrainImpl" /> 
+		<config>
+			<car char="前" ref="{cyber-express-1703d-040105-ec789}-h"/>
+			<car char="中" ref="{cyber-express-1703d-040105-ec789}-m"/>
+			<car char="後" ref="{cyber-express-1703d-040105-ec789}-t"/>
+			<composition>中</composition>
+			<composition>前中</composition>
+			<composition>中中後</composition>
+			<composition>前中中中後</composition>
+			<composition>中中後中中後</composition>
+			<composition>前中中中後中中後</composition>
+			<composition>中中後中中後中中後</composition>
+			<composition>前中中中後前中中中後</composition>
+			<composition>前中中中後中中後中中後</composition>
+			<composition>前中中中後前中中中後中中後</composition>
+			<composition>前中中中後中中後中中後中中後</composition>
+			<composition>前中中中後前中中中後前中中中後</composition>
+		</config>
+	</contribution>
+
+	<!-- 営団8000系先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-H80K-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="eidan8000a.bmp" />
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+	<!-- 営団8000系中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-H80K-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="eidan8000b.bmp" />
+               	 </sprite>
+		<capacity>144</capacity>
+	</contribution>
+	<!-- 営団8000系後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-H80K-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-H80K-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-80KH-8FE0-7567171D3CEF}">
+		<company>Teito Rapid Transit Authority</company>
+		<type>8000 Series</type>
+		<name>Hanzomon Line</name>
+		<author>Typhoon</author>
+		<description></description>
+		<price>1</price>
+           		<fare>350</fare>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-H80K-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-H80K-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-H80K-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 東急9000系先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-TK9K-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="109-9000a.bmp" />
+               	 </sprite>
+		<capacity>141</capacity>
+	</contribution>
+	<!-- 東急9000系中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-TK9K-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="109-9000b.bmp" />
+               	 </sprite>
+		<capacity>152</capacity>
+	</contribution>
+	<!-- 東急9000系後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-TK9K-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-TK9K-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>141</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-9KTK-8FE0-7567171D3CEF}">
+		<company>Tokyu Corporation</company>
+		<type>9000 Series</type>
+		<name></name>
+		<author>Typhoon</author>
+		<description>東急東横線などで使われている9000系です。</description>
+		<price>1</price>
+           		<fare>400</fare>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-TK9K-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-TK9K-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-TK9K-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 東急2000系先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-TK2K-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="109-2000a.bmp" />
+               	 </sprite>
+		<capacity>130</capacity>
+	</contribution>
+	<!-- 東急2000系中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-TK2K-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="109-2000b.bmp" />
+               	 </sprite>
+		<capacity>144</capacity>
+	</contribution>
+	<!-- 東急2000系後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-TK2K-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-TK2K-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>130</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-2KTK-8FE0-7567171D3CEF}">
+		<company>Tokyu Corporation</company>
+		<type>2000 Series</type>
+		<name></name>
+		<author>Typhoon</author>
+		<description>東急田園都市線で使われている2000系です。3編成しかないので結構レア？</description>
+		<price>1</price>
+           		<fare>400</fare>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-TK2K-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-TK2K-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-TK2K-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+	<!-- 東急1000系先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-TK1K-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="109-1000a.bmp" />
+               	 </sprite>
+		<capacity>125</capacity>
+	</contribution>
+	<!-- 東急1000系中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-TK1K-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="109-1000b.bmp" />
+               	 </sprite>
+		<capacity>135</capacity>
+	</contribution>
+	<!-- 東急1000系後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-TK1K-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-TK1K-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>125</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-1KTK-8FE0-7567171D3CEF}">
+		<company>Tokyu Corporation</company>
+		<type>1000 Series</type>
+		<name></name>
+		<author>Typhoon</author>
+		<description>東急東横線、池上線などで使われている1000系です。東横線では地下鉄乗り入れ用に、池上線ではワンマン運転用に使われています。9000系との外見の大きな違いはドアとエアコンの室外機が3つなこと。</description>
+		<price>1</price>
+           		<fare>420</fare>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-TK1K-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-TK1K-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-TK1K-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+	<!-- 東急5000系先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-TK5K-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="109-5000a.bmp" />
+               	 </sprite>
+		<capacity>140</capacity>
+	</contribution>
+	<!-- 東急5000系中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-TK5K-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="255,255,0" to="64,192,192"/>
+			<map from="224,224,0" to="0,160,128"/>
+			<map from="0,128,255" to="244,0,0"/>
+			<map from="0,128,192" to="160,0,0"/>
+			<map from="128,255,64" to="224,0,0"/>
+			<map from="64,192,0" to="160,0,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-209A-8FE0-7567171D3CEF}" />
+               	 </sprite>
+		<capacity>151</capacity>
+	</contribution>
+	<!-- 東急5000系後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-TK5K-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-TK5K-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>140</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-5KTK-8FE0-7567171D3CEF}">
+		<company>Tokyu Corporation</company>
+		<type>5000 Series</type>
+		<name></name>
+		<author>Typhoon</author>
+		<description>東急田園都市線で使われている5000系です。</description>
+		<price>1</price>
+           		<fare>420</fare>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-TK5K-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-TK5K-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-TK5K-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+	<!-- 東急5050系先頭車 -->
+	<contribution type="trainCar" id="{TYPHOON-109-5050-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="64,192,192" to="224,128,128"/>
+			<map from="64,160,128" to="192,128,128"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-TK5K-8FE0-7567171D3CEF}-h" />
+               	 </sprite>
+		<capacity>140</capacity>
+	</contribution>
+	<!-- 東急5050系中間車 -->
+	<contribution type="trainCar" id="{TYPHOON-109-5050-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="255,255,0" to="224,128,128"/>
+			<map from="224,224,0" to="192,128,128"/>
+			<map from="0,128,255" to="244,0,0"/>
+			<map from="0,128,192" to="160,0,0"/>
+			<map from="128,255,64" to="224,0,0"/>
+			<map from="64,192,0" to="160,0,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-209A-8FE0-7567171D3CEF}" />
+               	 </sprite>
+		<capacity>151</capacity>
+	</contribution>
+	<!-- 東急5050系後尾車 -->
+	<contribution type="trainCar" id="{TYPHOON-109-5050-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{TYPHOON-109-5050-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>140</capacity>
+	</contribution>
+
+	<contribution type="train" id="{TYPHOON-109-5050-HENSEI-7567171D3CEF}">
+		<company>Tokyu Corporation</company>
+		<type>5050 Series</type>
+		<name></name>
+		<author>Typhoon</author>
+		<description>5000系がベースの東横線用5050系です。</description>
+		<price>1</price>
+           		<fare>420</fare>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{TYPHOON-109-5050-7567171D3CEF}-h"/>
+			<body carRef="{TYPHOON-109-5050-7567171D3CEF}-m"/>
+			<tail carRef="{TYPHOON-109-5050-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 東急5080系先頭車 -->
+	<contribution type="trainCar" id="{TYPHOON-109-5080-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="64,192,192" to="32,32,96"/>
+			<map from="64,160,128" to="24,24,72"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-TK5K-8FE0-7567171D3CEF}-h" />
+               	 </sprite>
+		<capacity>140</capacity>
+	</contribution>
+	<!-- 東急5080系中間車 -->
+	<contribution type="trainCar" id="{TYPHOON-109-5080-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="255,255,0" to="32,32,96"/>
+			<map from="224,224,0" to="24,24,72"/>
+			<map from="0,128,255" to="244,0,0"/>
+			<map from="0,128,192" to="160,0,0"/>
+			<map from="128,255,64" to="224,0,0"/>
+			<map from="64,192,0" to="160,0,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-209A-8FE0-7567171D3CEF}" />
+               	 </sprite>
+		<capacity>151</capacity>
+	</contribution>
+	<!-- 東急5080系後尾車 -->
+	<contribution type="trainCar" id="{TYPHOON-109-5080-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{TYPHOON-109-5080-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>140</capacity>
+	</contribution>
+
+	<contribution type="train" id="{TYPHOON-109-5080-HENSEI-7567171D3CEF}">
+		<company>Tokyu Corporation</company>
+		<type>5080 Series</type>
+		<name></name>
+		<author>Typhoon</author>
+		<description>5000系がベースの目黒線用5080系です。</description>
+		<price>1</price>
+           		<fare>420</fare>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{TYPHOON-109-5080-7567171D3CEF}-h"/>
+			<body carRef="{TYPHOON-109-5080-7567171D3CEF}-m"/>
+			<tail carRef="{TYPHOON-109-5080-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+
+</plug-in>

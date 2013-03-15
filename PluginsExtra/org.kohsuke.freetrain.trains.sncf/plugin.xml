@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>French National Railways Train Kit</title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	<!-- TGV-PBA先頭車両 -->
+	<contribution type="trainCar" id="{E732E738-5151-423A-B214-012F94C029C0}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="thalys_a.bmp" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- TGV-PBA中間車両 -->
+	<contribution type="trainCar" id="{E732E738-5151-423A-B214-012F94C029C0}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="thalys_b.bmp" />
+		</sprite>
+		<capacity>47</capacity>
+	</contribution>
+	
+	<!-- TGV-PBA後尾車両 -->
+	<contribution type="trainCar" id="{E732E738-5151-423A-B214-012F94C029C0}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{E732E738-5151-423A-B214-012F94C029C0}-h"/>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{E732E738-5151-423A-B214-012F94C029C0}">
+		<company>French National Railways</company>
+		<type>TGV-PBA</type>
+		<name>Thalys</name>
+		<author>Kigami</author>
+		<description>1996年登場のワインレッドの美しいTGV型車両タリス。最高速度300km。
+フランス、ベルギー、オランダ、ドイツが協力した国際高速車両。
+これはフランス国鉄所有のTGV-R型のタリス。基本編成：機関車+客車8両+機関車
+		</description>
+		<price>1900</price>
+		<speed>superb</speed>
+		<composition>
+			<head carRef="{E732E738-5151-423A-B214-012F94C029C0}-h"/>
+			<body carRef="{E732E738-5151-423A-B214-012F94C029C0}-m"/>
+			<tail carRef="{E732E738-5151-423A-B214-012F94C029C0}-t"/>
+		</composition>
+	</contribution>
+
+
+
+	<!-- TGV-Atrantique先頭車両 -->
+	<contribution type="trainCar" id="{EA733861-452A-4FAC-80D3-D8274FB6FE7A}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="tgv_atr_a.bmp" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- TGV-Atrantique中間車両 -->
+	<contribution type="trainCar" id="{EA733861-452A-4FAC-80D3-D8274FB6FE7A}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="tgv_atr_b.bmp" />
+		</sprite>
+		<capacity>48</capacity>
+	</contribution>
+	
+	<!-- TGV-Atrantique後尾車両 -->
+	<contribution type="trainCar" id="{EA733861-452A-4FAC-80D3-D8274FB6FE7A}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{EA733861-452A-4FAC-80D3-D8274FB6FE7A}-h"/>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{EA733861-452A-4FAC-80D3-D8274FB6FE7A}">
+		<company>French National Railways</company>
+		<type>TGV-Atlantique</type>
+		<name>LGV Atlantique</name>
+		<author>Kigami</author>
+		<description>1989年に最高速度300kmで大西洋線にて営業運転を開始したフランスの高速鉄道。
+外装がオレンジから銀色へと変更され、現在の主流となる。
+1990年5月18日、試験線＆特別車両にて粘着式鉄道世界最高速度515.3kmを達成。基本編成：機関車+客車10両+機関車
+		</description>
+		<price>1900</price>
+		<speed>superb</speed>
+		<composition>
+			<head carRef="{EA733861-452A-4FAC-80D3-D8274FB6FE7A}-h"/>
+			<body carRef="{EA733861-452A-4FAC-80D3-D8274FB6FE7A}-m"/>
+			<tail carRef="{EA733861-452A-4FAC-80D3-D8274FB6FE7A}-t"/>
+		</composition>
+	</contribution>
+
+
+	<!-- TGV-PSE先頭車両 -->
+	<contribution type="trainCar" id="{8DAA8764-10A7-4F32-A8E0-6154ECBCFC01}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="tgv_pse_a.bmp" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- TGV-PSE中間車両 -->
+	<contribution type="trainCar" id="{8DAA8764-10A7-4F32-A8E0-6154ECBCFC01}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="tgv_pse_b.bmp" />
+		</sprite>
+		<capacity>46</capacity>
+	</contribution>
+	
+	<!-- TGV-PSE後尾車両 -->
+	<contribution type="trainCar" id="{8DAA8764-10A7-4F32-A8E0-6154ECBCFC01}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{8DAA8764-10A7-4F32-A8E0-6154ECBCFC01}-h"/>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{8DAA8764-10A7-4F32-A8E0-6154ECBCFC01}">
+		<company>French National Railways</company>
+		<type>TGV-PSE</type>
+		<name>LGV Sud-Est</name>
+		<author>Kigami</author>
+		<description>1981年に最高速度270kmで南東線にて営業運転を開始したフランスの高速鉄道。
+経年による更新工事により最高速度300kmが可能になった。と同時に外装も銀色へと塗り替えられる。基本編成：機関車+客車8両+機関車
+		</description>
+		<price>1900</price>
+		<speed>superb</speed>
+		<composition>
+			<head carRef="{8DAA8764-10A7-4F32-A8E0-6154ECBCFC01}-h"/>
+			<body carRef="{8DAA8764-10A7-4F32-A8E0-6154ECBCFC01}-m"/>
+			<tail carRef="{8DAA8764-10A7-4F32-A8E0-6154ECBCFC01}-t"/>
+		</composition>
+	</contribution>
+
+
+</plug-in>

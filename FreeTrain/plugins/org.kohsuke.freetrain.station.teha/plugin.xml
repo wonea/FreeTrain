@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plug-in [
+	<!ENTITY unmannedStation "
+		<group>Unmanned station</group>
+		<!--!<group>無人駅</group>-->
+		<price>100</price>
+		<size>1,1</size>
+		<height>1</height>
+		<operationCost>10</operationCost>
+	">
+]>
+<plug-in>
+	<title>Unmanned Station</title>
+	<!--!<title>無人駅</title>-->
+	<author>T.Hara</author>
+	<!--!<author>ては(ヘボドッタ</author>-->
+	<homepage>http://www.cwo.zaq.ne.jp/pant012/freetrain/</homepage>
+	
+	
+	
+	<contribution type="picture" id="{1D4769E3-F568-4116-83FD-59333896EF5C}">
+		<picture src="local3.bmp"/>
+	</contribution>
+	
+	<contribution type="station" id="{5CB98D0A-4D2A-4CEF-A5F2-2EBFFD7EE399}">
+		&unmannedStation;
+		<sprite origin="0,0" offset="0">
+			<picture ref="{1D4769E3-F568-4116-83FD-59333896EF5C}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{165D7720-AF3A-4190-A5C3-A6EFD18D98A9}">
+		&unmannedStation;
+		<sprite origin="32,0" offset="0">
+			<picture ref="{1D4769E3-F568-4116-83FD-59333896EF5C}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{CEF4B968-307D-4F59-AE33-AE83CC56B415}">
+		&unmannedStation;
+		<sprite origin="64,0" offset="0">
+			<picture ref="{1D4769E3-F568-4116-83FD-59333896EF5C}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{577F66EE-01D9-47F1-ADCB-FBC53FA42651}">
+		&unmannedStation;
+		<sprite origin="96,0" offset="0">
+			<picture ref="{1D4769E3-F568-4116-83FD-59333896EF5C}"/>
+		</sprite>
+	</contribution>
+</plug-in>

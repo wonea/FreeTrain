@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY Price '
+	<price>10</price>
+	<computerCannotBuild/>
+'>
+<!ENTITY ClassDef '
+		<class name="freetrain.contributions.land.StaticLandBuilder"/>
+		&Price;
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>1</base>
+		</population>
+		<computerCannotBuild/>
+'>
+]>
+
+<plug-in>
+	<title>Rivers</title>
+	<author>RougetsuRouya and HEUER</author>
+	<homepage>http://freetrain.finito-web.com/</homepage>
+	
+	<contribution type="picture" id="{LAND1001-8058-11D7-BB78-0090FE1AB959}">
+		<picture src="Riv.bmp">
+			<override when="autumn" src="RivA.bmp" />
+			<override when="winter" src="RivW.bmp" />
+		</picture>
+	</contribution>
+
+	<contribution type="land" id="{LAND1101-8058-11D7-BB78-0090FE1AB959}">
+		<group>Stream</group>
+		&ClassDef;
+		<sprite origin="0,0" offset="0">
+			<picture ref="{LAND1001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND1102-8058-11D7-BB78-0090FE1AB959}">
+		<group>Stream</group>
+		&ClassDef;
+		<sprite origin="32,0" offset="0">
+			<picture ref="{LAND1001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND1103-8058-11D7-BB78-0090FE1AB959}">
+		<group>Stream</group>
+		&ClassDef;
+		<sprite origin="64,0" offset="0">
+			<picture ref="{LAND1001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>	
+	<contribution type="land" id="{LAND1104-8058-11D7-BB78-0090FE1AB959}">
+		<group>Stream</group>
+		&ClassDef;
+		<sprite origin="0,16" offset="0">
+			<picture ref="{LAND1001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND1105-8058-11D7-BB78-0090FE1AB959}">
+		<group>Stream</group>
+		&ClassDef;
+		<sprite origin="32,16" offset="0">
+			<picture ref="{LAND1001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND1106-8058-11D7-BB78-0090FE1AB959}">
+		<group>Stream</group>
+		&ClassDef;
+		<sprite origin="64,16" offset="0">
+			<picture ref="{LAND1001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND1107-8058-11D7-BB78-0090FE1AB959}">
+		<group>Stream</group>
+		&ClassDef;
+		<sprite origin="0,32" offset="0">
+			<picture ref="{LAND1001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>	
+	<contribution type="land" id="{LAND1108-8058-11D7-BB78-0090FE1AB959}">
+		<group>Stream</group>
+		&ClassDef;
+		<sprite origin="32,32" offset="0">
+			<picture ref="{LAND1001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND1109-8058-11D7-BB78-0090FE1AB959}">
+		<group>Stream</group>
+		&ClassDef;
+		<sprite origin="64,32" offset="0">
+			<picture ref="{LAND1001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND1110-8058-11D7-BB78-0090FE1AB959}">
+		<group>Stream</group>
+		&ClassDef;
+		<sprite origin="0,48" offset="0">
+			<picture ref="{LAND1001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND1111-8058-11D7-BB78-0090FE1AB959}">
+		<group>Stream</group>
+		&ClassDef;
+		<sprite origin="32,48" offset="0">
+			<picture ref="{LAND1001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>	
+	<contribution type="land" id="{LAND1112-8058-11D7-BB78-0090FE1AB959}">
+		<group>Stream</group>
+		&ClassDef;
+		<sprite origin="64,48" offset="0">
+			<picture ref="{LAND1001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND1113-8058-11D7-BB78-0090FE1AB959}">
+		<group>Stream</group>
+		&ClassDef;
+		<sprite origin="0,64" offset="0">
+			<picture ref="{LAND1001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND1114-8058-11D7-BB78-0090FE1AB959}">
+		<group>Stream</group>
+		&ClassDef;
+		<sprite origin="32,64" offset="0">
+			<picture ref="{LAND1001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>	
+	<contribution type="land" id="{LAND1115-8058-11D7-BB78-0090FE1AB959}">
+		<group>Stream</group>
+		&ClassDef;
+		<sprite origin="64,64" offset="0">
+			<picture ref="{LAND1001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{LAND1116-8058-11D7-BB78-0090FE1AB959}">
+		<group>Stream</group>
+		&ClassDef;
+		<sprite origin="0,80" offset="0">
+			<picture ref="{LAND1001-8058-11D7-BB78-0090FE1AB959}"/>
+		</sprite>
+	</contribution>
+</plug-in>

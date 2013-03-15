@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Roads</title>
+	<author>HanabishiRekka</author>
+	<homepage></homepage>
+	
+	<contribution type="road" id="{hana_003-C001-C000-1400-4C8B212DD67q}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<style name="unknown"/>
+		<name>Diagonal road/grassland (1-lane)</name>
+		<style name="footpath"/>
+		<description>Diagonal road</description>
+		<picture src="miti_tansen.bmp" size="32,32" offset="16" >
+			<override when="summer" src="miti_tansen.bmp"/>
+			<override when="autumn" src="miti_tansen_kaki.bmp"/>
+			<override when="winter" src="miti_tansen_huyu.bmp"/>
+		</picture>
+	</contribution>
+
+	<contribution type="road" id="{hana_003-C002-C000-1400-4C8B212DD67q}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<style name="unknown"/>
+		<name>Diagonal road/grassland (2-lane)</name>
+		<style name="footpath"/>
+		<description>Diagonal road</description>
+		<picture src="miti_hukusen.bmp" size="32,32" offset="16" >
+			<override when="summer" src="miti_hukusen.bmp"/>
+			<override when="autumn" src="miti_hukusen_aki.bmp"/>
+			<override when="winter" src="miti_hukusen_huyu.bmp"/>
+		</picture>
+	</contribution>
+
+	<contribution type="road" id="{hana_003-C003-C000-1400-4C8B212DD67q}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<style name="unknown"/>
+		<name>Diagonal road/concrete (1-lane)</name>
+		<description>Diagonal road</description>
+		<picture src="miti_tansen2.bmp" size="32,32" offset="16" />
+	</contribution>
+
+	<contribution type="road" id="{hana_003-C004-C000-1400-4C8B212DD67q}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<style name="unknown"/>
+		<name>Diagonal road/concrete (2-lane)</name>
+		<description>Diagonal road</description>
+		<picture src="miti_hukusen2.bmp" size="32,32" offset="16" />
+	</contribution>
+
+	<contribution type="road" id="{hana_003-C005-C000-1400-4C8B212DD67q}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<style name="unknown"/>
+		<name>Diagonal road/vacant (2-lane)</name>
+		<description>Diagonal road</description>
+		<picture src="miti_hukusen_n.bmp" size="32,32" offset="16" />
+	</contribution>
+
+</plug-in>

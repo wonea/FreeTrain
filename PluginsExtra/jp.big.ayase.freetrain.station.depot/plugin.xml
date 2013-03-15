@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Depot</title>
+	<author>Hiro Ayase</author>
+	<homepage>http://www14.big.or.jp/~ayase/freetrain/</homepage>
+	
+	<depends on="org.kohsuke.freetrain.rail.electricPole" />
+	
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-StationDepot-01a}">
+		<name>Depot</name>
+		<sprite>
+			<picture src="depot_a1.bmp"/>
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-StationDepot-01b}">
+		<name>Depot</name>
+		<sprite>
+			<picture src="depot_a2.bmp"/>
+		</sprite>
+	</contribution>
+</plug-in>

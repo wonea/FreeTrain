@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>JR East Train Kit</title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	<depend on="org.kohsuke.freetrain.trains.trainshare" />
+
+	<!-- E231系 iwasaki氏-->
+	 <contribution type="trainCar" id="{E231-east-joban-200309301059}">
+	<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+	<colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-7" base="192,192,192" line1="2,234,253" line2="2,234,253" line3="0,255,64" />
+
+	 <capacity>500</capacity>
+	</contribution>
+
+	<contribution type="train" id="{E231-east-joban-200309301104}">
+		<company>JR East</company>
+		<type>E231 Series</type>
+		<name>Joban Line</name>
+		<author>iwasaki</author>
+		<description>常磐線の新型列車です。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{E231-east-joban-200309301059}"/>
+		</composition>
+	</contribution>
+
+	<!-- E231系500番台 iwasaki氏-->
+	 <contribution type="trainCar" id="{E231-east-yamanote-200309301116}">
+	<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+	<colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-7" base="192,192,192" line1="128,255,128" line2="128,255,128" line3="192,192,192" />
+	 <capacity>500</capacity>
+	</contribution>
+
+	<contribution type="train" id="{E231-east-yamanote-200309301120}">
+		<company>JR East</company>
+		<type>E231 Series 500 Model</type>
+		<name>Yamanote Line</name>
+		<author>iwasaki</author>
+		<description>山手線の新型車両です。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{E231-east-yamanote-200309301116}"/>
+		</composition>
+	</contribution>
+
+	<!-- E231系 iwasaki氏-->
+	 <contribution type="trainCar" id="{E231-east-tohoku-200309301117}">
+	<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+	<colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-7" base="192,192,192" line1="255,128,64" line2="128,255,128" line3="39,216,66" />
+
+	 <capacity>500</capacity>
+	</contribution>
+
+	<contribution type="train" id="{E231-east-tohoku-200309301122}">
+		<company>JR East</company>
+		<type>E231 Series</type>
+		<name>Tohoku Main Line, Takasaki Line, etc.</name>
+		<author>iwasaki</author>
+		<description>東北本線・高崎線などに使われているＥ２３１系の電車です。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{E231-east-tohoku-200309301117}"/>
+		</composition>
+	</contribution>
+
+	<!-- 103系 iwasaki氏-->
+	 <contribution type="trainCar" id="{103-east-tsurumi-200309301106}">
+	<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+	<colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-4" base="255,255,0" line1="255,255,0" line2="255,255,0" line3="255,255,0" />
+
+	 <capacity>500</capacity>
+	</contribution>
+
+	<contribution type="train" id="{103-east-tsurumi-200309301111}">
+		<company>JR East</company>
+		<type>103 Series</type>
+		<name>Tsurumi Line</name>
+		<author>iwasaki</author>
+		<description>鶴見線で走っている、黄色い電車です。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{103-east-tsurumi-200309301106}"/>
+		</composition>
+	</contribution>
+
+	<!-- 103系 仙石線-->
+	<contribution type="trainCar" id="{E2078A95-1BB6-48dd-BF5B-6F3286006F33}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="103sen.bmp" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{E2078A95-1BB6-48dd-BF5B-6F3286006F33}">
+		<company>JR East</company>
+		<type>103 Series</type>
+		<name>Senseki Line</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両で、JR Eastでは淘汰が進んでいる。以前には京浜東北線や山手線にも走った経緯があるが今はその雄姿も見ることが出来ず、残念である。2002年末では武蔵野線、南武線などに残る。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{E2078A95-1BB6-48dd-BF5B-6F3286006F33}c"/>
+		</composition>
+	</contribution>
+
+	<!-- 103系 カナリア高運-->
+	<contribution type="trainCar" id="{1D9D4BD5-7EA5-4571-8074-DF973C3BCC67}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103_h" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="255,255,0"/>
+			<map from="128,0,0" to="200,200,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{1D9D4BD5-7EA5-4571-8074-DF973C3BCC67}">
+		<company>JR East</company>
+		<type>103 Series</type>
+		<name>Canaria (High Driver's Seat)</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両で、JR Eastでは淘汰が進んでいる。以前には京浜東北線や山手線にも走った経緯があるが今はその雄姿も見ることが出来ず、残念である。2002年末では武蔵野線、南武線などに残る。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{1D9D4BD5-7EA5-4571-8074-DF973C3BCC67}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系 カナリア-->
+	<contribution type="trainCar" id="{51EEC947-7400-4F09-B6EC-A871E4C2704C}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="255,255,0"/>
+			<map from="128,0,0" to="200,200,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{51EEC947-7400-4F09-B6EC-A871E4C2704C}">
+		<company>JR East</company>
+		<type>103 Series</type>
+		<name>Canaria</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両で、JR Eastでは淘汰が進んでいる。以前には京浜東北線や山手線にも走った経緯があるが今はその雄姿も見ることが出来ず、残念である。2002年末では武蔵野線、南武線などに残る。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{51EEC947-7400-4F09-B6EC-A871E4C2704C}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系 エメラルドグリーン高運-->
+	<contribution type="trainCar" id="{875F3931-2F9D-4CC1-89E2-E2460DFB2483}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103_h" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="0,128,128"/>
+			<map from="128,0,0" to="0,92,92"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{875F3931-2F9D-4CC1-89E2-E2460DFB2483}">
+		<company>JR East</company>
+		<type>103 Series</type>
+		<name>Emerald Green (High Driver's Seat)</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両で、JR Eastでは淘汰が進んでいる。以前には京浜東北線や山手線にも走った経緯があるが今はその雄姿も見ることが出来ず、残念である。2002年末では武蔵野線、南武線などに残る。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{875F3931-2F9D-4CC1-89E2-E2460DFB2483}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系 エメラルドグリーン-->
+	<contribution type="trainCar" id="{F0E4FE4D-AB7E-415F-9480-ADE0D767211F}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="0,128,128"/>
+			<map from="128,0,0" to="0,92,92"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{F0E4FE4D-AB7E-415F-9480-ADE0D767211F}">
+		<company>JR East</company>
+		<type>103 Series</type>
+		<name>Emerald Green</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両で、JR Eastでは淘汰が進んでいる。以前には京浜東北線や山手線にも走った経緯があるが今はその雄姿も見ることが出来ず、残念である。2002年末では武蔵野線、南武線などに残る。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{F0E4FE4D-AB7E-415F-9480-ADE0D767211F}c"/>
+		</composition>
+	</contribution>
+
+	<!-- 103系 スカイブルー-->
+	<contribution type="trainCar" id="{DE070299-5E15-4498-9044-3304D78F02E7}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103_h" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="100,180,255"/>
+			<map from="128,0,0" to="0,120,230"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{DE070299-5E15-4498-9044-3304D78F02E7}">
+		<company>JR East</company>
+		<type>103 Series</type>
+		<name>Sky Blue (High Driver's Seat)</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両で、JR Eastでは淘汰が進んでいる。以前には京浜東北線や山手線にも走った経緯があるが今はその雄姿も見ることが出来ず、残念である。2002年末では武蔵野線、南武線などに残る。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{DE070299-5E15-4498-9044-3304D78F02E7}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系 スカイブルー-->
+	<contribution type="trainCar" id="{8BD04DE3-3244-4219-B74B-7C22D27B38F9}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="100,180,255"/>
+			<map from="128,0,0" to="0,120,230"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{8BD04DE3-3244-4219-B74B-7C22D27B38F9}">
+		<company>JR East</company>
+		<type>103 Series</type>
+		<name>Sky Blue</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両で、JR Eastでは淘汰が進んでいる。以前には京浜東北線や山手線にも走った経緯があるが今はその雄姿も見ることが出来ず、残念である。2002年末では武蔵野線、南武線などに残る。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{8BD04DE3-3244-4219-B74B-7C22D27B38F9}c"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 103系 ウグイス-->
+	<contribution type="trainCar" id="{E645C4DD-E47A-46E3-83AC-B747ED91B4B5}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="128,255,0"/>
+			<map from="128,0,0" to="64,128,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{E645C4DD-E47A-46E3-83AC-B747ED91B4B5}">
+		<company>JR East</company>
+		<type>103 Series</type>
+		<name>Uguisu</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両で、JR Eastでは淘汰が進んでいる。以前には京浜東北線や山手線にも走った経緯があるが今はその雄姿も見ることが出来ず、残念である。2002年末では武蔵野線、南武線などに残る。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{E645C4DD-E47A-46E3-83AC-B747ED91B4B5}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系 ウグイス(高運)-->
+	<contribution type="trainCar" id="{E704683D-1817-43CB-8FCF-12FCB722D641}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103_h" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="128,255,0"/>
+			<map from="128,0,0" to="64,128,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{E704683D-1817-43CB-8FCF-12FCB722D641}">
+		<company>JR East</company>
+		<type>103 Series</type>
+		<name>Uguisu (High Driver's Seat)</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両で、JR Eastでは淘汰が進んでいる。以前には京浜東北線や山手線にも走った経緯があるが今はその雄姿も見ることが出来ず、残念である。2002年末では武蔵野線、南武線などに残る。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{E704683D-1817-43CB-8FCF-12FCB722D641}c"/>
+		</composition>
+	</contribution>
+
+	<!-- 103系 オレンジ-->
+	<contribution type="trainCar" id="{0FE8DB71-1F57-4593-BF2C-F5D83EC4E11E}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103" />
+		<spriteType name="colorMapped">
+
+			<map from="255,0,0" to="255,128,0"/>
+			<map from="128,0,0" to="192,92,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{0FE8DB71-1F57-4593-BF2C-F5D83EC4E11E}">
+		<company>JR East</company>
+		<type>103 Series</type>
+		<name>Orange</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両で、JR Eastでは淘汰が進んでいる。以前には京浜東北線や山手線にも走った経緯があるが今はその雄姿も見ることが出来ず、残念である。2002年末では武蔵野線、南武線などに残る。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{0FE8DB71-1F57-4593-BF2C-F5D83EC4E11E}c"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 103系高 オレンジ-->
+	<contribution type="trainCar" id="{10E751CF-E779-4876-B6F0-567F27232B5B}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103_h" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="255,128,0"/>
+			<map from="128,0,0" to="192,92,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{10E751CF-E779-4876-B6F0-567F27232B5B}">
+		<company>JR East</company>
+		<type>103 Series</type>
+		<name>Orange (High Driver's Seat)</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両で、JR Eastでは淘汰が進んでいる。以前には京浜東北線や山手線にも走った経緯があるが今はその雄姿も見ることが出来ず、残念である。2002年末では武蔵野線、南武線などに残る。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{10E751CF-E779-4876-B6F0-567F27232B5B}c"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 415系先頭車両 -->
+	<contribution type="trainCar" id="{D96FC5B6-B763-417b-A563-DD27C2C6740A}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="415a" />
+		</sprite>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 415系中間車両 -->
+	<contribution type="trainCar" id="{D96FC5B6-B763-417b-A563-DD27C2C6740A}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="415b" />
+		</sprite>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 415系後尾車両 -->
+	<contribution type="trainCar" id="{D96FC5B6-B763-417b-A563-DD27C2C6740A}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{D96FC5B6-B763-417b-A563-DD27C2C6740A}-h"/>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{D96FC5B6-B763-417b-A563-DD27C2C6740A}">
+		<company>JR East</company>
+		<type>415 Series</type>
+		<name>Standard Colors</name>
+		<author>Min</author>
+		<description>主に常磐線を走る電車。交直流区間を走ることができる。</description>
+		<price>100</price>
+		<speed>medium</speed> 
+		<composition>
+			<head carRef="{D96FC5B6-B763-417b-A563-DD27C2C6740A}-h"/>
+			<body carRef="{D96FC5B6-B763-417b-A563-DD27C2C6740A}-m"/>
+			<tail carRef="{D96FC5B6-B763-417b-A563-DD27C2C6740A}-t"/>
+		</composition>
+	</contribution>
+	<!-- 200系先頭車両 -->
+	<contribution type="trainCar" id="{C9054F40-A558-4bec-AF88-3FC53F2F858B}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train200a" />
+		</sprite>
+		<capacity>80</capacity>
+	</contribution>
+
+	<!-- 200系中間車両 -->
+	<contribution type="trainCar" id="{C9054F40-A558-4bec-AF88-3FC53F2F858B}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train200b" />
+		</sprite>
+		<capacity>80</capacity>
+	</contribution>
+	
+	<!-- 200系後尾車両 -->
+	<contribution type="trainCar" id="{C9054F40-A558-4bec-AF88-3FC53F2F858B}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{C9054F40-A558-4bec-AF88-3FC53F2F858B}-h"/>
+		<capacity>80</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{C9054F40-A558-4bec-AF88-3FC53F2F858B}">
+		<company>JR East</company>
+		<type>200 Series</type>
+		<name>Yamabiko</name>
+		<author>Ayase</author>
+		<description>東北・上越新幹線用車両。
+主に10両(K編成),12両(F編成)があります。</description>
+		<price>100</price>
+		<speed>superb</speed> 
+		<composition>
+			<head carRef="{C9054F40-A558-4bec-AF88-3FC53F2F858B}-h"/>
+			<body carRef="{C9054F40-A558-4bec-AF88-3FC53F2F858B}-m"/>
+			<tail carRef="{C9054F40-A558-4bec-AF88-3FC53F2F858B}-t"/>
+		</composition>
+	</contribution>
+	<!-- 165系-->
+	<contribution type="trainCar" id="{08989AC4-D372-42ec-98B1-F52CC826F6D0}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="165sho" />
+		</sprite>
+		<capacity>90</capacity> 
+	</contribution>
+
+	<contribution type="train" id="{98FD607D-4A3F-484c-8557-486E7CF5FE52}">
+		<company>JR East</company>
+		<type>165 Series</type>
+		<name>Shonan Colors</name>
+		<author>Min</author>
+		<speed>medium</speed>  
+		<description>急行型電車。現在この色での定期運用はないはず。</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{08989AC4-D372-42ec-98B1-F52CC826F6D0}"/>
+		</composition>
+	</contribution>
+	<!-- 485系先頭車両 -->
+	<contribution type="trainCar" id="{D4BBAEE3-7491-445E-B95A-BD4D013CAA02}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="485a" />
+		</sprite>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 485系中間車両 -->
+	<contribution type="trainCar" id="{D4BBAEE3-7491-445E-B95A-BD4D013CAA02}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="485b" />
+		</sprite>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 485系後尾車両 -->
+	<contribution type="trainCar" id="{D4BBAEE3-7491-445E-B95A-BD4D013CAA02}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-h"/>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{D4BBAEE3-7491-445E-B95A-BD4D013CAA02}">
+		<company>JR East</company>
+		<type>485 Series</type>
+		<name>No Front Bonnet, Inaho Class</name>
+		<author>Hima</author>
+		<description>
+昭和43年に登場した交直両用特急電車。登場以来数々の特急の代名詞となった。塗色変更も多数行われ全国で運転されている。
+		</description>
+		<price>1</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{D4BBAEE3-7491-445E-B95A-BD4D013CAA02}-h"/>
+			<body carRef="{D4BBAEE3-7491-445E-B95A-BD4D013CAA02}-m"/>
+			<tail carRef="{D4BBAEE3-7491-445E-B95A-BD4D013CAA02}-t"/>
+		</composition>
+	</contribution>
+	
+	
+	
+	
+	<!-- 113系(横須賀線) -->
+	<contribution type="trainCar" id="{3BDE50C0-999A-4203-8FC6-C31C1E9A1F22}">
+		<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+		<colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-1" base="51,83,123" line1="227,227,179" line2="227,227,179" line3="0,0,0" />
+		<capacity>99</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{64F236E3-52C9-4f53-9B19-762445E26F5A}">
+		<company>JR East</company>
+		<type>113 Series</type>
+		<name>Yokosuka Colors</name>
+		<author>Kohsuke Kawaguchi</author>
+		<description>
+首都圏の各地で見られる車両。111系を出力増強した形式だが、E217系などの登場により活躍の場が減っている。
+		</description>
+
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{3BDE50C0-999A-4203-8FC6-C31C1E9A1F22}"/>
+		</composition>
+	</contribution>
+	
+	
+	
+	<!-- 113系(湘南色) -->
+	<contribution type="trainCar" id="{3991CE43-BB83-4923-A5D7-9DA7803A3322}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="113sho" />
+		</sprite>
+		<capacity>99</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{88BB50A2-08DD-48C9-AA4C-3D87EEC7252E}">
+		<company>JR East</company>
+		<type>113 Series</type>
+		<name>Shonan Colors</name>
+		<author>Hima</author>
+		<description>
+JR Eastでは主に東海道本線や御殿場線などで使用されている。
+		</description>
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{3991CE43-BB83-4923-A5D7-9DA7803A3322}"/>
+		</composition>
+	</contribution>
+	<!-- 113系(湘南色) -->
+	<contribution type="trainCar" id="{3991CE43-BB83-4923-A5D7-9DA7803A3322}d">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="113sho" />
+		</sprite>
+		<capacity>99</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{3991CE43-BB83-4923-A5D7-9DA7803A3322}Ｄ">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="113dd.bmp" />
+		</sprite>
+		<capacity>130</capacity>
+	</contribution>	
+	<contribution type="train" id="{88BB50A2-08DD-48C9-AA4C-3D87EEC7252E}D">
+		<company>JR East</company>
+		<type>113 Series</type>
+		<name>Shonan Colors DD</name>
+		<author>Hima</author>
+		<description>
+JR Eastで使用されているうち、中間車の一部をグリーン車とした編成。東海道本線で見られる。
+		</description>
+		<price>1</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+		<car char="-" ref="{3991CE43-BB83-4923-A5D7-9DA7803A3322}d"/>
+		<car char="=" ref="{3991CE43-BB83-4923-A5D7-9DA7803A3322}Ｄ"/>
+
+		<composition>-</composition>
+		<composition>--</composition>
+		<composition>-=-</composition>
+		<composition>-=--</composition>
+		<composition>--=--</composition>
+		<composition>---=--</composition>
+		<composition>---=---</composition>
+		<composition>----=---</composition>
+		<composition>-----=---</composition>
+		<composition>------=---</composition>
+		<composition>-------=---</composition>
+		<composition>--------=---</composition>
+		<composition>---------=---</composition>
+		<composition>----------=---</composition>
+		<composition>-----------=---</composition>
+
+		</config>
+	</contribution>	
+
+	<!-- 925形先頭車両 -->
+	<contribution type="trainCar" id="{46D00257-72FF-4c69-8538-9B2EAC8CF4EB}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train200Sa" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- 925形中間車両 -->
+	<contribution type="trainCar" id="{46D00257-72FF-4c69-8538-9B2EAC8CF4EB}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train200Sb" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<!-- 925形後尾車両 -->
+	<contribution type="trainCar" id="{46D00257-72FF-4c69-8538-9B2EAC8CF4EB}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{46D00257-72FF-4c69-8538-9B2EAC8CF4EB}-h"/>
+		<capacity>0</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{46D00257-72FF-4c69-8538-9B2EAC8CF4EB}">
+		<company>JR East</company>
+		<type>925 Series</type>
+		<name>Dr. Yellow</name>
+		<author>Ayase</author>
+		<description>東北・上越・北陸新幹線用の総合試験車。</description>
+		<price>100</price>
+		<speed>superb</speed> 
+		<composition>
+			<head carRef="{46D00257-72FF-4c69-8538-9B2EAC8CF4EB}-h"/>
+			<body carRef="{46D00257-72FF-4c69-8538-9B2EAC8CF4EB}-m"/>
+			<tail carRef="{46D00257-72FF-4c69-8538-9B2EAC8CF4EB}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- E4系先頭車両 -->
+	<contribution type="trainCar" id="{377D778C-CEF0-4e4c-9CE0-C1EFA6E1D743}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="TrainE4a.bmp" />
+		</sprite>
+		<capacity>75</capacity>
+	</contribution>
+	
+	<!-- E4系中間車両 -->
+	<contribution type="trainCar" id="{377D778C-CEF0-4e4c-9CE0-C1EFA6E1D743}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="TrainE4b.bmp" />
+		</sprite>
+		<capacity>75</capacity>
+	</contribution>
+	
+	<!-- E4系後尾車両 -->
+	<contribution type="trainCar" id="{377D778C-CEF0-4e4c-9CE0-C1EFA6E1D743}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{377D778C-CEF0-4e4c-9CE0-C1EFA6E1D743}-h"/>
+		<capacity>75</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{377D778C-CEF0-4e4c-9CE0-C1EFA6E1D743}">
+		<company>JR East</company>
+		<type>E4 Series</type>
+		<name>MAX Yamabiko</name>
+		<author>Kigami</author>
+		<description>暫定版</description>
+		<price>100</price>
+		<speed>superb</speed> 
+		<composition>
+			<head carRef="{377D778C-CEF0-4e4c-9CE0-C1EFA6E1D743}-h"/>
+			<body carRef="{377D778C-CEF0-4e4c-9CE0-C1EFA6E1D743}-m"/>
+			<tail carRef="{377D778C-CEF0-4e4c-9CE0-C1EFA6E1D743}-t"/>
+		</composition>
+	</contribution>
+	<!-- E2系先頭車両 -->
+	<contribution type="trainCar" id="{662C0314-6527-41e4-8E18-445EAD9A71B5}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="TrainE2a.bmp" />
+		</sprite>
+		<capacity>75</capacity>
+	</contribution>
+	
+	<!-- E2系中間車両 -->
+	<contribution type="trainCar" id="{662C0314-6527-41e4-8E18-445EAD9A71B5}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="TrainE2b.bmp" />
+		</sprite>
+		<capacity>75</capacity>
+	</contribution>
+	
+	<!-- E2系後尾車両 -->
+	<contribution type="trainCar" id="{662C0314-6527-41e4-8E18-445EAD9A71B5}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{662C0314-6527-41e4-8E18-445EAD9A71B5}-h"/>
+		<capacity>75</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{662C0314-6527-41e4-8E18-445EAD9A71B5}">
+		<company>JR East</company>
+		<type>E2 Series</type>
+		<name>Hayate, Asama Class</name>
+		<author>Ayase</author>
+		<description>東北・上越・北陸新幹線用車両。
+主に10両(J編成),8両(N編成)があります。</description>
+		<price>100</price>
+		<speed>superb</speed> 
+		<composition>
+			<head carRef="{662C0314-6527-41e4-8E18-445EAD9A71B5}-h"/>
+			<body carRef="{662C0314-6527-41e4-8E18-445EAD9A71B5}-m"/>
+			<tail carRef="{662C0314-6527-41e4-8E18-445EAD9A71B5}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 583系先頭車両 -->
+	<contribution type="trainCar" id="{173B58EA-80E6-493b-A447-209ED0DF6622}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="583a" />
+		</sprite>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 583系中間車両 -->
+	<contribution type="trainCar" id="{173B58EA-80E6-493b-A447-209ED0DF6622}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="583b" />
+		</sprite>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 583系後尾車両 -->
+	<contribution type="trainCar" id="{173B58EA-80E6-493b-A447-209ED0DF6622}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{173B58EA-80E6-493b-A447-209ED0DF6622}-h"/>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{173B58EA-80E6-493b-A447-209ED0DF6622}">
+		<company>JR East</company>
+		<type>581/583 Series</type>
+		<name>Gekko Type</name>
+		<author>Hima</author>
+		<description>
+高度経済成長のさなか車両運用の効率化を図るため登場した世界で初めての電車寝台特急。愛称となった「月光」をはじめ、「ゆうづる」や「彗星」など数々の特急として運転された。現在、定期運用されるのは大阪～新潟間の急行「きたぐに」だけである。
+		</description>
+		<price>1</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{173B58EA-80E6-493b-A447-209ED0DF6622}-h"/>
+			<body carRef="{173B58EA-80E6-493b-A447-209ED0DF6622}-m"/>
+			<tail carRef="{173B58EA-80E6-493b-A447-209ED0DF6622}-t"/>
+		</composition>
+	</contribution>
+	<!-- 200系2000番台先頭車両 -->
+	<contribution type="trainCar" id="{2003-0211-KIGAMI-TrainImg-200-2000}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train100a" />
+		<spriteType name="colorMapped">
+<map from="230,230,235" to="252,255,226"/>
+<map from="179,179,184" to="233,234,204"/>
+<map from="204,204,209" to="243,245,215"/>
+<map from="153,153,158" to="223,224,193"/>
+<map from="69,72,69" to="62,162,23"/>
+<map from="51,52,46" to="62,145,43"/>
+<map from="62,162,23" to="252,255,226"/>
+<map from="62,134,55" to="223,224,193"/>
+<map from="128,128,133" to="213,213,181"/>
+<map from="33,32,23" to="63,127,63"/>
+<map from="62,155,31" to="243,245,215"/>
+<map from="62,141,47" to="223,224,193"/>
+<map from="62,148,39" to="233,234,204"/>
+<map from="63,127,63" to="213,213,181"/>
+		</spriteType>
+		</sprite>
+		<capacity>50</capacity>
+	</contribution>
+
+	<!-- 200系2000番台中間車両 -->
+	<contribution type="trainCar" id="{2003-0211-KIGAMI-TrainImg-200-2000}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train100b" />
+		<spriteType name="colorMapped">
+<map from="230,230,235" to="252,255,226"/>
+<map from="179,179,184" to="233,234,204"/>
+<map from="153,153,158" to="223,224,193"/>
+<map from="204,204,209" to="243,245,215"/>
+<map from="128,128,133" to="213,213,181"/>
+<map from="51,52,46" to="62,145,43"/>
+<map from="33,32,23" to="63,127,63"/>
+<map from="69,72,69" to="62,162,23"/>
+<map from="62,155,31" to="243,245,215"/>
+<map from="63,127,63" to="213,213,181"/>
+<map from="62,162,23" to="252,255,226"/>
+<map from="62,134,55" to="223,224,193"/>
+<map from="62,141,47" to="223,224,193"/>
+<map from="62,148,39" to="233,234,204"/>
+		</spriteType>
+		</sprite>
+		<capacity>80</capacity>
+	</contribution>
+
+	<!-- 200系2000番台中間車両 -->
+	<contribution type="trainCar" id="{2003-0211-KIGAMI-TrainImg-200-2000}-2">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train100c" />
+		<spriteType name="colorMapped">
+<map from="255,255,255" to="252,255,226"/>
+<map from="204,204,204" to="233,234,204"/>
+<map from="179,179,179" to="223,224,193"/>
+<map from="230,230,230" to="243,245,215"/>
+<map from="153,153,153" to="213,213,181"/>
+<map from="0,0,179" to="62,145,43"/>
+<map from="0,0,204" to="62,162,23"/>
+<map from="0,0,153" to="63,127,63"/>
+		</spriteType>
+		</sprite>
+		<capacity>40</capacity>
+	</contribution>
+	
+	<!-- 200系2000番台後尾車両 -->
+	<contribution type="trainCar" id="{2003-0211-KIGAMI-TrainImg-200-2000}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{2003-0211-KIGAMI-TrainImg-200-2000}-h"/>
+		<capacity>60</capacity>
+	</contribution>
+
+	<contribution type="train" id="{2003-0211-KIGAMI-TrainImg-200-2000}">
+		<company>JR East</company>
+		<type>200 Series 2000 Model</type>
+		<name>Yamabiko, Nasuno</name>
+		<author>Kigami</author>
+		<description>東北新幹線用車両</description>
+		<price>100</price>
+		<speed>superb</speed> 
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{2003-0211-KIGAMI-TrainImg-200-2000}-h"/>
+			<car char="Ｍ" ref="{2003-0211-KIGAMI-TrainImg-200-2000}-m"/>
+			<car char="２" ref="{2003-0211-KIGAMI-TrainImg-200-2000}-2"/>
+			<car char="＞" ref="{2003-0211-KIGAMI-TrainImg-200-2000}-t"/>
+			
+			<composition>＜ＭＭＭ＞</composition>
+			<composition>＜ＭＭＭＭ＞</composition>
+			<composition>＜ＭＭ２２ＭＭ＞</composition>
+			<composition>＜ＭＭＭ２２ＭＭＭ＞</composition>
+			<composition>＜ＭＭＭＭ２２ＭＭＭＭ＞</composition>
+			<composition>＜ＭＭＭＭＭ２２２２ＭＭＭＭＭ＞</composition>
+		</config>
+	</contribution>
+
+	<!-- 201系(中央線) -->
+	<contribution type="trainCar" id="{B1F5C25A-4F88-4778-80F7-3CBC83E6D030}A">
+		<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+		<colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-4" base="255,128,0" line1="255,128,0" line2="255,128,0" line3="255,128,0" />
+		<capacity>120</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{B1F5C25A-4F88-4778-80F7-3CBC83E6D030}">
+		<company>JR East</company>
+		<type>201 Series</type>
+		<name>Chuo Main Line Class</name>
+		<author>Wamu</author>
+		<description>
+国鉄時代から使われている列車　JR Eastでは中央本線や京葉線などで使われている。
+		</description>
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{B1F5C25A-4F88-4778-80F7-3CBC83E6D030}A"/>
+		</composition>
+	</contribution>
+
+
+</plug-in>

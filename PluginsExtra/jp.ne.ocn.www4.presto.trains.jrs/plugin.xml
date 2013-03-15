@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>JR Shikoku Train Set</title>
+	<homepage>http://www4.ocn.ne.jp/~presto/ft/</homepage>
+	<author>Hinoto</author>
+
+	<depend on="org.kohsuke.freetrain.trains.qra" />
+
+
+<!-- 2000系 TSE & N2000 -->
+	<!-- TSE非貫通先頭車 -->
+	<contribution type="trainCar" id="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2000}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="TSE_a.bmp" />
+		</sprite>
+		<capacity>56</capacity>
+	</contribution>
+
+	<!-- TSE貫通先頭車 -->
+	<contribution type="trainCar" id="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2100}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="TSE_c.bmp" />
+		</sprite>
+		<capacity>56</capacity>
+	</contribution>
+
+	<!-- TSE貫通先頭車 逆向き -->
+	<contribution type="trainCar" id="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2100}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2100}-h"/>
+	</contribution>
+	
+	<!-- 2500 中間車 -->
+	<contribution type="trainCar" id="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2500}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="jrs_2500.bmp" />
+		</sprite>
+		<capacity>64</capacity>
+	</contribution>
+	
+	<!-- 2400量産先行車 登場時 -->
+	<contribution type="trainCar" id="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2400}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="jrs_2400_a.bmp" />
+		</sprite>
+		<capacity>56</capacity>
+	</contribution>
+
+	<!-- 2400量産先行車 新塗色 -->
+	<contribution type="trainCar" id="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2400-new}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="jrs_2400_b.bmp" />
+		</sprite>
+		<capacity>56</capacity>
+	</contribution>
+
+	<!-- 2400量産先行車 登場時 逆向き -->
+	<contribution type="trainCar" id="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2400}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2400}-h"/>
+	</contribution>
+
+	<!-- 2400量産先行車 新塗色 逆向き -->
+	<contribution type="trainCar" id="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2400-new}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2400-new}-h"/>
+	</contribution>
+	
+	<!-- 2400 -->
+	<contribution type="trainCar" id="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2400-2}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="jrs_2400_c.bmp" />
+		</sprite>
+		<capacity>56</capacity>
+	</contribution>
+
+	<!-- 2400 逆向き -->
+	<contribution type="trainCar" id="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2400-2}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2400-2}-h"/>
+	</contribution>
+
+	<contribution type="train" id="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-TSE}">
+		<company>JR Shikoku</company>
+		<type>2000 Series</type>
+		<name>TSE</name>
+		<author>HINOTO</author>
+		<description>
+		</description>
+		<price>90000</price>
+		<fare>1080</fare>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2000}-h"/>
+			<body carRef="{FBEAD281-1069-11D7-AA41-000740323A8D}-m"/>
+			<tail  carRef="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2100}-t"/>
+		</composition>
+	</contribution>
+
+	<contribution type="train" id="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-N2000-0}">
+		<company>JR Shikoku</company>
+		<type>2000 Series</type>
+		<name>N2000 Original</name>
+		<author>HINOTO</author>
+		<description>
+		</description>
+		<price>90000</price>
+		<fare>1080</fare>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2400}-h"/>
+			<body carRef="{FBEAD281-1069-11D7-AA41-000740323A8D}-m"/>
+			<tail carRef="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2400}-t"/>
+		</composition>
+	</contribution>
+
+	<contribution type="train" id="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-N2000}">
+		<company>JR Shikoku</company>
+		<type>2000 Series</type>
+		<name>N2000</name>
+		<author>HINOTO</author>
+		<description>
+		</description>
+		<price>90000</price>
+		<fare>1080</fare>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2400-new}-h"/>
+			<body carRef="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2500}-m"/>
+			<tail carRef="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2400-new}-t"/>
+		</composition>
+	</contribution>
+
+	<contribution type="train" id="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-N2000-2}">
+		<company>JR Shikoku</company>
+		<type>2000 Series</type>
+		<name>N2000 Mass-Produced</name>
+		<author>HINOTO</author>
+		<description>
+		</description>
+		<price>90000</price>
+		<fare>1080</fare>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2400-2}-h"/>
+			<body carRef="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2500}-m"/>
+			<tail carRef="{8773C1E0-3EDB-11D8-968B-0800460222F9-titech-jrs-2400-2}-t"/>
+		</composition>
+	</contribution>
+
+</plug-in>

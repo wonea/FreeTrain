@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Sanyo Electric Railway Train Kit</title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+
+	<!--  -->
+	<contribution type="trainCar" id="{BEF87D95-5D62-4374-A5D2-8613E3C4F6DC}a">
+		<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+		<colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-3" base="255,231,157" line1="251,17,4" line2="255,231,157" line3="0,0,0" />
+		<capacity>200</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{BEF87D95-5D62-4374-A5D2-8613E3C4F6DC}">
+		<company>Sanyo Electric Railway</company>
+		<type>3000 Series</type>
+		<name>Local</name>
+		<author>masashi</author>
+		<description>主に普通に使われる車両。
+ごくまれに特急として使われる。
+区間は
+
+姫路＞阪神三宮
+　　＞阪急三宮
+
+飾磨＞山陽網干である
+		</description>
+                <fare>350</fare>
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{BEF87D95-5D62-4374-A5D2-8613E3C4F6DC}a"/>
+		</composition>
+	</contribution>
+
+
+
+	<!-- series 01500/01600 -->
+	<contribution type="trainCar" id="{1F80A2E8-1A5D-4a8d-8830-CB89AC3B0AA6}a">
+		<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+		<colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-3" base="192,192,192" line1="251,17,4" line2="192,192,192" line3="0,0,0" />
+		<capacity>200</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{1F80A2E8-1A5D-4a8d-8830-CB89AC3B0AA6}">
+		<company>Sanyo Electric Railway</company>
+		<type>5000 Series</type>
+		<name>Limited Express</name>
+		<author>masashi</author>
+		<description>主に特急、直通特急に使われる車両。
+区間は
+特急
+山陽姫路＞阪神三宮
+直通特急
+山陽姫路＞阪神梅田
+である
+</description>
+		<price>1</price>
+                <fare>350</fare>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{1F80A2E8-1A5D-4a8d-8830-CB89AC3B0AA6}a"/>
+		</composition>
+	</contribution>
+
+
+
+
+</plug-in>

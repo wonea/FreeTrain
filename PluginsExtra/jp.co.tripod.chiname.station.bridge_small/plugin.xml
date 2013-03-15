@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+	<!ENTITY StationBridge_s '
+		<price>200</price>
+		<height>1</height>
+		<operationCost>10</operationCost>
+	'>	
+]>
+<plug-in>
+	<title>Small bridge station</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+
+	<contribution type="picture" id="{85119700-2E3C-48BC-C477-07D5B247AB96}">
+		<picture src="station03.bmp">
+			<override when="night" src="station03_n.bmp"/>
+		</picture>
+	</contribution>
+	
+	<contribution type="station" id="{754F536C-E367-4B9A-C477-A15D3C2E05BA}-0">
+		<group>Small bridge station</group>
+		&StationBridge_s;
+		<size>1,5</size>
+		<sprite origin=" 0,64" offset="17">
+			<picture ref="{85119700-2E3C-48BC-C477-07D5B247AB96}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{754F536C-E367-4B9A-C477-A15D3C2E05BA}-1">
+		<group>Small bridge station</group>
+		&StationBridge_s;
+		<size>5,1</size>
+		<sprite origin="128,64" offset="49">
+			<picture ref="{85119700-2E3C-48BC-C477-07D5B247AB96}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{754F536C-E367-4B9A-C477-A15D3C2E05BA}-2">
+		<group>Small bridge station</group>
+		&StationBridge_s;
+		<size>5,1</size>
+		<sprite origin="0, 0" offset="49">
+			<picture ref="{85119700-2E3C-48BC-C477-07D5B247AB96}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{754F536C-E367-4B9A-C477-A15D3C2E05BA}-3">
+		<group>Small bridge station</group>
+		&StationBridge_s;
+		<size>1,5</size>
+		<sprite origin="128, 0" offset="17">
+			<picture ref="{85119700-2E3C-48BC-C477-07D5B247AB96}" />
+		</sprite>
+	</contribution>
+
+</plug-in>

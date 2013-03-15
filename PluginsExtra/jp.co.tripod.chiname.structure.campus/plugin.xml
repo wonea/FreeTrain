@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY SchoolBldg '
+	<price>1200</price>
+	<structure>
+		<category byname="Public Education"/>
+	</structure>
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>180</base>
+	</population>
+	<height>2</height>
+	<size>3,1</size>
+	<computerCannotBuild/>
+'>
+<!ENTITY crWhite '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,255,255"/>
+	</spriteType>	
+'>
+<!ENTITY crGray '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="176,170,152"/>
+	</spriteType>	
+'>
+<!ENTITY crBrown '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="142,78,32"/>
+	</spriteType>	
+'>
+]>
+<plug-in>
+
+	<title>Campus</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+		
+	<contribution type="picture" id="{EDF3F851-F504-4D5D-C477-47E2B7598499}">
+		<picture src="bldg_school01.bmp">
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{16F37972-4CAF-427F-C477-599F3DB74602}">
+		<picture src="bldg_school02.bmp">
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{DE9E99DA-FDF7-4BA6-C477-25037F80ADA8}">
+		<picture src="bldg_school01d.bmp">
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{920813AE-1CC8-42B3-C477-48E87C808C7E}">
+		<picture src="bldg_school02d.bmp">
+		</picture>
+	</contribution>
+		
+<!-- white -->
+	<contribution type="GenericStructure" id="{6DB9A7A9-EC5C-4501-C477-F7D99D54D45C}-00">
+		<group>Shool building</group>
+		&SchoolBldg;
+		&crWhite;
+		&crBrown;
+		<sprite origin="0,0" offset="48">
+			<picture ref="{EDF3F851-F504-4D5D-C477-47E2B7598499}"/>
+		</sprite>
+		<sprite origin="64,0" offset="32" opposite="true">
+			<picture ref="{EDF3F851-F504-4D5D-C477-47E2B7598499}"/>
+		</sprite>
+		<sprite origin="128,0" offset="48">
+			<picture ref="{EDF3F851-F504-4D5D-C477-47E2B7598499}"/>
+		</sprite>
+		<sprite origin="192,0" offset="32" opposite="true">
+			<picture ref="{EDF3F851-F504-4D5D-C477-47E2B7598499}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{6DB9A7A9-EC5C-4501-C477-F7D99D54D45C}-04">
+		<group>Shool building</group>
+		&SchoolBldg;
+		&crWhite;
+		&crBrown;
+		<sprite origin="0,64" offset="48">
+			<picture ref="{EDF3F851-F504-4D5D-C477-47E2B7598499}"/>
+		</sprite>
+		<sprite origin="64,64" offset="32" opposite="true">
+			<picture ref="{EDF3F851-F504-4D5D-C477-47E2B7598499}"/>
+		</sprite>
+		<sprite origin="128,64" offset="48">
+			<picture ref="{EDF3F851-F504-4D5D-C477-47E2B7598499}"/>
+		</sprite>
+		<sprite origin="192,64" offset="32" opposite="true">
+			<picture ref="{EDF3F851-F504-4D5D-C477-47E2B7598499}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{6DB9A7A9-EC5C-4501-C477-F7D99D54D45C}-08">
+		<group>Shool building</group>
+		&SchoolBldg;
+		&crWhite;
+		&crBrown;
+		<sprite origin="0,0" offset="48">
+			<picture ref="{16F37972-4CAF-427F-C477-599F3DB74602}"/>
+		</sprite>
+		<sprite origin="64,0" offset="32" opposite="true">
+			<picture ref="{16F37972-4CAF-427F-C477-599F3DB74602}"/>
+		</sprite>
+		<sprite origin="128,0" offset="48">
+			<picture ref="{16F37972-4CAF-427F-C477-599F3DB74602}"/>
+		</sprite>
+		<sprite origin="192,0" offset="32" opposite="true">
+			<picture ref="{16F37972-4CAF-427F-C477-599F3DB74602}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{6DB9A7A9-EC5C-4501-C477-F7D99D54D45C}-12">
+		<group>Shool building</group>
+		&SchoolBldg;
+		&crWhite;
+		&crBrown;
+		<sprite origin="0,64" offset="48">
+			<picture ref="{16F37972-4CAF-427F-C477-599F3DB74602}"/>
+		</sprite>
+		<sprite origin="64,64" offset="32" opposite="true">
+			<picture ref="{16F37972-4CAF-427F-C477-599F3DB74602}"/>
+		</sprite>
+		<sprite origin="128,64" offset="48">
+			<picture ref="{16F37972-4CAF-427F-C477-599F3DB74602}"/>
+		</sprite>
+		<sprite origin="192,64" offset="32" opposite="true">
+			<picture ref="{16F37972-4CAF-427F-C477-599F3DB74602}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{E69A12C2-1599-420D-C477-4E2DE896A251}-20">
+		<group>Shool building</group>
+		<design>aged</design>
+		&SchoolBldg;
+		&crWhite;
+		&crGray;
+		<sprite origin="0,0" offset="48">
+			<picture ref="{DE9E99DA-FDF7-4BA6-C477-25037F80ADA8}"/>
+		</sprite>
+		<sprite origin="64,0" offset="32" opposite="true">
+			<picture ref="{DE9E99DA-FDF7-4BA6-C477-25037F80ADA8}"/>
+		</sprite>
+		<sprite origin="128,0" offset="48">
+			<picture ref="{DE9E99DA-FDF7-4BA6-C477-25037F80ADA8}"/>
+		</sprite>
+		<sprite origin="192,0" offset="32" opposite="true">
+			<picture ref="{DE9E99DA-FDF7-4BA6-C477-25037F80ADA8}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{E69A12C2-1599-420D-C477-4E2DE896A251}-21">
+		<group>Shool building</group>
+		<design>aged</design>
+		&SchoolBldg;
+		&crWhite;
+		&crGray;
+		<sprite origin="0,64" offset="48">
+			<picture ref="{DE9E99DA-FDF7-4BA6-C477-25037F80ADA8}"/>
+		</sprite>
+		<sprite origin="64,64" offset="32" opposite="true">
+			<picture ref="{DE9E99DA-FDF7-4BA6-C477-25037F80ADA8}"/>
+		</sprite>
+		<sprite origin="128,64" offset="48">
+			<picture ref="{DE9E99DA-FDF7-4BA6-C477-25037F80ADA8}"/>
+		</sprite>
+		<sprite origin="192,64" offset="32" opposite="true">
+			<picture ref="{DE9E99DA-FDF7-4BA6-C477-25037F80ADA8}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{E69A12C2-1599-420D-C477-4E2DE896A251}-28">
+		<group>Shool building</group>
+		<design>aged</design>
+		&SchoolBldg;
+		&crWhite;
+		&crGray;
+		<sprite origin="0,0" offset="48">
+			<picture ref="{920813AE-1CC8-42B3-C477-48E87C808C7E}"/>
+		</sprite>
+		<sprite origin="64,0" offset="32" opposite="true">
+			<picture ref="{920813AE-1CC8-42B3-C477-48E87C808C7E}"/>
+		</sprite>
+		<sprite origin="128,0" offset="48">
+			<picture ref="{920813AE-1CC8-42B3-C477-48E87C808C7E}"/>
+		</sprite>
+		<sprite origin="192,0" offset="32" opposite="true">
+			<picture ref="{920813AE-1CC8-42B3-C477-48E87C808C7E}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{E69A12C2-1599-420D-C477-4E2DE896A251}-29">
+		<group>Shool building</group>
+		<design>aged</design>
+		&SchoolBldg;
+		&crWhite;
+		&crGray;
+		<sprite origin="0,64" offset="48">
+			<picture ref="{920813AE-1CC8-42B3-C477-48E87C808C7E}"/>
+		</sprite>
+		<sprite origin="64,64" offset="32" opposite="true">
+			<picture ref="{920813AE-1CC8-42B3-C477-48E87C808C7E}"/>
+		</sprite>
+		<sprite origin="128,64" offset="48">
+			<picture ref="{920813AE-1CC8-42B3-C477-48E87C808C7E}"/>
+		</sprite>
+		<sprite origin="192,64" offset="32" opposite="true">
+			<picture ref="{920813AE-1CC8-42B3-C477-48E87C808C7E}"/>
+		</sprite>
+	</contribution>
+
+</plug-in>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE plug-in [
+
+]>
+
+<plugin>
+  <title>Half-tile Structures</title>
+  <author>C477</author>
+  <!--<title>半ボクセル建築</title>
+  <author>C477@2両目</author> -->
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+	
+	<!--以下のコントリビューション定義は読み込む順番を変えては行けない-->	
+	<contribution type="picture" id="{HALF-VOXEL-STRUCTURE-CURSOR-IMAGE}">
+		<picture src="HVCursor.bmp"/>
+	</contribution>
+	<!--		
+	<contribution type="contribution" id="{C6F610B7-5046-4F74-C477-049B238F262D}">
+		<name>ColorLibrary</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.world.structs.hv.ColorLibrary"
+			codebase="bin/Debug/HalfVoxelStructure.DLL" />
+	</contribution>
+
+	<contribution type="ColorLibrary" id="{COLORLIB-NULL}">
+		<name>NULL</name>
+	</contribution>
+	-->
+	<contribution type="ColorLibrary" id="{COLORLIB-HIGHLIGHT}">
+		<name>Highlight</name>
+		<!--!<name>ハイライト</name>-->
+		<element color="0,0,0"/>
+	</contribution>
+
+
+	
+	<contribution type="contribution" id="{A8454630-96EB-45AD-C477-7DA394892BE6}">
+		<name>HalfVoxelStructure</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.world.structs.hv.HalfVoxelContribution"
+			codebase="bin/Debug/HalfVoxelStructure.DLL" />
+	</contribution>
+	
+	<!-- temporary -->
+	<contribution type="menu" id="{01AA051B-6112-4C00-C477-DE82E240F19F}">
+		<class name="freetrain.world.structs.hv.MenuContributionImpl"
+			codebase="bin/Debug/HalfVoxelStructure.DLL" />
+	</contribution>	
+	<!--ここまでの順序は大切-->
+	
+</plugin>

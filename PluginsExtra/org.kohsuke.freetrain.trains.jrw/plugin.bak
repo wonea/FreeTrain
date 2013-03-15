@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<plug-in>
+	<title>JR西日本 車両キット</title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<!-- 165系-->
+	<contribution type="trainCar" id="{0979B717-64B3-419c-B12E-B5E5BB91E5F6}">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="..\..\\trainshare\165syo.bmp" origin="0,0"/>
+		<capacity>90</capacity> 
+	</contribution>
+
+	<contribution type="train" id="{0C7E97A3-5F15-4694-92F5-8905846A8305}">
+		<company>JR西日本</company>
+		<type>165系</type>
+		<name>湘南色</name>
+		<author>Minさん</author>
+		<speed>medium</speed>  
+		<description>急行型電車。現在この色での定期運用はないはず。</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{0979B717-64B3-419c-B12E-B5E5BB91E5F6}"/>
+		</composition>
+	</contribution>
+	
+	
+	<!-- 221系用の中間車両 -->
+	<contribution type="trainCar" id="{CB6DB6B7-BBD8-4DAC-A2DF-CD13797A04EA}">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="221-2.bmp" origin="0,0"/>
+		<capacity>140</capacity>
+	</contribution>
+	
+	<!-- 221系用の先頭車両 -->
+	<contribution type="trainCar" id="{FD9630C0-3C48-4279-9480-59B791024B6E}">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="221.bmp" origin="0,0"/>
+		<capacity>140</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{AE18014C-4049-4FA8-997E-D2CEF86DDAA5}">
+		<company>JR西日本</company>
+		<type>221系</type>
+		<name></name>
+		<author>imaさん</author>
+		<description>
+JR西日本に転換された後、新快速用電車として登場した。今はその座を223系に譲り、持ち味の設備のよさをウリに各地の快速電車に使用されている。
+		</description>
+		<price>500</price>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{FD9630C0-3C48-4279-9480-59B791024B6E}"/>
+			<body carRef="{CB6DB6B7-BBD8-4DAC-A2DF-CD13797A04EA}"/>
+			<tail carRef="{FD9630C0-3C48-4279-9480-59B791024B6E}"/>
+		</composition>
+	</contribution>
+	<!-- 113系(湘南色) -->
+	<contribution type="trainCar" id="{72BBFF84-714E-4f94-BCBD-B7261D285544}">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="..\\org.kohsuke.freetrain.trains.jre\113sho.bmp" origin="0,0"/>
+		<capacity>99</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{74783521-233A-4e40-8CDD-296816AF2D4A}">
+		<company>JR西日本</company>
+		<type>113系</type>
+		<name>湘南色</name>
+		<author>暇</author>
+		<description>
+JR西日本では主にJR京都線、嵯峨野線などで使用されている。しかし、現在走っているほぼ全ての車両は110km/h運転対応の5000番台である。
+		</description>
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{72BBFF84-714E-4f94-BCBD-B7261D285544}"/>
+		</composition>
+	</contribution>
+	<!-- 103系 スカイブルー-->
+	<contribution type="trainCar" id="{897EAA10-49FC-4e6f-912A-1B8A296CF4DD}">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="103sky.bmp" origin="0,0"/>
+		<capacity>99</capacity>
+	</contribution>
+
+	<contribution type="train" id="{51D091A4-8418-487e-A35F-831318454FCC}">
+		<company>JR西日本</company>
+		<type>103系</type>
+		<name>スカイブルー</name>
+		<author>暇</author>
+		<description>
+国鉄で製作された車両だが、今もJR西日本には大量に残っている。主に大阪環状線など東海道本線に隣接する各線に投入されている。アコモ改善車も出ており、まだまだ残りそうな気がする。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{897EAA10-49FC-4e6f-912A-1B8A296CF4DD}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 115系 広島色-->
+	<contribution type="trainCar" id="{27A33107-EBF8-445c-8E97-BBEB77A01713}">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="115hir.bmp" origin="0,0"/>
+		<capacity>99</capacity>
+	</contribution>
+
+	<contribution type="train" id="{CACFA13E-CF0B-4aa3-BBF2-1160F39D7EEE}">
+		<company>JR西日本</company>
+		<type>115系</type>
+		<name>広島色</name>
+		<author>Minさん</author>
+		<speed>medium</speed> 
+		<capacity>95</capacity> 
+		<description>主に山陽本線の、広島・山口県を走る電車。揺れるわトイレがない車両があるわ・・・。</description>
+
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{27A33107-EBF8-445c-8E97-BBEB77A01713}"/>
+		</composition>
+	</contribution>
+
+
+
+	<!-- 281系先頭車両 -->
+	<contribution type="trainCar" id="{28A61792-A817-408a-8020-E60F09EDDE14}-h">
+		<class name="freetrain.framework.plugin.impl.AsymTrainCarImpl" />
+		<picture src="281a.bmp" origin="0,0"/>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 281系中間車両 -->
+	<contribution type="trainCar" id="{28A61792-A817-408a-8020-E60F09EDDE14}-m">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="281b.bmp" origin="0,0"/>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 281系後尾車両 -->
+	<contribution type="trainCar" id="{28A61792-A817-408a-8020-E60F09EDDE14}-t">
+		<class name="freetrain.framework.plugin.impl.ReverseTrainCarImpl" />
+		<base carRef="{28A61792-A817-408a-8020-E60F09EDDE14}-h"/>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{28A61792-A817-408a-8020-E60F09EDDE14}">
+		<company>JR西日本</company>
+		<type>281系</type>
+		<name>はるか</name>
+		<author>暇</author>
+		<description>
+関西空港開業に合わせて運転を開始する関空アクセス特急「はるか」用に製作された車両。JR京都線～梅田貨物線～大阪環状線～阪和線～関西空港線と多彩な線区を通って空港と京都を結ぶ。
+		</description>
+		<price>1</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{28A61792-A817-408a-8020-E60F09EDDE14}-h"/>
+			<body carRef="{28A61792-A817-408a-8020-E60F09EDDE14}-m"/>
+			<tail carRef="{28A61792-A817-408a-8020-E60F09EDDE14}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 485系先頭車両 -->
+	<contribution type="trainCar" id="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-h">
+		<class name="freetrain.framework.plugin.impl.AsymTrainCarImpl" />
+		<picture src="..\..\\trainshare\485a.bmp" origin="0,0"/>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 485系中間車両 -->
+	<contribution type="trainCar" id="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-m">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="..\..\\trainshare\485b.bmp" origin="0,0"/>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 485系後尾車両 -->
+	<contribution type="trainCar" id="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-t">
+		<class name="freetrain.framework.plugin.impl.ReverseTrainCarImpl" />
+		<base carRef="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-h"/>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}">
+		<company>JR西日本</company>
+		<type>485系</type>
+		<name>前面ボンネット無・雷鳥</name>
+		<author>暇</author>
+		<description>
+昭和43年に登場した交直両用特急電車。登場以来数々の特急の代名詞となった。関西では主に「雷鳥」と呼ばれる。
+		</description>
+		<price>1</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-h"/>
+			<body carRef="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-m"/>
+			<tail carRef="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-t"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 283系先頭車両 -->
+	<contribution type="trainCar" id="{590AEC5B-F34F-40df-ADD2-62CF53A7086A}-h">
+		<class name="freetrain.framework.plugin.impl.AsymTrainCarImpl" />
+		<picture src="283a.bmp" origin="0,0"/>
+		<capacity>56</capacity>
+	</contribution>
+	
+	<!-- 283系中間車両 -->
+	<contribution type="trainCar" id="{590AEC5B-F34F-40df-ADD2-62CF53A7086A}-m">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="283b.bmp" origin="0,0"/>
+		<capacity>56</capacity>
+	</contribution>
+	
+	<!-- 283系後尾車両 -->
+	<contribution type="trainCar" id="{590AEC5B-F34F-40df-ADD2-62CF53A7086A}-t">
+		<class name="freetrain.framework.plugin.impl.ReverseTrainCarImpl" />
+		<base carRef="{590AEC5B-F34F-40df-ADD2-62CF53A7086A}-h"/>
+		<capacity>56</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{590AEC5B-F34F-40df-ADD2-62CF53A7086A}">
+		<company>JR西日本</company>
+		<type>283系</type>
+		<name>オーシャンアロー</name>
+		<author>暇</author>
+		<description>
+京都・新大阪～新宮間の特急「オーシャンアロー」に使用されている制御振り子式特急車。併結が可能な先頭車もあり、多客期の増解結に対応している。
+		</description>
+		<price>100</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{590AEC5B-F34F-40df-ADD2-62CF53A7086A}-h"/>
+			<body carRef="{590AEC5B-F34F-40df-ADD2-62CF53A7086A}-m"/>
+			<tail carRef="{590AEC5B-F34F-40df-ADD2-62CF53A7086A}-t"/>
+		</composition>
+	</contribution>
+
+
+
+	<!-- 223系0番台先頭車両 -->
+	<contribution type="trainCar" id="{9DB3034D-D1C6-459c-A7ED-D169005F38E3}-h">
+		<class name="freetrain.framework.plugin.impl.AsymTrainCarImpl" />
+		<picture src="223-0a.bmp" origin="0,0"/>
+		<capacity>132</capacity>
+	</contribution>
+	
+	<!-- 223系0番台中間車両 -->
+	<contribution type="trainCar" id="{9DB3034D-D1C6-459c-A7ED-D169005F38E3}-m">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="223-0b.bmp" origin="0,0"/>
+		<capacity>143</capacity>
+	</contribution>
+	
+	<!-- 223系0番台後尾車両 -->
+	<contribution type="trainCar" id="{9DB3034D-D1C6-459c-A7ED-D169005F38E3}-t">
+		<class name="freetrain.framework.plugin.impl.ReverseTrainCarImpl" />
+		<base carRef="{9DB3034D-D1C6-459c-A7ED-D169005F38E3}-h"/>
+		<capacity>140</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{9DB3034D-D1C6-459c-A7ED-D169005F38E3}">
+		<company>JR西日本</company>
+		<type>223系0番台</type>
+		<name>関空快速、ウイング</name>
+		<author>暇</author>
+		<description>
+阪神大震災によって失った車両を補うために予定よりも早く登場した車両。以前は関空特快「ウイング」に使用されていたが、現在は主に関空快速や紀州路快速として運転されている。
+		</description>
+		<price>110</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{9DB3034D-D1C6-459c-A7ED-D169005F38E3}-h"/>
+			<body carRef="{9DB3034D-D1C6-459c-A7ED-D169005F38E3}-m"/>
+			<tail carRef="{9DB3034D-D1C6-459c-A7ED-D169005F38E3}-t"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 223系1000番台先頭車両 -->
+	<contribution type="trainCar" id="{833B259F-DD28-4b64-9C53-1D4BBB6FB23F}-h">
+		<class name="freetrain.framework.plugin.impl.AsymTrainCarImpl" />
+		<picture src="223-1000a.bmp" origin="0,0"/>
+		<capacity>138</capacity>
+	</contribution>
+	
+	<!-- 223系1000番台中間車両 -->
+	<contribution type="trainCar" id="{833B259F-DD28-4b64-9C53-1D4BBB6FB23F}-m">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="223-1000b.bmp" origin="0,0"/>
+		<capacity>138</capacity>
+	</contribution>
+	
+	<!-- 223系1000番台後尾車両 -->
+	<contribution type="trainCar" id="{833B259F-DD28-4b64-9C53-1D4BBB6FB23F}-t">
+		<class name="freetrain.framework.plugin.impl.ReverseTrainCarImpl" />
+		<base carRef="{9DB3034D-D1C6-459c-A7ED-D169005F38E3}-h"/>
+		<capacity>138</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{833B259F-DD28-4b64-9C53-1D4BBB6FB23F}">
+		<company>JR西日本</company>
+		<type>223系1000番台</type>
+		<name></name>
+		<author>暇</author>
+		<description>
+JR京都線の新快速を130km/hで運転するために製作された車両。座席が221系より減ったため補助座席を設けている。主に8両から12両で運転されている。
+		</description>
+		<price>100</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{833B259F-DD28-4b64-9C53-1D4BBB6FB23F}-h"/>
+			<body carRef="{833B259F-DD28-4b64-9C53-1D4BBB6FB23F}-m"/>
+			<tail carRef="{833B259F-DD28-4b64-9C53-1D4BBB6FB23F}-t"/>
+		</composition>
+	</contribution>
+</plug-in>

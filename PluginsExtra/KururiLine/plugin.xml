@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>KIHA 30 Kururi Line</title>
+	<homepage></homepage>
+	
+<!-- キハ30久留里線 -->
+
+<contribution type="trainCar" id="{09D6B15A-6DAD-47DF-B8E1-4F413CC19942}">
+	<class name="freetrain.contributions.train.SymTrainCarImpl" />
+	<sprite origin="0,0">
+		<picture src="kiha30kururi.bmp" />
+	</sprite>
+	<capacity>140</capacity>
+</contribution>
+
+<contribution type="train" id="{09D6B15A-6DAD-47DF-B8E1-kiha30-kururi}">
+		<company>JR East</company>
+		<type>KIHA 30 Series</type>
+		<name>KIHA 30 Kururi Line</name>
+		<author>Itchy</author>
+		<description>
+木更津～上総亀山を走る日本有数の(？)ローカル線、久留里線の車両です。
+数年前に現在の、沿線自治体をイメージした塗装に変更されました。
+通常２～4両編成で運行します。
+		</description>
+		<price>1</price>
+		<speed>slow</speed>
+		<fare>300</fare>
+		<composition>
+			<body carRef="{09D6B15A-6DAD-47DF-B8E1-4F413CC19942}"/>
+		</composition>
+	</contribution>
+</plug-in>

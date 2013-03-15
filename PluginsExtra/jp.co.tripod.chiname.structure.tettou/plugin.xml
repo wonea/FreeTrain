@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY cableTower '
+	<group>Pylon</group>
+	<structure>
+		<category byname="Pylons"/>
+	</structure>
+	<size>1,1</size>
+	<computerCannotBuild/>
+'>
+]>
+<plug-in>
+	<title>Pylons</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+
+	<contribution type="picture" id="{0525BBF9-BC20-4A08-C477-CA12C7E50B50}">
+		<picture src="tettou-l.bmp"/>
+	</contribution>
+	<contribution type="picture" id="{4A9FECE2-245C-48EA-C477-E0B8DFD9E982}">
+		<picture src="tettou-m.bmp"/>
+	</contribution>
+	<contribution type="picture" id="{9B049E79-A43D-4493-C477-E2B206026436}">
+		<picture src="tettou-s.bmp"/>
+	</contribution>
+		
+	
+	<contribution type="GenericStructure" id="{0525BBF9-BC20-4A08-C477-CA12C7E50B50}-1">
+		&cableTower;
+		<price>10</price>
+		<height>7</height>
+		<sprite origin="0,0" offset="96">
+			<picture ref="{0525BBF9-BC20-4A08-C477-CA12C7E50B50}"/>
+		</sprite>
+		<sprite origin="32,0" offset="96">
+			<picture ref="{0525BBF9-BC20-4A08-C477-CA12C7E50B50}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{4A9FECE2-245C-48EA-C477-E0B8DFD9E982}-1">
+		&cableTower;
+		<price>8</price>
+		<height>6</height>
+		<sprite origin="0,0" offset="80">
+			<picture ref="{4A9FECE2-245C-48EA-C477-E0B8DFD9E982}"/>
+		</sprite>
+		<sprite origin="32,0" offset="80">
+			<picture ref="{4A9FECE2-245C-48EA-C477-E0B8DFD9E982}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{9B049E79-A43D-4493-C477-E2B206026436}-1">
+		&cableTower;
+		<price>6</price>
+		<height>5</height>
+		<sprite origin="0,0" offset="64">
+			<picture ref="{9B049E79-A43D-4493-C477-E2B206026436}"/>
+		</sprite>
+		<sprite origin="32,0" offset="64">
+			<picture ref="{9B049E79-A43D-4493-C477-E2B206026436}"/>
+		</sprite>
+		<sprite origin="64,0" offset="64">
+			<picture ref="{9B049E79-A43D-4493-C477-E2B206026436}"/>
+		</sprite>
+		<sprite origin="96,0" offset="64">
+			<picture ref="{9B049E79-A43D-4493-C477-E2B206026436}"/>
+		</sprite>
+	</contribution>
+</plug-in>

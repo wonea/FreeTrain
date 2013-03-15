@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Electric pole</title>
+	<author>Hiro Ayase</author>
+	<homepage>http://www14.big.or.jp/~ayase/freetrain/</homepage>
+	
+	<depends on="org.kohsuke.freetrain.rail.electricPole" />
+	
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-Kasen-1-Left}">
+		<name>Multi width (left)</name>
+		<sprite>
+			<picture src="kasen1left.bmp"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-Kasen-1-Center}">
+		<name>Multi width (middle)</name>
+		<sprite>
+			<picture src="kasen1center.bmp"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="electricPole" id="{FreeTrain-AYASE-Hiro-RailStructureImpl-Kasen-1-Right}">
+		<name>Multi width (right)</name>
+		<sprite>
+			<picture src="kasen1right.bmp"/>
+		</sprite>
+	</contribution>
+
+</plug-in>

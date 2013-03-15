@@ -1,0 +1,678 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY Price '
+	<price>10</price>
+	<computerCannotBuild/>
+'>
+<!ENTITY ClassDef '
+		<class name="freetrain.contributions.land.StaticLandBuilder"/>
+		&Price;
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>1</base>
+		</population>
+		<computerCannotBuild/>
+'>
+]>
+
+<plug-in>
+	<title>Container</title>
+	<author>Hiro Ayase</author>
+	<homepage>http://www14.big.or.jp/~ayase/freetrain/</homepage>
+	
+	<contribution type="picture" id="{FreeTrain-AYASE-Hiro-LandImg-Containers}">
+		<picture src="containers.bmp" />
+	</contribution>
+	
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-0,0">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin=" 0, 0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-1,0">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="32, 0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-2,0">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="64, 0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>	
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-3,0">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="96, 0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-4,0">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="128, 0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-5,0">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="160, 0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-6,0">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="192, 0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-7,0">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="224, 0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-8,0">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="256, 0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-9,0">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="288, 0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-a,0">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="320, 0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-b,0">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="352, 0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-c,0">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="384, 0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-d,0">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="416, 0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-e,0">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="448, 0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-f,0">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="480, 0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-g,0">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="512, 0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-h,0">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="544, 0" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-0,1">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin=" 0, 32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-1,1">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="32, 32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-2,1">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="64, 32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>	
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-3,1">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="96, 32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-4,1">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="128, 32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-5,1">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="160, 32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-6,1">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="192, 32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-7,1">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="224, 32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-8,1">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="256, 32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-9,1">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="288, 32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-a,1">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="320, 32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-b,1">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="352, 32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-c,1">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="384, 32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-d,1">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="416, 32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-e,1">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="448, 32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-f,1">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="480, 32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-g,1">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="512, 32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-h,1">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="544, 32" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+
+
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-0,2">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin=" 0, 64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-1,2">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="32, 64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-2,2">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="64, 64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>	
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-3,2">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="96, 64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-4,2">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="128, 64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-5,2">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="160, 64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-6,2">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="192, 64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-7,2">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="224, 64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-8,2">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="256, 64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-9,2">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="288, 64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-a,2">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="320, 64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-b,2">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="352, 64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-c,2">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="384, 64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-d,2">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="416, 64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-e,2">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="448, 64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-f,2">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="480, 64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-g,2">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="512, 64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-h,2">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="544, 64" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+
+
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-0,3">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin=" 0, 96" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-1,3">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="32, 96" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-2,3">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="64, 96" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>	
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-3,3">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="96, 96" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-4,3">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="128, 96" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-5,3">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="160, 96" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-6,3">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="192, 96" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-7,3">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="224, 96" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-8,3">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="256, 96" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-9,3">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="288, 96" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-a,3">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="320, 96" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-b,3">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="352, 96" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-c,3">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="384, 96" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-d,3">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="416, 96" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-e,3">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="448, 96" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-f,3">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="480, 96" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-g,3">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="512, 96" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers}-h,3">
+		<group>Container</group>
+		&ClassDef;
+		<sprite origin="544, 96" offset="16">
+			<picture ref="{FreeTrain-AYASE-Hiro-LandImg-Containers}"/>
+		</sprite>
+	</contribution>
+		
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers-01a}">
+		<group>Container(JOT)</group>
+		<class name="freetrain.contributions.land.RandomLandBuilder"/>
+		&Price;
+		<lands>
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-0,0
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-1,0
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-2,0
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-3,0
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-4,0
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-5,0
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-6,0
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-7,0
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-8,0
+		</lands>
+	</contribution>
+	
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers-01b}">
+		<group>Container(JOT)</group>
+		<class name="freetrain.contributions.land.RandomLandBuilder"/>
+		&Price;
+		<lands>
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-0,1
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-1,1
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-2,1
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-3,1
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-4,1
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-5,1
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-6,1
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-7,1
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-8,1
+		</lands>
+	</contribution>
+	
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers-02a}">
+		<group>Container(JRF)</group>
+		<class name="freetrain.contributions.land.RandomLandBuilder"/>
+		&Price;
+		<lands>
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-9,0
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-a,0
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-b,0
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-c,0
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-d,0
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-h,0
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-e,0
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-f,0
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-g,0
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-h,0
+		</lands>
+	</contribution>
+	
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers-02b}">
+		<group>Container(JRF)</group>
+		<class name="freetrain.contributions.land.RandomLandBuilder"/>
+		&Price;
+		<lands>
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-9,1
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-a,1
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-b,1
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-c,1
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-d,1
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-h,1
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-e,1
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-f,1
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-g,1
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-h,1
+		</lands>
+	</contribution>
+	
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers-03a}">
+		<group>Container(JL)</group>
+		<class name="freetrain.contributions.land.RandomLandBuilder"/>
+		&Price;
+		<lands>
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-0,2
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-1,2
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-2,2
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-3,2
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-4,2
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-5,2
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-6,2
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-7,2
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-8,2
+		</lands>
+	</contribution>
+	
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers-03b}">
+		<group>Container(JL)</group>
+		<class name="freetrain.contributions.land.RandomLandBuilder"/>
+		&Price;
+		<lands>
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-0,3
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-1,3
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-2,3
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-3,3
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-4,3
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-5,3
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-6,3
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-7,3
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-8,3
+		</lands>
+	</contribution>
+	
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers-04a}">
+		<group>Container(Mix)</group>
+		<class name="freetrain.contributions.land.RandomLandBuilder"/>
+		&Price;
+		<lands>
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-9,2
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-a,2
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-b,2
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-c,2
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-d,2
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-h,2
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-e,2
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-f,2
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-g,2
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-h,2
+		</lands>
+	</contribution>
+	
+	<contribution type="land" id="{FreeTrain-AYASE-Hiro-LandImpl-Containers-04b}">
+		<group>Container(Mix)</group>
+		<class name="freetrain.contributions.land.RandomLandBuilder"/>
+		&Price;
+		<lands>
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-9,3
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-a,3
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-b,3
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-c,3
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-d,3
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-h,3
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-e,3
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-f,3
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-g,3
+			{FreeTrain-AYASE-Hiro-LandImpl-Containers}-h,3
+		</lands>
+	</contribution>
+
+
+</plug-in>

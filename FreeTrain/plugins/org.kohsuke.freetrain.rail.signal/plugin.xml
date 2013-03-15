@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Rail Signals</title>
+	<!--!<title>鉄道用信号機</title>-->
+	<author>Kohsuke Kawaguchi</author>
+	<!--!<author>川口耕介</author>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<!-- 信号の画像を外部から追加するためのコントリビューションを定義 -->
+	<contribution type="contribution" id="{59465CA9-C45E-4D11-8D57-95088E16E0F1}">
+		<name>railSignal</name>
+		<class name="freetrain.world.rail.signal.RailSignalContributionFactory"
+			codebase="bin/Debug/FreeTrain.RailSignal.dll" />
+	</contribution>
+	
+	<!-- 鉄道メニューに「信号」を追加 -->
+	<contribution type="menu" id="{DFB5CC3B-B0B0-4421-80DC-4E9D1E39A1E8}">
+		<class name="freetrain.world.rail.signal.MenuContributionImpl"
+			codebase="bin/Debug/FreeTrain.RailSignal.dll" />
+	</contribution>
+	
+	<!-- ディフォルトの信号機 -->
+	<contribution type="railSignal" id="{5349DE2A-DF3E-49B4-87A0-973105B7E6A4}">
+		<name>Three-aspect signal</name>
+		<!--!<name>三灯式</name>-->
+		<side>left</side>
+		<picture src="RailSignal.bmp"/>
+	</contribution>
+	
+	<!-- 入れ替え信号機 -->
+	<contribution type="railSignal" id="{6FA55842-E693-414f-A120-0A3D0C613B21}">
+		<name>Change signal</name>
+		<!--!<name>入替信号</name>-->
+		<side>right</side>
+		<picture src="RailSignal2.bmp"/>
+	</contribution>
+</plug-in>

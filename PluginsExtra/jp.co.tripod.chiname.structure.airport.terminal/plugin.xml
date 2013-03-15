@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY robby '
+		<price>200</price>
+		<size>1,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Passanger Terminals"/>
+		</structure>	
+		<computerCannotBuild/>
+'>
+<!ENTITY robbyW '
+		<price>400</price>
+		<size>2,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Passanger Terminals"/>
+		</structure>	
+		<computerCannotBuild/>
+'>
+<!ENTITY gateA '
+		<price>50</price>
+		<size>2,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Passanger Terminals"/>
+		</structure>	
+		<computerCannotBuild/>
+'>
+<!ENTITY entrance '
+		<price>2</price>
+		<size>1,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Passanger Terminals"/>
+		</structure>
+		<computerCannotBuild/>
+'>
+
+]>
+
+<plug-in>
+	<title>Airport terminal A</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+
+	<contribution type="picture" id="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-01">
+		<picture src="terminal_domeA.bmp">
+			<override when="night" src="terminal_domeA_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-02">
+		<picture src="terminal_gateA.bmp">
+			<override when="night" src="terminal_gateA_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03">
+		<picture src="terminal_entrance_A.bmp">
+			<override when="night" src="terminal_entrance_A_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-04">
+		<picture src="terminal_gateA2.bmp">
+			<override when="night" src="terminal_gateA2_n.bmp"/>
+		</picture>
+	</contribution>
+		
+	<!--Main dome-->
+	<contribution type="GenericStructure" id="{B63CD389-C7FA-43D6-C477-74D088277950}">
+		<group>International Airport terminal</group>
+		<design>Huge dome</design>
+		<price>100000</price>
+		<size>8,3</size>
+		<height>2</height>
+		<structure>
+			<category byname="Passanger Terminals"/>
+		</structure>	
+		<computerCannotBuild/>
+		<sprite origin="0,0" offset="80">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-01"/>
+		</sprite>		
+		<sprite origin="176,0" offset="40" opposite="true">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-01"/>
+		</sprite>		
+		<sprite origin="0,112" offset="80">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-01"/>
+		</sprite>		
+		<sprite origin="176,112" offset="40" opposite="true">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-01"/>
+		</sprite>		
+	</contribution>
+	<!--出発ロビー-->
+	<contribution type="GenericStructure" id="{C307E366-78BE-437E-C477-CA46233A4D78}-1">
+		<group>Airport departure lobby</group>
+		<design>narrow</design>
+		&robby;
+		<sprite origin="32,8" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-02"/>
+		</sprite>		
+		<sprite origin="32,56" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-02"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{C307E366-78BE-437E-C477-CA46233A4D78}-2">
+		<group>Airport departure lobby</group>
+		<design>narrow (with signboard)</design>
+		&robby;
+		<sprite origin="0,8" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-02"/>
+		</sprite>		
+		<sprite origin="0,56" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-02"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{C307E366-78BE-437E-C477-CA46233A4D78}-3">
+		<group>Airport departure lobby</group>
+		<design>wide</design>
+		&robbyW;
+		<sprite origin="48,48" offset="16" opposite="true">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-04"/>
+		</sprite>		
+		<sprite origin="0,48" offset="24">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-04"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{C307E366-78BE-437E-C477-CA46233A4D78}-4">
+		<group>Airport departure lobby</group>
+		<design>wide (with signboard)</design>
+		&robbyW;
+		<sprite origin="48,0" offset="16" opposite="true">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-04"/>
+		</sprite>		
+		<sprite origin="0,0" offset="24">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-04"/>
+		</sprite>		
+	</contribution>
+	<!--boarding bridge-->
+	<contribution type="GenericStructure" id="{38DCF80D-2EA2-45D4-C477-94967CC1522D}-1">
+		<group>Airport departure lobby</group>
+		<design>boarding bridge</design>
+		&gateA;
+		<sprite origin="64,0" offset="24">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-02"/>
+		</sprite>		
+		<sprite origin="112,0" offset="16" opposite="true">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-02"/>
+		</sprite>		
+		<sprite origin="160,0" offset="24">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-02"/>
+		</sprite>		
+		<sprite origin="208,0" offset="16" opposite="true">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-02"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{38DCF80D-2EA2-45D4-C477-94967CC1522D}-2">
+		<group>Airport departure lobby</group>
+		<design>boarding bridge</design>
+		&gateA;
+		<sprite origin="64,48" offset="24">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-02"/>
+		</sprite>		
+		<sprite origin="112,48" offset="16" opposite="true">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-02"/>
+		</sprite>		
+		<sprite origin="160,48" offset="24">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-02"/>
+		</sprite>		
+		<sprite origin="208,48" offset="16" opposite="true">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-02"/>
+		</sprite>		
+	</contribution>
+	
+
+	<!--Bus or taxi stop-->
+	<contribution type="GenericStructure" id="{206632ED-DC73-454D-C477-5EF51383D81A}-1">
+		<group>Terminal square</group>
+		<design>half-roofed with signboard</design>
+		&entrance;
+		<sprite origin="0,0" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+		<sprite origin="32,0" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+		<sprite origin="64,0" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+		<sprite origin="96,0" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{206632ED-DC73-454D-C477-5EF51383D81A}-2">
+		<group>Terminal square</group>
+		<design>roofed with signboard</design>
+		&entrance;
+		<sprite origin="0,32" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+		<sprite origin="32,32" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+		<sprite origin="64,32" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+		<sprite origin="96,32" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{206632ED-DC73-454D-C477-5EF51383D81A}-5">
+		<group>Terminal square</group>
+		<design>half-roofed</design>
+		&entrance;
+		<sprite origin="0,128" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+		<sprite origin="32,128" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+		<sprite origin="64,128" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+		<sprite origin="96,128" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{206632ED-DC73-454D-C477-5EF51383D81A}-6">
+		<group>Terminal square</group>
+		<design>corner-roofed</design>
+		&entrance;
+		<sprite origin="0,160" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+		<sprite origin="32,160" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+		<sprite origin="64,160" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+		<sprite origin="96,160" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{206632ED-DC73-454D-C477-5EF51383D81A}-3">
+		<group>Terminal square</group>
+		<design>half-roofed/road</design>
+		&entrance;
+		<sprite origin="0,64" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+		<sprite origin="32,64" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+		<sprite origin="64,64" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+		<sprite origin="96,64" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{206632ED-DC73-454D-C477-5EF51383D81A}-4">
+		<group>Terminal square</group>
+		<design>corner-roofed/road</design>
+		&entrance;
+		<sprite origin="0,96" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+		<sprite origin="32,96" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+		<sprite origin="64,96" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+		<sprite origin="96,96" offset="16">
+			<picture ref="{DBCD7B5E-CCFE-478F-C477-F69C7B1E1FE2}-03"/>
+		</sprite>		
+	</contribution>
+	
+</plug-in>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title></title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	
+	
+	
+	<!-- 能登鉄道 NT100 -->
+	<contribution type="trainCar" id="{4E90223D-D64A-4874-A0D5-2D8894A1E73B}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                <picture src="nt100.bmp" />
+                </sprite>
+		<capacity>52</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{69E1A425-450B-42D4-86D3-1D05DCB4EF20}">
+		<company>Noto Railway</company>
+		<type>NT100</type>
+		<name>NT100</name>
+		<author>Tomonori Takeuchi</author>
+		<description>
+廃止になる前に…
+		</description>
+　　　　　　　　<fare>1110</fare>
+		<price>2220</price>
+		<speed>slow</speed>
+		<composition>
+			<body carRef="{4E90223D-D64A-4874-A0D5-2D8894A1E73B}"/>
+		</composition>
+	</contribution>
+
+</plug-in>

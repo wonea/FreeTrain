@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Structures under-viaduct</title>
+	<author>HanabishiRekka</author>
+	<homepage></homepage>
+	
+	<contribution type="picture" id="{474B8BFD-2503-1010-8800-D0EA1049D28D}">
+		<picture src="to_tenanto.bmp" origin="0,0" offset="16" >
+			<override when="night" src="to_tenanto1.bmp" /> 
+  		</picture>
+	</contribution>
+
+	
+	<contribution type="railStationary" id="{474B8BFD-2503-1014-8800-D0EA1049D28D}">
+		<group>Under-viaduct shop</group>
+		<price>200</price>
+		<height>1</height>
+		<size>1,2</size>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{474B8BFD-2503-1010-8800-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{474B8BFD-2503-1015-8800-D0EA1049D28D}">
+		<group>Under-viaduct shop</group>
+		<price>200</price>
+		<height>1</height>
+		<size>2,1</size>
+		<sprite origin="48,0" offset="24">
+			<picture ref="{474B8BFD-2503-1010-8800-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+
+
+
+	<contribution type="picture" id="{474B8BFD-2510-1010-8800-D0EA1049D28D}">
+		<picture src="koukasita01A.bmp" >
+			<override when="night" src="koukasita01B.bmp" /> 
+  		</picture>
+	</contribution>
+	<contribution type="picture" id="{474B8BFD-2511-1010-8800-D0EA1049D28D}">
+		<picture src="koukasita02A.bmp" />
+	</contribution>
+	<contribution type="picture" id="{474B8BFD-2512-1010-8800-D0EA1049D28D}">
+		<picture src="koukasita03A.bmp" />
+	</contribution>
+	<contribution type="picture" id="{474B8BFD-2513-1010-8800-D0EA1049D28D}">
+		<picture src="koukasita04A.bmp" />
+	</contribution>
+	<contribution type="picture" id="{474B8BFD-2514-1010-8800-D0EA1049D28D}">
+		<picture src="koukasita05A.bmp" >
+			<override when="night" src="koukasita05B.bmp" /> 
+  		</picture>
+	</contribution>
+	<contribution type="picture" id="{474B8BFD-2515-1010-8800-D0EA1049D28D}">
+		<picture src="koukasita06A.bmp" >
+			<override when="night" src="koukasita06B.bmp" /> 
+  		</picture>
+	</contribution>
+	<contribution type="picture" id="{474B8BFD-2516-1010-8800-D0EA1049D28D}">
+		<picture src="koukasita07A.bmp" />
+	</contribution>
+	<contribution type="picture" id="{474B8BFD-2517-1010-8800-D0EA1049D28D}">
+		<picture src="koukasita08A.bmp" />
+	</contribution>
+	<contribution type="picture" id="{474B8BFD-2518-1010-8800-D0EA1049D28D}">
+		<picture src="koukasita09A.bmp" />
+	</contribution>
+	
+	<contribution type="railStationary" id="{474B8BFD-3000-1010-8800-D0EA1049D28D}">
+		<group>Under-viaduct house</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{474B8BFD-2510-1010-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{474B8BFD-3001-1010-8800-D0EA1049D28D}">
+		<group>Under-viaduct house</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{474B8BFD-2510-1010-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{474B8BFD-3002-1010-8800-D0EA1049D28D}">
+		<group>Under-viaduct house</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>200</base>
+		</population>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{474B8BFD-2511-1010-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{474B8BFD-3003-1010-8800-D0EA1049D28D}">
+		<group>Under-viaduct house</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{474B8BFD-2511-1010-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{474B8BFD-3004-1010-8800-D0EA1049D28D}">
+		<group>Under-viaduct house</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{474B8BFD-2512-1010-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{474B8BFD-3005-1010-8800-D0EA1049D28D}">
+		<group>Under-viaduct house</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{474B8BFD-2512-1010-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{474B8BFD-3006-1010-8800-D0EA1049D28D}">
+		<group>Under-viaduct house</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{474B8BFD-2513-1010-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{474B8BFD-3007-1010-8800-D0EA1049D28D}">
+		<group>Under-viaduct house</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{474B8BFD-2513-1010-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{474B8BFD-3008-1010-8800-D0EA1049D28D}">
+		<group>Under-viaduct house</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{474B8BFD-2514-1010-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{474B8BFD-3009-1010-8800-D0EA1049D28D}">
+		<group>Under-viaduct house</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{474B8BFD-2514-1010-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{474B8BFD-3010-1010-8800-D0EA1049D28D}">
+		<group>Under-viaduct house</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{474B8BFD-2515-1010-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{474B8BFD-3011-1010-8800-D0EA1049D28D}">
+		<group>Under-viaduct house</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{474B8BFD-2515-1010-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{474B8BFD-3012-1010-8800-D0EA1049D28D}">
+		<group>Under-viaduct house</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{474B8BFD-2516-1010-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{474B8BFD-3013-1010-8800-D0EA1049D28D}">
+		<group>Under-viaduct house</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{474B8BFD-2516-1010-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{474B8BFD-3014-1010-8800-D0EA1049D28D}">
+		<group>Under-viaduct house</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{474B8BFD-2517-1010-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{474B8BFD-3015-1010-8800-D0EA1049D28D}">
+		<group>Under-viaduct house</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{474B8BFD-2517-1010-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{474B8BFD-3016-1010-8800-D0EA1049D28D}">
+		<group>Under-viaduct house</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{474B8BFD-2518-1010-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{474B8BFD-3017-1010-8800-D0EA1049D28D}">
+		<group>Under-viaduct house</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{474B8BFD-2518-1010-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+</plug-in>

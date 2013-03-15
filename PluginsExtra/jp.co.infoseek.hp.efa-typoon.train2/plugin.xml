@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Train Set No 2</title>
+	<homepage></homepage>
+	<author>Typhoon</author>
+
+
+	<title>485 Series Kyushu Base</title>
+	<contribution type="picture" id="{57644AE6-7FFA-Q485-8FE0-7567171D3CEF}">
+		<picture src="485qa.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{57644AE6-7FFA-485Q-8FE0-7567171D3CEF}">
+		<picture src="485qb.bmp" />
+	</contribution>
+	<title>485 Series East Japan Base</title>
+	<contribution type="picture" id="{57644AE6-7FFA-E485-8FE0-7567171D3CEF}">
+		<picture src="485ea.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{57644AE6-7FFA-485E-8FE0-7567171D3CEF}">
+		<picture src="485eb.bmp" />
+	</contribution>
+	<title>485 Series West Japan Base</title>
+	<contribution type="picture" id="{57644AE6-7FFA-W485-8FE0-7567171D3CEF}">
+		<picture src="485wa.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{57644AE6-7FFA-485W-8FE0-7567171D3CEF}">
+		<picture src="485wb.bmp" />
+	</contribution>
+
+
+	<!-- 485系レッド先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485R-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="64,0,192" to="238,53,0"/>
+			<map from="0,128,0" to="238,53,0"/>
+			<map from="0,0,128" to="158,35,0"/>
+			<map from="0,64,0" to="158,35,0"/>
+			<map from="32,32,96" to="160,64,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-Q485-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+	<!-- 485系レッド中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485R-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="224,192,0" to="192,64,0"/>
+			<map from="255,224,0" to="238,53,0"/>
+			<map from="0,128,0" to="238,53,0"/>
+			<map from="64,0,192" to="238,53,0"/>
+			<map from="192,192,0" to="160,64,0"/>
+			<map from="0,0,128" to="158,35,0"/>
+			<map from="0,64,0" to="158,35,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-485Q-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>64</capacity>
+	</contribution>
+	<!-- 485系レッド後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485R-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-485R-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-R485-8FE0-7567171D3CEF}">
+		<company>JR Kyushu</company>
+		<type>485 Series</type>
+		<name>Red Express</name>
+		<author>Typhoon</author>
+		<description>JR九州の485系のうち、赤くなってみた485系。</description>
+		<price>1</price>
+           		<fare>1000</fare> 
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-485R-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-485R-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-485R-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 485系霧島日向先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485K-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="255,255,255" to="64,0,192"/>
+			<map from="224,224,224" to="0,0,128"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-Q485-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+	<!-- 485系霧島日向中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485K-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="255,255,255" to="224,192,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-485Q-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>64</capacity>
+	</contribution>
+	<!-- 485系霧島日向後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485K-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="485ka.bmp" />
+               	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-K485-8FE0-7567171D3CEF}">
+		<company>JR Kyushu</company>
+		<type>485 Series</type>
+		<name>Kirishima / Hyuga</name>
+		<author>Typhoon</author>
+		<description>きりしま用の緑の485系はひゅうがとの共通運転を行うために、旧ハウステンボス色をベースにした塗装に変更された。3,6,9両のみ編成可能。</description>
+		<price>1</price>
+		<speed>fast</speed>
+          		<fare>1000</fare> 
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+ 		<config>
+  		<car char="A" ref="{57644AE6-7FFA-485K-8FE0-7567171D3CEF}-h"/>
+   		<car char="-" ref="{57644AE6-7FFA-485K-8FE0-7567171D3CEF}-m"/>
+   		<car char="B" ref="{57644AE6-7FFA-485K-8FE0-7567171D3CEF}-t"/>
+   			<composition>A-B</composition>
+   			<composition>A-BA-B</composition>
+   			<composition>A-BA-BA-B</composition>
+		</config>
+	</contribution>
+
+	<!-- 485系上沼垂先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485H-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="64,64,64" to="224,224,224"/>
+			<map from="64,64,96" to="192,192,192"/>
+			<map from="64,192,255" to="224,224,224"/>
+			<map from="0,160,255" to="192,192,192"/>
+			<map from="128,192,128" to="160,160,164"/>
+			<map from="160,192,128" to="192,192,192"/>
+			<map from="64,128,192" to="79,93,143"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-E485-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+	<!-- 485系上沼垂中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485H-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="64,64,64" to="224,224,224"/>
+			<map from="64,192,255" to="224,224,224"/>
+			<map from="64,64,96" to="192,192,192"/>
+			<map from="0,160,255" to="192,192,192"/>
+			<map from="64,128,192" to="79,93,143"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-485E-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>64</capacity>
+	</contribution>
+	<!-- 485系上沼垂後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485H-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-485H-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-H485-8FE0-7567171D3CEF}">
+		<company>JR East</company>
+		<type>485 Series</type>
+		<name>Hokuetsu, Kubikino, etc.</name>
+		<author>Typhoon</author>
+		<description>上沼垂色の485系。</description>
+		<price>1</price>
+          		<fare>1000</fare> 
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-485H-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-485H-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-485H-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 485系3000上沼垂先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485I-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="64,64,64" to="0,8,0"/>
+			<map from="64,64,96" to="0,8,0"/>
+			<map from="64,128,192" to="42,64,97"/>
+			<map from="64,224,192" to="42,64,97"/>
+			<map from="0,192,192" to="42,64,97"/>
+			<map from="128,192,128" to="0,192,192"/>
+			<map from="160,192,128" to="64,224,192"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-E485-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+	<!-- 485系3000上沼垂中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485I-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="64,64,64" to="0,8,0"/>
+			<map from="64,64,96" to="0,8,0"/>
+			<map from="64,128,192" to="42,64,97"/>
+			<map from="64,224,192" to="42,64,97"/>
+			<map from="64,192,192" to="42,64,97"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-485E-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>64</capacity>
+	</contribution>
+	<!-- 485系3000上沼垂後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485I-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-485I-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-I485-8FE0-7567171D3CEF}">
+		<company>JR East</company>
+		<type>485 Series</type>
+		<name>3000 Model Hakutaka, etc.</name>
+		<author>Typhoon</author>
+		<description>上沼垂色の485系3000番台。</description>
+		<price>1</price>
+          		<fare>1100</fare> 
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-485I-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-485I-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-485I-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 485系はつかり先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485J-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="64,64,64" to="0,8,0"/>
+			<map from="64,64,96" to="0,8,0"/>
+			<map from="64,128,192" to="143,106,181"/>
+			<map from="64,224,192" to="143,106,181"/>
+			<map from="0,192,192" to="143,106,181"/>
+			<map from="128,192,128" to="255,224,0"/>
+			<map from="160,192,128" to="255,224,0"/>
+			<map from="64,192,255" to="224,224,224"/>
+			<map from="0,160,255" to="192,192,192"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-E485-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+	<!-- 485系はつかり中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485J-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="64,64,64" to="0,8,0"/>
+			<map from="64,64,96" to="0,8,0"/>
+			<map from="64,128,192" to="143,106,181"/>
+			<map from="64,224,192" to="143,106,181"/>
+			<map from="64,192,192" to="143,106,181"/>
+			<map from="64,192,255" to="224,224,224"/>
+			<map from="0,160,255" to="192,192,192"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-485E-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>64</capacity>
+	</contribution>
+	<!-- 485系はつかり後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485J-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-485J-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-J485-8FE0-7567171D3CEF}">
+		<company>JR East</company>
+		<type>485 Series</type>
+		<name>3000 Model Hatsukari, Hakucho</name>
+		<author>Typhoon</author>
+		<description>「はつかり」用に485系を改造した車両。青函トンネル内で140km/hで運転できる。東北新幹線の八戸
+延長に伴い、「白鳥」として運転されるようになった。</description>
+		<price>1</price>
+		<speed>fast</speed>
+          		<fare>1100</fare> 
+		<composition>
+			<head carRef="{57644AE6-7FFA-485J-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-485J-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-485J-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 485系ひたち先頭車 -->
+	<contribution type="trainCar" id="{TYPHOON-JRE-485HITA-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="0,64,192" to="224,224,224"/>
+			<map from="224,160,128" to="224,224,224"/>
+			<map from="0,64,128" to="192,192,192"/>
+			<map from="128,192,128" to="160,160,64"/>
+			<map from="64,192,64" to="160,160,164"/>
+			<map from="192,128,64" to="192,192,192"/>
+			<map from="160,128,64" to="160,160,160"/>
+			<map from="255,255,128" to="160,160,64"/>
+			<map from="128,128,64" to="160,160,160"/>
+			<map from="0,0,128" to="160,160,64"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-W485-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+	<!-- 485系ひたち中間車 -->
+	<contribution type="trainCar" id="{TYPHOON-JRE-485HITA-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="0,64,192" to="224,224,224"/>
+			<map from="0,64,128" to="192,192,192"/>
+			<map from="128,128,64" to="160,160,160"/>
+			<map from="0,0,128" to="160,160,64"/>
+			<map from="0,0,192" to="160,160,64"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-485W-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>64</capacity>
+	</contribution>
+	<!-- 485系ひたち後尾車 -->
+	<contribution type="trainCar" id="{TYPHOON-JRE-485HITA-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{TYPHOON-JRE-485HITA-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+
+	<contribution type="train" id="{TYPHOON-JRE-485HITA-HENSEI-7567171D3CEF}">
+		<company>JR East</company>
+		<type>485 Series</type>
+		<name>Hitachi Colors色</name>
+		<author>Typhoon</author>
+		<description>ひたち色の485系ボンネット無し。</description>
+		<price>1</price>
+          		<fare>1100</fare> 
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{TYPHOON-JRE-485HITA-7567171D3CEF}-h"/>
+			<body carRef="{TYPHOON-JRE-485HITA-7567171D3CEF}-m"/>
+			<tail carRef="{TYPHOON-JRE-485HITA-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 485系かもしか 先頭車-->
+	<contribution type="trainCar" id="{TYPHOON-JRE-485KAMO-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="485ca.bmp" />
+               	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+	<!-- 485系かもしか 中間車-->
+	<contribution type="trainCar" id="{TYPHOON-JRE-485KAMO-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="485cb.bmp" />
+               	 </sprite>
+		<capacity>64</capacity>
+	</contribution>
+	<!-- 485系かもしか 後尾車-->
+	<contribution type="trainCar" id="{TYPHOON-JRE-485KAMO-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{TYPHOON-JRE-485KAMO-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+	<contribution type="train" id="{TYPHOON-JRE-485KAMO-HENSEI-7567171D3CEF}">
+		<company>JR East</company>
+		<type>485 Series</type>
+		<name>Kamoshika, etc.</name>
+		<author>Typhoon</author>
+		<description>3,6,9両のみ編成可能。</description>
+		<price>1</price>
+		<speed>fast</speed>
+          		<fare>1000</fare> 
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+ 		<config>
+  		<car char="A" ref="{TYPHOON-JRE-485KAMO-7567171D3CEF}-h"/>
+   		<car char="-" ref="{TYPHOON-JRE-485KAMO-7567171D3CEF}-m"/>
+   		<car char="B" ref="{TYPHOON-JRE-485KAMO-7567171D3CEF}-t"/>
+   			<composition>A-B</composition>
+   			<composition>A-BA-B</composition>
+   			<composition>A-BA-BA-B</composition>
+		</config>
+	</contribution>
+
+	<!-- 485系西はくたか先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485L-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="0,64,192" to="224,224,224"/>
+			<map from="224,160,128" to="224,224,224"/>
+			<map from="0,64,128" to="192,192,192"/>
+			<map from="128,192,128" to="128,128,64"/>
+			<map from="64,192,64" to="128,128,64"/>
+			<map from="192,128,64" to="192,192,192"/>
+			<map from="160,128,64" to="160,160,160"/>
+			<map from="255,255,128" to="128,128,64"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-W485-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+	<!-- 485系西はくたか中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485L-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="0,64,192" to="224,224,224"/>
+			<map from="0,64,128" to="192,192,192"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-485W-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>64</capacity>
+	</contribution>
+	<!-- 485系西はくたか後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485L-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-485L-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+
+	<contribution type="train" id="{57644AE6-7FFA-L485-8FE0-7567171D3CEF}">
+		<company>JR West</company>
+		<type>485 Series</type>
+		<name>Hakutaka, etc.</name>
+		<author>Typhoon</author>
+		<description>「はくたか」などで使われているJR Westの485系。</description>
+		<price>1</price>
+          		<fare>1100</fare> 
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-485L-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-485L-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-485L-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 489系白山先頭車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485M-8FE0-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="0,0,192" to="224,224,224"/>
+			<map from="0,0,128" to="192,192,192"/>
+			<map from="128,192,128" to="224,160,128"/>
+			<map from="255,255,128" to="192,192,192"/>
+			<map from="64,192,64" to="0,64,128"/>
+			<map from="192,128,64" to="224,160,128"/>
+			<map from="160,128,64" to="224,160,128"/>
+			<map from="128,128,64" to="224,160,128"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-W485-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+	<!-- 489系白山中間車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485M-8FE0-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="0,0,192" to="224,224,224"/>
+			<map from="0,0,128" to="192,192,192"/>
+			<map from="128,128,64" to="224,160,128"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-485W-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>64</capacity>
+	</contribution>
+	<!-- 489系白山後尾車 -->
+	<contribution type="trainCar" id="{57644AE6-7FFA-485M-8FE0-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{57644AE6-7FFA-485M-8FE0-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+
+
+	<contribution type="train" id="{57644AE6-7FFA-M485-8FE0-7567171D3CEF}">
+		<company>JR West</company>
+		<type>489 Series</type>
+		<name>Hakusan Colors; w/o Bonnet</name>
+		<author>Typhoon</author>
+		<description>「白山」で使われていた専用カラーの489系。「はくたか」や新幹線の前の「あさま」でも使われることがあった。北陸新幹線の開業で「白山」は廃止され、現在は特急色に戻されている。</description>
+		<price>1</price>
+          		<fare>1100</fare> 
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{57644AE6-7FFA-485M-8FE0-7567171D3CEF}-h"/>
+			<body carRef="{57644AE6-7FFA-485M-8FE0-7567171D3CEF}-m"/>
+			<tail carRef="{57644AE6-7FFA-485M-8FE0-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 485系しらさぎ先頭車 -->
+	<contribution type="trainCar" id="{TYPHOON-JRW-485SHIRA-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="0,64,192" to="224,224,224"/>
+			<map from="224,160,128" to="224,224,224"/>
+			<map from="0,64,128" to="192,192,192"/>
+			<map from="128,192,128" to="0,0,192"/>
+			<map from="64,192,64" to="0,0,192"/>
+			<map from="192,128,64" to="192,192,192"/>
+			<map from="160,128,64" to="160,160,160"/>
+			<map from="255,255,128" to="0,0,192"/>
+			<map from="128,128,64" to="0,0,255"/>
+			<map from="0,0,128" to="224,128,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-W485-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+	<!-- 485系しらさぎ先頭車P -->
+	<contribution type="trainCar" id="{TYPHOON-JRW-485SHIRA-7567171D3CEF}-p">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="485pa.bmp" />
+               	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+	<!-- 485系しらさぎ先頭車N -->
+	<contribution type="trainCar" id="{TYPHOON-JRW-485SHIRA-7567171D3CEF}-n">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="485pb.bmp" />
+               	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+	<!-- 485系しらさぎ中間車 -->
+	<contribution type="trainCar" id="{TYPHOON-JRW-485SHIRA-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="0,64,192" to="224,224,224"/>
+			<map from="0,64,128" to="192,192,192"/>
+			<map from="128,128,64" to="0,0,255"/>
+			<map from="0,0,128" to="224,128,0"/>
+			<map from="0,0,192" to="224,128,0"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-485W-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>64</capacity>
+	</contribution>
+	<!-- 485系しらさぎ後尾車 -->
+	<contribution type="trainCar" id="{TYPHOON-JRW-485SHIRA-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{TYPHOON-JRW-485SHIRA-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+
+	<contribution type="train" id="{TYPHOON-JRW-485SHIRAP-HENSEI-7567171D3CEF}">
+		<company>JR West</company>
+		<type>485 Series</type>
+		<name>Shirasagi Colors (with P)</name>
+		<author>Typhoon</author>
+		<description>しらさぎなどで使われていたパノラマ車つきの485系。10両まで編成可。</description>
+		<price>1</price>
+          		<fare>1100</fare> 
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+ 		<config>
+  		<car char="A" ref="{TYPHOON-JRW-485SHIRA-7567171D3CEF}-p"/>
+  		<car char="C" ref="{TYPHOON-JRW-485SHIRA-7567171D3CEF}-n"/>
+   		<car char="-" ref="{TYPHOON-JRW-485SHIRA-7567171D3CEF}-m"/>
+   		<car char="B" ref="{TYPHOON-JRW-485SHIRA-7567171D3CEF}-t"/>
+   			<composition>C</composition>
+   			<composition>CB</composition>
+   			<composition>C-B</composition>
+   			<composition>A--B</composition>
+   			<composition>A---B</composition>
+   			<composition>A----B</composition>
+   			<composition>A-----B</composition>
+   			<composition>A----BCB</composition>
+   			<composition>A-----BCB</composition>
+   			<composition>A-----BC-B</composition>
+		</config>
+	</contribution>
+	<contribution type="train" id="{TYPHOON-JRW-485SHIRA-HENSEI-7567171D3CEF}">
+		<company>JR West</company>
+		<type>485 Series</type>
+		<name>Shirasagi Colors (w/o P)</name>
+		<author>Typhoon</author>
+		<description>しらさぎなどで使われていたパノラマ車なしの485系。10両まで編成可。</description>
+		<price>1</price>
+          		<fare>1100</fare> 
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+ 		<config>
+  		<car char="A" ref="{TYPHOON-JRW-485SHIRA-7567171D3CEF}-h"/>
+  		<car char="C" ref="{TYPHOON-JRW-485SHIRA-7567171D3CEF}-n"/>
+   		<car char="-" ref="{TYPHOON-JRW-485SHIRA-7567171D3CEF}-m"/>
+   		<car char="B" ref="{TYPHOON-JRW-485SHIRA-7567171D3CEF}-t"/>
+   			<composition>C</composition>
+   			<composition>CB</composition>
+   			<composition>C-B</composition>
+   			<composition>A--B</composition>
+   			<composition>A---B</composition>
+   			<composition>A----B</composition>
+   			<composition>A-----B</composition>
+   			<composition>A----BCB</composition>
+   			<composition>A-----BCB</composition>
+   			<composition>A-----BC-B</composition>
+		</config>
+	</contribution>
+
+	<!-- 485系かがやき・きらめき先頭車 -->
+	<contribution type="trainCar" id="{TYPHOON-JRW-485KIRA-7567171D3CEF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="485kaa.bmp" />
+               	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+	<!-- 485系かがやき・きらめき中間車 -->
+	<contribution type="trainCar" id="{TYPHOON-JRW-485KIRA-7567171D3CEF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<spriteType name="colorMapped">
+			<map from="64,192,255" to="224,224,224"/>
+			<map from="64,224,192" to="0,64,255"/>
+			<map from="64,128,192" to="224,160,64"/>
+			<map from="64,64,64" to="224,224,224"/>
+			<map from="0,160,255" to="192,192,192"/>
+			<map from="64,64,96" to="192,192,192"/>
+			<map from="64,192,192" to="0,64,255"/>
+			</spriteType>
+			<picture ref="{57644AE6-7FFA-485E-8FE0-7567171D3CEF}" />
+                         	 </sprite>
+		<capacity>64</capacity>
+	</contribution>
+	<!-- 485系かがやき・きらめき後尾車 -->
+	<contribution type="trainCar" id="{TYPHOON-JRW-485KIRA-7567171D3CEF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{TYPHOON-JRW-485KIRA-7567171D3CEF}-h"/>
+		<sprite origin="0,0">
+               	 </sprite>
+		<capacity>56</capacity>
+	</contribution>
+	<contribution type="train" id="{TYPHOON-JRW-485KIRA-HENSEI-7567171D3CEF}">
+		<company>JR West</company>
+		<type>485 Series</type>
+		<name>Kagayaki / Kirameki Colors</name>
+		<author>Typhoon</author>
+		<description>かがやき・きらめき色の485系。</description>
+		<price>1</price>
+          		<fare>1100</fare> 
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{TYPHOON-JRW-485KIRA-7567171D3CEF}-h"/>
+			<body carRef="{TYPHOON-JRW-485KIRA-7567171D3CEF}-m"/>
+			<tail carRef="{TYPHOON-JRW-485KIRA-7567171D3CEF}-t"/>
+		</composition>
+	</contribution>
+
+
+</plug-in>

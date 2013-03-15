@@ -1,0 +1,727 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY ha1101 '
+	<name>Slope road (normal,1lane)</name>
+	<structure>
+		<category byname="Road Accessories"/>
+	</structure>
+	<height>1</height>
+	<computerCannotBuild/>
+'>
+<!ENTITY ha1201 '
+	<name>Slope road (normal,2lane)</name>
+	<structure>
+		<category byname="Road Accessories"/>
+	</structure>
+	<size>1,4</size>
+	<computerCannotBuild/>
+'>
+<!ENTITY ha2101 '
+	<name>Slope road (expressway,1lane)</name>
+	<structure>
+		<category byname="Road Accessories"/>
+	</structure>
+	<size>1,4</size>
+	<height>2</height>
+	<computerCannotBuild/>
+'>
+<!ENTITY ha2201 '
+	<name>Slope road (expressway,2lane)</name>
+	<structure>
+		<category byname="Road Accessories"/>
+	</structure>
+	<size>1,4</size>
+	<computerCannotBuild/>
+'>
+<!ENTITY ha2301 '
+	<name>Slope road (expressway,3lane)</name>
+	<structure>
+		<category byname="Road Accessories"/>
+	</structure>
+	<price>2000</price>
+	<size>2,4</size>
+	<height>3</height>
+	<computerCannotBuild/>
+'>
+<!ENTITY ha5001 '
+	<name>Tollgate</name>
+	<structure>
+		<category byname="Tollgates"/>
+	</structure>
+	<height>1</height>
+	<computerCannotBuild/>
+'>
+]>
+
+<plug-in>
+	<title>Road and road accesories for extended UI</title>
+	<author>HEUER</author>
+	<homepage>http://freetrain.finito-web.com/</homepage>
+
+
+<!-- Slope road (normal,1lane) -->
+	<contribution type="picture" id="{HEUER-1001-SR-PICTURE-1101}">
+		<picture src="1101.bmp">
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{HEUER-1001-SR-PICTURE-1102}">
+		<picture src="1102.bmp">
+		</picture>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-1101}">
+		&ha1101;
+		<price>250</price>
+		<size>1,4</size>
+		<design>terrace color/nolight</design>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1101}"/>
+		</sprite>
+		<sprite origin="80,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1101}"/>
+		</sprite>
+		<sprite origin="160,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1101}"/>
+		</sprite>
+		<sprite origin="240,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1101}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-1102}">
+		&ha1101;
+		<price>200</price>
+		<size>1,3</size>
+		<design>terrace color/nolight/steep slope</design>
+		<sprite origin="0,0" offset="32">
+			<picture ref="{HEUER-1001-SR-PICTURE-1102}"/>
+		</sprite>
+		<sprite origin="64,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1102}"/>
+		</sprite>
+		<sprite origin="128,0" offset="32">
+			<picture ref="{HEUER-1001-SR-PICTURE-1102}"/>
+		</sprite>
+		<sprite origin="192,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1102}"/>
+		</sprite>
+	</contribution>
+
+
+<!-- Slope road (normal,2lane) -->
+	<contribution type="picture" id="{HEUER-1001-SR-PICTURE-1201}">
+		<picture src="1201.bmp">
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{HEUER-1001-SR-PICTURE-1201A}">
+		<picture src="1201a.bmp">
+			<override when="night" src="1201an.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{HEUER-1001-SR-PICTURE-1201B}">
+		<picture src="1201b.bmp">
+			<override when="night" src="1201bn.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{HEUER-1001-SR-PICTURE-1202}">
+		<picture src="1202.bmp">
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{HEUER-1001-SR-PICTURE-1202A}">
+		<picture src="1202a.bmp">
+			<override when="night" src="1202an.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{HEUER-1001-SR-PICTURE-1202B}">
+		<picture src="1202b.bmp">
+			<override when="night" src="1202bn.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{HEUER-1001-SR-PICTURE-1203}">
+		<picture src="1203.bmp">
+			<override when="summer" src="1203s.bmp" />
+			<override when="autumn" src="1203a.bmp" />
+			<override when="winter" src="1203w.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{HEUER-1001-SR-PICTURE-1204}">
+		<picture src="1204.bmp">
+			<override when="summer" src="1204s.bmp" />
+			<override when="autumn" src="1204a.bmp" />
+			<override when="winter" src="1204w.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-1204}">
+		&ha1201;
+		<price>300</price>
+		<design>white dotted/turf/nolight</design>
+		<height>1</height>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1204}"/>
+		</sprite>
+		<sprite origin="80,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1204}"/>
+		</sprite>
+		<sprite origin="160,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1204}"/>
+		</sprite>
+		<sprite origin="240,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1204}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-1202}">
+		&ha1201;
+		<price>500</price>
+		<design>white dotted/terrace color/nolight</design>
+		<height>1</height>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202}"/>
+		</sprite>
+		<sprite origin="80,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202}"/>
+		</sprite>
+		<sprite origin="160,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202}"/>
+		</sprite>
+		<sprite origin="240,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-1202B}">
+		&ha1201;
+		<price>600</price>
+		<design>white dotted/terrace color/light(right)</design>
+		<height>2</height>
+		<sprite origin="80,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202A}"/>
+		</sprite>
+		<sprite origin="240,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202A}"/>
+		</sprite>
+		<sprite origin="400,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202A}"/>
+		</sprite>
+		<sprite origin="560,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202A}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-1202A}">
+		&ha1201;
+		<price>600</price>
+		<design>white dotted/terrace color/light(left)</design>
+		<height>2</height>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202A}"/>
+		</sprite>
+		<sprite origin="160,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202A}"/>
+		</sprite>
+		<sprite origin="320,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202A}"/>
+		</sprite>
+		<sprite origin="480,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202A}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-1202D}">
+		&ha1201;
+		<price>700</price>
+		<design>white dotted/concrete/light(right)</design>
+		<height>2</height>
+		<sprite origin="80,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202B}"/>
+		</sprite>
+		<sprite origin="240,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202B}"/>
+		</sprite>
+		<sprite origin="400,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202B}"/>
+		</sprite>
+		<sprite origin="560,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202B}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-1202C}">
+		&ha1201;
+		<price>700</price>
+		<design>white dotted/concrete/light(left)</design>
+		<height>2</height>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202B}"/>
+		</sprite>
+		<sprite origin="160,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202B}"/>
+		</sprite>
+		<sprite origin="320,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202B}"/>
+		</sprite>
+		<sprite origin="480,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1202B}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-1203}">
+		&ha1201;
+		<price>300</price>
+		<design>orange lined/turf/nolight</design>
+		<height>1</height>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1203}"/>
+		</sprite>
+		<sprite origin="80,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1203}"/>
+		</sprite>
+		<sprite origin="160,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1203}"/>
+		</sprite>
+		<sprite origin="240,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1203}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-1201}">
+		&ha1201;
+		<price>500</price>
+		<design>orange lined/terrace color/nolight</design>
+		<height>1</height>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201}"/>
+		</sprite>
+		<sprite origin="80,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201}"/>
+		</sprite>
+		<sprite origin="160,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201}"/>
+		</sprite>
+		<sprite origin="240,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-1201B}">
+		&ha1201;
+		<price>600</price>
+		<design>orange lined/terrace color/light(right)</design>
+		<height>2</height>
+		<sprite origin="80,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201A}"/>
+		</sprite>
+		<sprite origin="240,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201A}"/>
+		</sprite>
+		<sprite origin="400,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201A}"/>
+		</sprite>
+		<sprite origin="560,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201A}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-1201A}">
+		&ha1201;
+		<price>600</price>
+		<design>orange lined/terrace color/light(left)</design>
+		<height>2</height>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201A}"/>
+		</sprite>
+		<sprite origin="160,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201A}"/>
+		</sprite>
+		<sprite origin="320,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201A}"/>
+		</sprite>
+		<sprite origin="480,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201A}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-1201D}">
+		&ha1201;
+		<price>700</price>
+		<design>orange lined/concrete/light(right)</design>
+		<height>2</height>
+		<sprite origin="80,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201B}"/>
+		</sprite>
+		<sprite origin="240,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201B}"/>
+		</sprite>
+		<sprite origin="400,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201B}"/>
+		</sprite>
+		<sprite origin="560,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201B}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-1201C}">
+		&ha1201;
+		<price>700</price>
+		<design>orange lined/concrete/light(left)</design>
+		<height>2</height>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201B}"/>
+		</sprite>
+		<sprite origin="160,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201B}"/>
+		</sprite>
+		<sprite origin="320,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201B}"/>
+		</sprite>
+		<sprite origin="480,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-1201B}"/>
+		</sprite>
+	</contribution>
+
+<!-- Slope road (expressway,1lane) -->
+	<contribution type="picture" id="{HEUER-1001-SR-PICTURE-2101}">
+		<picture src="2101.bmp">
+			<override when="night" src="2101n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{HEUER-1001-SR-PICTURE-2102}">
+		<picture src="2102.bmp">
+			<override when="night" src="2102n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-2101B}">
+		&ha2101;
+		<price>600</price>
+		<design>terrace color/1lane-right</design>
+		<sprite origin="80,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-2101}"/>
+		</sprite>
+		<sprite origin="240,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2101}"/>
+		</sprite>
+		<sprite origin="400,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-2101}"/>
+		</sprite>
+		<sprite origin="560,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2101}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-2101A}">
+		&ha2101;
+		<price>600</price>
+		<design>terrace color/1lane-left</design>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-2101}"/>
+		</sprite>
+		<sprite origin="160,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2101}"/>
+		</sprite>
+		<sprite origin="320,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-2101}"/>
+		</sprite>
+		<sprite origin="480,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2101}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-2102B}">
+		&ha2101;
+		<price>700</price>
+		<design>concrete/1lane-right</design>
+		<sprite origin="80,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-2102}"/>
+		</sprite>
+		<sprite origin="240,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2102}"/>
+		</sprite>
+		<sprite origin="400,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-2102}"/>
+		</sprite>
+		<sprite origin="560,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2102}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-2102A}">
+		&ha2101;
+		<price>700</price>
+		<design>concrete/1lane-left</design>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-2102}"/>
+		</sprite>
+		<sprite origin="160,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2102}"/>
+		</sprite>
+		<sprite origin="320,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-2102}"/>
+		</sprite>
+		<sprite origin="480,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2102}"/>
+		</sprite>
+	</contribution>
+
+<!-- Slope road (expressway,2lane) -->
+	<contribution type="picture" id="{HEUER-1001-SR-PICTURE-2201}">
+		<picture src="2201.bmp">
+			<override when="night" src="2201n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{HEUER-1001-SR-PICTURE-2202}">
+		<picture src="2202.bmp">
+			<override when="night" src="2202n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{HEUER-1001-SR-PICTURE-2203}">
+		<picture src="2203.bmp">
+			<override when="night" src="2203n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{HEUER-1001-SR-PICTURE-2204}">
+		<picture src="2204.bmp">
+			<override when="night" src="2204n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{HEUER-1001-SR-PICTURE-2205}">
+		<picture src="2205.bmp">
+			<override when="night" src="2205n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-2202B}">
+		&ha2201;
+		<price>700</price>
+		<design>terrace color/light(right)</design>
+		<height>2</height>
+		<sprite origin="80,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-2202}"/>
+		</sprite>
+		<sprite origin="240,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2202}"/>
+		</sprite>
+		<sprite origin="400,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-2202}"/>
+		</sprite>
+		<sprite origin="560,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2202}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-2202A}">
+		&ha2201;
+		<price>700</price>
+		<design>terrace color/light(left)</design>
+		<height>2</height>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-2202}"/>
+		</sprite>
+		<sprite origin="160,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2202}"/>
+		</sprite>
+		<sprite origin="320,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-2202}"/>
+		</sprite>
+		<sprite origin="480,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2202}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-2201B}">
+		&ha2201;
+		<price>800</price>
+		<design>concrete/light(right)</design>
+		<height>2</height>
+		<sprite origin="80,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-2201}"/>
+		</sprite>
+		<sprite origin="240,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2201}"/>
+		</sprite>
+		<sprite origin="400,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-2201}"/>
+		</sprite>
+		<sprite origin="560,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2201}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-2201A}">
+		&ha2201;
+		<price>800</price>
+		<design>concrete/light(left)</design>
+		<height>2</height>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-2201}"/>
+		</sprite>
+		<sprite origin="160,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2201}"/>
+		</sprite>
+		<sprite origin="320,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-2201}"/>
+		</sprite>
+		<sprite origin="480,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2201}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-2203}">
+		&ha2201;
+		<price>800</price>
+		<design>2way/concrete/light</design>
+		<height>2</height>
+		<sprite origin="0,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-2203}"/>
+		</sprite>
+		<sprite origin="80,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2203}"/>
+		</sprite>
+		<sprite origin="160,0" offset="24">
+			<picture ref="{HEUER-1001-SR-PICTURE-2203}"/>
+		</sprite>
+		<sprite origin="240,0" offset="48" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2203}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-2204B}">
+		&ha2201;
+		<price>1200</price>
+		<design>2F/concrete/light(right)</design>
+		<height>3</height>
+		<sprite origin="80,0" offset="40">
+			<picture ref="{HEUER-1001-SR-PICTURE-2204}"/>
+		</sprite>
+		<sprite origin="240,0" offset="64" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2204}"/>
+		</sprite>
+		<sprite origin="400,0" offset="40">
+			<picture ref="{HEUER-1001-SR-PICTURE-2204}"/>
+		</sprite>
+		<sprite origin="560,0" offset="64" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2204}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-2204A}">
+		&ha2201;
+		<price>1200</price>
+		<design>2F/concrete/light(left)</design>
+		<height>3</height>
+		<sprite origin="0,0" offset="40">
+			<picture ref="{HEUER-1001-SR-PICTURE-2204}"/>
+		</sprite>
+		<sprite origin="160,0" offset="64" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2204}"/>
+		</sprite>
+		<sprite origin="320,0" offset="40">
+			<picture ref="{HEUER-1001-SR-PICTURE-2204}"/>
+		</sprite>
+		<sprite origin="480,0" offset="64" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2204}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-2205B}">
+		&ha2201;
+		<price>1600</price>
+		<design>3F/concrete/light(right)</design>
+		<height>4</height>
+		<sprite origin="80,0" offset="56">
+			<picture ref="{HEUER-1001-SR-PICTURE-2205}"/>
+		</sprite>
+		<sprite origin="240,0" offset="80" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2205}"/>
+		</sprite>
+		<sprite origin="400,0" offset="56">
+			<picture ref="{HEUER-1001-SR-PICTURE-2205}"/>
+		</sprite>
+		<sprite origin="560,0" offset="80" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2205}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-2205A}">
+		&ha2201;
+		<price>1600</price>
+		<design>3F/concrete/light(left)</design>
+		<height>4</height>
+		<sprite origin="0,0" offset="56">
+			<picture ref="{HEUER-1001-SR-PICTURE-2205}"/>
+		</sprite>
+		<sprite origin="160,0" offset="80" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2205}"/>
+		</sprite>
+		<sprite origin="320,0" offset="56">
+			<picture ref="{HEUER-1001-SR-PICTURE-2205}"/>
+		</sprite>
+		<sprite origin="480,0" offset="80" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2205}"/>
+		</sprite>
+	</contribution>
+
+<!-- Slope road (expressway,3lane) -->
+	<contribution type="picture" id="{HEUER-1001-SR-PICTURE-2301}">
+		<picture src="2301.bmp">
+			<override when="night" src="2301n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-2301A}">
+		&ha2301;
+		<design>2F/concrete/rightside</design>
+		<sprite origin="0,0" offset="45">
+			<picture ref="{HEUER-1001-SR-PICTURE-2301}"/>
+		</sprite>
+		<sprite origin="192,0" offset="61" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2301}"/>
+		</sprite>
+		<sprite origin="384,0" offset="45">
+			<picture ref="{HEUER-1001-SR-PICTURE-2301}"/>
+		</sprite>
+		<sprite origin="576,0" offset="61" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2301}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1001-SR-STRUCTURE-2301B}">
+		&ha2301;
+		<design>2F/concrete/leftside</design>
+		<sprite origin="96,0" offset="45">
+			<picture ref="{HEUER-1001-SR-PICTURE-2301}"/>
+		</sprite>
+		<sprite origin="288,0" offset="61" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2301}"/>
+		</sprite>
+		<sprite origin="480,0" offset="45">
+			<picture ref="{HEUER-1001-SR-PICTURE-2301}"/>
+		</sprite>
+		<sprite origin="672,0" offset="61" opposite="true">
+			<picture ref="{HEUER-1001-SR-PICTURE-2301}"/>
+		</sprite>
+	</contribution>
+
+<!-- Tollgates -->
+	<contribution type="picture" id="{HEUER-1002-TG-PICTURE-1001}">
+		<picture src="tollgate.bmp">
+			<override when="night" src="tollgate_n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1002-TG-STRUCTURE-1001A}">
+		&ha5001;
+		<design>2lane</design>
+		<price>1000</price>
+		<size>1,1</size>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+		<sprite origin="192,0" offset="22">
+			<picture ref="{HEUER-1002-TG-PICTURE-1001}"/>
+		</sprite>
+		<sprite origin="224,0" offset="22" opposite="true">
+			<picture ref="{HEUER-1002-TG-PICTURE-1001}"/>
+		</sprite>
+		<sprite origin="256,0" offset="22">
+			<picture ref="{HEUER-1002-TG-PICTURE-1001}"/>
+		</sprite>
+		<sprite origin="288,0" offset="22" opposite="true">
+			<picture ref="{HEUER-1002-TG-PICTURE-1001}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{HEUER-1002-TG-STRUCTURE-1001B}">
+		&ha5001;
+		<design>4lane</design>
+		<price>2000</price>
+		<size>1,2</size>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>10</base>
+		</population>
+		<sprite origin="0,0" offset="14">
+			<picture ref="{HEUER-1002-TG-PICTURE-1001}"/>
+		</sprite>
+		<sprite origin="48,0" offset="22" opposite="true">
+			<picture ref="{HEUER-1002-TG-PICTURE-1001}"/>
+		</sprite>
+		<sprite origin="96,0" offset="14">
+			<picture ref="{HEUER-1002-TG-PICTURE-1001}"/>
+		</sprite>
+		<sprite origin="144,0" offset="22" opposite="true">
+			<picture ref="{HEUER-1002-TG-PICTURE-1001}"/>
+		</sprite>
+	</contribution>
+</plug-in>

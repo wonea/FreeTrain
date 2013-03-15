@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY taxiway4_4 '
+		<price>80</price>
+		<size>4,4</size>
+		<height>1</height>
+		<structure>
+			<category byname="Runways"/>
+		</structure>	
+		<computerCannotBuild/>
+'>
+<!ENTITY taxiway1_4 '
+		<price>20</price>
+		<size>1,4</size>
+		<height>1</height>
+		<structure>
+			<category byname="Runways"/>
+		</structure>
+		<computerCannotBuild/>
+'>
+<!ENTITY taxiway4_1 '
+		<price>20</price>
+		<size>4,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Runways"/>
+		</structure>
+		<computerCannotBuild/>
+'>
+
+]>
+
+<plug-in>
+	<title>Airport taxiway</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+
+	<contribution type="picture" id="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-01">
+		<picture src="airport_taxiway01.bmp">
+			<override when="night" src="airport_taxiway01_n.bmp"/>
+			<override when="autumn" src="airport_taxiway01Aut.bmp">
+				<override when="night" src="airport_taxiway01Aut_n.bmp"/>
+			</override>
+			<override when="winter" src="airport_taxiway01Win.bmp">
+				<override when="night" src="airport_taxiway01Win_n.bmp"/>
+			</override>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-02">
+		<picture src="airport_taxiway02.bmp">
+			<override when="night" src="airport_taxiway02_n.bmp"/>
+			<override when="autumn" src="airport_taxiway02Aut.bmp">
+				<override when="night" src="airport_taxiway02Aut_n.bmp"/>
+			</override>
+			<override when="winter" src="airport_taxiway02Win.bmp">
+				<override when="night" src="airport_taxiway02Win_n.bmp"/>
+			</override>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-03">
+		<picture src="airport_taxiway03.bmp">
+			<override when="night" src="airport_taxiway03_n.bmp"/>
+			<override when="autumn" src="airport_taxiway03Aut.bmp">
+				<override when="night" src="airport_taxiway03Aut_n.bmp"/>
+			</override>
+			<override when="winter" src="airport_taxiway03Win.bmp">
+				<override when="night" src="airport_taxiway03Win_n.bmp"/>
+			</override>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-04">
+		<picture src="airport_taxiway04.bmp">
+			<override when="night" src="airport_taxiway04_n.bmp"/>
+		</picture>
+	</contribution>
+		
+	<!--Airport taxiway (1 voxel length)-->
+	<contribution type="GenericStructure" id="{C307E366-78BE-437E-D477-CA46233A4D78}-0">
+		<group>Airport taxiway</group>
+		<design>straight</design>
+		&taxiway1_4;
+		<sprite origin="0,0" offset="0">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-01"/>
+		</sprite>		
+		<sprite origin="80,0" offset="24" opposite="true">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-01"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{C307E366-78BE-437E-D477-CA46233A4D78}-1">
+		<group>Airport taxiway</group>
+		<design>branch</design>
+		&taxiway1_4;
+		<sprite origin="0,0" offset="0">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-02"/>
+		</sprite>		
+		<sprite origin="80,0" offset="24" opposite="true">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-02"/>
+		</sprite>		
+		<sprite origin="160,0" offset="0">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-02"/>
+		</sprite>		
+		<sprite origin="240,0" offset="24" opposite="true">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-02"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{C307E366-78BE-437E-D477-CA46233A4D78}-2">
+		<group>Airport taxiway</group>
+		<design>branch</design>
+		&taxiway1_4;
+		<sprite origin="0,48" offset="0">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-02"/>
+		</sprite>		
+		<sprite origin="80,48" offset="24" opposite="true">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-02"/>
+		</sprite>		
+		<sprite origin="160,48" offset="0">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-02"/>
+		</sprite>		
+		<sprite origin="240,48" offset="24" opposite="true">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-02"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{C307E366-78BE-437E-D477-CA46233A4D78}-3">
+		<group>Airport taxiway</group>
+		<design>branch</design>
+		&taxiway1_4;
+		<sprite origin="0,96" offset="0">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-02"/>
+		</sprite>		
+		<sprite origin="80,96" offset="24" opposite="true">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-02"/>
+		</sprite>		
+		<sprite origin="160,96" offset="0">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-02"/>
+		</sprite>		
+		<sprite origin="240,96" offset="24" opposite="true">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-02"/>
+		</sprite>		
+	</contribution>
+	
+
+	<!--Airport taxiway（4x4）-->
+	<contribution type="GenericStructure" id="{B7DEA32C-106F-461B-C477-36DDCEF0E37C}-0">
+		<group>Airport taxiway(4x4)</group>
+		<design>T-crossing</design>
+		&taxiway4_4;
+		<sprite origin="0,0" offset="24">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-03"/>
+		</sprite>		
+		<sprite origin="128,0" offset="24">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-03"/>
+		</sprite>		
+		<sprite origin="256,0" offset="24">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-03"/>
+		</sprite>		
+		<sprite origin="384,0" offset="24">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-03"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{B7DEA32C-106F-461B-C477-36DDCEF0E37C}-1">
+		<group>Airport taxiway(4x4)</group>
+		<design>curve</design>
+		&taxiway4_4;
+		<sprite origin="0,80" offset="24">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-03"/>
+		</sprite>		
+		<sprite origin="128,80" offset="24">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-03"/>
+		</sprite>		
+		<sprite origin="256,80" offset="24">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-03"/>
+		</sprite>		
+		<sprite origin="384,80" offset="24">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-03"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{B7DEA32C-106F-461B-C477-36DDCEF0E37C}-2">
+		<group>Airport taxiway(4x4)</group>
+		<design>crossing</design>
+		&taxiway4_4;
+		<sprite origin="0,0" offset="24">
+			<picture ref="{F8DDAE3B-DF10-4CB9-C477-CE4D0AC5029E}-04"/>
+		</sprite>		
+	</contribution>
+	
+</plug-in>

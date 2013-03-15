@@ -1,0 +1,3517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+<author>Shikashika</author>
+<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+<title>Traincars (Locomotives: JNR or JR)</title>
+
+<title>蒸気機関車</title>
+
+<!-- 蒸気機関車 C57機関車 -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-SteamLocomotive-picture-C571}">
+<picture src="c571.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-SteamLocomotive-picture-C572}">
+<picture src="c572.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 蒸気機関車 C571機関車山口号タイプ -->
+<contribution type="trainCar" id="{FreeTrain-Shika-SteamLocomotive-TrainCar-C571}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-SteamLocomotive-picture-C571}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 蒸気機関車 C571機関車山口号タイプ 向き：逆 -->
+<contribution type="trainCar" id="{FreeTrain-Shika-SteamLocomotive-TrainCar-C571-R}">
+<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+<base carRef="{FreeTrain-Shika-SteamLocomotive-TrainCar-C571}"/>
+</contribution>
+<!-- 蒸気機関車 C572機関車 -->
+<contribution type="trainCar" id="{FreeTrain-Shika-SteamLocomotive-TrainCar-C572}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-SteamLocomotive-picture-C572}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 蒸気機関車 C572機関車 向き：逆-->
+<contribution type="trainCar" id="{FreeTrain-SteamLocomotive-TrainCar-C572-R}">
+<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+<base carRef="{FreeTrain-Shika-SteamLocomotive-TrainCar-C572}"/>
+</contribution>
+
+<!-- 蒸気機関車 C58機関車 -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-SteamLocomotive-picture-C581}">
+<picture src="c581.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 蒸気機関車 C581機関車 -->
+<contribution type="trainCar" id="{FreeTrain-Shika-SteamLocomotive-TrainCar-C581}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-SteamLocomotive-picture-C581}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 蒸気機関車 C581機関車 向き：逆-->
+<contribution type="trainCar" id="{FreeTrain-Shika-SteamLocomotive-TrainCar-C581-R}">
+<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+<base carRef="{FreeTrain-Shika-SteamLocomotive-TrainCar-C581}"/>
+</contribution>
+
+<!-- 蒸気機関車 C62機関車 -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-SteamLocomotive-picture-C622}">
+<picture src="c622.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 蒸気機関車 C622機関車 -->
+<contribution type="trainCar" id="{FreeTrain-Shika-SteamLocomotive-TrainCar-C622}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-SteamLocomotive-picture-C622}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 蒸気機関車 C622機関車 向き：逆 -->
+<contribution type="trainCar" id="{FreeTrain-Shika-SteamLocomotive-TrainCar-C622-R}">
+<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+<base carRef="{FreeTrain-Shika-SteamLocomotive-TrainCar-C622}"/>
+</contribution>
+
+<!-- 蒸気機関車 D51機関車 -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-SteamLocomotive-picture-D511115}">
+<picture src="d511115.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-SteamLocomotive-picture-D51100}">
+<picture src="d51100.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 蒸気機関車 D511115機関車 -->
+<contribution type="trainCar" id="{FreeTrain-Shika-SteamLocomotive-TrainCar-D511115}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-SteamLocomotive-picture-D511115}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 蒸気機関車 D511115機関車 向き：逆-->
+<contribution type="trainCar" id="{FreeTrain-Shika-SteamLocomotive-TrainCar-D511115-R}">
+<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+<base carRef="{FreeTrain-Shika-SteamLocomotive-TrainCar-D511115}"/>
+</contribution>
+<!-- 蒸気機関車 D51100機関車(なめくじドーム) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-SteamLocomotive-TrainCar-D51100}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-SteamLocomotive-picture-D51100}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 蒸気機関車 D51100機関車(なめくじドーム) 向き：逆-->
+<contribution type="trainCar" id="{FreeTrain-Shika-SteamLocomotive-TrainCar-D51100-R}">
+<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+<base carRef="{FreeTrain-Shika-SteamLocomotive-TrainCar-D51100}"/>
+</contribution>
+
+
+<title>電気機関車</title>
+<title>旧形電機</title>
+
+<!-- イメージ画像定義 -->
+<!-- 電気機関車 EF58機関車(デッキ付き) -->
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EF58a}">
+<picture src="ef58a.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 電気機関車 EF58機関車 (デッキ付き)-->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58-Deck}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF58a}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+
+<!-- 電気機関車 EF58機関車(流線型) -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EF58b}">
+<picture src="ef58b.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 電気機関車 EF58機関車 (流線型)茶-->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF58b}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EF58機関車 青一般色 -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58-B}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF58b}" />
+<spriteType name="colorMapped">
+			<map from="135,86,86" to="75,75,145"/>
+			<map from="125,77,77" to="69,69,135"/>
+			<map from="115,71,71" to="64,64,125"/>
+			<map from="105,65,65" to="59,59,115"/>
+			<map from="120,73,73" to="200,174,121"/>
+			<map from="120,72,72" to="73,73,140"/>
+			<map from="120,71,71" to="73,73,140"/>
+			<map from="80,48,48" to="51,51,100"/>
+			<map from="100,61,61" to="180,156,109"/>
+			<map from="100,60,60" to="62,62,120"/>
+			<map from="120,59,59" to="62,62,120"/>
+			<map from="70,42,42" to="45,45,90"/>
+			<map from="138,84,84" to="70,70,135"/>
+			<map from="95,58,58" to="53,53,105"/>
+			<map from="85,52,52" to="48,48,95"/>
+</spriteType>
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EF58機関車 青特急色 -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58-B-ex}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF58b}" />
+<spriteType name="colorMapped">
+			<map from="135,86,86" to="75,75,145"/>
+			<map from="125,77,77" to="69,69,135"/>
+			<map from="115,71,71" to="64,64,125"/>
+			<map from="105,65,65" to="59,59,115"/>
+			<map from="120,73,73" to="73,73,140"/>
+			<map from="120,72,72" to="73,73,140"/>
+			<map from="120,71,71" to="130,130,130"/>
+			<map from="80,48,48" to="51,51,100"/>
+			<map from="100,61,61" to="62,62,120"/>
+			<map from="100,60,60" to="62,62,120"/>
+			<map from="120,59,59" to="120,120,120"/>
+			<map from="70,42,42" to="45,45,90"/>
+			<map from="138,84,84" to="70,70,135"/>
+			<map from="95,58,58" to="53,53,105"/>
+			<map from="85,52,52" to="48,48,95"/>
+</spriteType>
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EF58機関車 青大将色 -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF58-A}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF58b}" />
+<spriteType name="colorMapped">
+			<map from="135,86,86" to="105,145,111"/>
+			<map from="125,77,77" to="99,165,104"/>
+			<map from="115,71,71" to="93,155,97"/>
+			<map from="105,65,65" to="87,145,90"/>
+			<map from="120,73,73" to="102,170,108"/>
+			<map from="120,72,72" to="102,170,108"/>
+			<map from="120,71,71" to="180,180,74"/>
+			<map from="80,48,48" to="72,120,75"/>
+			<map from="100,61,61" to="90,150,90"/>
+			<map from="100,60,60" to="90,150,90"/>
+			<map from="120,59,59" to="170,170,70"/>
+			<map from="70,42,42" to="62,110,65"/>
+			<map from="138,84,84" to="93,155,96"/>
+			<map from="95,58,58" to="81,135,84"/>
+			<map from="85,52,52" to="75,125,77"/>
+</spriteType>
+</sprite>
+<capacity>0</capacity>
+</contribution>
+
+<!-- 電気機関車 EH10機関車 -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EH10}">
+<picture src="eh10.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 電気機関車 EH10機関車 -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH10}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EH10}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+
+<!-- 電気機関車 EH10機関車(2両) -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EH10-2a}">
+<picture src="eh10_2a.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EH10-2b}">
+<picture src="eh10_2b.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 電気機関車 EH10機関車(2両) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH10-2a}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EH10-2a}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH10-2b}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EH10-2b}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EH10機関車(2両) 向き：逆-->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH10-2b-R}">
+<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+<base carRef="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH10-2b}"/>
+</contribution>
+
+<title>直流用電気機関車</title>
+
+<!-- 電気機関車 EF66機関車 -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EF66a}">
+<picture src="ef66a.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 電気機関車 EF66機関車 -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF66}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF66a}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+
+
+<title>交流用電気機関車</title>
+
+<!-- 電気機関車 ED75機関車 -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-ED75-0000}">
+<picture src="ed75_0000.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-ED75-OrientSaloon}">
+<picture src="ed75_orientsaloon.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-ED75-1000}">
+<picture src="ed75_1000.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-ED75-renew}">
+<picture src="ed75_renew.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-ED75-1028}">
+<picture src="ed75_1028.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-ED75-panda}">
+<picture src="ed75_0122.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 電気機関車 ED75機関車(0番台) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-ED75-0}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-ED75-0000}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 ED75機関車(700番台) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-ED75-700}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<spriteType name="colorMapped">
+<map from="216,130,65" to="214,16,55"/>
+<map from="217,192,70" to="175,195,194"/>
+<map from="206,124,61" to="203,15,52"/>
+<map from="149,90,45" to="147,11,38"/>
+<map from="138,122,45" to="111,124,123"/>
+<map from="161,97,48" to="159,12,41"/>
+<map from="229,202,74" to="184,206,204"/>
+<map from="138,83,41" to="136,10,35"/>
+<map from="150,132,48" to="121,135,134"/>
+<map from="173,104,51" to="170,13,44"/>
+<map from="195,117,58" to="192,15,50"/>
+<map from="228,137,68" to="225,17,58"/>
+<map from="156,94,46" to="153,12,40"/>
+<map from="113,68,33" to="111,9,29"/>
+<map from="164,99,48" to="161,12,42"/>
+<map from="122,73,36" to="120,9,31"/>
+<map from="162,143,52" to="130,145,144"/>
+<map from="131,79,39" to="129,10,33"/>
+<map from="207,182,67" to="166,186,184"/>
+<map from="196,173,63" to="157,176,174"/>
+<map from="184,162,59" to="148,166,164"/>
+<map from="200,168,143" to="199,124,139"/>
+<map from="145,122,103" to="145,90,101"/>
+<map from="148,89,44" to="145,11,38"/>
+<map from="190,159,135" to="189,118,132"/>
+<map from="183,110,55" to="181,14,47"/>
+<map from="211,177,150" to="210,131,146"/>
+<map from="157,131,112" to="156,97,109"/>
+<map from="168,141,120" to="167,104,117"/>
+<map from="173,153,56" to="139,156,154"/>
+</spriteType>
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-ED75-OrientSaloon}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 ED75機関車(オリエントサルーン) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-ED75-OrientSaloon}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-ED75-OrientSaloon}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 ED75機関車(1000番台) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-ED75-1000}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-ED75-1000}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 ED75機関車(JR貨物更新機) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-ED75-renew}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-ED75-renew}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 ED75機関車(JR貨物ロゴ付き更新機) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-ED75-1028}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-ED75-1028}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 ED75機関車(JR貨物試験塗色(パンダ)) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-ED75-panda}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-ED75-panda}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+
+<!-- 電気機関車 ED79機関車 -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-ED79-000}">
+<picture src="ed79_000.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-ED79-050}">
+<picture src="ed79_050.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-ED79-100}">
+<picture src="ed79_100.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 電気機関車 ED79機関車(0番台) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-ED79-0}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-ED79-000}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 ED79機関車(50番台) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-ED79-50}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-ED79-050}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 ED79機関車(100番台) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-ED79-100}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-ED79-100}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+
+
+
+<title>交流･交直両用電気機関車</title>
+
+<!-- 電気機関車 EF81機関車 -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-0}">
+<picture src="ef81_0.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-408-test}">
+<picture src="ef81_408_test.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-451}">
+<picture src="ef81_451.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-cassiopeia}">
+<picture src="ef81_cassiopeia.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-rainbow}">
+<picture src="ef81_rainbow.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-hokuto}">
+<picture src="ef81_hokuto.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-twilight}">
+<picture src="ef81_twilight.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 電気機関車 EF81機関車(赤13号塗色ローズピンク) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-p}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-0}" />
+<spriteType name="colorMapped">
+<map from="218,103,0" to="196,59,98"/>
+<map from="255,120,0" to="229,69,115"/>
+<map from="242,114,0" to="217,65,109"/>
+<map from="230,108,0" to="207,62,104"/>
+<map from="242,0,8" to="217,65,109"/>
+<map from="230,0,115" to="207,62,104"/>
+<map from="242,0,121" to="217,65,109"/>
+<map from="154,0,5" to="138,42,69"/>
+<map from="230,0,7" to="207,62,104"/>
+<map from="167,0,5" to="150,45,75"/>
+<map from="218,0,109" to="196,59,98"/>
+<map from="255,0,8" to="229,69,115"/>
+<map from="242,27,242" to="175,195,194"/>
+<map from="154,17,154" to="111,124,123"/>
+<map from="180,0,6" to="162,49,81"/>
+<map from="255,0,128" to="229,69,115"/>
+<map from="242,0,38" to="217,65,109"/>
+<map from="154,0,24" to="138,42,69"/>
+<map from="193,0,6" to="173,52,87"/>
+<map from="255,24,255" to="184,206,204"/>
+<map from="174,11,0" to="157,47,79"/>
+<map from="185,0,6" to="166,50,84"/>
+<map from="134,0,4" to="121,36,60"/>
+<map from="126,8,0" to="114,34,57"/>
+<map from="0,180,68" to="130,145,144"/>
+<map from="167,16,167" to="121,135,134"/>
+<map from="218,0,7" to="196,59,98"/>
+<map from="205,0,6" to="184,55,92"/>
+<map from="255,0,40" to="229,69,115"/>
+<map from="242,0,0" to="217,65,109"/>
+<map from="183,11,0" to="164,49,82"/>
+<map from="195,0,6" to="174,52,88"/>
+<map from="242,0,46" to="217,65,109"/>
+<map from="174,17,0" to="157,47,79"/>
+<map from="126,12,0" to="114,34,57"/>
+<map from="154,0,29" to="138,42,69"/>
+<map from="145,0,5" to="130,39,65"/>
+<map from="136,8,0" to="123,37,61"/>
+<map from="180,0,0" to="162,49,81"/>
+<map from="167,0,26" to="150,45,75"/>
+<map from="174,0,5" to="157,47,79"/>
+<map from="126,0,4" to="114,34,57"/>
+<map from="255,0,48" to="229,69,115"/>
+<map from="183,17,0" to="164,49,82"/>
+<map from="195,0,0" to="174,52,88"/>
+<map from="174,22,0" to="157,47,79"/>
+<map from="230,65,0" to="207,62,104"/>
+<map from="167,47,0" to="150,45,75"/>
+<map from="126,16,0" to="114,34,57"/>
+<map from="145,0,0" to="130,39,65"/>
+<map from="136,13,0" to="123,37,61"/>
+<map from="180,0,28" to="162,49,81"/>
+<map from="167,0,31" to="150,45,75"/>
+<map from="242,30,0" to="175,195,194"/>
+<map from="155,0,5" to="139,42,70"/>
+<map from="146,9,0" to="131,39,66"/>
+<map from="193,0,0" to="173,52,87"/>
+<map from="193,18,193" to="139,156,154"/>
+<map from="180,17,180" to="130,145,144"/>
+<map from="175,0,6" to="158,47,79"/>
+<map from="242,23,242" to="175,195,194"/>
+<map from="230,22,230" to="166,186,184"/>
+<map from="230,0,0" to="207,62,104"/>
+<map from="154,0,72" to="111,124,123"/>
+<map from="183,23,0" to="164,49,82"/>
+<map from="242,53,0" to="217,65,109"/>
+<map from="242,68,0" to="217,65,109"/>
+<map from="230,0,101" to="207,62,104"/>
+<map from="185,0,0" to="166,50,84"/>
+<map from="134,0,0" to="121,36,60"/>
+<map from="167,0,73" to="150,45,75"/>
+<map from="180,51,0" to="162,49,81"/>
+<map from="180,40,0" to="162,49,81"/>
+<map from="136,17,0" to="123,37,61"/>
+<map from="180,0,34" to="162,49,81"/>
+<map from="242,0,61" to="217,65,109"/>
+<map from="230,101,0" to="146,44,73"/>
+<map from="155,0,0" to="139,42,70"/>
+<map from="146,14,0" to="131,39,66"/>
+<map from="193,0,30" to="173,52,87"/>
+<map from="218,21,218" to="157,176,174"/>
+<map from="218,0,0" to="196,59,98"/>
+<map from="165,11,0" to="148,45,74"/>
+<map from="175,0,0" to="158,47,79"/>
+<map from="205,19,205" to="148,166,164"/>
+<map from="230,0,36" to="207,62,104"/>
+<map from="167,73,0" to="106,32,53"/>
+<map from="154,0,39" to="138,42,69"/>
+<map from="242,61,0" to="217,65,109"/>
+<map from="242,76,0" to="217,65,109"/>
+<map from="242,0,99" to="217,65,109"/>
+<map from="136,0,5" to="123,37,61"/>
+<map from="230,72,0" to="207,62,104"/>
+<map from="230,94,0" to="146,44,73"/>
+<map from="167,68,0" to="106,32,53"/>
+<map from="167,52,0" to="150,45,75"/>
+<map from="183,0,6" to="164,49,82"/>
+<map from="180,0,73" to="162,49,81"/>
+<map from="180,56,0" to="162,49,81"/>
+<map from="180,45,0" to="162,49,81"/>
+<map from="230,0,58" to="207,62,104"/>
+<map from="205,0,96" to="148,166,164"/>
+<map from="193,0,79" to="173,52,87"/>
+<map from="193,30,0" to="173,52,87"/>
+<map from="193,54,0" to="173,52,87"/>
+<map from="193,42,0" to="173,52,87"/>
+<map from="146,18,0" to="131,39,66"/>
+<map from="193,0,36" to="173,52,87"/>
+<map from="218,0,34" to="196,59,98"/>
+<map from="165,16,0" to="148,45,74"/>
+<map from="218,48,0" to="196,59,98"/>
+<map from="218,62,0" to="196,59,98"/>
+<map from="218,34,0" to="196,59,98"/>
+<map from="218,0,89" to="196,59,98"/>
+<map from="218,89,0" to="138,42,69"/>
+<map from="205,0,32" to="184,55,92"/>
+<map from="230,0,43" to="207,62,104"/>
+<map from="230,51,0" to="207,62,104"/>
+<map from="230,36,0" to="207,62,104"/>
+<map from="230,0,94" to="207,62,104"/>
+<map from="180,23,0" to="130,145,144"/>
+<map from="167,0,42" to="150,45,75"/>
+<map from="242,46,0" to="217,65,109"/>
+<map from="242,99,0" to="154,47,77"/>
+<map from="167,0,79" to="121,135,134"/>
+<map from="230,43,0" to="207,62,104"/>
+<map from="98,0,3" to="88,26,44"/>
+<map from="167,31,0" to="150,45,75"/>
+<map from="255,32,0" to="184,206,204"/>
+<map from="180,73,0" to="114,35,57"/>
+<map from="180,34,0" to="162,49,81"/>
+<map from="205,0,51" to="184,55,92"/>
+<map from="193,79,0" to="123,37,61"/>
+<map from="193,36,0" to="173,52,87"/>
+<map from="193,61,0" to="173,52,87"/>
+<map from="193,48,0" to="173,52,87"/>
+<map from="218,0,41" to="196,59,98"/>
+<map from="165,20,0" to="148,45,74"/>
+<map from="218,55,0" to="196,59,98"/>
+<map from="218,68,0" to="196,59,98"/>
+<map from="218,41,0" to="196,59,98"/>
+<map from="205,0,39" to="184,55,92"/>
+<map from="230,58,0" to="207,62,104"/>
+<map from="180,0,45" to="162,49,81"/>
+<map from="180,79,0" to="114,35,57"/>
+<map from="180,0,85" to="130,145,144"/>
+<map from="146,0,5" to="131,39,66"/>
+<map from="116,0,4" to="105,31,53"/>
+<map from="242,106,0" to="154,47,77"/>
+<map from="230,0,51" to="207,62,104"/>
+<map from="167,0,37" to="150,45,75"/>
+<map from="218,24,218" to="157,176,174"/>
+<map from="193,85,0" to="123,37,61"/>
+<map from="193,0,48" to="173,52,87"/>
+<map from="193,0,91" to="139,156,154"/>
+<map from="230,29,0" to="166,186,184"/>
+<map from="180,20,180" to="130,145,144"/>
+<map from="193,24,0" to="139,156,154"/>
+<map from="180,0,40" to="162,49,81"/>
+<map from="205,26,0" to="148,166,164"/>
+<map from="165,0,5" to="148,45,74"/>
+<map from="110,0,4" to="99,30,50"/>
+<map from="230,0,108" to="166,186,184"/>
+<map from="218,0,103" to="157,176,174"/>
+<map from="242,0,53" to="217,65,109"/>
+<map from="242,0,114" to="175,195,194"/>
+<map from="193,0,42" to="173,52,87"/>
+<map from="218,27,0" to="157,176,174"/>
+<map from="218,0,55" to="196,59,98"/>
+<map from="218,96,0" to="138,42,69"/>
+<map from="218,0,48" to="196,59,98"/>
+<map from="255,0,64" to="229,69,115"/>
+<map from="242,38,0" to="217,65,109"/>
+<map from="180,28,0" to="162,49,81"/>
+<map from="136,0,0" to="123,37,61"/>
+</spriteType>
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EF81機関車(JR貨物更新車) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-renew}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<spriteType name="colorMapped">
+<map from="218,103,0" to="196,59,98"/>
+<map from="255,120,0" to="229,69,115"/>
+<map from="242,114,0" to="217,65,109"/>
+<map from="230,108,0" to="207,62,104"/>
+<map from="242,0,8" to="217,65,109"/>
+<map from="230,0,115" to="207,62,104"/>
+<map from="242,0,121" to="217,65,109"/>
+<map from="154,0,5" to="138,42,69"/>
+<map from="230,0,7" to="207,62,104"/>
+<map from="167,0,5" to="150,45,75"/>
+<map from="218,0,109" to="196,59,98"/>
+<map from="255,0,8" to="229,69,115"/>
+<map from="242,27,242" to="175,195,194"/>
+<map from="154,17,154" to="111,124,123"/>
+<map from="180,0,6" to="162,49,81"/>
+<map from="255,0,128" to="229,69,115"/>
+<map from="242,0,38" to="217,65,109"/>
+<map from="154,0,24" to="138,42,69"/>
+<map from="193,0,6" to="173,52,87"/>
+<map from="255,24,255" to="184,206,204"/>
+<map from="174,11,0" to="157,47,79"/>
+<map from="185,0,6" to="166,50,84"/>
+<map from="134,0,4" to="121,36,60"/>
+<map from="126,8,0" to="114,34,57"/>
+<map from="0,180,68" to="130,145,144"/>
+<map from="167,16,167" to="121,135,134"/>
+<map from="218,0,7" to="196,59,98"/>
+<map from="205,0,6" to="184,55,92"/>
+<map from="255,0,40" to="229,69,115"/>
+<map from="242,0,0" to="217,65,109"/>
+<map from="183,11,0" to="164,49,82"/>
+<map from="195,0,6" to="174,52,88"/>
+<map from="242,0,46" to="214,214,214"/>
+<map from="174,17,0" to="157,47,79"/>
+<map from="126,12,0" to="114,34,57"/>
+<map from="154,0,29" to="136,136,136"/>
+<map from="145,0,5" to="130,39,65"/>
+<map from="136,8,0" to="123,37,61"/>
+<map from="180,0,0" to="162,49,81"/>
+<map from="167,0,26" to="150,45,75"/>
+<map from="174,0,5" to="157,47,79"/>
+<map from="126,0,4" to="114,34,57"/>
+<map from="255,0,48" to="225,225,225"/>
+<map from="183,17,0" to="164,49,82"/>
+<map from="195,0,0" to="174,52,88"/>
+<map from="174,22,0" to="157,47,79"/>
+<map from="230,65,0" to="207,62,104"/>
+<map from="167,47,0" to="150,45,75"/>
+<map from="126,16,0" to="114,34,57"/>
+<map from="145,0,0" to="130,39,65"/>
+<map from="136,13,0" to="123,37,61"/>
+<map from="180,0,28" to="162,49,81"/>
+<map from="167,0,31" to="147,147,147"/>
+<map from="242,30,0" to="175,195,194"/>
+<map from="155,0,5" to="139,42,70"/>
+<map from="146,9,0" to="131,39,66"/>
+<map from="193,0,0" to="173,52,87"/>
+<map from="193,18,193" to="139,156,154"/>
+<map from="180,17,180" to="130,145,144"/>
+<map from="175,0,6" to="158,47,79"/>
+<map from="242,23,242" to="175,195,194"/>
+<map from="230,22,230" to="166,186,184"/>
+<map from="230,0,0" to="207,62,104"/>
+<map from="154,0,72" to="111,124,123"/>
+<map from="183,23,0" to="164,49,82"/>
+<map from="242,53,0" to="217,65,109"/>
+<map from="242,68,0" to="217,65,109"/>
+<map from="230,0,101" to="203,203,203"/>
+<map from="185,0,0" to="166,50,84"/>
+<map from="134,0,0" to="121,36,60"/>
+<map from="167,0,73" to="147,147,147"/>
+<map from="180,51,0" to="162,49,81"/>
+<map from="180,40,0" to="162,49,81"/>
+<map from="136,17,0" to="123,37,61"/>
+<map from="180,0,34" to="159,159,159"/>
+<map from="242,0,61" to="217,65,109"/>
+<map from="230,101,0" to="146,44,73"/>
+<map from="155,0,0" to="139,42,70"/>
+<map from="146,14,0" to="131,39,66"/>
+<map from="193,0,30" to="173,52,87"/>
+<map from="218,21,218" to="157,176,174"/>
+<map from="218,0,0" to="196,59,98"/>
+<map from="165,11,0" to="148,45,74"/>
+<map from="175,0,0" to="158,47,79"/>
+<map from="205,19,205" to="148,166,164"/>
+<map from="230,0,36" to="207,62,104"/>
+<map from="167,73,0" to="106,32,53"/>
+<map from="154,0,39" to="138,42,69"/>
+<map from="242,61,0" to="214,214,214"/>
+<map from="242,76,0" to="214,214,214"/>
+<map from="242,0,99" to="217,65,109"/>
+<map from="136,0,5" to="123,37,61"/>
+<map from="230,72,0" to="203,203,203"/>
+<map from="230,94,0" to="146,44,73"/>
+<map from="167,68,0" to="106,32,53"/>
+<map from="167,52,0" to="147,147,147"/>
+<map from="183,0,6" to="164,49,82"/>
+<map from="180,0,73" to="162,49,81"/>
+<map from="180,56,0" to="159,159,159"/>
+<map from="180,45,0" to="159,159,159"/>
+<map from="230,0,58" to="207,62,104"/>
+<map from="205,0,96" to="148,166,164"/>
+<map from="193,0,79" to="173,52,87"/>
+<map from="193,30,0" to="173,52,87"/>
+<map from="193,54,0" to="173,52,87"/>
+<map from="193,42,0" to="173,52,87"/>
+<map from="146,18,0" to="131,39,66"/>
+<map from="193,0,36" to="170,170,170"/>
+<map from="218,0,34" to="196,59,98"/>
+<map from="165,16,0" to="148,45,74"/>
+<map from="218,48,0" to="196,59,98"/>
+<map from="218,62,0" to="196,59,98"/>
+<map from="218,34,0" to="196,59,98"/>
+<map from="218,0,89" to="196,59,98"/>
+<map from="218,89,0" to="138,42,69"/>
+<map from="205,0,32" to="184,55,92"/>
+<map from="230,0,43" to="203,203,203"/>
+<map from="230,51,0" to="207,62,104"/>
+<map from="230,36,0" to="207,62,104"/>
+<map from="230,0,94" to="207,62,104"/>
+<map from="180,23,0" to="130,145,144"/>
+<map from="167,0,42" to="150,45,75"/>
+<map from="242,46,0" to="214,214,214"/>
+<map from="242,99,0" to="154,47,77"/>
+<map from="167,0,79" to="121,135,134"/>
+<map from="230,43,0" to="203,203,203"/>
+<map from="98,0,3" to="88,26,44"/>
+<map from="167,31,0" to="147,147,147"/>
+<map from="255,32,0" to="184,206,204"/>
+<map from="180,73,0" to="114,35,57"/>
+<map from="180,34,0" to="159,159,159"/>
+<map from="205,0,51" to="184,55,92"/>
+<map from="193,79,0" to="123,37,61"/>
+<map from="193,36,0" to="170,170,170"/>
+<map from="193,61,0" to="170,170,170"/>
+<map from="193,48,0" to="170,170,170"/>
+<map from="218,0,41" to="192,192,192"/>
+<map from="165,20,0" to="148,45,74"/>
+<map from="218,55,0" to="192,192,192"/>
+<map from="218,68,0" to="192,192,192"/>
+<map from="218,41,0" to="192,192,192"/>
+<map from="205,0,39" to="181,181,181"/>
+<map from="230,58,0" to="203,203,203"/>
+<map from="180,0,45" to="162,49,81"/>
+<map from="180,79,0" to="114,35,57"/>
+<map from="180,0,85" to="130,145,144"/>
+<map from="146,0,5" to="131,39,66"/>
+<map from="116,0,4" to="105,31,53"/>
+<map from="242,106,0" to="154,47,77"/>
+<map from="230,0,51" to="203,203,203"/>
+<map from="167,0,37" to="147,147,147"/>
+<map from="218,24,218" to="157,176,174"/>
+<map from="193,85,0" to="123,37,61"/>
+<map from="193,0,48" to="173,52,87"/>
+<map from="193,0,91" to="139,156,154"/>
+<map from="230,29,0" to="166,186,184"/>
+<map from="180,20,180" to="130,145,144"/>
+<map from="193,24,0" to="139,156,154"/>
+<map from="180,0,40" to="159,159,159"/>
+<map from="205,26,0" to="148,166,164"/>
+<map from="165,0,5" to="148,45,74"/>
+<map from="110,0,4" to="99,30,50"/>
+<map from="230,0,108" to="166,186,184"/>
+<map from="218,0,103" to="157,176,174"/>
+<map from="242,0,53" to="214,214,214"/>
+<map from="242,0,114" to="175,195,194"/>
+<map from="193,0,42" to="170,170,170"/>
+<map from="218,27,0" to="157,176,174"/>
+<map from="218,0,55" to="196,59,98"/>
+<map from="218,96,0" to="138,42,69"/>
+<map from="218,0,48" to="192,192,192"/>
+<map from="255,0,64" to="229,69,115"/>
+<map from="242,38,0" to="217,65,109"/>
+<map from="180,28,0" to="162,49,81"/>
+<map from="136,0,0" to="123,37,61"/>
+</spriteType>
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-0}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EF81機関車(赤2号塗色) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-r}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<spriteType name="colorMapped">
+<map from="218,103,0" to="192,15,50"/>
+<map from="255,120,0" to="225,17,58"/>
+<map from="242,114,0" to="214,16,55"/>
+<map from="230,108,0" to="203,15,52"/>
+<map from="242,0,8" to="214,16,55"/>
+<map from="230,0,115" to="203,15,52"/>
+<map from="242,0,121" to="214,16,55"/>
+<map from="154,0,5" to="136,10,35"/>
+<map from="230,0,7" to="203,15,52"/>
+<map from="167,0,5" to="147,11,38"/>
+<map from="218,0,109" to="192,15,50"/>
+<map from="255,0,8" to="225,17,58"/>
+<map from="242,27,242" to="175,195,194"/>
+<map from="154,17,154" to="111,124,123"/>
+<map from="180,0,6" to="159,12,41"/>
+<map from="255,0,128" to="225,17,58"/>
+<map from="242,0,38" to="214,16,55"/>
+<map from="154,0,24" to="136,10,35"/>
+<map from="193,0,6" to="170,13,44"/>
+<map from="255,24,255" to="184,206,204"/>
+<map from="174,11,0" to="154,11,39"/>
+<map from="185,0,6" to="163,12,42"/>
+<map from="134,0,4" to="118,9,31"/>
+<map from="126,8,0" to="111,8,29"/>
+<map from="0,180,68" to="130,145,144"/>
+<map from="167,16,167" to="121,135,134"/>
+<map from="218,0,7" to="192,15,50"/>
+<map from="205,0,6" to="181,14,47"/>
+<map from="255,0,40" to="225,17,58"/>
+<map from="242,0,0" to="214,16,55"/>
+<map from="183,11,0" to="162,12,42"/>
+<map from="195,0,6" to="172,13,44"/>
+<map from="242,0,46" to="214,16,55"/>
+<map from="174,17,0" to="154,11,39"/>
+<map from="126,12,0" to="111,8,29"/>
+<map from="154,0,29" to="136,10,35"/>
+<map from="145,0,5" to="128,10,33"/>
+<map from="136,8,0" to="120,9,31"/>
+<map from="180,0,0" to="159,12,41"/>
+<map from="167,0,26" to="147,11,38"/>
+<map from="174,0,5" to="154,11,39"/>
+<map from="126,0,4" to="111,8,29"/>
+<map from="255,0,48" to="225,17,58"/>
+<map from="183,17,0" to="162,12,42"/>
+<map from="195,0,0" to="172,13,44"/>
+<map from="174,22,0" to="154,11,39"/>
+<map from="230,65,0" to="203,15,52"/>
+<map from="167,47,0" to="147,11,38"/>
+<map from="126,16,0" to="111,8,29"/>
+<map from="145,0,0" to="128,10,33"/>
+<map from="136,13,0" to="120,9,31"/>
+<map from="180,0,28" to="159,12,41"/>
+<map from="167,0,31" to="147,11,38"/>
+<map from="242,30,0" to="175,195,194"/>
+<map from="155,0,5" to="137,10,35"/>
+<map from="146,9,0" to="129,10,33"/>
+<map from="193,0,0" to="170,13,44"/>
+<map from="193,18,193" to="139,156,154"/>
+<map from="180,17,180" to="130,145,144"/>
+<map from="175,0,6" to="154,12,40"/>
+<map from="242,23,242" to="175,195,194"/>
+<map from="230,22,230" to="166,186,184"/>
+<map from="230,0,0" to="203,15,52"/>
+<map from="154,0,72" to="111,124,123"/>
+<map from="183,23,0" to="162,12,42"/>
+<map from="242,53,0" to="214,16,55"/>
+<map from="242,68,0" to="214,16,55"/>
+<map from="230,0,101" to="203,15,52"/>
+<map from="185,0,0" to="163,12,42"/>
+<map from="134,0,0" to="118,9,31"/>
+<map from="167,0,73" to="147,11,38"/>
+<map from="180,51,0" to="159,12,41"/>
+<map from="180,40,0" to="159,12,41"/>
+<map from="136,17,0" to="120,9,31"/>
+<map from="180,0,34" to="159,12,41"/>
+<map from="242,0,61" to="214,16,55"/>
+<map from="230,101,0" to="143,11,37"/>
+<map from="155,0,0" to="137,10,35"/>
+<map from="146,14,0" to="129,10,33"/>
+<map from="193,0,30" to="170,13,44"/>
+<map from="218,21,218" to="157,176,174"/>
+<map from="218,0,0" to="192,15,50"/>
+<map from="165,11,0" to="145,11,38"/>
+<map from="175,0,0" to="154,12,40"/>
+<map from="205,19,205" to="148,166,164"/>
+<map from="230,0,36" to="203,15,52"/>
+<map from="167,73,0" to="104,8,27"/>
+<map from="154,0,39" to="136,10,35"/>
+<map from="242,61,0" to="214,16,55"/>
+<map from="242,76,0" to="214,16,55"/>
+<map from="242,0,99" to="214,16,55"/>
+<map from="136,0,5" to="120,9,31"/>
+<map from="230,72,0" to="203,15,52"/>
+<map from="230,94,0" to="143,11,37"/>
+<map from="167,68,0" to="104,8,27"/>
+<map from="167,52,0" to="147,11,38"/>
+<map from="183,0,6" to="162,12,42"/>
+<map from="180,0,73" to="159,12,41"/>
+<map from="180,56,0" to="159,12,41"/>
+<map from="180,45,0" to="159,12,41"/>
+<map from="230,0,58" to="203,15,52"/>
+<map from="205,0,96" to="148,166,164"/>
+<map from="193,0,79" to="170,13,44"/>
+<map from="193,30,0" to="170,13,44"/>
+<map from="193,54,0" to="170,13,44"/>
+<map from="193,42,0" to="170,13,44"/>
+<map from="146,18,0" to="129,10,33"/>
+<map from="193,0,36" to="170,13,44"/>
+<map from="218,0,34" to="192,15,50"/>
+<map from="165,16,0" to="145,11,38"/>
+<map from="218,48,0" to="192,15,50"/>
+<map from="218,62,0" to="192,15,50"/>
+<map from="218,34,0" to="192,15,50"/>
+<map from="218,0,89" to="192,15,50"/>
+<map from="218,89,0" to="136,10,35"/>
+<map from="205,0,32" to="181,14,47"/>
+<map from="230,0,43" to="203,15,52"/>
+<map from="230,51,0" to="203,15,52"/>
+<map from="230,36,0" to="203,15,52"/>
+<map from="230,0,94" to="203,15,52"/>
+<map from="180,23,0" to="130,145,144"/>
+<map from="167,0,42" to="147,11,38"/>
+<map from="242,46,0" to="214,16,55"/>
+<map from="242,99,0" to="151,11,39"/>
+<map from="167,0,79" to="121,135,134"/>
+<map from="230,43,0" to="203,15,52"/>
+<map from="98,0,3" to="86,7,22"/>
+<map from="167,31,0" to="147,11,38"/>
+<map from="255,32,0" to="184,206,204"/>
+<map from="180,73,0" to="112,8,29"/>
+<map from="180,34,0" to="159,12,41"/>
+<map from="205,0,51" to="181,14,47"/>
+<map from="193,79,0" to="120,9,31"/>
+<map from="193,36,0" to="170,13,44"/>
+<map from="193,61,0" to="170,13,44"/>
+<map from="193,48,0" to="170,13,44"/>
+<map from="218,0,41" to="192,15,50"/>
+<map from="165,20,0" to="145,11,38"/>
+<map from="218,55,0" to="192,15,50"/>
+<map from="218,68,0" to="192,15,50"/>
+<map from="218,41,0" to="192,15,50"/>
+<map from="205,0,39" to="181,14,47"/>
+<map from="230,58,0" to="203,15,52"/>
+<map from="180,0,45" to="159,12,41"/>
+<map from="180,79,0" to="112,8,29"/>
+<map from="180,0,85" to="130,145,144"/>
+<map from="146,0,5" to="129,10,33"/>
+<map from="116,0,4" to="103,8,26"/>
+<map from="242,106,0" to="151,11,39"/>
+<map from="230,0,51" to="203,15,52"/>
+<map from="167,0,37" to="147,11,38"/>
+<map from="218,24,218" to="157,176,174"/>
+<map from="193,85,0" to="120,9,31"/>
+<map from="193,0,48" to="170,13,44"/>
+<map from="193,0,91" to="139,156,154"/>
+<map from="230,29,0" to="166,186,184"/>
+<map from="180,20,180" to="130,145,144"/>
+<map from="193,24,0" to="139,156,154"/>
+<map from="180,0,40" to="159,12,41"/>
+<map from="205,26,0" to="148,166,164"/>
+<map from="165,0,5" to="145,11,38"/>
+<map from="110,0,4" to="97,8,25"/>
+<map from="230,0,108" to="166,186,184"/>
+<map from="218,0,103" to="157,176,174"/>
+<map from="242,0,53" to="214,16,55"/>
+<map from="242,0,114" to="175,195,194"/>
+<map from="193,0,42" to="170,13,44"/>
+<map from="218,27,0" to="157,176,174"/>
+<map from="218,0,55" to="192,15,50"/>
+<map from="218,96,0" to="136,10,35"/>
+<map from="218,0,48" to="192,15,50"/>
+<map from="255,0,64" to="225,17,58"/>
+<map from="242,38,0" to="214,16,55"/>
+<map from="180,28,0" to="159,12,41"/>
+<map from="136,0,0" to="120,9,31"/>
+</spriteType>
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-0}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EF81機関車(81号機お召し塗装) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-81-omesi}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<spriteType name="colorMapped">
+<map from="218,103,0" to="144,89,84"/>
+<map from="255,120,0" to="169,104,98"/>
+<map from="242,114,0" to="160,99,93"/>
+<map from="230,108,0" to="152,94,88"/>
+<map from="242,0,8" to="160,99,93"/>
+<map from="230,0,115" to="152,94,88"/>
+<map from="242,0,121" to="160,99,93"/>
+<map from="154,0,5" to="102,63,59"/>
+<map from="230,0,7" to="152,94,88"/>
+<map from="167,0,5" to="111,68,64"/>
+<map from="218,0,109" to="144,89,84"/>
+<map from="255,0,8" to="169,104,98"/>
+<map from="242,27,242" to="175,195,194"/>
+<map from="154,17,154" to="111,124,123"/>
+<map from="180,0,6" to="119,73,69"/>
+<map from="255,0,128" to="169,104,98"/>
+<map from="242,0,38" to="160,99,93"/>
+<map from="154,0,24" to="102,63,59"/>
+<map from="193,0,6" to="128,79,74"/>
+<map from="255,24,255" to="184,206,204"/>
+<map from="174,11,0" to="115,71,67"/>
+<map from="185,0,6" to="122,76,71"/>
+<map from="134,0,4" to="89,55,51"/>
+<map from="126,8,0" to="84,51,48"/>
+<map from="0,180,68" to="130,145,144"/>
+<map from="167,16,167" to="121,135,134"/>
+<map from="218,0,7" to="144,89,84"/>
+<map from="205,0,6" to="136,84,79"/>
+<map from="255,0,40" to="169,104,98"/>
+<map from="242,0,0" to="160,99,93"/>
+<map from="183,11,0" to="121,75,70"/>
+<map from="195,0,6" to="129,80,75"/>
+<map from="242,0,46" to="160,99,93"/>
+<map from="174,17,0" to="115,71,67"/>
+<map from="126,12,0" to="84,51,48"/>
+<map from="154,0,29" to="102,63,59"/>
+<map from="145,0,5" to="96,59,55"/>
+<map from="136,8,0" to="90,55,52"/>
+<map from="180,0,0" to="119,73,69"/>
+<map from="167,0,26" to="111,68,64"/>
+<map from="174,0,5" to="115,71,67"/>
+<map from="126,0,4" to="84,51,48"/>
+<map from="255,0,48" to="169,104,98"/>
+<map from="183,17,0" to="121,75,70"/>
+<map from="195,0,0" to="129,80,75"/>
+<map from="174,22,0" to="115,71,67"/>
+<map from="230,65,0" to="166,186,184"/>
+<map from="167,47,0" to="121,135,134"/>
+<map from="126,16,0" to="84,51,48"/>
+<map from="145,0,0" to="96,59,55"/>
+<map from="136,13,0" to="90,55,52"/>
+<map from="180,0,28" to="119,73,69"/>
+<map from="167,0,31" to="111,68,64"/>
+<map from="242,30,0" to="175,195,194"/>
+<map from="155,0,5" to="103,64,59"/>
+<map from="146,9,0" to="97,60,56"/>
+<map from="193,0,0" to="128,79,74"/>
+<map from="193,18,193" to="139,156,154"/>
+<map from="180,17,180" to="130,145,144"/>
+<map from="175,0,6" to="116,72,68"/>
+<map from="242,23,242" to="175,195,194"/>
+<map from="230,22,230" to="166,186,184"/>
+<map from="230,0,0" to="152,94,88"/>
+<map from="154,0,72" to="111,124,123"/>
+<map from="183,23,0" to="121,75,70"/>
+<map from="242,53,0" to="175,195,194"/>
+<map from="242,68,0" to="175,195,194"/>
+<map from="230,0,101" to="166,186,184"/>
+<map from="185,0,0" to="122,76,71"/>
+<map from="134,0,0" to="89,55,51"/>
+<map from="167,0,73" to="121,135,134"/>
+<map from="180,51,0" to="130,145,144"/>
+<map from="180,40,0" to="130,145,144"/>
+<map from="136,17,0" to="90,55,52"/>
+<map from="180,0,34" to="119,73,69"/>
+<map from="242,0,61" to="160,99,93"/>
+<map from="230,101,0" to="107,66,62"/>
+<map from="155,0,0" to="103,64,59"/>
+<map from="146,14,0" to="97,60,56"/>
+<map from="193,0,30" to="128,79,74"/>
+<map from="218,21,218" to="157,176,174"/>
+<map from="218,0,0" to="144,89,84"/>
+<map from="165,11,0" to="109,67,64"/>
+<map from="175,0,0" to="116,72,68"/>
+<map from="205,19,205" to="148,166,164"/>
+<map from="230,0,36" to="152,94,88"/>
+<map from="167,73,0" to="78,48,45"/>
+<map from="154,0,39" to="102,63,59"/>
+<map from="242,61,0" to="160,99,93"/>
+<map from="242,76,0" to="160,99,93"/>
+<map from="242,0,99" to="175,195,194"/>
+<map from="136,0,5" to="90,55,52"/>
+<map from="230,72,0" to="152,94,88"/>
+<map from="230,94,0" to="117,131,130"/>
+<map from="167,68,0" to="85,95,94"/>
+<map from="167,52,0" to="111,68,64"/>
+<map from="183,0,6" to="121,75,70"/>
+<map from="180,0,73" to="130,145,144"/>
+<map from="180,56,0" to="119,73,69"/>
+<map from="180,45,0" to="119,73,69"/>
+<map from="230,0,58" to="152,94,88"/>
+<map from="205,0,96" to="148,166,164"/>
+<map from="193,0,79" to="139,156,154"/>
+<map from="193,30,0" to="139,156,154"/>
+<map from="193,54,0" to="139,156,154"/>
+<map from="193,42,0" to="139,156,154"/>
+<map from="146,18,0" to="97,60,56"/>
+<map from="193,0,36" to="128,79,74"/>
+<map from="218,0,34" to="144,89,84"/>
+<map from="165,16,0" to="109,67,64"/>
+<map from="218,48,0" to="157,176,174"/>
+<map from="218,62,0" to="157,176,174"/>
+<map from="218,34,0" to="157,176,174"/>
+<map from="218,0,89" to="157,176,174"/>
+<map from="218,89,0" to="111,124,123"/>
+<map from="205,0,32" to="136,84,79"/>
+<map from="230,0,43" to="152,94,88"/>
+<map from="230,51,0" to="166,186,184"/>
+<map from="230,36,0" to="166,186,184"/>
+<map from="230,0,94" to="166,186,184"/>
+<map from="180,23,0" to="130,145,144"/>
+<map from="167,0,42" to="111,68,64"/>
+<map from="242,46,0" to="160,99,93"/>
+<map from="242,99,0" to="123,138,137"/>
+<map from="167,0,79" to="121,135,134"/>
+<map from="230,43,0" to="152,94,88"/>
+<map from="98,0,3" to="65,40,37"/>
+<map from="167,31,0" to="111,68,64"/>
+<map from="255,32,0" to="184,206,204"/>
+<map from="180,73,0" to="92,102,102"/>
+<map from="180,34,0" to="119,73,69"/>
+<map from="205,0,51" to="136,84,79"/>
+<map from="193,79,0" to="98,110,109"/>
+<map from="193,36,0" to="128,79,74"/>
+<map from="193,61,0" to="128,79,74"/>
+<map from="193,48,0" to="128,79,74"/>
+<map from="218,0,41" to="144,89,84"/>
+<map from="165,20,0" to="109,67,64"/>
+<map from="218,55,0" to="144,89,84"/>
+<map from="218,68,0" to="144,89,84"/>
+<map from="218,41,0" to="144,89,84"/>
+<map from="205,0,39" to="136,84,79"/>
+<map from="230,58,0" to="152,94,88"/>
+<map from="180,0,45" to="119,73,69"/>
+<map from="180,79,0" to="84,52,49"/>
+<map from="180,0,85" to="130,145,144"/>
+<map from="146,0,5" to="97,60,56"/>
+<map from="116,0,4" to="77,48,45"/>
+<map from="242,106,0" to="113,69,65"/>
+<map from="230,0,51" to="152,94,88"/>
+<map from="167,0,37" to="111,68,64"/>
+<map from="218,24,218" to="157,176,174"/>
+<map from="193,85,0" to="90,55,52"/>
+<map from="193,0,48" to="128,79,74"/>
+<map from="193,0,91" to="139,156,154"/>
+<map from="230,29,0" to="166,186,184"/>
+<map from="180,20,180" to="130,145,144"/>
+<map from="193,24,0" to="139,156,154"/>
+<map from="180,0,40" to="119,73,69"/>
+<map from="205,26,0" to="148,166,164"/>
+<map from="165,0,5" to="109,67,64"/>
+<map from="110,0,4" to="73,45,42"/>
+<map from="230,0,108" to="166,186,184"/>
+<map from="218,0,103" to="157,176,174"/>
+<map from="242,0,53" to="160,99,93"/>
+<map from="242,0,114" to="175,195,194"/>
+<map from="193,0,42" to="128,79,74"/>
+<map from="218,27,0" to="157,176,174"/>
+<map from="218,0,55" to="144,89,84"/>
+<map from="218,96,0" to="102,62,59"/>
+<map from="218,0,48" to="144,89,84"/>
+<map from="255,0,64" to="169,104,98"/>
+<map from="242,38,0" to="175,195,194"/>
+<map from="180,28,0" to="130,145,144"/>
+<map from="136,0,0" to="90,55,52"/>
+</spriteType>
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-0}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EF81機関車(300番台ステンレス無塗装) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-300s}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<spriteType name="colorMapped">
+<map from="218,103,0" to="176,185,186"/>
+<map from="255,120,0" to="206,216,218"/>
+<map from="242,114,0" to="195,205,207"/>
+<map from="230,108,0" to="186,195,197"/>
+<map from="242,0,8" to="195,205,207"/>
+<map from="230,0,115" to="186,195,197"/>
+<map from="242,0,121" to="195,205,207"/>
+<map from="154,0,5" to="124,130,132"/>
+<map from="230,0,7" to="186,195,197"/>
+<map from="167,0,5" to="135,141,143"/>
+<map from="218,0,109" to="176,185,186"/>
+<map from="255,0,8" to="206,216,218"/>
+<map from="242,27,242" to="195,205,207"/>
+<map from="154,17,154" to="124,130,132"/>
+<map from="180,0,6" to="145,152,154"/>
+<map from="255,0,128" to="206,216,218"/>
+<map from="242,0,38" to="216,222,223"/>
+<map from="154,0,24" to="138,141,142"/>
+<map from="193,0,6" to="156,163,165"/>
+<map from="255,24,255" to="206,216,218"/>
+<map from="174,11,0" to="141,148,149"/>
+<map from="185,0,6" to="150,157,158"/>
+<map from="134,0,4" to="109,113,115"/>
+<map from="126,8,0" to="102,107,108"/>
+<map from="0,180,68" to="145,152,154"/>
+<map from="167,16,167" to="135,141,143"/>
+<map from="218,0,7" to="176,185,186"/>
+<map from="205,0,6" to="166,174,175"/>
+<map from="255,0,40" to="228,234,235"/>
+<map from="242,0,0" to="195,205,207"/>
+<map from="183,11,0" to="148,155,157"/>
+<map from="195,0,6" to="157,165,166"/>
+<map from="242,0,46" to="166,175,177"/>
+<map from="174,17,0" to="141,148,149"/>
+<map from="126,12,0" to="102,107,108"/>
+<map from="154,0,29" to="106,111,112"/>
+<map from="145,0,5" to="117,122,124"/>
+<map from="136,8,0" to="110,115,117"/>
+<map from="180,0,0" to="145,152,154"/>
+<map from="167,0,26" to="149,153,154"/>
+<map from="174,0,5" to="141,148,149"/>
+<map from="126,0,4" to="102,107,108"/>
+<map from="255,0,48" to="175,184,186"/>
+<map from="183,17,0" to="148,155,157"/>
+<map from="195,0,0" to="157,165,166"/>
+<map from="174,22,0" to="141,148,149"/>
+<map from="230,65,0" to="206,211,212"/>
+<map from="167,47,0" to="149,153,154"/>
+<map from="126,16,0" to="102,107,108"/>
+<map from="145,0,0" to="117,122,124"/>
+<map from="136,13,0" to="110,115,117"/>
+<map from="180,0,28" to="161,165,166"/>
+<map from="167,0,31" to="115,121,122"/>
+<map from="242,30,0" to="195,205,207"/>
+<map from="155,0,5" to="125,131,133"/>
+<map from="146,9,0" to="118,123,125"/>
+<map from="193,0,0" to="156,163,165"/>
+<map from="193,18,193" to="156,163,165"/>
+<map from="180,17,180" to="145,152,154"/>
+<map from="175,0,6" to="141,149,150"/>
+<map from="242,23,242" to="195,205,207"/>
+<map from="230,22,230" to="186,195,197"/>
+<map from="230,0,0" to="186,195,197"/>
+<map from="154,0,72" to="124,130,132"/>
+<map from="183,23,0" to="148,155,157"/>
+<map from="242,53,0" to="195,205,207"/>
+<map from="242,68,0" to="216,222,223"/>
+<map from="230,0,101" to="206,211,212"/>
+<map from="185,0,0" to="150,157,158"/>
+<map from="134,0,0" to="109,113,115"/>
+<map from="167,0,73" to="149,153,154"/>
+<map from="180,51,0" to="161,165,166"/>
+<map from="180,40,0" to="145,152,154"/>
+<map from="136,17,0" to="110,115,117"/>
+<map from="180,0,34" to="124,130,131"/>
+<map from="242,0,61" to="195,205,207"/>
+<map from="230,101,0" to="131,137,139"/>
+<map from="155,0,0" to="125,131,133"/>
+<map from="146,14,0" to="118,123,125"/>
+<map from="193,0,30" to="173,177,178"/>
+<map from="218,21,218" to="176,185,186"/>
+<map from="218,0,0" to="176,185,186"/>
+<map from="165,11,0" to="133,140,141"/>
+<map from="175,0,0" to="141,149,150"/>
+<map from="205,19,205" to="166,174,175"/>
+<map from="230,0,36" to="206,211,212"/>
+<map from="167,73,0" to="95,100,101"/>
+<map from="154,0,39" to="124,130,132"/>
+<map from="242,61,0" to="195,205,207"/>
+<map from="242,76,0" to="166,175,177"/>
+<map from="242,0,99" to="216,222,223"/>
+<map from="136,0,5" to="110,115,117"/>
+<map from="230,72,0" to="158,166,168"/>
+<map from="230,94,0" to="131,137,139"/>
+<map from="167,68,0" to="95,100,101"/>
+<map from="167,52,0" to="115,121,122"/>
+<map from="183,0,6" to="148,155,157"/>
+<map from="180,0,73" to="161,165,166"/>
+<map from="180,56,0" to="124,130,131"/>
+<map from="180,45,0" to="145,152,154"/>
+<map from="230,0,58" to="186,195,197"/>
+<map from="205,0,96" to="166,174,175"/>
+<map from="193,0,79" to="173,177,178"/>
+<map from="193,30,0" to="173,177,178"/>
+<map from="193,54,0" to="173,177,178"/>
+<map from="193,42,0" to="156,163,165"/>
+<map from="146,18,0" to="118,123,125"/>
+<map from="193,0,36" to="132,139,141"/>
+<map from="218,0,34" to="195,200,201"/>
+<map from="165,16,0" to="133,140,141"/>
+<map from="218,48,0" to="176,185,186"/>
+<map from="218,62,0" to="195,200,201"/>
+<map from="218,34,0" to="195,200,201"/>
+<map from="218,0,89" to="195,200,201"/>
+<map from="218,89,0" to="124,130,132"/>
+<map from="205,0,32" to="183,188,189"/>
+<map from="230,0,43" to="158,166,168"/>
+<map from="230,51,0" to="186,195,197"/>
+<map from="230,36,0" to="206,211,212"/>
+<map from="230,0,94" to="206,211,212"/>
+<map from="180,23,0" to="145,152,154"/>
+<map from="167,0,42" to="135,141,143"/>
+<map from="242,46,0" to="166,175,177"/>
+<map from="242,99,0" to="138,144,146"/>
+<map from="167,0,79" to="135,141,143"/>
+<map from="230,43,0" to="158,166,168"/>
+<map from="98,0,3" to="79,82,83"/>
+<map from="167,31,0" to="115,121,122"/>
+<map from="255,32,0" to="206,216,218"/>
+<map from="180,73,0" to="102,107,109"/>
+<map from="180,34,0" to="124,130,131"/>
+<map from="205,0,51" to="166,174,175"/>
+<map from="193,79,0" to="110,115,117"/>
+<map from="193,36,0" to="132,139,141"/>
+<map from="193,61,0" to="132,139,141"/>
+<map from="193,48,0" to="156,163,165"/>
+<map from="218,0,41" to="150,157,159"/>
+<map from="165,20,0" to="133,140,141"/>
+<map from="218,55,0" to="176,185,186"/>
+<map from="218,68,0" to="150,157,159"/>
+<map from="218,41,0" to="150,157,159"/>
+<map from="205,0,39" to="141,148,150"/>
+<map from="230,58,0" to="186,195,197"/>
+<map from="180,0,45" to="145,152,154"/>
+<map from="180,79,0" to="102,107,109"/>
+<map from="180,0,85" to="145,152,154"/>
+<map from="146,0,5" to="118,123,125"/>
+<map from="116,0,4" to="94,99,100"/>
+<map from="242,106,0" to="138,144,146"/>
+<map from="230,0,51" to="186,195,197"/>
+<map from="167,0,37" to="135,141,143"/>
+<map from="218,24,218" to="176,185,186"/>
+<map from="193,85,0" to="110,115,117"/>
+<map from="193,0,48" to="156,163,165"/>
+<map from="193,0,91" to="156,163,165"/>
+<map from="230,29,0" to="186,195,197"/>
+<map from="180,20,180" to="145,152,154"/>
+<map from="193,24,0" to="156,163,165"/>
+<map from="180,0,40" to="145,152,154"/>
+<map from="205,26,0" to="166,174,175"/>
+<map from="165,0,5" to="133,140,141"/>
+<map from="110,0,4" to="89,94,94"/>
+<map from="230,0,108" to="186,195,197"/>
+<map from="218,0,103" to="176,185,186"/>
+<map from="242,0,53" to="195,205,207"/>
+<map from="242,0,114" to="195,205,207"/>
+<map from="193,0,42" to="156,163,165"/>
+<map from="218,27,0" to="176,185,186"/>
+<map from="218,0,55" to="176,185,186"/>
+<map from="218,96,0" to="124,130,132"/>
+<map from="218,0,48" to="176,185,186"/>
+<map from="255,0,64" to="206,216,218"/>
+<map from="242,38,0" to="216,222,223"/>
+<map from="180,28,0" to="161,165,166"/>
+<map from="136,0,0" to="110,115,117"/>
+</spriteType>
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-0}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EF81機関車(304号機ステンレス無塗装更新車) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-304s-renew}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<spriteType name="colorMapped">
+<map from="218,103,0" to="176,185,186"/>
+<map from="255,120,0" to="206,216,218"/>
+<map from="242,114,0" to="195,205,207"/>
+<map from="230,108,0" to="186,195,197"/>
+<map from="242,0,8" to="195,205,207"/>
+<map from="230,0,115" to="186,195,197"/>
+<map from="242,0,121" to="195,205,207"/>
+<map from="154,0,5" to="124,130,132"/>
+<map from="230,0,7" to="186,195,197"/>
+<map from="167,0,5" to="135,141,143"/>
+<map from="218,0,109" to="176,185,186"/>
+<map from="255,0,8" to="206,216,218"/>
+<map from="242,27,242" to="65,172,233"/>
+<map from="154,17,154" to="42,109,148"/>
+<map from="180,0,6" to="145,152,154"/>
+<map from="255,0,128" to="206,216,218"/>
+<map from="242,0,38" to="216,222,223"/>
+<map from="154,0,24" to="138,141,142"/>
+<map from="193,0,6" to="156,163,165"/>
+<map from="255,24,255" to="69,181,245"/>
+<map from="174,11,0" to="141,148,149"/>
+<map from="185,0,6" to="150,157,158"/>
+<map from="134,0,4" to="109,113,115"/>
+<map from="126,8,0" to="102,107,108"/>
+<map from="0,180,68" to="49,128,173"/>
+<map from="167,16,167" to="45,119,160"/>
+<map from="218,0,7" to="176,185,186"/>
+<map from="205,0,6" to="166,174,175"/>
+<map from="255,0,40" to="228,234,235"/>
+<map from="242,0,0" to="195,205,207"/>
+<map from="183,11,0" to="148,155,157"/>
+<map from="195,0,6" to="157,165,166"/>
+<map from="242,0,46" to="166,175,177"/>
+<map from="174,17,0" to="141,148,149"/>
+<map from="126,12,0" to="102,107,108"/>
+<map from="154,0,29" to="106,111,112"/>
+<map from="145,0,5" to="117,122,124"/>
+<map from="136,8,0" to="110,115,117"/>
+<map from="180,0,0" to="145,152,154"/>
+<map from="167,0,26" to="149,153,154"/>
+<map from="174,0,5" to="141,148,149"/>
+<map from="126,0,4" to="102,107,108"/>
+<map from="255,0,48" to="175,184,186"/>
+<map from="183,17,0" to="148,155,157"/>
+<map from="195,0,0" to="157,165,166"/>
+<map from="174,22,0" to="141,148,149"/>
+<map from="230,65,0" to="206,211,212"/>
+<map from="167,47,0" to="149,153,154"/>
+<map from="126,16,0" to="102,107,108"/>
+<map from="145,0,0" to="117,122,124"/>
+<map from="136,13,0" to="110,115,117"/>
+<map from="180,0,28" to="161,165,166"/>
+<map from="167,0,31" to="115,121,122"/>
+<map from="242,30,0" to="65,172,233"/>
+<map from="155,0,5" to="125,131,133"/>
+<map from="146,9,0" to="118,123,125"/>
+<map from="193,0,0" to="156,163,165"/>
+<map from="193,18,193" to="52,137,185"/>
+<map from="180,17,180" to="49,128,173"/>
+<map from="175,0,6" to="141,149,150"/>
+<map from="242,23,242" to="65,172,233"/>
+<map from="230,22,230" to="62,163,221"/>
+<map from="230,0,0" to="186,195,197"/>
+<map from="154,0,72" to="42,109,148"/>
+<map from="183,23,0" to="148,155,157"/>
+<map from="242,53,0" to="195,205,207"/>
+<map from="242,68,0" to="216,222,223"/>
+<map from="230,0,101" to="206,211,212"/>
+<map from="185,0,0" to="150,157,158"/>
+<map from="134,0,0" to="109,113,115"/>
+<map from="167,0,73" to="149,153,154"/>
+<map from="180,51,0" to="161,165,166"/>
+<map from="180,40,0" to="145,152,154"/>
+<map from="136,17,0" to="110,115,117"/>
+<map from="180,0,34" to="124,130,131"/>
+<map from="242,0,61" to="195,205,207"/>
+<map from="230,101,0" to="131,137,139"/>
+<map from="155,0,0" to="125,131,133"/>
+<map from="146,14,0" to="118,123,125"/>
+<map from="193,0,30" to="173,177,178"/>
+<map from="218,21,218" to="59,155,209"/>
+<map from="218,0,0" to="176,185,186"/>
+<map from="165,11,0" to="133,140,141"/>
+<map from="175,0,0" to="141,149,150"/>
+<map from="205,19,205" to="55,146,197"/>
+<map from="230,0,36" to="206,211,212"/>
+<map from="167,73,0" to="95,100,101"/>
+<map from="154,0,39" to="124,130,132"/>
+<map from="242,61,0" to="195,205,207"/>
+<map from="242,76,0" to="166,175,177"/>
+<map from="242,0,99" to="216,222,223"/>
+<map from="136,0,5" to="110,115,117"/>
+<map from="230,72,0" to="158,166,168"/>
+<map from="230,94,0" to="131,137,139"/>
+<map from="167,68,0" to="95,100,101"/>
+<map from="167,52,0" to="115,121,122"/>
+<map from="183,0,6" to="148,155,157"/>
+<map from="180,0,73" to="161,165,166"/>
+<map from="180,56,0" to="124,130,131"/>
+<map from="180,45,0" to="145,152,154"/>
+<map from="230,0,58" to="186,195,197"/>
+<map from="205,0,96" to="55,146,197"/>
+<map from="193,0,79" to="173,177,178"/>
+<map from="193,30,0" to="173,177,178"/>
+<map from="193,54,0" to="173,177,178"/>
+<map from="193,42,0" to="156,163,165"/>
+<map from="146,18,0" to="118,123,125"/>
+<map from="193,0,36" to="132,139,141"/>
+<map from="218,0,34" to="195,200,201"/>
+<map from="165,16,0" to="133,140,141"/>
+<map from="218,48,0" to="176,185,186"/>
+<map from="218,62,0" to="195,200,201"/>
+<map from="218,34,0" to="195,200,201"/>
+<map from="218,0,89" to="195,200,201"/>
+<map from="218,89,0" to="124,130,132"/>
+<map from="205,0,32" to="183,188,189"/>
+<map from="230,0,43" to="158,166,168"/>
+<map from="230,51,0" to="186,195,197"/>
+<map from="230,36,0" to="206,211,212"/>
+<map from="230,0,94" to="206,211,212"/>
+<map from="180,23,0" to="49,128,173"/>
+<map from="167,0,42" to="135,141,143"/>
+<map from="242,46,0" to="166,175,177"/>
+<map from="242,99,0" to="138,144,146"/>
+<map from="167,0,79" to="45,119,160"/>
+<map from="230,43,0" to="158,166,168"/>
+<map from="98,0,3" to="79,82,83"/>
+<map from="167,31,0" to="115,121,122"/>
+<map from="255,32,0" to="69,181,245"/>
+<map from="180,73,0" to="102,107,109"/>
+<map from="180,34,0" to="124,130,131"/>
+<map from="205,0,51" to="166,174,175"/>
+<map from="193,79,0" to="110,115,117"/>
+<map from="193,36,0" to="132,139,141"/>
+<map from="193,61,0" to="132,139,141"/>
+<map from="193,48,0" to="156,163,165"/>
+<map from="218,0,41" to="150,157,159"/>
+<map from="165,20,0" to="133,140,141"/>
+<map from="218,55,0" to="176,185,186"/>
+<map from="218,68,0" to="150,157,159"/>
+<map from="218,41,0" to="150,157,159"/>
+<map from="205,0,39" to="141,148,150"/>
+<map from="230,58,0" to="186,195,197"/>
+<map from="180,0,45" to="145,152,154"/>
+<map from="180,79,0" to="102,107,109"/>
+<map from="180,0,85" to="49,128,173"/>
+<map from="146,0,5" to="118,123,125"/>
+<map from="116,0,4" to="94,99,100"/>
+<map from="242,106,0" to="138,144,146"/>
+<map from="230,0,51" to="186,195,197"/>
+<map from="167,0,37" to="135,141,143"/>
+<map from="218,24,218" to="59,155,209"/>
+<map from="193,85,0" to="110,115,117"/>
+<map from="193,0,48" to="156,163,165"/>
+<map from="193,0,91" to="52,137,185"/>
+<map from="230,29,0" to="62,163,221"/>
+<map from="180,20,180" to="49,128,173"/>
+<map from="193,24,0" to="52,137,185"/>
+<map from="180,0,40" to="145,152,154"/>
+<map from="205,26,0" to="55,146,197"/>
+<map from="165,0,5" to="133,140,141"/>
+<map from="110,0,4" to="89,94,94"/>
+<map from="230,0,108" to="62,163,221"/>
+<map from="218,0,103" to="59,155,209"/>
+<map from="242,0,53" to="195,205,207"/>
+<map from="242,0,114" to="65,172,233"/>
+<map from="193,0,42" to="156,163,165"/>
+<map from="218,27,0" to="59,155,209"/>
+<map from="218,0,55" to="176,185,186"/>
+<map from="218,96,0" to="124,130,132"/>
+<map from="218,0,48" to="176,185,186"/>
+<map from="255,0,64" to="206,216,218"/>
+<map from="242,38,0" to="216,222,223"/>
+<map from="180,28,0" to="161,165,166"/>
+<map from="136,0,0" to="110,115,117"/>
+</spriteType>
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-0}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EF81機関車(300番台ステンレス、ローズピンク塗装) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-300p}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<spriteType name="colorMapped">
+<map from="218,103,0" to="196,59,98"/>
+<map from="255,120,0" to="229,69,115"/>
+<map from="242,114,0" to="217,65,109"/>
+<map from="230,108,0" to="207,62,104"/>
+<map from="242,0,8" to="217,65,109"/>
+<map from="230,0,115" to="207,62,104"/>
+<map from="242,0,121" to="217,65,109"/>
+<map from="154,0,5" to="138,42,69"/>
+<map from="230,0,7" to="207,62,104"/>
+<map from="167,0,5" to="150,45,75"/>
+<map from="218,0,109" to="196,59,98"/>
+<map from="255,0,8" to="229,69,115"/>
+<map from="242,27,242" to="217,65,109"/>
+<map from="154,17,154" to="138,42,69"/>
+<map from="180,0,6" to="162,49,81"/>
+<map from="255,0,128" to="229,69,115"/>
+<map from="242,0,38" to="222,101,136"/>
+<map from="154,0,24" to="141,64,86"/>
+<map from="193,0,6" to="173,52,87"/>
+<map from="255,24,255" to="229,69,115"/>
+<map from="174,11,0" to="157,47,79"/>
+<map from="185,0,6" to="166,50,84"/>
+<map from="134,0,4" to="121,36,60"/>
+<map from="126,8,0" to="114,34,57"/>
+<map from="0,180,68" to="162,49,81"/>
+<map from="167,16,167" to="150,45,75"/>
+<map from="218,0,7" to="196,59,98"/>
+<map from="205,0,6" to="184,55,92"/>
+<map from="255,0,40" to="234,106,143"/>
+<map from="242,0,0" to="217,65,109"/>
+<map from="183,11,0" to="164,49,82"/>
+<map from="195,0,6" to="174,52,88"/>
+<map from="242,0,46" to="185,56,93"/>
+<map from="174,17,0" to="157,47,79"/>
+<map from="126,12,0" to="114,34,57"/>
+<map from="154,0,29" to="118,36,59"/>
+<map from="145,0,5" to="130,39,65"/>
+<map from="136,8,0" to="123,37,61"/>
+<map from="180,0,0" to="162,49,81"/>
+<map from="167,0,26" to="153,69,94"/>
+<map from="174,0,5" to="157,47,79"/>
+<map from="126,0,4" to="114,34,57"/>
+<map from="255,0,48" to="195,59,98"/>
+<map from="183,17,0" to="164,49,82"/>
+<map from="195,0,0" to="174,52,88"/>
+<map from="174,22,0" to="157,47,79"/>
+<map from="230,65,0" to="211,96,129"/>
+<map from="167,47,0" to="153,69,94"/>
+<map from="126,16,0" to="114,34,57"/>
+<map from="145,0,0" to="130,39,65"/>
+<map from="136,13,0" to="123,37,61"/>
+<map from="180,0,28" to="165,75,101"/>
+<map from="167,0,31" to="128,39,64"/>
+<map from="242,30,0" to="217,65,109"/>
+<map from="155,0,5" to="139,42,70"/>
+<map from="146,9,0" to="131,39,66"/>
+<map from="193,0,0" to="173,52,87"/>
+<map from="193,18,193" to="173,52,87"/>
+<map from="180,17,180" to="162,49,81"/>
+<map from="175,0,6" to="158,47,79"/>
+<map from="242,23,242" to="217,65,109"/>
+<map from="230,22,230" to="207,62,104"/>
+<map from="230,0,0" to="207,62,104"/>
+<map from="154,0,72" to="138,42,69"/>
+<map from="183,23,0" to="164,49,82"/>
+<map from="242,53,0" to="217,65,109"/>
+<map from="242,68,0" to="222,101,136"/>
+<map from="230,0,101" to="211,96,129"/>
+<map from="185,0,0" to="166,50,84"/>
+<map from="134,0,0" to="121,36,60"/>
+<map from="167,0,73" to="153,69,94"/>
+<map from="180,51,0" to="165,75,101"/>
+<map from="180,40,0" to="162,49,81"/>
+<map from="136,17,0" to="123,37,61"/>
+<map from="180,0,34" to="138,42,69"/>
+<map from="242,0,61" to="217,65,109"/>
+<map from="230,101,0" to="146,44,73"/>
+<map from="155,0,0" to="139,42,70"/>
+<map from="146,14,0" to="131,39,66"/>
+<map from="193,0,30" to="177,80,108"/>
+<map from="218,21,218" to="196,59,98"/>
+<map from="218,0,0" to="196,59,98"/>
+<map from="165,11,0" to="148,45,74"/>
+<map from="175,0,0" to="158,47,79"/>
+<map from="205,19,205" to="184,55,92"/>
+<map from="230,0,36" to="211,96,129"/>
+<map from="167,73,0" to="106,32,53"/>
+<map from="154,0,39" to="138,42,69"/>
+<map from="242,61,0" to="217,65,109"/>
+<map from="242,76,0" to="185,56,93"/>
+<map from="242,0,99" to="222,101,136"/>
+<map from="136,0,5" to="123,37,61"/>
+<map from="230,72,0" to="176,53,88"/>
+<map from="230,94,0" to="146,44,73"/>
+<map from="167,68,0" to="106,32,53"/>
+<map from="167,52,0" to="128,39,64"/>
+<map from="183,0,6" to="164,49,82"/>
+<map from="180,0,73" to="165,75,101"/>
+<map from="180,56,0" to="138,42,69"/>
+<map from="180,45,0" to="162,49,81"/>
+<map from="230,0,58" to="207,62,104"/>
+<map from="205,0,96" to="184,55,92"/>
+<map from="193,0,79" to="177,80,108"/>
+<map from="193,30,0" to="177,80,108"/>
+<map from="193,54,0" to="177,80,108"/>
+<map from="193,42,0" to="173,52,87"/>
+<map from="146,18,0" to="131,39,66"/>
+<map from="193,0,36" to="148,45,74"/>
+<map from="218,0,34" to="200,91,122"/>
+<map from="165,16,0" to="148,45,74"/>
+<map from="218,48,0" to="196,59,98"/>
+<map from="218,62,0" to="200,91,122"/>
+<map from="218,34,0" to="200,91,122"/>
+<map from="218,0,89" to="200,91,122"/>
+<map from="218,89,0" to="138,42,69"/>
+<map from="205,0,32" to="188,85,115"/>
+<map from="230,0,43" to="176,53,88"/>
+<map from="230,51,0" to="207,62,104"/>
+<map from="230,36,0" to="211,96,129"/>
+<map from="230,0,94" to="211,96,129"/>
+<map from="180,23,0" to="162,49,81"/>
+<map from="167,0,42" to="150,45,75"/>
+<map from="242,46,0" to="185,56,93"/>
+<map from="242,99,0" to="154,47,77"/>
+<map from="167,0,79" to="150,45,75"/>
+<map from="230,43,0" to="176,53,88"/>
+<map from="98,0,3" to="88,26,44"/>
+<map from="167,31,0" to="128,39,64"/>
+<map from="255,32,0" to="229,69,115"/>
+<map from="180,73,0" to="114,35,57"/>
+<map from="180,34,0" to="138,42,69"/>
+<map from="205,0,51" to="184,55,92"/>
+<map from="193,79,0" to="123,37,61"/>
+<map from="193,36,0" to="148,45,74"/>
+<map from="193,61,0" to="148,45,74"/>
+<map from="193,48,0" to="173,52,87"/>
+<map from="218,0,41" to="167,50,84"/>
+<map from="165,20,0" to="148,45,74"/>
+<map from="218,55,0" to="196,59,98"/>
+<map from="218,68,0" to="167,50,84"/>
+<map from="218,41,0" to="167,50,84"/>
+<map from="205,0,39" to="157,47,79"/>
+<map from="230,58,0" to="207,62,104"/>
+<map from="180,0,45" to="162,49,81"/>
+<map from="180,79,0" to="114,35,57"/>
+<map from="180,0,85" to="162,49,81"/>
+<map from="146,0,5" to="131,39,66"/>
+<map from="116,0,4" to="105,31,53"/>
+<map from="242,106,0" to="154,47,77"/>
+<map from="230,0,51" to="207,62,104"/>
+<map from="167,0,37" to="150,45,75"/>
+<map from="218,24,218" to="196,59,98"/>
+<map from="193,85,0" to="123,37,61"/>
+<map from="193,0,48" to="173,52,87"/>
+<map from="193,0,91" to="173,52,87"/>
+<map from="230,29,0" to="207,62,104"/>
+<map from="180,20,180" to="162,49,81"/>
+<map from="193,24,0" to="173,52,87"/>
+<map from="180,0,40" to="162,49,81"/>
+<map from="205,26,0" to="184,55,92"/>
+<map from="165,0,5" to="148,45,74"/>
+<map from="110,0,4" to="99,30,50"/>
+<map from="230,0,108" to="207,62,104"/>
+<map from="218,0,103" to="196,59,98"/>
+<map from="242,0,53" to="217,65,109"/>
+<map from="242,0,114" to="217,65,109"/>
+<map from="193,0,42" to="173,52,87"/>
+<map from="218,27,0" to="196,59,98"/>
+<map from="218,0,55" to="196,59,98"/>
+<map from="218,96,0" to="138,42,69"/>
+<map from="218,0,48" to="196,59,98"/>
+<map from="255,0,64" to="229,69,115"/>
+<map from="242,38,0" to="222,101,136"/>
+<map from="180,28,0" to="165,75,101"/>
+<map from="136,0,0" to="123,37,61"/>
+</spriteType>
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-0}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EF81機関車(301号機ステンレス、ローズピンク塗装更新車) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-301p-renew}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<spriteType name="colorMapped">
+<map from="218,103,0" to="196,59,98"/>
+<map from="255,120,0" to="229,69,115"/>
+<map from="242,114,0" to="217,65,109"/>
+<map from="230,108,0" to="207,62,104"/>
+<map from="242,0,8" to="217,65,109"/>
+<map from="230,0,115" to="207,62,104"/>
+<map from="242,0,121" to="217,65,109"/>
+<map from="154,0,5" to="138,42,69"/>
+<map from="230,0,7" to="207,62,104"/>
+<map from="167,0,5" to="150,45,75"/>
+<map from="218,0,109" to="196,59,98"/>
+<map from="255,0,8" to="229,69,115"/>
+<map from="242,27,242" to="217,65,109"/>
+<map from="154,17,154" to="138,42,69"/>
+<map from="180,0,6" to="162,49,81"/>
+<map from="255,0,128" to="229,69,115"/>
+<map from="242,0,38" to="222,101,136"/>
+<map from="154,0,24" to="141,64,86"/>
+<map from="193,0,6" to="173,52,87"/>
+<map from="255,24,255" to="229,69,115"/>
+<map from="174,11,0" to="141,148,149"/>
+<map from="185,0,6" to="166,50,84"/>
+<map from="134,0,4" to="121,36,60"/>
+<map from="126,8,0" to="102,107,108"/>
+<map from="0,180,68" to="162,49,81"/>
+<map from="167,16,167" to="150,45,75"/>
+<map from="218,0,7" to="196,59,98"/>
+<map from="205,0,6" to="184,55,92"/>
+<map from="255,0,40" to="234,106,143"/>
+<map from="242,0,0" to="217,65,109"/>
+<map from="183,11,0" to="148,155,157"/>
+<map from="195,0,6" to="174,52,88"/>
+<map from="242,0,46" to="185,56,93"/>
+<map from="174,17,0" to="141,148,149"/>
+<map from="126,12,0" to="102,107,108"/>
+<map from="154,0,29" to="118,36,59"/>
+<map from="145,0,5" to="130,39,65"/>
+<map from="136,8,0" to="110,115,117"/>
+<map from="180,0,0" to="162,49,81"/>
+<map from="167,0,26" to="153,69,94"/>
+<map from="174,0,5" to="157,47,79"/>
+<map from="126,0,4" to="114,34,57"/>
+<map from="255,0,48" to="195,59,98"/>
+<map from="183,17,0" to="148,155,157"/>
+<map from="195,0,0" to="174,52,88"/>
+<map from="174,22,0" to="157,47,79"/>
+<map from="230,65,0" to="211,96,129"/>
+<map from="167,47,0" to="153,69,94"/>
+<map from="126,16,0" to="114,34,57"/>
+<map from="145,0,0" to="130,39,65"/>
+<map from="136,13,0" to="110,115,117"/>
+<map from="180,0,28" to="165,75,101"/>
+<map from="167,0,31" to="128,39,64"/>
+<map from="242,30,0" to="217,65,109"/>
+<map from="155,0,5" to="139,42,70"/>
+<map from="146,9,0" to="118,123,125"/>
+<map from="193,0,0" to="173,52,87"/>
+<map from="193,18,193" to="173,52,87"/>
+<map from="180,17,180" to="162,49,81"/>
+<map from="175,0,6" to="158,47,79"/>
+<map from="242,23,242" to="217,65,109"/>
+<map from="230,22,230" to="207,62,104"/>
+<map from="230,0,0" to="207,62,104"/>
+<map from="154,0,72" to="138,42,69"/>
+<map from="183,23,0" to="164,49,82"/>
+<map from="242,53,0" to="217,65,109"/>
+<map from="242,68,0" to="222,101,136"/>
+<map from="230,0,101" to="208,208,208"/>
+<map from="185,0,0" to="166,50,84"/>
+<map from="134,0,0" to="121,36,60"/>
+<map from="167,0,73" to="151,151,151"/>
+<map from="180,51,0" to="165,75,101"/>
+<map from="180,40,0" to="162,49,81"/>
+<map from="136,17,0" to="123,37,61"/>
+<map from="180,0,34" to="138,42,69"/>
+<map from="242,0,61" to="217,65,109"/>
+<map from="230,101,0" to="146,44,73"/>
+<map from="155,0,0" to="139,42,70"/>
+<map from="146,14,0" to="118,123,125"/>
+<map from="193,0,30" to="177,80,108"/>
+<map from="218,21,218" to="196,59,98"/>
+<map from="218,0,0" to="196,59,98"/>
+<map from="165,11,0" to="133,140,141"/>
+<map from="175,0,0" to="158,47,79"/>
+<map from="205,19,205" to="184,55,92"/>
+<map from="230,0,36" to="211,96,129"/>
+<map from="167,73,0" to="106,32,53"/>
+<map from="154,0,39" to="138,42,69"/>
+<map from="242,61,0" to="217,65,109"/>
+<map from="242,76,0" to="185,56,93"/>
+<map from="242,0,99" to="219,219,219"/>
+<map from="136,0,5" to="123,37,61"/>
+<map from="230,72,0" to="176,53,88"/>
+<map from="230,94,0" to="146,44,73"/>
+<map from="167,68,0" to="106,32,53"/>
+<map from="167,52,0" to="128,39,64"/>
+<map from="183,0,6" to="164,49,82"/>
+<map from="180,0,73" to="163,163,163"/>
+<map from="180,56,0" to="138,42,69"/>
+<map from="180,45,0" to="162,49,81"/>
+<map from="230,0,58" to="207,62,104"/>
+<map from="205,0,96" to="184,55,92"/>
+<map from="193,0,79" to="175,175,175"/>
+<map from="193,30,0" to="177,80,108"/>
+<map from="193,54,0" to="177,80,108"/>
+<map from="193,42,0" to="173,52,87"/>
+<map from="146,18,0" to="131,39,66"/>
+<map from="193,0,36" to="148,45,74"/>
+<map from="218,0,34" to="200,91,122"/>
+<map from="165,16,0" to="133,140,141"/>
+<map from="218,48,0" to="196,59,98"/>
+<map from="218,62,0" to="200,91,122"/>
+<map from="218,34,0" to="200,91,122"/>
+<map from="218,0,89" to="197,197,197"/>
+<map from="218,89,0" to="138,42,69"/>
+<map from="205,0,32" to="188,85,115"/>
+<map from="230,0,43" to="176,53,88"/>
+<map from="230,51,0" to="207,62,104"/>
+<map from="230,36,0" to="211,96,129"/>
+<map from="230,0,94" to="208,208,208"/>
+<map from="180,23,0" to="162,49,81"/>
+<map from="167,0,42" to="150,45,75"/>
+<map from="242,46,0" to="185,56,93"/>
+<map from="242,99,0" to="154,47,77"/>
+<map from="167,0,79" to="150,45,75"/>
+<map from="230,43,0" to="176,53,88"/>
+<map from="98,0,3" to="88,26,44"/>
+<map from="167,31,0" to="128,39,64"/>
+<map from="255,32,0" to="229,69,115"/>
+<map from="180,73,0" to="114,35,57"/>
+<map from="180,34,0" to="138,42,69"/>
+<map from="205,0,51" to="184,55,92"/>
+<map from="193,79,0" to="123,37,61"/>
+<map from="193,36,0" to="148,45,74"/>
+<map from="193,61,0" to="148,45,74"/>
+<map from="193,48,0" to="173,52,87"/>
+<map from="218,0,41" to="167,50,84"/>
+<map from="165,20,0" to="148,45,74"/>
+<map from="218,55,0" to="196,59,98"/>
+<map from="218,68,0" to="167,50,84"/>
+<map from="218,41,0" to="167,50,84"/>
+<map from="205,0,39" to="157,47,79"/>
+<map from="230,58,0" to="207,62,104"/>
+<map from="180,0,45" to="162,49,81"/>
+<map from="180,79,0" to="114,35,57"/>
+<map from="180,0,85" to="162,49,81"/>
+<map from="146,0,5" to="131,39,66"/>
+<map from="116,0,4" to="105,31,53"/>
+<map from="242,106,0" to="154,47,77"/>
+<map from="230,0,51" to="207,62,104"/>
+<map from="167,0,37" to="150,45,75"/>
+<map from="218,24,218" to="196,59,98"/>
+<map from="193,85,0" to="123,37,61"/>
+<map from="193,0,48" to="173,52,87"/>
+<map from="193,0,91" to="173,52,87"/>
+<map from="230,29,0" to="207,62,104"/>
+<map from="180,20,180" to="162,49,81"/>
+<map from="193,24,0" to="173,52,87"/>
+<map from="180,0,40" to="162,49,81"/>
+<map from="205,26,0" to="184,55,92"/>
+<map from="165,0,5" to="148,45,74"/>
+<map from="110,0,4" to="99,30,50"/>
+<map from="230,0,108" to="207,62,104"/>
+<map from="218,0,103" to="196,59,98"/>
+<map from="242,0,53" to="217,65,109"/>
+<map from="242,0,114" to="217,65,109"/>
+<map from="193,0,42" to="173,52,87"/>
+<map from="218,27,0" to="196,59,98"/>
+<map from="218,0,55" to="196,59,98"/>
+<map from="218,96,0" to="138,42,69"/>
+<map from="218,0,48" to="196,59,98"/>
+<map from="255,0,64" to="229,69,115"/>
+<map from="242,38,0" to="222,101,136"/>
+<map from="180,28,0" to="165,75,101"/>
+<map from="136,0,0" to="123,37,61"/>
+</spriteType>
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-0}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EF81機関車(400番台更新車) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-400-renew}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<spriteType name="colorMapped">
+<map from="218,103,0" to="196,59,98"/>
+<map from="255,120,0" to="229,69,115"/>
+<map from="242,114,0" to="217,65,109"/>
+<map from="230,108,0" to="207,62,104"/>
+<map from="242,0,8" to="217,65,109"/>
+<map from="230,0,115" to="207,62,104"/>
+<map from="242,0,121" to="217,65,109"/>
+<map from="154,0,5" to="138,42,69"/>
+<map from="230,0,7" to="207,62,104"/>
+<map from="167,0,5" to="150,45,75"/>
+<map from="218,0,109" to="196,59,98"/>
+<map from="255,0,8" to="229,69,115"/>
+<map from="242,27,242" to="175,195,194"/>
+<map from="154,17,154" to="111,124,123"/>
+<map from="180,0,6" to="162,49,81"/>
+<map from="255,0,128" to="229,69,115"/>
+<map from="242,0,38" to="217,65,109"/>
+<map from="154,0,24" to="138,42,69"/>
+<map from="193,0,6" to="173,52,87"/>
+<map from="255,24,255" to="184,206,204"/>
+<map from="174,11,0" to="141,148,149"/>
+<map from="185,0,6" to="166,50,84"/>
+<map from="134,0,4" to="121,36,60"/>
+<map from="126,8,0" to="102,107,108"/>
+<map from="0,180,68" to="130,145,144"/>
+<map from="167,16,167" to="121,135,134"/>
+<map from="218,0,7" to="196,59,98"/>
+<map from="205,0,6" to="184,55,92"/>
+<map from="255,0,40" to="229,69,115"/>
+<map from="242,0,0" to="217,65,109"/>
+<map from="183,11,0" to="148,155,157"/>
+<map from="195,0,6" to="174,52,88"/>
+<map from="242,0,46" to="217,65,109"/>
+<map from="174,17,0" to="141,148,149"/>
+<map from="126,12,0" to="102,107,108"/>
+<map from="154,0,29" to="138,42,69"/>
+<map from="145,0,5" to="130,39,65"/>
+<map from="136,8,0" to="110,115,117"/>
+<map from="180,0,0" to="162,49,81"/>
+<map from="167,0,26" to="150,45,75"/>
+<map from="174,0,5" to="157,47,79"/>
+<map from="126,0,4" to="114,34,57"/>
+<map from="255,0,48" to="229,69,115"/>
+<map from="183,17,0" to="148,155,157"/>
+<map from="195,0,0" to="174,52,88"/>
+<map from="174,22,0" to="157,47,79"/>
+<map from="230,65,0" to="207,62,104"/>
+<map from="167,47,0" to="150,45,75"/>
+<map from="126,16,0" to="114,34,57"/>
+<map from="145,0,0" to="130,39,65"/>
+<map from="136,13,0" to="110,115,117"/>
+<map from="180,0,28" to="162,49,81"/>
+<map from="167,0,31" to="150,45,75"/>
+<map from="242,30,0" to="175,195,194"/>
+<map from="155,0,5" to="139,42,70"/>
+<map from="146,9,0" to="118,123,125"/>
+<map from="193,0,0" to="173,52,87"/>
+<map from="193,18,193" to="139,156,154"/>
+<map from="180,17,180" to="130,145,144"/>
+<map from="175,0,6" to="158,47,79"/>
+<map from="242,23,242" to="175,195,194"/>
+<map from="230,22,230" to="166,186,184"/>
+<map from="230,0,0" to="207,62,104"/>
+<map from="154,0,72" to="111,124,123"/>
+<map from="183,23,0" to="164,49,82"/>
+<map from="242,53,0" to="217,65,109"/>
+<map from="242,68,0" to="217,65,109"/>
+<map from="230,0,101" to="203,203,203"/>
+<map from="185,0,0" to="166,50,84"/>
+<map from="134,0,0" to="121,36,60"/>
+<map from="167,0,73" to="147,147,147"/>
+<map from="180,51,0" to="162,49,81"/>
+<map from="180,40,0" to="162,49,81"/>
+<map from="136,17,0" to="123,37,61"/>
+<map from="180,0,34" to="162,49,81"/>
+<map from="242,0,61" to="217,65,109"/>
+<map from="230,101,0" to="146,44,73"/>
+<map from="155,0,0" to="139,42,70"/>
+<map from="146,14,0" to="118,123,125"/>
+<map from="193,0,30" to="173,52,87"/>
+<map from="218,21,218" to="157,176,174"/>
+<map from="218,0,0" to="196,59,98"/>
+<map from="165,11,0" to="133,140,141"/>
+<map from="175,0,0" to="158,47,79"/>
+<map from="205,19,205" to="148,166,164"/>
+<map from="230,0,36" to="207,62,104"/>
+<map from="167,73,0" to="106,32,53"/>
+<map from="154,0,39" to="138,42,69"/>
+<map from="242,61,0" to="217,65,109"/>
+<map from="242,76,0" to="217,65,109"/>
+<map from="242,0,99" to="214,214,214"/>
+<map from="136,0,5" to="123,37,61"/>
+<map from="230,72,0" to="207,62,104"/>
+<map from="230,94,0" to="146,44,73"/>
+<map from="167,68,0" to="106,32,53"/>
+<map from="167,52,0" to="150,45,75"/>
+<map from="183,0,6" to="164,49,82"/>
+<map from="180,0,73" to="159,159,159"/>
+<map from="180,56,0" to="162,49,81"/>
+<map from="180,45,0" to="162,49,81"/>
+<map from="230,0,58" to="207,62,104"/>
+<map from="205,0,96" to="148,166,164"/>
+<map from="193,0,79" to="170,170,170"/>
+<map from="193,30,0" to="173,52,87"/>
+<map from="193,54,0" to="173,52,87"/>
+<map from="193,42,0" to="173,52,87"/>
+<map from="146,18,0" to="131,39,66"/>
+<map from="193,0,36" to="173,52,87"/>
+<map from="218,0,34" to="196,59,98"/>
+<map from="165,16,0" to="133,140,141"/>
+<map from="218,48,0" to="196,59,98"/>
+<map from="218,62,0" to="196,59,98"/>
+<map from="218,34,0" to="196,59,98"/>
+<map from="218,0,89" to="192,192,192"/>
+<map from="218,89,0" to="138,42,69"/>
+<map from="205,0,32" to="184,55,92"/>
+<map from="230,0,43" to="207,62,104"/>
+<map from="230,51,0" to="207,62,104"/>
+<map from="230,36,0" to="207,62,104"/>
+<map from="230,0,94" to="203,203,203"/>
+<map from="180,23,0" to="130,145,144"/>
+<map from="167,0,42" to="150,45,75"/>
+<map from="242,46,0" to="217,65,109"/>
+<map from="242,99,0" to="154,47,77"/>
+<map from="167,0,79" to="121,135,134"/>
+<map from="230,43,0" to="207,62,104"/>
+<map from="98,0,3" to="88,26,44"/>
+<map from="167,31,0" to="150,45,75"/>
+<map from="255,32,0" to="184,206,204"/>
+<map from="180,73,0" to="114,35,57"/>
+<map from="180,34,0" to="162,49,81"/>
+<map from="205,0,51" to="184,55,92"/>
+<map from="193,79,0" to="123,37,61"/>
+<map from="193,36,0" to="173,52,87"/>
+<map from="193,61,0" to="173,52,87"/>
+<map from="193,48,0" to="173,52,87"/>
+<map from="218,0,41" to="196,59,98"/>
+<map from="165,20,0" to="148,45,74"/>
+<map from="218,55,0" to="196,59,98"/>
+<map from="218,68,0" to="196,59,98"/>
+<map from="218,41,0" to="196,59,98"/>
+<map from="205,0,39" to="184,55,92"/>
+<map from="230,58,0" to="207,62,104"/>
+<map from="180,0,45" to="162,49,81"/>
+<map from="180,79,0" to="114,35,57"/>
+<map from="180,0,85" to="130,145,144"/>
+<map from="146,0,5" to="131,39,66"/>
+<map from="116,0,4" to="105,31,53"/>
+<map from="242,106,0" to="154,47,77"/>
+<map from="230,0,51" to="207,62,104"/>
+<map from="167,0,37" to="150,45,75"/>
+<map from="218,24,218" to="157,176,174"/>
+<map from="193,85,0" to="123,37,61"/>
+<map from="193,0,48" to="173,52,87"/>
+<map from="193,0,91" to="139,156,154"/>
+<map from="230,29,0" to="166,186,184"/>
+<map from="180,20,180" to="130,145,144"/>
+<map from="193,24,0" to="139,156,154"/>
+<map from="180,0,40" to="162,49,81"/>
+<map from="205,26,0" to="148,166,164"/>
+<map from="165,0,5" to="148,45,74"/>
+<map from="110,0,4" to="99,30,50"/>
+<map from="230,0,108" to="166,186,184"/>
+<map from="218,0,103" to="157,176,174"/>
+<map from="242,0,53" to="217,65,109"/>
+<map from="242,0,114" to="175,195,194"/>
+<map from="193,0,42" to="173,52,87"/>
+<map from="218,27,0" to="157,176,174"/>
+<map from="218,0,55" to="196,59,98"/>
+<map from="218,96,0" to="138,42,69"/>
+<map from="218,0,48" to="196,59,98"/>
+<map from="255,0,64" to="229,69,115"/>
+<map from="242,38,0" to="217,65,109"/>
+<map from="180,28,0" to="162,49,81"/>
+<map from="136,0,0" to="123,37,61"/>
+</spriteType>
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-0}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EF81機関車(408号機試験塗色) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-408-test}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-408-test}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EF81機関車(451番) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-451}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-451}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EF81機関車(453番～) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-453}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<spriteType name="colorMapped">
+<map from="218,103,0" to="58,116,164"/>
+<map from="255,120,0" to="68,136,192"/>
+<map from="242,114,0" to="65,129,182"/>
+<map from="230,108,0" to="61,123,173"/>
+<map from="242,0,8" to="65,129,182"/>
+<map from="230,0,115" to="99,95,91"/>
+<map from="242,0,121" to="104,100,96"/>
+<map from="154,0,5" to="41,82,116"/>
+<map from="230,0,7" to="61,123,173"/>
+<map from="167,0,5" to="45,89,126"/>
+<map from="218,0,109" to="94,90,86"/>
+<map from="255,0,8" to="68,136,192"/>
+<map from="242,27,242" to="65,129,182"/>
+<map from="154,17,154" to="41,82,116"/>
+<map from="180,0,6" to="48,96,136"/>
+<map from="255,0,128" to="110,105,101"/>
+<map from="242,0,38" to="215,215,215"/>
+<map from="154,0,24" to="137,137,137"/>
+<map from="193,0,6" to="51,103,145"/>
+<map from="255,24,255" to="227,227,227"/>
+<map from="174,11,0" to="143,36,61"/>
+<map from="185,0,6" to="49,99,139"/>
+<map from="134,0,4" to="36,72,101"/>
+<map from="126,8,0" to="104,26,45"/>
+<map from="0,180,68" to="48,96,136"/>
+<map from="167,16,167" to="149,149,149"/>
+<map from="218,0,7" to="58,116,164"/>
+<map from="205,0,6" to="55,109,154"/>
+<map from="255,0,40" to="227,227,227"/>
+<map from="242,0,0" to="215,215,215"/>
+<map from="183,11,0" to="151,38,64"/>
+<map from="195,0,6" to="52,104,146"/>
+<map from="242,0,46" to="65,129,182"/>
+<map from="174,17,0" to="143,36,61"/>
+<map from="126,12,0" to="104,26,45"/>
+<map from="154,0,29" to="41,82,116"/>
+<map from="145,0,5" to="39,77,109"/>
+<map from="136,8,0" to="112,28,48"/>
+<map from="180,0,0" to="160,160,160"/>
+<map from="167,0,26" to="149,149,149"/>
+<map from="174,0,5" to="46,93,131"/>
+<map from="126,0,4" to="34,67,95"/>
+<map from="255,0,48" to="68,136,192"/>
+<map from="183,17,0" to="151,38,64"/>
+<map from="195,0,0" to="173,173,173"/>
+<map from="174,22,0" to="46,93,131"/>
+<map from="230,65,0" to="205,205,205"/>
+<map from="167,47,0" to="149,149,149"/>
+<map from="126,16,0" to="34,67,95"/>
+<map from="145,0,0" to="129,129,129"/>
+<map from="136,13,0" to="112,28,48"/>
+<map from="180,0,28" to="160,160,160"/>
+<map from="167,0,31" to="45,89,126"/>
+<map from="242,30,0" to="215,215,215"/>
+<map from="155,0,5" to="41,83,117"/>
+<map from="146,9,0" to="120,30,51"/>
+<map from="193,0,0" to="172,172,172"/>
+<map from="193,18,193" to="172,172,172"/>
+<map from="180,17,180" to="160,160,160"/>
+<map from="175,0,6" to="47,93,132"/>
+<map from="242,23,242" to="215,215,215"/>
+<map from="230,22,230" to="205,205,205"/>
+<map from="230,0,0" to="205,205,205"/>
+<map from="154,0,72" to="117,117,117"/>
+<map from="183,23,0" to="49,98,138"/>
+<map from="242,53,0" to="215,215,215"/>
+<map from="242,68,0" to="215,215,215"/>
+<map from="230,0,101" to="61,123,173"/>
+<map from="185,0,0" to="165,165,165"/>
+<map from="134,0,0" to="120,120,120"/>
+<map from="167,0,73" to="45,89,126"/>
+<map from="180,51,0" to="160,160,160"/>
+<map from="180,40,0" to="160,160,160"/>
+<map from="136,17,0" to="36,73,103"/>
+<map from="180,0,34" to="48,96,136"/>
+<map from="242,0,61" to="215,215,215"/>
+<map from="230,101,0" to="205,205,205"/>
+<map from="155,0,0" to="138,138,138"/>
+<map from="146,14,0" to="120,30,51"/>
+<map from="193,0,30" to="172,172,172"/>
+<map from="218,21,218" to="194,194,194"/>
+<map from="218,0,0" to="194,194,194"/>
+<map from="165,11,0" to="136,34,58"/>
+<map from="175,0,0" to="156,156,156"/>
+<map from="205,19,205" to="182,182,182"/>
+<map from="230,0,36" to="205,205,205"/>
+<map from="167,73,0" to="149,149,149"/>
+<map from="154,0,39" to="137,137,137"/>
+<map from="242,61,0" to="65,129,182"/>
+<map from="242,76,0" to="65,129,182"/>
+<map from="242,0,99" to="215,215,215"/>
+<map from="136,0,5" to="36,73,103"/>
+<map from="230,72,0" to="61,123,173"/>
+<map from="230,94,0" to="205,205,205"/>
+<map from="167,68,0" to="149,149,149"/>
+<map from="167,52,0" to="45,89,126"/>
+<map from="183,0,6" to="49,98,138"/>
+<map from="180,0,73" to="160,160,160"/>
+<map from="180,56,0" to="48,96,136"/>
+<map from="180,45,0" to="48,96,136"/>
+<map from="230,0,58" to="205,205,205"/>
+<map from="205,0,96" to="156,156,156"/>
+<map from="193,0,79" to="172,172,172"/>
+<map from="193,30,0" to="172,172,172"/>
+<map from="193,54,0" to="172,172,172"/>
+<map from="193,42,0" to="172,172,172"/>
+<map from="146,18,0" to="39,78,110"/>
+<map from="193,0,36" to="51,103,145"/>
+<map from="218,0,34" to="194,194,194"/>
+<map from="165,16,0" to="136,34,58"/>
+<map from="218,48,0" to="194,194,194"/>
+<map from="218,62,0" to="194,194,194"/>
+<map from="218,34,0" to="194,194,194"/>
+<map from="218,0,89" to="194,194,194"/>
+<map from="218,89,0" to="194,194,194"/>
+<map from="205,0,32" to="182,182,182"/>
+<map from="230,0,43" to="61,123,173"/>
+<map from="230,51,0" to="205,205,205"/>
+<map from="230,36,0" to="205,205,205"/>
+<map from="230,0,94" to="205,205,205"/>
+<map from="180,23,0" to="160,160,160"/>
+<map from="167,0,42" to="149,149,149"/>
+<map from="242,46,0" to="65,129,182"/>
+<map from="242,99,0" to="215,215,215"/>
+<map from="167,0,79" to="127,127,127"/>
+<map from="230,43,0" to="61,123,173"/>
+<map from="98,0,3" to="26,52,73"/>
+<map from="167,31,0" to="45,89,126"/>
+<map from="255,32,0" to="227,227,227"/>
+<map from="180,73,0" to="160,160,160"/>
+<map from="180,34,0" to="48,96,136"/>
+<map from="205,0,51" to="182,182,182"/>
+<map from="193,79,0" to="172,172,172"/>
+<map from="193,36,0" to="51,103,145"/>
+<map from="193,61,0" to="51,103,145"/>
+<map from="193,48,0" to="51,103,145"/>
+<map from="218,0,41" to="58,116,164"/>
+<map from="165,20,0" to="44,88,124"/>
+<map from="218,55,0" to="58,116,164"/>
+<map from="218,68,0" to="58,116,164"/>
+<map from="218,41,0" to="58,116,164"/>
+<map from="205,0,39" to="55,109,154"/>
+<map from="230,58,0" to="61,123,173"/>
+<map from="180,0,45" to="160,160,160"/>
+<map from="180,79,0" to="160,160,160"/>
+<map from="180,0,85" to="137,137,137"/>
+<map from="146,0,5" to="39,78,110"/>
+<map from="116,0,4" to="31,62,88"/>
+<map from="242,106,0" to="215,215,215"/>
+<map from="230,0,51" to="61,123,173"/>
+<map from="167,0,37" to="45,89,126"/>
+<map from="218,24,218" to="58,116,164"/>
+<map from="193,85,0" to="172,172,172"/>
+<map from="193,0,48" to="172,172,172"/>
+<map from="193,0,91" to="147,147,147"/>
+<map from="230,29,0" to="205,205,205"/>
+<map from="180,20,180" to="48,96,136"/>
+<map from="193,24,0" to="172,172,172"/>
+<map from="180,0,40" to="48,96,136"/>
+<map from="205,26,0" to="182,182,182"/>
+<map from="165,0,5" to="44,88,124"/>
+<map from="110,0,4" to="29,59,83"/>
+<map from="230,0,108" to="175,175,175"/>
+<map from="218,0,103" to="166,166,166"/>
+<map from="242,0,53" to="65,129,182"/>
+<map from="242,0,114" to="184,184,184"/>
+<map from="193,0,42" to="51,103,145"/>
+<map from="218,27,0" to="194,194,194"/>
+<map from="218,0,55" to="194,194,194"/>
+<map from="218,96,0" to="194,194,194"/>
+<map from="218,0,48" to="58,116,164"/>
+<map from="255,0,64" to="227,227,227"/>
+<map from="242,38,0" to="215,215,215"/>
+<map from="180,28,0" to="160,160,160"/>
+<map from="136,0,0" to="36,73,103"/>
+</spriteType>
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-0}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EF81機関車(500番台) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-500}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<spriteType name="colorMapped">
+<map from="218,103,0" to="58,116,164"/>
+<map from="255,120,0" to="68,136,192"/>
+<map from="242,114,0" to="65,129,182"/>
+<map from="230,108,0" to="61,123,173"/>
+<map from="242,0,8" to="65,129,182"/>
+<map from="230,0,115" to="99,95,91"/>
+<map from="242,0,121" to="104,100,96"/>
+<map from="154,0,5" to="41,82,116"/>
+<map from="230,0,7" to="61,123,173"/>
+<map from="167,0,5" to="45,89,126"/>
+<map from="218,0,109" to="94,90,86"/>
+<map from="255,0,8" to="68,136,192"/>
+<map from="242,27,242" to="65,129,182"/>
+<map from="154,17,154" to="41,82,116"/>
+<map from="180,0,6" to="48,96,136"/>
+<map from="255,0,128" to="110,105,101"/>
+<map from="242,0,38" to="215,215,215"/>
+<map from="154,0,24" to="137,137,137"/>
+<map from="193,0,6" to="51,103,145"/>
+<map from="255,24,255" to="227,227,227"/>
+<map from="174,11,0" to="143,36,61"/>
+<map from="185,0,6" to="49,99,139"/>
+<map from="134,0,4" to="36,72,101"/>
+<map from="126,8,0" to="104,26,45"/>
+<map from="0,180,68" to="48,96,136"/>
+<map from="167,16,167" to="149,149,149"/>
+<map from="218,0,7" to="58,116,164"/>
+<map from="205,0,6" to="55,109,154"/>
+<map from="255,0,40" to="227,227,227"/>
+<map from="242,0,0" to="215,215,215"/>
+<map from="183,11,0" to="151,38,64"/>
+<map from="195,0,6" to="52,104,146"/>
+<map from="242,0,46" to="215,215,215"/>
+<map from="174,17,0" to="143,36,61"/>
+<map from="126,12,0" to="104,26,45"/>
+<map from="154,0,29" to="137,137,137"/>
+<map from="145,0,5" to="39,77,109"/>
+<map from="136,8,0" to="112,28,48"/>
+<map from="180,0,0" to="160,160,160"/>
+<map from="167,0,26" to="149,149,149"/>
+<map from="174,0,5" to="46,93,131"/>
+<map from="126,0,4" to="34,67,95"/>
+<map from="255,0,48" to="227,227,227"/>
+<map from="183,17,0" to="151,38,64"/>
+<map from="195,0,0" to="173,173,173"/>
+<map from="174,22,0" to="143,36,61"/>
+<map from="230,65,0" to="205,205,205"/>
+<map from="167,47,0" to="149,149,149"/>
+<map from="126,16,0" to="104,26,45"/>
+<map from="145,0,0" to="129,129,129"/>
+<map from="136,13,0" to="112,28,48"/>
+<map from="180,0,28" to="160,160,160"/>
+<map from="167,0,31" to="149,149,149"/>
+<map from="242,30,0" to="215,215,215"/>
+<map from="155,0,5" to="41,83,117"/>
+<map from="146,9,0" to="120,30,51"/>
+<map from="193,0,0" to="172,172,172"/>
+<map from="193,18,193" to="172,172,172"/>
+<map from="180,17,180" to="160,160,160"/>
+<map from="175,0,6" to="47,93,132"/>
+<map from="242,23,242" to="215,215,215"/>
+<map from="230,22,230" to="205,205,205"/>
+<map from="230,0,0" to="205,205,205"/>
+<map from="154,0,72" to="117,117,117"/>
+<map from="183,23,0" to="151,38,64"/>
+<map from="242,53,0" to="215,215,215"/>
+<map from="242,68,0" to="215,215,215"/>
+<map from="230,0,101" to="205,205,205"/>
+<map from="185,0,0" to="165,165,165"/>
+<map from="134,0,0" to="120,120,120"/>
+<map from="167,0,73" to="149,149,149"/>
+<map from="180,51,0" to="160,160,160"/>
+<map from="180,40,0" to="160,160,160"/>
+<map from="136,17,0" to="112,28,48"/>
+<map from="180,0,34" to="160,160,160"/>
+<map from="242,0,61" to="215,215,215"/>
+<map from="230,101,0" to="205,205,205"/>
+<map from="155,0,0" to="138,138,138"/>
+<map from="146,14,0" to="120,30,51"/>
+<map from="193,0,30" to="172,172,172"/>
+<map from="218,21,218" to="194,194,194"/>
+<map from="218,0,0" to="194,194,194"/>
+<map from="165,11,0" to="136,34,58"/>
+<map from="175,0,0" to="156,156,156"/>
+<map from="205,19,205" to="182,182,182"/>
+<map from="230,0,36" to="205,205,205"/>
+<map from="167,73,0" to="149,149,149"/>
+<map from="154,0,39" to="137,137,137"/>
+<map from="242,61,0" to="215,215,215"/>
+<map from="242,76,0" to="215,215,215"/>
+<map from="242,0,99" to="215,215,215"/>
+<map from="136,0,5" to="36,73,103"/>
+<map from="230,72,0" to="205,205,205"/>
+<map from="230,94,0" to="205,205,205"/>
+<map from="167,68,0" to="149,149,149"/>
+<map from="167,52,0" to="149,149,149"/>
+<map from="183,0,6" to="49,98,138"/>
+<map from="180,0,73" to="160,160,160"/>
+<map from="180,56,0" to="160,160,160"/>
+<map from="180,45,0" to="160,160,160"/>
+<map from="230,0,58" to="205,205,205"/>
+<map from="205,0,96" to="156,156,156"/>
+<map from="193,0,79" to="172,172,172"/>
+<map from="193,30,0" to="172,172,172"/>
+<map from="193,54,0" to="172,172,172"/>
+<map from="193,42,0" to="172,172,172"/>
+<map from="146,18,0" to="120,30,51"/>
+<map from="193,0,36" to="172,172,172"/>
+<map from="218,0,34" to="194,194,194"/>
+<map from="165,16,0" to="136,34,58"/>
+<map from="218,48,0" to="194,194,194"/>
+<map from="218,62,0" to="194,194,194"/>
+<map from="218,34,0" to="194,194,194"/>
+<map from="218,0,89" to="194,194,194"/>
+<map from="218,89,0" to="194,194,194"/>
+<map from="205,0,32" to="182,182,182"/>
+<map from="230,0,43" to="205,205,205"/>
+<map from="230,51,0" to="205,205,205"/>
+<map from="230,36,0" to="205,205,205"/>
+<map from="230,0,94" to="205,205,205"/>
+<map from="180,23,0" to="160,160,160"/>
+<map from="167,0,42" to="149,149,149"/>
+<map from="242,46,0" to="215,215,215"/>
+<map from="242,99,0" to="215,215,215"/>
+<map from="167,0,79" to="127,127,127"/>
+<map from="230,43,0" to="205,205,205"/>
+<map from="98,0,3" to="26,52,73"/>
+<map from="167,31,0" to="149,149,149"/>
+<map from="255,32,0" to="227,227,227"/>
+<map from="180,73,0" to="160,160,160"/>
+<map from="180,34,0" to="160,160,160"/>
+<map from="205,0,51" to="182,182,182"/>
+<map from="193,79,0" to="172,172,172"/>
+<map from="193,36,0" to="172,172,172"/>
+<map from="193,61,0" to="172,172,172"/>
+<map from="193,48,0" to="172,172,172"/>
+<map from="218,0,41" to="194,194,194"/>
+<map from="165,20,0" to="136,34,58"/>
+<map from="218,55,0" to="194,194,194"/>
+<map from="218,68,0" to="194,194,194"/>
+<map from="218,41,0" to="194,194,194"/>
+<map from="205,0,39" to="182,182,182"/>
+<map from="230,58,0" to="205,205,205"/>
+<map from="180,0,45" to="160,160,160"/>
+<map from="180,79,0" to="160,160,160"/>
+<map from="180,0,85" to="137,137,137"/>
+<map from="146,0,5" to="39,78,110"/>
+<map from="116,0,4" to="31,62,88"/>
+<map from="242,106,0" to="215,215,215"/>
+<map from="230,0,51" to="205,205,205"/>
+<map from="167,0,37" to="149,149,149"/>
+<map from="218,24,218" to="58,116,164"/>
+<map from="193,85,0" to="172,172,172"/>
+<map from="193,0,48" to="172,172,172"/>
+<map from="193,0,91" to="147,147,147"/>
+<map from="230,29,0" to="205,205,205"/>
+<map from="180,20,180" to="48,96,136"/>
+<map from="193,24,0" to="172,172,172"/>
+<map from="180,0,40" to="160,160,160"/>
+<map from="205,26,0" to="182,182,182"/>
+<map from="165,0,5" to="44,88,124"/>
+<map from="110,0,4" to="29,59,83"/>
+<map from="230,0,108" to="175,175,175"/>
+<map from="218,0,103" to="166,166,166"/>
+<map from="242,0,53" to="215,215,215"/>
+<map from="242,0,114" to="184,184,184"/>
+<map from="193,0,42" to="172,172,172"/>
+<map from="218,27,0" to="194,194,194"/>
+<map from="218,0,55" to="194,194,194"/>
+<map from="218,96,0" to="194,194,194"/>
+<map from="218,0,48" to="194,194,194"/>
+<map from="255,0,64" to="227,227,227"/>
+<map from="242,38,0" to="215,215,215"/>
+<map from="180,28,0" to="160,160,160"/>
+<map from="136,0,0" to="36,73,103"/>
+</spriteType>
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-0}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EF81機関車(カシオペア) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-cassiopeia}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-cassiopeia}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EF81機関車(スーパー・エクスプレス・レインボー) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-rainbow}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-rainbow}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EF81機関車(北斗星) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-hokuto}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-hokuto}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EF81機関車(トワイライト・エクスプレス) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-twilight}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF81-twilight}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+
+<!-- 直流電気機関車 EF200機関車 -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EF200}">
+<picture src="EF200.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 直流電気機関車 EF200機関車 -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF200}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF200}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+
+<!-- 直流電気機関車 EF210機関車 -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EF210-000}">
+<picture src="EF210_000.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EF210-100}">
+<picture src="EF210_100.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EF210-100-sa}">
+<picture src="ef210_100_singlearm.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 直流電気機関車 EF210機関車-0番台 -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF210-000}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF210-000}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 直流電気機関車 EF210機関車-100番台 -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF210-100}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF210-100}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 直流電気機関車 EF210機関車-100番台(シングルアームパンタ) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF210-100-sa}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EF210-100-sa}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+
+<!-- 電気機関車 EH500機関車901号機試作機(2両) -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EH500-901-2a}">
+<picture src="eh500_901_2a.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EH500-901-2b}">
+<picture src="eh500_901_2b.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 電気機関車 EH500機関車901号機試作機(2両) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH500-901-2a}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EH500-901-2a}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH500-901-2b}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EH500-901-2b}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EH500機関車901号機試作機(2両) 向き：逆-->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH500-901-2b-R}">
+<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+<base carRef="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH500-901-2b}"/>
+</contribution>
+
+<!-- 電気機関車 EH500機関車１次(2両) -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EH500-001-2a}">
+<picture src="eh500_001_2a.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EH500-001-2b}">
+<picture src="eh500_001_2b.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 電気機関車 EH500機関車１次(2両) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH500-001-2a}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EH500-001-2a}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH500-001-2b}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EH500-001-2b}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EH500機関車１次(2両) 向き：逆-->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH500-001-2b-R}">
+<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+<base carRef="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH500-001-2b}"/>
+</contribution>
+
+<!-- 電気機関車 EH500機関車２次(2両) -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EH500-003-2a}">
+<picture src="eh500_003_2a.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EH500-003-2b}">
+<picture src="eh500_003_2b.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 電気機関車 EH500機関車２次(2両) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH500-003-2a}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EH500-003-2a}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH500-003-2b}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EH500-003-2b}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EH500機関車２次(2両) 向き：逆-->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH500-003-2b-R}">
+<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+<base carRef="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH500-003-2b}"/>
+</contribution>
+
+<!-- 電気機関車 EH500機関車３次(2両) -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EH500-010-2a}">
+<picture src="eh500_010_2a.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EH500-010-2b}">
+<picture src="eh500_010_2b.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 電気機関車 EH500機関車３次(2両) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH500-010-2a}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EH500-010-2a}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH500-010-2b}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EH500-010-2b}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EH500機関車３次(2両) 向き：逆-->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH500-010-2b-R}">
+<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+<base carRef="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH500-010-2b}"/>
+</contribution>
+
+<!-- 電気機関車 EH200機関車901号機試作機(2両) -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EH200-901-2a}">
+<picture src="eh200_901_2a.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EH200-901-2b}">
+<picture src="eh200_901_2b.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 電気機関車 EH200機関車901号機試作機(2両)1端車 -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH200-901-2a}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EH200-901-2a}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH200-901-2b}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EH200-901-2b}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EH200機関車901号機試作機(2両)2端車 向き：逆-->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH200-901-2b-R}">
+<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+<base carRef="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH200-901-2b}"/>
+</contribution>
+
+<!-- 電気機関車 EH200機関車１次(2両) -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EH200-001-2a}">
+<picture src="eh200_001_2a.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-ElectricLocomotive-picture-EH200-001-2b}">
+<picture src="eh200_001_2b.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- 電気機関車 EH200機関車１次(2両)1端車 -->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH200-001-2a}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EH200-001-2a}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH200-001-2b}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-ElectricLocomotive-picture-EH200-001-2b}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- 電気機関車 EH200機関車１次(2両)2端車 向き：逆-->
+<contribution type="trainCar" id="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH200-001-2b-R}">
+<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+<base carRef="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EH200-001-2b}"/>
+</contribution>
+
+
+
+
+<title>ディーゼル機関車</title>
+
+<!-- ディーゼル機関車 DD51機関車 -->
+<!-- イメージ画像定義 -->
+<contribution type="picture" id="{FreeTrain-Shika-DieselLocomotive-picture-DD51}">
+<picture src="dd51.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-DieselLocomotive-picture-DD51-745}">
+<picture src="dd51_745.bmp" />
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-DieselLocomotive-picture-DD51-hokuto}">
+<picture src="dd51_hokuto.bmp" />
+</contribution>
+<!-- 車両定義 -->
+<!-- ディーゼル機関車 DD51機関車旧国鉄色 -->
+<contribution type="trainCar" id="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-JNR}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<spriteType name="colorMapped">
+<map from="90,99,108" to="137,138,155"/>
+<map from="86,94,103" to="130,131,147"/>
+<map from="78,85,93" to="117,118,133"/>
+<map from="73,80,87" to="112,112,126"/>
+<map from="81,89,97" to="124,124,140"/>
+<map from="77,85,93" to="117,118,133"/>
+<map from="100,110,136" to="147,148,172"/>
+<map from="85,94,116" to="126,127,147"/>
+<map from="90,99,123" to="133,133,155"/>
+<map from="218,21,0" to="130,131,147"/>
+<map from="56,61,80" to="84,77,77"/>
+<map from="95,104,129" to="140,140,163"/>
+<map from="139,13,0" to="83,83,94"/>
+<map from="69,77,84" to="106,106,120"/>
+<map from="218,27,0" to="210,198,195"/>
+<map from="207,20,0" to="124,124,140"/>
+<map from="151,14,0" to="90,90,102"/>
+<map from="139,17,0" to="134,126,124"/>
+<map from="76,83,109" to="114,105,105"/>
+<map from="85,94,123" to="128,119,119"/>
+<map from="90,99,130" to="135,125,125"/>
+<map from="230,22,0" to="137,138,155"/>
+<map from="176,5,0" to="169,159,157"/>
+<map from="230,0,36" to="221,69,49"/>
+<map from="167,0,26" to="160,50,35"/>
+<map from="112,3,0" to="108,102,100"/>
+<map from="230,29,0" to="222,208,206"/>
+<map from="176,1,0" to="169,52,37"/>
+<map from="207,13,0" to="200,188,186"/>
+<map from="180,0,28" to="173,54,38"/>
+<map from="242,0,38" to="233,72,51"/>
+<map from="151,9,0" to="145,136,134"/>
+<map from="112,1,0" to="107,33,24"/>
+<map from="162,15,0" to="97,97,109"/>
+<map from="151,19,0" to="145,136,134"/>
+<map from="193,0,30" to="185,58,41"/>
+<map from="174,16,0" to="104,105,117"/>
+<map from="218,0,34" to="209,65,46"/>
+<map from="230,7,0" to="221,69,49"/>
+<map from="218,14,0" to="210,198,195"/>
+<map from="100,110,128" to="158,189,186"/>
+<map from="205,0,32" to="197,61,43"/>
+<map from="71,78,102" to="106,98,98"/>
+<map from="85,94,109" to="135,162,159"/>
+<map from="255,0,40" to="245,76,54"/>
+<map from="162,10,0" to="157,147,145"/>
+<map from="131,3,0" to="126,118,116"/>
+<map from="151,5,0" to="144,45,32"/>
+<map from="218,0,14" to="130,131,147"/>
+<map from="174,11,0" to="168,158,156"/>
+<map from="140,4,0" to="135,127,125"/>
+<map from="162,21,0" to="157,147,145"/>
+<map from="197,19,0" to="117,118,133"/>
+<map from="185,17,0" to="110,111,124"/>
+<map from="167,4,0" to="161,151,150"/>
+<map from="230,0,22" to="221,69,49"/>
+<map from="185,0,23" to="178,167,166"/>
+<map from="134,0,17" to="129,121,120"/>
+<map from="167,0,16" to="160,50,35"/>
+<map from="131,1,0" to="125,39,28"/>
+<map from="207,0,13" to="124,124,140"/>
+<map from="205,0,26" to="198,186,183"/>
+<map from="155,0,19" to="150,141,139"/>
+<map from="193,0,24" to="186,175,173"/>
+<map from="174,5,0" to="167,52,37"/>
+<map from="140,1,0" to="134,42,30"/>
+<map from="162,5,0" to="156,49,34"/>
+<map from="207,26,0" to="200,188,186"/>
+<map from="158,4,0" to="152,143,142"/>
+<map from="197,13,0" to="189,178,176"/>
+<map from="218,0,27" to="210,197,195"/>
+<map from="175,0,22" to="169,158,157"/>
+<map from="185,23,0" to="179,168,165"/>
+<map from="218,7,0" to="210,65,46"/>
+<map from="167,1,0" to="161,50,35"/>
+<map from="207,6,0" to="199,62,44"/>
+<map from="230,0,29" to="222,208,206"/>
+<map from="180,0,23" to="174,163,161"/>
+<map from="242,0,30" to="233,219,216"/>
+<map from="185,0,18" to="178,55,39"/>
+<map from="134,0,13" to="129,40,28"/>
+<map from="145,0,18" to="140,131,129"/>
+<map from="218,0,0" to="210,65,46"/>
+<map from="207,0,39" to="200,188,186"/>
+<map from="185,0,12" to="110,111,124"/>
+<map from="205,0,19" to="197,61,43"/>
+<map from="155,0,14" to="149,47,33"/>
+<map from="193,0,18" to="185,58,41"/>
+<map from="158,1,0" to="152,47,33"/>
+<map from="197,6,0" to="189,59,41"/>
+<map from="218,0,21" to="209,65,46"/>
+<map from="175,0,17" to="168,52,37"/>
+<map from="185,5,0" to="178,55,39"/>
+<map from="180,0,17" to="173,54,38"/>
+<map from="139,0,0" to="133,41,30"/>
+<map from="242,0,23" to="233,72,51"/>
+<map from="195,0,24" to="187,176,174"/>
+<map from="162,0,10" to="97,97,109"/>
+<map from="151,0,9" to="90,90,102"/>
+<map from="230,0,14" to="137,138,155"/>
+<map from="145,0,14" to="139,43,31"/>
+<map from="207,0,46" to="199,62,44"/>
+<map from="197,24,0" to="189,178,176"/>
+<map from="151,0,33" to="144,45,32"/>
+<map from="195,0,18" to="187,58,41"/>
+<map from="151,0,5" to="145,136,134"/>
+<map from="158,3,0" to="95,95,106"/>
+<map from="174,0,11" to="104,105,117"/>
+<map from="230,0,7" to="222,208,206"/>
+<map from="185,0,0" to="178,55,39"/>
+<map from="162,0,0" to="156,49,34"/>
+<map from="162,0,31" to="157,147,145"/>
+<map from="174,0,32" to="168,158,156"/>
+<map from="162,0,5" to="157,147,145"/>
+<map from="218,0,7" to="210,198,195"/>
+<map from="197,0,13" to="117,118,133"/>
+<map from="218,0,41" to="210,198,195"/>
+<map from="162,0,36" to="156,49,34"/>
+<map from="151,0,0" to="144,45,32"/>
+<map from="185,0,5" to="179,168,165"/>
+<map from="174,0,38" to="167,52,37"/>
+<map from="197,0,6" to="189,178,176"/>
+<map from="230,0,0" to="221,69,49"/>
+<map from="218,0,48" to="210,65,46"/>
+<map from="174,22,0" to="168,158,156"/>
+<map from="207,0,19" to="199,62,44"/>
+<map from="185,0,17" to="178,55,39"/>
+<map from="197,0,0" to="189,59,41"/>
+<map from="174,0,0" to="167,52,37"/>
+<map from="207,0,6" to="200,188,186"/>
+<map from="197,0,37" to="189,178,176"/>
+<map from="207,0,0" to="199,62,44"/>
+<map from="197,0,43" to="189,59,41"/>
+<map from="139,0,9" to="83,83,94"/>
+<map from="151,0,28" to="145,136,134"/>
+<map from="185,1,0" to="178,55,39"/>
+<map from="121,1,0" to="116,36,25"/>
+<map from="174,0,5" to="168,158,156"/>
+<map from="187,23,0" to="180,170,168"/>
+<map from="157,20,0" to="152,143,141"/>
+<map from="187,5,0" to="179,56,40"/>
+<map from="157,5,0" to="151,47,33"/>
+</spriteType>
+<picture ref="{FreeTrain-Shika-DieselLocomotive-picture-DD51}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- ディーゼル機関車 DD51機関車745号機(三つ目) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-745}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-DieselLocomotive-picture-DD51-745}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- ディーゼル機関車 DD51機関車北斗星 -->
+<contribution type="trainCar" id="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-hokuto}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-DieselLocomotive-picture-DD51-hokuto}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- ディーゼル機関車 DD51機関車ユーロライナー -->
+<contribution type="trainCar" id="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-Euroliner}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<spriteType name="colorMapped">
+<map from="90,99,108" to="137,138,155"/>
+<map from="86,94,103" to="130,131,147"/>
+<map from="78,85,93" to="117,118,133"/>
+<map from="73,80,87" to="112,112,126"/>
+<map from="81,89,97" to="124,124,140"/>
+<map from="77,85,93" to="117,118,133"/>
+<map from="100,110,136" to="147,148,172"/>
+<map from="85,94,116" to="126,127,147"/>
+<map from="90,99,123" to="133,133,155"/>
+<map from="218,21,0" to="210,209,216"/>
+<map from="56,61,80" to="84,77,77"/>
+<map from="95,104,129" to="140,140,163"/>
+<map from="139,13,0" to="133,133,137"/>
+<map from="69,77,84" to="106,106,120"/>
+<map from="218,27,0" to="210,209,216"/>
+<map from="207,20,0" to="199,198,205"/>
+<map from="151,14,0" to="144,144,149"/>
+<map from="139,17,0" to="133,133,137"/>
+<map from="76,83,109" to="114,105,105"/>
+<map from="85,94,123" to="128,119,119"/>
+<map from="90,99,130" to="135,125,125"/>
+<map from="230,22,0" to="221,220,227"/>
+<map from="176,5,0" to="169,169,173"/>
+<map from="230,0,36" to="221,220,227"/>
+<map from="167,0,26" to="160,160,165"/>
+<map from="112,3,0" to="107,106,110"/>
+<map from="230,29,0" to="221,220,227"/>
+<map from="176,1,0" to="169,169,173"/>
+<map from="207,13,0" to="46,46,159"/>
+<map from="180,0,28" to="173,172,178"/>
+<map from="242,0,38" to="233,232,239"/>
+<map from="151,9,0" to="33,33,115"/>
+<map from="112,1,0" to="107,106,110"/>
+<map from="162,15,0" to="156,155,161"/>
+<map from="151,19,0" to="144,144,149"/>
+<map from="193,0,30" to="185,185,191"/>
+<map from="174,16,0" to="167,167,172"/>
+<map from="218,0,34" to="209,209,215"/>
+<map from="230,7,0" to="221,220,227"/>
+<map from="218,14,0" to="49,49,167"/>
+<map from="100,110,128" to="158,189,186"/>
+<map from="205,0,32" to="197,196,203"/>
+<map from="71,78,102" to="106,98,98"/>
+<map from="85,94,109" to="135,162,159"/>
+<map from="255,0,40" to="245,244,252"/>
+<map from="162,10,0" to="36,36,124"/>
+<map from="131,3,0" to="125,124,129"/>
+<map from="151,5,0" to="144,144,149"/>
+<map from="218,0,14" to="210,209,216"/>
+<map from="174,11,0" to="39,39,133"/>
+<map from="140,4,0" to="134,134,139"/>
+<map from="162,21,0" to="156,155,161"/>
+<map from="197,19,0" to="189,189,194"/>
+<map from="185,17,0" to="178,177,183"/>
+<map from="167,4,0" to="161,160,164"/>
+<map from="230,0,22" to="221,220,227"/>
+<map from="185,0,23" to="41,41,141"/>
+<map from="134,0,17" to="30,30,103"/>
+<map from="167,0,16" to="160,160,165"/>
+<map from="131,1,0" to="125,124,129"/>
+<map from="207,0,13" to="199,198,205"/>
+<map from="205,0,26" to="46,46,157"/>
+<map from="155,0,19" to="35,35,119"/>
+<map from="193,0,24" to="43,43,148"/>
+<map from="174,5,0" to="167,167,172"/>
+<map from="140,1,0" to="134,134,139"/>
+<map from="162,5,0" to="156,155,161"/>
+<map from="207,26,0" to="199,198,205"/>
+<map from="158,4,0" to="152,152,156"/>
+<map from="197,13,0" to="44,44,151"/>
+<map from="218,0,27" to="49,49,167"/>
+<map from="175,0,22" to="39,39,134"/>
+<map from="185,23,0" to="178,177,183"/>
+<map from="218,7,0" to="210,209,216"/>
+<map from="167,1,0" to="161,160,164"/>
+<map from="207,6,0" to="199,198,205"/>
+<map from="230,0,29" to="51,51,176"/>
+<map from="180,0,23" to="40,40,138"/>
+<map from="242,0,30" to="54,54,185"/>
+<map from="185,0,18" to="178,177,182"/>
+<map from="134,0,13" to="129,129,133"/>
+<map from="145,0,18" to="32,32,111"/>
+<map from="218,0,0" to="49,49,167"/>
+<map from="207,0,39" to="199,198,205"/>
+<map from="185,0,12" to="178,177,183"/>
+<map from="205,0,19" to="197,196,203"/>
+<map from="155,0,14" to="149,149,154"/>
+<map from="193,0,18" to="185,185,191"/>
+<map from="158,1,0" to="152,152,156"/>
+<map from="197,6,0" to="189,189,194"/>
+<map from="218,0,21" to="209,209,215"/>
+<map from="175,0,17" to="168,168,173"/>
+<map from="185,5,0" to="178,177,183"/>
+<map from="180,0,17" to="173,172,178"/>
+<map from="139,0,0" to="31,31,106"/>
+<map from="242,0,23" to="233,232,239"/>
+<map from="195,0,24" to="43,43,149"/>
+<map from="162,0,10" to="156,155,161"/>
+<map from="151,0,9" to="144,144,149"/>
+<map from="230,0,14" to="221,220,227"/>
+<map from="145,0,14" to="139,138,143"/>
+<map from="207,0,46" to="46,46,159"/>
+<map from="197,24,0" to="189,189,194"/>
+<map from="151,0,33" to="33,33,115"/>
+<map from="195,0,18" to="187,187,192"/>
+<map from="151,0,5" to="144,144,149"/>
+<map from="158,3,0" to="152,152,156"/>
+<map from="174,0,11" to="167,167,172"/>
+<map from="230,0,7" to="221,220,227"/>
+<map from="185,0,0" to="41,41,142"/>
+<map from="162,0,0" to="36,36,124"/>
+<map from="162,0,31" to="156,155,161"/>
+<map from="174,0,32" to="167,167,172"/>
+<map from="162,0,5" to="156,155,161"/>
+<map from="218,0,7" to="210,209,216"/>
+<map from="197,0,13" to="189,189,194"/>
+<map from="218,0,41" to="210,209,216"/>
+<map from="162,0,36" to="36,36,124"/>
+<map from="151,0,0" to="33,33,115"/>
+<map from="185,0,5" to="178,177,183"/>
+<map from="174,0,38" to="39,39,133"/>
+<map from="197,0,6" to="189,189,194"/>
+<map from="230,0,0" to="51,51,176"/>
+<map from="218,0,48" to="49,49,167"/>
+<map from="174,22,0" to="167,167,172"/>
+<map from="207,0,19" to="199,198,205"/>
+<map from="185,0,17" to="178,177,183"/>
+<map from="197,0,0" to="44,44,151"/>
+<map from="174,0,0" to="39,39,133"/>
+<map from="207,0,6" to="199,198,205"/>
+<map from="197,0,37" to="189,189,194"/>
+<map from="207,0,0" to="46,46,159"/>
+<map from="197,0,43" to="44,44,151"/>
+<map from="139,0,9" to="133,133,137"/>
+<map from="151,0,28" to="144,144,149"/>
+<map from="185,1,0" to="178,177,183"/>
+<map from="121,1,0" to="116,116,120"/>
+<map from="174,0,5" to="167,167,172"/>
+<map from="187,23,0" to="179,179,185"/>
+<map from="157,20,0" to="151,151,155"/>
+<map from="187,5,0" to="179,179,185"/>
+<map from="157,5,0" to="151,151,155"/>
+</spriteType>
+<picture ref="{FreeTrain-Shika-DieselLocomotive-picture-DD51}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- ディーゼル機関車 DD51機関車JR貨物更新機 -->
+<contribution type="trainCar" id="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-JRF}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<spriteType name="colorMapped">
+<map from="90,99,108" to="115,116,135"/>
+<map from="86,94,103" to="109,110,128"/>
+<map from="78,85,93" to="98,99,115"/>
+<map from="73,80,87" to="94,95,110"/>
+<map from="81,89,97" to="104,105,122"/>
+<map from="77,85,93" to="98,99,115"/>
+<map from="100,110,136" to="138,139,161"/>
+<map from="85,94,116" to="118,119,138"/>
+<map from="90,99,123" to="124,125,145"/>
+<map from="218,21,0" to="109,110,128"/>
+<map from="56,61,80" to="72,84,86"/>
+<map from="95,104,129" to="131,132,153"/>
+<map from="139,13,0" to="69,70,82"/>
+<map from="69,77,84" to="88,89,104"/>
+<map from="218,27,0" to="202,204,210"/>
+<map from="207,20,0" to="104,105,122"/>
+<map from="151,14,0" to="76,76,88"/>
+<map from="139,17,0" to="129,130,134"/>
+<map from="76,83,109" to="98,114,117"/>
+<map from="85,94,123" to="110,128,132"/>
+<map from="90,99,130" to="116,135,139"/>
+<map from="230,22,0" to="115,116,135"/>
+<map from="176,5,0" to="162,164,169"/>
+<map from="230,0,36" to="115,116,135"/>
+<map from="167,0,26" to="84,84,98"/>
+<map from="112,3,0" to="104,105,108"/>
+<map from="230,29,0" to="213,215,222"/>
+<map from="176,1,0" to="21,54,87"/>
+<map from="207,13,0" to="192,194,200"/>
+<map from="180,0,28" to="90,91,106"/>
+<map from="242,0,38" to="121,122,142"/>
+<map from="151,9,0" to="140,141,145"/>
+<map from="112,1,0" to="13,35,54"/>
+<map from="162,15,0" to="81,82,96"/>
+<map from="151,19,0" to="140,141,145"/>
+<map from="193,0,30" to="97,98,114"/>
+<map from="174,16,0" to="87,88,103"/>
+<map from="218,0,34" to="109,110,128"/>
+<map from="230,7,0" to="26,71,113"/>
+<map from="218,14,0" to="202,204,210"/>
+<map from="100,110,128" to="128,129,150"/>
+<map from="205,0,32" to="103,104,121"/>
+<map from="71,78,102" to="91,106,109"/>
+<map from="85,94,109" to="109,110,128"/>
+<map from="255,0,40" to="128,129,150"/>
+<map from="162,10,0" to="151,152,157"/>
+<map from="131,3,0" to="121,122,126"/>
+<map from="151,5,0" to="17,47,74"/>
+<map from="218,0,14" to="115,116,135"/>
+<map from="174,11,0" to="161,162,168"/>
+<map from="140,4,0" to="130,131,135"/>
+<map from="162,21,0" to="151,152,157"/>
+<map from="197,19,0" to="98,99,115"/>
+<map from="185,17,0" to="93,94,109"/>
+<map from="167,4,0" to="154,156,161"/>
+<map from="75,75,85" to="124,124,140"/>
+<map from="230,0,22" to="41,61,145"/>
+<map from="185,0,23" to="171,173,178"/>
+<map from="134,0,17" to="125,125,129"/>
+<map from="167,0,16" to="29,45,105"/>
+<map from="131,1,0" to="14,41,64"/>
+<map from="207,0,13" to="115,116,135"/>
+<map from="205,0,26" to="190,191,198"/>
+<map from="155,0,19" to="144,145,150"/>
+<map from="193,0,24" to="179,180,186"/>
+<map from="174,5,0" to="20,54,86"/>
+<map from="140,1,0" to="16,43,69"/>
+<map from="162,5,0" to="18,51,79"/>
+<map from="207,26,0" to="192,194,200"/>
+<map from="158,4,0" to="146,147,152"/>
+<map from="197,13,0" to="182,183,189"/>
+<map from="218,0,27" to="202,203,210"/>
+<map from="175,0,22" to="162,163,169"/>
+<map from="185,23,0" to="171,172,179"/>
+<map from="218,7,0" to="25,68,107"/>
+<map from="167,1,0" to="19,51,82"/>
+<map from="207,6,0" to="23,64,102"/>
+<map from="230,0,29" to="213,215,222"/>
+<map from="180,0,23" to="167,168,174"/>
+<map from="81,81,92" to="124,124,140"/>
+<map from="242,0,30" to="224,226,233"/>
+<map from="185,0,18" to="33,49,117"/>
+<map from="134,0,13" to="23,36,84"/>
+<map from="145,0,18" to="134,135,140"/>
+<map from="218,0,0" to="29,79,125"/>
+<map from="207,0,39" to="199,200,205"/>
+<map from="185,0,12" to="115,116,135"/>
+<map from="205,0,19" to="36,55,129"/>
+<map from="155,0,14" to="27,41,98"/>
+<map from="193,0,18" to="34,51,122"/>
+<map from="158,1,0" to="18,50,78"/>
+<map from="197,6,0" to="23,61,97"/>
+<map from="218,0,21" to="38,58,138"/>
+<map from="175,0,17" to="31,47,111"/>
+<map from="185,5,0" to="21,58,90"/>
+<map from="180,0,17" to="32,48,114"/>
+<map from="87,87,98" to="124,124,140"/>
+<map from="131,123,122" to="199,200,205"/>
+<map from="139,0,0" to="29,79,125"/>
+<map from="242,0,23" to="43,65,153"/>
+<map from="195,0,24" to="180,182,187"/>
+<map from="162,0,10" to="115,116,135"/>
+<map from="151,0,9" to="115,116,135"/>
+<map from="230,0,14" to="115,116,135"/>
+<map from="145,0,14" to="26,39,92"/>
+<map from="207,0,46" to="199,200,205"/>
+<map from="197,24,0" to="182,183,189"/>
+<map from="151,0,33" to="199,200,205"/>
+<map from="195,0,18" to="35,52,123"/>
+<map from="151,0,5" to="213,215,222"/>
+<map from="158,3,0" to="79,79,93"/>
+<map from="174,0,11" to="115,116,135"/>
+<map from="230,0,7" to="213,215,222"/>
+<map from="185,0,0" to="29,79,125"/>
+<map from="162,0,0" to="29,79,125"/>
+<map from="162,0,31" to="199,200,205"/>
+<map from="174,0,32" to="199,200,205"/>
+<map from="162,0,5" to="213,215,222"/>
+<map from="218,0,7" to="213,215,222"/>
+<map from="197,0,13" to="115,116,135"/>
+<map from="218,0,41" to="199,200,205"/>
+<map from="162,0,36" to="199,200,205"/>
+<map from="151,0,0" to="29,79,125"/>
+<map from="185,0,5" to="213,215,222"/>
+<map from="174,0,38" to="199,200,205"/>
+<map from="197,0,6" to="213,215,222"/>
+<map from="230,0,0" to="29,79,125"/>
+<map from="218,0,48" to="199,200,205"/>
+<map from="174,22,0" to="161,162,168"/>
+<map from="207,0,19" to="37,55,131"/>
+<map from="185,0,17" to="33,49,117"/>
+<map from="197,0,0" to="29,79,125"/>
+<map from="174,0,0" to="29,79,125"/>
+<map from="207,0,6" to="213,215,222"/>
+<map from="197,0,37" to="199,200,205"/>
+<map from="207,0,0" to="29,79,125"/>
+<map from="197,0,43" to="199,200,205"/>
+<map from="139,0,9" to="115,116,135"/>
+<map from="151,0,28" to="199,200,205"/>
+<map from="185,1,0" to="21,58,90"/>
+<map from="121,1,0" to="14,38,60"/>
+<map from="174,0,5" to="213,215,222"/>
+<map from="187,23,0" to="173,175,180"/>
+<map from="157,20,0" to="145,146,152"/>
+<map from="187,5,0" to="21,58,92"/>
+<map from="157,5,0" to="18,49,78"/>
+</spriteType>
+<picture ref="{FreeTrain-Shika-DieselLocomotive-picture-DD51}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- ディーゼル機関車 DD51機関車JR貨物更新機(北海道仕様) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-renew}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<spriteType name="colorMapped">
+<map from="90,99,108" to="173,173,182"/>
+<map from="86,94,103" to="164,164,173"/>
+<map from="78,85,93" to="148,148,156"/>
+<map from="73,80,87" to="141,141,148"/>
+<map from="81,89,97" to="156,156,164"/>
+<map from="77,85,93" to="148,148,156"/>
+<map from="100,110,136" to="147,148,172"/>
+<map from="85,94,116" to="126,127,147"/>
+<map from="90,99,123" to="133,133,155"/>
+<map from="218,21,0" to="164,164,173"/>
+<map from="56,61,80" to="91,91,94"/>
+<map from="95,104,129" to="140,140,163"/>
+<map from="139,13,0" to="105,105,110"/>
+<map from="69,77,84" to="133,133,141"/>
+<map from="218,27,0" to="164,164,173"/>
+<map from="207,20,0" to="156,156,164"/>
+<map from="151,14,0" to="114,114,119"/>
+<map from="139,17,0" to="105,105,110"/>
+<map from="76,83,109" to="123,123,128"/>
+<map from="85,94,123" to="139,139,144"/>
+<map from="90,99,130" to="147,147,152"/>
+<map from="230,22,0" to="173,173,182"/>
+<map from="176,5,0" to="132,132,139"/>
+<map from="230,0,36" to="221,69,49"/>
+<map from="167,0,26" to="160,50,35"/>
+<map from="112,3,0" to="84,84,88"/>
+<map from="230,29,0" to="173,173,182"/>
+<map from="176,1,0" to="169,52,37"/>
+<map from="207,13,0" to="156,156,164"/>
+<map from="180,0,28" to="173,54,38"/>
+<map from="242,0,38" to="233,72,51"/>
+<map from="151,9,0" to="114,114,119"/>
+<map from="112,1,0" to="107,33,24"/>
+<map from="162,15,0" to="123,123,129"/>
+<map from="151,19,0" to="114,114,119"/>
+<map from="193,0,30" to="185,58,41"/>
+<map from="174,16,0" to="131,131,138"/>
+<map from="218,0,34" to="209,65,46"/>
+<map from="230,7,0" to="221,69,49"/>
+<map from="218,14,0" to="164,164,173"/>
+<map from="100,110,128" to="158,189,186"/>
+<map from="205,0,32" to="197,61,43"/>
+<map from="71,78,102" to="115,115,119"/>
+<map from="85,94,109" to="135,162,159"/>
+<map from="255,0,40" to="245,76,54"/>
+<map from="162,10,0" to="123,123,129"/>
+<map from="131,3,0" to="98,98,104"/>
+<map from="151,5,0" to="144,45,32"/>
+<map from="218,0,14" to="164,164,173"/>
+<map from="174,11,0" to="131,131,138"/>
+<map from="140,4,0" to="106,106,111"/>
+<map from="162,21,0" to="123,123,129"/>
+<map from="197,19,0" to="148,148,156"/>
+<map from="185,17,0" to="139,139,146"/>
+<map from="167,4,0" to="125,125,132"/>
+<map from="230,0,22" to="221,69,49"/>
+<map from="185,0,23" to="129,129,137"/>
+<map from="134,0,17" to="94,94,99"/>
+<map from="167,0,16" to="160,50,35"/>
+<map from="131,1,0" to="125,39,28"/>
+<map from="207,0,13" to="156,156,164"/>
+<map from="205,0,26" to="143,143,151"/>
+<map from="155,0,19" to="109,109,114"/>
+<map from="193,0,24" to="135,135,142"/>
+<map from="174,5,0" to="167,52,37"/>
+<map from="140,1,0" to="134,42,30"/>
+<map from="162,5,0" to="156,49,34"/>
+<map from="207,26,0" to="156,156,164"/>
+<map from="158,4,0" to="119,119,125"/>
+<map from="197,13,0" to="148,148,156"/>
+<map from="218,0,27" to="152,152,161"/>
+<map from="175,0,22" to="122,122,129"/>
+<map from="185,23,0" to="139,139,146"/>
+<map from="218,7,0" to="210,65,46"/>
+<map from="167,1,0" to="161,50,35"/>
+<map from="207,6,0" to="199,62,44"/>
+<map from="230,0,29" to="161,161,170"/>
+<map from="180,0,23" to="126,126,133"/>
+<map from="242,0,30" to="169,169,178"/>
+<map from="185,0,18" to="178,55,39"/>
+<map from="134,0,13" to="129,40,28"/>
+<map from="145,0,18" to="101,101,107"/>
+<map from="218,0,0" to="210,65,46"/>
+<map from="207,0,39" to="156,156,164"/>
+<map from="185,0,12" to="139,139,146"/>
+<map from="205,0,19" to="197,61,43"/>
+<map from="155,0,14" to="149,47,33"/>
+<map from="193,0,18" to="185,58,41"/>
+<map from="158,1,0" to="152,47,33"/>
+<map from="197,6,0" to="189,59,41"/>
+<map from="218,0,21" to="209,65,46"/>
+<map from="175,0,17" to="168,52,37"/>
+<map from="185,5,0" to="178,55,39"/>
+<map from="180,0,17" to="173,54,38"/>
+<map from="139,0,0" to="133,41,30"/>
+<map from="242,0,23" to="233,72,51"/>
+<map from="195,0,24" to="136,136,143"/>
+<map from="162,0,10" to="123,123,129"/>
+<map from="151,0,9" to="114,114,119"/>
+<map from="230,0,14" to="173,173,182"/>
+<map from="145,0,14" to="139,43,31"/>
+<map from="207,0,46" to="199,62,44"/>
+<map from="197,24,0" to="148,148,156"/>
+<map from="151,0,33" to="144,45,32"/>
+<map from="195,0,18" to="187,58,41"/>
+<map from="151,0,5" to="114,114,119"/>
+<map from="158,3,0" to="119,119,125"/>
+<map from="174,0,11" to="131,131,138"/>
+<map from="230,0,7" to="173,173,182"/>
+<map from="185,0,0" to="178,55,39"/>
+<map from="162,0,0" to="156,49,34"/>
+<map from="162,0,31" to="123,123,129"/>
+<map from="174,0,32" to="131,131,138"/>
+<map from="162,0,5" to="123,123,129"/>
+<map from="218,0,7" to="164,164,173"/>
+<map from="197,0,13" to="148,148,156"/>
+<map from="218,0,41" to="164,164,173"/>
+<map from="162,0,36" to="156,49,34"/>
+<map from="151,0,0" to="144,45,32"/>
+<map from="185,0,5" to="139,139,146"/>
+<map from="174,0,38" to="167,52,37"/>
+<map from="197,0,6" to="148,148,156"/>
+<map from="230,0,0" to="221,69,49"/>
+<map from="218,0,48" to="210,65,46"/>
+<map from="174,22,0" to="131,131,138"/>
+<map from="207,0,19" to="199,62,44"/>
+<map from="185,0,17" to="178,55,39"/>
+<map from="197,0,0" to="189,59,41"/>
+<map from="174,0,0" to="167,52,37"/>
+<map from="207,0,6" to="156,156,164"/>
+<map from="197,0,37" to="148,148,156"/>
+<map from="207,0,0" to="199,62,44"/>
+<map from="197,0,43" to="189,59,41"/>
+<map from="139,0,9" to="105,105,110"/>
+<map from="151,0,28" to="114,114,119"/>
+<map from="185,1,0" to="178,55,39"/>
+<map from="121,1,0" to="116,36,25"/>
+<map from="174,0,5" to="131,131,138"/>
+<map from="187,23,0" to="141,141,148"/>
+<map from="157,20,0" to="118,118,124"/>
+<map from="187,5,0" to="179,56,40"/>
+<map from="157,5,0" to="151,47,33"/>
+</spriteType>
+<picture ref="{FreeTrain-Shika-DieselLocomotive-picture-DD51}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+
+<!-- ディーゼル機関車 DF200機関車 -->
+<!-- イメージ画像定義 --> 
+<contribution type="picture" id="{FreeTrain-Shika-DieselLocomotive-picture-DF200-901}">
+<picture src="df200_901.bmp" />
+</contribution>
+<!-- 車輌定義 -->
+<!-- ディーゼル機関車 DF200機関車(901号機) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-DieselLocomotive-TrainCar-DF200-901}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<picture ref="{FreeTrain-Shika-DieselLocomotive-picture-DF200-901}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- ディーゼル機関車 DF200機関車(1号機～9号機) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-DieselLocomotive-TrainCar-DF200-001}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<spriteType name="colorMapped">
+<map from="175,171,171" to="161,91,112"/>
+<map from="157,154,154" to="145,82,101"/>
+<map from="166,162,162" to="153,87,106"/>
+<map from="158,152,152" to="137,44,44"/>
+<map from="139,136,136" to="129,73,89"/>
+<map from="177,170,170" to="154,50,50"/>
+<map from="109,105,105" to="95,31,31"/>
+<map from="118,114,114" to="103,33,33"/>
+<map from="130,127,127" to="120,68,83"/>
+<map from="128,124,124" to="112,36,36"/>
+<map from="186,179,179" to="162,52,52"/>
+<map from="138,133,133" to="121,39,39"/>
+<map from="168,162,162" to="146,47,47"/>
+<map from="148,143,143" to="129,42,42"/>
+</spriteType>
+<picture ref="{FreeTrain-Shika-DieselLocomotive-picture-DF200-901}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+<!-- ディーゼル機関車 DF200機関車(10号機～) -->
+<contribution type="trainCar" id="{FreeTrain-Shika-DieselLocomotive-TrainCar-DF200-010}">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+<sprite origin="0,0">
+<spriteType name="colorMapped">
+<map from="127,41,41" to="119,118,122"/>
+<map from="92,29,29" to="86,86,88"/>
+<map from="141,45,45" to="132,131,135"/>
+<map from="134,43,43" to="125,124,128"/>
+<map from="100,32,32" to="93,92,95"/>
+<map from="158,152,152" to="137,44,44"/>
+<map from="177,170,170" to="154,50,50"/>
+<map from="109,105,105" to="95,31,31"/>
+<map from="107,34,34" to="100,99,102"/>
+<map from="118,114,114" to="103,33,33"/>
+<map from="121,38,38" to="113,112,115"/>
+<map from="113,36,36" to="106,105,109"/>
+<map from="128,124,124" to="112,36,36"/>
+<map from="186,179,179" to="162,52,52"/>
+<map from="108,35,35" to="100,100,103"/>
+<map from="64,21,21" to="60,60,62"/>
+<map from="74,23,23" to="69,69,71"/>
+<map from="43,14,14" to="40,40,41"/>
+<map from="138,133,133" to="121,39,39"/>
+<map from="168,162,162" to="146,47,47"/>
+<map from="37,12,12" to="35,35,36"/>
+<map from="27,9,9" to="25,25,26"/>
+<map from="51,16,16" to="47,47,48"/>
+<map from="29,9,9" to="27,27,28"/>
+<map from="148,143,143" to="129,42,42"/>
+<map from="39,13,13" to="37,36,38"/>
+<map from="80,26,26" to="75,74,76"/>
+<map from="54,17,17" to="51,50,52"/>
+<map from="31,10,10" to="29,29,30"/>
+<map from="102,33,33" to="96,95,98"/>
+<map from="68,22,22" to="63,63,65"/>
+<map from="86,27,27" to="80,80,82"/>
+<map from="36,11,11" to="33,33,34"/>
+<map from="97,31,31" to="91,90,92"/>
+<map from="61,19,19" to="57,57,58"/>
+</spriteType>
+<picture ref="{FreeTrain-Shika-DieselLocomotive-picture-DF200-901}" />
+</sprite>
+<capacity>0</capacity>
+</contribution>
+
+</plug-in>

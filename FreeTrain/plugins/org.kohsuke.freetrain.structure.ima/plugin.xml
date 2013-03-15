@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>McDonald's</title>
+	<author>ima</author>
+	<homepage>mailto:ima@imaden.bizland.com</homepage>
+	
+	<contribution type="picture" id="{00C73F7D-960E-4C12-8835-1C5D24381A45}">
+		<picture src="McDonals.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{594D6A74-2678-4a35-9FE6-E2FFA90C207A}">
+		<name>Hamburger restaurant</name>
+		<design>McDonald's</design>
+		<structure>
+			<category byname="Fast Food"/>
+		</structure>
+		<price>190</price>
+		<size>1,1</size>
+		<height>1</height>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+		<sprite origin="0,0" offset="10">
+			<picture ref="{00C73F7D-960E-4C12-8835-1C5D24381A45}" />
+		</sprite>
+	</contribution>
+</plug-in>

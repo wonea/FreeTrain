@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Terrain Loader</title>
+	<!--!<title>地形ローダー</title>-->
+	<author>Kohsuke Kawaguchi</author>
+	<!--!<author>川口耕介</author>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="newGame" id="{9CC6E93F-06D0-4d98-8F8C-7B3CE481F62E}">
+		<!-- 任意の画像をロードしてゲームを始められるように -->
+		<class name="freetrain.tools.terrainloader.PluginImpl"
+			codebase="bin/Debug/FreeTrain.TerrainLoader.dll" />
+	</contribution>
+	
+	
+	<contribution type="contribution" id="{973B89C6-D7C5-4977-AEEE-70EC1DEF5BDB}">
+		<!--
+			画像・サイズなどを固定して新規ゲームとして追加できるように
+			新しいコントリビューション型を定義
+		-->
+		<name>terrainOnlyNewGame</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.tools.terrainloader.TerrainOnlyNewGameContribution"
+			codebase="bin/Debug/FreeTrain.TerrainLoader.dll" />
+	</contribution>
+	
+</plug-in>

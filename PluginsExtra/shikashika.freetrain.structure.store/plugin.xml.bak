@@ -1,0 +1,2259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+
+<!ENTITY ta-white '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="244,234,218"/>
+</spriteType>
+'>
+<!ENTITY ta-silvergreen '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="198,198,184"/>
+</spriteType>
+'>
+
+<!ENTITY wall-greyyellow '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="198,195,164"/>
+</spriteType>
+'>
+<!ENTITY wall-warmbrown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="174,143,122"/>
+</spriteType>
+'>
+<!ENTITY wall-greywarmbrown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="213,205,184"/>
+</spriteType>
+'>
+<!ENTITY wall-darkbrown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="143,134,125"/>
+</spriteType>
+'>
+<!ENTITY wall-lightyelloworange '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="246,228,164"/>
+</spriteType>
+'>
+
+<!ENTITY wall-brownbeige '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="217,197,173"/>
+</spriteType>
+'>
+<!ENTITY wall-redbrick '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="94,65,41"/>
+</spriteType>
+'>
+<!ENTITY wall-ivory '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="212,215,194"/>
+</spriteType>
+'>
+<!ENTITY wall-urbanstone '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="196,180,167"/>
+</spriteType>
+'>
+<!ENTITY wall-tiled '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="203,170,124"/>
+</spriteType>
+'>
+<!ENTITY wall-pastelgray '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="191,206,200"/>
+</spriteType>
+'>
+
+<!ENTITY wall-wood001 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="191,138,85"/>
+</spriteType>
+'>
+<!ENTITY wall-wood002 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="191,175,85"/>
+</spriteType>
+'>
+<!ENTITY wall-wood003 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="204,150,97"/>
+</spriteType>
+'>
+<!ENTITY wall-wood004 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="199,178,153"/>
+</spriteType>
+'>
+<!ENTITY wall-wood005 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="138,110,61"/>
+</spriteType>
+'>
+<!ENTITY wall-wood006 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="114,99,88"/>
+</spriteType>
+'>
+<!ENTITY wall-wood007 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="160,151,104"/>
+</spriteType>
+'>
+<!ENTITY wall-wood008 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="93,79,65"/>
+</spriteType>
+'>
+]>
+
+
+<plug-in>
+
+<author>Shikashika</author>
+<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+<title>Buildings(shops)</title>
+
+<!-- Shisen Tour Support Corp. (travel agency) -->
+
+<!-- Shisen Tour Support Corp. Building -->
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-store-travelagent-shika2-01}">
+	<picture  src="shika2_01.bmp">
+		<override when="night" src="shika2_01n.bmp"/>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-store-travelagent-shika2-02}">
+	<picture  src="shika2_02.bmp">
+		<override when="night" src="shika2_02n.bmp"/>
+	</picture>
+</contribution>
+
+<!-- Shisen Tour Support Corp. main office building -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-travelagent-shika2-01-headoffice}">
+	<group>Service Providers</group>
+	<name>Travel agency</name>
+	<design>Shisen Tour Support Corp. main office</design>
+	<structure>
+		<category byname="Service Providers"/>
+		<category byname="Offices for Rent" hide="true"/>
+		<category byname="Restaurants" hide="true"/>
+	</structure>
+	<price>300</price>
+	<size>1,1</size>
+	<minHeight>2</minHeight>
+	<maxHeight>4</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>31</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>62</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>48</base>
+		</population>
+	</population>
+
+	<spriteType  name="hueTransform">
+		<map  from="*,0,0"  to="244,234,218"/>
+	</spriteType>
+	<spriteType  name="hueTransform">
+		<map  from="*,0,0"  to="198,198,184"/>
+	</spriteType>
+
+
+	<computerCannotBuild />
+
+	<pictures>
+		<top    origin=" 0, 2" offset="14">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-01}"/>
+		</top>
+		<middle origin=" 0, 39" offset="9">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-01}"/>
+		</middle>
+		<bottom origin=" 0, 71" offset="9">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-01}"/>
+		</bottom>
+	</pictures>
+
+	<pictures>
+		<top    origin=" 32, 4" offset="12">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-01}"/>
+		</top>
+		<middle origin=" 32, 37" offset="11">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-01}"/>
+		</middle>
+		<bottom origin=" 32, 69" offset="11">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-01}"/>
+		</bottom>
+	</pictures>
+
+	<pictures>
+		<top    origin=" 64, 7" offset="9">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-01}"/>
+		</top>
+		<middle origin=" 64, 41" offset="7">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-01}"/>
+		</middle>
+		<bottom origin=" 64, 73" offset="7">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-01}"/>
+		</bottom>
+	</pictures>
+
+	<pictures>
+		<top    origin=" 96, 5" offset="11">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-01}"/>
+		</top>
+		<middle origin=" 96, 40" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-01}"/>
+		</middle>
+		<bottom origin=" 96, 72" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-01}"/>
+		</bottom>
+	</pictures>
+
+</contribution>
+
+<!-- Shisen Tour Support Corp. branch office building -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-travelagent-shika2-02-branchoffice}">
+	<group>Service Providers</group>
+	<name>Travel agency</name>
+	<design>Shisen Tour Support Corp. branch office</design>
+	<structure>
+		<category byname="Service Providers"/>
+		<category byname="Offices for Rent" hide="true"/>
+		<category byname="Restaurants" hide="true"/>
+	</structure>
+	<price>280</price>
+	<size>1,1</size>
+	<minHeight>2</minHeight>
+	<maxHeight>4</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>28</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>58</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>45</base>
+		</population>
+	</population>
+
+	<spriteType  name="hueTransform">
+		<map  from="*,0,0"  to="244,234,218"/>
+	</spriteType>
+	<spriteType  name="hueTransform">
+		<map  from="*,0,0"  to="198,198,184"/>
+	</spriteType>
+
+	<pictures>
+		<top    origin=" 0, 4" offset="12">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-02}"/>
+		</top>
+		<middle origin=" 0, 40" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-02}"/>
+		</middle>
+		<bottom origin=" 0, 72" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-02}"/>
+		</bottom>
+	</pictures>
+
+	<pictures>
+		<top    origin=" 32, 6" offset="10">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-02}"/>
+		</top>
+		<middle origin=" 32, 40" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-02}"/>
+		</middle>
+		<bottom origin=" 32, 72" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-02}"/>
+		</bottom>
+	</pictures>
+
+	<pictures>
+		<top    origin=" 64, 8" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-02}"/>
+		</top>
+		<middle origin=" 64, 41" offset="7">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-02}"/>
+		</middle>
+		<bottom origin=" 64, 73" offset="7">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-02}"/>
+		</bottom>
+	</pictures>
+
+	<pictures>
+		<top    origin=" 96, 5" offset="11">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-02}"/>
+		</top>
+		<middle origin=" 96, 40" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-02}"/>
+		</middle>
+		<bottom origin=" 96, 72" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-travelagent-shika2-02}"/>
+		</bottom>
+	</pictures>
+
+</contribution>
+
+
+
+
+<!-- Stores-Specialty Chain Stores-Local Outlets -->
+
+<!-- Electronics Outlet -->
+
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-store-electrical-deo2-01}">
+	<picture  src="deo2_01.bmp">
+		<override when="night" src="deo2_01n.bmp"/>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-store-electrical-deo2-02}">
+	<picture  src="deo2_02.bmp">
+		<override when="night" src="deo2_02n.bmp"/>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-store-electrical-deo2-03}">
+	<picture  src="deo2_03.bmp">
+		<override when="night" src="deo2_03n.bmp"/>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-store-electrical-deo2-04}">
+	<picture  src="deo2_04.bmp">
+		<override when="night" src="deo2_04n.bmp"/>
+	</picture>
+</contribution>
+
+<!-- Electronics Outlet (main store) -->
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-electrical-deo2-01-main}">
+	<group>Urban Outlets</group>
+	<name>Home Electronics Outlet</name>
+	<design>DEOx2 main store</design>
+	<structure>
+		<category byname="Urban Outlets"/>
+	</structure>
+	<price>900</price>
+	<size>1,2</size>
+	<minHeight>2</minHeight>
+	<maxHeight>3</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>550</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>80</base>
+		</population>
+	</population>
+
+	<pictures>
+		<top    origin=" 0, 2" offset="6">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-01}"/>
+		</top>
+		<middle origin=" 0, 32" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-01}"/>
+		</middle>
+		<bottom origin=" 0, 63" offset="9">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-01}"/>
+		</bottom>
+	</pictures>
+
+	<pictures opposite="true">
+		<top    origin=" 48, 8" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-01}"/>
+		</top>
+		<middle origin=" 48, 33" offset="15">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-01}"/>
+		</middle>
+		<bottom origin=" 48, 65" offset="15">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-01}"/>
+		</bottom>
+	</pictures>
+
+	<pictures>
+		<top    origin=" 96, 8" offset="0">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-01}"/>
+		</top>
+		<middle origin=" 96, 33" offset="7">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-01}"/>
+		</middle>
+		<bottom origin=" 96, 65" offset="7">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-01}"/>
+		</bottom>
+	</pictures>
+
+	<pictures opposite="true">
+		<top    origin=" 144, 0" offset="16">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-01}"/>
+		</top>
+		<middle origin=" 144, 32" offset="16">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-01}"/>
+		</middle>
+		<bottom origin=" 144, 64" offset="16">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-01}"/>
+		</bottom>
+	</pictures>
+
+</contribution>
+
+
+<!-- Electronics Outlet (PC store) -->
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-electrical-deo2-02-pc}">
+	<group>Urban Outlets</group>
+	<name>Home Electronics Outlet</name>
+	<design>DEOx2 PC store</design>
+	<structure>
+		<category byname="Urban Outlets"/>
+	</structure>
+	<price>475</price>
+	<size>1,1</size>
+	<minHeight>2</minHeight>
+	<maxHeight>3</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>262</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>40</base>
+		</population>
+	</population>
+
+	<pictures>
+		<top    origin=" 0, 14" offset="2">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-02}"/>
+		</top>
+		<middle origin=" 0, 40" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-02}"/>
+		</middle>
+		<bottom origin=" 0, 72" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-02}"/>
+		</bottom>
+	</pictures>
+
+	<pictures>
+		<top    origin=" 32, 16" offset="0">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-02}"/>
+		</top>
+		<middle origin=" 32, 40" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-02}"/>
+		</middle>
+		<bottom origin=" 32, 72" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-02}"/>
+		</bottom>
+	</pictures>
+
+	<pictures>
+		<top    origin=" 64, 16" offset="0">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-02}"/>
+		</top>
+		<middle origin=" 64, 41" offset="7">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-02}"/>
+		</middle>
+		<bottom origin=" 64, 73" offset="7">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-02}"/>
+		</bottom>
+	</pictures>
+
+	<pictures>
+		<top    origin=" 96, 16" offset="0">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-02}"/>
+		</top>
+		<middle origin=" 96, 40" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-02}"/>
+		</middle>
+		<bottom origin=" 96, 72" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-02}"/>
+		</bottom>
+	</pictures>
+
+</contribution>
+
+<!-- Electronics Outlet (watchs and cameras) -->
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-electrical-deo2-03-watchcamera}">
+	<group>Urban Outlets</group>
+	<name>Home Electronics Outlet</name>
+	<design>DEOx2 watchs and cameras</design>
+	<structure>
+		<category byname="Urban Outlets"/>
+	</structure>
+	<price>250</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>125</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>20</base>
+		</population>
+	</population>
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-03}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-03}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-03}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-03}"/>
+	</sprite>
+
+</contribution>
+
+<!-- Electronics Suburbian Outlet舗 -->
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-electrical-deo2-04-suburbs}">
+	<group>Suburbian Outlets</group>
+	<name>Home Electronics Outlet</name>
+	<design>DEOx2 branch store</design>
+	<structure>
+		<category byname="Suburban Outlets"/>
+	</structure>
+	<price>1710</price>
+	<size>2,2</size>
+	<minHeight>2</minHeight>
+	<maxHeight>3</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>1155</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>100</base>
+		</population>
+	</population>
+
+	<pictures>
+		<top    origin=" 0, 16" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-04}"/>
+		</top>
+		<middle origin=" 0, 47" offset="9">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-04}"/>
+		</middle>
+		<bottom origin=" 0, 79" offset="9">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-04}"/>
+		</bottom>
+	</pictures>
+
+	<pictures>
+		<top    origin=" 64, 15" offset="9">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-04}"/>
+		</top>
+		<middle origin=" 64, 47" offset="9">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-04}"/>
+		</middle>
+		<bottom origin=" 64, 79" offset="9">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-04}"/>
+		</bottom>
+	</pictures>
+
+	<pictures>
+		<top    origin=" 128, 8" offset="16">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-04}"/>
+		</top>
+		<middle origin=" 128, 48" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-04}"/>
+		</middle>
+		<bottom origin=" 128, 80" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-04}"/>
+		</bottom>
+	</pictures>
+
+	<pictures>
+		<top    origin=" 192, 16" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-04}"/>
+		</top>
+		<middle origin=" 192, 48" offset="8">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-04}"/>
+		</middle>
+		<bottom origin=" 192, 79" offset="9">
+			<picture ref="{FreeTrain-Shika-picture-building-store-electrical-deo2-04}"/>
+		</bottom>
+	</pictures>
+
+</contribution>
+
+
+<!-- Book store -->
+
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-store-bookstore-01}">
+	<picture  src="bookstore_01.bmp">
+		<override when="night" src="bookstore_01n.bmp"/>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-store-bookstore-02}">
+	<picture  src="bookstore_02.bmp">
+		<override when="night" src="bookstore_02n.bmp"/>
+	</picture>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-bookstore-01-a}">
+
+	<group>Private Convenience Stores</group>
+	<name>Book store(1x1)</name>
+	<design>Book store(1floor)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>190</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-01}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-01}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-01}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-bookstore-02-a}">
+
+	<group>Private Convenience Stores</group>
+	<name>Book store(1x1)</name>
+	<design>Book store(1froor,tile roof)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>115</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>50</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-02}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-02}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-02}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-bookstore-01-b}">
+
+	<group>Private Convenience Stores</group>
+	<name>Book store(1x1)</name>
+	<design>Book store(2floor)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+	</structure>
+	<price>190</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-01}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-01}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-01}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-bookstore-02-b}">
+
+	<group>Private Convenience Stores</group>
+	<name>Book store(1x1)</name>
+	<design>Book store(2floor,tile roof)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+	</structure>
+	<price>190</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-02}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-02}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-02}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-bookstore-01-c}">
+
+	<group>Private Convenience Stores</group>
+	<name>Book store(1x1)</name>
+	<design>Book store(3floor)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+	</structure>
+	<price>285</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>120</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>8</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>8</base>
+		</population>
+	</population>
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-01}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-01}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-01}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-bookstore-02-c}">
+
+	<group>Private Convenience Stores</group>
+	<name>Book store(1x1)</name>
+	<design>Book store(3floor,tile roof)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+	</structure>
+	<price>190</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>120</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>8</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>8</base>
+		</population>
+	</population>
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-02}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-02}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-02}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-bookstore-02}"/>
+	</sprite>
+
+</contribution>
+
+<!-- Vegetable store -->
+
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-store-vegetablestore-01}">
+	<picture  src="vegetablestore_01.bmp">
+		<override when="night" src="vegetablestore_01n.bmp"/>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-store-vegetablestore-02}">
+	<picture  src="vegetablestore_02.bmp">
+		<override when="night" src="vegetablestore_02n.bmp"/>
+	</picture>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-vegetablestore-01-a}">
+
+	<group>Private Convenience Stores</group>
+	<name>Vegetable store(1x1)</name>
+	<design>Vegetable store(1floor)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>190</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-01}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-01}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-01}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-vegetablestore-02-a}">
+
+	<group>Private Convenience Stores</group>
+	<name>Vegetable store(1x1)</name>
+	<design>Vegetable store(1floor,tile roof)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>115</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>50</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-02}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-02}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-02}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-vegetablestore-01-b}">
+
+	<group>Private Convenience Stores</group>
+	<name>Vegetable store(1x1)</name>
+	<design>Vegetable store(2floor)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+	</structure>
+	<price>190</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-01}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-01}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-01}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-vegetablestore-02-b}">
+
+	<group>Private Convenience Stores</group>
+	<name>Vegetable store(1x1)</name>
+	<design>Vegetable store(2floor,tile roof)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+	</structure>
+	<price>190</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-02}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-02}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-02}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-vegetablestore-01-c}">
+
+	<group>Private Convenience Stores</group>
+	<name>Vegetable store(1x1)</name>
+	<design>Vegetable store(3floor)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+	</structure>
+	<price>285</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>120</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>8</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>8</base>
+		</population>
+	</population>
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-01}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-01}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-01}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-vegetablestore-02-c}">
+
+	<group>Private Convenience Stores</group>
+	<name>Vegetable store(1x1)</name>
+	<design>Vegetable store(3floor,tile roof)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+	</structure>
+	<price>190</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>120</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>8</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>8</base>
+		</population>
+	</population>
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-02}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-02}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-02}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-vegetablestore-02}"/>
+	</sprite>
+
+</contribution>
+
+<!-- Meat shop -->
+
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-store-meatshop-01}">
+	<picture  src="meatshop_01.bmp">
+		<override when="night" src="meatshop_01n.bmp"/>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-store-meatshop-02}">
+	<picture  src="meatshop_02.bmp">
+		<override when="night" src="meatshop_02n.bmp"/>
+	</picture>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-meatshop-01-a}">
+
+	<group>Private Convenience Stores</group>
+	<name>Meat shop(1x1)</name>
+	<design>Meat shop(1floor)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>190</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-01}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-01}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-01}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-meatshop-02-a}">
+
+	<group>Private Convenience Stores</group>
+	<name>Meat shop(1x1)</name>
+	<design>Meat shop(1floor,tile roof)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>115</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>50</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-02}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-02}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-02}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-meatshop-01-b}">
+
+	<group>Private Convenience Stores</group>
+	<name>Meat shop(1x1)</name>
+	<design>Meat shop(2floor)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+	</structure>
+	<price>190</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-01}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-01}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-01}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-meatshop-02-b}">
+
+	<group>Private Convenience Stores</group>
+	<name>Meat shop(1x1)</name>
+	<design>Meat shop(2floor,tile roof)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+	</structure>
+	<price>190</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-02}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-02}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-02}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-meatshop-01-c}">
+
+	<group>Private Convenience Stores</group>
+	<name>Meat shop(1x1)</name>
+	<design>Meat shop(3floor)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+	</structure>
+	<price>285</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>120</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>8</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>8</base>
+		</population>
+	</population>
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-01}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-01}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-01}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-meatshop-02-c}">
+
+	<group>Private Convenience Stores</group>
+	<name>Meat shop(1x1)</name>
+	<design>Meat shop(3floor,tile roof)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+	</structure>
+	<price>190</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>120</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>8</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>8</base>
+		</population>
+	</population>
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-02}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-02}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-02}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-meatshop-02}"/>
+	</sprite>
+
+</contribution>
+
+<!-- Fish shop -->
+
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-store-fishstore-01}">
+	<picture  src="fishstore_01.bmp">
+		<override when="night" src="fishstore_01n.bmp"/>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-store-fishstore-02}">
+	<picture  src="fishstore_02.bmp">
+		<override when="night" src="fishstore_02n.bmp"/>
+	</picture>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-fishstore-01-a}">
+
+	<group>Private Convenience Stores</group>
+	<name>Fish shop(1x1)</name>
+	<design>Fish shop(1floor)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>190</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-01}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-01}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-01}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-fishstore-02-a}">
+
+	<group>Private Convenience Stores</group>
+	<name>Fish shop(1x1)</name>
+	<design>Fish shop(1floor,tile roof)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>115</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>50</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-02}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-02}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-02}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-fishstore-01-b}">
+
+	<group>Private Convenience Stores</group>
+	<name>Fish shop(1x1)</name>
+	<design>Fish shop(2floor)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+	</structure>
+	<price>190</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-01}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-01}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-01}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-fishstore-02-b}">
+
+	<group>Private Convenience Stores</group>
+	<name>Fish shop(1x1)</name>
+	<design>Fish shop(2floor,tile roof)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+	</structure>
+	<price>190</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-02}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-02}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-02}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-fishstore-01-c}">
+
+	<group>Private Convenience Stores</group>
+	<name>Fish shop(1x1)</name>
+	<design>Fish shop(3floor)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+	</structure>
+	<price>285</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>120</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>8</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>8</base>
+		</population>
+	</population>
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-01}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-01}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-01}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-fishstore-02-c}">
+
+	<group>Private Convenience Stores</group>
+	<name>Fish shop(1x1)</name>
+	<design>Fish shop(3floor,tile roof)</design>
+	<structure>
+		<category byname="Private Convenience Stores"/>
+	</structure>
+	<price>190</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>120</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>8</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>8</base>
+		</population>
+	</population>
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-02}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-02}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-02}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-fishstore-02}"/>
+	</sprite>
+
+</contribution>
+
+<!-- Souvenir Shops -->
+
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-store-souvenirstore-01}">
+	<picture  src="souvenirstore_01.bmp">
+		<override when="night" src="souvenirstore_01n.bmp"/>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-store-souvenirstore-02}">
+	<picture  src="souvenirstore_02.bmp">
+		<override when="night" src="souvenirstore_02n.bmp"/>
+	</picture>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-souvenirstore-001-a}">
+
+	<group>Private Convenience Stores</group>
+	<name>Souvenir shops(1x1)</name>
+	<design>Souvenir shops A</design>
+	<structure>
+		<category byname="Souvenir Shops"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>300</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-wood003;
+	&wall-wood004;
+	&wall-wood005;
+	&wall-wood006;
+	&wall-wood007;
+	&wall-wood008;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-01}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-01}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-01}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-souvenirstore-001-b}">
+
+	<group>Private Convenience Stores</group>
+	<name>Souvenir shops(1x1)</name>
+	<design>Souvenir shops B</design>
+	<structure>
+		<category byname="Souvenir Shops"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>300</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-wood003;
+	&wall-wood004;
+	&wall-wood005;
+	&wall-wood006;
+	&wall-wood007;
+	&wall-wood008;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-01}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-01}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-01}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-souvenirstore-001-c}">
+
+	<group>Private Convenience Stores</group>
+	<name>Souvenir shops(1x1)</name>
+	<design>Souvenir shops C</design>
+	<structure>
+		<category byname="Souvenir Shops"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>300</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-wood003;
+	&wall-wood004;
+	&wall-wood005;
+	&wall-wood006;
+	&wall-wood007;
+	&wall-wood008;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-01}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-01}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-01}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-souvenirstore-001-d}">
+
+	<group>Private Convenience Stores</group>
+	<name>Souvenir shops(1x1)</name>
+	<design>Souvenir shops D</design>
+	<structure>
+		<category byname="Souvenir Shops"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>300</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-wood003;
+	&wall-wood004;
+	&wall-wood005;
+	&wall-wood006;
+	&wall-wood007;
+	&wall-wood008;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-01}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-01}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-01}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-souvenirstore-002-a}">
+
+	<group>Private Convenience Stores</group>
+	<name>Souvenir shops(1x1)</name>
+	<design>Souvenir shopsA (flat roof)</design>
+	<structure>
+		<category byname="Souvenir Shops"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>300</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-greyyellow;
+	&wall-warmbrown;
+	&wall-brownbeige;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-lightyelloworange;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-02}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-02}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-02}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-souvenirstore-002-b}">
+
+	<group>Private Convenience Stores</group>
+	<name>Souvenir shops(1x1)</name>
+	<design>Souvenir shops B(flat roof)</design>
+	<structure>
+		<category byname="Souvenir Shops"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>300</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-greyyellow;
+	&wall-warmbrown;
+	&wall-brownbeige;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-lightyelloworange;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-02}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-02}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-02}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-souvenirstore-002-c}">
+
+	<group>Private Convenience Stores</group>
+	<name>Souvenir shops(1x1)</name>
+	<design>Souvenir shops C(flat roof)</design>
+	<structure>
+		<category byname="Souvenir Shops"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>300</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-greyyellow;
+	&wall-warmbrown;
+	&wall-brownbeige;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-lightyelloworange;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-02}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-02}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-02}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-store-souvenirstore-002-d}">
+
+	<group>Private Convenience Stores</group>
+	<name>Souvenir shops(1x1)</name>
+	<design>Souvenir shops D(flat roof)</design>
+	<structure>
+		<category byname="Souvenir Shops"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>300</price>
+	<size>1,1</size>
+	<height>1</height>
+	&wall-greyyellow;
+	&wall-warmbrown;
+	&wall-brownbeige;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-lightyelloworange;
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-02}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-02}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-02}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-store-souvenirstore-02}"/>
+	</sprite>
+
+</contribution>
+
+</plug-in>

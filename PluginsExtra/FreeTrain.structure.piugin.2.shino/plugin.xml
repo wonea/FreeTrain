@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Factory (big)</title>
+	<author>Shino</author>
+	<homepage></homepage>
+	
+	<contribution type="picture" id="{3C8AC489-E756-4375-9EB4-8A2763FD73F7}">
+		<picture src="koujyou1.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{AE49208E-BEB2-4319-8477-F20E0BF1F1BB}">
+		<group>Factory (big)</group>
+		<structure>
+			<category byname="Factories"/>
+		</structure>
+		<price>5800</price>
+		<size>5,8</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="37">
+		<picture ref="{3C8AC489-E756-4375-9EB4-8A2763FD73F7}" />
+		</sprite>
+	        <computerCannotBuild />
+        </contribution>
+</plug-in>

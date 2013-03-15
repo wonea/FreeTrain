@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY ColorSet '
+	<!--Red-White-White-->
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="255,255,255"/>
+		<map from="0,0,*" to="255,255,255"/>
+	</spriteType>	
+	<!--Magenta-White-Pink-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="234,68,209"/>
+		<map from="0,*,0" to="255,255,255"/>
+		<map from="0,0,*" to="255,180,240"/>
+	</spriteType>	
+	<!--Sky-White-Red-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="57,176,238"/>
+		<map from="0,*,0" to="255,255,255"/>
+		<map from="0,0,*" to="255,64,32"/>
+	</spriteType>	
+	<!--Red-White-Blue-->
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="255,255,255"/>
+		<map from="0,0,*" to="64,64,255"/>
+	</spriteType>	
+	<!--Red-White-Red-->
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="255,255,255"/>
+		<map from="0,0,*" to="250,0,0"/>
+	</spriteType>	
+	<!--AllRed-->
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="255,0,0"/>
+		<map from="0,0,*" to="250,0,0"/>
+	</spriteType>
+	<!--Blue-Cyan-Cyan-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="0,0,255"/>
+		<map from="0,*,0" to="44,153,255"/>
+		<map from="0,0,*" to="44,153,255"/>
+	</spriteType>	
+	<!--Red-White-Blue-->
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="255,255,255"/>
+		<map from="0,0,*" to="44,153,255"/>
+	</spriteType>	
+	<!--Orange-Cyan-Yellow-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="231,160,24"/>
+		<map from="0,*,0" to="250,230,60"/>
+		<map from="0,0,*" to="44,153,255"/>
+	</spriteType>	
+	<!--Cyan-Yellow-White-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="10,215,250"/>
+		<map from="0,*,0" to="250,250,10"/>
+		<map from="0,0,*" to="255,255,255"/>
+	</spriteType>	
+	<!--Pink-Cyan-White-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,130,40"/>
+		<map from="0,*,0" to="10,215,250"/>
+		<map from="0,0,*" to="255,255,255"/>
+	</spriteType>	
+	<!--LtGreen-Orange-White-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="20,225,170"/>
+		<map from="0,*,0" to="255,200,30"/>
+		<map from="0,0,*" to="255,255,255"/>
+	</spriteType>	
+	<!--Cyan-Pink-White-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="10,215,250"/>
+		<map from="0,*,0" to="255,130,130"/>
+		<map from="0,0,*" to="255,255,255"/>
+	</spriteType>	
+	<!--Orange-Cyan-Yellow-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,130,40"/>
+		<map from="0,*,0" to="20,225,170"/>
+		<map from="0,0,*" to="255,255,0"/>
+	</spriteType>	
+	<!--LtGreen-Pink-Yellow-->
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="20,225,170"/>
+		<map from="0,*,0" to="255,130,130"/>
+		<map from="0,0,*" to="255,255,0"/>
+	</spriteType>	
+'>
+
+]>
+
+<plug-in>
+
+	<title>Amusement Park set 1</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+		
+	<contribution type="picture" id="{F88FF34F-6262-41F3-C477-F2337FF9B6BB}">
+		<picture src="ampark_goround.bmp">
+			<override when="night" src="ampark_goround_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{61C86CF7-028B-42AB-C477-85180516C641}">
+		<picture src="ampark_wheelS.bmp">
+			<override when="night" src="ampark_wheelS_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{65FA3936-9452-49D3-C477-600889FABE8B}">
+		<picture src="ampark_wheelL.bmp">
+			<override when="night" src="ampark_wheelL_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{2DE5315B-2BE5-40F6-C477-6C597B29B3C4}">
+		<picture src="ampark_ground.bmp">
+			<override when="night" src="ampark_ground_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{467E9AA2-640E-49FA-C477-67CBC09D270A}">
+		<picture src="road_ampark.bmp">
+			<override when="night" src="road_ampark_n.bmp"/>
+		</picture>
+	</contribution>
+		
+	<contribution type="GenericStructure" id="{83E34DCA-4F85-4B19-C477-08FD870912C7}">
+		<group>Attraction2x2</group>
+		<design>merry-go-round A</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>750</price>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>24</base>
+		</population>
+		<height>1</height>
+		<size>2,2</size>
+		<computerCannotBuild/>
+		&ColorSet;
+		<sprite origin="0,0" offset="24">
+			<picture ref="{F88FF34F-6262-41F3-C477-F2337FF9B6BB}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{EE314C4B-8743-47AC-C477-928BC05F22AE}">
+		<group>Attraction2x2</group>
+		<design>merry-go-round B</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>800</price>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>28</base>
+		</population>
+		<height>1</height>
+		<size>2,2</size>
+		<computerCannotBuild/>
+		&ColorSet;
+		<sprite origin="64,0" offset="24">
+			<picture ref="{F88FF34F-6262-41F3-C477-F2337FF9B6BB}"/>
+		</sprite>
+	</contribution>
+
+
+	<contribution type="GenericStructure" id="{F3288563-FB70-409C-C477-037B789C109B}">
+		<group>Ferris wheel</group>
+		<design>medium size</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>1000</price>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>60</base>
+		</population>
+		<height>2</height>
+		<size>1,2</size>
+		<computerCannotBuild/>
+		&ColorSet;
+		<sprite origin="0,0" offset="32">
+			<picture ref="{61C86CF7-028B-42AB-C477-85180516C641}"/>
+		</sprite>
+		<sprite origin="48,0" offset="40" opposite="true">
+			<picture ref="{61C86CF7-028B-42AB-C477-85180516C641}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{7DCC878C-1D30-49DA-C477-58FAE78FB551}">
+		<group>Ferris wheel</group>
+		<design>large</design>
+		<structure>
+			<category byname="Amusement Parks"/>
+		</structure>
+		<price>4600</price>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>200</base>
+		</population>
+		<height>5</height>
+		<size>5,2</size>
+		<computerCannotBuild/>
+		&ColorSet;
+		<sprite origin="0,0" offset="112">
+			<picture ref="{65FA3936-9452-49D3-C477-600889FABE8B}"/>
+		</sprite>
+		<sprite origin="112,0" offset="88" opposite="true">
+			<picture ref="{65FA3936-9452-49D3-C477-600889FABE8B}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="road" id="{9D70C491-72FA-4562-C477-13E62F2B3545}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Amusement Park pavement(lights)</name>
+		<description>Pavement in Amusement Parks</description>
+		<picture ref="{467E9AA2-640E-49FA-C477-67CBC09D270A}" size="32,24" offset="8"/>
+	</contribution>
+	<contribution type="road" id="{BCCD83F5-F857-4055-C477-F042B0CF002C}">
+		<class name="freetrain.contributions.road.A3RoadContribution" />
+		<name>Amusement Park pavement(nolights)</name>
+		<description>Pavement in Amusement Parks</description>
+		<picture ref="{2DE5315B-2BE5-40F6-C477-6C597B29B3C4}"/>
+	</contribution>
+
+</plug-in>

@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY housePopulation3 '
+	<population>
+		<class name="freetrain.contributions.population.ResidentialPopulation"/>
+		<base>3</base>
+	</population>
+'>
+<!ENTITY housePopulation6 '
+	<population>
+		<class name="freetrain.contributions.population.ResidentialPopulation"/>
+		<base>6</base>
+	</population>
+'>
+
+]>
+
+<plug-in>
+	<title>Half-tile houses 3</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>	
+	<depend on="jp.co.tripod.chiname.lib.halfvoxel" />	
+	
+	<contribution type="picture" id="{4C6004F7-F92F-40B7-C477-EEF24FD4231E}">
+		<picture src="smallhouses3.bmp"/>
+	</contribution>
+
+	<contribution type="HalfVoxelStructure" id="{0D38E912-C4E3-48DF-C477-2F9C1D332FFE}-0">
+		<group>Half-tile structures</group>
+		<subgroup>flat roof house</subgroup>
+		<name>RC 2 floor</name>
+		<price>45</price>
+		<height>1</height>
+		&housePopulation3;
+		<sprite>
+			<picture ref="{4C6004F7-F92F-40B7-C477-EEF24FD4231E}"/>
+			<map from="0,*,0" to="{COLORLIB-DIRTS}"/>
+			<pattern direction="west" side="either" origin="0,0"/>
+			<pattern direction="south" side="either" origin="24,0"/>
+			<pattern direction="east" side="either" origin="48,0"/>
+			<pattern direction="north" side="either" origin="72,0"/>
+		</sprite>
+	</contribution>
+	<contribution type="HalfVoxelStructure" id="{0D38E912-C4E3-48DF-C477-2F9C1D332FFE}-1">
+		<group>Half-tile structures</group>
+		<subgroup>flat roof house</subgroup>
+		<name>RC 3 floor A</name>
+		<price>55</price>
+		<height>1</height>
+		&housePopulation6;
+		<sprite>
+			<picture ref="{4C6004F7-F92F-40B7-C477-EEF24FD4231E}"/>
+			<map from="0,*,0" to="{COLORLIB-STONES}"/>
+			<pattern direction="west" side="either" origin="0,26"/>
+			<pattern direction="south" side="either" origin="24,26"/>
+			<pattern direction="east" side="either" origin="48,26"/>
+			<pattern direction="north" side="either" origin="72,26"/>
+		</sprite>
+	</contribution>
+	<contribution type="HalfVoxelStructure" id="{0D38E912-C4E3-48DF-C477-2F9C1D332FFE}-4">
+		<group>Half-tile structures</group>
+		<subgroup>flat roof house</subgroup>
+		<name>RC 3 floor B</name>
+		<price>55</price>
+		<height>1</height>
+		&housePopulation6;
+		<sprite>
+			<picture ref="{4C6004F7-F92F-40B7-C477-EEF24FD4231E}"/>
+			<map from="0,*,0" to="{COLORLIB-DIRTS}"/>
+			<pattern direction="west" side="either" origin="0,112"/>
+			<pattern direction="south" side="either" origin="24,112"/>
+			<pattern direction="east" side="either" origin="48,112"/>
+			<pattern direction="north" side="either" origin="72,112"/>
+		</sprite>
+	</contribution>
+	<contribution type="HalfVoxelStructure" id="{0D38E912-C4E3-48DF-C477-2F9C1D332FFE}-2">
+		<group>Half-tile structures</group>
+		<subgroup>flat roof house</subgroup>
+		<name>S 3 floor A</name>
+		<price>60</price>
+		<height>1</height>
+		&housePopulation6;
+		<sprite>
+			<picture ref="{4C6004F7-F92F-40B7-C477-EEF24FD4231E}"/>
+			<map from="0,*,0" to="{COLORLIB-STONES}"/>
+			<pattern direction="west" side="either" origin="0,56"/>
+			<pattern direction="south" side="either" origin="24,56"/>
+			<pattern direction="east" side="either" origin="48,56"/>
+			<pattern direction="north" side="either" origin="72,56"/>
+		</sprite>
+	</contribution>
+	<contribution type="HalfVoxelStructure" id="{0D38E912-C4E3-48DF-C477-2F9C1D332FFE}-3">
+		<group>Half-tile structures</group>
+		<subgroup>flat roof house</subgroup>
+		<name>S 3 floor B</name>
+		<price>60</price>
+		<height>1</height>
+		&housePopulation6;
+		<sprite>
+			<picture ref="{4C6004F7-F92F-40B7-C477-EEF24FD4231E}"/>
+			<map from="0,*,0" to="{COLORLIB-STONES}"/>
+			<pattern direction="west" side="either" origin="0,84"/>
+			<pattern direction="south" side="either" origin="24,84"/>
+			<pattern direction="east" side="either" origin="48,84"/>
+			<pattern direction="north" side="either" origin="72,84"/>
+		</sprite>
+	</contribution>
+	<contribution type="HalfVoxelStructure" id="{0D38E912-C4E3-48DF-C477-2F9C1D332FFE}-5">
+		<group>Half-tile structures</group>
+		<subgroup>flat roof house</subgroup>
+		<name>flat S 3 floor C</name>
+		<price>60</price>
+		<height>1</height>
+		&housePopulation6;
+		<sprite>
+			<picture ref="{4C6004F7-F92F-40B7-C477-EEF24FD4231E}"/>
+			<map from="0,*,0" to="{COLORLIB-STONES}"/>
+			<pattern direction="west" side="either" origin="0,140"/>
+			<pattern direction="south" side="either" origin="24,140"/>
+			<pattern direction="east" side="either" origin="48,140"/>
+			<pattern direction="north" side="either" origin="72,140"/>
+		</sprite>
+	</contribution>
+
+</plug-in>

@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY PatternDef '
+	<price>25</price>
+	<size>1,1</size>
+	<height>1</height>
+'>
+]>
+<plug-in>
+	<title>Causeway</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+	
+	<contribution type="picture" id="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}">
+		<picture src="causeway_1.bmp"/>
+	</contribution>
+	
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}">
+		<group>causeway</group>
+		&PatternDef;
+		<sprite origin="0,0" offset="16">
+			<picture src="causeway_0.bmp"/>
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-0,0">
+		<group>causeway</group>
+		&PatternDef;
+		<sprite origin="0,0" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-1,0">
+		<group>causeway</group>
+		&PatternDef;
+		<sprite origin="32,0" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-2,0">
+		<group>causeway</group>
+		&PatternDef;
+		<sprite origin="64,0" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-3,0">
+		<group>causeway</group>
+		&PatternDef;
+		<sprite origin="96,0" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-4,0">
+		<group>causeway</group>
+		&PatternDef;
+		<sprite origin="128,0" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>	
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-5,0">
+		<group>causeway</group>
+		&PatternDef;
+		<sprite origin="160,0" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-6,0">
+		<group>causeway</group>
+		&PatternDef;
+		<sprite origin="192,0" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-7,0">
+		<group>causeway</group>
+		&PatternDef;
+		<sprite origin="224,0" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-0,1">
+		<group>causeway</group>
+		&PatternDef;
+		<sprite origin="0,32" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-1,1">
+		<group>causeway</group>
+		&PatternDef;
+		<sprite origin="32,32" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-2,1">
+		<group>causeway</group>
+		&PatternDef;
+		<sprite origin="64,32" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-3,1">
+		<group>causeway</group>
+		&PatternDef;
+		<sprite origin="96,32" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-4,1">
+		<group>causeway</group>
+		&PatternDef;
+		<sprite origin="128,32" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>	
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-5,1">
+		<group>causeway</group>
+		&PatternDef;
+		<sprite origin="160,32" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-6,1">
+		<group>causeway</group>
+		&PatternDef;
+		<sprite origin="192,32" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-7,1">
+		<group>causeway</group>
+		&PatternDef;
+		<sprite origin="224,32" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-0,2">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="0,64" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-1,2">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="32,64" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-2,2">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="64,64" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-3,2">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="96,64" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-4,2">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="128,64" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>	
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-5,2">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="160,64" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-6,2">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="192,64" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-7,2">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="224,64" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-0,3">
+		<group>causeway (branch)</group>
+		&PatternDef;
+		<sprite origin="0,96" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-1,3">
+		<group>causeway (branch)</group>
+		&PatternDef;
+		<sprite origin="32,96" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-2,3">
+		<group>causeway (branch)</group>
+		&PatternDef;
+		<sprite origin="64,96" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-3,3">
+		<group>causeway (branch)</group>
+		&PatternDef;
+		<sprite origin="96,96" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-4,3">
+		<group>causeway (branch)</group>
+		&PatternDef;
+		<sprite origin="128,96" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>	
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-5,3">
+		<group>causeway (branch)</group>
+		&PatternDef;
+		<sprite origin="160,96" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-6,3">
+		<group>causeway (branch)</group>
+		&PatternDef;
+		<sprite origin="192,96" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-7,3">
+		<group>causeway (branch)</group>
+		&PatternDef;
+		<sprite origin="224,96" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-0,4">
+		<group>causeway (branch)</group>
+		&PatternDef;
+		<sprite origin="0,128" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-1,4">
+		<group>causeway (branch)</group>
+		&PatternDef;
+		<sprite origin="32,128" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-2,4">
+		<group>causeway (branch)</group>
+		&PatternDef;
+		<sprite origin="64,128" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-3,4">
+		<group>causeway (branch)</group>
+		&PatternDef;
+		<sprite origin="96,128" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-4,4">
+		<group>causeway (branch)</group>
+		&PatternDef;
+		<sprite origin="128,128" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>	
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-5,4">
+		<group>causeway (branch)</group>
+		&PatternDef;
+		<sprite origin="160,128" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-6,4">
+		<group>causeway (branch)</group>
+		&PatternDef;
+		<sprite origin="192,128" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-7,4">
+		<group>causeway (branch)</group>
+		&PatternDef;
+		<sprite origin="224,128" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-0,5">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="0,160" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-1,5">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="32,160" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-2,5">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="64,160" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-3,5">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="96,160" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-4,5">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="128,160" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>	
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-5,5">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="160,160" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-6,5">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="192,160" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-7,5">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="224,160" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+
+
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-0,6">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="0,192" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-1,6">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="32,192" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-2,6">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="64,192" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-3,6">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="96,192" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-4,6">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="128,192" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>	
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-5,6">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="160,192" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-6,6">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="192,192" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{39F8B7DE-5105-4094-C477-71C2FF27E754}-7,6">
+		<group>causeway (curve)</group>
+		&PatternDef;
+		<sprite origin="224,192" offset="16">
+			<picture ref="{88E34FD0-9C25-4378-C477-EBAAC1FCC0E9}" />
+		</sprite>
+	</contribution>
+</plug-in>

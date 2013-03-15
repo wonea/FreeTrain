@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+  <title>Buildings</title>
+  <author>yua construction</author>
+  <homepage>yu-a.love2@k5.dion.ne.jp</homepage>
+	
+	
+	<contribution type="picture" id="{DA6C4062-28D0-401D-A3AB-A2B9D3C388D0}">
+		<picture src="903.fire station.bmp" />
+	</contribution>
+
+	<contribution type="GenericStructure" id="{D50BA778-25F4-465B-8A73-4C15F8772362}">
+		<name>Fire station</name>
+		<price>1600</price>
+		<size>3,3</size>
+		<height>2</height>
+		<structure>
+			<category byname="Fire Stations"/>
+		</structure>
+		<sprite origin="0,0" offset="30">
+			<picture ref="{DA6C4062-28D0-401D-A3AB-A2B9D3C388D0}" />
+		</sprite>
+	</contribution>
+
+
+</plug-in>

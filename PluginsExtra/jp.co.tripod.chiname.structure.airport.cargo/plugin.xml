@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY warehause '
+		<structure>
+			<category byname="Cargo Terminals"/>
+		</structure>
+		<computerCannotBuild/>
+'>
+<!ENTITY crWhite '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="255,255,255"/>
+	</spriteType>	
+'>
+<!ENTITY crSkyBlue '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="0,180,230"/>
+	</spriteType>	
+'>
+<!ENTITY crGrayGreen '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="143,179,154"/>
+	</spriteType>	
+'>
+<!ENTITY crGrayBlue '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="153,179,191"/>
+	</spriteType>	
+'>
+<!ENTITY crGray '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="128,128,128"/>
+	</spriteType>	
+'>
+<!ENTITY crCyan '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="217,245,255"/>
+	</spriteType>	
+'>
+<!ENTITY crLtGray '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="160,160,160"/>
+	</spriteType>	
+'>
+
+]>
+
+<plug-in>
+	<title>Cargo Terminals</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+
+	<contribution type="picture" id="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-01">
+		<picture src="cargo_terminal_A1.bmp"/>
+	</contribution>
+	<contribution type="picture" id="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-04">
+		<picture src="cargo_terminal_B1.bmp"/>
+	</contribution>
+	<contribution type="picture" id="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-03">
+		<picture src="cargo_terminal_C1.bmp"/>
+	</contribution>
+	<contribution type="picture" id="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-02">
+		<picture src="cargo_terminal_D1.bmp"/>
+	</contribution>
+		
+	<contribution type="GenericStructure" id="{C3BB57FE-9B46-4E39-C477-1F8129BBDFFA}-1">
+		<group>Cargo Terminals</group>
+		<design>type A</design>
+		&warehause;
+		<price>1600</price>
+		<size>6,3</size>
+		<height>1</height>
+		&crCyan;
+		&crSkyBlue;
+		&crLtGray;
+		<sprite origin="0,0" offset="56">
+			<picture ref="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-01"/>
+		</sprite>		
+		<sprite origin="144,0" offset="32" opposite="true">
+			<picture ref="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-01"/>
+		</sprite>		
+		<sprite origin="0,96" offset="56">
+			<picture ref="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-01"/>
+		</sprite>		
+		<sprite origin="144,96" offset="32" opposite="true">
+			<picture ref="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-01"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{C3BB57FE-9B46-4E39-C477-1F8129BBDFFA}-2">
+		<group>Cargo Terminals</group>
+		<design>type B</design>
+		&warehause;
+		<price>1600</price>
+		<size>6,3</size>
+		<height>1</height>
+		&crCyan;
+		&crSkyBlue;
+		&crGray;
+		<sprite origin="0,0" offset="56">
+			<picture ref="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-02"/>
+		</sprite>		
+		<sprite origin="144,0" offset="32" opposite="true">
+			<picture ref="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-02"/>
+		</sprite>		
+		<sprite origin="0,96" offset="56">
+			<picture ref="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-02"/>
+		</sprite>		
+		<sprite origin="144,96" offset="32" opposite="true">
+			<picture ref="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-02"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{C3BB57FE-9B46-4E39-C477-1F8129BBDFFA}-3">
+		<group>Cargo Terminals</group>
+		<design>type C</design>
+		&warehause;
+		<price>2400</price>
+		<size>6,4</size>
+		<height>2</height>
+		&crSkyBlue;
+		&crCyan;
+		&crLtGray;
+		<size>5,4</size>
+		<sprite origin="0,0" offset="72">
+			<picture ref="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-03"/>
+		</sprite>		
+		<sprite origin="160,0" offset="56" opposite="true">
+			<picture ref="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-03"/>
+		</sprite>		
+		<sprite origin="0,112" offset="72">
+			<picture ref="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-03"/>
+		</sprite>		
+		<sprite origin="160,112" offset="56" opposite="true">
+			<picture ref="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-03"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{C3BB57FE-9B46-4E39-C477-1F8129BBDFFA}-4">
+		<group>Cargo Terminals</group>
+		<design>type D</design>
+		&warehause;
+		<price>800</price>
+		<size>3,3</size>
+		<height>2</height>
+		&crLtGray;
+		&crGrayBlue;
+		&crGrayGreen;
+		<sprite origin="0,0" offset="40">
+			<picture ref="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-04"/>
+		</sprite>		
+		<sprite origin="96,0" offset="40">
+			<picture ref="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-04"/>
+		</sprite>		
+		<sprite origin="0,80" offset="40">
+			<picture ref="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-04"/>
+		</sprite>		
+		<sprite origin="96,80" offset="40">
+			<picture ref="{0F90DC7F-61D7-4D20-C477-68DCEDDD680C}-04"/>
+		</sprite>		
+	</contribution>
+	
+</plug-in>

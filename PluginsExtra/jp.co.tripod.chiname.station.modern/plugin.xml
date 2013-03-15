@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+	<!ENTITY ModernStation "
+		<size>1,1</size>
+		<price>4000</price>
+		<height>1</height>
+		<operationCost>100</operationCost>
+	">
+	<!ENTITY crKhaki '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="202,189,158"/>
+	</spriteType>
+	'>
+	<!ENTITY crSteelBlue '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="181,203,226"/>
+	</spriteType>
+	'>
+	<!ENTITY crBrown '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="157,90,70"/>
+	</spriteType>
+	'>
+	
+]>
+<plug-in>
+	<title>Urban station</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+	<!--<depend on="org.kohsuke.freetrain.rail.electricPole"/>-->
+		
+	<contribution type="picture" id="{F33AE83D-91E2-4598-C477-61B115D2EF91}">
+		<picture src="stationMDN.bmp">
+			<override when="night" src="stationMDN_n.bmp"/>
+		</picture>
+	</contribution>
+
+	<!--khaki-->
+	
+	<contribution type="station" id="{A2F61D15-C6F6-4C0D-C477-3D4D9321FC39}-l0">
+		<group>Urban station (khaki,left)</group>
+		&ModernStation;
+		<sprite origin=" 0, 0" offset="16">
+			&crKhaki;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A2F61D15-C6F6-4C0D-C477-3D4D9321FC39}-l1">
+		<group>Urban station (khaki,left)</group>
+		&ModernStation;
+		<sprite origin="32, 0" offset="16">
+			&crKhaki;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A2F61D15-C6F6-4C0D-C477-3D4D9321FC39}-l2">
+		<group>Urban station (khaki,left)</group>
+		&ModernStation;
+		<sprite origin="64, 0" offset="16">
+			&crKhaki;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A2F61D15-C6F6-4C0D-C477-3D4D9321FC39}-l3">
+		<group>Urban station (khaki,left)</group>
+		&ModernStation;
+		<sprite origin="96, 0" offset="16">
+			&crKhaki;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A2F61D15-C6F6-4C0D-C477-3D4D9321FC39}-l4">
+		<group>Urban station (khaki,left)</group>
+		&ModernStation;
+		<sprite origin="128, 0" offset="16">
+			&crKhaki;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A2F61D15-C6F6-4C0D-C477-3D4D9321FC39}-l5">
+		<group>Urban station (khaki,left)</group>
+		&ModernStation;
+		<sprite origin="160, 0" offset="16">
+			&crKhaki;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{A2F61D15-C6F6-4C0D-C477-3D4D9321FC39}-r0">
+		<group>Urban station (khaki,right)</group>
+		&ModernStation;
+		<sprite origin=" 0,32" offset="16">
+			&crKhaki;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A2F61D15-C6F6-4C0D-C477-3D4D9321FC39}-r1">
+		<group>Urban station (khaki,right)</group>
+		&ModernStation;
+		<sprite origin="32,32" offset="16">
+			&crKhaki;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A2F61D15-C6F6-4C0D-C477-3D4D9321FC39}-r2">
+		<group>Urban station (khaki,right)</group>
+		&ModernStation;
+		<sprite origin="64,32" offset="16">
+			&crKhaki;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A2F61D15-C6F6-4C0D-C477-3D4D9321FC39}-r3">
+		<group>Urban station (khaki,right)</group>
+		&ModernStation;
+		<sprite origin="96,32" offset="16">
+			&crKhaki;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A2F61D15-C6F6-4C0D-C477-3D4D9321FC39}-r4">
+		<group>Urban station (khaki,right)</group>
+		&ModernStation;
+		<sprite origin="128,32" offset="16">
+			&crKhaki;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A2F61D15-C6F6-4C0D-C477-3D4D9321FC39}-r5">
+		<group>Urban station (khaki,right)</group>
+		&ModernStation;
+		<sprite origin="160,32" offset="16">
+			&crKhaki;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{A2F61D15-C6F6-4C0D-C477-3D4D9321FC39}-b0">
+		<group>Urban station (khaki,rear)</group>
+		&ModernStation;
+		<sprite origin=" 0,64" offset="16">
+			&crKhaki;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A2F61D15-C6F6-4C0D-C477-3D4D9321FC39}-b1">
+		<group>Urban station (khaki,rear)</group>
+		&ModernStation;
+		<sprite origin="32,64" offset="16">
+			&crKhaki;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A2F61D15-C6F6-4C0D-C477-3D4D9321FC39}-b2">
+		<group>Urban station (khaki,rear)</group>
+		&ModernStation;
+		<sprite origin="64,64" offset="16">
+			&crKhaki;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A2F61D15-C6F6-4C0D-C477-3D4D9321FC39}-b3">
+		<group>Urban station (khaki,rear)</group>
+		&ModernStation;
+		<sprite origin="96,64" offset="16">
+			&crKhaki;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A2F61D15-C6F6-4C0D-C477-3D4D9321FC39}-b4">
+		<group>Urban station (khaki,rear)</group>
+		&ModernStation;
+		<sprite origin="128,64" offset="16">
+			&crKhaki;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{A2F61D15-C6F6-4C0D-C477-3D4D9321FC39}-b5">
+		<group>Urban station (khaki,rear)</group>
+		&ModernStation;
+		<sprite origin="160,64" offset="16">
+			&crKhaki;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+
+	<!--brown-->
+
+	<contribution type="station" id="{9DE34974-5F2B-4D5F-C477-A04A6736D625}-l0">
+		<group>Urban station(brown,left)</group>
+		&ModernStation;
+		<sprite origin=" 0, 0" offset="16">
+			&crBrown;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{9DE34974-5F2B-4D5F-C477-A04A6736D625}-l1">
+		<group>Urban station(brown,left)</group>
+		&ModernStation;
+		<sprite origin="32, 0" offset="16">
+			&crBrown;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{9DE34974-5F2B-4D5F-C477-A04A6736D625}-l2">
+		<group>Urban station(brown,left)</group>
+		&ModernStation;
+		<sprite origin="64, 0" offset="16">
+			&crBrown;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{9DE34974-5F2B-4D5F-C477-A04A6736D625}-l3">
+		<group>Urban station(brown,left)</group>
+		&ModernStation;
+		<sprite origin="96, 0" offset="16">
+			&crBrown;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{9DE34974-5F2B-4D5F-C477-A04A6736D625}-l4">
+		<group>Urban station(brown,left)</group>
+		&ModernStation;
+		<sprite origin="128, 0" offset="16">
+			&crBrown;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{9DE34974-5F2B-4D5F-C477-A04A6736D625}-l5">
+		<group>Urban station(brown,left)</group>
+		&ModernStation;
+		<sprite origin="160, 0" offset="16">
+			&crBrown;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{9DE34974-5F2B-4D5F-C477-A04A6736D625}-r0">
+		<group>Urban station(brown,right)</group>
+		&ModernStation;
+		<sprite origin=" 0,32" offset="16">
+			&crBrown;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{9DE34974-5F2B-4D5F-C477-A04A6736D625}-r1">
+		<group>Urban station(brown,right)</group>
+		&ModernStation;
+		<sprite origin="32,32" offset="16">
+			&crBrown;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{9DE34974-5F2B-4D5F-C477-A04A6736D625}-r2">
+		<group>Urban station(brown,right)</group>
+		&ModernStation;
+		<sprite origin="64,32" offset="16">
+			&crBrown;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{9DE34974-5F2B-4D5F-C477-A04A6736D625}-r3">
+		<group>Urban station(brown,right)</group>
+		&ModernStation;
+		<sprite origin="96,32" offset="16">
+			&crBrown;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{9DE34974-5F2B-4D5F-C477-A04A6736D625}-r4">
+		<group>Urban station(brown,right)</group>
+		&ModernStation;
+		<sprite origin="128,32" offset="16">
+			&crBrown;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{9DE34974-5F2B-4D5F-C477-A04A6736D625}-r5">
+		<group>Urban station(brown,right)</group>
+		&ModernStation;
+		<sprite origin="160,32" offset="16">
+			&crBrown;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{9DE34974-5F2B-4D5F-C477-A04A6736D625}-b0">
+		<group>Urban station(brown,rear)</group>
+		&ModernStation;
+		<sprite origin=" 0,64" offset="16">
+			&crBrown;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{9DE34974-5F2B-4D5F-C477-A04A6736D625}-b1">
+		<group>Urban station(brown,rear)</group>
+		&ModernStation;
+		<sprite origin="32,64" offset="16">
+			&crBrown;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{9DE34974-5F2B-4D5F-C477-A04A6736D625}-b2">
+		<group>Urban station(brown,rear)</group>
+		&ModernStation;
+		<sprite origin="64,64" offset="16">
+			&crBrown;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{9DE34974-5F2B-4D5F-C477-A04A6736D625}-b3">
+		<group>Urban station(brown,rear)</group>
+		&ModernStation;
+		<sprite origin="96,64" offset="16">
+			&crBrown;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{9DE34974-5F2B-4D5F-C477-A04A6736D625}-b4">
+		<group>Urban station(brown,rear)</group>
+		&ModernStation;
+		<sprite origin="128,64" offset="16">
+			&crBrown;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{9DE34974-5F2B-4D5F-C477-A04A6736D625}-b5">
+		<group>Urban station(brown,rear)</group>
+		&ModernStation;
+		<sprite origin="160,64" offset="16">
+			&crBrown;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	
+	<!--steelBlue-->
+
+	<contribution type="station" id="{38DCCBC7-F86F-4881-C477-7DBB6A369059}-l0">
+		<group>Urban station(rusty closet,left)</group>
+		&ModernStation;
+		<sprite origin=" 0, 0" offset="16">
+			&crSteelBlue;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{38DCCBC7-F86F-4881-C477-7DBB6A369059}-l1">
+		<group>Urban station(rusty closet,left)</group>
+		&ModernStation;
+		<sprite origin="32, 0" offset="16">
+			&crSteelBlue;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{38DCCBC7-F86F-4881-C477-7DBB6A369059}-l2">
+		<group>Urban station(rusty closet,left)</group>
+		&ModernStation;
+		<sprite origin="64, 0" offset="16">
+			&crSteelBlue;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{38DCCBC7-F86F-4881-C477-7DBB6A369059}-l3">
+		<group>Urban station(rusty closet,left)</group>
+		&ModernStation;
+		<sprite origin="96, 0" offset="16">
+			&crSteelBlue;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{38DCCBC7-F86F-4881-C477-7DBB6A369059}-l4">
+		<group>Urban station(rusty closet,left)</group>
+		&ModernStation;
+		<sprite origin="128, 0" offset="16">
+			&crSteelBlue;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{38DCCBC7-F86F-4881-C477-7DBB6A369059}-l5">
+		<group>Urban station(rusty closet,left)</group>
+		&ModernStation;
+		<sprite origin="160, 0" offset="16">
+			&crSteelBlue;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{38DCCBC7-F86F-4881-C477-7DBB6A369059}-r0">
+		<group>Urban station(rusty closet,right)</group>
+		&ModernStation;
+		<sprite origin=" 0,32" offset="16">
+			&crSteelBlue;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{38DCCBC7-F86F-4881-C477-7DBB6A369059}-r1">
+		<group>Urban station(rusty closet,right)</group>
+		&ModernStation;
+		<sprite origin="32,32" offset="16">
+			&crSteelBlue;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{38DCCBC7-F86F-4881-C477-7DBB6A369059}-r2">
+		<group>Urban station(rusty closet,right)</group>
+		&ModernStation;
+		<sprite origin="64,32" offset="16">
+			&crSteelBlue;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{38DCCBC7-F86F-4881-C477-7DBB6A369059}-r3">
+		<group>Urban station(rusty closet,right)</group>
+		&ModernStation;
+		<sprite origin="96,32" offset="16">
+			&crSteelBlue;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{38DCCBC7-F86F-4881-C477-7DBB6A369059}-r4">
+		<group>Urban station(rusty closet,right)</group>
+		&ModernStation;
+		<sprite origin="128,32" offset="16">
+			&crSteelBlue;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{38DCCBC7-F86F-4881-C477-7DBB6A369059}-r5">
+		<group>Urban station(rusty closet,right)</group>
+		&ModernStation;
+		<sprite origin="160,32" offset="16">
+			&crSteelBlue;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="station" id="{38DCCBC7-F86F-4881-C477-7DBB6A369059}-b0">
+		<group>Urban station(rusty closet,rear)</group>
+		&ModernStation;
+		<sprite origin=" 0,64" offset="16">
+			&crSteelBlue;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{38DCCBC7-F86F-4881-C477-7DBB6A369059}-b1">
+		<group>Urban station(rusty closet,rear)</group>
+		&ModernStation;
+		<sprite origin="32,64" offset="16">
+			&crSteelBlue;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{38DCCBC7-F86F-4881-C477-7DBB6A369059}-b2">
+		<group>Urban station(rusty closet,rear)</group>
+		&ModernStation;
+		<sprite origin="64,64" offset="16">
+			&crSteelBlue;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{38DCCBC7-F86F-4881-C477-7DBB6A369059}-b3">
+		<group>Urban station(rusty closet,rear)</group>
+		&ModernStation;
+		<sprite origin="96,64" offset="16">
+			&crSteelBlue;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{38DCCBC7-F86F-4881-C477-7DBB6A369059}-b4">
+		<group>Urban station(rusty closet,rear)</group>
+		&ModernStation;
+		<sprite origin="128,64" offset="16">
+			&crSteelBlue;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+	<contribution type="station" id="{38DCCBC7-F86F-4881-C477-7DBB6A369059}-b5">
+		<group>Urban station(rusty closet,rear)</group>
+		&ModernStation;
+		<sprite origin="160,64" offset="16">
+			&crSteelBlue;
+			<picture ref="{F33AE83D-91E2-4598-C477-61B115D2EF91}" />
+		</sprite>
+	</contribution>
+</plug-in>

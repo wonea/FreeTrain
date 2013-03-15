@@ -1,0 +1,2620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Trains (FreeTrain-Sosakukan)</title>
+	<author>haru</author>
+	<homepage>http://hb4.seikyou.ne.jp/home/Go-Ro/FreeTrain/</homepage>
+	
+	
+	<contribution type="picture" id="{40AF8687-117A-3311-A95D-1570512E5210}">
+		<picture src="117a.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{40AF8687-117B-3311-B95D-1570512E5210}">
+		<picture src="117b.bmp" />
+	</contribution>
+		
+	
+	<!-- 117系国鉄先頭 -->
+	<contribution type="trainCar" id="{ADF87135-9F9C-117A-9B45-04F846A0479D}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="211,79,0" to="98,58,0"/>
+<map from="161,61,0" to="75,44,0"/>
+<map from="224,84,0" to="105,61,0"/>
+<map from="193,193,193" to="192,184,120"/>
+<map from="153,153,153" to="153,146,95"/>
+<map from="169,64,0" to="79,46,0"/>
+<map from="166,157,157" to="160,146,81"/>
+<map from="127,120,120" to="122,111,62"/>
+<map from="211,211,211" to="210,201,132"/>
+<map from="161,161,161" to="161,154,100"/>
+<map from="174,65,0" to="81,48,0"/>
+<map from="74,23,23" to="79,61,0"/>
+<map from="169,169,169" to="169,161,105"/>
+<map from="133,126,126" to="128,117,65"/>
+<map from="193,72,0" to="90,53,0"/>
+<map from="193,45,0" to="192,184,120"/>
+<map from="169,40,0" to="169,161,105"/>
+<map from="174,174,174" to="174,166,109"/>
+<map from="174,41,0" to="174,166,109"/>
+<map from="92,29,29" to="99,76,0"/>
+<map from="211,50,0" to="210,201,132"/>
+<map from="152,144,144" to="146,133,74"/>
+<map from="98,31,31" to="105,81,0"/>
+<map from="224,53,0" to="223,214,140"/>
+<map from="0,174,68" to="174,166,109"/>
+<map from="0,224,88" to="223,214,140"/>
+<map from="81,25,25" to="87,67,0"/>
+<map from="0,193,75" to="192,184,120"/>
+<map from="109,138,139" to="132,120,67"/>
+<map from="132,167,169" to="160,146,81"/>
+<map from="0,211,83" to="210,201,132"/>
+<map from="137,130,130" to="132,120,67"/>
+<map from="86,27,27" to="92,71,0"/>
+<map from="211,0,83" to="60,41,14"/>
+<map from="169,0,66" to="48,33,11"/>
+<map from="240,90,0" to="112,66,0"/>
+<map from="177,167,167" to="170,155,86"/>
+<map from="0,240,94" to="239,229,150"/>
+<map from="224,224,224" to="223,214,140"/>
+<map from="189,179,179" to="182,166,92"/>
+<map from="0,169,66" to="169,161,105"/>
+<map from="106,134,135" to="128,117,65"/>
+
+			</spriteType>
+			<picture ref="{40AF8687-117A-3311-A95D-1570512E5210}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+	
+	<!-- 117系国鉄中間 -->
+	<contribution type="trainCar" id="{ADF87135-9F9C-117A-9B45-04F846A0479D}-b">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="193,193,193" to="192,184,120"/>
+<map from="153,153,153" to="153,146,95"/>
+<map from="211,211,211" to="210,201,132"/>
+<map from="161,161,161" to="161,154,100"/>
+<map from="169,169,169" to="169,161,105"/>
+<map from="174,174,174" to="174,166,109"/>
+
+			</spriteType>
+
+			<picture ref="{40AF8687-117B-3311-B95D-1570512E5210}" />
+		</sprite>
+		<capacity>64</capacity>
+	</contribution>
+
+
+	<!-- 117系国鉄後尾車両 -->
+	<contribution type="trainCar" id="{ADF87135-9F9C-117A-9B45-04F846A0479D}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{ADF87135-9F9C-117A-9B45-04F846A0479D}-h"/>
+	</contribution>
+	
+
+	<contribution type="train" id="{ADF87135-9F9C-117A-9B45-04F846A0479D}">
+		<name></name>
+		<price>1</price>
+                <fare>400</fare>
+		<speed>medium</speed>
+		<author>qra_ra</author>
+		<type>117 Series</type>
+		<company>JR West</company>
+		<description>国鉄が京阪神の競合私鉄に対抗すべく新製した形式。同地区の新快速に投入されたほか、中京圏にも投入された。2扉の転換クロスシートの室内に空気バネの台車を履くなど、他の国鉄近郊型車両とは一線を画していた。</description>
+		<composition>
+			<head carRef="{ADF87135-9F9C-117A-9B45-04F846A0479D}-h"/>
+			<body carRef="{ADF87135-9F9C-117A-9B45-04F846A0479D}-b"/>
+			<tail carRef="{ADF87135-9F9C-117A-9B45-04F846A0479D}-t"/>
+		</composition>
+	</contribution>
+	
+	<!-- 117系福知山色先頭 -->
+	<contribution type="trainCar" id="{BDF87135-9F9C-117A-9B45-04F846A0479D}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="223,214,140" to="224,224,224"/>
+<map from="239,229,150" to="240,240,240"/>
+<map from="210,201,132" to="211,211,211"/>
+<map from="192,184,120" to="193,193,193"/>
+<map from="254,243,159" to="255,255,255"/>
+<map from="171,128,68" to="224,224,224"/>
+<map from="129,97,52" to="169,169,169"/>
+<map from="169,161,105" to="169,169,169"/>
+<map from="174,166,109" to="174,174,174"/>
+<map from="69,47,16" to="26,142,0"/>
+<map from="183,137,73" to="240,240,240"/>
+<map from="133,100,53" to="174,174,174"/>
+<map from="50,34,11" to="19,103,0"/>
+<map from="147,110,59" to="193,193,193"/>
+<map from="211,79,0" to="211,211,211"/>
+<map from="161,61,0" to="161,161,161"/>
+<map from="161,121,64" to="211,211,211"/>
+<map from="194,146,78" to="255,255,255"/>
+<map from="224,84,0" to="224,224,224"/>
+<map from="98,58,0" to="32,171,0"/>
+<map from="75,44,0" to="24,131,0"/>
+<map from="169,64,0" to="169,169,169"/>
+<map from="55,38,13" to="21,114,0"/>
+<map from="117,73,35" to="84,84,84"/>
+<map from="105,61,0" to="34,182,0"/>
+<map from="182,166,92" to="189,179,179"/>
+<map from="132,120,67" to="137,130,130"/>
+<map from="79,46,0" to="26,137,0"/>
+<map from="146,133,74" to="152,144,144"/>
+<map from="60,41,14" to="23,125,0"/>
+<map from="170,155,86" to="177,167,167"/>
+<map from="81,48,0" to="26,141,0"/>
+<map from="174,65,0" to="174,174,174"/>
+<map from="74,23,23" to="53,52,52"/>
+<map from="90,53,0" to="29,156,0"/>
+<map from="193,72,0" to="193,193,193"/>
+<map from="193,45,0" to="193,193,193"/>
+<map from="169,40,0" to="169,169,169"/>
+<map from="174,41,0" to="174,174,174"/>
+<map from="146,91,43" to="104,104,104"/>
+<map from="193,176,98" to="201,190,190"/>
+<map from="64,44,15" to="24,133,0"/>
+<map from="160,146,81" to="166,157,157"/>
+<map from="92,29,29" to="66,65,65"/>
+<map from="73,50,17" to="28,151,0"/>
+<map from="211,50,0" to="211,211,211"/>
+<map from="98,31,31" to="70,69,69"/>
+<map from="224,53,0" to="224,224,224"/>
+<map from="0,174,68" to="174,174,174"/>
+<map from="0,224,88" to="224,224,224"/>
+<map from="155,97,46" to="111,111,111"/>
+<map from="81,25,25" to="58,57,57"/>
+<map from="128,80,38" to="92,92,92"/>
+<map from="0,193,75" to="193,193,193"/>
+<map from="109,138,139" to="137,130,130"/>
+<map from="132,167,169" to="166,157,157"/>
+<map from="0,211,83" to="211,211,211"/>
+<map from="211,177,72" to="240,240,240"/>
+<map from="136,85,40" to="97,97,97"/>
+<map from="86,27,27" to="61,60,60"/>
+<map from="169,142,58" to="193,193,193"/>
+<map from="211,0,83" to="211,211,211"/>
+<map from="197,165,68" to="224,224,224"/>
+<map from="186,156,64" to="211,211,211"/>
+<map from="169,0,66" to="169,169,169"/>
+<map from="240,90,0" to="240,240,240"/>
+<map from="112,66,0" to="37,195,0"/>
+<map from="0,240,94" to="240,240,240"/>
+<map from="0,169,66" to="169,169,169"/>
+<map from="106,134,135" to="133,126,126"/>
+
+			</spriteType>
+			<picture ref="{40AF8687-117A-3311-A95D-1570512E5210}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+	
+	<!-- 117系福知山色中間 -->
+	<contribution type="trainCar" id="{BDF87135-9F9C-117A-9B45-04F846A0479D}-b">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="171,128,68" to="224,224,224"/>
+<map from="129,97,52" to="169,169,169"/>
+<map from="183,137,73" to="240,240,240"/>
+<map from="223,214,140" to="224,224,224"/>
+<map from="169,161,105" to="169,169,169"/>
+<map from="133,100,53" to="174,174,174"/>
+<map from="239,229,150" to="240,240,240"/>
+<map from="174,166,109" to="174,174,174"/>
+<map from="147,110,59" to="193,193,193"/>
+<map from="182,166,92" to="181,181,181"/>
+<map from="98,58,0" to="32,171,0"/>
+<map from="75,44,0" to="24,131,0"/>
+<map from="132,120,67" to="131,131,131"/>
+<map from="192,184,120" to="193,193,193"/>
+<map from="161,121,64" to="211,211,211"/>
+<map from="105,61,0" to="34,182,0"/>
+<map from="79,46,0" to="26,137,0"/>
+<map from="210,201,132" to="211,211,211"/>
+<map from="146,133,74" to="145,145,145"/>
+<map from="170,155,86" to="169,169,169"/>
+<map from="81,48,0" to="26,141,0"/>
+<map from="90,53,0" to="29,156,0"/>
+
+			</spriteType>
+
+			<picture ref="{40AF8687-117B-3311-B95D-1570512E5210}" />
+		</sprite>
+		<capacity>64</capacity>
+	</contribution>
+
+
+	<!-- 117系福知山色後尾車両 -->
+	<contribution type="trainCar" id="{BDF87135-9F9C-117A-9B45-04F846A0479D}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{BDF87135-9F9C-117A-9B45-04F846A0479D}-h"/>
+	</contribution>
+	
+
+	<contribution type="train" id="{BDF87135-9F9C-117A-9B45-04F846A0479D}">
+		<name>Fukuchiyama Colors</name>
+		<price>1</price>
+                <fare>400</fare>
+		<speed>medium</speed>
+		<author>qra_ra</author>
+		<type>117 Series</type>
+		<company>JR West</company>
+		<description>国鉄が京阪神の競合私鉄に対抗すべく新製した形式。同地区の新快速に投入されたほか、中京圏にも投入された。2扉の転換クロスシートの室内に空気バネの台車を履くなど、他の国鉄近郊型車両とは一線を画していた。</description>
+		<composition>
+			<head carRef="{BDF87135-9F9C-117A-9B45-04F846A0479D}-h"/>
+			<body carRef="{BDF87135-9F9C-117A-9B45-04F846A0479D}-b"/>
+			<tail carRef="{BDF87135-9F9C-117A-9B45-04F846A0479D}-t"/>
+		</composition>
+	</contribution>
+	
+	<!-- 117系オーシャンカラー先頭 -->
+	<contribution type="trainCar" id="{CDF87135-9F9C-117A-9B45-04F846A0479D}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="223,214,140" to="0,224,211"/>
+<map from="239,229,150" to="0,240,226"/>
+<map from="210,201,132" to="0,211,199"/>
+<map from="192,184,120" to="0,193,181"/>
+<map from="254,243,159" to="0,255,240"/>
+<map from="171,128,68" to="0,224,211"/>
+<map from="129,97,52" to="0,169,159"/>
+<map from="169,161,105" to="0,169,159"/>
+<map from="174,166,109" to="0,174,164"/>
+<map from="69,47,16" to="0,60,56"/>
+<map from="183,137,73" to="0,240,226"/>
+<map from="133,100,53" to="0,174,164"/>
+<map from="50,34,11" to="0,44,41"/>
+<map from="147,110,59" to="0,193,181"/>
+<map from="211,79,0" to="211,211,211"/>
+<map from="161,61,0" to="161,161,161"/>
+<map from="161,121,64" to="0,211,199"/>
+<map from="194,146,78" to="0,255,240"/>
+<map from="224,84,0" to="224,224,224"/>
+<map from="193,193,193" to="0,193,181"/>
+<map from="98,58,0" to="211,211,211"/>
+<map from="75,44,0" to="161,161,161"/>
+<map from="153,153,153" to="0,153,144"/>
+<map from="169,64,0" to="169,169,169"/>
+<map from="55,38,13" to="0,48,45"/>
+<map from="117,73,35" to="77,77,77"/>
+<map from="166,157,157" to="0,132,124"/>
+<map from="105,61,0" to="224,224,224"/>
+<map from="182,166,92" to="0,150,141"/>
+<map from="132,120,67" to="0,109,102"/>
+<map from="79,46,0" to="169,169,169"/>
+<map from="127,120,120" to="0,100,95"/>
+<map from="146,133,74" to="0,120,113"/>
+<map from="60,41,14" to="0,53,50"/>
+<map from="170,155,86" to="0,140,132"/>
+<map from="211,211,211" to="0,211,199"/>
+<map from="161,161,161" to="0,161,152"/>
+<map from="81,48,0" to="174,174,174"/>
+<map from="174,65,0" to="174,174,174"/>
+<map from="74,23,23" to="32,32,32"/>
+<map from="169,169,169" to="0,169,159"/>
+<map from="133,126,126" to="0,105,99"/>
+<map from="90,53,0" to="193,193,193"/>
+<map from="193,72,0" to="193,193,193"/>
+<map from="193,45,0" to="153,193,189"/>
+<map from="169,40,0" to="135,169,166"/>
+<map from="174,174,174" to="0,174,164"/>
+<map from="174,41,0" to="139,174,171"/>
+<map from="146,91,43" to="96,96,96"/>
+<map from="193,176,98" to="0,159,150"/>
+<map from="64,44,15" to="0,56,53"/>
+<map from="160,146,81" to="0,132,124"/>
+<map from="92,29,29" to="40,40,40"/>
+<map from="73,50,17" to="0,64,60"/>
+<map from="211,50,0" to="168,211,207"/>
+<map from="152,144,144" to="0,120,113"/>
+<map from="98,31,31" to="43,43,43"/>
+<map from="224,53,0" to="178,224,220"/>
+<map from="0,174,68" to="139,174,171"/>
+<map from="0,224,88" to="178,224,220"/>
+<map from="155,97,46" to="102,102,102"/>
+<map from="81,25,25" to="35,35,35"/>
+<map from="128,80,38" to="84,84,84"/>
+<map from="0,193,75" to="153,193,189"/>
+<map from="109,138,139" to="0,109,102"/>
+<map from="132,167,169" to="0,132,124"/>
+<map from="0,211,83" to="168,211,207"/>
+<map from="137,130,130" to="0,109,102"/>
+<map from="211,177,72" to="191,240,236"/>
+<map from="136,85,40" to="90,90,90"/>
+<map from="86,27,27" to="38,38,38"/>
+<map from="169,142,58" to="153,193,189"/>
+<map from="211,0,83" to="211,211,211"/>
+<map from="197,165,68" to="178,224,220"/>
+<map from="186,156,64" to="168,211,207"/>
+<map from="169,0,66" to="169,169,169"/>
+<map from="240,90,0" to="240,240,240"/>
+<map from="177,167,167" to="0,140,132"/>
+<map from="112,66,0" to="240,240,240"/>
+<map from="0,240,94" to="191,240,236"/>
+<map from="224,224,224" to="0,224,211"/>
+<map from="189,179,179" to="0,150,141"/>
+<map from="0,169,66" to="135,169,166"/>
+<map from="106,134,135" to="0,105,99"/>
+
+			</spriteType>
+			<picture ref="{40AF8687-117A-3311-A95D-1570512E5210}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+	
+	<!-- 117系オーシャンカラー中間 -->
+	<contribution type="trainCar" id="{CDF87135-9F9C-117A-9B45-04F846A0479D}-b">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="171,128,68" to="0,224,211"/>
+<map from="129,97,52" to="0,169,159"/>
+<map from="183,137,73" to="0,240,226"/>
+<map from="223,214,140" to="0,224,211"/>
+<map from="169,161,105" to="0,169,159"/>
+<map from="133,100,53" to="0,174,164"/>
+<map from="239,229,150" to="0,240,226"/>
+<map from="174,166,109" to="0,174,164"/>
+<map from="147,110,59" to="0,193,181"/>
+<map from="182,166,92" to="0,150,141"/>
+<map from="98,58,0" to="211,211,211"/>
+<map from="75,44,0" to="161,161,161"/>
+<map from="132,120,67" to="0,109,102"/>
+<map from="192,184,120" to="0,193,181"/>
+<map from="161,121,64" to="0,211,199"/>
+<map from="105,61,0" to="224,224,224"/>
+<map from="193,193,193" to="0,193,181"/>
+<map from="153,153,153" to="0,153,144"/>
+<map from="79,46,0" to="169,169,169"/>
+<map from="210,201,132" to="0,211,199"/>
+<map from="211,211,211" to="0,211,199"/>
+<map from="161,161,161" to="0,161,152"/>
+<map from="146,133,74" to="0,120,113"/>
+<map from="170,155,86" to="0,140,132"/>
+<map from="81,48,0" to="174,174,174"/>
+<map from="169,169,169" to="0,169,159"/>
+<map from="90,53,0" to="193,193,193"/>
+<map from="174,174,174" to="0,174,164"/>
+
+			</spriteType>
+
+			<picture ref="{40AF8687-117B-3311-B95D-1570512E5210}" />
+		</sprite>
+		<capacity>64</capacity>
+	</contribution>
+
+
+	<!-- 117系オーシャンカラー後尾車両 -->
+	<contribution type="trainCar" id="{CDF87135-9F9C-117A-9B45-04F846A0479D}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{CDF87135-9F9C-117A-9B45-04F846A0479D}-h"/>
+	</contribution>
+	
+
+	<contribution type="train" id="{CDF87135-9F9C-117A-9B45-04F846A0479D}">
+		<name>Ocean Colors</name>
+		<price>1</price>
+                <fare>400</fare>
+		<speed>medium</speed>
+		<author>qra_ra</author>
+		<type>117 Series</type>
+		<company>JR West</company>
+		<description>国鉄が京阪神の競合私鉄に対抗すべく新製した形式。同地区の新快速に投入されたほか、中京圏にも投入された。2扉の転換クロスシートの室内に空気バネの台車を履くなど、他の国鉄近郊型車両とは一線を画していた。</description>
+		<composition>
+			<head carRef="{CDF87135-9F9C-117A-9B45-04F846A0479D}-h"/>
+			<body carRef="{CDF87135-9F9C-117A-9B45-04F846A0479D}-b"/>
+			<tail carRef="{CDF87135-9F9C-117A-9B45-04F846A0479D}-t"/>
+		</composition>
+	</contribution>
+	
+	<!-- 117系サンライナー先頭 -->
+	<contribution type="trainCar" id="{DDF87135-9F9C-117A-9B45-04F846A0479D}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="223,214,140" to="224,224,224"/>
+<map from="239,229,150" to="240,240,240"/>
+<map from="210,201,132" to="211,211,211"/>
+<map from="192,184,120" to="193,193,193"/>
+<map from="254,243,159" to="255,255,255"/>
+<map from="171,128,68" to="224,224,224"/>
+<map from="129,97,52" to="169,169,169"/>
+<map from="169,161,105" to="169,169,169"/>
+<map from="174,166,109" to="174,174,174"/>
+<map from="69,47,16" to="87,87,87"/>
+<map from="183,137,73" to="240,240,240"/>
+<map from="133,100,53" to="174,174,174"/>
+<map from="50,34,11" to="63,63,63"/>
+<map from="147,110,59" to="193,193,193"/>
+<map from="211,79,0" to="211,211,211"/>
+<map from="161,61,0" to="161,161,161"/>
+<map from="161,121,64" to="211,211,211"/>
+<map from="194,146,78" to="255,255,255"/>
+<map from="224,84,0" to="224,224,224"/>
+<map from="193,193,193" to="193,45,0"/>
+<map from="98,58,0" to="211,211,211"/>
+<map from="75,44,0" to="161,161,161"/>
+<map from="153,153,153" to="153,36,0"/>
+<map from="169,64,0" to="169,169,169"/>
+<map from="55,38,13" to="69,69,69"/>
+<map from="117,73,35" to="156,81,32"/>
+<map from="166,157,157" to="137,53,27"/>
+<map from="105,61,0" to="224,224,224"/>
+<map from="182,166,92" to="169,169,169"/>
+<map from="132,120,67" to="122,122,122"/>
+<map from="79,46,0" to="169,169,169"/>
+<map from="127,120,120" to="104,40,21"/>
+<map from="146,133,74" to="135,135,135"/>
+<map from="60,41,14" to="76,76,76"/>
+<map from="170,155,86" to="157,157,157"/>
+<map from="211,211,211" to="211,50,0"/>
+<map from="161,161,161" to="161,38,0"/>
+<map from="81,48,0" to="174,174,174"/>
+<map from="174,65,0" to="174,174,174"/>
+<map from="74,23,23" to="145,58,0"/>
+<map from="169,169,169" to="169,40,0"/>
+<map from="133,126,126" to="109,42,22"/>
+<map from="90,53,0" to="193,193,193"/>
+<map from="193,72,0" to="193,193,193"/>
+<map from="174,174,174" to="174,41,0"/>
+<map from="146,91,43" to="195,102,39"/>
+<map from="193,176,98" to="179,179,179"/>
+<map from="64,44,15" to="81,81,81"/>
+<map from="160,146,81" to="148,148,148"/>
+<map from="92,29,29" to="181,72,0"/>
+<map from="73,50,17" to="92,92,92"/>
+<map from="152,144,144" to="125,48,25"/>
+<map from="98,31,31" to="192,77,0"/>
+<map from="0,174,68" to="174,174,174"/>
+<map from="0,224,88" to="224,224,224"/>
+<map from="155,97,46" to="207,108,42"/>
+<map from="81,25,25" to="159,64,0"/>
+<map from="128,80,38" to="171,89,35"/>
+<map from="0,193,75" to="193,193,193"/>
+<map from="109,138,139" to="113,44,22"/>
+<map from="132,167,169" to="137,53,27"/>
+<map from="0,211,83" to="211,211,211"/>
+<map from="137,130,130" to="113,44,22"/>
+<map from="211,177,72" to="240,240,240"/>
+<map from="136,85,40" to="182,95,37"/>
+<map from="86,27,27" to="169,68,0"/>
+<map from="169,142,58" to="193,193,193"/>
+<map from="211,0,83" to="211,121,93"/>
+<map from="197,165,68" to="224,224,224"/>
+<map from="186,156,64" to="211,211,211"/>
+<map from="169,0,66" to="169,97,74"/>
+<map from="240,90,0" to="240,240,240"/>
+<map from="177,167,167" to="145,56,29"/>
+<map from="112,66,0" to="240,240,240"/>
+<map from="0,240,94" to="240,240,240"/>
+<map from="224,224,224" to="224,53,0"/>
+<map from="189,179,179" to="155,60,31"/>
+<map from="0,169,66" to="169,169,169"/>
+<map from="106,134,135" to="109,42,22"/>
+
+			</spriteType>
+			<picture ref="{40AF8687-117A-3311-A95D-1570512E5210}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+	
+	<!-- 117系サンライナー中間 -->
+	<contribution type="trainCar" id="{DDF87135-9F9C-117A-9B45-04F846A0479D}-b">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="171,128,68" to="224,224,224"/>
+<map from="129,97,52" to="169,169,169"/>
+<map from="183,137,73" to="240,240,240"/>
+<map from="223,214,140" to="224,224,224"/>
+<map from="169,161,105" to="169,169,169"/>
+<map from="133,100,53" to="174,174,174"/>
+<map from="239,229,150" to="240,240,240"/>
+<map from="174,166,109" to="174,174,174"/>
+<map from="147,110,59" to="193,193,193"/>
+<map from="182,166,92" to="181,181,181"/>
+<map from="98,58,0" to="211,211,211"/>
+<map from="75,44,0" to="161,161,161"/>
+<map from="132,120,67" to="131,131,131"/>
+<map from="192,184,120" to="193,193,193"/>
+<map from="161,121,64" to="211,211,211"/>
+<map from="105,61,0" to="224,224,224"/>
+<map from="193,193,193" to="193,45,0"/>
+<map from="153,153,153" to="153,36,0"/>
+<map from="79,46,0" to="169,169,169"/>
+<map from="210,201,132" to="211,211,211"/>
+<map from="211,211,211" to="211,50,0"/>
+<map from="161,161,161" to="161,38,0"/>
+<map from="146,133,74" to="145,145,145"/>
+<map from="170,155,86" to="169,169,169"/>
+<map from="81,48,0" to="174,174,174"/>
+<map from="169,169,169" to="169,40,0"/>
+<map from="90,53,0" to="193,193,193"/>
+<map from="174,174,174" to="174,41,0"/>
+
+			</spriteType>
+
+			<picture ref="{40AF8687-117B-3311-B95D-1570512E5210}" />
+		</sprite>
+		<capacity>64</capacity>
+	</contribution>
+
+
+	<!-- 117系サンライナー後尾車両 -->
+	<contribution type="trainCar" id="{DDF87135-9F9C-117A-9B45-04F846A0479D}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{DDF87135-9F9C-117A-9B45-04F846A0479D}-h"/>
+	</contribution>
+	
+
+	<contribution type="train" id="{DDF87135-9F9C-117A-9B45-04F846A0479D}">
+		<name>Sun Liner Rapid</name>
+		<price>1</price>
+                <fare>400</fare>
+		<speed>medium</speed>
+		<author>qra_ra</author>
+		<type>117 Series</type>
+		<company>JR West</company>
+		<description>国鉄が京阪神の競合私鉄に対抗すべく新製した形式。同地区の新快速に投入されたほか、中京圏にも投入された。2扉の転換クロスシートの室内に空気バネの台車を履くなど、他の国鉄近郊型車両とは一線を画していた。</description>
+		<composition>
+			<head carRef="{DDF87135-9F9C-117A-9B45-04F846A0479D}-h"/>
+			<body carRef="{DDF87135-9F9C-117A-9B45-04F846A0479D}-b"/>
+			<tail carRef="{DDF87135-9F9C-117A-9B45-04F846A0479D}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 117系東海色先頭 -->
+	<contribution type="trainCar" id="{EDF87135-9F9C-117A-9B45-04F846A0479D}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="223,214,140" to="224,224,224"/>
+<map from="239,229,150" to="240,240,240"/>
+<map from="210,201,132" to="211,211,211"/>
+<map from="192,184,120" to="193,193,193"/>
+<map from="254,243,159" to="255,255,255"/>
+<map from="171,128,68" to="223,161,71"/>
+<map from="129,97,52" to="169,121,54"/>
+<map from="169,161,105" to="169,169,169"/>
+<map from="174,166,109" to="174,174,174"/>
+<map from="69,47,16" to="41,41,41"/>
+<map from="183,137,73" to="239,172,76"/>
+<map from="133,100,53" to="174,125,55"/>
+<map from="50,34,11" to="30,30,30"/>
+<map from="147,110,59" to="192,138,61"/>
+<map from="161,121,64" to="210,152,67"/>
+<map from="194,146,78" to="254,183,81"/>
+<map from="98,58,0" to="211,79,0"/>
+<map from="75,44,0" to="161,61,0"/>
+<map from="55,38,13" to="33,33,33"/>
+<map from="117,73,35" to="84,84,84"/>
+<map from="105,61,0" to="224,84,0"/>
+<map from="182,166,92" to="189,179,179"/>
+<map from="132,120,67" to="137,130,130"/>
+<map from="79,46,0" to="169,64,0"/>
+<map from="146,133,74" to="152,144,144"/>
+<map from="60,41,14" to="36,36,36"/>
+<map from="170,155,86" to="177,167,167"/>
+<map from="81,48,0" to="174,65,0"/>
+<map from="74,23,23" to="53,52,52"/>
+<map from="90,53,0" to="193,72,0"/>
+<map from="193,45,0" to="193,193,193"/>
+<map from="169,40,0" to="169,169,169"/>
+<map from="174,41,0" to="174,174,174"/>
+<map from="146,91,43" to="104,104,104"/>
+<map from="193,176,98" to="201,190,190"/>
+<map from="64,44,15" to="38,38,38"/>
+<map from="160,146,81" to="166,157,157"/>
+<map from="92,29,29" to="66,65,65"/>
+<map from="73,50,17" to="44,44,44"/>
+<map from="211,50,0" to="211,211,211"/>
+<map from="98,31,31" to="70,69,69"/>
+<map from="224,53,0" to="224,224,224"/>
+<map from="0,174,68" to="174,174,174"/>
+<map from="0,224,88" to="224,224,224"/>
+<map from="155,97,46" to="111,111,111"/>
+<map from="81,25,25" to="58,57,57"/>
+<map from="128,80,38" to="92,92,92"/>
+<map from="0,193,75" to="193,193,193"/>
+<map from="109,138,139" to="137,130,130"/>
+<map from="132,167,169" to="166,157,157"/>
+<map from="0,211,83" to="211,211,211"/>
+<map from="211,177,72" to="239,172,76"/>
+<map from="136,85,40" to="97,97,97"/>
+<map from="86,27,27" to="61,60,60"/>
+<map from="169,142,58" to="192,138,61"/>
+<map from="197,165,68" to="223,161,71"/>
+<map from="186,156,64" to="210,152,67"/>
+<map from="112,66,0" to="240,90,0"/>
+<map from="0,240,94" to="240,240,240"/>
+<map from="0,169,66" to="169,169,169"/>
+<map from="106,134,135" to="133,126,126"/>
+
+			</spriteType>
+			<picture ref="{40AF8687-117A-3311-A95D-1570512E5210}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+	
+	<!-- 117系東海色中間 -->
+	<contribution type="trainCar" id="{EDF87135-9F9C-117A-9B45-04F846A0479D}-b">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="171,128,68" to="223,161,71"/>
+<map from="129,97,52" to="169,121,54"/>
+<map from="183,137,73" to="239,172,76"/>
+<map from="223,214,140" to="224,224,224"/>
+<map from="169,161,105" to="169,169,169"/>
+<map from="133,100,53" to="174,125,55"/>
+<map from="239,229,150" to="240,240,240"/>
+<map from="174,166,109" to="174,174,174"/>
+<map from="147,110,59" to="192,138,61"/>
+<map from="182,166,92" to="181,181,181"/>
+<map from="98,58,0" to="211,79,0"/>
+<map from="75,44,0" to="161,61,0"/>
+<map from="132,120,67" to="131,131,131"/>
+<map from="192,184,120" to="193,193,193"/>
+<map from="161,121,64" to="210,152,67"/>
+<map from="105,61,0" to="224,84,0"/>
+<map from="79,46,0" to="169,64,0"/>
+<map from="210,201,132" to="211,211,211"/>
+<map from="146,133,74" to="145,145,145"/>
+<map from="170,155,86" to="169,169,169"/>
+<map from="81,48,0" to="174,65,0"/>
+<map from="90,53,0" to="193,72,0"/>
+
+			</spriteType>
+
+			<picture ref="{40AF8687-117B-3311-B95D-1570512E5210}" />
+		</sprite>
+		<capacity>64</capacity>
+	</contribution>
+
+
+	<!-- 117系東海色後尾車両 -->
+	<contribution type="trainCar" id="{EDF87135-9F9C-117A-9B45-04F846A0479D}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{EDF87135-9F9C-117A-9B45-04F846A0479D}-h"/>
+	</contribution>
+	
+
+	<contribution type="train" id="{EDF87135-9F9C-117A-9B45-04F846A0479D}">
+		<name>Tokai Colors</name>
+		<price>1</price>
+                <fare>400</fare>
+		<speed>medium</speed>
+		<author>qra_ra</author>
+		<type>117 Series</type>
+		<company>JR Central</company>
+		<description>国鉄が京阪神の競合私鉄に対抗すべく新製した形式。同地区の新快速に投入されたほか、中京圏にも投入された。2扉の転換クロスシートの室内に空気バネの台車を履くなど、他の国鉄近郊型車両とは一線を画していた。</description>
+		<composition>
+			<head carRef="{EDF87135-9F9C-117A-9B45-04F846A0479D}-h"/>
+			<body carRef="{EDF87135-9F9C-117A-9B45-04F846A0479D}-b"/>
+			<tail carRef="{EDF87135-9F9C-117A-9B45-04F846A0479D}-t"/>
+		</composition>
+	</contribution>
+
+
+
+	<contribution type="picture" id="{picture-oct60a-3311-A95D-9570512E5210}">
+		<picture src="oct60a.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{picture-oct60b-3311-A95D-9570512E5210}">
+		<picture src="oct60b.bmp" />
+	</contribution>
+
+
+	<!-- 大市交60系先頭 -->
+	<contribution type="trainCar" id="{trainCar-oct60-3311-A95D-9570512E5210}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+
+			<picture ref="{picture-oct60a-3311-A95D-9570512E5210}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+	
+	<!-- 大市交60系中間 -->
+	<contribution type="trainCar" id="{trainCar-oct60-3311-A95D-9570512E5210}-b">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+
+			<picture ref="{picture-oct60b-3311-A95D-9570512E5210}" />
+		</sprite>
+		<capacity>64</capacity>
+	</contribution>
+
+
+	<!-- 大市交60系後尾車両 -->
+	<contribution type="trainCar" id="{trainCar-oct60-3311-A95D-9570512E5210}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{trainCar-oct60-3311-A95D-9570512E5210}-h"/>
+	</contribution>
+	
+
+	<contribution type="train" id="{train-oct60-3311-A95D-9570512E5210}">
+		<name>Sakaisuji Line</name>
+		<price>1</price>
+                <fare>300</fare>
+		<speed>medium</speed>
+		<author>qra_ra</author>
+		<type>60 Series</type>
+		<company>Osaka Municipal Transportation Bureau</company>
+		<description>大阪市営地下鉄堺筋線で開通時から使用されている車両。天神橋筋六丁目から阪急に乗り入れるため、大阪市営地下鉄としては珍しい架線集電方式を採用している。
+今では一般的なフロントガラスを上部屋根付近まで延長したデザインは製造当時は斬新だった。</description>
+		<composition>
+			<head carRef="{trainCar-oct60-3311-A95D-9570512E5210}-h"/>
+			<body carRef="{trainCar-oct60-3311-A95D-9570512E5210}-b"/>
+			<tail carRef="{trainCar-oct60-3311-A95D-9570512E5210}-t"/>
+		</composition>
+	</contribution>
+
+
+	
+		
+	<contribution type="picture" id="{picture-oct10a-0000-A95D-9570512E5210}">
+		<picture src="oct10a.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{picture-oct10b-0000-A95D-9570512E5210}">
+		<picture src="oct10b.bmp" />
+	</contribution>
+		
+	
+
+	
+	<!-- 大市交10系旧先頭 -->
+	<contribution type="trainCar" id="{trainCar-oct10-0001-A95D-9570512E5210}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="0,60,169" to="0,8,0"/>
+<map from="169,85,0" to="0,8,0"/>
+<map from="194,0,164" to="198,198,198"/>
+<map from="4,0,169" to="149,149,149"/>
+<map from="85,0,169" to="149,149,149"/>
+<map from="0,169,91" to="149,149,149"/>
+<map from="5,0,240" to="212,212,212"/>
+<map from="4,0,174" to="154,154,154"/>
+<map from="169,169,0" to="149,149,149"/>
+<map from="0,178,3" to="203,170,170"/>
+<map from="0,135,2" to="153,128,128"/>
+<map from="167,0,141" to="170,170,170"/>
+<map from="4,0,193" to="170,170,170"/>
+<map from="208,0,176" to="212,212,212"/>
+<map from="151,0,128" to="154,154,154"/>
+<map from="183,0,155" to="186,186,186"/>
+<map from="5,0,211" to="186,186,186"/>
+<map from="5,0,224" to="198,198,198"/>
+<map from="147,0,124" to="149,149,149"/>
+<map from="224,112,0" to="0,8,0"/>
+<map from="112,0,224" to="198,198,198"/>
+<map from="0,224,121" to="198,198,198"/>
+<map from="0,79,224" to="0,8,0"/>
+<map from="211,0,114" to="186,186,186"/>
+<map from="224,224,0" to="198,198,198"/>
+<map from="97,0,193" to="170,170,170"/>
+<map from="193,97,0" to="0,8,0"/>
+<map from="240,120,0" to="0,8,0"/>
+<map from="0,240,130" to="212,212,212"/>
+<map from="120,0,240" to="212,212,212"/>
+<map from="0,193,104" to="170,170,170"/>
+<map from="0,68,193" to="0,8,0"/>
+<map from="0,85,240" to="0,8,0"/>
+<map from="193,193,0" to="170,170,170"/>
+<map from="193,0,104" to="170,170,170"/>
+<map from="224,0,121" to="198,198,198"/>
+<map from="240,240,0" to="212,212,212"/>
+<map from="0,211,114" to="186,186,186"/>
+<map from="106,0,211" to="186,186,186"/>
+<map from="0,74,211" to="0,8,0"/>
+<map from="211,106,0" to="0,8,0"/>
+<map from="211,211,0" to="186,186,186"/>
+<map from="255,0,138" to="225,225,225"/>
+<map from="90,140,139" to="170,170,170"/>
+
+			</spriteType>
+			<picture ref="{picture-oct10a-0000-A95D-9570512E5210}" />
+		</sprite>
+		<capacity>42</capacity>
+	</contribution>
+	
+	<!-- 大市交10系旧中間 -->
+	<contribution type="trainCar" id="{trainCar-oct10-0001-A95D-9570512E5210}-b">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="194,0,164" to="198,198,198"/>
+<map from="147,0,124" to="149,149,149"/>
+<map from="208,0,176" to="212,212,212"/>
+<map from="151,0,128" to="154,154,154"/>
+<map from="167,0,141" to="170,170,170"/>
+<map from="183,0,155" to="186,186,186"/>
+			</spriteType>
+
+			<picture ref="{picture-oct10b-0000-A95D-9570512E5210}" />
+		</sprite>
+		<capacity>48</capacity>
+	</contribution>
+
+
+	<!-- 大市交10系旧後尾車両 -->
+	<contribution type="trainCar" id="{trainCar-oct10-0001-A95D-9570512E5210}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{trainCar-oct10-0001-A95D-9570512E5210}-h"/>
+	</contribution>
+	
+
+	<contribution type="train" id="{train-oct10-0001-A95D-9570512E5210}">
+		<name>Midosuji Line</name>
+		<price>1</price>
+                <fare>300</fare>
+		<speed>medium</speed>
+		<author>qra_ra</author>
+		<type>10 Series</type>
+		<company>Osaka Municipal Transportation Bureau</company>
+		<description>御堂筋線で使われているサイリスタチョッパ制御車両。多くの路線がトンネル上部にスペースの少ない第三軌条方式を採用している大阪市営地下鉄で、初の冷房搭載車となった。</description>
+		<composition>
+			<head carRef="{trainCar-oct10-0001-A95D-9570512E5210}-h"/>
+			<body carRef="{trainCar-oct10-0001-A95D-9570512E5210}-b"/>
+			<tail carRef="{trainCar-oct10-0001-A95D-9570512E5210}-t"/>
+		</composition>
+	</contribution>
+	
+
+
+	<!-- 大市交10系新先頭 -->
+	<contribution type="trainCar" id="{trainCar-oct10-0002-A95D-9570512E5210}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="0,60,169" to="0,8,0"/>
+<map from="169,85,0" to="0,8,0"/>
+<map from="194,0,164" to="224,0,0"/>
+<map from="4,0,169" to="149,149,149"/>
+<map from="85,0,169" to="62,62,62"/>
+<map from="0,169,91" to="62,62,62"/>
+<map from="5,0,240" to="212,212,212"/>
+<map from="203,170,170" to="198,198,198"/>
+<map from="153,128,128" to="149,149,149"/>
+<map from="4,0,174" to="154,154,154"/>
+<map from="169,169,0" to="62,62,62"/>
+<map from="0,178,3" to="224,0,0"/>
+<map from="0,135,2" to="169,0,0"/>
+<map from="167,0,141" to="193,0,0"/>
+<map from="4,0,193" to="170,170,170"/>
+<map from="218,182,182" to="212,212,212"/>
+<map from="208,0,176" to="240,0,0"/>
+<map from="151,0,128" to="174,0,0"/>
+<map from="158,132,132" to="154,154,154"/>
+<map from="183,0,155" to="211,0,0"/>
+<map from="5,0,211" to="186,186,186"/>
+<map from="175,146,146" to="170,170,170"/>
+<map from="191,160,160" to="186,186,186"/>
+<map from="5,0,224" to="198,198,198"/>
+<map from="147,0,124" to="169,0,0"/>
+<map from="224,112,0" to="0,8,0"/>
+<map from="112,0,224" to="82,82,82"/>
+<map from="0,224,121" to="82,82,82"/>
+<map from="0,79,224" to="0,8,0"/>
+<map from="211,0,114" to="186,186,186"/>
+<map from="224,224,0" to="82,82,82"/>
+<map from="97,0,193" to="70,70,70"/>
+<map from="193,97,0" to="0,8,0"/>
+<map from="240,120,0" to="0,8,0"/>
+<map from="0,240,130" to="87,87,87"/>
+<map from="120,0,240" to="87,87,87"/>
+<map from="0,193,104" to="70,70,70"/>
+<map from="0,68,193" to="0,8,0"/>
+<map from="0,85,240" to="0,8,0"/>
+<map from="193,193,0" to="70,70,70"/>
+<map from="193,0,104" to="170,170,170"/>
+<map from="224,0,121" to="198,198,198"/>
+<map from="240,240,0" to="87,87,87"/>
+<map from="0,211,114" to="77,77,77"/>
+<map from="106,0,211" to="77,77,77"/>
+<map from="0,74,211" to="0,8,0"/>
+<map from="211,106,0" to="0,8,0"/>
+<map from="211,211,0" to="77,77,77"/>
+<map from="255,0,138" to="225,225,225"/>
+<map from="90,140,139" to="70,70,70"/>
+
+			</spriteType>
+			<picture ref="{picture-oct10a-0000-A95D-9570512E5210}" />
+		</sprite>
+		<capacity>42</capacity>
+	</contribution>
+	
+	<!-- 大市交10系新中間 -->
+	<contribution type="trainCar" id="{trainCar-oct10-0002-A95D-9570512E5210}-b">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="194,0,164" to="224,0,0"/>
+<map from="147,0,124" to="169,0,0"/>
+<map from="208,0,176" to="240,0,0"/>
+<map from="151,0,128" to="174,0,0"/>
+<map from="203,170,170" to="198,198,198"/>
+<map from="153,128,128" to="149,149,149"/>
+<map from="0,178,3" to="224,0,0"/>
+<map from="0,135,2" to="169,0,0"/>
+<map from="167,0,141" to="193,0,0"/>
+<map from="218,182,182" to="212,212,212"/>
+<map from="158,132,132" to="154,154,154"/>
+<map from="183,0,155" to="211,0,0"/>
+<map from="175,146,146" to="170,170,170"/>
+<map from="191,160,160" to="186,186,186"/>
+
+			</spriteType>
+
+			<picture ref="{picture-oct10b-0000-A95D-9570512E5210}" />
+		</sprite>
+		<capacity>48</capacity>
+	</contribution>
+
+
+	<!-- 大市交10系新後尾車両 -->
+	<contribution type="trainCar" id="{trainCar-oct10-0002-A95D-9570512E5210}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{trainCar-oct10-0002-A95D-9570512E5210}-h"/>
+	</contribution>
+	
+
+	<contribution type="train" id="{train-oct10-0002-A95D-9570512E5210}">
+		<name>Midosuji Line (New Colors)</name>
+		<price>1</price>
+                <fare>300</fare>
+		<speed>medium</speed>
+		<author>qra_ra</author>
+		<type>10 Series</type>
+		<company>Osaka Municipal Transportation Bureau</company>
+		<description>御堂筋線で使われているサイリスタチョッパ制御車両。多くの路線がトンネル上部にスペースの少ない第三軌条方式を採用している大阪市営地下鉄で、初の冷房搭載車となった。</description>
+		<composition>
+			<head carRef="{trainCar-oct10-0002-A95D-9570512E5210}-h"/>
+			<body carRef="{trainCar-oct10-0002-A95D-9570512E5210}-b"/>
+			<tail carRef="{trainCar-oct10-0002-A95D-9570512E5210}-t"/>
+		</composition>
+	</contribution>
+
+	
+	<!-- 大市交20系谷町旧先頭 -->
+	<contribution type="trainCar" id="{trainCar-oct10-0003-A95D-9570512E5210}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="222,117,117" to="217,105,206"/>
+<map from="240,0,0" to="208,0,176"/>
+<map from="147,78,78" to="144,70,137"/>
+<map from="169,0,0" to="147,0,124"/>
+<map from="0,60,169" to="149,149,149"/>
+<map from="169,85,0" to="78,78,78"/>
+<map from="194,0,164" to="198,198,198"/>
+<map from="4,0,169" to="149,149,149"/>
+<map from="85,0,169" to="149,149,149"/>
+<map from="224,0,0" to="194,0,164"/>
+<map from="0,169,91" to="78,78,78"/>
+<map from="5,0,240" to="212,212,212"/>
+<map from="203,170,170" to="198,156,194"/>
+<map from="153,128,128" to="149,118,147"/>
+<map from="4,0,174" to="154,154,154"/>
+<map from="169,169,0" to="56,56,56"/>
+<map from="0,178,3" to="198,156,194"/>
+<map from="0,135,2" to="149,118,147"/>
+<map from="174,0,0" to="151,0,128"/>
+<map from="167,0,141" to="170,170,170"/>
+<map from="4,0,193" to="170,170,170"/>
+<map from="218,182,182" to="212,168,208"/>
+<map from="208,0,176" to="212,212,212"/>
+<map from="151,0,128" to="154,154,154"/>
+<map from="158,132,132" to="154,122,151"/>
+<map from="193,0,0" to="167,0,141"/>
+<map from="183,0,155" to="186,186,186"/>
+<map from="211,0,0" to="183,0,155"/>
+<map from="5,0,211" to="186,186,186"/>
+<map from="175,146,146" to="170,134,167"/>
+<map from="191,160,160" to="186,147,183"/>
+<map from="5,0,224" to="198,198,198"/>
+<map from="147,0,124" to="149,149,149"/>
+<map from="195,103,103" to="191,92,181"/>
+<map from="224,112,0" to="104,104,104"/>
+<map from="112,0,224" to="198,198,198"/>
+<map from="0,224,121" to="104,104,104"/>
+<map from="0,79,224" to="198,198,198"/>
+<map from="211,0,114" to="0,8,0"/>
+<map from="224,224,0" to="74,74,74"/>
+<map from="97,0,193" to="170,170,170"/>
+<map from="193,97,0" to="89,89,89"/>
+<map from="240,120,0" to="111,111,111"/>
+<map from="0,240,130" to="111,111,111"/>
+<map from="120,0,240" to="212,212,212"/>
+<map from="0,193,104" to="89,89,89"/>
+<map from="0,68,193" to="170,170,170"/>
+<map from="0,85,240" to="212,212,212"/>
+<map from="193,193,0" to="63,63,63"/>
+<map from="193,0,104" to="0,8,0"/>
+<map from="224,0,121" to="0,8,0"/>
+<map from="240,240,0" to="79,79,79"/>
+<map from="209,110,110" to="204,99,194"/>
+<map from="0,211,114" to="98,98,98"/>
+<map from="106,0,211" to="186,186,186"/>
+<map from="0,74,211" to="186,186,186"/>
+<map from="211,106,0" to="98,98,98"/>
+<map from="168,88,88" to="164,79,156"/>
+<map from="211,211,0" to="69,69,69"/>
+<map from="184,97,97" to="180,87,171"/>
+<map from="255,0,138" to="0,8,0"/>
+<map from="255,0,0" to="221,0,187"/>
+<map from="90,140,139" to="63,63,63"/>
+
+			</spriteType>
+			<picture ref="{picture-oct10a-0000-A95D-9570512E5210}" />
+		</sprite>
+		<capacity>42</capacity>
+	</contribution>
+	
+	<!-- 大市交20系谷町旧中間 -->
+	<contribution type="trainCar" id="{trainCar-oct10-0003-A95D-9570512E5210}-b">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="194,0,164" to="198,198,198"/>
+<map from="147,0,124" to="149,149,149"/>
+<map from="208,0,176" to="212,212,212"/>
+<map from="224,0,0" to="194,0,164"/>
+<map from="169,0,0" to="147,0,124"/>
+<map from="151,0,128" to="154,154,154"/>
+<map from="203,170,170" to="198,156,194"/>
+<map from="153,128,128" to="149,118,147"/>
+<map from="240,0,0" to="208,0,176"/>
+<map from="0,178,3" to="194,0,164"/>
+<map from="0,135,2" to="147,0,124"/>
+<map from="174,0,0" to="151,0,128"/>
+<map from="167,0,141" to="170,170,170"/>
+<map from="218,182,182" to="212,168,208"/>
+<map from="158,132,132" to="154,122,151"/>
+<map from="193,0,0" to="167,0,141"/>
+<map from="183,0,155" to="186,186,186"/>
+<map from="211,0,0" to="183,0,155"/>
+<map from="175,146,146" to="170,134,167"/>
+<map from="191,160,160" to="186,147,183"/>
+			</spriteType>
+
+			<picture ref="{picture-oct10b-0000-A95D-9570512E5210}" />
+		</sprite>
+		<capacity>48</capacity>
+	</contribution>
+
+
+	<!-- 大市交20系谷町旧後尾車両 -->
+	<contribution type="trainCar" id="{trainCar-oct10-0003-A95D-9570512E5210}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{trainCar-oct10-0003-A95D-9570512E5210}-h"/>
+	</contribution>
+	
+
+	<contribution type="train" id="{train-oct10-0003-A95D-9570512E5210}">
+		<name>Tanimachi Line</name>
+		<price>1</price>
+                <fare>300</fare>
+		<speed>medium</speed>
+		<author>qra_ra</author>
+		<type>20 Series</type>
+		<company>Osaka Municipal Transportation Bureau</company>
+		<description>昭和59年に登場したOsaka Municipal Transportation Bureau初のVVVFインバータ制御車両。中央線と谷町線に投入された。</description>
+		<composition>
+			<head carRef="{trainCar-oct10-0003-A95D-9570512E5210}-h"/>
+			<body carRef="{trainCar-oct10-0003-A95D-9570512E5210}-b"/>
+			<tail carRef="{trainCar-oct10-0003-A95D-9570512E5210}-t"/>
+		</composition>
+	</contribution>
+	
+
+
+	<!-- 大市交20系谷町新先頭 -->
+	<contribution type="trainCar" id="{trainCar-oct10-0004-A95D-9570512E5210}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="222,117,117" to="217,105,206"/>
+<map from="240,0,0" to="208,0,176"/>
+<map from="147,78,78" to="144,70,137"/>
+<map from="169,0,0" to="147,0,124"/>
+<map from="0,60,169" to="149,149,149"/>
+<map from="169,85,0" to="78,78,78"/>
+<map from="4,0,169" to="147,0,124"/>
+<map from="85,0,169" to="149,149,149"/>
+<map from="224,0,0" to="194,0,164"/>
+<map from="0,169,91" to="78,78,78"/>
+<map from="5,0,240" to="208,0,176"/>
+<map from="203,170,170" to="198,198,198"/>
+<map from="153,128,128" to="149,149,149"/>
+<map from="4,0,174" to="151,0,128"/>
+<map from="169,169,0" to="56,56,56"/>
+<map from="0,178,3" to="194,0,164"/>
+<map from="0,135,2" to="147,0,124"/>
+<map from="174,0,0" to="151,0,128"/>
+<map from="4,0,193" to="167,0,141"/>
+<map from="218,182,182" to="212,212,212"/>
+<map from="158,132,132" to="154,154,154"/>
+<map from="193,0,0" to="167,0,141"/>
+<map from="211,0,0" to="183,0,155"/>
+<map from="5,0,211" to="183,0,155"/>
+<map from="175,146,146" to="170,170,170"/>
+<map from="191,160,160" to="186,186,186"/>
+<map from="5,0,224" to="194,0,164"/>
+<map from="195,103,103" to="191,92,181"/>
+<map from="224,112,0" to="104,104,104"/>
+<map from="112,0,224" to="198,198,198"/>
+<map from="0,224,121" to="104,104,104"/>
+<map from="0,79,224" to="198,198,198"/>
+<map from="211,0,114" to="0,8,0"/>
+<map from="224,224,0" to="74,74,74"/>
+<map from="97,0,193" to="170,170,170"/>
+<map from="193,97,0" to="89,89,89"/>
+<map from="240,120,0" to="111,111,111"/>
+<map from="0,240,130" to="111,111,111"/>
+<map from="120,0,240" to="212,212,212"/>
+<map from="0,193,104" to="89,89,89"/>
+<map from="0,68,193" to="170,170,170"/>
+<map from="0,85,240" to="212,212,212"/>
+<map from="193,193,0" to="63,63,63"/>
+<map from="193,0,104" to="0,8,0"/>
+<map from="224,0,121" to="0,8,0"/>
+<map from="240,240,0" to="79,79,79"/>
+<map from="209,110,110" to="204,99,194"/>
+<map from="0,211,114" to="98,98,98"/>
+<map from="106,0,211" to="186,186,186"/>
+<map from="0,74,211" to="186,186,186"/>
+<map from="211,106,0" to="98,98,98"/>
+<map from="168,88,88" to="164,79,156"/>
+<map from="211,211,0" to="69,69,69"/>
+<map from="184,97,97" to="180,87,171"/>
+<map from="255,0,138" to="0,8,0"/>
+<map from="255,0,0" to="221,0,187"/>
+<map from="90,140,139" to="63,63,63"/>
+
+			</spriteType>
+			<picture ref="{picture-oct10a-0000-A95D-9570512E5210}" />
+		</sprite>
+		<capacity>42</capacity>
+	</contribution>
+	
+	<!-- 大市交20系谷町新中間 -->
+	<contribution type="trainCar" id="{trainCar-oct10-0004-A95D-9570512E5210}-b">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="224,0,0" to="194,0,164"/>
+<map from="169,0,0" to="147,0,124"/>
+<map from="203,170,170" to="198,198,198"/>
+<map from="153,128,128" to="149,149,149"/>
+<map from="240,0,0" to="208,0,176"/>
+<map from="0,178,3" to="194,0,164"/>
+<map from="0,135,2" to="147,0,124"/>
+<map from="174,0,0" to="151,0,128"/>
+<map from="218,182,182" to="212,212,212"/>
+<map from="158,132,132" to="154,154,154"/>
+<map from="193,0,0" to="167,0,141"/>
+<map from="211,0,0" to="183,0,155"/>
+<map from="175,146,146" to="170,170,170"/>
+<map from="191,160,160" to="186,186,186"/>
+
+			</spriteType>
+
+			<picture ref="{picture-oct10b-0000-A95D-9570512E5210}" />
+		</sprite>
+		<capacity>48</capacity>
+	</contribution>
+
+
+	<!-- 大市交20系谷町新後尾車両 -->
+	<contribution type="trainCar" id="{trainCar-oct10-0004-A95D-9570512E5210}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{trainCar-oct10-0004-A95D-9570512E5210}-h"/>
+	</contribution>
+	
+
+	<contribution type="train" id="{train-oct10-0004-A95D-9570512E5210}">
+		<name>Tanimachi Line (New Colors)</name>
+		<price>1</price>
+                <fare>300</fare>
+		<speed>medium</speed>
+		<author>qra_ra</author>
+		<type>20 Series</type>
+		<company>Osaka Municipal Transportation Bureau</company>
+		<description>昭和59年に登場したOsaka Municipal Transportation Bureau初のVVVFインバータ制御車両。中央線と谷町線に投入された。</description>
+		<composition>
+			<head carRef="{trainCar-oct10-0004-A95D-9570512E5210}-h"/>
+			<body carRef="{trainCar-oct10-0004-A95D-9570512E5210}-b"/>
+			<tail carRef="{trainCar-oct10-0004-A95D-9570512E5210}-t"/>
+		</composition>
+	</contribution>
+
+	
+	<!-- 大市交20系中央旧先頭 -->
+	<contribution type="trainCar" id="{trainCar-oct10-0005-A95D-9570512E5210}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="222,117,117" to="147,195,134"/>
+<map from="240,0,0" to="0,191,4"/>
+<map from="147,78,78" to="97,129,89"/>
+<map from="169,0,0" to="0,135,2"/>
+<map from="0,60,169" to="149,149,149"/>
+<map from="169,85,0" to="78,78,78"/>
+<map from="194,0,164" to="198,198,198"/>
+<map from="4,0,169" to="149,149,149"/>
+<map from="85,0,169" to="149,149,149"/>
+<map from="224,0,0" to="0,178,3"/>
+<map from="0,169,91" to="78,78,78"/>
+<map from="5,0,240" to="212,212,212"/>
+<map from="203,170,170" to="159,193,160"/>
+<map from="153,128,128" to="120,145,121"/>
+<map from="4,0,174" to="154,154,154"/>
+<map from="169,169,0" to="56,56,56"/>
+<map from="0,178,3" to="159,193,160"/>
+<map from="0,135,2" to="120,145,121"/>
+<map from="174,0,0" to="0,139,2"/>
+<map from="167,0,141" to="170,170,170"/>
+<map from="4,0,193" to="170,170,170"/>
+<map from="218,182,182" to="170,206,171"/>
+<map from="208,0,176" to="212,212,212"/>
+<map from="151,0,128" to="154,154,154"/>
+<map from="158,132,132" to="124,150,124"/>
+<map from="193,0,0" to="0,153,3"/>
+<map from="183,0,155" to="186,186,186"/>
+<map from="211,0,0" to="0,168,3"/>
+<map from="5,0,211" to="186,186,186"/>
+<map from="175,146,146" to="137,166,137"/>
+<map from="191,160,160" to="150,181,151"/>
+<map from="5,0,224" to="198,198,198"/>
+<map from="147,0,124" to="149,149,149"/>
+<map from="195,103,103" to="129,171,118"/>
+<map from="224,112,0" to="104,104,104"/>
+<map from="112,0,224" to="198,198,198"/>
+<map from="0,224,121" to="104,104,104"/>
+<map from="0,79,224" to="198,198,198"/>
+<map from="211,0,114" to="0,8,0"/>
+<map from="224,224,0" to="74,74,74"/>
+<map from="97,0,193" to="170,170,170"/>
+<map from="193,97,0" to="89,89,89"/>
+<map from="240,120,0" to="111,111,111"/>
+<map from="0,240,130" to="111,111,111"/>
+<map from="120,0,240" to="212,212,212"/>
+<map from="0,193,104" to="89,89,89"/>
+<map from="0,68,193" to="170,170,170"/>
+<map from="0,85,240" to="212,212,212"/>
+<map from="193,193,0" to="63,63,63"/>
+<map from="193,0,104" to="0,8,0"/>
+<map from="224,0,121" to="0,8,0"/>
+<map from="240,240,0" to="79,79,79"/>
+<map from="209,110,110" to="138,184,126"/>
+<map from="0,211,114" to="98,98,98"/>
+<map from="106,0,211" to="186,186,186"/>
+<map from="0,74,211" to="186,186,186"/>
+<map from="211,106,0" to="98,98,98"/>
+<map from="168,88,88" to="111,147,101"/>
+<map from="211,211,0" to="69,69,69"/>
+<map from="184,97,97" to="122,161,111"/>
+<map from="255,0,138" to="0,8,0"/>
+<map from="255,0,0" to="0,203,4"/>
+<map from="90,140,139" to="63,63,63"/>
+
+			</spriteType>
+			<picture ref="{picture-oct10a-0000-A95D-9570512E5210}" />
+		</sprite>
+		<capacity>42</capacity>
+	</contribution>
+	
+	<!-- 大市交20系中央旧中間 -->
+	<contribution type="trainCar" id="{trainCar-oct10-0005-A95D-9570512E5210}-b">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="194,0,164" to="198,198,198"/>
+<map from="147,0,124" to="149,149,149"/>
+<map from="208,0,176" to="212,212,212"/>
+<map from="224,0,0" to="0,178,3"/>
+<map from="169,0,0" to="0,135,2"/>
+<map from="151,0,128" to="154,154,154"/>
+<map from="203,170,170" to="159,193,160"/>
+<map from="153,128,128" to="120,145,121"/>
+<map from="240,0,0" to="0,191,4"/>
+<map from="174,0,0" to="0,139,2"/>
+<map from="167,0,141" to="170,170,170"/>
+<map from="218,182,182" to="170,206,171"/>
+<map from="158,132,132" to="124,150,124"/>
+<map from="193,0,0" to="0,153,3"/>
+<map from="183,0,155" to="186,186,186"/>
+<map from="211,0,0" to="0,168,3"/>
+<map from="175,146,146" to="137,166,137"/>
+<map from="191,160,160" to="150,181,151"/>
+			</spriteType>
+
+			<picture ref="{picture-oct10b-0000-A95D-9570512E5210}" />
+		</sprite>
+		<capacity>48</capacity>
+	</contribution>
+
+
+	<!-- 大市交20系中央旧後尾車両 -->
+	<contribution type="trainCar" id="{trainCar-oct10-0005-A95D-9570512E5210}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{trainCar-oct10-0005-A95D-9570512E5210}-h"/>
+	</contribution>
+	
+
+	<contribution type="train" id="{train-oct10-0005-A95D-9570512E5210}">
+		<name>Chuo Line</name>
+		<price>1</price>
+                <fare>300</fare>
+		<speed>medium</speed>
+		<author>qra_ra</author>
+		<type>20 Series</type>
+		<company>Osaka Municipal Transportation Bureau</company>
+		<description>昭和59年に登場したOsaka Municipal Transportation Bureau初のVVVFインバータ制御車両。中央線と谷町線に投入された。</description>
+		<composition>
+			<head carRef="{trainCar-oct10-0005-A95D-9570512E5210}-h"/>
+			<body carRef="{trainCar-oct10-0005-A95D-9570512E5210}-b"/>
+			<tail carRef="{trainCar-oct10-0005-A95D-9570512E5210}-t"/>
+		</composition>
+	</contribution>
+	
+
+
+	<!-- 大市交20系中央新先頭 -->
+	<contribution type="trainCar" id="{trainCar-oct10-0006-A95D-9570512E5210}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="222,117,117" to="147,195,134"/>
+<map from="240,0,0" to="0,191,4"/>
+<map from="147,78,78" to="97,129,89"/>
+<map from="169,0,0" to="0,135,2"/>
+<map from="0,60,169" to="149,149,149"/>
+<map from="169,85,0" to="78,78,78"/>
+<map from="194,0,164" to="0,178,3"/>
+<map from="4,0,169" to="0,135,2"/>
+<map from="85,0,169" to="149,149,149"/>
+<map from="224,0,0" to="0,178,3"/>
+<map from="0,169,91" to="78,78,78"/>
+<map from="5,0,240" to="0,191,4"/>
+<map from="203,170,170" to="198,198,198"/>
+<map from="153,128,128" to="149,149,149"/>
+<map from="4,0,174" to="0,139,2"/>
+<map from="169,169,0" to="56,56,56"/>
+<map from="174,0,0" to="0,139,2"/>
+<map from="167,0,141" to="0,153,3"/>
+<map from="4,0,193" to="0,153,3"/>
+<map from="218,182,182" to="212,212,212"/>
+<map from="208,0,176" to="0,191,4"/>
+<map from="151,0,128" to="0,139,2"/>
+<map from="158,132,132" to="154,154,154"/>
+<map from="193,0,0" to="0,153,3"/>
+<map from="183,0,155" to="0,168,3"/>
+<map from="211,0,0" to="0,168,3"/>
+<map from="5,0,211" to="0,168,3"/>
+<map from="175,146,146" to="170,170,170"/>
+<map from="191,160,160" to="186,186,186"/>
+<map from="5,0,224" to="0,178,3"/>
+<map from="147,0,124" to="0,135,2"/>
+<map from="195,103,103" to="129,171,118"/>
+<map from="224,112,0" to="104,104,104"/>
+<map from="112,0,224" to="198,198,198"/>
+<map from="0,224,121" to="104,104,104"/>
+<map from="0,79,224" to="198,198,198"/>
+<map from="211,0,114" to="0,8,0"/>
+<map from="224,224,0" to="74,74,74"/>
+<map from="97,0,193" to="170,170,170"/>
+<map from="193,97,0" to="89,89,89"/>
+<map from="240,120,0" to="111,111,111"/>
+<map from="0,240,130" to="111,111,111"/>
+<map from="120,0,240" to="212,212,212"/>
+<map from="0,193,104" to="89,89,89"/>
+<map from="0,68,193" to="170,170,170"/>
+<map from="0,85,240" to="212,212,212"/>
+<map from="193,193,0" to="63,63,63"/>
+<map from="193,0,104" to="0,8,0"/>
+<map from="224,0,121" to="0,8,0"/>
+<map from="240,240,0" to="79,79,79"/>
+<map from="209,110,110" to="138,184,126"/>
+<map from="0,211,114" to="98,98,98"/>
+<map from="106,0,211" to="186,186,186"/>
+<map from="0,74,211" to="186,186,186"/>
+<map from="211,106,0" to="98,98,98"/>
+<map from="168,88,88" to="111,147,101"/>
+<map from="211,211,0" to="69,69,69"/>
+<map from="184,97,97" to="122,161,111"/>
+<map from="255,0,138" to="0,8,0"/>
+<map from="255,0,0" to="0,203,4"/>
+<map from="90,140,139" to="63,63,63"/>
+
+			</spriteType>
+			<picture ref="{picture-oct10a-0000-A95D-9570512E5210}" />
+		</sprite>
+		<capacity>42</capacity>
+	</contribution>
+	
+	<!-- 大市交20系中央新中間 -->
+	<contribution type="trainCar" id="{trainCar-oct10-0006-A95D-9570512E5210}-b">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="194,0,164" to="0,178,3"/>
+<map from="147,0,124" to="0,135,2"/>
+<map from="208,0,176" to="0,191,4"/>
+<map from="224,0,0" to="0,178,3"/>
+<map from="169,0,0" to="0,135,2"/>
+<map from="151,0,128" to="0,139,2"/>
+<map from="203,170,170" to="198,198,198"/>
+<map from="153,128,128" to="149,149,149"/>
+<map from="240,0,0" to="0,191,4"/>
+<map from="174,0,0" to="0,139,2"/>
+<map from="167,0,141" to="0,153,3"/>
+<map from="218,182,182" to="212,212,212"/>
+<map from="158,132,132" to="154,154,154"/>
+<map from="193,0,0" to="0,153,3"/>
+<map from="183,0,155" to="0,168,3"/>
+<map from="211,0,0" to="0,168,3"/>
+<map from="175,146,146" to="170,170,170"/>
+<map from="191,160,160" to="186,186,186"/>
+
+			</spriteType>
+
+			<picture ref="{picture-oct10b-0000-A95D-9570512E5210}" />
+		</sprite>
+		<capacity>48</capacity>
+	</contribution>
+
+
+	<!-- 大市交20系中央新後尾車両 -->
+	<contribution type="trainCar" id="{trainCar-oct10-0006-A95D-9570512E5210}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{trainCar-oct10-0006-A95D-9570512E5210}-h"/>
+	</contribution>
+	
+
+	<contribution type="train" id="{train-oct10-0006-A95D-9570512E5210}">
+		<name>Chuo Line (New Colors)</name>
+		<price>1</price>
+                <fare>300</fare>
+		<speed>medium</speed>
+		<author>qra_ra</author>
+		<type>20 Series</type>
+		<company>Osaka Municipal Transportation Bureau</company>
+		<description>昭和59年に登場したOsaka Municipal Transportation Bureau初のVVVFインバータ制御車両。中央線と谷町線に投入された。</description>
+		<composition>
+			<head carRef="{trainCar-oct10-0006-A95D-9570512E5210}-h"/>
+			<body carRef="{trainCar-oct10-0006-A95D-9570512E5210}-b"/>
+			<tail carRef="{trainCar-oct10-0006-A95D-9570512E5210}-t"/>
+		</composition>
+	</contribution>
+
+
+	<!-- E257系 -->
+	
+	<contribution type="picture" id="{picture-e257a-0000-A95D-1570512E5210}">
+		<picture src="e257a.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{picture-e257b-0000-A95D-1570512E5210}">
+		<picture src="e257b.bmp" />
+	</contribution>
+		
+	<contribution type="picture" id="{picture-e257c-0000-A95D-1570512E5210}">
+		<picture src="e257c.bmp" />
+	</contribution>
+		
+	
+	<!-- E257－1号車 -->
+	<contribution type="trainCar" id="{trainCar-e257-0001-A95D-1570512E5210}-1">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="170,146,136" to="247,247,247"/>
+<map from="145,125,116" to="211,211,211"/>
+<map from="139,93,255" to="255,241,17"/>
+<map from="128,85,234" to="234,221,16"/>
+<map from="118,79,217" to="217,205,14"/>
+<map from="82,55,151" to="151,143,10"/>
+<map from="115,98,92" to="166,166,166"/>
+<map from="125,84,230" to="230,218,15"/>
+<map from="105,70,193" to="193,182,13"/>
+<map from="128,110,103" to="186,186,186"/>
+<map from="0,213,213" to="142,122,114"/>
+<map from="116,78,213" to="213,202,14"/>
+<map from="142,122,114" to="207,207,207"/>
+<map from="0,234,234" to="156,134,125"/>
+<map from="0,255,255" to="170,146,136"/>
+<map from="0,151,151" to="100,86,81"/>
+<map from="0,217,217" to="145,125,116"/>
+<map from="0,172,172" to="115,98,92"/>
+<map from="93,62,172" to="172,162,11"/>
+<map from="0,193,193" to="128,110,103"/>
+<map from="234,117,0" to="0,8,0"/>
+<map from="156,134,125" to="227,227,227"/>
+<map from="213,106,0" to="0,8,0"/>
+<map from="193,182,13" to="105,70,193"/>
+<map from="130,123,9" to="71,47,130"/>
+<map from="0,140,140" to="94,80,75"/>
+<map from="193,96,0" to="0,8,0"/>
+<map from="172,162,11" to="93,62,172"/>
+<map from="213,202,14" to="116,78,213"/>
+<map from="234,221,16" to="128,85,234"/>
+<map from="151,143,10" to="82,55,151"/>
+<map from="140,133,9" to="77,51,140"/>
+<map from="255,241,17" to="139,93,255"/>
+<map from="100,86,81" to="146,146,146"/>
+<map from="94,80,75" to="136,136,136"/>
+<map from="154,132,123" to="223,223,223"/>
+<map from="0,230,230" to="154,132,123"/>
+<map from="162,139,129" to="235,235,235"/>
+<map from="0,243,243" to="162,139,129"/>
+			</spriteType>
+			<picture ref="{picture-e257a-0000-A95D-1570512E5210}" />
+		</sprite>
+		<capacity>64</capacity>
+	</contribution>
+
+	
+	<!-- E257－2・6号車 -->
+	<contribution type="trainCar" id="{trainCar-e257-0001-A95D-1570512E5210}-2_6">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="0,0,213" to="207,207,207"/>
+<map from="0,0,255" to="247,247,247"/>
+<map from="0,151,151" to="146,146,146"/>
+<map from="0,0,151" to="146,146,146"/>
+<map from="0,0,193" to="186,186,186"/>
+<map from="0,0,234" to="227,227,227"/>
+<map from="0,234,234" to="227,227,227"/>
+<map from="0,172,172" to="166,166,166"/>
+<map from="0,0,172" to="166,166,166"/>
+<map from="0,255,255" to="247,247,247"/>
+<map from="0,193,193" to="186,186,186"/>
+<map from="0,213,213" to="207,207,207"/>
+			</spriteType>
+			<picture ref="{picture-e257b-0000-A95D-1570512E5210}" />
+		</sprite>
+		<capacity>68</capacity>
+	</contribution>
+
+
+	<!-- E257－3・7号車 -->
+	<contribution type="trainCar" id="{trainCar-e257-0001-A95D-1570512E5210}-3_7">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="0,0,213" to="207,207,207"/>
+<map from="139,93,255" to="255,101,155"/>
+<map from="105,70,193" to="193,76,117"/>
+<map from="0,0,255" to="247,247,247"/>
+<map from="0,221,109" to="139,93,255"/>
+<map from="0,203,100" to="128,85,234"/>
+<map from="0,188,93" to="118,79,217"/>
+<map from="0,131,65" to="82,55,151"/>
+<map from="0,200,99" to="125,84,230"/>
+<map from="0,167,82" to="105,70,193"/>
+<map from="0,185,91" to="116,78,213"/>
+<map from="0,151,151" to="146,146,146"/>
+<map from="0,0,151" to="146,146,146"/>
+<map from="116,78,213" to="213,85,130"/>
+<map from="0,149,73" to="93,62,172"/>
+<map from="0,0,193" to="186,186,186"/>
+<map from="255,241,17" to="0,221,109"/>
+<map from="213,202,14" to="0,185,91"/>
+<map from="193,182,13" to="0,167,82"/>
+<map from="71,47,130" to="130,52,79"/>
+<map from="93,62,172" to="172,68,104"/>
+<map from="234,221,16" to="0,203,100"/>
+<map from="172,162,11" to="0,149,73"/>
+<map from="128,85,234" to="234,93,143"/>
+<map from="193,76,117" to="193,182,13"/>
+<map from="130,52,79" to="130,123,9"/>
+<map from="77,51,140" to="140,55,85"/>
+<map from="172,68,104" to="172,162,11"/>
+<map from="0,0,234" to="227,227,227"/>
+<map from="213,85,130" to="213,202,14"/>
+<map from="234,93,143" to="234,221,16"/>
+<map from="130,123,9" to="0,113,56"/>
+<map from="151,60,92" to="151,143,10"/>
+<map from="140,133,9" to="0,121,60"/>
+<map from="140,55,85" to="140,133,9"/>
+<map from="255,101,155" to="255,241,17"/>
+<map from="0,234,234" to="227,227,227"/>
+<map from="0,172,172" to="166,166,166"/>
+<map from="0,0,172" to="166,166,166"/>
+<map from="0,255,255" to="247,247,247"/>
+<map from="0,193,193" to="186,186,186"/>
+<map from="0,213,213" to="207,207,207"/>
+			</spriteType>
+			<picture ref="{picture-e257b-0000-A95D-1570512E5210}" />
+		</sprite>
+		<capacity>64</capacity>
+	</contribution>
+
+	<!-- E257－4・8号車 -->
+	<contribution type="trainCar" id="{trainCar-e257-0001-A95D-1570512E5210}-4_8">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="0,0,213" to="207,207,207"/>
+<map from="139,93,255" to="255,241,17"/>
+<map from="105,70,193" to="193,182,13"/>
+<map from="0,0,255" to="247,247,247"/>
+<map from="0,221,109" to="255,101,155"/>
+<map from="0,203,100" to="234,93,143"/>
+<map from="0,188,93" to="217,86,132"/>
+<map from="0,131,65" to="151,60,92"/>
+<map from="0,200,99" to="230,91,140"/>
+<map from="0,167,82" to="193,76,117"/>
+<map from="0,185,91" to="213,85,130"/>
+<map from="0,151,151" to="146,146,146"/>
+<map from="0,0,151" to="146,146,146"/>
+<map from="116,78,213" to="213,202,14"/>
+<map from="0,149,73" to="172,68,104"/>
+<map from="0,0,193" to="186,186,186"/>
+<map from="255,241,17" to="139,93,255"/>
+<map from="213,202,14" to="116,78,213"/>
+<map from="193,182,13" to="105,70,193"/>
+<map from="71,47,130" to="130,123,9"/>
+<map from="93,62,172" to="172,162,11"/>
+<map from="234,221,16" to="128,85,234"/>
+<map from="172,162,11" to="93,62,172"/>
+<map from="128,85,234" to="234,221,16"/>
+<map from="193,76,117" to="0,167,82"/>
+<map from="130,52,79" to="0,113,56"/>
+<map from="77,51,140" to="140,133,9"/>
+<map from="172,68,104" to="0,149,73"/>
+<map from="0,0,234" to="227,227,227"/>
+<map from="213,85,130" to="0,185,91"/>
+<map from="234,93,143" to="0,203,100"/>
+<map from="130,123,9" to="71,47,130"/>
+<map from="151,60,92" to="0,131,65"/>
+<map from="140,133,9" to="77,51,140"/>
+<map from="140,55,85" to="0,121,60"/>
+<map from="255,101,155" to="0,221,109"/>
+<map from="0,234,234" to="227,227,227"/>
+<map from="0,172,172" to="166,166,166"/>
+<map from="0,0,172" to="166,166,166"/>
+<map from="0,255,255" to="247,247,247"/>
+<map from="0,193,193" to="186,186,186"/>
+<map from="0,213,213" to="207,207,207"/>
+			</spriteType>
+			<picture ref="{picture-e257b-0000-A95D-1570512E5210}" />
+		</sprite>
+		<capacity>62</capacity>
+	</contribution>
+
+
+	<!-- E257－5号車 -->
+	<contribution type="trainCar" id="{trainCar-e257-0001-A95D-1570512E5210}-5">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="0,0,213" to="207,207,207"/>
+<map from="139,93,255" to="0,221,109"/>
+<map from="105,70,193" to="0,167,82"/>
+<map from="0,0,255" to="247,247,247"/>
+<map from="0,221,109" to="255,241,17"/>
+<map from="0,203,100" to="234,221,16"/>
+<map from="0,188,93" to="217,205,14"/>
+<map from="0,131,65" to="151,143,10"/>
+<map from="0,200,99" to="230,218,15"/>
+<map from="0,167,82" to="193,182,13"/>
+<map from="0,185,91" to="213,202,14"/>
+<map from="0,151,151" to="146,146,146"/>
+<map from="0,0,151" to="146,146,146"/>
+<map from="116,78,213" to="0,185,91"/>
+<map from="0,149,73" to="172,162,11"/>
+<map from="0,0,193" to="186,186,186"/>
+<map from="255,241,17" to="255,101,155"/>
+<map from="213,202,14" to="213,85,130"/>
+<map from="193,182,13" to="193,76,117"/>
+<map from="71,47,130" to="0,113,56"/>
+<map from="93,62,172" to="0,149,73"/>
+<map from="234,221,16" to="234,93,143"/>
+<map from="172,162,11" to="172,68,104"/>
+<map from="128,85,234" to="0,203,100"/>
+<map from="193,76,117" to="105,70,193"/>
+<map from="130,52,79" to="71,47,130"/>
+<map from="77,51,140" to="0,121,60"/>
+<map from="172,68,104" to="93,62,172"/>
+<map from="0,0,234" to="227,227,227"/>
+<map from="213,85,130" to="116,78,213"/>
+<map from="234,93,143" to="128,85,234"/>
+<map from="130,123,9" to="130,52,79"/>
+<map from="151,60,92" to="82,55,151"/>
+<map from="140,133,9" to="140,55,85"/>
+<map from="140,55,85" to="77,51,140"/>
+<map from="255,101,155" to="139,93,255"/>
+<map from="0,234,234" to="227,227,227"/>
+<map from="0,172,172" to="166,166,166"/>
+<map from="0,0,172" to="166,166,166"/>
+<map from="0,255,255" to="247,247,247"/>
+<map from="0,193,193" to="186,186,186"/>
+<map from="0,213,213" to="207,207,207"/>
+
+			</spriteType>
+			<picture ref="{picture-e257b-0000-A95D-1570512E5210}" />
+		</sprite>
+		<capacity>54</capacity>
+	</contribution>
+		
+	
+	<!-- E257－9号車' -->
+	<contribution type="trainCar" id="{trainCar-e257-0001-A95D-1570512E5210}-9R">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{picture-e257c-0000-A95D-1570512E5210}" />
+		</sprite>
+		<capacity>52</capacity>
+	</contribution>
+	
+
+	<!-- E257－9号車 -->
+	<contribution type="trainCar" id="{trainCar-e257-0001-A95D-1570512E5210}-9">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{trainCar-e257-0001-A95D-1570512E5210}-9R"/>
+	</contribution>
+
+
+	<!-- E257－10号車 -->
+	<contribution type="trainCar" id="{trainCar-e257-0001-A95D-1570512E5210}-10">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="0,0,213" to="0,8,0"/>
+<map from="0,0,255" to="0,8,0"/>
+<map from="0,151,151" to="0,0,0"/>
+<map from="0,0,151" to="0,8,0"/>
+<map from="0,0,193" to="0,8,0"/>
+<map from="0,0,234" to="0,8,0"/>
+<map from="0,234,234" to="0,0,0"/>
+<map from="0,172,172" to="0,0,0"/>
+<map from="0,0,172" to="0,8,0"/>
+<map from="0,255,255" to="0,0,0"/>
+<map from="0,193,193" to="0,0,0"/>
+<map from="0,213,213" to="0,0,0"/>
+
+			</spriteType>
+			<picture ref="{picture-e257b-0000-A95D-1570512E5210}" />
+		</sprite>
+		<capacity>68</capacity>
+	</contribution>
+		
+	
+	<!-- E257－11号車' -->
+	<contribution type="trainCar" id="{trainCar-e257-0001-A95D-1570512E5210}-11R">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="0,213,213" to="207,207,207"/>
+<map from="0,234,234" to="227,227,227"/>
+<map from="0,255,255" to="247,247,247"/>
+<map from="0,151,151" to="146,146,146"/>
+<map from="0,217,217" to="211,211,211"/>
+<map from="0,172,172" to="166,166,166"/>
+<map from="0,193,193" to="186,186,186"/>
+<map from="234,117,0" to="227,227,227"/>
+<map from="213,106,0" to="207,207,207"/>
+<map from="0,140,140" to="136,136,136"/>
+<map from="193,96,0" to="186,186,186"/>
+<map from="0,230,230" to="223,223,223"/>
+<map from="0,243,243" to="235,235,235"/>
+			</spriteType>
+			<picture ref="{picture-e257a-0000-A95D-1570512E5210}" />
+		</sprite>
+		<capacity>52</capacity>
+	</contribution>
+	
+
+	<!-- E257－11号車 -->
+	<contribution type="trainCar" id="{trainCar-e257-0001-A95D-1570512E5210}-11">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{trainCar-e257-0001-A95D-1570512E5210}-11R"/>
+	</contribution>
+
+	
+		
+	<contribution type="train" id="{train-e257-0001-A95D-1570512E5210}">
+		<name>Azusa, Kaiji</name>
+		<price>1</price>
+                <fare>1200</fare>
+		<speed>fast</speed>
+		<author>qra_ra</author>
+		<type>E257 Series</type>
+		<company>JR East</company>
+		<description>中央線の183系、189系を置き換えるため製造された車両。基本の9両編成か2両増結した11両編成で運転される。</description>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{trainCar-e257-0001-A95D-1570512E5210}-1"/>
+			<car char="二" ref="{trainCar-e257-0001-A95D-1570512E5210}-2_6"/>
+			<car char="三" ref="{trainCar-e257-0001-A95D-1570512E5210}-3_7"/>
+			<car char="四" ref="{trainCar-e257-0001-A95D-1570512E5210}-4_8"/>
+			<car char="五" ref="{trainCar-e257-0001-A95D-1570512E5210}-5"/>
+			<car char="九" ref="{trainCar-e257-0001-A95D-1570512E5210}-9"/>
+			<car char="十" ref="{trainCar-e257-0001-A95D-1570512E5210}-10"/>
+			<car char="＞" ref="{trainCar-e257-0001-A95D-1570512E5210}-11"/>
+		
+			<composition>＜</composition>
+			<composition>＜九</composition>
+			<composition>＜二九</composition>
+			<composition>＜二三九</composition>
+			<composition>＜二九十＞</composition>
+			<composition>＜二三四五九</composition>
+			<composition>＜二三四五二九</composition>
+			<composition>＜二三四五二三九</composition>
+			<composition>＜二三四五二三四九</composition>
+			<composition>＜二三四五二三九十＞</composition>
+			<composition>＜二三四五二三四九十＞</composition>
+		</config>
+	<!-- 備考：号車が違っているようです。(^_^; -->
+	</contribution>
+
+	
+	<contribution type="picture" id="{98AE9551-9869-0001-EF6D-AE16CBDMO510}">
+		<picture src="mo510.bmp" />
+	</contribution>
+
+	
+	<!-- モ510形 -->
+	<contribution type="trainCar" id="{BDFFADEA-5581-CD36-75CF-885D7EDMO510}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="{98AE9551-9869-0001-EF6D-AE16CBDMO510}" />
+		</sprite>
+		<capacity>74</capacity>
+	</contribution>
+	
+
+	<contribution type="train" id="{BDEFADEA-5581-8000-75CF-885D7EDMO510}">
+		<name></name>
+		<price>1</price>
+                <fare>200</fare>
+		<speed>slow</speed>
+		<author>qra_ra</author>
+		<type>MO 510 Series</type>
+		<company>Nagoya Railroad</company>
+		<description>大正15年生まれの古豪であるが、2両が健在。現在は予備車として揖斐線、岐阜市内線で使用されている。
+路面電車区間である岐阜市内線に乗り入れるため、扉下にはステップが装備されている。
+昭和62年、鉄道友の会「エバーグリーン賞」を受賞。</description>
+		
+		<composition>
+			<body carRef="{BDFFADEA-5581-CD36-75CF-885D7EDMO510}"/>
+		</composition>
+	</contribution>
+			
+
+
+
+<!-- ↓　E653系フレッシュひたち　-->
+	
+	
+	<contribution type="picture" id="{e653-picture-C000-000a-4C8B212Dharu}">
+		<picture src="e653a.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{e653-picture-C000-000b-4C8B212Dharu}">
+		<picture src="e653b.bmp" />
+	</contribution>
+		
+	
+	<!-- E653系赤先頭 -->
+	<contribution type="trainCar" id="{e653-trainCar-C001-000a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="hueTransform">
+				<map from="*,0,0" to="245,71,92"/>
+			</spriteType>
+			<picture ref="{e653-picture-C000-000a-4C8B212Dharu}" />
+		</sprite>
+		<capacity>63</capacity>
+	</contribution>
+
+	
+	<!-- E653系赤中間 -->
+	<contribution type="trainCar" id="{e653-trainCar-C001-000b-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="hueTransform">
+				<map from="*,0,0" to="245,71,92"/>
+			</spriteType>
+			<picture ref="{e653-picture-C000-000b-4C8B212Dharu}" />
+		</sprite>
+		<capacity>68</capacity>
+	</contribution>
+
+
+	<!-- E653系赤後尾 -->
+	<contribution type="trainCar" id="{e653-trainCar-C001-001a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{e653-trainCar-C001-000a-4C8B212Dharu}"/>
+	</contribution>
+	
+
+	
+	<!-- E653系青先頭 -->
+	<contribution type="trainCar" id="{e653-trainCar-C002-000a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="hueTransform">
+				<map from="*,0,0" to="74,95,255"/>
+			</spriteType>
+			<picture ref="{e653-picture-C000-000a-4C8B212Dharu}" />
+		</sprite>
+		<capacity>63</capacity>
+	</contribution>
+
+	
+	<!-- E653系青中間 -->
+	<contribution type="trainCar" id="{e653-trainCar-C002-000b-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="hueTransform">
+				<map from="*,0,0" to="74,95,255"/>
+			</spriteType>
+			<picture ref="{e653-picture-C000-000b-4C8B212Dharu}" />
+		</sprite>
+		<capacity>68</capacity>
+	</contribution>
+
+
+	<!-- E653系青後尾 -->
+	<contribution type="trainCar" id="{e653-trainCar-C002-001a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{e653-trainCar-C002-000a-4C8B212Dharu}"/>
+	</contribution>
+	
+
+
+
+	<!-- E653系黄先頭 -->
+	<contribution type="trainCar" id="{e653-trainCar-C003-000a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="hueTransform">
+				<map from="*,0,0" to="252,208,0"/>
+			</spriteType>
+			<picture ref="{e653-picture-C000-000a-4C8B212Dharu}" />
+		</sprite>
+		<capacity>63</capacity>
+	</contribution>
+
+	
+	<!-- E653系黄中間 -->
+	<contribution type="trainCar" id="{e653-trainCar-C003-000b-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="hueTransform">
+				<map from="*,0,0" to="252,208,0"/>
+			</spriteType>
+			<picture ref="{e653-picture-C000-000b-4C8B212Dharu}" />
+		</sprite>
+		<capacity>68</capacity>
+	</contribution>
+
+
+	<!-- E653系黄後尾 -->
+	<contribution type="trainCar" id="{e653-trainCar-C003-001a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{e653-trainCar-C003-000a-4C8B212Dharu}"/>
+	</contribution>
+	
+
+
+
+	<!-- E653系緑先頭 -->
+	<contribution type="trainCar" id="{e653-trainCar-C004-000a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="hueTransform">
+				<map from="*,0,0" to="0,208,157"/>
+			</spriteType>
+			<picture ref="{e653-picture-C000-000a-4C8B212Dharu}" />
+		</sprite>
+		<capacity>63</capacity>
+	</contribution>
+
+	
+	<!-- E653系緑中間 -->
+	<contribution type="trainCar" id="{e653-trainCar-C004-000b-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="hueTransform">
+				<map from="*,0,0" to="0,208,157"/>
+			</spriteType>
+			<picture ref="{e653-picture-C000-000b-4C8B212Dharu}" />
+		</sprite>
+		<capacity>68</capacity>
+	</contribution>
+
+
+	<!-- E653系緑後尾 -->
+	<contribution type="trainCar" id="{e653-trainCar-C004-001a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{e653-trainCar-C004-000a-4C8B212Dharu}"/>
+	</contribution>
+	
+
+
+
+	<!-- E653系橙先頭 -->
+	<contribution type="trainCar" id="{e653-trainCar-C005-000a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="hueTransform">
+				<map from="*,0,0" to="255,111,23"/>
+			</spriteType>
+			<picture ref="{e653-picture-C000-000a-4C8B212Dharu}" />
+		</sprite>
+		<capacity>63</capacity>
+	</contribution>
+
+	
+	<!-- E653系橙中間 -->
+	<contribution type="trainCar" id="{e653-trainCar-C005-000b-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="hueTransform">
+				<map from="*,0,0" to="255,111,23"/>
+			</spriteType>
+			<picture ref="{e653-picture-C000-000b-4C8B212Dharu}" />
+		</sprite>
+		<capacity>68</capacity>
+	</contribution>
+
+
+	<!-- E653系橙後尾 -->
+	<contribution type="trainCar" id="{e653-trainCar-C005-001a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{e653-trainCar-C005-000a-4C8B212Dharu}"/>
+	</contribution>
+	
+
+
+	<contribution type="train" id="{e653-train-C001-0000-4C8B212Dharu}">
+		<name>Fresh Hitachi (Red)</name>
+		<price>1</price>
+                <fare>1100</fare>
+		<speed>fast</speed>
+		<author>haru</author>
+		<type>E653 Series</type>
+		<company>JR East</company>
+		<description>5,7,11,14両編成のみ購入可能
+11両→7両(赤)+4両(橙)
+14両→7両(赤)+7両(青)
+</description>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{e653-trainCar-C001-000a-4C8B212Dharu}"/>
+			<car char="－" ref="{e653-trainCar-C001-000b-4C8B212Dharu}"/>
+			<car char="＞" ref="{e653-trainCar-C001-001a-4C8B212Dharu}"/>
+			<car char="←" ref="{e653-trainCar-C005-000a-4C8B212Dharu}"/>
+			<car char="橙" ref="{e653-trainCar-C005-000b-4C8B212Dharu}"/>
+			<car char="→" ref="{e653-trainCar-C005-001a-4C8B212Dharu}"/>
+			<car char="≪" ref="{e653-trainCar-C002-000a-4C8B212Dharu}"/>
+			<car char="＝" ref="{e653-trainCar-C002-000b-4C8B212Dharu}"/>
+			<car char="≫" ref="{e653-trainCar-C002-001a-4C8B212Dharu}"/>
+		
+			<composition>＜－－－＞</composition>
+			<composition>＜－－－－－＞</composition>
+			<composition>←橙橙→＜－－－－－＞</composition>
+			<composition>≪＝＝＝＝＝≫＜－－－－－＞</composition>
+		</config>
+	</contribution>
+
+
+
+	<contribution type="train" id="{e653-train-C002-0000-4C8B212Dharu}">
+		<name>Fresh Hitachi (Blue)</name>
+		<price>1</price>
+                <fare>1100</fare>
+		<speed>fast</speed>
+		<author>haru</author>
+		<type>E653 Series</type>
+		<company>JR East</company>
+		<description>5,7,11,14両編成のみ購入可能
+11両→7両(青)+4両(橙)
+14両→7両(青)+7両(黄)
+</description>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{e653-trainCar-C002-000a-4C8B212Dharu}"/>
+			<car char="－" ref="{e653-trainCar-C002-000b-4C8B212Dharu}"/>
+			<car char="＞" ref="{e653-trainCar-C002-001a-4C8B212Dharu}"/>
+			<car char="←" ref="{e653-trainCar-C005-000a-4C8B212Dharu}"/>
+			<car char="橙" ref="{e653-trainCar-C005-000b-4C8B212Dharu}"/>
+			<car char="→" ref="{e653-trainCar-C005-001a-4C8B212Dharu}"/>
+			<car char="≪" ref="{e653-trainCar-C003-000a-4C8B212Dharu}"/>
+			<car char="＝" ref="{e653-trainCar-C003-000b-4C8B212Dharu}"/>
+			<car char="≫" ref="{e653-trainCar-C003-001a-4C8B212Dharu}"/>
+		
+			<composition>＜－－－＞</composition>
+			<composition>＜－－－－－＞</composition>
+			<composition>←橙橙→＜－－－－－＞</composition>
+			<composition>≪＝＝＝＝＝≫＜－－－－－＞</composition>
+		</config>
+	</contribution>
+
+
+
+	<contribution type="train" id="{e653-train-C003-0000-4C8B212Dharu}">
+		<name>Fresh Hitachi (Yellow)</name>
+		<price>1</price>
+                <fare>1100</fare>
+		<speed>fast</speed>
+		<author>haru</author>
+		<type>E653 Series</type>
+		<company>JR East</company>
+		<description>5,7,11,14両編成のみ購入可能
+11両→7両(黄)+4両(橙)
+14両→7両(黄)+7両(緑)
+</description>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{e653-trainCar-C003-000a-4C8B212Dharu}"/>
+			<car char="－" ref="{e653-trainCar-C003-000b-4C8B212Dharu}"/>
+			<car char="＞" ref="{e653-trainCar-C003-001a-4C8B212Dharu}"/>
+			<car char="←" ref="{e653-trainCar-C005-000a-4C8B212Dharu}"/>
+			<car char="橙" ref="{e653-trainCar-C005-000b-4C8B212Dharu}"/>
+			<car char="→" ref="{e653-trainCar-C005-001a-4C8B212Dharu}"/>
+			<car char="≪" ref="{e653-trainCar-C004-000a-4C8B212Dharu}"/>
+			<car char="＝" ref="{e653-trainCar-C004-000b-4C8B212Dharu}"/>
+			<car char="≫" ref="{e653-trainCar-C004-001a-4C8B212Dharu}"/>
+		
+			<composition>＜－－－＞</composition>
+			<composition>＜－－－－－＞</composition>
+			<composition>←橙橙→＜－－－－－＞</composition>
+			<composition>≪＝＝＝＝＝≫＜－－－－－＞</composition>
+		</config>
+	</contribution>
+
+
+
+	<contribution type="train" id="{e653-train-C004-0000-4C8B212Dharu}">
+		<name>Fresh Hitachi (Green)</name>
+		<price>1</price>
+                <fare>1100</fare>
+		<speed>fast</speed>
+		<author>haru</author>
+		<type>E653 Series</type>
+		<company>JR East</company>
+		<description>5,7,11,14両編成のみ購入可能
+11両→7両(緑)+4両(橙)
+14両→7両(緑)+7両(赤)
+</description>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{e653-trainCar-C004-000a-4C8B212Dharu}"/>
+			<car char="－" ref="{e653-trainCar-C004-000b-4C8B212Dharu}"/>
+			<car char="＞" ref="{e653-trainCar-C004-001a-4C8B212Dharu}"/>
+			<car char="←" ref="{e653-trainCar-C005-000a-4C8B212Dharu}"/>
+			<car char="橙" ref="{e653-trainCar-C005-000b-4C8B212Dharu}"/>
+			<car char="→" ref="{e653-trainCar-C005-001a-4C8B212Dharu}"/>
+			<car char="≪" ref="{e653-trainCar-C001-000a-4C8B212Dharu}"/>
+			<car char="＝" ref="{e653-trainCar-C001-000b-4C8B212Dharu}"/>
+			<car char="≫" ref="{e653-trainCar-C001-001a-4C8B212Dharu}"/>
+		
+			<composition>＜－－－＞</composition>
+			<composition>＜－－－－－＞</composition>
+			<composition>←橙橙→＜－－－－－＞</composition>
+			<composition>≪＝＝＝＝＝≫＜－－－－－＞</composition>
+		</config>
+	</contribution>
+
+
+
+	<contribution type="train" id="{e653-train-C005-0000-4C8B212Dharu}">
+		<name>Fresh Hitachi (Orange)</name>
+		<price>1</price>
+                <fare>1100</fare>
+		<speed>fast</speed>
+		<author>haru</author>
+		<type>E653 Series</type>
+		<company>JR East</company>
+		<description>4両編成のみ購入可能</description>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="←" ref="{e653-trainCar-C005-000a-4C8B212Dharu}"/>
+			<car char="橙" ref="{e653-trainCar-C005-000b-4C8B212Dharu}"/>
+			<car char="→" ref="{e653-trainCar-C005-001a-4C8B212Dharu}"/>
+		
+			<composition>←橙橙→</composition>
+		</config>
+	</contribution>
+
+
+
+<!-- ↓　721系　-->
+	
+	
+	<contribution type="picture" id="{721-picture-C000-000a-4C8B212Dharu}">
+		<picture src="721a.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{721-picture-C000-000b-4C8B212Dharu}">
+		<picture src="721b.bmp" />
+	</contribution>
+		
+	<!-- 721系先頭 -->
+	<contribution type="trainCar" id="{721-trainCar-C001-000a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="234,234,0" to="180,180,180"/>
+<map from="151,151,0" to="116,116,116"/>
+<map from="255,255,0" to="196,196,196"/>
+<map from="172,172,0" to="132,132,132"/>
+<map from="193,193,0" to="148,148,148"/>
+<map from="169,0,64" to="9,196,0"/>
+<map from="112,0,42" to="6,129,0"/>
+<map from="213,213,0" to="164,164,164"/>
+<map from="186,0,69" to="10,215,0"/>
+<map from="44,55,213" to="9,196,0"/>
+<map from="29,36,140" to="6,129,0"/>
+<map from="130,130,0" to="100,100,100"/>
+<map from="119,0,45" to="6,138,0"/>
+<map from="47,61,234" to="10,215,0"/>
+<map from="31,39,151" to="6,138,0"/>
+<map from="140,140,0" to="108,108,108"/>
+<map from="136,0,51" to="7,158,0"/>
+<map from="35,45,172" to="7,158,0"/>
+<map from="153,0,57" to="8,177,0"/>
+<map from="39,50,193" to="8,177,0"/>
+
+			</spriteType>
+			<picture ref="{721-picture-C000-000a-4C8B212Dharu}" />
+		</sprite>
+		<capacity>92</capacity>
+	</contribution>
+
+	
+	<!-- 721系中間 -->
+	<contribution type="trainCar" id="{721-trainCar-C001-000b-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="234,234,0" to="180,180,180"/>
+<map from="151,151,0" to="116,116,116"/>
+<map from="255,255,0" to="196,196,196"/>
+<map from="172,172,0" to="132,132,132"/>
+<map from="169,0,64" to="8,182,0"/>
+<map from="112,0,42" to="5,119,0"/>
+<map from="193,193,0" to="148,148,148"/>
+<map from="130,130,0" to="100,100,100"/>
+<map from="186,0,69" to="9,199,0"/>
+<map from="44,55,213" to="8,182,0"/>
+<map from="29,36,140" to="5,119,0"/>
+<map from="119,0,45" to="6,128,0"/>
+<map from="213,213,0" to="164,164,164"/>
+<map from="47,61,234" to="9,199,0"/>
+<map from="31,39,151" to="6,128,0"/>
+<map from="140,140,0" to="108,108,108"/>
+<map from="35,45,172" to="7,146,0"/>
+<map from="136,0,51" to="7,146,0"/>
+<map from="153,0,57" to="7,164,0"/>
+<map from="39,50,193" to="7,164,0"/>
+
+			</spriteType>
+			<picture ref="{721-picture-C000-000b-4C8B212Dharu}" />
+		</sprite>
+		<capacity>92</capacity>
+	</contribution>
+
+
+	<!-- 721系後尾 -->
+	<contribution type="trainCar" id="{721-trainCar-C001-001a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{721-trainCar-C001-000a-4C8B212Dharu}"/>
+	</contribution>
+	
+
+	
+	<!-- 721系uシート先頭 -->
+	<contribution type="trainCar" id="{721-trainCar-C002-000a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="234,234,0" to="47,61,234"/>
+<map from="151,151,0" to="31,39,151"/>
+<map from="255,255,0" to="52,66,255"/>
+<map from="172,172,0" to="35,45,172"/>
+<map from="193,193,0" to="39,50,193"/>
+<map from="213,213,0" to="44,55,213"/>
+<map from="130,130,0" to="27,33,130"/>
+<map from="140,140,0" to="29,36,140"/>
+
+
+			</spriteType>
+			<picture ref="{721-picture-C000-000a-4C8B212Dharu}" />
+		</sprite>
+		<capacity>40</capacity>
+	</contribution>
+
+	
+	<!-- 721系uシート中間 -->
+	<contribution type="trainCar" id="{721-trainCar-C002-000b-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="234,234,0" to="47,61,234"/>
+<map from="151,151,0" to="31,39,151"/>
+<map from="255,255,0" to="52,66,255"/>
+<map from="172,172,0" to="35,45,172"/>
+<map from="193,193,0" to="39,50,193"/>
+<map from="130,130,0" to="27,33,130"/>
+<map from="213,213,0" to="44,55,213"/>
+<map from="140,140,0" to="29,36,140"/>
+
+
+			</spriteType>
+			<picture ref="{721-picture-C000-000b-4C8B212Dharu}" />
+		</sprite>
+		<capacity>40</capacity>
+	</contribution>
+
+
+
+	<contribution type="train" id="{721-train-C000-0010-4C8B212Dharu}">
+		<name>Airport Rapid</name>
+		<price>1</price>
+                <fare>630</fare>
+		<speed>fast</speed>
+		<author>haru</author>
+		<type>721 Series</type>
+		<company>JR Hokkaido</company>
+		<description>3,5,6両編成のみ購入可能
+</description>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{721-trainCar-C001-000a-4C8B212Dharu}"/>
+			<car char="－" ref="{721-trainCar-C001-000b-4C8B212Dharu}"/>
+			<car char="＞" ref="{721-trainCar-C001-001a-4C8B212Dharu}"/>
+			<car char="ｕ" ref="{721-trainCar-C002-000b-4C8B212Dharu}"/>
+		
+			<composition>＜－＞</composition>
+			<composition>＜－－ｕ＞</composition>
+			<composition>＜－－ｕ－＞</composition>
+		</config>
+	</contribution>
+
+
+
+	<contribution type="train" id="{721-train-C000-0020-4C8B212Dharu}">
+		<name>Airport Rapid (Formation with KUHA u-Seat carriage)</name>
+		<price>1</price>
+                <fare>630</fare>
+		<speed>fast</speed>
+		<author>haru</author>
+		<type>721 Series</type>
+		<company>JR Hokkaido</company>
+		<description>3,5,6両編成のみ購入可能
+</description>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{721-trainCar-C001-000a-4C8B212Dharu}"/>
+			<car char="－" ref="{721-trainCar-C001-000b-4C8B212Dharu}"/>
+			<car char="＞" ref="{721-trainCar-C001-001a-4C8B212Dharu}"/>
+			<car char="ｕ" ref="{721-trainCar-C002-000a-4C8B212Dharu}"/>
+		
+			<composition>ｕ－＞</composition>
+			<composition>＜－＞ｕ＞</composition>
+			<composition>＜－＞ｕ－＞</composition>
+		</config>
+	</contribution>
+
+
+	<contribution type="train" id="{721-train-C000-0030-4C8B212Dharu}">
+		<name>Formation w/o u-Seat</name>
+		<price>1</price>
+                <fare>580</fare>
+		<speed>fast</speed>
+		<author>haru</author>
+		<type>721 Series</type>
+		<company>JR Hokkaido</company>
+		<description>3,5,6両編成のみ購入可能
+</description>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{721-trainCar-C001-000a-4C8B212Dharu}"/>
+			<car char="－" ref="{721-trainCar-C001-000b-4C8B212Dharu}"/>
+			<car char="＞" ref="{721-trainCar-C001-001a-4C8B212Dharu}"/>
+		
+			<composition>＜－＞</composition>
+			<composition>＜－－－＞</composition>
+			<composition>＜－＞＜－＞</composition>
+		</config>
+	</contribution>
+
+
+<!-- ↓　885系　-->
+	
+	
+	<contribution type="picture" id="{885-picture-C000-000a-4C8B212Dharu}">
+		<picture src="885a.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{885-picture-C000-000b-4C8B212Dharu}">
+		<picture src="885b.bmp" />
+	</contribution>
+		
+	<!-- 885系かもめ先頭 -->
+	<contribution type="trainCar" id="{885-trainCar-C001-000a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="hueTransform">
+				<map from="*,0,0" to="251,201,0"/>
+			</spriteType>
+			<picture ref="{885-picture-C000-000a-4C8B212Dharu}" />
+		</sprite>
+		<capacity>43</capacity>
+	</contribution>
+
+	
+	<!-- 885系かもめ中間 -->
+	<contribution type="trainCar" id="{885-trainCar-C001-000b-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="hueTransform">
+				<map from="*,0,0" to="251,201,0"/>
+			</spriteType>
+			<picture ref="{885-picture-C000-000b-4C8B212Dharu}" />
+		</sprite>
+		<capacity>57</capacity>
+	</contribution>
+
+
+	<!-- 885系かもめ後尾 -->
+	<contribution type="trainCar" id="{885-trainCar-C001-001a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{885-trainCar-C001-000a-4C8B212Dharu}"/>
+	</contribution>
+	
+
+
+	<!-- 885系ソニック先頭 -->
+	<contribution type="trainCar" id="{885-trainCar-C002-000a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="hueTransform">
+				<map from="*,0,0" to="88,80,255"/>
+			</spriteType>
+			<picture ref="{885-picture-C000-000a-4C8B212Dharu}" />
+		</sprite>
+		<capacity>43</capacity>
+	</contribution>
+
+	
+	<!-- 885系ソニック中間 -->
+	<contribution type="trainCar" id="{885-trainCar-C002-000b-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="hueTransform">
+				<map from="*,0,0" to="88,80,255"/>
+			</spriteType>
+			<picture ref="{885-picture-C000-000b-4C8B212Dharu}" />
+		</sprite>
+		<capacity>57</capacity>
+	</contribution>
+
+
+	<!-- 885系ソニック後尾 -->
+	<contribution type="trainCar" id="{885-trainCar-C002-001a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{885-trainCar-C002-000a-4C8B212Dharu}"/>
+	</contribution>
+	
+
+
+
+	<contribution type="train" id="{885-train-C001-0000-4C8B212Dharu}">
+		<name>White Kamome</name>
+		<price>1</price>
+                <fare>1200</fare>
+		<speed>fast</speed>
+		<author>haru</author>
+		<type>885 Series</type>
+		<company>JR Kyushu</company>
+		<description></description>
+		<composition>
+			<head carRef="{885-trainCar-C001-000a-4C8B212Dharu}"/>
+			<body carRef="{885-trainCar-C001-000b-4C8B212Dharu}"/>
+			<tail carRef="{885-trainCar-C001-001a-4C8B212Dharu}"/>
+		</composition>
+	</contribution>
+
+
+	<contribution type="train" id="{885-train-C002-0000-4C8B212Dharu}">
+		<name>White Sonic</name>
+		<price>1</price>
+                <fare>1200</fare>
+		<speed>fast</speed>
+		<author>haru</author>
+		<type>885 Series</type>
+		<company>JR Kyushu</company>
+		<description></description>
+		<composition>
+			<head carRef="{885-trainCar-C002-000a-4C8B212Dharu}"/>
+			<body carRef="{885-trainCar-C002-000b-4C8B212Dharu}"/>
+			<tail carRef="{885-trainCar-C002-001a-4C8B212Dharu}"/>
+		</composition>
+	</contribution>
+
+
+<!-- ↓　787系　-->
+	
+	
+	<contribution type="picture" id="{787-picture-C000-000a-4C8B212Dharu}">
+		<picture src="787a.bmp" />
+	</contribution>
+	
+	<contribution type="picture" id="{787-picture-C000-000b-4C8B212Dharu}">
+		<picture src="787b.bmp" />
+	</contribution>
+		
+	<!-- 787系先頭 -->
+	<contribution type="trainCar" id="{787-trainCar-C001-000a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="hueTransform">
+				<map from="*,0,0" to="251,201,0"/>
+			</spriteType>
+			<picture ref="{787-picture-C000-000a-4C8B212Dharu}" />
+		</sprite>
+		<capacity>43</capacity>
+	</contribution>
+
+	
+	<!-- 787系中間 -->
+	<contribution type="trainCar" id="{787-trainCar-C001-000b-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="hueTransform">
+				<map from="*,0,0" to="251,201,0"/>
+			</spriteType>
+			<picture ref="{787-picture-C000-000b-4C8B212Dharu}" />
+		</sprite>
+		<capacity>57</capacity>
+	</contribution>
+
+
+	<!-- 787系後尾 -->
+	<contribution type="trainCar" id="{787-trainCar-C001-001a-4C8B212Dharu}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{787-trainCar-C001-000a-4C8B212Dharu}"/>
+	</contribution>
+	
+
+
+	<contribution type="train" id="{787-train-C001-0000-4C8B212Dharu}">
+		<name></name>
+		<price>1</price>
+                <fare>1200</fare>
+		<speed>fast</speed>
+		<author>haru</author>
+		<type>787 Series</type>
+		<company>JR Kyushu</company>
+		<description></description>
+		<composition>
+			<head carRef="{787-trainCar-C001-000a-4C8B212Dharu}"/>
+			<body carRef="{787-trainCar-C001-000b-4C8B212Dharu}"/>
+			<tail carRef="{787-trainCar-C001-001a-4C8B212Dharu}"/>
+		</composition>
+	</contribution>
+
+
+
+
+
+
+</plug-in>

@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY smallBuilding '
+	<group>Small rental office C</group>
+	<price>250</price>
+	<size>1,1</size>
+	<minHeight>2</minHeight>
+	<maxHeight>3</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>35</base>
+	</population>
+'>
+<!ENTITY crPeru '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="197,149,95"/>
+	</spriteType>
+'>
+<!ENTITY crLtBlue '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="179,208,230"/>
+	</spriteType>
+'>
+<!ENTITY crWhite '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,255,255"/>
+	</spriteType>
+'>
+<!ENTITY crBrown '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="183,70,108"/>
+	</spriteType>
+'>
+<!ENTITY crMetalBlue '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="133,169,190"/>
+	</spriteType>
+'>
+<!ENTITY crBlack '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="113,113,113"/>
+	</spriteType>
+'>
+<!ENTITY crSteelBlue '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="105,139,233"/>
+	</spriteType>
+'>
+<!ENTITY crDkBrown '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="143,82,29"/>
+	</spriteType>
+'>
+]>
+<plug-in>
+	<title>Small rental offices</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+	<contribution type="picture" id="{451246D3-EFF2-4869-C477-E3AF0030BD63}">
+		<picture src="bldg_s01cv.bmp">
+			<override when="night" src="bldg_s01cv_n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{F2FA8B65-99EB-4973-C477-869C489F0D1F}">
+		<picture src="bldg_s02cv.bmp">
+			<override when="night" src="bldg_s02cv_n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{75F957EC-47AA-4E6B-C477-985A952D8F20}">
+		<picture src="bldg_s03cv.bmp">
+			<override when="night" src="bldg_s03cv_n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{F35F3A3C-2F6C-44BF-C477-4748E3327DD2}">
+		<picture src="bldg_s05.bmp">
+			<override when="night" src="bldg_s05n.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{5BF857BF-9ECA-434B-C477-1CC33B89F6AF}">
+		<picture src="bldg_s06.bmp">
+			<override when="night" src="bldg_s06n.bmp" />
+		</picture>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{4D807084-365D-4327-C477-857A7306B9DA}-1">
+		&smallBuilding;
+		&crWhite;
+		&crBlack;
+		&crPeru;
+		&crLtBlue;
+		<design>Type A</design>
+		<structure>
+			<category byname="Rental Offices"/>
+			<category byname="Restaurants" hide="true"/>
+		</structure>
+		<pictures>
+			<top origin=" 0, 14" offset="2">
+				<picture ref="{451246D3-EFF2-4869-C477-E3AF0030BD63}" />
+			</top>
+			<middle origin=" 0, 40" offset="8">
+				<picture ref="{451246D3-EFF2-4869-C477-E3AF0030BD63}" />
+			</middle>
+			<bottom origin=" 0, 72" offset="8">
+				<picture ref="{451246D3-EFF2-4869-C477-E3AF0030BD63}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="32, 14" offset="2">
+				<picture ref="{451246D3-EFF2-4869-C477-E3AF0030BD63}" />
+			</top>
+			<middle origin="32, 40" offset="8">
+				<picture ref="{451246D3-EFF2-4869-C477-E3AF0030BD63}" />
+			</middle>
+			<bottom origin="32, 72" offset="8">
+				<picture ref="{451246D3-EFF2-4869-C477-E3AF0030BD63}" />
+			</bottom>
+		</pictures>
+	</contribution>
+	<contribution type="GenericStructure" id="{092F0578-BC6B-4784-C477-0843663D1745}-0">
+		&smallBuilding;
+		&crBrown;
+		&crMetalBlue;
+		&crBlack;
+		<design>Type B</design>
+		<structure>
+			<category byname="Rental Offices"/>
+			<category byname="Service Providers" hide="true"/>
+		</structure>
+		<pictures>
+			<top origin=" 0, 14" offset="2">
+				<picture ref="{F2FA8B65-99EB-4973-C477-869C489F0D1F}" />
+			</top>
+			<middle origin=" 0, 40" offset="8">
+				<picture ref="{F2FA8B65-99EB-4973-C477-869C489F0D1F}" />
+			</middle>
+			<bottom origin=" 0, 72" offset="8">
+				<picture ref="{F2FA8B65-99EB-4973-C477-869C489F0D1F}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="32, 14" offset="2">
+				<picture ref="{F2FA8B65-99EB-4973-C477-869C489F0D1F}" />
+			</top>
+			<middle origin="32, 40" offset="8">
+				<picture ref="{F2FA8B65-99EB-4973-C477-869C489F0D1F}" />
+			</middle>
+			<bottom origin="32, 72" offset="8">
+				<picture ref="{F2FA8B65-99EB-4973-C477-869C489F0D1F}" />
+			</bottom>
+		</pictures>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{83D4A6F5-D277-4A04-C477-2A317435893E}-0">
+		&smallBuilding;
+		&crSteelBlue;
+		&crDkBrown;
+		&crBlack;
+		<design>Type C</design>
+		<structure>
+			<category byname="Rental Offices"/>
+			<category byname="Stores" hide="true"/>
+			<category byname="Food &amp; Drink" hide="true"/>
+		</structure>
+		<pictures>
+			<top origin=" 0, 14" offset="2">
+				<picture ref="{75F957EC-47AA-4E6B-C477-985A952D8F20}" />
+			</top>
+			<middle origin=" 0, 40" offset="8">
+				<picture ref="{75F957EC-47AA-4E6B-C477-985A952D8F20}" />
+			</middle>
+			<bottom origin=" 0, 72" offset="8">
+				<picture ref="{75F957EC-47AA-4E6B-C477-985A952D8F20}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="32, 14" offset="2">
+				<picture ref="{75F957EC-47AA-4E6B-C477-985A952D8F20}" />
+			</top>
+			<middle origin="32, 40" offset="8">
+				<picture ref="{75F957EC-47AA-4E6B-C477-985A952D8F20}" />
+			</middle>
+			<bottom origin="32, 72" offset="8">
+				<picture ref="{75F957EC-47AA-4E6B-C477-985A952D8F20}" />
+			</bottom>
+		</pictures>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{6A1789CF-B2B1-4543-C477-95318FB8C3CD}-l0">
+		&smallBuilding;
+		&crWhite;
+		&crPeru;
+		&crLtBlue;
+		&crBlack;
+		<design>Type D</design>
+		<structure>
+			<category byname="Rental Offices"/>
+			<category byname="Private Specialty Stores" hide="true"/>
+		</structure>
+		<pictures>
+			<top origin=" 0, 0" offset="16">
+				<picture ref="{F35F3A3C-2F6C-44BF-C477-4748E3327DD2}" />
+			</top>
+			<middle origin=" 0, 40" offset="8">
+				<picture ref="{F35F3A3C-2F6C-44BF-C477-4748E3327DD2}" />
+			</middle>
+			<bottom origin=" 0, 72" offset="8">
+				<picture ref="{F35F3A3C-2F6C-44BF-C477-4748E3327DD2}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="32, 0" offset="16">
+				<picture ref="{F35F3A3C-2F6C-44BF-C477-4748E3327DD2}" />
+			</top>
+			<middle origin="32, 40" offset="8">
+				<picture ref="{F35F3A3C-2F6C-44BF-C477-4748E3327DD2}" />
+			</middle>
+			<bottom origin="32, 72" offset="8">
+				<picture ref="{F35F3A3C-2F6C-44BF-C477-4748E3327DD2}" />
+			</bottom>
+		</pictures>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{2B44E129-F03C-46CE-C477-EC02F2856643}-l0">
+		&smallBuilding;
+		&crWhite;
+		&crBlack;
+		&crBrown;
+		<design>Type E</design>
+		<structure>
+			<category byname="Rental Offices"/>
+		</structure>
+		<pictures>
+			<top origin=" 0, 0" offset="16">
+				<picture ref="{5BF857BF-9ECA-434B-C477-1CC33B89F6AF}" />
+			</top>
+			<middle origin=" 0, 40" offset="8">
+				<picture ref="{5BF857BF-9ECA-434B-C477-1CC33B89F6AF}" />
+			</middle>
+			<bottom origin=" 0, 72" offset="8">
+				<picture ref="{5BF857BF-9ECA-434B-C477-1CC33B89F6AF}" />
+			</bottom>
+		</pictures>
+		<pictures>
+			<top origin="32, 0" offset="16">
+				<picture ref="{5BF857BF-9ECA-434B-C477-1CC33B89F6AF}" />
+			</top>
+			<middle origin="32, 40" offset="8">
+				<picture ref="{5BF857BF-9ECA-434B-C477-1CC33B89F6AF}" />
+			</middle>
+			<bottom origin="32, 72" offset="8">
+				<picture ref="{5BF857BF-9ECA-434B-C477-1CC33B89F6AF}" />
+			</bottom>
+		</pictures>
+	</contribution>
+</plug-in>

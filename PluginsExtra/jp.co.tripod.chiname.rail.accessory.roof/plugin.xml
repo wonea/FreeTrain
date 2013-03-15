@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Roof on platform</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+	
+	<depends on="org.kohsuke.freetrain.rail.electricPole" />
+	
+	<contribution type="picture" id="{8EE00527-1603-4C95-C477-7FC01B35604D}-1">
+		<picture src="station.roof1.bmp">
+			<override when="night" src="station.roof1n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{8EE00527-1603-4C95-C477-7FC01B35604D}-2">
+		<picture src="station.roof2.bmp">
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{8EE00527-1603-4C95-C477-7FC01B35604D}-3">
+		<picture src="station.roof3.bmp">
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{8EE00527-1603-4C95-C477-7FC01B35604D}-4">
+		<picture src="station.roof4.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="electricPole" id="{EB293476-BBDD-4A12-A785-63055A62047B}-1">
+		<name>Windowpane wall (front)</name>
+		<sprite origin=" 0, 0" offset="16">
+			<picture ref="{8EE00527-1603-4C95-C477-7FC01B35604D}-1" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{EB293476-BBDD-4A12-A785-63055A62047B}-2">
+		<name>Windowpane wall (rear)</name>
+		<sprite origin=" 0, 0" offset="16">
+			<picture ref="{8EE00527-1603-4C95-C477-7FC01B35604D}-2" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{EB293476-BBDD-4A12-A785-63055A62047B}-3">
+		<name>Windowpane roof A</name>
+		<sprite origin=" 0, 0" offset="16">
+			<picture ref="{8EE00527-1603-4C95-C477-7FC01B35604D}-3" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{EB293476-BBDD-4A12-A785-63055A62047B}-4">
+		<name>Windowpane roof B</name>
+		<sprite origin=" 0, 0" offset="16">
+			<picture ref="{8EE00527-1603-4C95-C477-7FC01B35604D}-4" />
+		</sprite>
+	</contribution>
+
+</plug-in>

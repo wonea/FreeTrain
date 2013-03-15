@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY runway5_5 '
+		<price>100</price>
+		<size>4,4</size>
+		<height>1</height>
+		<structure>
+			<category byname="Runways"/>
+		</structure>	
+		<computerCannotBuild/>
+'>
+<!ENTITY overrun2_5 '
+		<price>35</price>
+		<size>2,4</size>
+		<height>1</height>
+		<structure>
+			<category byname="Runways"/>
+		</structure>
+		<computerCannotBuild/>
+'>
+<!ENTITY overrun5_2 '
+		<price>35</price>
+		<size>4,2</size>
+		<height>1</height>
+		<structure>
+			<category byname="Runways"/>
+		</structure>
+		<computerCannotBuild/>
+'>
+<!ENTITY approach2_5 '
+		<price>15</price>
+		<size>2,4</size>
+		<height>1</height>
+		<structure>
+			<category byname="Runways"/>
+		</structure>
+		<computerCannotBuild/>
+'>
+<!ENTITY approach5_2 '
+		<price>15</price>
+		<size>4,2</size>
+		<height>1</height>
+		<structure>
+			<category byname="Runways"/>
+		</structure>
+		<computerCannotBuild/>
+'>
+
+]>
+
+<plug-in>
+	<title>Runways</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+
+
+
+	<contribution type="picture" id="{DE960968-07D0-4D16-C477-E40744A9F69F}-S1a">
+		<picture src="airport_runwayS1a.bmp">
+			<override when="night" src="airport_runwayS1a_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{DE960968-07D0-4D16-C477-E40744A9F69F}-S1b">
+		<picture src="airport_runwayS1b.bmp">
+			<override when="night" src="airport_runwayS1b_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{DE960968-07D0-4D16-C477-E40744A9F69F}-S2">
+		<picture src="airport_runwayS2.bmp">
+			<override when="night" src="airport_runwayS2_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a">
+		<picture src="airport_runwayS3a.bmp">
+			<override when="night" src="airport_runwayS3a_n.bmp"/>
+			<override when="autumn" src="airport_runwayS3aAut.bmp">
+				<override when="night" src="airport_runwayS3aAut_n.bmp"/>
+			</override>
+			<override when="winter" src="airport_runwayS3aWin.bmp">
+				<override when="night" src="airport_runwayS3aWin_n.bmp"/>
+			</override>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3b">
+		<picture src="airport_runwayS3b.bmp">
+			<override when="night" src="airport_runwayS3b_n.bmp"/>
+		</picture>
+	</contribution>
+		
+	<!--Runways(with tire tracks)-->
+	<contribution type="GenericStructure" id="{0D5808D6-787C-4498-C477-EE5C79ECE244}-S0">
+		<group>Runways(tire tracks)</group>
+		<design>Landing point marker</design>
+		&runway5_5;
+		<sprite origin="0,0" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S1a"/>
+		</sprite>		
+		<sprite origin="0,80" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S1a"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{0D5808D6-787C-4498-C477-EE5C79ECE244}-S1">
+		<group>Runways(tire tracks)</group>
+		<design>Landing area marker</design>
+		&runway5_5;
+		<sprite origin="128,0" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S1a"/>
+		</sprite>		
+		<sprite origin="128,80" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S1a"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{0D5808D6-787C-4498-C477-EE5C79ECE244}-S2">
+		<group>Runways(tire tracks)</group>
+		&runway5_5;
+		<sprite origin="256,0" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S1a"/>
+		</sprite>		
+		<sprite origin="256,80" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S1a"/>
+		</sprite>		
+	</contribution>
+	
+
+	<!--Runways(no tracks)-->
+	<contribution type="GenericStructure" id="{8755ECDC-6A76-46AA-C477-3ACFCFA1202B}-S0">
+		<group>Runways</group>
+		<design>fixed distance mark</design>
+		&runway5_5;
+		<sprite origin="0,0" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S1b"/>
+		</sprite>		
+		<sprite origin="0,80" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S1b"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{8755ECDC-6A76-46AA-C477-3ACFCFA1202B}-S1">
+		<group>Runways</group>
+		<design>touchdown zone mark</design>
+		&runway5_5;
+		<sprite origin="128,0" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S1b"/>
+		</sprite>		
+		<sprite origin="128,80" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S1b"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{8755ECDC-6A76-46AA-C477-3ACFCFA1202B}-S2">
+		<group>Runways</group>
+		&runway5_5;
+		<sprite origin="256,0" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S1b"/>
+		</sprite>		
+		<sprite origin="256,80" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S1b"/>
+		</sprite>		
+	</contribution>
+	
+	<!--Runways end-->
+	<contribution type="GenericStructure" id="{5F1C1092-23ED-410B-C477-036FE255FC6E}-S0">
+		<group>Runways</group>
+		<design>threshold2</design>
+		&runway5_5;
+		<sprite origin="0,0" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S2"/>
+		</sprite>		
+		<sprite origin="128,0" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S2"/>
+		</sprite>		
+		<sprite origin="256,0" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S2"/>
+		</sprite>		
+		<sprite origin="384,0" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S2"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{5F1C1092-23ED-410B-C477-036FE255FC6E}-S1">
+		<group>Runways</group>
+		<design>indicator</design>
+		&runway5_5;
+		<sprite origin="0,80" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S2"/>
+		</sprite>		
+		<sprite origin="128,80" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S2"/>
+		</sprite>		
+		<sprite origin="256,80" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S2"/>
+		</sprite>		
+		<sprite origin="384,80" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S2"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{5F1C1092-23ED-410B-C477-036FE255FC6E}-S2">
+		<group>Runways</group>
+		<design>threshold1</design>
+		&runway5_5;
+		<sprite origin="0,240" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S2"/>
+		</sprite>		
+		<sprite origin="128,240" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S2"/>
+		</sprite>		
+		<sprite origin="256,240" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S2"/>
+		</sprite>		
+		<sprite origin="384,240" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S2"/>
+		</sprite>		
+	</contribution>
+	
+	<!--tire tracks-->
+	<contribution type="GenericStructure" id="{5F1C1092-23ED-410B-C477-036FE255FC6E}-S12">
+		<group>Runways(tire tracks)</group>
+		<design>end of tire tracs</design>
+		&runway5_5;
+		<sprite origin="0,160" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S2"/>
+		</sprite>		
+		<sprite origin="128,160" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S2"/>
+		</sprite>		
+		<sprite origin="256,160" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S2"/>
+		</sprite>		
+		<sprite origin="384,160" offset="24">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S2"/>
+		</sprite>		
+	</contribution>
+
+
+<!--visual approach slope indicator-->
+	<contribution type="GenericStructure" id="{2B1C7FD8-1F38-4B7C-C477-5A7DCFD577F9}-S00">
+		<group>visual approach slope indicator</group>
+		<design>grassland A</design>
+		&approach2_5;
+		<sprite origin="0,0" offset="8">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+		<sprite origin="96,0" offset="24" opposite="true">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+		<sprite origin="192,0" offset="8">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+		<sprite origin="288,0" offset="24" opposite="true">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{2B1C7FD8-1F38-4B7C-C477-5A7DCFD577F9}-S04">
+		<group>visual approach slope indicator</group>
+		<design>grassland B</design>
+		&approach2_5;
+		<sprite origin="0,64" offset="8">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+		<sprite origin="96,64" offset="24" opposite="true">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+		<sprite origin="192,64" offset="8">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+		<sprite origin="288,64" offset="24" opposite="true">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{2B1C7FD8-1F38-4B7C-C477-5A7DCFD577F9}-S10">
+		<group>visual approach slope indicator</group>
+		<design>grassland C</design>
+		&approach2_5;
+		<sprite origin="0,128" offset="8">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+		<sprite origin="96,128" offset="24" opposite="true">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+		<sprite origin="192,128" offset="8">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+		<sprite origin="288,128" offset="24" opposite="true">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{2B1C7FD8-1F38-4B7C-C477-5A7DCFD577F9}-S11">
+		<group>visual approach slope indicator</group>
+		<design>grassland D</design>
+		&approach2_5;
+		<sprite origin="0,192" offset="8">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+		<sprite origin="96,192" offset="24" opposite="true">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+		<sprite origin="192,192" offset="8">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+		<sprite origin="288,192" offset="24" opposite="true">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{2B1C7FD8-1F38-4B7C-C477-5A7DCFD577F9}-S12">
+		<group>visual approach slope indicator</group>
+		<design>water</design>
+		&approach2_5;
+		<sprite origin="0,256" offset="8">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+		<sprite origin="96,256" offset="24" opposite="true">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+		<sprite origin="192,256" offset="8">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+		<sprite origin="288,256" offset="24" opposite="true">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3a"/>
+		</sprite>		
+	</contribution>
+
+	
+	<!--overrun area-->
+	<contribution type="GenericStructure" id="{31F65668-5D60-4F47-C477-0025430882BB}}-S00">
+		<group>visual approach slope indicator</group>
+		<design>overrun area A</design>
+		&overrun2_5;
+		<sprite origin="0,0" offset="8">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3b"/>
+		</sprite>		
+		<sprite origin="96,0" offset="24" opposite="true">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3b"/>
+		</sprite>		
+		<sprite origin="192,0" offset="8">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3b"/>
+		</sprite>		
+		<sprite origin="288,0" offset="24" opposite="true">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3b"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{31F65668-5D60-4F47-C477-0025430882BB}}-S01">
+		<group>visual approach slope indicator</group>
+		<design>overrun area B</design>
+		&overrun2_5;
+		<sprite origin="0,64" offset="8">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3b"/>
+		</sprite>		
+		<sprite origin="96,64" offset="24" opposite="true">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3b"/>
+		</sprite>		
+		<sprite origin="192,64" offset="8">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3b"/>
+		</sprite>		
+		<sprite origin="288,64" offset="24" opposite="true">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3b"/>
+		</sprite>		
+	</contribution>
+	<contribution type="GenericStructure" id="{31F65668-5D60-4F47-C477-0025430882BB}}-S02">
+		<group>visual approach slope indicator</group>
+		<design>overrun area C</design>
+		&overrun2_5;
+		<sprite origin="0,128" offset="8">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3b"/>
+		</sprite>		
+		<sprite origin="96,128" offset="24" opposite="true">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3b"/>
+		</sprite>		
+		<sprite origin="192,128" offset="8">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3b"/>
+		</sprite>		
+		<sprite origin="288,128" offset="24" opposite="true">
+			<picture ref="{DE960968-07D0-4D16-C477-E40744A9F69F}-S3b"/>
+		</sprite>		
+	</contribution>	
+</plug-in>

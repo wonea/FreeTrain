@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>JR East 485 Series Joyful Train Set</title>
+	<author>Itchy</author> 
+	<homepage>http://www.geocities.jp/cyber_express_1703d/freetrain/FT_plugin.html</homepage>
+
+ 	<!-- ベース車両 -->
+
+	<contribution type="picture" id="{cyber-express-1703d-040331-485jt}-h">
+	<picture src="485jtA.bmp" /> 
+	</contribution>
+	<contribution type="picture" id="{cyber-express-1703d-040331-485jt}-m">
+	<picture src="485jtB.bmp" /> 
+	</contribution>
+
+	<!-- きらきらうえつ先頭車 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040331-485uetsu}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="uetsuA.bmp" />
+		</sprite>
+		<capacity>38</capacity>
+	</contribution>
+
+	<!-- きらきらうえつ中間車 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040331-485uetsu}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+                	<picture src="uetsuB.bmp" />
+		</sprite>
+		<capacity>20</capacity>
+	</contribution>
+
+	<!-- きらきらうえつ後尾車 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040331-485uetsu}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{cyber-express-1703d-040331-485uetsu}-h"/>
+		<sprite origin="0,0">
+		</sprite>
+		<capacity>38</capacity>
+	</contribution>
+
+	<!-- ニューなのはな先頭車 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040331-485nnanohana}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="0,192,0" to="64,224,192" />
+				<map from="0,128,0" to="0,64,192" />
+				<map from="64,0,0" to="0,8,0" />
+				<map from="128,0,0" to="0,0,0" />
+				<map from="160,0,0" to="0,0,50" />
+				<map from="192,0,0" to="0,0,50" />
+				<map from="224,0,0" to="0,0,50" />
+			</spriteType>
+			<picture ref="{cyber-express-1703d-040331-485jt}-h" /> 
+		</sprite>
+		<capacity>48</capacity>
+	</contribution>
+
+	<!-- ニューなのはな中間車 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040331-485nnanohana}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="0,192,0" to="64,224,192" />
+			</spriteType>
+			<picture ref="{cyber-express-1703d-040331-485jt}-m" />
+		</sprite>
+		<capacity>54</capacity>
+	</contribution>
+
+	<!-- ニューなのはな後尾車 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040331-485nnanohana}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{cyber-express-1703d-040331-485nnanohana}-h"/>
+		<sprite origin="0,0">
+		</sprite>
+		<capacity>48</capacity>
+	</contribution>
+
+	<!-- やまなみ先頭車 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040331-485yamanami}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="64,224,192" to="0,160,128" />
+				<map from="0,192,0" to="0,160,128" />
+				<map from="166,202,240" to="0,160,128" />
+				<map from="0,64,192" to="192,0,0" />
+				<map from="0,128,0" to="0,160,128" />
+				<map from="64,0,0" to="0,8,0" />
+				<map from="128,0,0" to="0,0,0" />
+				<map from="160,0,0" to="0,0,50" />
+				<map from="192,0,0" to="0,0,50" />
+				<map from="224,0,0" to="0,0,50" />
+				<map from="255,255,0" to="0,160,128" />
+			</spriteType>
+			<picture ref="{cyber-express-1703d-040331-485jt}-h" /> 
+		</sprite>
+		<capacity>24</capacity>
+	</contribution>
+
+	<!-- やまなみ中間車 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040331-485yamanami}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="64,224,192" to="0,160,128" />
+				<map from="0,192,0" to="0,160,128" />
+				<map from="166,202,240" to="0,160,128" />
+				<map from="0,64,192" to="192,0,0" />
+			</spriteType>
+			<picture ref="{cyber-express-1703d-040331-485jt}-m" />
+		</sprite>
+		<capacity>26</capacity>
+	</contribution>
+
+	<!-- やまなみ後尾車 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040331-485yamanami}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{cyber-express-1703d-040331-485yamanami}-h"/>
+		<sprite origin="0,0">
+		</sprite>
+		<capacity>24</capacity>
+	</contribution>
+
+	<!-- せせらぎ先頭車 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040331-485seseragi}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="64,224,192" to="192,64,128" />
+				<map from="0,192,0" to="192,64,128" />
+				<map from="166,202,240" to="192,64,128" />
+				<map from="0,64,192" to="224,160,192" />
+				<map from="0,128,0" to="192,64,128" />
+				<map from="64,0,0" to="0,8,0" />
+				<map from="128,0,0" to="0,0,0" />
+				<map from="160,0,0" to="0,0,50" />
+				<map from="192,0,0" to="0,0,50" />
+				<map from="224,0,0" to="0,8,0" />
+				<map from="255,255,0" to="192,64,128" />
+			</spriteType>
+			<picture ref="{cyber-express-1703d-040331-485jt}-h" /> 
+		</sprite>
+		<capacity>28</capacity>
+	</contribution>
+
+	<!-- せせらぎ中間車 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040331-485seseragi}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="64,224,192" to="192,64,128" />
+				<map from="0,192,0" to="192,64,128" />
+				<map from="166,202,240" to="192,64,128" />
+				<map from="0,64,192" to="224,160,192" />
+			</spriteType>
+			<picture ref="{cyber-express-1703d-040331-485jt}-m" />
+		</sprite>
+		<capacity>30</capacity>
+	</contribution>
+
+	<!-- せせらぎ後尾車 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040331-485seseragi}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{cyber-express-1703d-040331-485seseragi}-h"/>
+		<sprite origin="0,0">
+		</sprite>
+		<capacity>28</capacity>
+	</contribution>
+
+	<!-- 華先頭車 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040331-485hana}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="64,224,192" to="64,64,96" />
+				<map from="0,192,0" to="255,128,192" />
+				<map from="166,202,240" to="64,64,96" />
+				<map from="0,64,192" to="64,64,96" />
+				<map from="0,128,0" to="64,64,96" />
+				<map from="64,0,0" to="0,8,0" />
+				<map from="128,0,0" to="0,0,0" />
+				<map from="160,0,0" to="0,0,50" />
+				<map from="192,0,0" to="0,0,50" />
+				<map from="224,0,0" to="0,8,0" />
+				<map from="255,255,0" to="255,128,192" />
+			</spriteType>
+			<picture ref="{cyber-express-1703d-040331-485jt}-h" /> 
+		</sprite>
+		<capacity>24</capacity>
+	</contribution>
+
+	<!-- 華中間車 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040331-485hana}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="64,224,192" to="64,64,96" />
+				<map from="0,192,0" to="255,128,192" />
+				<map from="166,202,240" to="64,64,96" />
+				<map from="0,64,192" to="64,64,96" />
+			</spriteType>
+			<picture ref="{cyber-express-1703d-040331-485jt}-m" />
+		</sprite>
+		<capacity>26</capacity>
+	</contribution>
+
+	<!-- 華後尾車 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040331-485hana}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{cyber-express-1703d-040331-485hana}-h"/>
+		<sprite origin="0,0">
+		</sprite>
+		<capacity>24</capacity>
+	</contribution>
+
+	<!-- 宴先頭車 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040331-485utage}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="64,224,192" to="192,64,128" />
+				<map from="0,192,0" to="255,160,192" />
+				<map from="166,202,240" to="192,64,128" />
+				<map from="0,64,192" to="255,160,192" />
+				<map from="0,128,0" to="192,64,128" />
+				<map from="64,0,0" to="192,64,128" />
+				<map from="128,0,0" to="192,64,128" />
+				<map from="160,0,0" to="0,8,0" />
+				<map from="192,0,0" to="192,64,128" />
+				<map from="224,0,0" to="192,64,128" />
+				<map from="255,255,0" to="255,192,255" />
+			</spriteType>
+			<picture ref="{cyber-express-1703d-040331-485jt}-h" /> 
+		</sprite>
+		<capacity>24</capacity>
+	</contribution>
+
+	<!-- 宴中間車 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040331-485utage}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+				<map from="64,224,192" to="192,64,128" />
+				<map from="0,192,0" to="255,160,192" />
+				<map from="166,202,240" to="192,64,128" />
+				<map from="0,64,192" to="255,160,192" />
+			</spriteType>
+			<picture ref="{cyber-express-1703d-040331-485jt}-m" />
+		</sprite>
+		<capacity>26</capacity>
+	</contribution>
+
+	<!-- 宴後尾車 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040331-485utage}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{cyber-express-1703d-040331-485utage}-h"/>
+		<sprite origin="0,0">
+		</sprite>
+		<capacity>24</capacity>
+	</contribution>
+
+	<!-- きらきらうえつ -->
+
+	<contribution type="train" id="{cyber-express-1703d-040331-485uetsu}">
+		<company>JR East</company>
+		<type>485 Series</type>
+		<name>Kirakira Uetsu</name>
+		<author>Itchy</author>
+		<description>It appeared in 2001 November for sightseers who want to travel along the Uetsu Line.
+The cars were remodelled 485 Series limited express type. The lead coach was an observation car while the second car was a lounge car
+with a teahouse and Japanese-style lounge space.
+Also, barrier-free facilities were installed during remodelling. It mainly runs weekend services between Niigata and Sakata.
+</description>
+		<price>10</price>
+	           	<fare>1000</fare>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{cyber-express-1703d-040331-485uetsu}-h"/>
+			<body carRef="{cyber-express-1703d-040331-485uetsu}-m"/>
+			<tail carRef="{cyber-express-1703d-040331-485uetsu}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- ニューなのはな -->
+
+	<contribution type="train" id="{cyber-express-1703d-040331-485nnanohana}">
+		<company>JR East</company>
+		<type>485 Series</type>
+		<name>New Nanohana</name>
+		<author>Itchy</author>
+		<description>This train started in 1998 for sightseers who wish to visit the Boso region.
+It is a remodelled 485 Series limited express in a 6-car formation.
+The carriages had open seating and also cabins.
+It's used as a group train departing from Chiba Prefecture and also for special limited express.
+</description>
+		<price>10</price>
+	           	<fare>1000</fare>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{cyber-express-1703d-040331-485nnanohana}-h"/>
+			<body carRef="{cyber-express-1703d-040331-485nnanohana}-m"/>
+			<tail carRef="{cyber-express-1703d-040331-485nnanohana}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- やまなみ -->
+
+	<contribution type="train" id="{cyber-express-1703d-040331-485yamanami}">
+		<company>JR East</company>
+		<type>485 Series</type>
+		<name>Yamanami</name>
+		<author>Itchy</author>
+		<description>This train started in 1999 for sightseers who wish to visit Gunma Prefecture. It is a remodelled 485 Series
+4-Car formation with open seating.
+Together with the "Seseragi" it is used as a group train departing from Gunma prefecture as well as temporary express train on the Takasaki 
+and Joetsu lines.
+</description>
+		<price>10</price>
+	           	<fare>1500</fare>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{cyber-express-1703d-040331-485yamanami}-h"/>
+			<body carRef="{cyber-express-1703d-040331-485yamanami}-m"/>
+			<tail carRef="{cyber-express-1703d-040331-485yamanami}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- せせらぎ -->
+
+	<contribution type="train" id="{cyber-express-1703d-040331-485seseragi}">
+		<company>JR East</company>
+		<type>485 Series</type>
+		<name>Seseragi</name>
+		<author>Itchy</author>
+		<description>This train started in 2001 for sightseers who wish to visit the Gunma prefecture. It is a remodelled 485 Series
+4-Car formation with open seating, very much like the "Yamanami".
+Together with the "Yamanami" it is used as a group train departing from Gunma prefecture as well as temporary express train on the Takasaki 
+and Joetsu lines.
+</description>
+		<price>10</price>
+	           	<fare>1500</fare>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{cyber-express-1703d-040331-485seseragi}-h"/>
+			<body carRef="{cyber-express-1703d-040331-485seseragi}-m"/>
+			<tail carRef="{cyber-express-1703d-040331-485seseragi}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- やまなみせせらぎ -->
+
+	<contribution type="train" id="{cyber-express-1703d-040331-485yamasese}">
+		<company>JR East</company>
+		<type>485 Series</type>
+		<name>Yamanami＋Sasaragi</name>
+		<author>Itchy</author>
+		<description>This train only comes in an 8-Car Formation.
+It is made up of the 2 separate trains, four cars each from the "Yamanami" and the "Seseragi" and is used as a group train departing 
+from Gunma prefecture as well as temporary express train on the Takasaki and Joetsu lines.
+</description>
+		<price>10</price>
+		<fare>1500</fare>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="1" ref="{cyber-express-1703d-040331-485yamanami}-h"/>
+			<car char="2" ref="{cyber-express-1703d-040331-485yamanami}-m"/>
+			<car char="3" ref="{cyber-express-1703d-040331-485yamanami}-t"/> 
+			<car char="4" ref="{cyber-express-1703d-040331-485seseragi}-h"/> 
+			<car char="5" ref="{cyber-express-1703d-040331-485seseragi}-m"/> 
+			<car char="6" ref="{cyber-express-1703d-040331-485seseragi}-t"/> 
+			<composition>12234556</composition>
+		</config>
+	</contribution>
+
+	<!-- 宴 -->
+
+	<contribution type="train" id="{cyber-express-1703d-040331-485utage}">
+		<company>JR East</company>
+		<type>485 Series</type>
+		<name>Utage</name>
+		<author>Itchy</author>
+		<description>This a "Joyful Train" introduced in 1994. It is a remodelled 485 Series limited express in a 6-car formation.
+Since it has a diesel engine, it can run to electrified and non-electrified stations.
+Together with the "Hana", this train is used as a group train in Tokyo, Kanagawa, and Yamanashi, as well as temporary express on the
+Tokaido and Chuo lines.
+</description>
+		<price>10</price>
+		<fare>1500</fare>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{cyber-express-1703d-040331-485utage}-h"/>
+			<body carRef="{cyber-express-1703d-040331-485utage}-m"/>
+			<tail carRef="{cyber-express-1703d-040331-485utage}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 華 -->
+
+	<contribution type="train" id="{cyber-express-1703d-040331-485hana}">
+		<company>JR East</company>
+		<type>485 Series</type>
+		<name>Hana</name>
+		<author>Itchy</author>
+		<description>This a "Joyful Train" introduced in 1994. It is a remodelled 485 Series limited express in a 6-car formation.
+Since it has a diesel engine, it can run to electrified and non-electrified stations.
+Together with the "Utage", this train is used as a group train in Tokyo, Kanagawa, and Yamanashi, as well as temporary express on the
+Tokaido and Chuo lines.
+</description>
+		<price>10</price>
+		<fare>1500</fare>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{cyber-express-1703d-040331-485hana}-h"/>
+			<body carRef="{cyber-express-1703d-040331-485hana}-m"/>
+			<tail carRef="{cyber-express-1703d-040331-485hana}-t"/>
+		</composition>
+	</contribution>
+
+</plug-in>

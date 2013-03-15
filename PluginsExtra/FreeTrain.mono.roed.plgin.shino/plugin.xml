@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Monorail track</title>
+	<author>Shino</author>
+	<homepage></homepage>
+	
+	<contribution type="road" id="{1D9E6967-3BDF-4A26-89B0-52179C499E03}-A">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Suspended monorail track1</name>
+		<description>Suspended monorail track</description>
+		<picture src="mono1.bmp" size="32,32" offset="16" />
+	</contribution>
+
+        <contribution type="road" id="{1D9E6967-3BDF-4A26-89B0-52179C499E03}-B">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Suspended monorail track2</name>
+		<description>Suspended monorail track</description>
+		<picture src="mono2.bmp" size="32,32" offset="16" />
+	</contribution>
+
+        <contribution type="road" id="{1D9E6967-3BDF-4A26-89B0-52179C499E03}-C">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>'Yurikamome' monorail track1</name>
+		<description>'Yurikamome' track</description>
+		<picture src="yurikamome1.bmp" size="32,32" offset="16" />
+	</contribution>
+
+        <contribution type="road" id="{1D9E6967-3BDF-4A26-89B0-52179C499E03}-D">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>'Yurikamome' monorail track2</name>
+		<description>'Yurikamome' track</description>
+		<picture src="yurikamome2.bmp" size="32,32" offset="16" />
+	</contribution>
+
+</plug-in>

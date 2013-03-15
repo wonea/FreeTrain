@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Runway (road)</title>
+	<author>Hiro Ayase</author>
+	<homepage>http://www14.big.oir.jp/~ayase/</homepage>
+	
+	<contribution type="road" id="{FreeTrain-AYASE-Hiro-RoadImg-Airport}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Airport runway</name>
+		<description>Runway</description>
+		<picture src="road_airport.bmp" size="32,32" offset="16">
+			<override when="night" src="road_airport_n.bmp"/>
+		</picture>
+		<!-- sizeは一つあたりの道路チップのサイズ。配置は画像を参照 -->
+		<!-- offsetは、チップ内での位置あわせ用。通常、size.Y-16 -->
+	</contribution>
+
+</plug-in>

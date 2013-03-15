@@ -1,0 +1,1420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>JR West Train Kit</title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	<depend on="org.kohsuke.freetrain.trains.trainshare" />
+
+	<!-- 105系 iwasaki氏-->
+	 <contribution type="trainCar" id="{105-west-hirosima-200309291112}">
+	<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+	 <colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-4" base="255,255,0" line1="0,0,255" line2="255,255,0" line3="255,255,0" />
+	 <capacity>300</capacity>
+	</contribution>
+
+	<contribution type="train" id="{105-west-hirosima-200309291117}">
+		<company>JR West</company>
+		<type>105 Series</type>
+		<name>Local</name>
+		<author>iwasaki</author>
+		<description>広島・下関などで走っている電車。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{105-west-hirosima-200309291112}"/>
+		</composition>
+	</contribution>
+
+	<!-- キハ48系 -->
+	 <contribution type="trainCar" id="{kiha48-yamaguchi-200309291043}">
+	<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+	 <colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-1" base="255,255,255" line1="0,0,0" line2="255,255,0" line3="255,255,0" />
+	 <capacity>200</capacity>
+	</contribution>
+
+	<contribution type="train" id="{kiha48-yamaguchi-200309291044}">
+		<company>JR West</company>
+		<type>KIHA 48 Series</type>
+		<name>Sanin Main Line Yamaguchi District</name>
+		<author>iwasaki</author>
+		<description>山陰本線の長門市～小串間などで運転されています。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{kiha48-yamaguchi-200309291043}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 103系 広島色-->
+	 <contribution type="trainCar" id="{9C545BB6-A759-4373-9D62-3E3E2A6F489E}-1">
+	<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+	 <colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-4" base="249,197,134" line1="0,0,255" line2="249,197,134" line3="249,197,134" />
+	 <capacity>300</capacity>
+	</contribution>
+
+	<contribution type="train" id="{9C545BB6-A759-4373-9D62-3E3E2A6F489E}">
+		<company>JR West</company>
+		<type>103 Series</type>
+		<name>Hiroshima</name>
+		<author>iwasaki</author>
+		<description>広島色の１０３系電車です。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{9C545BB6-A759-4373-9D62-3E3E2A6F489E}-1"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 113系 iwasaki氏-->
+	 <contribution type="trainCar" id="{113-westsanyo-200309301052}">
+	<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+	<colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-6" base="192,192,192" line1="255,128,64" line2="255,128,64" line3="192,192,192" />
+	 <capacity>200</capacity>
+	</contribution>
+
+	<contribution type="train" id="{113-westsanyo-200309301056}">
+		<company>JR West</company>
+		<type>113 Series</type>
+		<name>Sanin Main Line, etc.</name>
+		<author>iwasaki</author>
+		<description>山陽本線の普通などです。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{113-westsanyo-200309301052}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 103系 カナリア高運-->
+	<contribution type="trainCar" id="{1E0A8EAD-2345-474E-8954-09FFEF25C901}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103_h" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="255,255,0"/>
+			<map from="128,0,0" to="200,200,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{1E0A8EAD-2345-474E-8954-09FFEF25C901}">
+		<company>JR West</company>
+		<type>103 Series</type>
+		<name>Canaria (high driver's seat)</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両だが、今もJR Westには大量に残っている。主に大阪環状線など東海道本線に隣接する各線に投入されている。アコモ改善車も出ており、まだまだ残りそうな気がする。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{1E0A8EAD-2345-474E-8954-09FFEF25C901}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系 カナリア-->
+	<contribution type="trainCar" id="{126EFCAE-3BD0-4A2F-9EAC-1373A0D5C91E}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="255,255,0"/>
+			<map from="128,0,0" to="200,200,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{126EFCAE-3BD0-4A2F-9EAC-1373A0D5C91E}">
+		<company>JR West</company>
+		<type>103 Series</type>
+		<name>Canaria</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両だが、今もJR Westには大量に残っている。主に大阪環状線など東海道本線に隣接する各線に投入されている。アコモ改善車も出ており、まだまだ残りそうな気がする。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{126EFCAE-3BD0-4A2F-9EAC-1373A0D5C91E}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系 カナリア-->
+	<contribution type="trainCar" id="{47D5B403-16FE-4449-A673-0DF75C1CC7D9}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103_L" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="255,255,0"/>
+			<map from="128,0,0" to="200,200,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{47D5B403-16FE-4449-A673-0DF75C1CC7D9}">
+		<company>JR West</company>
+		<type>103 Series</type>
+		<name>Canaria (stripe)</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両だが、今もJR Westには大量に残っている。主に大阪環状線など東海道本線に隣接する各線に投入されている。アコモ改善車も出ており、まだまだ残りそうな気がする。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{47D5B403-16FE-4449-A673-0DF75C1CC7D9}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系 カナリア(高運・帯)-->
+	<contribution type="trainCar" id="{635BCE32-9A65-4586-B9F4-23790926567F}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103_Lh" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="255,255,0"/>
+			<map from="128,0,0" to="200,200,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{635BCE32-9A65-4586-B9F4-23790926567F}">
+		<company>JR West</company>
+		<type>103 Series</type>
+		<name>Canaria (high/belt)</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両だが、今もJR Westには大量に残っている。主に大阪環状線など東海道本線に隣接する各線に投入されている。アコモ改善車も出ており、まだまだ残りそうな気がする。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{635BCE32-9A65-4586-B9F4-23790926567F}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系 スカイブルー-->
+	<contribution type="trainCar" id="{D6910F49-998A-4DCA-840D-654ACEFB3B8B}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103_h" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="100,180,255"/>
+			<map from="128,0,0" to="0,120,230"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{D6910F49-998A-4DCA-840D-654ACEFB3B8B}">
+		<company>JR West</company>
+		<type>103 Series</type>
+		<name>Sky Blue</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両だが、今もJR Westには大量に残っている。主に大阪環状線など東海道本線に隣接する各線に投入されている。アコモ改善車も出ており、まだまだ残りそうな気がする。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{D6910F49-998A-4DCA-840D-654ACEFB3B8B}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系 スカイブルーライン-->
+	<contribution type="trainCar" id="{2EE9B1AF-4FCD-416D-8C82-EC8EFC0CF1E9}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103_Lh" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="100,180,255"/>
+			<map from="128,0,0" to="0,120,230"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{2EE9B1AF-4FCD-416D-8C82-EC8EFC0CF1E9}">
+		<company>JR West</company>
+		<type>103 Series</type>
+		<name>Sky Blue (stipe)</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両だが、今もJR Westには大量に残っている。主に大阪環状線など東海道本線に隣接する各線に投入されている。アコモ改善車も出ており、まだまだ残りそうな気がする。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{2EE9B1AF-4FCD-416D-8C82-EC8EFC0CF1E9}c"/>
+		</composition>
+	</contribution>	
+	<!-- 103系 ウグイス帯-->
+	<contribution type="trainCar" id="{37AA1DA0-40DB-4041-B19B-13FA223E5A12}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="128,255,0"/>
+			<map from="128,0,0" to="64,128,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{37AA1DA0-40DB-4041-B19B-13FA223E5A12}">
+		<company>JR West</company>
+		<type>103 Series</type>
+		<name>Uguisu (stripe)</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両だが、今もJR Westには大量に残っている。主に大阪環状線など東海道本線に隣接する各線に投入されている。アコモ改善車も出ており、まだまだ残りそうな気がする。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{37AA1DA0-40DB-4041-B19B-13FA223E5A12}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系 ウグイス-->
+	<contribution type="trainCar" id="{7D30E5FA-A1E8-442b-9E07-8F993B5C898E}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="128,255,0"/>
+			<map from="128,0,0" to="64,128,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{7D30E5FA-A1E8-442b-9E07-8F993B5C898E}">
+		<company>JR West</company>
+		<type>103 Series</type>
+		<name>Uguisu</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両だが、今もJR Westには大量に残っている。主に大阪環状線など東海道本線に隣接する各線に投入されている。アコモ改善車も出ており、まだまだ残りそうな気がする。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{7D30E5FA-A1E8-442b-9E07-8F993B5C898E}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系 ウグイス (high driver's seat)-->
+	<contribution type="trainCar" id="{37B8F72F-9366-414A-AEFF-0CC2BC84496E}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103_h" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="128,255,0"/>
+			<map from="128,0,0" to="64,128,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{37B8F72F-9366-414A-AEFF-0CC2BC84496E}">
+		<company>JR West</company>
+		<type>103 Series</type>
+		<name>Uguisu (high driver's seat)</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両だが、今もJR Westには大量に残っている。主に大阪環状線など東海道本線に隣接する各線に投入されている。アコモ改善車も出ており、まだまだ残りそうな気がする。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{37B8F72F-9366-414A-AEFF-0CC2BC84496E}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系 ウグイス(高運・帯)-->
+	<contribution type="trainCar" id="{FDB8C7BA-2280-4AAB-8700-75DFDFE234BA}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103_Lh" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="128,255,0"/>
+			<map from="128,0,0" to="64,128,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{FDB8C7BA-2280-4AAB-8700-75DFDFE234BA}">
+		<company>JR West</company>
+		<type>103 Series</type>
+		<name>Uguisu (high/stripe)</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両だが、今もJR Westには大量に残っている。主に大阪環状線など東海道本線に隣接する各線に投入されている。アコモ改善車も出ており、まだまだ残りそうな気がする。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{FDB8C7BA-2280-4AAB-8700-75DFDFE234BA}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系 ウグイス(新/高)-->
+	<contribution type="trainCar" id="{D451BE6E-0B9B-4627-B284-C1BC9380E006}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="n103_h" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="128,255,0"/>
+			<map from="128,0,0" to="64,128,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{D451BE6E-0B9B-4627-B284-C1BC9380E006}">
+		<company>JR West</company>
+		<type>103 Series (refurbished)</type>
+		<name>Uguisu (high driver's seat)</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両だが、今もJR Westには大量に残っている。主に大阪環状線など東海道本線に隣接する各線に投入されている。アコモ改善車も出ており、まだまだ残りそうな気がする。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{D451BE6E-0B9B-4627-B284-C1BC9380E006}c"/>
+		</composition>
+	</contribution>
+
+	<!-- 103系 ウグイス(更新)-->
+	<contribution type="trainCar" id="{30671293-7818-42DC-9393-91AB30F05796}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="n103" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="128,255,0"/>
+			<map from="128,0,0" to="64,128,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{30671293-7818-42DC-9393-91AB30F05796}">
+		<company>JR West</company>
+		<type>103 Series (refurbished)</type>
+		<name>Uguisu</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両だが、今もJR Westには大量に残っている。主に大阪環状線など東海道本線に隣接する各線に投入されている。アコモ改善車も出ており、まだまだ残りそうな気がする。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{30671293-7818-42DC-9393-91AB30F05796}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系 オレンジ-->
+	<contribution type="trainCar" id="{757C3EA4-7222-4800-AB0B-34E137EC90BD}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103" />
+		<spriteType name="colorMapped">
+
+			<map from="255,0,0" to="255,128,0"/>
+			<map from="128,0,0" to="192,92,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{757C3EA4-7222-4800-AB0B-34E137EC90BD}">
+		<company>JR West</company>
+		<type>103 Series</type>
+		<name>Orange</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両だが、今もJR Westには大量に残っている。主に大阪環状線など東海道本線に隣接する各線に投入されている。アコモ改善車も出ており、まだまだ残りそうな気がする。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{757C3EA4-7222-4800-AB0B-34E137EC90BD}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系 オレンジ-->
+	<contribution type="trainCar" id="{39C6DEAB-E46E-46AB-9D7C-DD9F5BB49B9B}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103_L" />
+		<spriteType name="colorMapped">
+
+			<map from="255,0,0" to="255,128,0"/>
+			<map from="128,0,0" to="192,92,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{39C6DEAB-E46E-46AB-9D7C-DD9F5BB49B9B}">
+		<company>JR West</company>
+		<type>103 Series</type>
+		<name>Orange (stripe)</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両だが、今もJR Westには大量に残っている。主に大阪環状線など東海道本線に隣接する各線に投入されている。アコモ改善車も出ており、まだまだ残りそうな気がする。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{39C6DEAB-E46E-46AB-9D7C-DD9F5BB49B9B}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系高帯 オレンジ-->
+	<contribution type="trainCar" id="{4EC47FBE-50BB-4BB6-A635-F539BD7F9696}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103_Lh" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="255,128,0"/>
+			<map from="128,0,0" to="192,92,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{4EC47FBE-50BB-4BB6-A635-F539BD7F9696}">
+		<company>JR West</company>
+		<type>103 Series</type>
+		<name>Orange (high/stripe)</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両だが、今もJR Westには大量に残っている。主に大阪環状線など東海道本線に隣接する各線に投入されている。アコモ改善車も出ており、まだまだ残りそうな気がする。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{4EC47FBE-50BB-4BB6-A635-F539BD7F9696}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系高 オレンジ-->
+	<contribution type="trainCar" id="{F36364AB-A04D-417B-AEDF-A6001776868E}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="103_h" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="255,128,0"/>
+			<map from="128,0,0" to="192,92,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{F36364AB-A04D-417B-AEDF-A6001776868E}">
+		<company>JR West</company>
+		<type>103 Series</type>
+		<name>Orange (high driver's seat)</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両だが、今もJR Westには大量に残っている。主に大阪環状線など東海道本線に隣接する各線に投入されている。アコモ改善車も出ており、まだまだ残りそうな気がする。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{F36364AB-A04D-417B-AEDF-A6001776868E}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系延命オレンジ-->
+	<contribution type="trainCar" id="{824FEBCF-DA7E-4F15-82BD-4FF84ADF2081}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="n103" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="255,128,0"/>
+			<map from="128,0,0" to="192,92,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{824FEBCF-DA7E-4F15-82BD-4FF84ADF2081}">
+		<company>JR West</company>
+		<type>103 Series (refurbished)</type>
+		<name>Orange</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両だが、今もJR Westには大量に残っている。主に大阪環状線など東海道本線に隣接する各線に投入されている。アコモ改善車も出ており、まだまだ残りそうな気がする。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{824FEBCF-DA7E-4F15-82BD-4FF84ADF2081}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系延命オレンジ高-->
+	<contribution type="trainCar" id="{927DFD1A-BC83-4D69-9C4A-43849E32A6A3}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="n103_h" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="255,128,0"/>
+			<map from="128,0,0" to="192,92,0"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{927DFD1A-BC83-4D69-9C4A-43849E32A6A3}">
+		<company>JR West</company>
+		<type>103 Series (refurbished)</type>
+		<name>Orange (high driver's seat)</name>
+		<author>Hima</author>
+		<description>
+国鉄で製作された車両だが、今もJR Westには大量に残っている。主に大阪環状線など東海道本線に隣接する各線に投入されている。アコモ改善車も出ており、まだまだ残りそうな気がする。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{927DFD1A-BC83-4D69-9C4A-43849E32A6A3}c"/>
+		</composition>
+	</contribution>
+
+	<!-- 103系3500更新ワインレッド-->
+	<contribution type="trainCar" id="{601EB279-695B-4A1C-AC30-501BB922FCAB}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="n103" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="255,0,128"/>
+			<map from="128,0,0" to="213,0,106"/>
+		</spriteType>
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<contribution type="train" id="{601EB279-695B-4A1C-AC30-501BB922FCAB}">
+		<company>JR West</company>
+		<type>103 Series 3500 Model</type>
+		<name>Wine Red</name>
+		<author>Hima</author>
+		<description>
+電化された播但線にアコモ更新工事を行い２両編成化され、ニューカラーのワインレッドをまとった103系が登場した。系式が多少変わり3500番台となった。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{601EB279-695B-4A1C-AC30-501BB922FCAB}c"/>
+		</composition>
+	</contribution>
+
+	<!-- 103系広島-->
+	<contribution type="trainCar" id="{D58C512B-EF18-4f09-ABD6-4548F51FC8F4}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="103hiro.bmp" />
+		</sprite>
+		<capacity>100</capacity> 
+	</contribution>
+
+	<contribution type="train" id="{D58C512B-EF18-4f09-ABD6-4548F51FC8F4}">
+		<company>JR West</company>
+		<type>103 Series</type>
+		<name>Hiroshima Colors</name>
+		<author>Hima</author>
+		<speed>medium</speed>  
+		<description>
+広島運転所の103系。山陽・呉・可部線を走る。広島地区のラッシュ時に威力を発揮。</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{D58C512B-EF18-4f09-ABD6-4548F51FC8F4}c"/>
+		</composition>
+	</contribution>
+	<!-- 103系岡山-->
+	<contribution type="trainCar" id="{3CEAE6F4-3D11-4aef-B301-4D5236B380F6}c">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="103oka.bmp" />
+		</sprite>
+		<capacity>100</capacity> 
+	</contribution>
+
+	<contribution type="train" id="{3CEAE6F4-3D11-4aef-B301-4D5236B380F6}">
+		<company>JR West</company>
+		<type>103 Series</type>
+		<name>Okayama Colors</name>
+		<author>Hima</author>
+		<speed>medium</speed>  
+		<description>
+岡山電車区の103系。ウグイス地に白のラインが入る。主に三原～岡山間の運用。</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{3CEAE6F4-3D11-4aef-B301-4D5236B380F6}c"/>
+		</composition>
+	</contribution>
+	<!-- 165系-->
+	<contribution type="trainCar" id="{0979B717-64B3-419c-B12E-B5E5BB91E5F6}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="165sho" />
+		</sprite>
+		<capacity>90</capacity> 
+	</contribution>
+
+	<contribution type="train" id="{0C7E97A3-5F15-4694-92F5-8905846A8305}">
+		<company>JR West</company>
+		<type>165 Series</type>
+		<name>Shonan Color</name>
+		<author>Min</author>
+		<speed>medium</speed>  
+		<description>急行型電車。現在この色での定期運用はないはず。</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{0979B717-64B3-419c-B12E-B5E5BB91E5F6}"/>
+		</composition>
+	</contribution>
+	
+	
+	<!-- 221系用の中間車両 -->
+	<contribution type="trainCar" id="{CB6DB6B7-BBD8-4DAC-A2DF-CD13797A04EA}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="221-2.bmp" />
+		</sprite>
+		<capacity>140</capacity>
+	</contribution>
+	
+	<!-- 221系用の先頭車両 -->
+	<contribution type="trainCar" id="{FD9630C0-3C48-4279-9480-59B791024B6E}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="221.bmp" />
+		</sprite>
+		<capacity>140</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{AE18014C-4049-4FA8-997E-D2CEF86DDAA5}">
+		<company>JR West</company>
+		<type>221 Series</type>
+		<name></name>
+		<author>ima</author>
+		<description>
+JR Westに転換された後、新快速用電車として登場した。今はその座を223系に譲り、持ち味の設備のよさをウリに各地の快速電車に使用されている。
+		</description>
+		<price>500</price>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{FD9630C0-3C48-4279-9480-59B791024B6E}"/>
+			<body carRef="{CB6DB6B7-BBD8-4DAC-A2DF-CD13797A04EA}"/>
+			<tail carRef="{FD9630C0-3C48-4279-9480-59B791024B6E}"/>
+		</composition>
+	</contribution>
+	<!-- 113系(湘南色) -->
+	<contribution type="trainCar" id="{72BBFF84-714E-4f94-BCBD-B7261D285544}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="113sho" />
+		</sprite>
+		<capacity>99</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{74783521-233A-4e40-8CDD-296816AF2D4A}">
+		<company>JR West</company>
+		<type>113 Series</type>
+		<name>Shonan Color</name>
+		<author>Hima</author>
+		<description>
+JR Westでは主にJR京都線、嵯峨野線などで使用されている。しかし、現在走っているほぼ全ての車両は110km/h運転対応の5000番台である。
+		</description>
+		<price>1</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{72BBFF84-714E-4f94-BCBD-B7261D285544}"/>
+		</composition>
+	</contribution>
+
+
+
+	<!-- 115系 広島色-->
+	<contribution type="trainCar" id="{27A33107-EBF8-445c-8E97-BBEB77A01713}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="115hir.bmp" />
+		</sprite>
+		<capacity>99</capacity>
+	</contribution>
+
+	<contribution type="train" id="{CACFA13E-CF0B-4aa3-BBF2-1160F39D7EEE}">
+		<company>JR West</company>
+		<type>115 Series</type>
+		<name>Hiroshima Colors</name>
+		<author>Min</author>
+		<speed>medium</speed> 
+		<capacity>95</capacity> 
+		<description>主に山陽本線の、広島・山口県を走る電車。揺れるわトイレがない車両があるわ・・・。</description>
+
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<body carRef="{27A33107-EBF8-445c-8E97-BBEB77A01713}"/>
+		</composition>
+	</contribution>
+
+
+
+	<!-- 281系先頭車両 -->
+	<contribution type="trainCar" id="{28A61792-A817-408a-8020-E60F09EDDE14}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="281a.bmp" />
+		</sprite>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 281系中間車両 -->
+	<contribution type="trainCar" id="{28A61792-A817-408a-8020-E60F09EDDE14}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="281b.bmp" />
+		</sprite>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 281系後尾車両 -->
+	<contribution type="trainCar" id="{28A61792-A817-408a-8020-E60F09EDDE14}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{28A61792-A817-408a-8020-E60F09EDDE14}-h"/>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{28A61792-A817-408a-8020-E60F09EDDE14}">
+		<company>JR West</company>
+		<type>281 Series</type>
+		<name>Haruka</name>
+		<author>Hima</author>
+		<description>
+関西空港開業に合わせて運転を開始する関空アクセス特急「はるか」用に製作された車両。JR京都線～梅田貨物線～大阪環状線～阪和線～関西空港線と多彩な線区を通って空港と京都を結ぶ。
+		</description>
+		<price>1</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{28A61792-A817-408a-8020-E60F09EDDE14}-h"/>
+			<body carRef="{28A61792-A817-408a-8020-E60F09EDDE14}-m"/>
+			<tail carRef="{28A61792-A817-408a-8020-E60F09EDDE14}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 485系先頭車両 -->
+	<contribution type="trainCar" id="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="485a" />
+		</sprite>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 485系中間車両 -->
+	<contribution type="trainCar" id="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="485b" />
+		</sprite>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 485系後尾車両 -->
+	<contribution type="trainCar" id="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-h"/>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}">
+		<company>JR West</company>
+		<type>485 Series</type>
+		<name>No Front Bonnet; Raicho</name>
+		<author>Hima</author>
+		<description>
+昭和43年に登場した交直両用特急電車。登場以来数々の特急の代名詞となった。関西では主に「雷鳥」と呼ばれる。
+		</description>
+		<price>1</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-h"/>
+			<body carRef="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-m"/>
+			<tail carRef="{A4285FD3-A30E-46ab-A6D6-AAB0AB629E73}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 583系先頭車両 -->
+	<contribution type="trainCar" id="{34EAB05E-16BD-407f-A546-1CFC1B7EA960}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="583a" />
+		</sprite>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 583系中間車両 -->
+	<contribution type="trainCar" id="{34EAB05E-16BD-407f-A546-1CFC1B7EA960}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="583b" />
+		</sprite>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 583系後尾車両 -->
+	<contribution type="trainCar" id="{34EAB05E-16BD-407f-A546-1CFC1B7EA960}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{34EAB05E-16BD-407f-A546-1CFC1B7EA960}-h"/>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{34EAB05E-16BD-407f-A546-1CFC1B7EA960}">
+		<company>JR West</company>
+		<type>581/583 Series</type>
+		<name>Gekko Type</name>
+		<author>Hima</author>
+		<description>
+高度経済成長のさなか車両運用の効率化を図るため登場した世界で初めての電車寝台特急。愛称となった「月光」をはじめ、「ゆうづる」や「彗星」など数々の特急として運転された。現在、定期運用されるのは大阪～新潟間の急行「きたぐに」だけである。
+		</description>
+		<price>1</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{34EAB05E-16BD-407f-A546-1CFC1B7EA960}-h"/>
+			<body carRef="{34EAB05E-16BD-407f-A546-1CFC1B7EA960}-m"/>
+			<tail carRef="{34EAB05E-16BD-407f-A546-1CFC1B7EA960}-t"/>
+		</composition>
+	</contribution>
+	<!-- 283系先頭車両 -->
+	<contribution type="trainCar" id="{590AEC5B-F34F-40df-ADD2-62CF53A7086A}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="283a.bmp" />
+		</sprite>
+		<capacity>56</capacity>
+	</contribution>
+	
+	<!-- 283系中間車両 -->
+	<contribution type="trainCar" id="{590AEC5B-F34F-40df-ADD2-62CF53A7086A}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="283b.bmp" />
+		</sprite>
+		<capacity>56</capacity>
+	</contribution>
+	
+	<!-- 283系後尾車両 -->
+	<contribution type="trainCar" id="{590AEC5B-F34F-40df-ADD2-62CF53A7086A}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{590AEC5B-F34F-40df-ADD2-62CF53A7086A}-h"/>
+		<capacity>56</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{590AEC5B-F34F-40df-ADD2-62CF53A7086A}">
+		<company>JR West</company>
+		<type>283 Series</type>
+		<name>Ocean Arrow</name>
+		<author>Hima</author>
+		<description>
+京都・新大阪～新宮間の特急「オーシャンアロー」に使用されている制御振り子式特急車。併結が可能な先頭車もあり、多客期の増解結に対応している。
+		</description>
+		<price>100</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{590AEC5B-F34F-40df-ADD2-62CF53A7086A}-h"/>
+			<body carRef="{590AEC5B-F34F-40df-ADD2-62CF53A7086A}-m"/>
+			<tail carRef="{590AEC5B-F34F-40df-ADD2-62CF53A7086A}-t"/>
+		</composition>
+	</contribution>
+
+
+
+	<!-- 223系0番台先頭車両 -->
+	<contribution type="trainCar" id="{9DB3034D-D1C6-459c-A7ED-D169005F38E3}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="223-0a.bmp" />
+		</sprite>
+		<capacity>132</capacity>
+	</contribution>
+	
+	<!-- 223系0番台中間車両 -->
+	<contribution type="trainCar" id="{9DB3034D-D1C6-459c-A7ED-D169005F38E3}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="223-0b.bmp" />
+		</sprite>
+		<capacity>143</capacity>
+	</contribution>
+	
+	<!-- 223系0番台後尾車両 -->
+	<contribution type="trainCar" id="{9DB3034D-D1C6-459c-A7ED-D169005F38E3}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{9DB3034D-D1C6-459c-A7ED-D169005F38E3}-h"/>
+		<capacity>140</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{9DB3034D-D1C6-459c-A7ED-D169005F38E3}">
+		<company>JR West</company>
+		<type>223 Series 0 Model</type>
+		<name>Kansai Airport Rapid Service; Wing</name>
+		<author>Hima</author>
+		<description>
+阪神大震災によって失った車両を補うために予定よりも早く登場した車両。以前は関空特快「ウイング」に使用されていたが、現在は主に関空快速や紀州路快速として運転されている。
+		</description>
+		<price>110</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{9DB3034D-D1C6-459c-A7ED-D169005F38E3}-h"/>
+			<body carRef="{9DB3034D-D1C6-459c-A7ED-D169005F38E3}-m"/>
+			<tail carRef="{9DB3034D-D1C6-459c-A7ED-D169005F38E3}-t"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 223系1000番台先頭車両 -->
+	<contribution type="trainCar" id="{833B259F-DD28-4b64-9C53-1D4BBB6FB23F}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="223-1000a.bmp" />
+		</sprite>
+		<capacity>138</capacity>
+	</contribution>
+	
+	<!-- 223系1000番台中間車両 -->
+	<contribution type="trainCar" id="{833B259F-DD28-4b64-9C53-1D4BBB6FB23F}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="223-1000b.bmp" />
+		</sprite>
+		<capacity>138</capacity>
+	</contribution>
+	
+	<!-- 223系1000番台後尾車両 -->
+	<contribution type="trainCar" id="{833B259F-DD28-4b64-9C53-1D4BBB6FB23F}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{833B259F-DD28-4b64-9C53-1D4BBB6FB23F}-h"/>
+		<capacity>138</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{833B259F-DD28-4b64-9C53-1D4BBB6FB23F}">
+		<company>JR West</company>
+		<type>223 Series 1000 Model</type>
+		<name></name>
+		<author>Hima</author>
+		<description>
+JR京都線の新快速を130km/hで運転するために製作された車両。座席が221系より減ったため補助座席を設けている。主に8両から12両で運転されている。
+		</description>
+		<price>100</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{833B259F-DD28-4b64-9C53-1D4BBB6FB23F}-h"/>
+			<body carRef="{833B259F-DD28-4b64-9C53-1D4BBB6FB23F}-m"/>
+			<tail carRef="{833B259F-DD28-4b64-9C53-1D4BBB6FB23F}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 500系先頭車両 -->
+	<contribution type="trainCar" id="{C7E851E8-8F28-4e10-93FD-8BDABC0A7A6F}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train500a" />
+		</sprite>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<!-- 500系中間車両 -->
+	<contribution type="trainCar" id="{C7E851E8-8F28-4e10-93FD-8BDABC0A7A6F}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train500b" />
+		</sprite>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<!-- 500系後尾車両 -->
+	<contribution type="trainCar" id="{C7E851E8-8F28-4e10-93FD-8BDABC0A7A6F}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{C7E851E8-8F28-4e10-93FD-8BDABC0A7A6F}-h"/>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{C7E851E8-8F28-4e10-93FD-8BDABC0A7A6F}">
+		<company>JR West</company>
+		<type>500 Series</type>
+		<name>500 Series Nozomi</name>
+		<author>Kigami</author>
+		<description>
+1997年山陽新幹線でデビューし当時のフランス・TGVと並ぶ世界最高の300㎞／hでの営業運転を開始した
+先頭形状が従来新幹線より超ロングノーズになり、１５／２７ｍもの長さに達する。
+車体断面もよりチューブ化が進み、航空機を思わせる車体形状をしている。
+「グッドデザイン賞」、「1998年ブルーリボン賞」「1998年ブルネル賞奨励賞」を受賞。
+16両編成。
+		</description>
+		<price>100</price>
+		<speed>superb</speed>
+		<composition>
+			<head carRef="{C7E851E8-8F28-4e10-93FD-8BDABC0A7A6F}-h"/>
+			<body carRef="{C7E851E8-8F28-4e10-93FD-8BDABC0A7A6F}-m"/>
+			<tail carRef="{C7E851E8-8F28-4e10-93FD-8BDABC0A7A6F}-t"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 500系(2)先頭車両 -->
+	<contribution type="trainCar" id="{C07DEFB7-001D-48de-9B73-79002176DFE8}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="500a" />
+		</sprite>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<!-- 500系(2)中間車両 -->
+	<contribution type="trainCar" id="{C07DEFB7-001D-48de-9B73-79002176DFE8}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="500b" />
+		</sprite>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<!-- 500系(2)後尾車両 -->
+	<contribution type="trainCar" id="{C07DEFB7-001D-48de-9B73-79002176DFE8}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{C07DEFB7-001D-48de-9B73-79002176DFE8}-h"/>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{C07DEFB7-001D-48de-9B73-79002176DFE8}">
+		<company>JR West</company>
+		<type>500 Series</type>
+		<name>Nozomi</name>
+		<author>1500v</author>
+		<description>
+山陽区間では最高速度300km/hで運転される、まさに超高速な列車。
+		</description>
+		<price>100</price>
+		<speed>superb</speed>
+		<composition>
+			<head carRef="{C07DEFB7-001D-48de-9B73-79002176DFE8}-h"/>
+			<body carRef="{C07DEFB7-001D-48de-9B73-79002176DFE8}-m"/>
+			<tail carRef="{C07DEFB7-001D-48de-9B73-79002176DFE8}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 700系先頭車両 -->
+	<contribution type="trainCar" id="{98F356BA-CC4A-4408-A79A-C1518259C3AD}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="shink700a" />
+		</sprite>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<!-- 700系中間車両 -->
+	<contribution type="trainCar" id="{98F356BA-CC4A-4408-A79A-C1518259C3AD}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="shink700b" />
+		</sprite>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<!-- 700系後尾車両 -->
+	<contribution type="trainCar" id="{98F356BA-CC4A-4408-A79A-C1518259C3AD}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{98F356BA-CC4A-4408-A79A-C1518259C3AD}-h"/>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{98F356BA-CC4A-4408-A79A-C1518259C3AD}">
+		<company>JR West</company>
+		<type>700 Series</type>
+		<name>Nozomi</name>
+		<author>qra_ra</author>
+		<description>
+JR東海とJR Westの共同開発による東海道・山陽新幹線用車両。
+		</description>
+		<price>100</price>
+		<speed>superb</speed>
+		<composition>
+			<head carRef="{98F356BA-CC4A-4408-A79A-C1518259C3AD}-h"/>
+			<body carRef="{98F356BA-CC4A-4408-A79A-C1518259C3AD}-m"/>
+			<tail carRef="{98F356BA-CC4A-4408-A79A-C1518259C3AD}-t"/>
+		</composition>
+	</contribution>
+	<!-- 700系ひかりRail Star先頭車両 -->
+	<contribution type="trainCar" id="{3895E321-4D84-43eb-ADC4-64A52BF225D6}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="shink700RailStar_a.bmp" />
+		</sprite>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<!-- 700系ひかりRail Star中間車両 -->
+	<contribution type="trainCar" id="{3895E321-4D84-43eb-ADC4-64A52BF225D6}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="shink700RailStar_b.bmp" />
+		</sprite>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<!-- 700系ひかりRail Star後尾車両 -->
+	<contribution type="trainCar" id="{3895E321-4D84-43eb-ADC4-64A52BF225D6}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{3895E321-4D84-43eb-ADC4-64A52BF225D6}-h"/>
+		<capacity>83</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{3895E321-4D84-43eb-ADC4-64A52BF225D6}">
+		<company>JR West</company>
+		<type>700 Series</type>
+		<name>Hikari Rail Star</name>
+		<author>qra_ra</author>
+		<description>
+山陽区間限定の「ひかりRail Star」用の700系E編成。8両編成。
+左右2人掛けの指定席やコンパートメント、サイレンスカーなどが特徴。
+最高速度は285km/h。
+		</description>
+		<price>100</price>
+		<speed>superb</speed>
+		<composition>
+			<head carRef="{3895E321-4D84-43eb-ADC4-64A52BF225D6}-h"/>
+			<body carRef="{3895E321-4D84-43eb-ADC4-64A52BF225D6}-m"/>
+			<tail carRef="{3895E321-4D84-43eb-ADC4-64A52BF225D6}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 0系先頭車両 -->
+	<contribution type="trainCar" id="{7BCF90BF-2FA5-4e88-B50D-91BBDA656C8A}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train200a" />
+		<spriteType name="colorMapped">
+<map from="238,216,198" to="243,243,235"/>
+<map from="252,255,226" to="253,253,245"/>
+<map from="223,223,191" to="233,233,225"/>
+<map from="62,162,32" to="31,63,159"/>
+<map from="63,127,63" to="0,31,127"/>
+
+		</spriteType>
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+
+	<!-- 0系中間車両 -->
+	<contribution type="trainCar" id="{7BCF90BF-2FA5-4e88-B50D-91BBDA656C8A}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train200b" />
+
+		<spriteType name="colorMapped">
+<map from="223,223,191" to="233,233,225"/>
+<map from="62,162,32" to="31,63,159"/>
+<map from="252,255,226" to="253,253,245"/>
+<map from="238,216,198" to="243,243,235"/>
+
+		</spriteType>
+		</sprite>
+		<capacity>80</capacity>
+	</contribution>
+	
+	<!-- 0系後尾車両 -->
+	<contribution type="trainCar" id="{7BCF90BF-2FA5-4e88-B50D-91BBDA656C8A}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{7BCF90BF-2FA5-4e88-B50D-91BBDA656C8A}-h"/>
+		<capacity>60</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{7BCF90BF-2FA5-4e88-B50D-91BBDA656C8A}">
+		<company>JR West</company>
+		<type>0 Series</type>
+		<name>Hikari, Kodama</name>
+		<author>Kigami (cars by Ayase)</author>
+		<description>新幹線最初の東海道・山陽新幹線用車両</description>
+		<price>100</price>
+		<speed>superb</speed> 
+		<composition>
+			<head carRef="{7BCF90BF-2FA5-4e88-B50D-91BBDA656C8A}-h"/>
+			<body carRef="{7BCF90BF-2FA5-4e88-B50D-91BBDA656C8A}-m"/>
+			<tail carRef="{7BCF90BF-2FA5-4e88-B50D-91BBDA656C8A}-t"/>
+		</composition>
+	</contribution>
+	<!-- 922系先頭車両 -->
+	<contribution type="trainCar" id="{6CF0D819-D01C-4fb5-BAF8-B1944499582B}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train200Sa" />
+		<spriteType name="colorMapped">
+			<map from="62,162,32" to="63,95,223"/>
+			<map from="63,127,63" to="31,63,191"/>
+		</spriteType>
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+
+	<!-- 922系中間車両 -->
+	<contribution type="trainCar" id="{6CF0D819-D01C-4fb5-BAF8-B1944499582B}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train200Sb" />
+		<spriteType name="colorMapped">
+			<map from="62,162,32" to="63,95,223"/>
+		</spriteType>
+		</sprite>
+		<capacity>80</capacity>
+	</contribution>
+	
+	<!-- 922系後尾車両 -->
+	<contribution type="trainCar" id="{6CF0D819-D01C-4fb5-BAF8-B1944499582B}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{6CF0D819-D01C-4fb5-BAF8-B1944499582B}-h"/>
+		<capacity>60</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{6CF0D819-D01C-4fb5-BAF8-B1944499582B}">
+		<company>JR West</company>
+		<type>922 Series</type>
+		<name>Dr.Yellow</name>
+		<author>Kigami (cars by Ayase)</author>
+		<description>東海道・山陽新幹線用のDr.Yellow</description>
+		<price>100</price>
+		<speed>superb</speed> 
+		<composition>
+			<head carRef="{6CF0D819-D01C-4fb5-BAF8-B1944499582B}-h"/>
+			<body carRef="{6CF0D819-D01C-4fb5-BAF8-B1944499582B}-m"/>
+			<tail carRef="{6CF0D819-D01C-4fb5-BAF8-B1944499582B}-t"/>
+		</composition>
+	</contribution>
+	<!-- 100系リニューアル先頭車両 -->
+	<contribution type="trainCar" id="{2003-0211-KIGAMI-TrainImg-100re}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train100a" />
+		</sprite>
+		<capacity>52</capacity>
+	</contribution>
+	<!-- 100系リニューアル中間車両 -->
+	<contribution type="trainCar" id="{2003-0211-KIGAMI-TrainImg-100re}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="Train100b" />
+		</sprite>
+		<capacity>80</capacity>
+	</contribution>
+	<!-- 100系リニューアル後尾車両 -->
+	<contribution type="trainCar" id="{2003-0211-KIGAMI-TrainImg-100re}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{2003-0211-KIGAMI-TrainImg-100re}-h"/>
+		<capacity>60</capacity>
+	</contribution>
+
+	<contribution type="train" id="{2003-0211-KIGAMI-TrainImg-100re}">
+		<company>JR West</company>
+		<type>100 Series</type>
+		<name>Hikari, Kodama Refurbished Cars</name>
+		<author>Kigami</author>
+		<description>現役を退いた100系を改造、リニューアルして山陽新幹線区間を主に4,6両で運行されています</description>
+		<price>100</price>
+		<speed>superb</speed> 
+		<composition>
+			<head carRef="{2003-0211-KIGAMI-TrainImg-100re}-h"/>
+			<body carRef="{2003-0211-KIGAMI-TrainImg-100re}-m"/>
+			<tail carRef="{2003-0211-KIGAMI-TrainImg-100re}-t"/>
+		</composition>
+	</contribution>
+	<!-- Win350先頭車両博多側 -->
+	<contribution type="trainCar" id="{2003-0211-KIGAMI-TrainImg-500-900}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="Win350h.bmp" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+
+	<!-- Win350中間車両 -->
+	<contribution type="trainCar" id="{2003-0211-KIGAMI-TrainImg-500-900}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="Win350m.bmp" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+
+	<!-- Win350先頭車両新大阪側 -->
+	<contribution type="trainCar" id="{2003-0211-KIGAMI-TrainImg-500-900}-t">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="Win350t.bmp" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+
+	<contribution type="train" id="{2003-0211-KIGAMI-TrainImg-500-900}">
+		<company>JR West</company>
+		<type>500 Series 900 Model</type>
+		<name>Win350</name>
+		<author>Kigami</author>
+		<description>JR Westの新幹線試験車両</description>
+		<price>100</price>
+		<speed>superb</speed> 
+		<composition>
+			<head carRef="{2003-0211-KIGAMI-TrainImg-500-900}-h"/>
+			<body carRef="{2003-0211-KIGAMI-TrainImg-500-900}-m"/>
+			<tail carRef="{2003-0211-KIGAMI-TrainImg-500-900}-t"/>
+		</composition>
+	</contribution>
+
+
+
+	<!-- 415先頭車両 -->
+	<contribution type="trainCar" id="{0406060154}nanaoA">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="415nanaA.bmp" />
+		</sprite>
+		<capacity>120</capacity>
+	</contribution>
+
+	<!-- 415中間車両 -->
+	<contribution type="trainCar" id="{0406060154}nanaoB">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="415nanab.bmp" />
+		</sprite>
+		<capacity>120</capacity>
+	</contribution>
+
+
+	<!-- 415後尾車両 -->
+	<contribution type="trainCar" id="{0406060154}nanaoC">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{0406060154}nanaoA"/>
+		<capacity>120</capacity>
+	</contribution>
+
+	<contribution type="train" id="{0406060154}nanao">
+		<company>JR West</company>
+		<type>415 Series 800 Model</type>
+		<name>Nanao Line</name>
+		<author>Hima</author>
+		<description>七尾線用415系。</description>
+		<price>100</price>
+		<speed>medium</speed> 
+		<composition>
+			<head carRef="{0406060154}nanaoA"/>
+			<body carRef="{0406060154}nanaoB"/>
+			<tail carRef="{0406060154}nanaoC"/>
+		</composition>
+	</contribution>
+
+</plug-in>

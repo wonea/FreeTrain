@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+<author>Shikashika</author>
+<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+<depend on="shikashika.freetrain.traincar.locomotive"/>
+<depend on="shikashika.freetrain.traincar.passenger"/>
+<depend on="shikashika.freetrain.traincar.freight"/>
+
+<title>Trains (JR East)</title>
+
+<!-- 旅客列車の定義 -->
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-ED75-700-LocalTrein-50}">
+		<company>JR East</company>
+		<type>ED 75</type>
+		<name>700 Model Local Train (50 Series)</name>
+		<author>Shikashika</author>
+		<description>50 Series local passenger train (OHA50, OHAFU50) pulled by the electric locomotive ED75-700.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-ED75-700}"/>
+			<car char="客" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oha50}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu50}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu50-T}"/>
+			
+			<composition>電</composition>
+			<composition>電急</composition>
+			<composition>電緩急</composition>
+			<composition>電緩客急</composition>
+			<composition>電緩客客急</composition>
+			<composition>電緩客緩客急</composition>
+			<composition>電緩客客緩客急</composition>
+			<composition>電緩客緩客緩客急</composition>
+			<composition>電緩客客緩客緩客急</composition>
+			<composition>電緩客客緩客緩緩客急</composition>
+			<composition>電緩客客緩客緩緩客客急</composition>
+			<composition>電緩客客緩客緩緩緩客客急</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF81-hokuto-LocalTrein-50}">
+		<company>JR East</company>
+		<type>EF 81</type>
+		<name>Hokutosei Colors Local Train (50 Series)</name>
+		<author>Shikashika</author>
+		<description>50 Series local passenger train (OHA50, OHAFU50) pulled by the electric locomotive ED81 (Hokutosei coating).
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-hokuto}"/>
+			<car char="客" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oha50}"/>
+			<car char="緩" ref="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu50}"/>
+			<car char="急" ref="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu50-T}"/>
+			
+			<composition>電</composition>
+			<composition>電急</composition>
+			<composition>電緩急</composition>
+			<composition>電緩客急</composition>
+			<composition>電緩客客急</composition>
+			<composition>電緩客緩客急</composition>
+			<composition>電緩客客緩客急</composition>
+			<composition>電緩客緩客緩客急</composition>
+			<composition>電緩客客緩客緩客急</composition>
+			<composition>電緩客客緩客緩緩客急</composition>
+			<composition>電緩客客緩客緩緩客客急</composition>
+			<composition>電緩客客緩客緩緩緩客客急</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF81-Cassiopeia-1}">
+		<company>JR East</company>
+		<type>EF 81</type>
+		<name>Cassiopeia</name>
+		<author>Shikashika</author>
+		<description>All two-story sleeper car pulled by the electric locomotive EF81 (Cassiopeia coating).
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-cassiopeia}"/>
+			<car char="展" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuronehuE26-1}"/>
+			<car char="賓" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE26-1}"/>
+			<car char="食" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mashiE26-1}"/>
+			<car char="零" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-1}"/>
+			<car char="百" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-101}"/>
+			<car char="四" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-401}"/>
+			<car char="交" ref="{FreeTrain-Shika-PassengerCar-TrainCar-kahahuE26-1}"/>
+			<car char="予" ref="{FreeTrain-Shika-PassengerCar-TrainCar-kaya27-501}"/>
+
+			<composition>電</composition>
+			<composition>電交</composition>
+			<composition>電展交</composition>
+			<composition>電展食交</composition>
+			<composition>電展食百交</composition>
+			<composition>電展賓食百交</composition>
+			<composition>電展賓食百四交</composition>
+			<composition>電展賓食百四零交</composition>
+			<composition>電展賓食百四零零交</composition>
+			<composition>電展賓食百四零零零交</composition>
+			<composition>電展賓食百四零零零四交</composition>
+			<composition>電展賓食百四零零零四零交</composition>
+			<composition>電展賓食百四零零零四零零交</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-EF81-Cassiopeia-2}">
+		<company>JR East</company>
+		<type>EF 81</type>
+		<name>Cassiopeia (reserve)</name>
+		<author>Shikashika</author>
+		<description>All two-story sleeper car pulled by the electric locomotive EF81 (Cassiopeia coating). The power car is a reserve KAYA27.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="電" ref="{FreeTrain-Shika-ElectricLocomotive-TrainCar-EF81-cassiopeia}"/>
+			<car char="展" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuronehuE26-1}"/>
+			<car char="賓" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE26-1}"/>
+			<car char="食" ref="{FreeTrain-Shika-PassengerCar-TrainCar-mashiE26-1}"/>
+			<car char="零" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-1}"/>
+			<car char="百" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-101}"/>
+			<car char="四" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuroneE27-401}"/>
+			<car char="交" ref="{FreeTrain-Shika-PassengerCar-TrainCar-kahahuE26-1}"/>
+			<car char="予" ref="{FreeTrain-Shika-PassengerCar-TrainCar-kaya27-501}"/>
+
+			<composition>電</composition>
+			<composition>電予</composition>
+			<composition>電展予</composition>
+			<composition>電展食予</composition>
+			<composition>電展食百予</composition>
+			<composition>電展賓食百予</composition>
+			<composition>電展賓食百四予</composition>
+			<composition>電展賓食百四零予</composition>
+			<composition>電展賓食百四零零予</composition>
+			<composition>電展賓食百四零零零予</composition>
+			<composition>電展賓食百四零零零四予</composition>
+			<composition>電展賓食百四零零零四零予</composition>
+			<composition>電展賓食百四零零零四零零予</composition>
+		</config>
+	</contribution>
+
+<!-- 貨物列車の定義 -->
+
+</plug-in>

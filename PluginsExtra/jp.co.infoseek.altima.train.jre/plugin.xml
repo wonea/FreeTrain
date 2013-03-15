@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Late JRE205 Series Trains Plugin</title>
+	<author>Altima</author>
+	<homepage>http://zero-d.web.infoseek.co.jp/</homepage>
+
+
+	<contribution type="picture" id="{AltimaTRAINS-EC-JREAST-205PIC01}">
+		<picture src="205b.bmp"/>
+	</contribution>
+
+
+	<!-- 205後期京葉線先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-JREAST-205KYTC1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>136</capacity>
+		<sprite origin="0,0">
+			<picture src="205ky.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 205後期京葉線中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-JREAST-205KYMI1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>144</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="123,222,49" to="247,33,115"/>
+<map from="90,165,33" to="214,24,99"/>
+<map from="140,239,49" to="255,33,115"/>
+<map from="99,173,33" to="222,24,99"/>
+<map from="107,189,41" to="231,33,107"/>
+<map from="99,222,0" to="247,33,115"/>
+<map from="74,165,0" to="214,24,99"/>
+<map from="115,214,41" to="239,33,107"/>
+<map from="0,140,239" to="255,33,115"/>
+<map from="0,123,222" to="247,33,115"/>
+<map from="0,90,165" to="214,24,99"/>
+<map from="0,99,173" to="222,24,99"/>
+<map from="107,239,0" to="255,33,115"/>
+<map from="74,173,0" to="222,24,99"/>
+<map from="0,107,189" to="231,33,107"/>
+<map from="82,189,0" to="231,33,107"/>
+<map from="90,214,0" to="239,33,107"/>
+<map from="0,115,214" to="239,33,107"/>
+			</spriteType>
+			<picture ref="{AltimaTRAINS-EC-JREAST-205PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 205後期京葉線後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-JREAST-205KYTC2}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-JREAST-205KYTC1}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-JREAST-205KY}">
+		<company>JR East</company>
+		<type>205 Series Late Type</type>
+		<name>Keiyo Line</name>
+		<author>Altima</author>
+		<description>
+
+1990年の京葉線東京-蘇我間全通の際に205系が新製投入された。投入された車両は、従来車と大幅にイメージが異なるFRP製の白いフロントマスクになっているが、番台区分はされていない。</description>
+		<fare>410</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-JREAST-205KYTC1}"/>
+			<body carRef="{AltimaTRAINS-EC-JREAST-205KYMI1}"/>
+			<tail carRef="{AltimaTRAINS-EC-JREAST-205KYTC2}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 205後期武蔵野線先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-JREAST-205MSTC1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>136</capacity>
+		<sprite origin="0,0">
+			<picture src="205ms.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 205後期武蔵野線中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-JREAST-205MSMI1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>144</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="123,222,49" to="247,107,24"/>
+<map from="90,165,33" to="214,90,24"/>
+<map from="140,239,49" to="255,107,24"/>
+<map from="99,173,33" to="222,99,24"/>
+<map from="107,189,41" to="231,99,24"/>
+<map from="99,222,0" to="247,107,24"/>
+<map from="74,165,0" to="214,90,24"/>
+<map from="115,214,41" to="239,107,24"/>
+<map from="0,140,239" to="74,8,33"/>
+<map from="0,123,222" to="66,8,33"/>
+<map from="0,90,165" to="33,0,16"/>
+<map from="0,99,173" to="41,0,16"/>
+<map from="107,239,0" to="255,107,24"/>
+<map from="74,173,0" to="222,99,24"/>
+<map from="0,107,189" to="49,8,24"/>
+<map from="82,189,0" to="231,99,24"/>
+<map from="90,214,0" to="239,107,24"/>
+<map from="0,115,214" to="57,8,24"/>
+			</spriteType>
+			<picture ref="{AltimaTRAINS-EC-JREAST-205PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 205後期武蔵野線後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-JREAST-205MSTC2}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-JREAST-205MSTC1}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-JREAST-205MS}">
+		<company>JR East</company>
+		<type>205 Series Late Type</type>
+		<name>Musashino Line</name>
+		<author>Altima</author>
+		<description>
+1991年の武蔵野線8両編成化に合わせて205系が新製投入された。京葉線に準じた後期型仕様になっているが、前面が銀色、スカート未装備、ドアエンジンの変更など差異も多い。</description>
+		<fare>410</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-JREAST-205MSTC1}"/>
+			<body carRef="{AltimaTRAINS-EC-JREAST-205MSMI1}"/>
+			<tail carRef="{AltimaTRAINS-EC-JREAST-205MSTC2}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 205-500相模線先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-JREAST-205SGTC1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>136</capacity>
+		<sprite origin="0,0">
+			<picture src="205-500a.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 205-500相模線中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-JREAST-205SGMI1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>144</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="123,222,49" to="0,173,247"/>
+<map from="90,165,33" to="0,148,214"/>
+<map from="140,239,49" to="0,181,255"/>
+<map from="99,173,33" to="0,156,222"/>
+<map from="107,189,41" to="0,165,231"/>
+<map from="99,222,0" to="0,173,247"/>
+<map from="74,165,0" to="0,148,214"/>
+<map from="115,214,41" to="0,173,239"/>
+<map from="0,140,239" to="148,231,255"/>
+<map from="0,123,222" to="148,222,247"/>
+<map from="0,90,165" to="123,189,214"/>
+<map from="0,99,173" to="132,198,222"/>
+<map from="107,239,0" to="0,181,255"/>
+<map from="74,173,0" to="0,156,222"/>
+<map from="0,107,189" to="132,206,231"/>
+<map from="82,189,0" to="0,165,231"/>
+<map from="90,214,0" to="0,173,239"/>
+<map from="0,115,214" to="140,214,239"/>
+			</spriteType>
+			<picture ref="{AltimaTRAINS-EC-JREAST-205PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 205-500相模線後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-JREAST-205SGTC2}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-JREAST-205SGTC1}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-JREAST-205SG}">
+		<company>JR East</company>
+		<type>205 Series 500 Model</type>
+		<name>Sagami Line</name>
+		<author>Altima</author>
+		<description>
+1991年の相模線電化の際にこの205系500番台が新製投入された。半自動扉や乗務員支援装置を装備していて、0番台とはまったく異なるフロントマスクを持つ。</description>
+		<fare>410</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-JREAST-205SGTC1}"/>
+			<body carRef="{AltimaTRAINS-EC-JREAST-205SGMI1}"/>
+			<tail carRef="{AltimaTRAINS-EC-JREAST-205SGTC2}"/>
+		</composition>
+	</contribution>
+
+</plug-in>

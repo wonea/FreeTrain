@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY Apart60 '
+	<structure>
+		<category byname="Dormitories"/>
+	</structure>
+	<price>1500</price>
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>80</base>
+	</population>
+	<height>2</height>
+	<size>3,1</size>
+	<computerCannotBuild/>
+'>
+<!ENTITY crWhite '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="255,255,255"/>
+	</spriteType>	
+'>
+<!ENTITY crGray '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="176,170,152"/>
+	</spriteType>	
+'>
+<!ENTITY crKhaki '
+	<spriteType name="hueTransform">
+		<map from="*,0,0" to="188,174,144"/>
+	</spriteType>
+'>
+]>
+<plug-in>
+
+	<title>Apartments</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+		
+	<contribution type="picture" id="{51C14811-A4AD-4251-C477-EA063A504AAD}">
+		<picture src="bldg_apart01b.bmp">
+			<override when="night" src="bldg_apart01b_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{69FD021F-0C33-451A-C477-1FFA68DB615F}">
+		<picture src="bldg_apart02b.bmp">
+			<override when="night" src="bldg_apart02b_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{C9ADB11E-D17D-4F98-C477-82F33B1CCE27}">
+		<picture src="bldg_apart01bd.bmp">
+			<override when="night" src="bldg_apart01bd_n.bmp"/>
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{C5DFE51B-6866-40F4-C477-4AD9BE09162A}">
+		<picture src="bldg_apart02bd.bmp">
+			<override when="night" src="bldg_apart02bd_n.bmp"/>
+		</picture>
+	</contribution>
+		
+<!-- white -->
+	<contribution type="GenericStructure" id="{0916B378-8A3F-4DD3-C477-568137E44244}-00">
+		<group>Low height apartment</group>
+		<design>emergency staircase</design>
+		&Apart60;
+		&crWhite;
+		&crKhaki;
+		<sprite origin="0,0" offset="48">
+			<picture ref="{51C14811-A4AD-4251-C477-EA063A504AAD}"/>
+		</sprite>
+		<sprite origin="64,0" offset="32" opposite="true">
+			<picture ref="{51C14811-A4AD-4251-C477-EA063A504AAD}"/>
+		</sprite>
+		<sprite origin="128,0" offset="48">
+			<picture ref="{51C14811-A4AD-4251-C477-EA063A504AAD}"/>
+		</sprite>
+		<sprite origin="192,0" offset="32" opposite="true">
+			<picture ref="{51C14811-A4AD-4251-C477-EA063A504AAD}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{0916B378-8A3F-4DD3-C477-568137E44244}-04">
+		<group>Low height apartment</group>
+		<design>emergency staircase</design>
+		&Apart60;
+		&crWhite;
+		&crKhaki;
+		<sprite origin="0,64" offset="48">
+			<picture ref="{51C14811-A4AD-4251-C477-EA063A504AAD}"/>
+		</sprite>
+		<sprite origin="64,64" offset="32" opposite="true">
+			<picture ref="{51C14811-A4AD-4251-C477-EA063A504AAD}"/>
+		</sprite>
+		<sprite origin="128,64" offset="48">
+			<picture ref="{51C14811-A4AD-4251-C477-EA063A504AAD}"/>
+		</sprite>
+		<sprite origin="192,64" offset="32" opposite="true">
+			<picture ref="{51C14811-A4AD-4251-C477-EA063A504AAD}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{0916B378-8A3F-4DD3-C477-568137E44244}-08">
+		<group>Low height apartment</group>
+		&Apart60;
+		&crWhite;
+		&crKhaki;
+		<sprite origin="0,0" offset="48">
+			<picture ref="{69FD021F-0C33-451A-C477-1FFA68DB615F}"/>
+		</sprite>
+		<sprite origin="64,0" offset="32" opposite="true">
+			<picture ref="{69FD021F-0C33-451A-C477-1FFA68DB615F}"/>
+		</sprite>
+		<sprite origin="128,0" offset="48">
+			<picture ref="{69FD021F-0C33-451A-C477-1FFA68DB615F}"/>
+		</sprite>
+		<sprite origin="192,0" offset="32" opposite="true">
+			<picture ref="{69FD021F-0C33-451A-C477-1FFA68DB615F}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{0916B378-8A3F-4DD3-C477-568137E44244}-12">
+		<group>Low height apartment</group>
+		&Apart60;
+		&crWhite;
+		&crKhaki;
+		<sprite origin="0,64" offset="48">
+			<picture ref="{69FD021F-0C33-451A-C477-1FFA68DB615F}"/>
+		</sprite>
+		<sprite origin="64,64" offset="32" opposite="true">
+			<picture ref="{69FD021F-0C33-451A-C477-1FFA68DB615F}"/>
+		</sprite>
+		<sprite origin="128,64" offset="48">
+			<picture ref="{69FD021F-0C33-451A-C477-1FFA68DB615F}"/>
+		</sprite>
+		<sprite origin="192,64" offset="32" opposite="true">
+			<picture ref="{69FD021F-0C33-451A-C477-1FFA68DB615F}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{0916B378-8A3F-4DD3-C477-568137E44244}-20">
+		<group>Old-style apartment</group>
+		<design>emergency staircase</design>
+		&Apart60;
+		&crWhite;
+		&crGray;
+		<sprite origin="0,0" offset="48">
+			<picture ref="{C9ADB11E-D17D-4F98-C477-82F33B1CCE27}"/>
+		</sprite>
+		<sprite origin="64,0" offset="32" opposite="true">
+			<picture ref="{C9ADB11E-D17D-4F98-C477-82F33B1CCE27}"/>
+		</sprite>
+		<sprite origin="128,0" offset="48">
+			<picture ref="{C9ADB11E-D17D-4F98-C477-82F33B1CCE27}"/>
+		</sprite>
+		<sprite origin="192,0" offset="32" opposite="true">
+			<picture ref="{C9ADB11E-D17D-4F98-C477-82F33B1CCE27}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{0916B378-8A3F-4DD3-C477-568137E44244}-24">
+		<group>Old-style apartment</group>
+		<design>emergency staircase</design>
+		&Apart60;
+		&crWhite;
+		&crGray;
+		<sprite origin="0,64" offset="48">
+			<picture ref="{C9ADB11E-D17D-4F98-C477-82F33B1CCE27}"/>
+		</sprite>
+		<sprite origin="64,64" offset="32" opposite="true">
+			<picture ref="{C9ADB11E-D17D-4F98-C477-82F33B1CCE27}"/>
+		</sprite>
+		<sprite origin="128,64" offset="48">
+			<picture ref="{C9ADB11E-D17D-4F98-C477-82F33B1CCE27}"/>
+		</sprite>
+		<sprite origin="192,64" offset="32" opposite="true">
+			<picture ref="{C9ADB11E-D17D-4F98-C477-82F33B1CCE27}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{0916B378-8A3F-4DD3-C477-568137E44244}-28">
+		<group>Old-style apartment</group>
+		&Apart60;
+		&crWhite;
+		&crGray;
+		<sprite origin="0,0" offset="48">
+			<picture ref="{C5DFE51B-6866-40F4-C477-4AD9BE09162A}"/>
+		</sprite>
+		<sprite origin="64,0" offset="32" opposite="true">
+			<picture ref="{C5DFE51B-6866-40F4-C477-4AD9BE09162A}"/>
+		</sprite>
+		<sprite origin="128,0" offset="48">
+			<picture ref="{C5DFE51B-6866-40F4-C477-4AD9BE09162A}"/>
+		</sprite>
+		<sprite origin="192,0" offset="32" opposite="true">
+			<picture ref="{C5DFE51B-6866-40F4-C477-4AD9BE09162A}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{0916B378-8A3F-4DD3-C477-568137E44244}-32">
+		<group>Old-style apartment</group>
+		&Apart60;
+		&crWhite;
+		&crGray;
+		<sprite origin="0,64" offset="48">
+			<picture ref="{C5DFE51B-6866-40F4-C477-4AD9BE09162A}"/>
+		</sprite>
+		<sprite origin="64,64" offset="32" opposite="true">
+			<picture ref="{C5DFE51B-6866-40F4-C477-4AD9BE09162A}"/>
+		</sprite>
+		<sprite origin="128,64" offset="48">
+			<picture ref="{C5DFE51B-6866-40F4-C477-4AD9BE09162A}"/>
+		</sprite>
+		<sprite origin="192,64" offset="32" opposite="true">
+			<picture ref="{C5DFE51B-6866-40F4-C477-4AD9BE09162A}"/>
+		</sprite>
+	</contribution>
+
+</plug-in>

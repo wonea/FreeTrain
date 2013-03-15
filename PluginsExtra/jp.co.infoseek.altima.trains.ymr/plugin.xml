@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Yokohama Minatomirai Railway Train Plugins</title>
+	<author>Altima</author>
+	<homepage>http://zero-d.web.infoseek.co.jp/</homepage>
+
+
+	<contribution type="picture" id="{C8A90EE2-2C5E-4F1E-ALTM-YMRY500PIC01}">
+		<picture src="ymry500b.bmp"/>
+	</contribution>
+
+
+	<!-- Y000系先頭車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-YMR01B00Y000}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>141</capacity>
+		<sprite origin="0,0">
+			<picture src="ymry000.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- Y000系後尾車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-YMR01C00Y000}-t">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>141</capacity>
+		<sprite origin="0,0">
+			<picture src="ymry010.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="train" id="{C8A90EE2-2C5E-4F1E-ALTM-YMR01A00Y000}">
+		<company>Yokohama Minatomirai Railway</company>
+		<type>Y000 Series</type>
+		<name>Kodomonokuni Line</name>
+		<author>Altima</author>
+		<description>2000年のこどもの国線の通勤線化に伴い投入された車両。東急3000系をベースに、3扉、2両固定編成となっている。3本が在籍し、シーズン時には2連＋2連で走行することもある。(2連、4連、6連のみ編成可能)</description>
+		<fare>460</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{C8A90EE2-2C5E-4F1E-ALTM-YMR01B00Y000}-h"/>
+			<car char="B" ref="{C8A90EE2-2C5E-4F1E-ALTM-YMR01C00Y000}-t"/>
+		<composition>AB</composition>
+		<composition>ABAB</composition>
+		<composition>ABABAB</composition>
+		</config>
+	</contribution>
+
+
+	<!-- Y500系先頭車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-YMR02B00Y500}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>141</capacity>
+		<sprite origin="0,0">
+			<picture src="ymry500a.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- Y500系中間車A(2～3号車) -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-YMR02C00Y500}-m">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>152</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="0,56,138" to="38,56,138"/>
+<map from="0,53,130" to="36,53,130"/>
+<map from="0,88,195" to="51,88,195"/>
+<map from="0,84,184" to="48,84,184"/>
+<map from="0,95,233" to="95,95,233"/>
+<map from="0,50,123" to="34,50,123"/>
+<map from="0,90,220" to="90,90,220"/>
+<map from="0,144,233" to="152,144,233"/>
+<map from="0,44,233" to="152,144,233"/>
+<map from="0,79,174" to="46,79,174"/>
+<map from="0,137,220" to="144,137,220"/>
+<map from="0,37,220" to="144,137,220"/>
+<map from="233,216,0" to="233,216,139"/>
+<map from="233,116,0" to="233,216,139"/>
+<map from="0,59,145" to="40,59,145"/>
+<map from="0,44,109" to="30,44,109"/>
+<map from="0,47,116" to="32,47,116"/>
+<map from="0,85,208" to="85,85,208"/>
+<map from="0,5,208" to="85,85,208"/>
+<map from="220,205,0" to="220,205,131"/>
+<map from="220,105,0" to="220,205,131"/>
+<map from="242,242,0" to="242,242,152"/>
+<map from="242,142,0" to="242,242,152"/>
+<map from="0,93,205" to="54,93,205"/>
+<map from="0,70,154" to="40,70,154"/>
+<map from="0,74,164" to="43,74,164"/>
+<map from="0,129,208" to="136,129,208"/>
+<map from="0,29,208" to="136,129,208"/>
+<map from="229,229,0" to="229,229,144"/>
+<map from="229,129,0" to="229,229,144"/>
+<map from="0,100,245" to="100,100,245"/>
+<map from="0,75,184" to="75,75,184"/>
+<map from="0,80,196" to="80,80,196"/>
+<map from="208,194,0" to="208,194,124"/>
+<map from="208,94,0" to="208,194,124"/>
+<map from="0,152,245" to="160,152,245"/>
+<map from="0,114,184" to="120,114,184"/>
+<map from="0,122,196" to="128,122,196"/>
+<map from="217,217,0" to="217,217,136"/>
+<map from="217,117,0" to="217,217,136"/>
+<map from="255,155,0" to="255,255,160"/>
+<map from="245,228,0" to="245,228,146"/>
+<map from="184,171,0" to="184,171,109"/>
+<map from="196,182,0" to="196,182,117"/>
+<map from="204,104,0" to="204,204,128"/>
+<map from="255,255,0" to="255,255,160"/>
+<map from="191,191,0" to="191,191,120"/>
+<map from="204,204,0" to="204,204,128"/>
+<map from="0,5,233" to="95,95,233"/>
+			</spriteType>
+			<picture ref="{C8A90EE2-2C5E-4F1E-ALTM-YMRY500PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- Y500系中間車B(4号車) -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-YMR02D00Y500}-m">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>152</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="0,56,138" to="167,172,187"/>
+<map from="0,53,130" to="158,163,177"/>
+<map from="0,88,195" to="167,172,187"/>
+<map from="0,84,184" to="158,163,177"/>
+<map from="0,95,233" to="167,172,187"/>
+<map from="0,50,123" to="150,154,168"/>
+<map from="0,90,220" to="158,163,177"/>
+<map from="0,144,233" to="167,172,187"/>
+<map from="0,44,233" to="146,146,146"/>
+<map from="0,79,174" to="150,154,168"/>
+<map from="0,137,220" to="158,163,177"/>
+<map from="0,37,220" to="138,138,138"/>
+<map from="233,216,0" to="167,172,187"/>
+<map from="233,116,0" to="146,146,146"/>
+<map from="0,59,145" to="176,181,197"/>
+<map from="0,44,109" to="132,136,148"/>
+<map from="0,47,116" to="141,145,158"/>
+<map from="0,85,208" to="150,154,168"/>
+<map from="0,5,208" to="131,131,131"/>
+<map from="220,205,0" to="158,163,177"/>
+<map from="220,105,0" to="138,138,138"/>
+<map from="242,242,0" to="167,172,187"/>
+<map from="242,142,0" to="146,146,146"/>
+<map from="0,93,205" to="176,181,197"/>
+<map from="0,70,154" to="132,136,148"/>
+<map from="0,74,164" to="141,145,158"/>
+<map from="0,129,208" to="150,154,168"/>
+<map from="0,29,208" to="131,131,131"/>
+<map from="229,229,0" to="158,163,177"/>
+<map from="229,129,0" to="138,138,138"/>
+<map from="0,100,245" to="176,181,197"/>
+<map from="0,75,184" to="132,136,148"/>
+<map from="0,80,196" to="141,145,158"/>
+<map from="208,194,0" to="150,154,168"/>
+<map from="208,94,0" to="131,131,131"/>
+<map from="0,152,245" to="176,181,197"/>
+<map from="0,114,184" to="132,136,148"/>
+<map from="0,122,196" to="141,145,158"/>
+<map from="217,217,0" to="150,154,168"/>
+<map from="217,117,0" to="131,131,131"/>
+<map from="255,155,0" to="154,154,154"/>
+<map from="245,228,0" to="176,181,197"/>
+<map from="184,171,0" to="132,136,148"/>
+<map from="196,182,0" to="141,145,158"/>
+<map from="204,104,0" to="123,123,123"/>
+<map from="255,255,0" to="176,181,197"/>
+<map from="191,191,0" to="132,136,148"/>
+<map from="204,204,0" to="141,145,158"/>
+<map from="0,5,233" to="146,146,146"/>
+			</spriteType>
+			<picture ref="{C8A90EE2-2C5E-4F1E-ALTM-YMRY500PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- Y500系中間車C(5号車) -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-YMR02E00Y500}-m">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+		<base carRef="{C8A90EE2-2C5E-4F1E-ALTM-YMR02D00Y500}-m"/>
+	</contribution>
+
+	<!-- Y500系中間車D(6～7号車) -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-YMR02F00Y500}-m">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+		<base carRef="{C8A90EE2-2C5E-4F1E-ALTM-YMR02C00Y500}-m"/>
+	</contribution>
+
+	<!-- Y500系後尾車 -->
+	<contribution type="trainCar" id="{C8A90EE2-2C5E-4F1E-ALTM-YMR02G00Y500}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+		<base carRef="{C8A90EE2-2C5E-4F1E-ALTM-YMR02B00Y500}-h"/>
+	</contribution>
+
+	<contribution type="train" id="{C8A90EE2-2C5E-4F1E-ALTM-YMR02A00Y500}">
+		<company>Yokohama Minatomirai Railway</company>
+		<type>Y500 Series</type>
+		<name>Minatomirai Line</name>
+		<author>Altima</author>
+		<description>2004年に開通したみなとみらい線用に登場。車体構造は東急5000系と共通で、「みなとみらい」や横浜の伝統をモチーフとした斬新なカラーデザインを採用した。6編成在籍。(4、6、8、10、12、14、16連を編成可能)</description>
+		<fare>470</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="H" ref="{C8A90EE2-2C5E-4F1E-ALTM-YMR02B00Y500}-h"/>
+			<car char="A" ref="{C8A90EE2-2C5E-4F1E-ALTM-YMR02C00Y500}-m"/>
+			<car char="B" ref="{C8A90EE2-2C5E-4F1E-ALTM-YMR02D00Y500}-m"/>
+			<car char="C" ref="{C8A90EE2-2C5E-4F1E-ALTM-YMR02E00Y500}-m"/>
+			<car char="D" ref="{C8A90EE2-2C5E-4F1E-ALTM-YMR02F00Y500}-m"/>
+			<car char="T" ref="{C8A90EE2-2C5E-4F1E-ALTM-YMR02G00Y500}-t"/>
+		<composition>HBCT</composition>
+		<composition>HABCDT</composition>
+		<composition>HAABCDDT</composition>
+		<composition>HAAABCDDDT</composition>
+		<composition>HAAAABCDDDDT</composition>
+		<composition>HAAAAABCDDDDDT</composition>
+		<composition>HAAAAAABCDDDDDDT</composition>
+		</config>
+	</contribution>
+
+</plug-in>

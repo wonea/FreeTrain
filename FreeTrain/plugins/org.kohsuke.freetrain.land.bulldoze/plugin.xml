@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Terrain Modification</title>
+	<!--!<title>地表の整地</title>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	<author>Kohsuke Kawaguchi</author>
+	<!--!<author>川口耕介</author>-->
+	
+	
+	
+	<contribution type="land" id="{AE43E6DB-39F0-49FE-BE18-EE3FAC248FDE}">
+		<group>Bulldozer</group>
+		<!--!<group>ブルドーザー</group>-->
+		<class name="freetrain.contributions.land.Bulldozer" />
+		<price>0</price>
+		<computerCannotBuild />
+	</contribution>
+</plug-in>

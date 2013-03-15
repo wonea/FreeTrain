@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Keishin Set</title>
+ 	<homepage>http://www.cwo.zaq.ne.jp/pant012/freetrain/</homepage>
+
+	<!-- 京阪80形 -->
+	<contribution type="trainCar" id="{nyaganyaga-k80-h}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="keisin80.bmp" />
+		</sprite>
+		<capacity>95</capacity>
+	</contribution>
+
+	<contribution type="train" id="{nyaganyaga-k80}">
+		<company>Keihan Electric Railway</company>
+		<type>80 Series</type>
+		<name></name>
+		<author>T.Hara</author>
+		<description>
+京阪三条～浜大津間を結ぶ併用軌道あり、峠越えありの日本でもここだけしか見られなかった路線が京津線です。その京津線を走っていたのが80形と呼ばれる可愛い電車です。ヨーロピアンスタイルの車両に高出力モーターを装備し、京津線の顔として普通運用をしていました。		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<composition>
+			<body carRef="{nyaganyaga-k80-h}"/>
+		</composition>
+	</contribution>
+
+	<!-- 京阪800系先頭 -->
+	<contribution type="trainCar" id="{nyaganyaga-k800-h}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="keihan800_1.bmp" />
+		</sprite>
+		<capacity>88</capacity>
+	</contribution>
+
+	<!-- 京阪800系中間 -->
+	<contribution type="trainCar" id="{nyaganyaga-k800-b}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="keihan800_2.bmp" />
+		</sprite>
+		<capacity>105</capacity>
+	</contribution>
+
+	<!-- 京阪800系最後尾 -->
+	<contribution type="trainCar" id="{nyaganyaga-k800-t}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+	<base carRef="{nyaganyaga-k800-h}" />
+		<capacity>88</capacity>
+	</contribution>
+
+	<contribution type="train" id="{nyaganyaga-k800}">
+		<company>Keihan Electric Railway</company>
+		<type>800 Series</type>
+		<name></name>
+		<author>T.Hara</author>
+		<description>
+1997年、京津線三条～御陵間が廃止され、代わって地下鉄東西線への乗入れの為に製作された京津線初の大型4連車。IGBTインバータ(これも京津線初)や先頭固定クロス、中間ロングと変則的なシートを採用、また車体色も京阪標準色と異なった色を採用している。上栄町～浜大津間の併用軌道を大型4連車が走るのは凄い迫力です。		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{nyaganyaga-k800-h}"/>
+			<body carRef="{nyaganyaga-k800-b}"/>
+			<tail carRef="{nyaganyaga-k800-t}"/>
+		</composition>
+	</contribution>
+</plug-in>

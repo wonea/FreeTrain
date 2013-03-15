@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY baseParams '
+		<class name="freetrain.world.land.forest.ForestBuilder"
+			codebase="../org.kohsuke.freetrain.land.forest/bin/Debug/FreeTrain.Forest.dll"/>		
+		<size>256,16</size>
+		<count>8</count>
+		<density>10</density>
+		<price>2</price>
+		<computerCannotBuild/>
+'>
+<!ENTITY largerTrees '
+		<class name="freetrain.world.land.forest.ForestBuilder"
+			codebase="../org.kohsuke.freetrain.land.forest/bin/Debug/FreeTrain.Forest.dll"/>		
+		<size>192,25</size>
+		<count>6</count>
+		<density>1</density>
+		<price>100</price>
+		<computerCannotBuild/>
+'>
+]>
+
+<plug-in>
+	<title>Garden trees</title>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+	<author>C477</author>
+	
+	<depend on="org.kohsuke.freetrain.land.forest" />
+
+	<contribution type="picture" id="{56D155E4-3029-48CA-C477-0EC3D53CBF6C}">
+		<picture src="trees_sht_sugi.SPR.bmp">
+			<override when="winter" src="trees_sht_sugi.WIN.bmp" />
+		</picture>	
+	</contribution>
+	
+	<contribution type="picture" id="{AB330C06-F5A8-432E-C477-E5CC68D8CAE7}">
+		<picture src="trees_sht_buna.SPR.bmp">
+			<override when="winter" src="trees_sht_mochi.WIN.bmp" />
+		</picture>	
+	</contribution>
+	
+	<contribution type="picture" id="{8766AFF1-E990-4D5A-C477-E7C214A6D346}">
+		<picture src="trees_sht_icho.SPR.bmp">
+			<override when="autumn" src="trees_sht_icho.AUT.bmp" />
+			<override when="winter" src="trees_sht_icho.WIN.bmp" />
+		</picture>	
+	</contribution>
+	
+	<contribution type="picture" id="{255234D1-9117-45F4-C477-963A67D6C487}">
+		<picture src="trees_sht_buna.SPR.bmp">
+			<override when="autumn" src="trees_sht_buna.AUT.bmp" />
+			<override when="winter" src="trees_sht_buna.WIN.bmp" />
+		</picture>	
+	</contribution>
+
+	<contribution type="picture" id="{77EA076D-7CE2-4A8B-C477-542A5D39A03E}">
+		<picture src="trees_sht_matu.SPR.bmp">
+			<override when="winter" src="trees_sht_matu.WIN.bmp" />
+		</picture>	
+	</contribution>
+
+	<contribution type="picture" id="{02F71787-7A68-473C-C477-0E26B90D5F71}">
+		<picture src="trees_sht_ume.SPR.bmp">
+			<override when="summer" src="trees_sht_ume.SUM.bmp" />
+			<override when="autumn" src="trees_sht_ume.AUT.bmp" />
+			<override when="winter" src="trees_sht_ume.WIN.bmp" />
+		</picture>	
+	</contribution>
+
+	<contribution type="picture" id="{1295D969-0DCF-43AE-C477-055D9A08D3F3}">
+		<picture src="trees_yanagi.SPR.bmp">
+			<override when="summer" src="trees_yanagi.SUM.bmp" />
+			<override when="autumn" src="trees_yanagi.SUM.bmp" />
+			<override when="winter" src="trees_yanagi.WIN.bmp" />
+		</picture>	
+	</contribution>
+
+	<contribution type="picture" id="{447D5246-29BD-4200-BF44-9BF21D92FAF3}">
+		<picture src="trees_sakura.SPR.bmp">
+			<override when="summer" src="../org.kohsuke.freetrain.land.forest/trees_kaede.bmp" />
+			<override when="autumn" src="trees_sakura.AUT.bmp" />
+			<override when="winter" src="../org.kohsuke.freetrain.land.forest/trees_kaede.WIN.bmp" />
+		</picture>
+	</contribution>
+
+	<contribution type="picture" id="{01B555C2-2903-4031-C477-3E6DDED4270C}-M">	
+		<picture src="../org.kohsuke.freetrain.land.forest/ground_spring.bmp">
+			<override when="summer" src="../org.kohsuke.freetrain.land.forest/ground_summer.bmp" />
+			<override when="autumn" src="../org.kohsuke.freetrain.land.forest/ground_summer.bmp" />
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{01B555C2-2903-4031-C477-3E6DDED4270C}-G">	
+		<picture src="../org.kohsuke.freetrain.land.farmland/hatake.bmp"/>
+	</contribution>
+
+	<contribution type="picture" id="{DA55715B-3CAC-41F6-C477-7573A583904F}">
+		<picture src="trees_yashi.bmp"/>
+	</contribution>
+
+	<contribution type="picture" id="{BA6452F2-F77B-4DCC-C477-4E6D16941D21}">
+		<picture src="trees_yashi2.bmp"/>
+	</contribution>
+	
+	<!--bare land-->
+	<contribution type="land" id="{C3080F44-5E50-498A-C477-55D35714735F}">
+		<group>Garden trees</group>
+		<name>Chinese juniper</name>
+		&baseParams;
+		<picture ref="{56D155E4-3029-48CA-C477-0EC3D53CBF6C}"/>
+	</contribution>
+	
+	<contribution type="land" id="{99C59EC8-AFC0-4B3F-C477-4D726BF571E0}">
+		<group>Garden trees</group>
+		<name>Small pine</name>
+		&baseParams;
+		<picture ref="{77EA076D-7CE2-4A8B-C477-542A5D39A03E}"/>
+	</contribution>
+	
+	<contribution type="land" id="{93F0C934-FA6E-471A-851B-CEA0B0F450CD}">
+		<group>Garden trees</group>
+		<name>Plum</name>
+		&baseParams;
+		<picture ref="{02F71787-7A68-473C-C477-0E26B90D5F71}"/>
+	</contribution>
+
+	<contribution type="land" id="{C3B290F6-F0FB-4E74-C477-CE4E7B76AD42}">
+		<group>Garden trees</group>
+		<name>Bird-lime holly</name>
+		&baseParams;
+		<picture ref="{AB330C06-F5A8-432E-C477-E5CC68D8CAE7}"/>
+	</contribution>
+
+	<contribution type="land" id="{C9DA88FE-5D6C-4D90-C477-E5B4C8AFE28D}">
+		<group>Garden trees</group>
+		<name>Ginkgo</name>
+		&baseParams;
+		<picture ref="{8766AFF1-E990-4D5A-C477-E7C214A6D346}"/>
+	</contribution>	
+	
+	<contribution type="land" id="{7674C65E-36CF-4363-C477-14A4E8F3F412}">
+		<group>Garden trees</group>
+		<name>Dog wood</name>
+		&baseParams;
+		<picture ref="{255234D1-9117-45F4-C477-963A67D6C487}"/>
+	</contribution>
+	
+	<contribution type="land" id="{53D70F12-1416-496F-C477-0B6D5E3EA701}">
+		<group>Garden trees</group>
+		<name>Weeping willow</name>
+		&largerTrees;
+		<picture ref="{1295D969-0DCF-43AE-C477-055D9A08D3F3}"/>
+	</contribution>
+
+	<contribution type="land" id="{88868086-3B45-46B5-C477-8D0E735DBD1C}">
+		<group>Forest</group>
+		<name>Cherry tree</name>
+		&largerTrees;
+		<picture ref="{447D5246-29BD-4200-BF44-9BF21D92FAF3}"/>
+	</contribution>
+
+	<contribution type="land" id="{49042FF9-C376-4A3A-C477-9F45D8922A23}">
+		<group>Garden trees</group>
+		<name>Palm trees(low)</name>
+		&largerTrees;
+		<picture ref="{DA55715B-3CAC-41F6-C477-7573A583904F}"/>
+	</contribution>
+
+	<contribution type="land" id="{56003BEB-B11C-4DFA-C477-1A913AB9D208}">
+		<group>Garden trees</group>
+		<name>Palm trees(high)</name>
+		<size>192,41</size>
+		&largerTrees;
+		<picture ref="{BA6452F2-F77B-4DCC-C477-4E6D16941D21}"/>
+	</contribution>
+
+	<!--mountain texture-->
+	<contribution type="land" id="{C3080F44-5E50-498A-C477-55D35714735F}-m">
+		<group>Garden trees (mountain)</group>
+		<name>Chinese juniper</name>
+		&baseParams;
+		<picture ref="{56D155E4-3029-48CA-C477-0EC3D53CBF6C}"/>
+		<ground>
+			<picture ref = "{FBD0CD06-016A-4037-AB15-02040218CBAA}-G" origin="0,0"/>	
+		</ground>
+	</contribution>
+	
+	<contribution type="land" id="{99C59EC8-AFC0-4B3F-C477-4D726BF571E0}-m">
+		<group>Garden trees (mountain)</group>
+		<name>Small pine</name>
+		&baseParams;
+		<picture ref="{77EA076D-7CE2-4A8B-C477-542A5D39A03E}"/>
+		<ground>
+			<picture ref = "{FBD0CD06-016A-4037-AB15-02040218CBAA}-G" origin="0,0"/>	
+		</ground>
+	</contribution>
+
+	<contribution type="land" id="{93F0C934-FA6E-471A-851B-CEA0B0F450CD}-m">
+		<group>Garden trees (mountain)</group>
+		<name>Plum</name>
+		&baseParams;
+		<picture ref="{02F71787-7A68-473C-C477-0E26B90D5F71}"/>
+		<ground>
+			<picture ref = "{FBD0CD06-016A-4037-AB15-02040218CBAA}-G" origin="0,0"/>	
+		</ground>
+	</contribution>
+
+	<contribution type="land" id="{C3B290F6-F0FB-4E74-C477-CE4E7B76AD42}-m">
+		<group>Garden trees (mountain)</group>
+		<name>Bird-lime holly</name>
+		&baseParams;
+		<picture ref="{AB330C06-F5A8-432E-C477-E5CC68D8CAE7}"/>
+		<ground>
+			<picture ref = "{FBD0CD06-016A-4037-AB15-02040218CBAA}-G" origin="0,0"/>	
+		</ground>
+	</contribution>
+
+	<contribution type="land" id="{C9DA88FE-5D6C-4D90-C477-E5B4C8AFE28D}-m">
+		<group>Garden trees (mountain)</group>
+		<name>Ginkgo</name>
+		&baseParams;
+		<picture ref="{8766AFF1-E990-4D5A-C477-E7C214A6D346}"/>
+		<ground>
+			<picture ref = "{FBD0CD06-016A-4037-AB15-02040218CBAA}-G" origin="0,0"/>	
+		</ground>
+	</contribution>	
+	
+	<contribution type="land" id="{7674C65E-36CF-4363-C477-14A4E8F3F412}-m">
+		<group>Garden trees (mountain)</group>
+		<name>Dog wood</name>
+		&baseParams;
+		<picture ref="{255234D1-9117-45F4-C477-963A67D6C487}"/>
+		<ground>
+			<picture ref = "{FBD0CD06-016A-4037-AB15-02040218CBAA}-G" origin="0,0"/>	
+		</ground>
+	</contribution>
+		
+	<contribution type="land" id="{53D70F12-1416-496F-C477-0B6D5E3EA701}-m">
+		<group>Garden trees (mountain)</group>
+		<name>Weeping willow</name>
+		&largerTrees;
+		<picture ref="{1295D969-0DCF-43AE-C477-055D9A08D3F3}"/>
+		<ground>
+			<picture ref = "{FBD0CD06-016A-4037-AB15-02040218CBAA}-G" origin="0,0"/>	
+		</ground>
+	</contribution>
+
+	<contribution type="land" id="{88868086-3B45-46B5-C477-8D0E735DBD1C}-m">
+		<group>Forest (mountain)</group>
+		<name>Cherry tree</name>
+		&largerTrees;
+		<picture ref="{447D5246-29BD-4200-BF44-9BF21D92FAF3}"/>
+		<ground>
+			<picture ref = "{FBD0CD06-016A-4037-AB15-02040218CBAA}-G" origin="0,0"/>
+		</ground>
+	</contribution>
+
+	<contribution type="land" id="{49042FF9-C376-4A3A-C477-9F45D8922A23}-m">
+		<group>Garden trees (mountain)</group>
+		<name>Palm trees(low)</name>
+		&largerTrees;
+		<picture ref="{DA55715B-3CAC-41F6-C477-7573A583904F}"/>
+		<ground>
+			<picture ref = "{01B555C2-2903-4031-C477-3E6DDED4270C}-M" origin="0,0"/>
+		</ground>
+	</contribution>
+
+	<contribution type="land" id="{56003BEB-B11C-4DFA-C477-1A913AB9D208}-m">
+		<group>Garden trees (mountain)</group>
+		<name>Palm trees(high)</name>
+		<size>192,41</size>
+		&largerTrees;
+		<picture ref="{BA6452F2-F77B-4DCC-C477-4E6D16941D21}"/>
+		<ground>
+			<picture ref = "{01B555C2-2903-4031-C477-3E6DDED4270C}-M" origin="0,0"/>
+		</ground>
+	</contribution>
+	
+	<!--grass land-->
+	<contribution type="land" id="{C3080F44-5E50-498A-C477-55D35714735F}-g">
+		<group>Garden trees (grassland)</group>
+		<name>Chinese juniper</name>
+		&baseParams;
+		<picture ref="{56D155E4-3029-48CA-C477-0EC3D53CBF6C}"/>
+		<ground>
+			<picture ref = "{1AA12290-AC57-4388-AC62-323B813D0CAC}" origin="64,0"/>	
+		</ground>
+	</contribution>
+	
+	<contribution type="land" id="{99C59EC8-AFC0-4B3F-C477-4D726BF571E0}-g">
+		<group>Garden trees (grassland)</group>
+		<name>Small pine</name>
+		&baseParams;
+		<picture ref="{77EA076D-7CE2-4A8B-C477-542A5D39A03E}"/>
+		<ground>
+			<picture ref = "{1AA12290-AC57-4388-AC62-323B813D0CAC}" origin="64,0"/>	
+		</ground>
+	</contribution>	
+	
+	<contribution type="land" id="{93F0C934-FA6E-471A-851B-CEA0B0F450CD}-g">
+		<group>Garden trees (grassland)</group>
+		<name>Plum</name>
+		&baseParams;
+		<picture ref="{02F71787-7A68-473C-C477-0E26B90D5F71}"/>
+		<ground>
+			<picture ref = "{1AA12290-AC57-4388-AC62-323B813D0CAC}" origin="64,0"/>	
+		</ground>
+	</contribution>
+
+	<contribution type="land" id="{C3B290F6-F0FB-4E74-C477-CE4E7B76AD42}-g">
+		<group>Garden trees (grassland)</group>
+		<name>Bird-lime holly</name>
+		&baseParams;
+		<picture ref="{AB330C06-F5A8-432E-C477-E5CC68D8CAE7}"/>
+		<ground>
+			<picture ref = "{1AA12290-AC57-4388-AC62-323B813D0CAC}" origin="64,0"/>	
+		</ground>
+	</contribution>
+
+	<contribution type="land" id="{C9DA88FE-5D6C-4D90-C477-E5B4C8AFE28D}-g">
+		<group>Garden trees (grassland)</group>
+		<name>Ginkgo</name>
+		&baseParams;
+		<picture ref="{8766AFF1-E990-4D5A-C477-E7C214A6D346}"/>
+		<ground>
+			<picture ref = "{1AA12290-AC57-4388-AC62-323B813D0CAC}" origin="64,0"/>	
+		</ground>
+	</contribution>	
+	
+	<contribution type="land" id="{7674C65E-36CF-4363-C477-14A4E8F3F412}-g">
+		<group>Garden trees (grassland)</group>
+		<name>Dog wood</name>
+		&baseParams;
+		<picture ref="{255234D1-9117-45F4-C477-963A67D6C487}"/>
+		<ground>
+			<picture ref = "{1AA12290-AC57-4388-AC62-323B813D0CAC}" origin="64,0"/>	
+		</ground>
+	</contribution>
+
+	<contribution type="land" id="{53D70F12-1416-496F-C477-0B6D5E3EA701}-g">
+		<group>Garden trees (grassland)</group>
+		<name>Weeping willow</name>
+		&largerTrees;
+		<picture ref="{1295D969-0DCF-43AE-C477-055D9A08D3F3}"/>
+		<ground>
+			<picture ref = "{1AA12290-AC57-4388-AC62-323B813D0CAC}" origin="64,0"/>	
+		</ground>
+	</contribution>
+
+	<contribution type="land" id="{88868086-3B45-46B5-C477-8D0E735DBD1C}-g">
+		<group>Forest (grassland)</group>
+		<name>Cherry tree</name>
+		&largerTrees;
+		<picture ref="{447D5246-29BD-4200-BF44-9BF21D92FAF3}"/>
+		<ground>
+			<picture ref = "{1AA12290-AC57-4388-AC62-323B813D0CAC}" origin="64,0"/>	
+		</ground>
+	</contribution>
+	
+	<contribution type="land" id="{49042FF9-C376-4A3A-C477-9F45D8922A23}-g">
+		<group>Garden trees (grassland)</group>
+		<name>Palm trees(low)</name>
+		&largerTrees;
+		<picture ref="{DA55715B-3CAC-41F6-C477-7573A583904F}"/>
+		<ground>
+			<picture ref = "{01B555C2-2903-4031-C477-3E6DDED4270C}-G" origin="64,0"/>	
+		</ground>
+	</contribution>
+
+	<contribution type="land" id="{56003BEB-B11C-4DFA-C477-1A913AB9D208}-g">
+		<group>Garden trees (grassland)</group>
+		<name>Palm trees(high)</name>
+		<size>192,41</size>
+		&largerTrees;
+		<picture ref="{BA6452F2-F77B-4DCC-C477-4E6D16941D21}"/>
+		<ground>
+			<picture ref = "{01B555C2-2903-4031-C477-3E6DDED4270C}-G" origin="64,0"/>	
+		</ground>
+	</contribution>
+	
+	
+</plug-in>

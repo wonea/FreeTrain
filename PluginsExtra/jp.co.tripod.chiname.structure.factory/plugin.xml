@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY NormalFactory '
+	<design>gabled roof (new)</design>
+	<price>1000</price>
+	<structure>
+		<category byname="Factory Components"/>
+	</structure>
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>30</base>
+	</population>
+	<height>1</height>
+	<computerCannotBuild/>
+'>
+<!ENTITY OldFactory '
+	<design>gabled roof (old)</design>
+	<price>800</price>
+	<structure>
+		<category byname="Factory Components"/>
+	</structure>
+	<population>
+		<class name="freetrain.contributions.population.OfficePopulation"/>
+		<base>40</base>
+	</population>
+	<height>1</height>
+	<computerCannotBuild/>
+'>
+<!ENTITY crSkyBlue '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="25,185,218"/>
+	</spriteType>	
+'>
+<!ENTITY crWineRed '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="196,38,67"/>
+	</spriteType>	
+'>
+<!ENTITY crGray '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="128,128,128"/>
+	</spriteType>	
+'>
+<!ENTITY crDirtyBrown '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="152,120,128"/>
+	</spriteType>	
+'>
+<!ENTITY crDirtyYellow '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="142,154,118"/>
+	</spriteType>	
+'>
+
+]>
+<plug-in>
+
+	<title>Factories</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+		
+	<contribution type="picture" id="{C96F811A-5CB9-48E6-C477-1D7EEA9C5681}">
+		<picture src="factory01.bmp">
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{7CE3EF05-B33B-4E9F-8F53-587BEF668EED}">
+		<picture src="factory02.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{2A14C189-6FDF-49AB-C477-05E02E9BA3C7}-00">
+		<group>Factory building</group>
+		&NormalFactory;
+		&crSkyBlue;
+		&crWineRed;
+		&crGray;
+		<size>1,2</size>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{C96F811A-5CB9-48E6-C477-1D7EEA9C5681}"/>
+		</sprite>
+		<sprite origin="48,0" offset="24" opposite="true">
+			<picture ref="{C96F811A-5CB9-48E6-C477-1D7EEA9C5681}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{2A14C189-6FDF-49AB-C477-05E02E9BA3C7}-01">
+		<group>Factory building</group>
+		&NormalFactory;
+		&crSkyBlue;
+		&crWineRed;
+		&crGray;
+		<size>1,2</size>
+		<sprite origin="0,48" offset="16">
+			<picture ref="{C96F811A-5CB9-48E6-C477-1D7EEA9C5681}"/>
+		</sprite>
+		<sprite origin="48,48" offset="24" opposite="true">
+			<picture ref="{C96F811A-5CB9-48E6-C477-1D7EEA9C5681}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{2A14C189-6FDF-49AB-C477-05E02E9BA3C7}-02">
+		<group>Factory building</group>
+		&NormalFactory;
+		&crSkyBlue;
+		&crWineRed;
+		&crGray;
+		<size>1,2</size>
+		<sprite origin="0,96" offset="16">
+			<picture ref="{C96F811A-5CB9-48E6-C477-1D7EEA9C5681}"/>
+		</sprite>
+		<sprite origin="48,96" offset="24" opposite="true">
+			<picture ref="{C96F811A-5CB9-48E6-C477-1D7EEA9C5681}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{C33F60C4-A1C6-4813-C477-4AE8D3B442D2}-00">
+		<group>Factory building</group>
+		&OldFactory;
+		&crDirtyBrown;
+		&crDirtyYellow;
+		<size>1,2</size>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{7CE3EF05-B33B-4E9F-8F53-587BEF668EED}"/>
+		</sprite>
+		<sprite origin="48,0" offset="24" opposite="true">
+			<picture ref="{7CE3EF05-B33B-4E9F-8F53-587BEF668EED}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{C33F60C4-A1C6-4813-C477-4AE8D3B442D2}-01">
+		<group>Factory building</group>
+		&OldFactory;
+		&crDirtyBrown;
+		&crDirtyYellow;
+		<size>1,2</size>
+		<sprite origin="0,48" offset="16">
+			<picture ref="{7CE3EF05-B33B-4E9F-8F53-587BEF668EED}"/>
+		</sprite>
+		<sprite origin="48,48" offset="24" opposite="true">
+			<picture ref="{7CE3EF05-B33B-4E9F-8F53-587BEF668EED}"/>
+		</sprite>
+	</contribution>
+	<contribution type="GenericStructure" id="{C33F60C4-A1C6-4813-C477-4AE8D3B442D2}-02">
+		<group>Factory building</group>
+		&OldFactory;
+		&crDirtyBrown;
+		&crDirtyYellow;
+		<size>1,2</size>
+		<sprite origin="0,96" offset="16">
+			<picture ref="{7CE3EF05-B33B-4E9F-8F53-587BEF668EED}"/>
+		</sprite>
+		<sprite origin="48,96" offset="24" opposite="true">
+			<picture ref="{7CE3EF05-B33B-4E9F-8F53-587BEF668EED}"/>
+		</sprite>
+	</contribution>
+	
+</plug-in>

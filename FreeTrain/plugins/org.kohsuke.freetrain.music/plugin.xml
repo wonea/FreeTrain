@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Standard BGM Set</title>
+	<!--!<title>基本ＢＧＭセット</title>-->
+	<author>Kouensya-A &amp; 915</author>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="bgm" id="{4DFF42D2-FD4A-4d45-A18A-F2882D936C73}">
+		<name>Pioneers</name>
+		<!--!<name>開拓</name>-->
+		<author>Kouensya-A</author>
+		<!--!<author>後援者Ａさん</author>-->
+		<href>map.mid</href>
+	</contribution>
+	
+	<contribution type="bgm" id="{32A3B9EB-8E86-4F4A-A314-891115B97A9F}">
+		<name>Housing Boom</name>
+		<!--!<name>新興住宅地</name>-->
+		<author>915</author>
+		<!--!<author>915さん</author>-->
+		<href>S_JUTAKU.mid</href>
+	</contribution>
+	
+	<contribution type="bgm" id="{4435A2E7-8B1D-4342-BA93-F2750EF48C41}">
+		<name>Metropolis</name>
+		<!--!<name>都市</name>-->
+		<author>915</author>
+		<!--!<author>915さん</author>-->
+		<href>TOSHI.mid</href>
+	</contribution>
+</plug-in>

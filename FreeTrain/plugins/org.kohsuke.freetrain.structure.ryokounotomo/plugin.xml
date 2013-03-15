@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Structure Set</title>
+	<author>Ryokounotomo</author>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="picture" id="{D7158259-D84F-4ABD-89EC-5EB62B376FC0}">
+		<picture src="s_hm01x.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{8361A9CC-DC1D-4432-8E21-7FB3564FA5CF}">
+		<name>Condo (2x2)</name>
+		<design>Combined</design>
+		<structure>
+			<category byname="Condominiums"/>
+		</structure>
+		<price>3000</price><!-- 750*4 -->
+		<size>2,2</size>
+		<height>3</height>
+		<sprite origin="0,0" offset="56">
+			<picture ref="{D7158259-D84F-4ABD-89EC-5EB62B376FC0}" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>150</base>
+		</population>
+	</contribution>
+	
+	<contribution type="picture" id="{C0D11482-67ED-4B07-A39C-73018E253A69}">
+		<picture src="s_c-kouen01x.bmp"/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{9DEDC549-A1A8-4a14-A7A5-D18F388BE975}">
+		<name>Park</name>
+		<structure>
+			<category byname="Parks"/>
+		</structure>
+		<price>1000</price>
+		<size>2,2</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="11">
+			<picture ref="{C0D11482-67ED-4B07-A39C-73018E253A69}" />
+		</sprite>
+	</contribution>
+</plug-in>

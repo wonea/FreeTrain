@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<plug-in>
+	<title>近鉄 車両キット</title>
+
+	<homepage/>
+	
+	
+	<!-- 近鉄 12200系 新スナックカー -->
+	<contribution type="trainCar" id="{01BC4BE0-C3CF-40fc-A47B-D041FE9CB0F4}">
+		<class name="freetrain.framework.plugin.impl.ColoredTrainCarImpl" />
+		<colorMap picture="1" base="255,128,0" line1="255,128,0" line2="0,0,128" line3="255,128,0" />
+		<capacity>99</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{0F9CA3B7-1674-48b0-9E8F-5AB781CA5590}">
+		<company>近畿日本鉄道</company>
+		<type>12200系</type>
+		<name>新スナックカー</name>
+		<author>名無しさんの野望さん</author>
+		<description>
+新幹線登場後乗客が減った名阪間の利用を増やすため車内にスナックコーナーという簡易ビュッフェを設置した車両。しかし経費増大などの理由でこのスナックコーナーは廃止、一般座席に改装し現在も運転されている。
+		</description>
+		<price>1</price>
+		<speed>fast</speed>
+		<composition>
+			<body carRef="{01BC4BE0-C3CF-40fc-A47B-D041FE9CB0F4}"/>
+		</composition>
+	</contribution>
+	
+	
+	
+	
+	<!-- 3200系先頭車両 -->
+	<contribution type="trainCar" id="{2BE05AC0-1ABD-4437-AE45-C7630C136952}-h">
+		<class name="freetrain.framework.plugin.impl.AsymTrainCarImpl" />
+		<picture src="kt3200a.bmp" origin="0,0"/>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<!-- 3200系中間車両 -->
+	<contribution type="trainCar" id="{2BE05AC0-1ABD-4437-AE45-C7630C136952}-m">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="kt3200b.bmp" origin="0,0"/>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<!-- 3200系後尾車両 -->
+	<contribution type="trainCar" id="{2BE05AC0-1ABD-4437-AE45-C7630C136952}-t">
+		<class name="freetrain.framework.plugin.impl.ReverseTrainCarImpl" />
+		<base carRef="{2BE05AC0-1ABD-4437-AE45-C7630C136952}-h"/>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{2BE05AC0-1ABD-4437-AE45-C7630C136952}">
+		<company>近畿日本鉄道</company>
+		<type>3200系</type>
+		<name></name>
+		<author>imaさん</author>
+		<description>
+京都線内で京都市交通局烏丸線と相互直通運転するため製作された車両。この車両は多数の部分が今の通勤車両に受け継がれ、今のVVVF車の原点とも言える車両。登場時は4両編成だったが相互直通開始前に6両固定編成となった。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{2BE05AC0-1ABD-4437-AE45-C7630C136952}-h"/>
+			<body carRef="{2BE05AC0-1ABD-4437-AE45-C7630C136952}-m"/>
+			<tail carRef="{2BE05AC0-1ABD-4437-AE45-C7630C136952}-t"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 8000系先頭車両 -->
+	<contribution type="trainCar" id="{79F5A6B4-89E3-42ec-A9D0-072511836B55}-h">
+		<class name="freetrain.framework.plugin.impl.AsymTrainCarImpl" />
+		<picture src="kt8000a.bmp" origin="0,0"/>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<!-- 8000系中間車両 -->
+	<contribution type="trainCar" id="{79F5A6B4-89E3-42ec-A9D0-072511836B55}-m">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="kt8000b.bmp" origin="0,0"/>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<!-- 8000系後尾車両 -->
+	<contribution type="trainCar" id="{79F5A6B4-89E3-42ec-A9D0-072511836B55}-t">
+		<class name="freetrain.framework.plugin.impl.ReverseTrainCarImpl" />
+		<base carRef="{79F5A6B4-89E3-42ec-A9D0-072511836B55}-h"/>
+		<capacity>149</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{79F5A6B4-89E3-42ec-A9D0-072511836B55}">
+		<company>近畿日本鉄道</company>
+		<type>8000系</type>
+		<name></name>
+		<author>暇</author>
+		<description>
+奈良線系統の1500V昇圧と輸送力増強のために製作された車両。奈良線をはじめとする上本町運行管理局管轄のほぼ全線で見ることが出来る。しかし近年廃車が進み、2両ユニットはほとんど見られなくなった。2両、3両、4両、6両編成。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{79F5A6B4-89E3-42ec-A9D0-072511836B55}-h"/>
+			<body carRef="{79F5A6B4-89E3-42ec-A9D0-072511836B55}-m"/>
+			<tail carRef="{79F5A6B4-89E3-42ec-A9D0-072511836B55}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- 23000系先頭車両 -->
+	<contribution type="trainCar" id="{9F65AF1F-FCB7-48a1-83FC-3A2BD7F057D5}-h">
+		<class name="freetrain.framework.plugin.impl.AsymTrainCarImpl" />
+		<picture src="kt23000a.bmp" origin="0,0"/>
+		<capacity>50</capacity>
+	</contribution>
+	
+	<!-- 23000系中間車両 -->
+	<contribution type="trainCar" id="{9F65AF1F-FCB7-48a1-83FC-3A2BD7F057D5}-m">
+		<class name="freetrain.framework.plugin.impl.SymTrainCarImpl" />
+		<picture src="kt23000b.bmp" origin="0,0"/>
+		<capacity>50</capacity>
+	</contribution>
+	
+	<!-- 23000系後尾車両 -->
+	<contribution type="trainCar" id="{9F65AF1F-FCB7-48a1-83FC-3A2BD7F057D5}-t">
+		<class name="freetrain.framework.plugin.impl.ReverseTrainCarImpl" />
+		<base carRef="{9F65AF1F-FCB7-48a1-83FC-3A2BD7F057D5}-h"/>
+		<capacity>50</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{9F65AF1F-FCB7-48a1-83FC-3A2BD7F057D5}">
+		<company>近畿日本鉄道</company>
+		<type>23000系</type>
+		<name>伊勢志摩ライナー</name>
+		<author>暇</author>
+		<description>
+近鉄が製作した私鉄初の130km/h運転車両。観光特急としての性格が強く、座席は華やかでカラーリングも黄色に白とかなり明るい。運転室仕切りはガラスとなっていて前面展望を楽しめる。6両固定編成。
+		</description>
+		<price>2300</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{9F65AF1F-FCB7-48a1-83FC-3A2BD7F057D5}-h"/>
+			<body carRef="{9F65AF1F-FCB7-48a1-83FC-3A2BD7F057D5}-m"/>
+			<tail carRef="{9F65AF1F-FCB7-48a1-83FC-3A2BD7F057D5}-t"/>
+		</composition>
+	</contribution>
+	
+</plug-in>

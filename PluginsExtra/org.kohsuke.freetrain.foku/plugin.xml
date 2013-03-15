@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Forklift</title>
+	<author>HanabishiRekka</author>
+	<homepage></homepage>
+	
+	<contribution type="picture" id="{474B8BFD-2516-4410-8800-D0EA1049D28D}">
+		<picture src="foku0.bmp" />
+	</contribution>
+	<contribution type="picture" id="{474B8BFD-2517-4411-8800-D0EA1049D28D}">
+		<picture src="foku1.bmp" />
+	</contribution>
+	<contribution type="picture" id="{474B8BFD-2518-4412-8800-D0EA1049D28D}">
+		<picture src="foku2.bmp" />
+	</contribution>
+	
+	<contribution type="railStationary" id="{474B8BFD-3000-1010-HRE-D0EA1049D201}">
+		<group>Forklift</group>
+		<price>510</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{474B8BFD-2516-4410-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{474B8BFD-3000-1010-HRE-D0EA1049D202}">
+		<group>Forklift</group>
+		<price>510</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{474B8BFD-2516-4410-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{474B8BFD-3000-1010-HRE-D0EA1049D203}">
+		<group>Forklift</group>
+		<price>510</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{474B8BFD-2517-4411-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{474B8BFD-3000-1010-HRE-D0EA1049D204}">
+		<group>Forklift</group>
+		<price>510</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{474B8BFD-2517-4411-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+
+	<contribution type="railStationary" id="{474B8BFD-3000-1010-HRE-D0EA1049D205}">
+		<group>Forklift</group>
+		<price>510</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{474B8BFD-2518-4412-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{474B8BFD-3000-1010-HRE-D0EA1049D206}">
+		<group>Forklift</group>
+		<price>510</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{474B8BFD-2518-4412-8800-D0EA1049D28D}" />
+		</sprite>
+	</contribution>
+
+</plug-in>

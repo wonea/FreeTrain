@@ -1,0 +1,56 @@
+#
+# schema fro FreeTrain plugin.xml files
+#
+# core module
+# 
+# $id:$
+#
+
+include "picture.rnc"
+
+start =
+	element plug-in {
+		element title {text},		# title of this plug-in
+		element author {text}*,		# author
+		element homepage {text}?,	# homepage
+		
+		# contributions
+		element contribution {
+			attribute id{xs:token},	# unique identifier of this contribution
+			contribution
+		}*
+	}
+
+# land builder contribution
+contribution |=
+	attribute type {"landBuilder"},
+	element name {text},	# name of this land builder
+	element lands {
+		list { guid }		# GUID of land contributions to be placed
+	}
+
+
+structureContribution =
+	element name {text}?,	# name of the structure
+	element group {text}?,	# name ot the group this structure belongs to.
+	# either name or group must be present
+	
+	# presence of this element indicates that the structure
+	# may not be built by the computer algorithm.
+	element hideFromComputer {empty}?,
+	
+	# presence of this element indicates that the player
+	# may not build this structure
+	element hideFromPlayer {empty}?
+
+
+
+
+
+#
+# datatypes
+#
+
+# GUID
+guid =
+	text;

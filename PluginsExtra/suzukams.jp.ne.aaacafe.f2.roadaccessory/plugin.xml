@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+<title>HIMA road accessories</title>
+<author>Hima</author>
+<homepage></homepage>
+
+<!--road accessories-->
+
+	<contribution type="picture" id="{0405292258}BBusSA">
+		<picture src="busstop01A.bmp">
+		</picture>
+	</contribution>
+
+
+	<contribution type="picture" id="{0405292258}BBusSB">
+		<picture src="busstop01B.bmp">
+		</picture>
+	</contribution>
+
+
+	<contribution type="picture" id="{0405292258}BBusSC">
+		<picture src="busstop01C.bmp">
+		</picture>
+	</contribution>
+
+
+
+	<contribution type="picture" id="{0405292357}ABusSA">
+		<picture src="busstop02A.bmp">
+		</picture>
+	</contribution>
+
+
+	<contribution type="picture" id="{0405292357}ABusSB">
+		<picture src="busstop02B.bmp">
+		</picture>
+	</contribution>
+
+
+	<contribution type="picture" id="{0405292357}ABusSC">
+		<picture src="busstop02C.bmp">
+		</picture>
+	</contribution>
+
+
+
+
+	<contribution type="roadAccessory" id="{0405292252}qw354361">
+		<name>Busstop red,noroof,A</name>
+		<sprite origin="0,0">
+		<picture ref="{0405292258}BBusSA"/>
+		 <spriteType name="colorMapped">
+			<map from="128,0,0" to="200,66,66"/>
+			<map from="0,0,255" to="200,66,66"/>
+			<map from="255,0,0" to="192,192,192"/>
+			<map from="192,192,192" to="255,172,214"/>
+		 </spriteType>
+
+		</sprite>
+	</contribution>
+
+
+
+	<contribution type="roadAccessory" id="{0405292252}qw354362">
+		<name>Busstop red,noroof,B</name>
+		<sprite origin="0,0">
+		<picture ref="{0405292258}BBusSB"/>
+		 <spriteType name="colorMapped">
+			<map from="128,0,0" to="200,66,66"/>
+			<map from="0,0,255" to="200,66,66"/>
+			<map from="255,0,0" to="192,192,192"/>
+			<map from="192,192,192" to="255,172,214"/>
+		 </spriteType>
+
+		</sprite>
+	</contribution>
+
+
+
+	<contribution type="roadAccessory" id="{0405292252}qw354363">
+		<name>Busstop red,noroof,C</name>
+		<sprite origin="0,0">
+			<picture ref="{0405292258}BBusSC"/>
+		 <spriteType name="colorMapped">
+			<map from="128,0,0" to="200,66,66"/>
+			<map from="0,0,255" to="200,66,66"/>
+			<map from="255,0,0" to="192,192,192"/>
+			<map from="192,192,192" to="255,172,214"/>
+		 </spriteType>
+
+		</sprite>
+	</contribution>
+
+
+	<contribution type="roadAccessory" id="{0405292252}qw354365">
+		<name>Busstop blue,noroof,A</name>
+		<sprite origin="0,0">
+			<picture ref="{0405292258}BBusSA"/>
+		 <spriteType name="colorMapped">
+			<map from="128,0,0" to="0,128,255"/>
+			<map from="0,0,255" to="0,128,255"/>
+			<map from="255,0,0" to="192,192,192"/>
+			<map from="192,192,192" to="164,164,255"/>
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+
+
+	<contribution type="roadAccessory" id="{0405292252}qw3543562">
+		<name>Busstop blue,noroof,B</name>
+		<sprite origin="0,0">
+			<picture ref="{0405292258}BBusSB"/>
+		 <spriteType name="colorMapped">
+			<map from="128,0,0" to="0,128,255"/>
+			<map from="0,0,255" to="0,128,255"/>
+			<map from="255,0,0" to="192,192,192"/>
+			<map from="192,192,192" to="164,164,255"/>
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+
+
+	<contribution type="roadAccessory" id="{0405292252}qw3543563">
+		<name>Busstop blue,noroof,C</name>
+		<sprite origin="0,0">
+			<picture ref="{0405292258}BBusSC"/>
+		 <spriteType name="colorMapped">
+			<map from="128,0,0" to="0,128,255"/>
+			<map from="0,0,255" to="0,128,255"/>
+			<map from="255,0,0" to="192,192,192"/>
+			<map from="192,192,192" to="164,164,255"/>
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+
+	<contribution type="roadAccessory" id="{0405292252}fdgj354365">
+		<name>Busstop green,noroof,A</name>
+		<sprite origin="0,0">
+			<picture ref="{0405292258}BBusSA"/>
+		 <spriteType name="colorMapped">
+			<map from="128,0,0" to="0,128,0"/>
+			<map from="0,0,255" to="0,128,0"/>
+			<map from="255,0,0" to="192,192,192"/>
+			<map from="192,192,192" to="119,171,107"/>
+
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+
+
+	<contribution type="roadAccessory" id="{0405292252}stj3543562">
+		<name>Busstop green,noroof,B</name>
+		<sprite origin="0,0">
+			<picture ref="{0405292258}BBusSB"/>
+		 <spriteType name="colorMapped">
+			<map from="128,0,0" to="0,128,0"/>
+			<map from="0,0,255" to="0,128,0"/>
+			<map from="255,0,0" to="192,192,192"/>
+			<map from="192,192,192" to="119,171,107"/>
+
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+
+
+	<contribution type="roadAccessory" id="{0405292252}3yt3543563">
+		<name>Busstop green,noroof,C</name>
+		<sprite origin="0,0">
+			<picture ref="{0405292258}BBusSC"/>
+		 <spriteType name="colorMapped">
+			<map from="128,0,0" to="0,128,0"/>
+			<map from="0,0,255" to="0,128,0"/>
+			<map from="255,0,0" to="192,192,192"/>
+			<map from="192,192,192" to="119,171,107"/>
+
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+<!--Roofed busstop-->
+
+
+
+	<contribution type="roadAccessory" id="{0405300000}qw3453565">
+		<name>Busstop red,roofed,A</name>
+		<sprite origin="0,0">
+			<picture ref="{0405292357}ABusSA"/>
+		 <spriteType name="colorMapped">
+			<map from="128,0,0" to="200,66,66"/>
+			<map from="0,255,0" to="220,120,118"/>
+			<map from="0,0,255" to="200,66,66"/>
+			<map from="0,128,0" to="206,67,64"/>
+			<map from="255,0,0" to="192,192,192"/>
+			<map from="192,192,192" to="255,172,214"/>
+
+
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+
+
+	<contribution type="roadAccessory" id="{0405300000}qw7848562">
+		<name>Busstop red,roofed,B</name>
+		<sprite origin="0,0">
+			<picture ref="{0405292357}ABusSB"/>
+		 <spriteType name="colorMapped">
+			<map from="128,0,0" to="200,66,66"/>
+			<map from="0,255,0" to="220,120,118"/>
+			<map from="0,0,255" to="200,66,66"/>
+			<map from="0,128,0" to="206,67,64"/>
+			<map from="255,0,0" to="192,192,192"/>
+			<map from="192,192,192" to="255,172,214"/>
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+
+
+	<contribution type="roadAccessory" id="{0405300000}qw1734563">
+		<name>Busstop red,roofed,C</name>
+		<sprite origin="0,0">
+			<picture ref="{0405292357}ABusSC"/>
+		 <spriteType name="colorMapped">
+			<map from="128,0,0" to="200,66,66"/>
+			<map from="0,255,0" to="220,120,118"/>
+			<map from="0,0,255" to="200,66,66"/>
+			<map from="0,128,0" to="206,67,64"/>
+			<map from="255,0,0" to="192,192,192"/>
+			<map from="192,192,192" to="255,172,214"/>
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+
+
+
+	<contribution type="roadAccessory" id="{0405300000}qw3564565">
+		<name>Busstop blue,roofed,A</name>
+		<sprite origin="0,0">
+			<picture ref="{0405292357}ABusSA"/>
+		 <spriteType name="colorMapped">
+			<map from="128,0,0" to="0,128,255"/>
+			<map from="0,255,0" to="168,192,217"/>
+			<map from="0,0,255" to="0,128,255"/>
+			<map from="0,128,0" to="126,163,199"/>
+			<map from="255,0,0" to="192,192,192"/>
+			<map from="192,192,192" to="64,128,128"/>
+
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+
+
+	<contribution type="roadAccessory" id="{0405300000}qw789662">
+		<name>Busstop blue,roofed,B</name>
+		<sprite origin="0,0">
+			<picture ref="{0405292357}ABusSB"/>
+		 <spriteType name="colorMapped">
+			<map from="128,0,0" to="0,128,255"/>
+			<map from="0,255,0" to="168,192,217"/>
+			<map from="0,0,255" to="0,128,255"/>
+			<map from="0,128,0" to="126,163,199"/>
+			<map from="255,0,0" to="192,192,192"/>
+			<map from="192,192,192" to="64,128,128"/>
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+
+
+	<contribution type="roadAccessory" id="{0405300000}qw153563">
+		<name>Busstop blue,roofed,C</name>
+		<sprite origin="0,0">
+			<picture ref="{0405292357}ABusSC"/>
+		 <spriteType name="colorMapped">
+			<map from="128,0,0" to="0,128,255"/>
+			<map from="0,255,0" to="168,192,217"/>
+			<map from="0,0,255" to="0,128,255"/>
+			<map from="0,128,0" to="126,163,199"/>
+			<map from="255,0,0" to="192,192,192"/>
+			<map from="192,192,192" to="64,128,128"/>
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+
+	<contribution type="roadAccessory" id="{0405300000}rtj3564565">
+		<name>Busstop green,roofed,A</name>
+		<sprite origin="0,0">
+			<picture ref="{0405292357}ABusSA"/>
+		 <spriteType name="colorMapped">
+
+			<map from="128,0,0" to="0,128,0"/>
+			<map from="0,0,255" to="0,128,0"/>
+			<map from="0,255,0" to="105,179,87"/>
+			<map from="255,0,0" to="192,192,192"/>
+			<map from="0,128,0" to="70,124,56"/>
+			<map from="192,192,192" to="119,171,107"/>
+
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+
+
+	<contribution type="roadAccessory" id="{0405300000}hgk789662">
+		<name>Busstop green,roofed,B</name>
+		<sprite origin="0,0">
+			<picture ref="{0405292357}ABusSB"/>
+		 <spriteType name="colorMapped">
+			<map from="128,0,0" to="0,128,0"/>
+			<map from="0,0,255" to="0,128,0"/>
+			<map from="0,255,0" to="105,179,87"/>
+			<map from="255,0,0" to="192,192,192"/>
+			<map from="0,128,0" to="70,124,56"/>
+			<map from="192,192,192" to="119,171,107"/>
+
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+
+
+	<contribution type="roadAccessory" id="{0405300000}te1545163">
+		<name>Busstop green,roofed,C</name>
+		<sprite origin="0,0">
+			<picture ref="{0405292357}ABusSC"/>
+		 <spriteType name="colorMapped">
+
+			<map from="128,0,0" to="0,128,0"/>
+			<map from="0,0,255" to="0,128,0"/>
+			<map from="0,255,0" to="105,179,87"/>
+			<map from="255,0,0" to="192,192,192"/>
+			<map from="0,128,0" to="70,124,56"/>
+			<map from="192,192,192" to="119,171,107"/>
+		 </spriteType>
+		</sprite>
+	</contribution>
+
+<!--Roof-->
+
+	<contribution type="roadAccessory" id="{0405300059}sshf513">
+		<name>Roof01A</name>
+		<sprite origin="0,0">
+		<picture src="Roof01A.bmp"/>
+
+
+		</sprite>
+	</contribution>
+
+	<contribution type="roadAccessory" id="{0405300059}sshf51533">
+		<name>Roof01B</name>
+		<sprite origin="0,0">
+		<picture src="Roof01B.bmp"/>
+
+
+		</sprite>
+	</contribution>
+
+
+	<contribution type="roadAccessory" id="{0405300120}sshf48653">
+		<name>Roof02</name>
+		<sprite origin="0,0">
+		<picture src="Roof02.bmp"/>
+
+
+		</sprite>
+	</contribution>
+</plug-in>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Road</title>
+	<author>Hiro Ayase</author>
+	<homepage>http://www14.big.oir.jp/~ayase/</homepage>
+	
+	<contribution type="road" id="{FreeTrain-AYASE-Hiro-RoadImg-Left}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Road with sidewalk (left)</name>
+		<description>Road for left lane</description>
+		<picture src="road_left.bmp" size="32,32" offset="16">
+			<override when="night" src="road_left_n.bmp"/>
+		</picture>
+		<!-- sizeは一つあたりの道路チップのサイズ。配置は画像を参照 -->
+		<!-- offsetは、チップ内での位置あわせ用。通常、size.Y-16 -->
+	</contribution>
+	
+	<contribution type="road" id="{FreeTrain-AYASE-Hiro-RoadImg-Right}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Road with sidewalk (right)</name>
+		<description>Road for left lane</description>
+		<picture src="road_right.bmp" size="32,32" offset="16">
+			<override when="night" src="road_right_n.bmp"/>
+		</picture>
+		<!-- sizeは一つあたりの道路チップのサイズ。配置は画像を参照 -->
+		<!-- offsetは、チップ内での位置あわせ用。通常、size.Y-16 -->
+	</contribution>
+	
+	<contribution type="road" id="{FreeTrain-AYASE-Hiro-RoadImg-Center}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>Road with sidewalk (center)</name>
+		<description>Road for left lane</description>
+		<picture src="road_center.bmp" size="32,32" offset="16">
+			<override when="night" src="road_center_n.bmp"/>
+		</picture>
+		<!-- sizeは一つあたりの道路チップのサイズ。配置は画像を参照 -->
+		<!-- offsetは、チップ内での位置あわせ用。通常、size.Y-16 -->
+	</contribution>
+
+	<contribution type="road" id="{FreeTrain-AYASE-Hiro-RoadImg-Single}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>2 lane road (normal)</name>
+		<description>2 lane road (normal)</description>
+		<picture src="road_single.bmp" size="32,32" offset="16" />
+		<!-- sizeは一つあたりの道路チップのサイズ。配置は画像を参照 -->
+		<!-- offsetは、チップ内での位置あわせ用。通常、size.Y-16 -->
+	</contribution>
+
+	<contribution type="road" id="{FreeTrain-AYASE-Hiro-RoadImg-Highway}">
+		<class name="freetrain.contributions.road.StandardRoadContribution" />
+		<name>2 lane road (expressway)</name>
+		<description>2 lane road (expressway)</description>
+		<picture src="road_highway.bmp" size="32,32" offset="16">
+			<override when="night" src="road_highway_n.bmp"/>
+		</picture>
+		<!-- sizeは一つあたりの道路チップのサイズ。配置は画像を参照 -->
+		<!-- offsetは、チップ内での位置あわせ用。通常、size.Y-16 -->
+	</contribution>
+
+
+	<contribution type="road" id="{FreeTrain-AYASE-Hiro-RoadImg-Siba}">
+		<class name="freetrain.contributions.road.A3RoadContribution" />
+		<name>Undergrowth</name>
+		<description>Undergrowth</description>
+		<picture src="road_siba.bmp" size="32,32" offset="16" />
+		<!-- sizeは一つあたりの道路チップのサイズ。配置は画像を参照 -->
+		<!-- offsetは、チップ内での位置あわせ用。通常、size.Y-16 -->
+	</contribution>
+	
+	<contribution type="road" id="{FreeTrain-AYASE-Hiro-RoadImg-Water}">
+		<class name="freetrain.contributions.road.A3RoadContribution" />
+		<name>Water</name>
+		<description>Water</description>
+		<picture src="road_water.bmp" size="32,32" offset="16" />
+		<!-- sizeは一つあたりの道路チップのサイズ。配置は画像を参照 -->
+		<!-- offsetは、チップ内での位置あわせ用。通常、size.Y-16 -->
+	</contribution>
+
+</plug-in>

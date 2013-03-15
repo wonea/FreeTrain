@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>A4 Memorial Pack BGM</title>
+	<!--!<title>Ａ４メモリアルパックＢＧＭ</title>-->
+	<author>Kohsuke Kawaguchi</author>
+	<!--!<author>川口耕介</author>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	<description>
+		Loads BGM from installed A4 Memorial Pack
+	</description>
+		<!--!インストールされているＡ４メモリアルパックの音楽を流用します-->
+	
+	<contribution type="bgmFactory" id="{28BCAA46-42C1-4da0-BD7B-348CBAA9DB9F}">
+		<class name="freetrain.plugin.a4membgm.FactoryImpl"
+		  codebase="bin/Debug/FreeTrain.A4MemBGM.dll" />
+	</contribution>
+</plug-in>

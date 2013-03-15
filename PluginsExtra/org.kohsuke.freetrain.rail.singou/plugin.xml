@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Entering signal</title>
+	<author>HanabishiRekka</author>
+	<homepage></homepage>
+	
+	<depends on="org.kohsuke.freetrain.rail.electricPole" />
+
+	<contribution type="picture" id="{874B8BFD-1EF4-2000-1000-D0EA1049D28D}">
+		<picture src="zyounai00.bmp" />
+	</contribution>
+	<contribution type="picture" id="{874B8BFD-1EF4-2000-1001-D0EA1049D28D}">
+		<picture src="zyounai01.bmp" />
+	</contribution>
+	<contribution type="picture" id="{874B8BFD-1EF4-2000-1002-D0EA1049D28D}">
+		<picture src="zyounai02.bmp" />
+	</contribution>
+	<contribution type="picture" id="{874B8BFD-1EF4-2000-1003-D0EA1049D28D}">
+		<picture src="zyounai03.bmp" />
+	</contribution>
+	<contribution type="picture" id="{874B8BFD-1EF4-2000-1004-D0EA1049D28D}">
+		<picture src="zyounai04.bmp" />
+	</contribution>
+	<contribution type="picture" id="{874B8BFD-1EF4-2000-1005-D0EA1049D28D}">
+		<picture src="zyounai05.bmp" />
+	</contribution>
+
+	<contribution type="electricPole" id="{874B8BFD-1EF4-1001-1000-D0EA1049D28D}">
+		<name>Entering signal 1</name>
+		<sprite>
+			<picture ref="{874B8BFD-1EF4-2000-1000-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{874B8BFD-1EF4-1002-1000-D0EA1049D28D}">
+		<name>Entering signal 2</name>
+		<sprite>
+			<picture ref="{874B8BFD-1EF4-2000-1001-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{874B8BFD-1EF4-1003-1000-D0EA1049D28D}">
+		<name>Entering signal 3</name>
+		<sprite>
+			<picture ref="{874B8BFD-1EF4-2000-1002-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{874B8BFD-1EF4-1004-1000-D0EA1049D28D}">
+		<name>Entering signal 4</name>
+		<sprite>
+			<picture ref="{874B8BFD-1EF4-2000-1003-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{874B8BFD-1EF4-1005-1000-D0EA1049D28D}">
+		<name>Entering signal 5</name>
+		<sprite>
+			<picture ref="{874B8BFD-1EF4-2000-1004-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{874B8BFD-1EF4-1006-1000-D0EA1049D28D}">
+		<name>Entering signal 6</name>
+		<sprite>
+			<picture ref="{874B8BFD-1EF4-2000-1005-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+
+
+</plug-in>

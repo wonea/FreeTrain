@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<project name="FreeTrain" basedir="." default="release">
+  
+  <target name="release">
+    <tstamp />
+    
+    <zip zipfile="ColorDiff.${DSTAMP}.zip">
+      <zipfileset dir="doc" />
+      <zipfileset dir="src" prefix="src" />
+      <zipfileset dir="bin/Debug" prefix="bin"/>
+    </zip>
+  </target>
+</project>

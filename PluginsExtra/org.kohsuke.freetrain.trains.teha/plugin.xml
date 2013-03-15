@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>T.Hara</title>
+ 	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+
+	<!-- トワイライト中間車両 -->
+	<contribution type="trainCar" id="{F9427702-D023-431D-BD3C-9E0A4C654D84}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="trainef81b.bmp" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+
+	<!-- トワイライト最後尾 -->
+	<contribution type="trainCar" id="{CC80D97A-461B-4E87-9B0A-52D12228C7E8}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="trainef81c.bmp" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+
+	<!-- EF81-->
+	<contribution type="trainCar" id="{27397861-4908-4C61-A5B6-749B7D6F1BF9}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="trainef81a.bmp" />
+		</sprite>
+		<capacity>0</capacity>
+	</contribution>
+
+	<contribution type="train" id="{4161129C-2C3C-493A-B703-16825455D353}">
+		<company>JR West</company>
+		<type>EF81</type>
+		<name>Twilight Express</name>
+		<author>T.Hara</author>
+		<description>大阪～札幌間を走行する豪華寝台特急。ホテル並みの設備を揃える。
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{27397861-4908-4C61-A5B6-749B7D6F1BF9}"/>
+			<body carRef="{F9427702-D023-431D-BD3C-9E0A4C654D84}"/>
+			<tail carRef="{CC80D97A-461B-4E87-9B0A-52D12228C7E8}"/>
+		</composition>
+	</contribution>
+
+	<!-- 103系先頭1 -->
+	<contribution type="trainCar" id="{59D564F5-6255-4AF6-BA85-A5AAA5A9B335}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="train103usj1.bmp" />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<!-- 103系中間1 -->
+	<contribution type="trainCar" id="{22323B9B-F649-4103-91CF-519108D6FE14}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="train103usj2.bmp" />
+		</sprite>
+		<capacity>144</capacity>
+	</contribution>
+
+	<!-- 103系中間2 -->
+	<contribution type="trainCar" id="{1E70AB23-B4F1-4135-9F35-B594FE810E62}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="train103usj3.bmp" />
+		</sprite>
+		<capacity>144</capacity>
+	</contribution>
+
+	<!-- 103系先頭2 -->
+	<contribution type="trainCar" id="{E57CA191-B0D8-49E8-B948-54D6CE01864A}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="train103usj4.bmp" />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+
+<contribution type="train" id="{4B41FC2E-DFFE-4F57-9412-74F2A368577C}">
+<company>JR West</company>
+<type>103 Series</type>
+<name>USJ America-no-Machinami</name>
+<author>T.Hara</author>
+<description>USJの開業に合わせてラッピングされた103系、全車N40改造車である。(メモリ食い…)
+</description>
+<price>100</price>
+<speed>medium</speed>
+
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="Ａ" ref="{59D564F5-6255-4AF6-BA85-A5AAA5A9B335}"/>
+<car char="Ｂ" ref="{22323B9B-F649-4103-91CF-519108D6FE14}"/>
+<car char="Ｃ" ref="{1E70AB23-B4F1-4135-9F35-B594FE810E62}"/>
+<car char="Ｄ" ref="{E57CA191-B0D8-49E8-B948-54D6CE01864A}"/>
+
+<composition>Ａ</composition>
+<composition>ＡＤ</composition>
+<composition>ＡＢＤ</composition>
+<composition>ＡＢＣＤ</composition>
+<composition>ＡＢＣＢＤ</composition>
+<composition>ＡＢＣＢＣＤ</composition>
+</config>
+</contribution>
+
+
+	<!-- 103系先頭1 -->
+	<contribution type="trainCar" id="{091C3AA9-2641-403E-B912-F95713B30D77}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="train103usjg1.bmp" />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<!-- 103系中間 -->
+	<contribution type="trainCar" id="{F6151004-BFCE-41E3-B015-24D935FA2DA6}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="train103usjg2.bmp" />
+		</sprite>
+		<capacity>144</capacity>
+	</contribution>
+
+	<!-- 103系最後尾 -->
+	<contribution type="trainCar" id="{C8B6677D-A802-49E9-AACA-F9F8264AFFC2}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="train103usjg3.bmp" />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+
+<contribution type="train" id="{5174FFB3-C406-41C1-9198-CD23D40DCA3F}">
+<company>JR West</company>
+<type>103 Series</type>
+<name>USJ Universal Group</name>
+<author>T.Hara</author>
+<description>USJの開業に合わせてラッピングされた103系、全車N40改造車である。
+</description>
+<price>100</price>
+<speed>medium</speed>
+
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="Ａ" ref="{091C3AA9-2641-403E-B912-F95713B30D77}"/>
+<car char="Ｂ" ref="{F6151004-BFCE-41E3-B015-24D935FA2DA6}"/>
+<car char="Ｃ" ref="{C8B6677D-A802-49E9-AACA-F9F8264AFFC2}"/>
+
+<composition>Ａ</composition>
+<composition>ＡＣ</composition>
+<composition>ＡＢＣ</composition>
+<composition>ＡＢＢＣ</composition>
+<composition>ＡＢＢＢＣ</composition>
+<composition>ＡＢＢＢＢＣ</composition>
+</config>
+</contribution>
+
+	<!-- 103系先頭 -->
+	<contribution type="trainCar" id="{FE2CF211-BA2E-43D2-9076-A23DF545D03D}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="train103osaka1.bmp" />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<!-- 103系中間 -->
+	<contribution type="trainCar" id="{4D08FC76-5C67-4546-A58C-BB02CAE20308}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="train103osaka2.bmp" />
+		</sprite>
+		<capacity>144</capacity>
+	</contribution>
+
+	<!-- 103系最後尾 -->
+	<contribution type="trainCar" id="{9D2E8E41-7777-4395-8C54-7F470E371046}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+	<base carRef="{FE2CF211-BA2E-43D2-9076-A23DF545D03D}" />
+		<capacity>136</capacity>
+	</contribution>
+
+	<contribution type="train" id="{2C7C4B10-8BBB-4196-873A-764A5BFC53D0}">
+		<company>JR West</company>
+		<type>103 Series</type>
+		<name>103 Series Vermilion (low motorman's seat)</name>
+		<author>T.Hara</author>
+		<description>
+N40延命改造を受けた103系、シート等は207系レベルに変更されているが乗り心地は103系…　大阪環状線等で使用されている		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{FE2CF211-BA2E-43D2-9076-A23DF545D03D}"/>
+			<body carRef="{4D08FC76-5C67-4546-A58C-BB02CAE20308}"/>
+			<tail carRef="{9D2E8E41-7777-4395-8C54-7F470E371046}"/>
+		</composition>
+	</contribution>
+
+	<!-- 207系先頭 -->
+	<contribution type="trainCar" id="{97C123C3-89A2-488C-AB83-1D9AB108741F}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="train207r1.bmp" />
+		</sprite>
+		<capacity>150</capacity>
+	</contribution>
+
+	<!-- 207系中間 -->
+	<contribution type="trainCar" id="{97C123C3-89A2-488C-AB83-1D9AB108741F}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="train207r2.bmp" />
+		</sprite>
+		<capacity>163</capacity>
+	</contribution>
+
+	<!-- 207系最後尾 -->
+	<contribution type="trainCar" id="{97C123C3-89A2-488C-AB83-1D9AB108741F}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+	<base carRef="{97C123C3-89A2-488C-AB83-1D9AB108741F}-h" />
+	</contribution>
+
+	<contribution type="train" id="{97C123C3-89A2-488C-AB83-1D9AB108741F}">
+		<company>JR West</company>
+		<type>207 Series</type>
+		<name>207 Series 　0 Model</name>
+		<author>T.Hara</author>
+		<description>JR西日本の標準型通勤車、乗り心地が良いがかなり高額なのが…ちなみにJR東日本に900番台が在籍しているが、全く別物である。
+		</description>
+		<price>2000</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{97C123C3-89A2-488C-AB83-1D9AB108741F}-h"/>
+			<body carRef="{97C123C3-89A2-488C-AB83-1D9AB108741F}-m"/>
+			<tail carRef="{97C123C3-89A2-488C-AB83-1D9AB108741F}-t"/>
+		</composition>
+	</contribution>
+
+	<contribution type="train" id="{B2F41693-134A-4044-9D13-49990166AD47}">
+		<company>JR West</company>
+		<type>207 Series</type>
+		<name>207 Series Science City, Tozai Line</name>
+		<author>T.Hara</author>
+		<description>学研都市、東西線では4+3で走っている、松井山手で前3両を切り離して運転するからである。また、東西線区間はダブルパンタで走行する。
+		</description>
+		<price>2000</price>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+		<car char="Ａ" ref="{97C123C3-89A2-488C-AB83-1D9AB108741F}-h"/>
+		<car char="Ｂ" ref="{97C123C3-89A2-488C-AB83-1D9AB108741F}-m"/>
+		<car char="Ｃ" ref="{97C123C3-89A2-488C-AB83-1D9AB108741F}-t"/>
+
+		<composition>Ａ</composition>
+		<composition>ＡＣ</composition>
+		<composition>ＡＢＣ</composition>
+		<composition>ＡＢＢＣ</composition>
+		<composition>ＡＢＣＡＣ</composition>
+		<composition>ＡＢＣＡＢＣ</composition>
+		<composition>ＡＢＢＣＡＢＣ</composition>
+		</config>
+	</contribution>
+</plug-in>

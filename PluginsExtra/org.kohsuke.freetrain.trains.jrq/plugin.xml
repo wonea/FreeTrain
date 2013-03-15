@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title></title>
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	<depend on="org.kohsuke.freetrain.trains.trainshare" />
+
+	<!-- キハ200系 iwasaki氏-->
+	 <contribution type="trainCar" id="{kiha200-kyushu-ibusuki-kashii-200309301056}">
+	<class name="freetrain.contributions.train.ColoredTrainCarImpl" />
+	<colorMap picture="{243D9F53-67FB-432E-B985-3B9B696D8CE0}-7" base="255,0,0" line1="255,0,0" line2="255,0,0" line3="255,0,0" />
+	 <capacity>200</capacity>
+	</contribution>
+
+	<contribution type="train" id="{kiha200-kyushu-ibusuki-kashii-200309301100}">
+		<company>JR Kyushu</company>
+		<type>KIHA 200 Series</type>
+		<name>Kashii Line / Ibusuki-Makurazaki Line</name>
+		<author>iwasaki</author>
+		<description>九州で走っている、気動車です。
+		</description>
+		<price>100</price>
+		<speed>slow</speed>
+		<composition>
+			<body carRef="{kiha200-kyushu-ibusuki-kashii-200309301056}"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 485系先頭車両 -->
+	<contribution type="trainCar" id="{4E5FD73B-4F93-49f4-9FE8-9E8AE5FE2127}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="485a" />
+		</sprite>
+		<capacity>56</capacity>
+	</contribution>
+	
+	<!-- 485系中間車両 -->
+	<contribution type="trainCar" id="{4E5FD73B-4F93-49f4-9FE8-9E8AE5FE2127}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="485b" />
+		</sprite>
+		<capacity>72</capacity>
+	</contribution>
+	
+	<!-- 485系後尾車両 -->
+	<contribution type="trainCar" id="{4E5FD73B-4F93-49f4-9FE8-9E8AE5FE2127}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{4E5FD73B-4F93-49f4-9FE8-9E8AE5FE2127}-h"/>
+		<capacity>56</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{4E5FD73B-4F93-49f4-9FE8-9E8AE5FE2127}">
+		<company>JR Kyushu</company>
+		<type>485 Series</type>
+		<name>No Front Bonnet; Midori, Kamome Class</name>
+		<author>Hima</author>
+		<description>
+昭和43年に登場した交直両用特急電車。登場以来数々の特急の代名詞となった。赤くなってみたり緑になってみたりしている。
+		</description>
+		<price>1</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{4E5FD73B-4F93-49f4-9FE8-9E8AE5FE2127}-h"/>
+			<body carRef="{4E5FD73B-4F93-49f4-9FE8-9E8AE5FE2127}-m"/>
+			<tail carRef="{4E5FD73B-4F93-49f4-9FE8-9E8AE5FE2127}-t"/>
+		</composition>
+	</contribution>
+	
+	
+	
+	<!-- 415系先頭車両 -->
+	<contribution type="trainCar" id="{7E0F257B-57AF-4eda-8E9A-FE51C3734BCF}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="415a" />
+		</sprite>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 415系中間車両 -->
+	<contribution type="trainCar" id="{7E0F257B-57AF-4eda-8E9A-FE51C3734BCF}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture ref="415b" />
+		</sprite>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<!-- 415系後尾車両 -->
+	<contribution type="trainCar" id="{7E0F257B-57AF-4eda-8E9A-FE51C3734BCF}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{7E0F257B-57AF-4eda-8E9A-FE51C3734BCF}-h"/>
+		<capacity>45</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{7E0F257B-57AF-4eda-8E9A-FE51C3734BCF}">
+		<company>JR Kyushu</company>
+		<type>415 Series</type>
+		<name>Standard Colors</name>
+		<author>Min</author>
+		<speed>medium</speed> 
+		<capacity>95</capacity> 
+		<description>主に鹿児島本線を走る電車。交直流区間を走ることができるので、下関方面乗り入れに使われる。</description>
+
+
+		<price>100</price>
+		<speed>medium</speed>
+		<composition>
+			<head carRef="{7E0F257B-57AF-4eda-8E9A-FE51C3734BCF}-h"/>
+			<body carRef="{7E0F257B-57AF-4eda-8E9A-FE51C3734BCF}-m"/>
+			<tail carRef="{7E0F257B-57AF-4eda-8E9A-FE51C3734BCF}-t"/>
+		</composition>
+	</contribution>
+
+
+
+	<!-- 811系先頭車両 -->
+	<contribution type="trainCar" id="{23CAB2B9-D540-456f-B02F-671BC2ED03A5}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="811a.bmp" />
+		</sprite>
+		<capacity>110</capacity>
+	</contribution>
+	
+	<!-- 811系中間車両 -->
+	<contribution type="trainCar" id="{23CAB2B9-D540-456f-B02F-671BC2ED03A5}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="811b.bmp" />
+		</sprite>
+		<capacity>110</capacity>
+	</contribution>
+	
+	<!-- 811系後尾車両 -->
+	<contribution type="trainCar" id="{23CAB2B9-D540-456f-B02F-671BC2ED03A5}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{23CAB2B9-D540-456f-B02F-671BC2ED03A5}-h"/>
+		<capacity>110</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{23CAB2B9-D540-456f-B02F-671BC2ED03A5}">
+		<company>JR Kyushu</company>
+		<type>811 Series</type>
+		<name>Base Colors</name>
+		<author>Min</author>
+		<speed>medium</speed> 
+		<description>主に福岡地区で活躍する通勤電車。４両で構成される。</description>
+		<price>1</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{23CAB2B9-D540-456f-B02F-671BC2ED03A5}-h"/>
+			<body carRef="{23CAB2B9-D540-456f-B02F-671BC2ED03A5}-m"/>
+			<tail carRef="{23CAB2B9-D540-456f-B02F-671BC2ED03A5}-t"/>
+		</composition>
+	</contribution>
+
+
+	<!-- 813系先頭車両 -->
+	<contribution type="trainCar" id="{B8FF8145-9108-4165-BBD5-46B647D75E2B}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="813a.bmp" />
+		</sprite>
+		<capacity>110</capacity>
+	</contribution>
+	
+	<!-- 813系中間車両 -->
+	<contribution type="trainCar" id="{B8FF8145-9108-4165-BBD5-46B647D75E2B}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="813b.bmp" />
+		</sprite>
+		<capacity>110</capacity>
+	</contribution>
+	
+	<!-- 813系後尾車両 -->
+	<contribution type="trainCar" id="{B8FF8145-9108-4165-BBD5-46B647D75E2B}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{B8FF8145-9108-4165-BBD5-46B647D75E2B}-h"/>
+		<capacity>110</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{B8FF8145-9108-4165-BBD5-46B647D75E2B}">
+		<company>JR Kyushu</company>
+		<type>813 Series</type>
+		<name>Base Colors</name>
+		<author>Min</author>
+		<speed>medium</speed> 
+		<description>主に福岡・大分・長崎地区で活躍する通勤電車。2両若しくは3両で構成される。</description>
+		<price>1</price>
+		<speed>fast</speed>
+		<composition>
+			<head carRef="{B8FF8145-9108-4165-BBD5-46B647D75E2B}-h"/>
+			<body carRef="{B8FF8145-9108-4165-BBD5-46B647D75E2B}-m"/>
+			<tail carRef="{B8FF8145-9108-4165-BBD5-46B647D75E2B}-t"/>
+		</composition>
+	</contribution>
+
+	<!-- キハ　71系先頭車両 -->
+	<contribution type="trainCar" id="{973A230D-8289-440d-800C-81464AB0FE2A}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="k71a.bmp" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+	
+	<!-- キハ　71系中間車両 -->
+	<contribution type="trainCar" id="{973A230D-8289-440d-800C-81464AB0FE2A}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="k71b.bmp" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+
+	<!-- キハ　71系後尾車両 -->
+	<contribution type="trainCar" id="{973A230D-8289-440d-800C-81464AB0FE2A}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{973A230D-8289-440d-800C-81464AB0FE2A}-h"/>
+		<capacity>60</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{973A230D-8289-440d-800C-81464AB0FE2A}">
+		<company>JR Kyushu</company>
+		<type>KIHA 71 Series</type>
+		<name>Yufuin-no-Mori</name>
+		<author>Kigami</author>
+		<speed>medium</speed> 
+		<description>博多～由布院～別府を結ぶ観光特急。４両編成１日２往復。
+ほぼ毎日運行されているのに季節列車扱いで、車内には鉄道車両としては珍しく木材が使われている暖かみのある車両です。</description>
+		<price>1</price>
+		<composition>
+			<head carRef="{973A230D-8289-440d-800C-81464AB0FE2A}-h"/>
+			<body carRef="{973A230D-8289-440d-800C-81464AB0FE2A}-m"/>
+			<tail carRef="{973A230D-8289-440d-800C-81464AB0FE2A}-t"/>
+		</composition>
+	</contribution>
+</plug-in>

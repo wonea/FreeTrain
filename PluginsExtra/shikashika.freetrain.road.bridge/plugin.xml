@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<plug-in>
+
+<title>Bridges</title>
+<author>Shikashika</author>
+<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+<!-- Road bridge with sidewalkand -->
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-sidewalk-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Bridge sidewalk(right edge)</name>
+<description>Bridge with sidewalk</description>
+<picture src="road_bridge1_r.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-sidewalk-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Bridge sidewalk(left edge)</name>
+<description>Bridge with sidewalk</description>
+<picture src="road_bridge1_l.bmp" size="32,32" offset="16" />
+</contribution>
+
+<!-- Road bridge with sidewalkand streetlight -->
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-sidewalk2-right}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Bridge sidewalk,light(right edge)</name>
+<description>Bridge with sidewalk</description>
+<picture src="road_bridge2_r.bmp" size="32,32" offset="16">
+	<override when="night" src="road_bridge2_rn.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-sidewalk2-left}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Bridge with sidewalk,light(left lane edge)</name>
+<description>Bridge with sidewalk</description>
+<picture src="road_bridge2_l.bmp" size="32,32" offset="16">
+	<override when="night" src="road_bridge2_ln.bmp"/>
+</picture>
+</contribution>
+
+<!-- Road bridge -->
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-PlateGirderBridges_w}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Girder bridge(white:two lanes)</name>
+<description>Bridge</description>
+<picture src="road_girderbridge_w.bmp" size="32,32" offset="16">
+	<override when="night" src="road_girderbridge_wn.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-PlateGirderBridges_c}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Girder bridge(gray:two lanes)</name>
+<description>Bridge</description>
+<picture src="road_girderbridge_c.bmp" size="32,32" offset="16">
+	<override when="night" src="road_girderbridge_cn.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-stonebride}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Girder bridge(stone)</name>
+<description>Bridge</description>
+<picture src="road_stonebridge.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-woodbride}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Girder bridge(wood)</name>
+<description>Bridge</description>
+<picture src="road_woodbridge.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-trussbride_r}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Truss bridge(red:two lanes)</name>
+<description>Bridge</description>
+<picture src="road_trussbridge_r.bmp" size="32,32" offset="16">
+	<override when="night" src="road_trussbridge_rn.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-trussbride_g}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Truss bridge(green:two lanes)</name>
+<description>Bridge</description>
+<picture src="road_trussbridge_g.bmp" size="32,32" offset="16">
+	<override when="night" src="road_trussbridge_gn.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-trussbride_b}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Truss bridge(indigo:two lanes)</name>
+<description>Bridge</description>
+<picture src="road_trussbridge_b.bmp" size="32,32" offset="16">
+	<override when="night" src="road_trussbridge_bn.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-trussbride_n}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Truss bridge(gray:two lanes)</name>
+<description>Bridge</description>
+<picture src="road_trussbridge_n.bmp" size="32,32" offset="16">
+	<override when="night" src="road_trussbridge_nn.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-trussbride_w}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Truss bridge(white:two lanes)</name>
+<description>Bridge</description>
+<picture src="road_trussbridge_w.bmp" size="32,32" offset="16">
+	<override when="night" src="road_trussbridge_wn.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-loshebridge_r}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Loshe bridge(red:two lanes)</name>
+<description>Bridge</description>
+<picture src="road_loshebridge_r.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-loshebridge_g}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Loshe bridge(green:two lanes)</name>
+<description>Bridge</description>
+<picture src="road_loshebridge_g.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-loshebridge_b}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Loshe bridge(indigo:two lanes)</name>
+<description>Bridge</description>
+<picture src="road_loshebridge_b.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-loshebridge_n}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Loshe bridge(gray:two lanes)</name>
+<description>Bridge</description>
+<picture src="road_loshebridge_n.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-loshebridge_w}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Loshe bridge(white:two lanes)</name>
+<description>Bridge</description>
+<picture src="road_loshebridge_w.bmp" size="32,32" offset="16" />
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-CableStayedBridge1_w}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Cable stayed bridge(white:two lanes)</name>
+<description>Bridge</description>
+<picture src="road_CSbridge1_w.bmp" size="32,48" offset="32">
+	<override when="night" src="road_CSbridge1_wn.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-CableStayedBridge2_w}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Cable stayed bridge(white:center)</name>
+<description>Bridge</description>
+<picture src="road_CSbridge2_w.bmp" size="32,48" offset="32">
+	<override when="night" src="road_CSbridge2_wn.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-CableStayedBridge3l_w}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Cable stayed bridge(white:left edge)</name>
+<description>Bridge</description>
+<picture src="road_CSbridge3l_w.bmp" size="32,48" offset="32">
+	<override when="night" src="road_CSbridge3l_wn.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-CableStayedBridge3r_w}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Cable stayed bridge(white:right edge)</name>
+<description>Bridge</description>
+<picture src="road_CSbridge3r_w.bmp" size="32,48" offset="32">
+	<override when="night" src="road_CSbridge3r_wn.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-rord_SuspensionBridge1_r}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Suspension bridge(red:two lanes)</name>
+<description>Bridge</description>
+<picture src="road_Sbridge1_r.bmp" size="32,48" offset="32">
+	<override when="night" src="road_Sbridge1_rn.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-rord_SuspensionBridge1_w}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Suspension bridge(white:two lanes)</name>
+<description>Bridge</description>
+<picture src="road_Sbridge1_w.bmp" size="32,48" offset="32">
+	<override when="night" src="road_Sbridge1_wn.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-rord_SuspensionBridge3l_w}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Suspension bridge(white:left edge)</name>
+<description>Bridge</description>
+<picture src="road_Sbridge3l_w.bmp" size="32,48" offset="32">
+	<override when="night" src="road_Sbridge3l_wn.bmp"/>
+</picture>
+</contribution>
+
+<contribution type="road" id="{FreeTrain-Shika-Road-bridge-rord_SuspensionBridge3r_w}">
+<class name="freetrain.contributions.road.StandardRoadContribution" />
+<name>Suspension bridge(white:right edge)</name>
+<description>Bridge</description>
+<picture src="road_Sbridge3r_w.bmp" size="32,48" offset="32">
+	<override when="night" src="road_Sbridge3r_wn.bmp"/>
+</picture>
+</contribution>
+
+</plug-in>

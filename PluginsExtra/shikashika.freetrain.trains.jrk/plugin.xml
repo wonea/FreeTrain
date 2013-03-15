@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+<author>Shikashika</author>
+<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+<depend on="shikashika.freetrain.traincar.locomotive"/>
+<depend on="shikashika.freetrain.traincar.passenger"/>
+<depend on="shikashika.freetrain.traincar.freight"/>
+
+<title>Trains (JR Kyushu)</title>
+
+<!-- 旅1列車の定義 -->
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-DD51-LocalTrein-50}">
+		<company>JR Kyushu</company>
+		<type>DD 51</type>
+		<name>Local Train(50 Series)</name>
+		<author>Shikashika</author>
+		<description>Diesel Locomotive 50 Series (OHA50, OHAHU50); provides local passenger service.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="0" ref="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-JNR}"/>
+			<car char="1" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oha50}"/>
+			<car char="2" ref="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu50}"/>
+			<car char="3" ref="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu50-T}"/>
+			
+			<composition>0</composition>
+			<composition>03</composition>
+			<composition>023</composition>
+			<composition>0213</composition>
+			<composition>02113</composition>
+			<composition>021213</composition>
+			<composition>0211213</composition>
+			<composition>02121213</composition>
+			<composition>021121213</composition>
+			<composition>0211212213</composition>
+			<composition>02112122113</composition>
+			<composition>021121222113</composition>
+		</config>
+	</contribution>
+
+	<contribution type="train" id="{FreeTrain-Shika-RailroadTrain-DD51-LocalTrein-50-12}">
+		<company>JR Kyushu</company>
+		<type>DD 51</type>
+		<name>Local Train(50 Series+12 Series)</name>
+		<author>Shikashika</author>
+		<description>Diesel Locomotive DD51, Air conditioned 50 Series 1000 Model (OHA50, OHAHU50) and 12 Series(SUHAHU12);
+provides local passanger service.
+		</description>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="0" ref="{FreeTrain-Shika-DieselLocomotive-TrainCar-DD51-JNR}"/>
+			<car char="1" ref="{FreeTrain-Shika-PassengerCar-TrainCar-oha50-1000}"/>
+			<car char="2" ref="{FreeTrain-Shika-PassengerCar-TrainCar-ohahu50-1000}"/>
+			<car char="3" ref="{FreeTrain-Shika-PassengerCar-TrainCar-shuhahu12-T-R}"/>
+			
+			<composition>0</composition>
+			<composition>03</composition>
+			<composition>023</composition>
+			<composition>0223</composition>
+			<composition>02123</composition>
+			<composition>021123</composition>
+			<composition>0211223</composition>
+			<composition>02112123</composition>
+			<composition>021121123</composition>
+			<composition>0211212123</composition>
+			<composition>02112122123</composition>
+			<composition>021121221123</composition>
+		</config>
+	</contribution>
+
+<!-- 貨物列車の定義 -->
+
+</plug-in>

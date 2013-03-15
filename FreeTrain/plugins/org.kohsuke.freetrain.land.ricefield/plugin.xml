@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Paddy Field</title>
+	<!--!<title>水田</title>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	<author>C477</author>
+	<!--!<author>477さん</author>-->
+	
+	
+	
+	<contribution type="picture" id="{C08FF7F4-B891-4AAD-BD45-74800F62CA80}">
+		<picture src="ricefield_SPR.bmp" >
+			<override when="summer" src="ricefield_SUM.bmp" />
+			<override when="autumn" src="ricefield_AUT.bmp" />
+			<override when="winter" src="ricefield_WIN.bmp" />
+		</picture>
+	</contribution>
+	
+	
+	<contribution type="land" id="{8EBBA0C5-30E1-41DE-9968-019EB816BC34}">
+		<group>Paddy field</group>
+		<!--!<group>水田</group>-->
+		<class name="freetrain.world.land.rice.RiceFieldBuilder"
+			codebase="bin/Debug/FreeTrain.RiceField.dll"/>
+		<picture ref="{C08FF7F4-B891-4AAD-BD45-74800F62CA80}" origin="0,0" />
+		<price>15</price>
+		<population>
+			<class name="freetrain.contributions.population.AgriculturalPopulation"/>
+			<base>5</base>
+		</population>
+	</contribution>
+	
+	
+	
+	<contribution type="land" id="{5787D011-657E-4CFA-8EDE-E0DDDE21C3F2}">
+		<group>Paddy field</group>
+		<!--!<group>水田</group>-->
+		<class name="freetrain.world.land.rice.RiceFieldBuilder"
+			codebase="bin/Debug/FreeTrain.RiceField.dll"/>
+		<picture ref="{C08FF7F4-B891-4AAD-BD45-74800F62CA80}" origin="0,32" />
+		<price>15</price>
+		<population>
+			<class name="freetrain.contributions.population.AgriculturalPopulation"/>
+			<base>5</base>
+		</population>
+	</contribution>
+</plug-in>

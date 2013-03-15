@@ -1,0 +1,41 @@
+#
+# schema fro FreeTrain plugin.xml files
+#
+#       picture module
+# 
+# $id:$
+#
+
+
+# picture contribution
+contribution |=
+	attribute type {"picture"},
+	pictureDef
+
+
+
+# picture definition
+pictureDef =
+	element picture {
+		# URL of the picture of a structure
+		attribute src {xsd:anyURI},
+		# override pictures.
+		# by default, all the pictures are computed from the above one
+		# picture. By using these overrides, one can specify a custom
+		# pictures (for example to add neon sign, etc.)
+		element override {
+			attribute when {
+				"night"|"spring"|"summer"|"fall"|"autumn"|"winter"
+			},
+			attribute src {xsd:anyURI}
+		}*
+	}
+
+# picture reference
+pictureRef =
+	element picture {
+		# reference to the ID of a picture contribution
+		attribute ref {xs:token}
+	}
+
+picture = pictureDef | pictureRef

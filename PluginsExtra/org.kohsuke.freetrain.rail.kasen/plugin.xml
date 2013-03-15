@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Electronic Poles on diagonal line</title>
+	<author>HanabishiRekka</author>
+	<homepage></homepage>
+
+	<contribution type="railStationary" id="{DD1224B0-2F1B-4c26-9E66-4E604F3342C8}">
+		<group>Diagonal piece with pole1</group>
+		<price>250</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="21">
+			<picture src="kasen01.bmp" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+	</contribution>
+
+	<contribution type="railStationary" id="{DD1224B1-2F1C-4c27-9E67-4E604F3342C9}">
+		<group>Diagonal piece with pole2</group>
+		<price>250</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="21">
+			<picture src="kasen02.bmp" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+	</contribution>
+
+	<contribution type="railStationary" id="{DD1224B4-2F1C-4c29-9E69-4E604F3342CB}">
+		<group>Diagonal piece with pole3</group>
+		<price>250</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="21">
+			<picture src="kasen05.bmp" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+	</contribution>
+
+	<contribution type="railStationary" id="{DD1224B5-2F1C-4c29-9E69-4E604F3342CB}">
+		<group>Diagonal piece with pole4</group>
+		<price>250</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="21">
+			<picture src="kasen06.bmp" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+	</contribution>
+
+	<contribution type="railStationary" id="{AA1224B5-2F1C-4c29-9E69-4E604F3342CB}">
+		<group>Diagonal piece with pole5</group>
+		<price>250</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="21">
+			<picture src="kasen07.bmp" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+	</contribution>
+
+	<contribution type="railStationary" id="{AA1224B5-2F1C-4c29-9E70-4E604F3342CB}">
+		<group>Diagonal piece with pole6</group>
+		<price>250</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="21">
+			<picture src="kasen08.bmp" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+	</contribution>
+
+	<contribution type="railStationary" id="{DD1224B2-2F1D-4c28-9E68-4E604F3342CA}">
+		<group>Diagonal piece no pole1</group>
+		<price>250</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="21">
+			<picture src="kasen03.bmp" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+	</contribution>
+
+	<contribution type="railStationary" id="{DD1224B3-2F1C-4c29-9E69-4E604F3342CB}">
+		<group>Diagonal piece no pole2</group>
+		<price>250</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="21">
+			<picture src="kasen04.bmp" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+	</contribution>
+
+	<contribution type="railStationary" id="{DD1224B2-2F1D-4c30-9E68-4E604F3342CA}">
+		<group>Diagonal piece no pole3</group>
+		<price>250</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="21">
+			<picture src="kasen09.bmp" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+	</contribution>
+
+	<contribution type="railStationary" id="{DD1224B3-2F1C-4c31-9E69-4E604F3342CB}">
+		<group>Diagonal piece no pole4</group>
+		<price>250</price>
+		<size>1,1</size>
+		<height>2</height>
+		<sprite origin="0,0" offset="21">
+			<picture src="kasen10.bmp" />
+		</sprite>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>35</base>
+		</population>
+	</contribution>
+
+</plug-in>

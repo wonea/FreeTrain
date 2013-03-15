@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Kominato and Isumi Railway Plugin</title>
+	<author>Itchy</author>
+	<homepage>http://www.geocities.jp/cyber_express_1703d/freetrain/FT_plugin.html</homepage>
+	
+<!-- Isumi200 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040417-isumi200}-a">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="isumi200.bmp" />
+		</sprite>
+		<capacity>103</capacity>
+	</contribution>
+
+	<contribution type="train" id="{cyber-express-1703d-040417-isumi200}">
+		<company>Isumi Railway</company>
+		<type>Isumi 200 Series</type>
+		<name>Isumi Line</name>
+		<author>Itchy</author>
+		<description>An Isumi Railway train travelling from Ohara (in the Chiba Prefecture) to
+Kazusa Nakano on a 3rd Sector line.
+		</description>
+		<price>1</price>
+		<speed>slow</speed>
+		<fare>340</fare>
+		<composition>
+			<body carRef="{cyber-express-1703d-040417-isumi200}-a"/>
+		</composition>
+	</contribution>
+
+<!-- Kominato RailroadKIHA200 -->
+
+	<contribution type="trainCar" id="{cyber-express-1703d-040417-kominato200}-a">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture src="kominato200.bmp" />
+		</sprite>
+		<capacity>160</capacity>
+	</contribution>
+
+	<contribution type="train" id="{cyber-express-1703d-040417-kominato200}">
+		<company>Kominato Railway</company>
+		<type>KIHA200 Series</type>
+		<name></name>
+		<author>Itchy</author>
+		<description>A Kominato Railway train travelling from Goi (in the Chiba Prefecture) to
+Kazusa Nakano.
+This vehicle was manufactured to conform to JNR's KIHA20 and used to drive to Chiba Station, but 
+hasn't been in service there recently.
+Supports from 1 to 5 car formations. A total of 14 were produced and all are still active.
+		</description>
+		<price>1</price>
+		<speed>slow</speed>
+		<fare>340</fare>
+		<composition>
+			<body carRef="{cyber-express-1703d-040417-kominato200}-a"/>
+		</composition>
+	</contribution>
+
+</plug-in>

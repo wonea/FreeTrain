@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Train Garage</title>
+	<!--!<title>機関庫</title>-->
+	<author>C477</author>
+	<!--!<author>477さん</author>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="specialRail" id="{93481807-D998-46d7-B1BE-CB2B5D086D67}">
+		<class name="freetrain.world.rail.garage.TrainGarageContributionImpl"
+			codebase="bin/Debug/FreeTrain.TrainGarage.dll" />
+	</contribution>
+</plug-in>

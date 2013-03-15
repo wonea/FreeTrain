@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>More Piers</title>
+	<author>Hiro Ayase</author>
+	<homepage>http://www14.big.or.jp/~ayase/freetrain/</homepage>
+	
+	<contribution type="picture" id="{98619BD4-46C3-4B91-85FF-11147914F2A5}">
+		<picture src="brick-girder.bmp"/>
+	</contribution>
+	
+	<contribution type="railStationary" id="{8FC8DE03-C9FD-4154-B097-0165ADC2C849}">
+		<group>Brick bridge pier</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin=" 0,0" offset="16">
+			<picture ref="{98619BD4-46C3-4B91-85FF-11147914F2A5}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{556E9EC4-5751-43DA-8F08-A1484E233811}">
+		<group>Brick bridge pier</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{98619BD4-46C3-4B91-85FF-11147914F2A5}"/>
+		</sprite>
+	</contribution>
+	<contribution type="railStationary" id="{8FC8DE03-C9FD-4154-B097-AYASEBRICK-UN1}">
+		<group>Brick bridge pier</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="64,0" offset="16">
+			<picture ref="{98619BD4-46C3-4B91-85FF-11147914F2A5}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{8FC8DE03-C9FD-4154-B097-AYASEBRICK-UN2}">
+		<group>Brick bridge pier</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="96,0" offset="16">
+			<picture ref="{98619BD4-46C3-4B91-85FF-11147914F2A5}"/>
+		</sprite>
+	</contribution>	
+	
+	<contribution type="railStationary" id="{8FC8DE03-C9FD-4154-B097-AYASEBRICK-R1}">
+		<group>Brick bridge pier</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="128,0" offset="16">
+			<picture ref="{98619BD4-46C3-4B91-85FF-11147914F2A5}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{8FC8DE03-C9FD-4154-B097-AYASEBRICK-L1}">
+		<group>Brick bridge pier</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="160,0" offset="16">
+			<picture ref="{98619BD4-46C3-4B91-85FF-11147914F2A5}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{8FC8DE03-C9FD-4154-B097-AYASEBRICK-UP1}">
+		<group>Brick bridge pier</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="192,0" offset="16">
+			<picture ref="{98619BD4-46C3-4B91-85FF-11147914F2A5}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{8FC8DE03-C9FD-4154-B097-AYASEBRICK-UP2}">
+		<group>Brick bridge pier</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="224,0" offset="16">
+			<picture ref="{98619BD4-46C3-4B91-85FF-11147914F2A5}"/>
+		</sprite>
+	</contribution>
+	
+	
+	<contribution type="railStationary" id="{8A245079-053D-4A9E-AC8B-43292512BBD3}">
+		<group>Concrete bridge pier</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="0,32" offset="16">
+			<picture ref="{98619BD4-46C3-4B91-85FF-11147914F2A5}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{CBCF4E66-6BA3-4A06-95A0-161E6C95F7EB}">
+		<group>Concrete bridge pier</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="32,32" offset="16">
+			<picture ref="{98619BD4-46C3-4B91-85FF-11147914F2A5}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{8A245079-053D-4A9E-AC8B-AYASEBRG-UN1}">
+		<group>Concrete bridge pier</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="64,32" offset="16">
+			<picture ref="{98619BD4-46C3-4B91-85FF-11147914F2A5}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{8A245079-053D-4A9E-AC8B-AYASEBRG-UN2}">
+		<group>Concrete bridge pier</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="96,32" offset="16">
+			<picture ref="{98619BD4-46C3-4B91-85FF-11147914F2A5}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{8A245079-053D-4A9E-AC8B-AYASEBRG-L1}">
+		<group>Concrete bridge pier</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="128,32" offset="16">
+			<picture ref="{98619BD4-46C3-4B91-85FF-11147914F2A5}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{8A245079-053D-4A9E-AC8B-AYASEBRG-R1}">
+		<group>Concrete bridge pier</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="160,32" offset="16">
+			<picture ref="{98619BD4-46C3-4B91-85FF-11147914F2A5}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{8A245079-053D-4A9E-AC8B-AYASEBRG-UP1}">
+		<group>Concrete bridge pier</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="192,32" offset="16">
+			<picture ref="{98619BD4-46C3-4B91-85FF-11147914F2A5}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="railStationary" id="{8A245079-053D-4A9E-AC8B-AYASEBRG-UP2}">
+		<group>Concrete bridge pier</group>
+		<price>10</price>
+		<size>1,1</size>
+		<height>1</height>
+		<sprite origin="224,32" offset="16">
+			<picture ref="{98619BD4-46C3-4B91-85FF-11147914F2A5}"/>
+		</sprite>
+	</contribution>
+</plug-in>

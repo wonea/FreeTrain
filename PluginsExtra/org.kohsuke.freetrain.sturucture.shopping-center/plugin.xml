@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>TAKUROU</title>
+	<author>TAKUROU (images by Bankare)</author>
+ 	<homepage>kei@viola.club.ne.jp</homepage>
+
+             <!-- This image is originaly created by Bankare -->
+ 
+　　　　　  <contribution type="picture" id="{88FE76FA-7343-11D7-A4B7-A959391A9B37}">
+		<picture src="drug.bmp" origin="0,0" offset="16" />
+	</contribution>
+
+             <contribution type="GenericStructure" id="{88FE76FB-7343-11D7-A4B7-A959391A9B37}">
+		<group>Drugstore</group>
+		<price>1000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Private Specialty Stores"/>
+		</structure>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{88FE76FA-7343-11D7-A4B7-A959391A9B37}"/>
+		</sprite>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{88FE76FA-7343-11D7-A4B7-A959391A9B37}"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{88FE76FD-7343-11D7-A4B7-A959391A9B37}">
+		<group>Drugstore</group>
+		<price>1000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Private Specialty Stores"/>
+		</structure>
+		<sprite origin="64,0" offset="16">
+			<picture ref="{88FE76FA-7343-11D7-A4B7-A959391A9B37}"/>
+		</sprite>
+		<sprite origin="96,0" offset="16">
+			<picture ref="{88FE76FA-7343-11D7-A4B7-A959391A9B37}"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{88FE76FF-7343-11D7-A4B7-A959391A9B37}">
+		<group>Drugstore</group>
+		<price>1000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Private Specialty Stores"/>
+		</structure>
+		<sprite origin="128,0" offset="16">
+			<picture ref="{88FE76FA-7343-11D7-A4B7-A959391A9B37}"/>
+		</sprite>
+		<sprite origin="160,0" offset="16">
+			<picture ref="{88FE76FA-7343-11D7-A4B7-A959391A9B37}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+　　　　　　<contribution type="picture" id="{88FE7701-7343-11D7-A4B7-A959391A9B37}">
+		<picture src="supermarket2.bmp" origin="0,0" offset="16" />
+	</contribution>
+
+             <contribution type="GenericStructure" id="{88FE7702-7343-11D7-A4B7-A959391A9B37}">
+		<group>Supermarket (M)</group>
+		<price>1000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Supermarkets"/>
+		</structure>
+		<sprite origin="0,0" offset="16">
+			<picture ref="{88FE7701-7343-11D7-A4B7-A959391A9B37}"/>
+		</sprite>
+		<sprite origin="32,0" offset="16">
+			<picture ref="{88FE7701-7343-11D7-A4B7-A959391A9B37}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{88FE7704-7343-11D7-A4B7-A959391A9B37}">
+		<group>Supermarket (M)</group>
+		<price>1000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Supermarkets"/>
+		</structure>
+		<sprite origin="64,0" offset="16">
+			<picture ref="{88FE7701-7343-11D7-A4B7-A959391A9B37}"/>
+		</sprite>
+		<sprite origin="96,0" offset="16">
+			<picture ref="{88FE7701-7343-11D7-A4B7-A959391A9B37}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+
+	<contribution type="GenericStructure" id="{88FE7706-7343-11D7-A4B7-A959391A9B37}">
+		<group>Supermarket (M)</group>
+		<price>1000</price>
+		<size>1,1</size>
+		<height>1</height>
+		<structure>
+			<category byname="Supermarkets"/>
+		</structure>
+		<sprite origin="128,0" offset="16">
+			<picture ref="{88FE7701-7343-11D7-A4B7-A959391A9B37}"/>
+		</sprite>
+		<sprite origin="160,0" offset="16">
+			<picture ref="{88FE7701-7343-11D7-A4B7-A959391A9B37}"/>
+		</sprite>
+		<computerCannotBuild/>
+	</contribution>
+</plug-in>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Road sign</title>
+	<author>C477</author>
+	<homepage>http,//www.rocket.ne.jp/~nao/</homepage>	
+	<depend on="jp.co.tripod.chiname.lib" />	
+	
+	<contribution type="roadAccessory" id="{09CBFF10-DEB3-4E73-C477-5AA0A516EB6D}-f">
+		<name>Road sign (blue,gate-front)</name>
+		<sprite>
+			<picture src="roadsigns3f.bmp"/>
+		</sprite>
+	</contribution>
+	<contribution type="roadAccessory" id="{09CBFF10-DEB3-4E73-C477-5AA0A516EB6D}-f2">
+		<name>Road sign (blue,gate-front)</name>
+		<sprite>
+			<picture src="roadsigns3f2.bmp"/>
+		</sprite>
+	</contribution>
+	<contribution type="roadAccessory" id="{09CBFF10-DEB3-4E73-C477-5AA0A516EB6D}-m">
+		<name>Road sign (blue,gate-medium)</name>
+		<sprite>
+			<picture src="roadsigns3m.bmp"/>
+		</sprite>
+	</contribution>
+	<contribution type="roadAccessory" id="{09CBFF10-DEB3-4E73-C477-5AA0A516EB6D}-b">
+		<name>Road sign (blue,gate-rear)</name>
+		<sprite>
+			<picture src="roadsigns3b.bmp"/>
+		</sprite>
+	</contribution>
+	<contribution type="roadAccessory" id="{09CBFF10-DEB3-4E73-C477-5AA0A516EB6D}-b2">
+		<name>Road sign (blue,gate-rear)</name>
+		<sprite>
+			<picture src="roadsigns3b2.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="roadAccessory" id="{3FD9F20D-E0B8-43E6-C477-23C15957FDC2}">
+		<name>Road sign (blue,front)</name>
+		<sprite>
+			<picture src="roadsigns01a.bmp"/>
+		</sprite>
+	</contribution>
+	<contribution type="roadAccessory" id="{546FC363-6507-4C0D-C477-18E4045A1D6F}">
+		<name>Road sign (blue,rear)</name>
+		<sprite>
+			<picture src="roadsigns01b.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="roadAccessory" id="{A09CAC84-406D-48CD-C477-64F065AE3589}">
+		<name>Road sign (green,front)</name>
+		<sprite>
+			<picture src="roadsigns02a.bmp"/>
+		</sprite>
+	</contribution>
+	<contribution type="roadAccessory" id="{85C36432-C55E-43A5-C477-6554B19EE0F0}">
+		<name>Road sign (green,rear)</name>
+		<sprite>
+			<picture src="roadsigns02b.bmp"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="roadAccessory" id="{3230D383-C701-481C-C477-38D7BB6B0F6C}">
+		<name>pedestrian crossing ahead A</name>
+		<sprite>
+			<picture src="road-ptn01a.bmp"/>
+		</sprite>
+	</contribution>
+	<contribution type="roadAccessory" id="{A402AEA0-1BFB-408F-C477-E3A3FC7199F9}">
+		<name>pedestrian crossing ahead B</name>
+		<sprite>
+			<picture src="road-ptn01b.bmp"/>
+		</sprite>
+	</contribution>
+	<contribution type="roadAccessory" id="{68F983DA-F456-4D5F-C477-A574CCAC9FA9}">
+		<name>pedestrian crossing ahead C</name>
+		<sprite>
+			<picture src="road-ptn01c.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="roadAccessory" id="{EA8B5FF9-BAB4-4481-C477-796E2152383F}">
+		<name>speed limit mark A</name>
+		<sprite>
+			<picture src="road-ptn02a.bmp"/>
+		</sprite>
+	</contribution>
+	<contribution type="roadAccessory" id="{DEECA47A-E033-4B5A-C477-4703EACF30B7}">
+		<name>speed limit mark B</name>
+		<sprite>
+			<picture src="road-ptn02b.bmp"/>
+		</sprite>
+	</contribution>
+	<contribution type="roadAccessory" id="{E3ED6179-DD78-475D-C477-044ADF38D386}">
+		<name>speed limit mark C</name>
+		<sprite>
+			<picture src="road-ptn02c.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="roadAccessory" id="{76FD8D1C-0559-44B2-C477-BBC873A71A73}">
+		<name>no U-turn A</name>
+		<sprite>
+			<picture src="road-ptn03a.bmp"/>
+		</sprite>
+	</contribution>
+	<contribution type="roadAccessory" id="{31804955-6838-4B6A-C477-A3901D0AC052}">
+		<name>no U-turn B</name>
+		<sprite>
+			<picture src="road-ptn03b.bmp"/>
+		</sprite>
+	</contribution>
+	<contribution type="roadAccessory" id="{6F4AB903-1094-4989-C477-C43A5C799B00}">
+		<name>no U-turn C</name>
+		<sprite>
+			<picture src="road-ptn03c.bmp"/>
+		</sprite>
+	</contribution>
+</plug-in>

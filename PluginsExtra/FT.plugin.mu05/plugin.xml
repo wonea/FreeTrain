@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Station roof</title>
+	<author>Moo05</author>
+	<homepage>http://tcct.zaq.ne.jp/bpbkn807</homepage>
+	
+	<depends on="org.kohsuke.freetrain.rail.electricPole" />
+	
+	<contribution type="picture" id="{umafsu27-1532-8315-mu05-plugins00101}-1">
+		<picture src="st.yane1.bmp">
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{umafsu27-1532-8315-mu05-plugins00102}-2">
+		<picture src="st.yane2.bmp">
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{umafsu27-1532-8315-mu05-plugins00103}-3">
+		<picture src="st.yane3.bmp">
+		</picture>
+	</contribution>
+	<contribution type="picture" id="{umafsu27-1532-8315-mu05-plugins00104}-4">
+		<picture src="st.yane4.bmp">
+		</picture>
+	</contribution>
+
+	<contribution type="electricPole" id="{umafsu27-1532-8315-mu05-plugins00101-front}-1">
+		<name>Modern wall(front)</name>
+		<sprite origin=" 0, 0" offset="16">
+			<picture ref="{umafsu27-1532-8315-mu05-plugins00101}-1" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{umafsu27-1532-8315-mu05-plugins00102-rear}-2">
+		<name>Modern wall(behind)</name>
+		<sprite origin=" 0, 0" offset="16">
+			<picture ref="{umafsu27-1532-8315-mu05-plugins00102}-2" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{umafsu27-1532-8315-mu05-plugins00103-roof1}-3">
+		<name>Modern roof1</name>
+		<sprite origin=" 0, 0" offset="16">
+			<picture ref="{umafsu27-1532-8315-mu05-plugins00103}-3" />
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{umafsu27-1532-8315-mu05-plugins00104-roof2}-4">
+		<name>Modern roof2</name>
+		<sprite origin=" 0, 0" offset="16">
+			<picture ref="{umafsu27-1532-8315-mu05-plugins00104}-4" />
+		</sprite>
+	</contribution>
+
+</plug-in>

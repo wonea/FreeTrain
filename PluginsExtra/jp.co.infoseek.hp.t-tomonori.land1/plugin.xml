@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Water</title>
+	<author>Takeuchi Tomonori</author>
+	<homepage>http://t-tomonori.hp.infoseek.co.jp</homepage>
+
+	<contribution type="land" id="{tomonori-water-land-8D86-7FD3B9B26994}">
+		<group>Water</group>
+		<name>Water</name>
+		<price>1</price>
+		<class name="freetrain.contributions.land.StaticLandBuilder"/>
+		<sprite origin="0,0" offset="16" size="32,32">
+			<picture src="water.bmp">
+			</picture>
+		</sprite>
+	</contribution>
+
+	<contribution type="land" id="{tomonori-asfa-land-8D86-7FD3B9B26994}">
+		<group>Asphalt road</group>
+		<name>Asphalt road</name>
+		<price>1</price>
+		<class name="freetrain.contributions.land.StaticLandBuilder"/>
+		<sprite origin="0,0" offset="16" size="32,32">
+			<picture src="asfa.bmp" />
+		</sprite>
+	<computerCannotBuild />
+	</contribution>
+
+</plug-in>

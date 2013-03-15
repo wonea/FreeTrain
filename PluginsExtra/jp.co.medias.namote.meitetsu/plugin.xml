@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Nagoya Railroad</title>
+	<author>Namo</author>
+	<homepage>http://www.medias.co.jp/~bell8528/freetrain/</homepage>
+
+	<!-- 1600系先頭 -->
+	<contribution type="trainCar" id="{A0867E85-A539-4C26-BF3A-1C956A7ECB86-1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="Meitetsu_1600.bmp" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<!-- 中間 -->
+	<contribution type="trainCar" id="{A0867E85-A539-4C26-BF3A-1C956A7ECB86-2}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="Meitetsu_1600b.bmp" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<!-- 後尾 -->
+	<contribution type="trainCar" id="{A0867E85-A539-4C26-BF3A-1C956A7ECB86-3}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{A0867E85-A539-4C26-BF3A-1C956A7ECB86-1}"/>
+	</contribution>
+
+	<contribution type="train" id="{A0867E85-A539-4C26-BF3A-1C956A7ECB86}">
+		<company>Nagoya Railroad</company>
+		<type>1600 Series</type>
+		<name>Panorama Super</name>
+		<speed>fast</speed>
+		<author>Namo</author>
+		<price>100</price>
+        <fare>100</fare> 
+		<author></author>
+<description>平成11年デビューした全車特別車の特急車両。
+車体は将来の速度向上に対応できるように、最高速度130km/hで運転できる性能を有し、曲線通過速度も向上できるよう当社初の空気ばねによる車体傾斜制御装置を導入している。
+また先頭部に自動幌連結装置を設置したことにより、通常3両の組成を連結して6両運転する場合でも車両間の自由な行き来が可能となった。
+車内は移動制約者の方にもご利用できる車イス対応の洋式便座トイレと座席を中間車に設けているのに加え、環境面でも省エネ型VVVF車両で、冷房装置の冷媒に代替フロンR407Cを使用するという、人にも地球にもやさしい特急車両である。</description>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{A0867E85-A539-4C26-BF3A-1C956A7ECB86-1}"/>
+<car char="中" ref="{A0867E85-A539-4C26-BF3A-1C956A7ECB86-2}"/>
+<car char="後" ref="{A0867E85-A539-4C26-BF3A-1C956A7ECB86-3}"/>
+
+
+<composition>前中後</composition>
+<composition>前中後前中後</composition>
+</config>
+	</contribution>
+
+<!-- キハ30系先頭 -->
+<contribution type="trainCar" id="{F346CBE8-313C-407E-9E80-92C7C2FC8E21-1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="Meitetsu_kiha_30.bmp" />
+		</sprite>
+		<capacity>30</capacity>
+	</contribution>
+
+<contribution type="train" id="{F346CBE8-313C-407E-9E80-92C7C2FC8E21}">
+	<company>Nagoya Railroad</company>
+	<type>KIHA 30 Series</type>
+	<name></name>
+	<price>100</price>
+	<speed>slow</speed>
+	<author>Namo</author>
+	<fare>100</fare>
+<description>老朽化した初代LE-Carキハ10形の置換え用として、平成7年に増備された。
+キハ20形よりも車体をさらに大型化し、片側3扉の引き戸を採用、キハ20形同様一部の座席を収納式とするなど、ラッシュ対策を強化している。
+現在は、おもに三河線（猿投～西中金）のワンマン車で活躍中。</description>
+<composition>
+		<body carRef="{F346CBE8-313C-407E-9E80-92C7C2FC8E21-1}"/>
+</composition>
+</contribution>
+
+	<!-- 3500系先頭 -->
+	<contribution type="trainCar" id="{FCD1F8A9-A797-4B4A-90F8-ABA865294302-1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="Meitetsu_3500.bmp" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<!-- 3500系中間 -->
+	<contribution type="trainCar" id="{FCD1F8A9-A797-4B4A-90F8-ABA865294302-2}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="Meitetsu_3door.bmp" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<!-- 3500系後尾 -->
+	<contribution type="trainCar" id="{FCD1F8A9-A797-4B4A-90F8-ABA865294302-3}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{FCD1F8A9-A797-4B4A-90F8-ABA865294302-1}"/>
+	</contribution>
+
+	<contribution type="train" id="{FCD1F8A9-A797-4B4A-90F8-ABA865294302}">
+		<company>Nagoya Railroad</company>
+		<type>3500 Series</type>
+		<name>Commuter ECB Car</name>
+		<speed>medium</speed>
+		<author>Namo</author>
+		<price>100</price>
+        <fare>100</fare> 
+<description>通勤型6000系列車両（6000・6500・6800系）の後継車として平成５年に登場。
+VVVFインバータ制御・電気指令式ブレーキ・ワンハンドルマスコンの採用など、さまざまな新機軸が盛り込まれている。2M2T組成。
+車体は6500系後期車に準じているが、前面スカートや前照灯上の「ECB」のロゴなどで区別できる。
+片側3扉・オールロングシートの通勤型車両ながら、最高120km/hで走行でき、車内案内表示器も備えている。
+平成9年からは、この3500系をベースに客室の天井や窓、乗降扉などを高くした4両組成の3700系と、2両組成の3100系に継承された。</description>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{FCD1F8A9-A797-4B4A-90F8-ABA865294302-1}"/>
+<car char="中" ref="{FCD1F8A9-A797-4B4A-90F8-ABA865294302-2}"/>
+<car char="後" ref="{FCD1F8A9-A797-4B4A-90F8-ABA865294302-3}"/>
+
+
+<composition>前中中後</composition>
+<composition>前中中後前後</composition>
+</config>
+</contribution>
+
+	<!-- キハ8500系先頭 -->
+	<contribution type="trainCar" id="{AAC51152-3B8F-40D5-BAA9-DD569FD29F02-1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="Meitetsu_kiha_8500.bmp" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<!-- キハ8500系中間 -->
+	<contribution type="trainCar" id="{AAC51152-3B8F-40D5-BAA9-DD569FD29F02-2}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="Meitetsu_kiha_8500b.bmp" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<!-- キハ8500系後尾 -->
+	<contribution type="trainCar" id="{AAC51152-3B8F-40D5-BAA9-DD569FD29F02-3}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{AAC51152-3B8F-40D5-BAA9-DD569FD29F02-1}"/>
+	</contribution>
+
+	<contribution type="train" id="{AAC51152-3B8F-40D5-BAA9-DD569FD29F02}">
+		<company>Nagoya Railroad</company>
+		<type>KIHA 8500 Series</type>
+		<name>Northern Alps</name>
+		<speed>fast</speed>
+		<author>Namo</author>
+		<price>100</price>
+        <fare>100</fare> 
+		<author></author>
+<description>キハ8500系はJR高山線直通の特急「北アルプス」で活躍していたキハ8000系の置き換えのために 1991(平成3)年に登場しました。
+足回りはJR東海のキハ85系と同一とし、車体の塗色や角の丸い側窓などに名鉄色を出しています。
+残念ながら2001年9月30日をもって「北アルプス」号は廃止された。
+2001年12月23～24日に渡って会津鉄道へ甲種回送され、2002年3月23日から「AIZUマウントエクスプレス」として活躍を開始している。</description>
+
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{AAC51152-3B8F-40D5-BAA9-DD569FD29F02-1}"/>
+<car char="中" ref="{AAC51152-3B8F-40D5-BAA9-DD569FD29F02-2}"/>
+<car char="後" ref="{AAC51152-3B8F-40D5-BAA9-DD569FD29F02-3}"/>
+
+<composition>前後</composition>
+<composition>前前後</composition>
+<composition>前前中後</composition>
+<composition>前後前中後</composition>
+</config>
+	</contribution>
+
+
+	<!-- 6500系先頭 -->
+	<contribution type="trainCar" id="{21D61F4D-5671-4D8E-BB12-66327837F2D6-1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="Meitetsu_6500.bmp" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<!-- 6500系中間 -->
+	<contribution type="trainCar" id="{21D61F4D-5671-4D8E-BB12-66327837F2D6-2}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="Meitetsu_3door.bmp" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<!-- 6500系後尾 -->
+	<contribution type="trainCar" id="{21D61F4D-5671-4D8E-BB12-66327837F2D6-3}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{21D61F4D-5671-4D8E-BB12-66327837F2D6-1}"/>
+	</contribution>
+
+	<contribution type="train" id="{21D61F4D-5671-4D8E-BB12-66327837F2D6}">
+		<company>Nagoya Railroad</company>
+		<type>6500 Series</type>
+		<name>Commuter</name>
+		<speed>medium</speed>
+		<author>Namo</author>
+		<price>100</price>
+        <fare>100</fare> 
+<description>6000系の発展型として界磁チョッパ・回生ブレーキを採用した省エネルギー車両として昭和59年にデビュー。2M2T組成。
+正面を非貫通型としてスタイルを一新したほか、扉の位置を先頭車と中間車を同一にして整列乗車に対応した。
+片側3扉のセミクロスシート車であるが、6000系のシートよりも大型化し居住性の向上を図った。
+平成元年の増備車からは前面を大型曲面ガラスに、側面を連続窓に変更するなど、大幅にモデルチェンジを行った。
+また、最終増備の2編成はラッシュ時の混雑緩和を考慮してオールロングシート車で登場した。
+さらに、セミクロスシート車については順次ロングシート化が予定されている。</description>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{21D61F4D-5671-4D8E-BB12-66327837F2D6-1}"/>
+<car char="中" ref="{21D61F4D-5671-4D8E-BB12-66327837F2D6-2}"/>
+<car char="後" ref="{21D61F4D-5671-4D8E-BB12-66327837F2D6-3}"/>
+
+
+<composition>前中中後</composition>
+<composition>前中中後前後</composition>
+</config>
+</contribution>
+
+	<!-- 5700系先頭 -->
+	<contribution type="trainCar" id="{BF9616B6-B721-41C4-9011-D539211CF02D-1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="Meitetsu_5700.bmp" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<!-- 5700系中間 -->
+	<contribution type="trainCar" id="{BF9616B6-B721-41C4-9011-D539211CF02D-2}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="Meitetsu_2door.bmp" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<!-- 5700系後尾 -->
+	<contribution type="trainCar" id="{BF9616B6-B721-41C4-9011-D539211CF02D-3}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{BF9616B6-B721-41C4-9011-D539211CF02D-1}"/>
+	</contribution>
+
+	<contribution type="train" id="{BF9616B6-B721-41C4-9011-D539211CF02D}">
+		<company>Nagoya Railroad</company>
+		<type>5700 Series</type>
+		<name>Express</name>
+		<speed>fast</speed>
+		<author>Namo</author>
+		<price>100</price>
+        <fare>100</fare> 
+<description>5700系は昭和61年、本線系の高速・急行用車両としてデビュー。
+車掌台側のガラスを大型のものにして「パノラマカー」以来の伝統である前面展望を確保している。
+片側2扉の転換クロスシート車でありながら1400mmの両開き扉を採用、出入口付近のスペースを広くしてラッシュ対策を考慮しているほか、扉付近に折りたたみの補助イスを設け、閑散時の着席率向上をはかっている。3M3Tまたは2M2T組成。 
+5系は5700系と同じ車体と、廃車となった初期のカルダン車5000・5200系の足まわりを組み合わせた車両として登場。
+制御装置は私鉄では初めての界磁添加励磁制御で、回生ブレーキ付。全M組成。順次新型台車に取り替え中。</description>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{BF9616B6-B721-41C4-9011-D539211CF02D-1}"/>
+<car char="中" ref="{BF9616B6-B721-41C4-9011-D539211CF02D-2}"/>
+<car char="後" ref="{BF9616B6-B721-41C4-9011-D539211CF02D-3}"/>
+
+
+<composition>前後</composition>
+<composition>前中中後</composition>
+<composition>前中中中中後</composition>
+</config>
+</contribution>
+
+	<!-- 2000系先頭 -->
+	<contribution type="trainCar" id="{A0867E85-A539-4C26-BF3A-1C956A7ECB22-1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="Meitetsu_2000.bmp" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<!-- 中間 -->
+	<contribution type="trainCar" id="{A0867E85-A539-4C26-BF3A-1C956A7ECB22-2}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="Meitetsu_2000b.bmp" />
+		</sprite>
+		<capacity>100</capacity>
+	</contribution>
+
+	<!-- 後尾 -->
+	<contribution type="trainCar" id="{A0867E85-A539-4C26-BF3A-1C956A7ECB22-3}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{A0867E85-A539-4C26-BF3A-1C956A7ECB22-1}"/>
+	</contribution>
+
+	<contribution type="train" id="{A0867E85-A539-4C26-BF3A-1C956A7ECB22}">
+		<company>Nagoya Railroad</company>
+		<type>2000 Series</type>
+		<name>μSKY</name>
+		<speed>fast</speed>
+		<author>Namo</author>
+		<price>100</price>
+        <fare>100</fare> 
+		<author></author>
+<description>最高運転速度120km/h、中部国際空港－名古屋を28分台で結ぶ。
+最新技術で極上の座り心地を実現。また、各車に荷物置き場を配置するほか、座席にバリアフリー対応グリップを取り付けるなど、すべてにグローバルな設計。</description>
+<class name="freetrain.contributions.train.PatternTrainImpl"/>
+<config>
+<car char="前" ref="{A0867E85-A539-4C26-BF3A-1C956A7ECB22-1}"/>
+<car char="中" ref="{A0867E85-A539-4C26-BF3A-1C956A7ECB22-2}"/>
+<car char="後" ref="{A0867E85-A539-4C26-BF3A-1C956A7ECB22-3}"/>
+
+
+<composition>前中後</composition>
+<composition>前中後前中後</composition>
+</config>
+	</contribution>
+
+</plug-in>

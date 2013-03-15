@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plug-in>
+	<title>Pedestrian Crossing</title>
+	<title>Parking Area</title>
+	<!--//!<title>横断歩道</title>
+	<title>駐車場</title>-->
+	<author>C477</author>
+	<!--!<author>C477@2両目</author>-->
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>	
+		
+	<contribution type="contribution" id="{782BAFD9-2698-4C0E-C477-FFEA0F7D1B8A}">
+		<name>roadAccessory</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.world.road.accessory.RoadAccessoryContribution"
+			codebase="RoadAccessory.DLL" />
+	</contribution>
+	
+	<!-- temporary -->
+	<contribution type="menu" id="{3773CA2C-11B5-4DCC-C477-2296E9EBEBA7}">
+		<class name="freetrain.world.road.accessory.MenuContributionImpl"
+			codebase="RoadAccessory.DLL" />
+	</contribution>
+
+	<contribution type="contribution" id="{0A73F9C6-BDCC-43DF-C477-E28B76058E8C}">
+		<name>DummyCar</name>
+		<class name="freetrain.framework.plugin.FixedClassContributionFactory"/>
+		<implementation name="freetrain.world.road.dummycar.DummyCarContribution"
+			codebase="DummyCars.DLL" />
+	</contribution>
+	
+	<!-- temporary -->
+	<contribution type="menu" id="{BFC035E9-8B0E-41D6-C477-72F99D820290}">
+		<class name="freetrain.world.road.dummycar.MenuContributionImpl"
+			codebase="DummyCars.DLL" />
+	</contribution>
+	
+</plug-in>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Bridge Pier</title>
+	<author>HanabishiRekka</author>
+	<homepage></homepage>
+	
+	<depends on="org.kohsuke.freetrain.rail.electricPole" />
+
+	<contribution type="picture" id="{874B8BFD-1EF4-7008-9C5A-D0EA1049D28D}">
+		<picture src="keta00.bmp" />
+	</contribution>
+	<contribution type="picture" id="{874B8BFD-1EF4-7009-9C5A-D0EA1049D28D}">
+		<picture src="keta01.bmp" />
+	</contribution>
+	<contribution type="picture" id="{874B8BFD-1EF4-7007-9C5A-D0EA1049D28D}">
+		<picture src="keta02.bmp" />
+	</contribution>
+	<contribution type="picture" id="{874B8BFD-1EF4-7006-9C5A-D0EA1049D28D}">
+		<picture src="keta03.bmp" />
+	</contribution>
+	<contribution type="picture" id="{874B8BFD-1EF4-7005-9C5A-D0EA1049D28D}">
+		<picture src="keta04.bmp" />
+	</contribution>
+
+
+
+	<contribution type="picture" id="{874B8BFD-1EF4-1000-9C5A-D0EA1049D28D}">
+		<picture src="ketaR00.bmp" />
+	</contribution>
+	<contribution type="picture" id="{874B8BFD-1EF4-1001-9C5A-D0EA1049D28D}">
+		<picture src="ketaR01.bmp" />
+	</contribution>
+	<contribution type="picture" id="{874B8BFD-1EF4-1002-9C5A-D0EA1049D28D}">
+		<picture src="ketaR02.bmp" />
+	</contribution>
+	<contribution type="picture" id="{874B8BFD-1EF4-1003-9C5A-D0EA1049D28D}">
+		<picture src="ketaR03.bmp" />
+	</contribution>
+	<contribution type="picture" id="{874B8BFD-1EF4-1004-9C5A-D0EA1049D28D}">
+		<picture src="ketaR04.bmp" />
+	</contribution>
+	<contribution type="picture" id="{874B8BFD-1EF4-1005-9C5A-D0EA1049D28D}">
+		<picture src="ketaR05.bmp" />
+	</contribution>
+
+	
+	<contribution type="electricPole" id="{874B8BFD-1EF4-6000-9C5A-D0EA1049D28D}">
+		<name>Bridge pier(A)</name>
+		<sprite>
+			<picture ref="{874B8BFD-1EF4-7008-9C5A-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{874B8BFD-1EF4-6001-9C5A-D0EA1049D28D}">
+		<name>Bridge pier(B)</name>
+		<sprite>
+			<picture ref="{874B8BFD-1EF4-7009-9C5A-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{874B8BFD-1EF4-6002-9C5A-D0EA1049D28D}">
+		<name>Bridge pier(C)</name>
+		<sprite>
+			<picture ref="{874B8BFD-1EF4-7007-9C5A-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{874B8BFD-1EF4-6003-9C5A-D0EA1049D28D}">
+		<name>Bridge pier(D)</name>
+		<sprite>
+			<picture ref="{874B8BFD-1EF4-7006-9C5A-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{874B8BFD-1EF4-6004-9C5A-D0EA1049D28D}">
+		<name>Bridge pier(E)</name>
+		<sprite>
+			<picture ref="{874B8BFD-1EF4-7005-9C5A-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+
+
+	<contribution type="electricPole" id="{874B8BFD-1EF4-6005-9C5A-D0EA1049D28D}">
+		<name>Bridge pier(red A)</name>
+		<sprite>
+			<picture ref="{874B8BFD-1EF4-1000-9C5A-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{874B8BFD-1EF4-6006-9C5A-D0EA1049D28D}">
+		<name>Bridge pier(red B)</name>
+		<sprite>
+			<picture ref="{874B8BFD-1EF4-1001-9C5A-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{874B8BFD-1EF4-6007-9C5A-D0EA1049D28D}">
+		<name>Bridge pier(red C)</name>
+		<sprite>
+			<picture ref="{874B8BFD-1EF4-1002-9C5A-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{874B8BFD-1EF4-6008-9C5A-D0EA1049D28D}">
+		<name>Bridge pier(red D)</name>
+		<sprite>
+			<picture ref="{874B8BFD-1EF4-1003-9C5A-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{874B8BFD-1EF4-6009-9C5A-D0EA1049D28D}">
+		<name>Bridge pier(red E)</name>
+		<sprite>
+			<picture ref="{874B8BFD-1EF4-1004-9C5A-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+	<contribution type="electricPole" id="{874B8BFD-1EF4-6010-9C5A-D0EA1049D28D}">
+		<name>Bridge pier(red F)</name>
+		<sprite>
+			<picture ref="{874B8BFD-1EF4-1005-9C5A-D0EA1049D28D}"/>
+		</sprite>
+	</contribution>
+
+</plug-in>

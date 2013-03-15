@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plug-in [
+	<!ENTITY localStation "
+		<group>Local station</group>
+		<!--!<group>ローカル駅舎</group>-->
+		<price>1800</price>
+		<size>1,1</size>
+		<height>1</height>
+		<operationCost>90</operationCost>
+	">
+	
+	<!ENTITY cityStation "
+		<group>City station</group>
+		<!--!<group>都会型駅舎</group>-->
+		<price>6000</price>
+		<size>1,1</size>
+		<height>2</height>
+		<operationCost>150</operationCost>
+	">
+	
+	<!ENTITY lowerDeckStation "
+		<group>Lower deck station</group>
+		<!--!<group>高架下駅舎</group>-->
+		<price>6000</price>
+		<height>1</height>
+		<operationCost>210</operationCost>
+	">
+]>
+<plug-in>
+	<title>Standard Station Kit</title>
+	<!--!<title>基本駅舎キット</title>-->
+	<author>EshiMinarai</author>
+	<!--!<author>絵師見習い</author>-->
+	<homepage>http://www.kohsuke.org/freetrain/</homepage>
+	
+	<contribution type="station" id="{E1C41DF8-6C9B-465d-A798-2624551AC4FD}">
+		<name>Local station 1 (L)</name>
+		<!--!<name>ローカル駅舎1(L)</name>-->
+		&localStation;
+		<sprite origin="0,0" offset="16">
+			<picture src="local1-02.bmp" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{1F332AE9-97B7-42eb-A434-03F4F952081A}">
+		<name>Local station 1 (R)</name>
+		<!--!<name>ローカル駅舎1(R)</name>-->
+		&localStation;
+		<sprite origin="0,0" offset="16">
+			<picture src="local1-02r.bmp" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{723092AA-BC86-4fca-BA98-42B60B7D4151}">
+		<name>Local station 2 (L)</name>
+		<!--!<name>ローカル駅舎2(L)</name>-->
+		&localStation;
+		<sprite origin="0,0" offset="16">
+			<picture src="local2-01.bmp" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{6F5B56E6-F21E-41ba-89FC-B037E5EB0BE7}">
+		<name>Local station 2 (R)</name>
+		<!--!<name>ローカル駅舎2(R)</name>-->
+		&localStation;
+		<sprite origin="0,0" offset="16">
+			<picture src="local2-01r.bmp" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{DFF22973-08DB-4064-8CD6-26BAB537C0F0}">
+		<name>City station (L)</name>
+		<!--!<name>都会型駅舎(L)</name>-->
+		&cityStation;
+		<sprite origin="0,0" offset="32">
+			<picture src="city1-02.bmp" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{F9508B52-B25C-439e-811C-82B5A259676A}">
+		<name>City station (R)</name>
+		<!--!<name>都会型駅舎(R)</name>-->
+		&cityStation;
+		<sprite origin="0,0" offset="32">
+			<picture src="city1-02r.bmp" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{351D49DD-8682-4c4a-8BC3-1B8560CD7FE9}">
+		<name>Lower deck station (L)</name>
+		<!--!<name>高架下駅舎(L)</name>-->
+		<size>1,2</size>
+		&lowerDeckStation;
+		<sprite origin="0,0" offset="7">
+			<picture src="koukasita1.bmp" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{A8392557-3054-4017-8948-F3FC22A71D0E}">
+		<name>Lower deck station (R)</name>
+		<!--!<name>高架下駅舎(R)</name>-->
+		<size>2,1</size>
+		&lowerDeckStation;
+		<sprite origin="0,0" offset="15">
+			<picture src="koukasita1r.bmp" />
+		</sprite>
+	</contribution>
+	
+	<contribution type="station" id="{3D64E31D-0579-4d37-920A-5A5201A8C984}">
+		<name>Hakodate Station</name>
+		<!--!<name>函館駅</name>-->
+		<price>6000</price>
+		<size>1,2</size>
+		<height>2</height>
+		<operationCost>300</operationCost>
+		<sprite origin="0,0" offset="16">
+			<picture src="terminal1.bmp" />
+		</sprite>
+	</contribution>
+</plug-in>

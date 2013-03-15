@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Seibu Railway Train Pack Ver2.0</title>
+	<author>Altima</author>
+	<homepage>http://zero-d.web.infoseek.co.jp/</homepage>
+
+
+	<contribution type="picture" id="{AltimaTRAINS-EC-SEIBU-101-PIC01}">
+		<picture src="seibu101a.bmp"/>
+	</contribution>
+
+	<contribution type="picture" id="{AltimaTRAINS-EC-SEIBU-101-PIC02}">
+		<picture src="seibu101b.bmp"/>
+	</contribution>
+
+	<contribution type="picture" id="{AltimaTRAINS-EC-SEIBU-n101-PIC01}">
+		<picture src="seibu101na.bmp"/>
+	</contribution>
+
+	<contribution type="picture" id="{AltimaTRAINS-EC-SEIBU-n101-PIC02}">
+		<picture src="seibu101nb.bmp"/>
+	</contribution>
+
+	<contribution type="picture" id="{AltimaTRAINS-EC-SEIBU-n2000-PIC01}">
+		<picture src="seibu2000nb.bmp"/>
+	</contribution>
+
+	<contribution type="picture" id="{AltimaTRAINS-EC-SEIBU-6000PIC01}">
+		<picture src="seibu6000a.bmp"/>
+	</contribution>
+
+	<contribution type="picture" id="{AltimaTRAINS-EC-SEIBU-6000PIC02}">
+		<picture src="seibu6000b.bmp"/>
+	</contribution>
+
+
+<!-- 101系ツートン塗装 -->
+
+	<!-- 先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-101TC1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>166</capacity>
+		<sprite origin="0,0">
+			<picture ref="{AltimaTRAINS-EC-SEIBU-101-PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-101MI1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>168</capacity>
+		<sprite origin="0,0">
+			<picture ref="{AltimaTRAINS-EC-SEIBU-101-PIC02}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-101TC2}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-SEIBU-101TC1}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-SEIBU-101}">
+		<company>Seibu Railway</company>
+		<type>101 Series Two-Tone Coating</type>
+		<name></name>
+		<author>Altima</author>
+		<description>1969年に登場。同年に開業した秩父線の山岳路線に対応するため、大容量のモーターや抑速ブレーキを搭載している。廃車が進んでおり、多摩川線用のワンマン車など数本が残るのみ。</description>
+		<fare>350</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-SEIBU-101TC1}"/>
+			<body carRef="{AltimaTRAINS-EC-SEIBU-101MI1}"/>
+			<tail carRef="{AltimaTRAINS-EC-SEIBU-101TC2}"/>
+		</composition>
+	</contribution>
+
+
+<!-- 101系単色塗装 -->
+
+	<!-- 先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-101TC1-s}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>160</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="194,193,179" to="240,221,85"/>
+<map from="183,182,168" to="226,208,80"/>
+<map from="135,135,125" to="168,154,59"/>
+<map from="148,147,136" to="183,168,65"/>
+<map from="159,158,147" to="197,181,70"/>
+<map from="110,109,102" to="139,132,49"/>
+<map from="170,170,157" to="211,194,75"/>
+<map from="126,125,117" to="160,152,56"/>
+<map from="118,117,109" to="149,141,53"/>
+<map from="134,133,124" to="170,161,60"/>
+<map from="102,101,94" to="129,122,46"/>
+			</spriteType>
+			<picture ref="{AltimaTRAINS-EC-SEIBU-101-PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-101MI1-s}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>168</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="183,182,168" to="226,208,80"/>
+<map from="135,135,125" to="168,154,59"/>
+<map from="194,193,179" to="240,221,85"/>
+<map from="148,147,136" to="183,168,65"/>
+<map from="159,158,147" to="197,181,70"/>
+<map from="110,109,102" to="125,116,44"/>
+<map from="170,170,157" to="211,194,75"/>
+<map from="126,125,117" to="144,133,51"/>
+<map from="118,117,109" to="134,124,47"/>
+			</spriteType>
+			<picture ref="{AltimaTRAINS-EC-SEIBU-101-PIC02}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-101TC2-s}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-SEIBU-101TC1-s}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-SEIBU-101-s}">
+		<company>Seibu Railway</company>
+		<type>101 Series Solid Coating</type>
+		<name></name>
+		<author>Altima</author>
+		<description>1996年頃より、黄色とベージュのツートン塗装から黄色一色になった。</description>
+		<fare>350</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-SEIBU-101TC1-s}"/>
+			<body carRef="{AltimaTRAINS-EC-SEIBU-101MI1-s}"/>
+			<tail carRef="{AltimaTRAINS-EC-SEIBU-101TC2-s}"/>
+		</composition>
+	</contribution>
+
+
+<!-- 新101系ツートン塗装 -->
+
+	<!-- 先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-n101TC1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>160</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="168,154,0" to="168,154,59"/>
+<map from="226,208,0" to="226,208,80"/>
+<map from="197,181,0" to="197,181,70"/>
+<map from="240,221,0" to="240,221,85"/>
+<map from="211,194,0" to="211,194,75"/>
+			</spriteType>
+			<picture ref="{AltimaTRAINS-EC-SEIBU-n101-PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-n101MI1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>168</capacity>
+		<sprite origin="0,0">
+			<picture ref="{AltimaTRAINS-EC-SEIBU-n101-PIC02}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-n101TC2}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-SEIBU-n101TC1}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-SEIBU-n101}">
+		<company>Seibu Railway</company>
+		<type>New 101 Series / 301 Series Two-Tone Coating</type>
+		<name></name>
+		<author>Altima</author>
+		<description>1979年に登場。メカニズム面では101系と大差無いが、高運転台やブラックフェイス化などでデザインが変更された。8連車は301系となっている。</description>
+		<fare>350</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-SEIBU-n101TC1}"/>
+			<body carRef="{AltimaTRAINS-EC-SEIBU-n101MI1}"/>
+			<tail carRef="{AltimaTRAINS-EC-SEIBU-n101TC2}"/>
+		</composition>
+	</contribution>
+
+
+<!-- 新101系単色塗装 -->
+
+	<!-- 先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-n101TC1-s}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>160</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="194,193,179" to="240,221,85"/>
+<map from="183,182,168" to="226,208,80"/>
+<map from="135,135,125" to="168,154,59"/>
+<map from="148,147,136" to="183,168,65"/>
+<map from="168,154,0" to="168,154,59"/>
+<map from="159,158,147" to="197,181,70"/>
+<map from="110,109,102" to="125,116,44"/>
+<map from="170,170,157" to="211,194,75"/>
+<map from="126,125,117" to="144,133,51"/>
+<map from="118,117,109" to="134,124,47"/>
+<map from="226,208,0" to="226,208,80"/>
+<map from="197,181,0" to="197,181,70"/>
+<map from="240,221,0" to="240,221,85"/>
+<map from="211,194,0" to="211,194,75"/>
+<map from="134,133,124" to="153,141,54"/>
+<map from="102,101,94" to="116,107,41"/>
+			</spriteType>
+			<picture ref="{AltimaTRAINS-EC-SEIBU-n101-PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-n101MI1-s}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>168</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="183,182,168" to="226,208,80"/>
+<map from="135,135,125" to="168,154,59"/>
+<map from="194,193,179" to="240,221,85"/>
+<map from="148,147,136" to="183,168,65"/>
+<map from="159,158,147" to="197,181,70"/>
+<map from="110,109,102" to="125,116,44"/>
+<map from="170,170,157" to="211,194,75"/>
+<map from="126,125,117" to="144,133,51"/>
+<map from="118,117,109" to="134,124,47"/>
+			</spriteType>
+			<picture ref="{AltimaTRAINS-EC-SEIBU-n101-PIC02}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-n101TC2-s}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-SEIBU-n101TC1-s}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-SEIBU-n101-s}">
+		<company>Seibu Railway</company>
+		<type>New 101 Series / 301 Series Solid Coating</type>
+		<name></name>
+		<author>Altima</author>
+		<description>1996年頃より、黄色とベージュのツートン塗装から黄色一色になった。</description>
+		<fare>350</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-SEIBU-n101TC1-s}"/>
+			<body carRef="{AltimaTRAINS-EC-SEIBU-n101MI1-s}"/>
+			<tail carRef="{AltimaTRAINS-EC-SEIBU-n101TC2-s}"/>
+		</composition>
+	</contribution>
+
+
+<!-- 2000系 -->
+
+	<!-- 先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-2000TC1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>136</capacity>
+		<sprite origin="0,0">
+			<picture src="seibu2000a.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-2000MI1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>144</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="125,116,44" to="197,181,70"/>
+<map from="144,133,51" to="226,208,80"/>
+<map from="134,124,47" to="211,194,75"/>
+			</spriteType>
+			<picture ref="{AltimaTRAINS-EC-SEIBU-n2000-PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-2000TC2}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-SEIBU-2000TC1}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-SEIBU-2000}">
+		<company>Seibu Railway</company>
+		<type>2000 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>新宿線用に1977年に登場。両開き4扉や界磁チョッパなど西武初の試みが多い車両。新旧合わせて400両以上の大所帯となっている。</description>
+		<fare>390</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-SEIBU-2000TC1}"/>
+			<body carRef="{AltimaTRAINS-EC-SEIBU-2000MI1}"/>
+			<tail carRef="{AltimaTRAINS-EC-SEIBU-2000TC2}"/>
+		</composition>
+	</contribution>
+
+
+<!-- 2000系更新車 -->
+
+	<!-- 先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-2000TC1-re}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>136</capacity>
+		<sprite origin="0,0">
+			<picture src="seibu2000ra.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-2000TC2-re}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-SEIBU-2000TC1-re}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-SEIBU-2000-re}">
+		<company>Seibu Railway</company>
+		<type>2000 Series Refurbished Train</type>
+		<name></name>
+		<author>Altima</author>
+		<description>1996年より更新工事を受けた車両が登場した。スカートの取り付けやシートの交換、近年の工事ではシングルアームパンタやLED表示器の採用などを実施。</description>
+		<fare>390</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-SEIBU-2000TC1-re}"/>
+			<body carRef="{AltimaTRAINS-EC-SEIBU-2000MI1}"/>
+			<tail carRef="{AltimaTRAINS-EC-SEIBU-2000TC2-re}"/>
+		</composition>
+	</contribution>
+
+
+<!-- 新2000系 -->
+
+	<!-- 先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-n2000TC1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>137</capacity>
+		<sprite origin="0,0">
+			<picture src="seibu2000na.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-n2000MI1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>144</capacity>
+		<sprite origin="0,0">
+			<picture ref="{AltimaTRAINS-EC-SEIBU-n2000-PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-n2000TC2}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-SEIBU-n2000TC1}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-SEIBU-n2000}">
+		<company>Seibu Railway</company>
+		<type>New 2000 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>1988年に登場した2000系のマイナーチェンジ車。制御機器に変更は無く界磁チョッパを採用。前面のブラックフェイス化など外装、内装とも変化した。2連、4連、6連、8連が揃い、多摩川線を除く全線で運用される。</description>
+		<fare>390</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-SEIBU-n2000TC1}"/>
+			<body carRef="{AltimaTRAINS-EC-SEIBU-n2000MI1}"/>
+			<tail carRef="{AltimaTRAINS-EC-SEIBU-n2000TC2}"/>
+		</composition>
+	</contribution>
+
+
+<!-- 3000系ツートン塗装 -->
+
+	<!-- 先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-3000TC1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>136</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="168,154,0" to="29,29,29"/>
+<map from="226,208,0" to="39,39,39"/>
+<map from="197,181,0" to="34,34,34"/>
+<map from="240,221,0" to="41,41,41"/>
+<map from="211,194,0" to="36,36,36"/>
+			</spriteType>
+			<picture ref="{AltimaTRAINS-EC-SEIBU-n101-PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-3000MI1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>148</capacity>
+		<sprite origin="0,0">
+			<picture ref="{AltimaTRAINS-EC-SEIBU-n101-PIC02}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-3000TC2}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-SEIBU-3000TC1}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-SEIBU-3000}">
+		<company>Seibu Railway</company>
+		<type>3000 Series Two-Tone Coating</type>
+		<name></name>
+		<author>Altima</author>
+		<description>池袋線向けに1983年に登場した車両。車体は新101系をベースとした3扉だが、界磁チョッパなど2000系と同一の機器類を採用している。全車8両固定編成。</description>
+		<fare>390</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-SEIBU-3000TC1}"/>
+			<body carRef="{AltimaTRAINS-EC-SEIBU-3000MI1}"/>
+			<tail carRef="{AltimaTRAINS-EC-SEIBU-3000TC2}"/>
+		</composition>
+	</contribution>
+
+
+<!-- 3000系単色塗装 -->
+
+	<!-- 先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-3000TC1-s}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>136</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="194,193,179" to="240,221,85"/>
+<map from="183,182,168" to="226,208,80"/>
+<map from="135,135,125" to="168,154,59"/>
+<map from="148,147,136" to="183,168,65"/>
+<map from="168,154,0" to="29,29,29"/>
+<map from="159,158,147" to="197,181,70"/>
+<map from="110,109,102" to="125,116,44"/>
+<map from="170,170,157" to="211,194,75"/>
+<map from="126,125,117" to="144,133,51"/>
+<map from="118,117,109" to="134,124,47"/>
+<map from="226,208,0" to="39,39,39"/>
+<map from="197,181,0" to="34,34,34"/>
+<map from="240,221,0" to="41,41,41"/>
+<map from="211,194,0" to="36,36,36"/>
+<map from="134,133,124" to="153,141,54"/>
+<map from="102,101,94" to="116,107,41"/>
+			</spriteType>
+			<picture ref="{AltimaTRAINS-EC-SEIBU-n101-PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-3000MI1-s}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>148</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="183,182,168" to="226,208,80"/>
+<map from="135,135,125" to="168,154,59"/>
+<map from="194,193,179" to="240,221,85"/>
+<map from="148,147,136" to="183,168,65"/>
+<map from="159,158,147" to="197,181,70"/>
+<map from="110,109,102" to="125,116,44"/>
+<map from="170,170,157" to="211,194,75"/>
+<map from="126,125,117" to="144,133,51"/>
+<map from="118,117,109" to="134,124,47"/>
+			</spriteType>
+			<picture ref="{AltimaTRAINS-EC-SEIBU-n101-PIC02}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-3000TC2-s}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-SEIBU-3000TC1-s}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-SEIBU-3000-s}">
+		<company>Seibu Railway</company>
+		<type>3000 Series Solid Coating</type>
+		<name></name>
+		<author>Altima</author>
+		<description>1996年頃より、黄色とベージュのツートン塗装から黄色一色になった。</description>
+		<fare>390</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-SEIBU-3000TC1-s}"/>
+			<body carRef="{AltimaTRAINS-EC-SEIBU-3000MI1-s}"/>
+			<tail carRef="{AltimaTRAINS-EC-SEIBU-3000TC2-s}"/>
+		</composition>
+	</contribution>
+
+
+<!-- 6000系 -->
+
+	<!-- 先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-6000TC1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>135</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="0,156,165" to="156,156,165"/>
+<map from="0,123,132" to="123,123,132"/>
+<map from="0,165,173" to="165,165,173"/>
+<map from="0,132,140" to="132,132,140"/>
+<map from="0,140,148" to="140,140,148"/>
+<map from="0,148,156" to="148,148,156"/>
+<map from="0,0,181" to="181,181,181"/>
+<map from="0,0,148" to="148,148,148"/>
+<map from="0,0,189" to="189,189,189"/>
+<map from="0,0,156" to="156,156,156"/>
+<map from="0,0,165" to="165,165,165"/>
+<map from="0,0,173" to="173,173,173"/>
+			</spriteType>
+			<picture ref="{AltimaTRAINS-EC-SEIBU-6000PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-6000MI1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>145</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="0,156,165" to="156,156,165"/>
+<map from="0,123,132" to="123,123,132"/>
+<map from="0,165,173" to="165,165,173"/>
+<map from="0,132,140" to="132,132,140"/>
+<map from="0,140,148" to="140,140,148"/>
+<map from="0,148,156" to="148,148,156"/>
+<map from="0,0,181" to="181,181,181"/>
+<map from="0,0,148" to="148,148,148"/>
+<map from="0,0,189" to="189,189,189"/>
+<map from="0,0,156" to="156,156,156"/>
+<map from="0,0,165" to="165,165,165"/>
+<map from="0,0,173" to="173,173,173"/>
+			</spriteType>
+			<picture ref="{AltimaTRAINS-EC-SEIBU-6000PIC02}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-6000TC2}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-SEIBU-6000TC1}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-SEIBU-6000}">
+		<company>Seibu Railway</company>
+		<type>6000 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>地下鉄乗入対応車として1992年に登場。西武初のステンレス製車体にGTO-VVVF、黄帯の有楽町線との誤乗防止のためブルーの帯を纏い、従来の西武電車とは大きくイメージが異なる車両となった。10両編成のみで、当初池袋線に投入されたが、直通運用のできない初期車は転属し、新宿線・拝島線で運用されている。</description>
+		<fare>450</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-SEIBU-6000TC1}"/>
+			<body carRef="{AltimaTRAINS-EC-SEIBU-6000MI1}"/>
+			<tail carRef="{AltimaTRAINS-EC-SEIBU-6000TC2}"/>
+		</composition>
+	</contribution>
+
+
+<!-- 6050系 -->
+
+	<!-- 先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-6050TC1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>135</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="0,156,165" to="198,198,206"/>
+<map from="0,123,132" to="165,165,173"/>
+<map from="0,165,173" to="206,206,214"/>
+<map from="0,132,140" to="173,173,181"/>
+<map from="0,140,148" to="181,181,189"/>
+<map from="0,148,156" to="189,189,198"/>
+<map from="0,0,181" to="198,198,206"/>
+<map from="0,0,148" to="165,165,173"/>
+<map from="0,0,189" to="206,206,214"/>
+<map from="0,0,156" to="173,173,181"/>
+<map from="0,0,165" to="181,181,189"/>
+<map from="0,0,173" to="189,189,198"/>
+			</spriteType>
+			<picture ref="{AltimaTRAINS-EC-SEIBU-6000PIC01}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-6050MI1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>145</capacity>
+		<sprite origin="0,0">
+			<spriteType name="colorMapped">
+<map from="0,156,165" to="198,198,206"/>
+<map from="0,123,132" to="165,165,173"/>
+<map from="0,165,173" to="206,206,214"/>
+<map from="0,132,140" to="173,173,181"/>
+<map from="0,140,148" to="181,181,189"/>
+<map from="0,148,156" to="189,189,198"/>
+<map from="0,0,181" to="198,198,206"/>
+<map from="0,0,148" to="165,165,173"/>
+<map from="0,0,189" to="206,206,214"/>
+<map from="0,0,156" to="173,173,181"/>
+<map from="0,0,165" to="181,181,189"/>
+<map from="0,0,173" to="189,189,198"/>
+			</spriteType>
+			<picture ref="{AltimaTRAINS-EC-SEIBU-6000PIC02}"/>
+		</sprite>
+	</contribution>
+
+	<!-- 後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-6050TC2}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-SEIBU-6050TC1}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-SEIBU-6050}">
+		<company>Seibu Railway</company>
+		<type>6050 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>1996年からはアルミ車体を採用し軽量化した6050系が登場。2年後の最終増備車は戸袋窓の廃止などさらに軽量化を進めた。</description>
+		<fare>460</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-SEIBU-6050TC1}"/>
+			<body carRef="{AltimaTRAINS-EC-SEIBU-6050MI1}"/>
+			<tail carRef="{AltimaTRAINS-EC-SEIBU-6050TC2}"/>
+		</composition>
+	</contribution>
+
+
+<!-- 10000系 -->
+
+	<!-- 先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-10000TC1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>48</capacity>
+		<sprite origin="0,0">
+			<picture src="seibu10000a.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-10000MI1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>62</capacity>
+		<sprite origin="0,0">
+			<picture src="seibu10000b.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-10000TC2}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-SEIBU-10000TC1}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-SEIBU-10000}">
+		<company>Seibu Railway</company>
+		<type>10000 Series</type>
+		<name>NRA</name>
+		<author>Altima</author>
+		<description>5000系レッドアローの後継として1993年に登場。一部編成以外の足回りは101系の流用品。</description>
+		<fare>1100</fare>
+		<price>100</price>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-SEIBU-10000TC1}"/>
+			<body carRef="{AltimaTRAINS-EC-SEIBU-10000MI1}"/>
+			<tail carRef="{AltimaTRAINS-EC-SEIBU-10000TC2}"/>
+		</composition>
+	</contribution>
+
+
+<!-- 20000系 -->
+
+	<!-- 先頭車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-20000TC1}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl"/>
+		<capacity>135</capacity>
+		<sprite origin="0,0">
+			<picture src="seibu20000a.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 中間車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-20000MI1}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl"/>
+		<capacity>145</capacity>
+		<sprite origin="0,0">
+			<picture src="seibu20000b.bmp"/>
+		</sprite>
+	</contribution>
+
+	<!-- 後尾車 -->
+	<contribution type="trainCar" id="{AltimaTRAINS-EC-SEIBU-20000TC2}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl"/>
+			<base carRef="{AltimaTRAINS-EC-SEIBU-20000TC1}"/>
+	</contribution>
+
+	<contribution type="train" id="{AltimaTRAINS-EC-SEIBU-20000}">
+		<company>Seibu Railway</company>
+		<type>20000 Series</type>
+		<name></name>
+		<author>Altima</author>
+		<description>新宿線向けの地上線専用車として2000年に登場。IGBT-VVVFや無塗装アルミ車体などを採用し省エネ、騒音やサイクルコストの低減などを実現している。10連と8連があり、現在は池袋線でも運用されている。</description>
+		<fare>480</fare>
+		<price>100</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.ParamTrainImpl"/>
+		<composition>
+			<head carRef="{AltimaTRAINS-EC-SEIBU-20000TC1}"/>
+			<body carRef="{AltimaTRAINS-EC-SEIBU-20000MI1}"/>
+			<tail carRef="{AltimaTRAINS-EC-SEIBU-20000TC2}"/>
+		</composition>
+	</contribution>
+
+</plug-in>

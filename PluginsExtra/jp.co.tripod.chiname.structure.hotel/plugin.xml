@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+<!ENTITY HiClassHotelPopulation '
+	<population>
+		<class name="freetrain.contributions.population.ResidentialPopulation"/>
+		<base>35</base>
+	</population>
+'>
+<!ENTITY crPeru '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="197,149,95"/>
+	</spriteType>
+'>
+<!ENTITY crWhite '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="255,255,255"/>
+	</spriteType>
+'>
+<!ENTITY crBrown '
+	<spriteType name="hueTransform">
+		<map from="0,*,0" to="183,70,108"/>
+	</spriteType>
+'>
+]>
+<plug-in>
+	<title>Hotel</title>
+	<author>C477</author>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+	<contribution type="picture" id="{4FC78EB3-7E50-4849-C477-5519AD183C20}">
+		<picture src="bldg_hotel01.bmp">
+			<override when="night" src="bldg_hotel01_n.bmp" />
+		</picture>
+	</contribution>
+	
+	<contribution type="GenericStructure" id="{4004B6D4-55BE-4F15-C477-DDD891E6D0E7}-1">
+		<name>Luxury Hotel</name>
+		<structure>
+			<category byname="Luxury Hotels"/>
+		</structure>
+		<price>52000</price>
+		<size>5,6</size>
+		<minHeight>5</minHeight>
+		<maxHeight>10</maxHeight>
+		&HiClassHotelPopulation;
+		<pictures>
+			<top origin=" 0, 0" offset="24">
+				<picture ref="{4FC78EB3-7E50-4849-C477-5519AD183C20}" />
+			</top>
+			<middle origin=" 0, 96" offset="40">
+				<picture ref="{4FC78EB3-7E50-4849-C477-5519AD183C20}" />
+			</middle>
+			<bottom origin=" 0, 208" offset="40" >
+				<picture ref="{4FC78EB3-7E50-4849-C477-5519AD183C20}" />
+			</bottom>
+			<bottom origin=" 0, 208" offset="0" height="0">
+				<picture ref="{4FC78EB3-7E50-4849-C477-5519AD183C20}" />
+			</bottom>
+		</pictures>
+		<pictures opposite="true">
+			<top origin="176, 0" offset="32" >
+				<picture ref="{4FC78EB3-7E50-4849-C477-5519AD183C20}" />
+			</top>
+			<middle origin="176, 112" offset="32">
+				<picture ref="{4FC78EB3-7E50-4849-C477-5519AD183C20}" />
+			</middle>
+			<bottom origin="176, 208" offset="48" >
+				<picture ref="{4FC78EB3-7E50-4849-C477-5519AD183C20}" />
+			</bottom>
+			<bottom origin="176, 208" offset="0" height="0">
+				<picture ref="{4FC78EB3-7E50-4849-C477-5519AD183C20}" />
+			</bottom>
+		</pictures>
+	</contribution>
+</plug-in>

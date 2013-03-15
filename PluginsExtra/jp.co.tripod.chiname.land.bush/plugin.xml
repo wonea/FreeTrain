@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Bushes</title>
+	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
+	<author>477</author>
+	
+	<depend on="org.kohsuke.freetrain.land.forest" />
+	<!--contribution type="picture" id="{FBD0CD06-016A-4037-AB15-02040218CBAA}-G"-->	
+	
+	<contribution type="land" id="{4307947B-3E50-4467-C477-37938B23AB89}">
+		<group>Bushes</group>
+		<name>boxwood</name>
+		<class name="freetrain.world.land.forest.ForestBuilder"
+			codebase="../org.kohsuke.freetrain.land.forest/bin/Debug/FreeTrain.Forest.dll"/>
+		
+		<picture src="trees_bush01.bmp">
+			<override when="winter" src="trees_bush01.WIN.bmp" />
+		</picture>
+		<size>192,16</size>
+		<count>6</count>
+		<density>18</density>
+		<price>0</price>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="land" id="{7FA5C87F-2C70-460E-C477-405D5DFEB16A}">
+		<group>Bushes</group>
+		<name>pampas grass</name>
+		<class name="freetrain.world.land.forest.ForestBuilder"
+			codebase="../org.kohsuke.freetrain.land.forest/bin/Debug/FreeTrain.Forest.dll"/>
+		
+		<picture src="trees_bush02.SPR.bmp">
+			<override when="summer" src="trees_bush02.SUM.bmp" />
+			<override when="autumn" src="trees_bush02.AUT.bmp" />
+			<override when="winter" src="trees_bush02.WIN.bmp" />
+		</picture>
+		<size>192,16</size>
+		<count>6</count>
+		<density>18</density>
+		<price>0</price>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="land" id="{1C67B6F8-65D2-4837-C477-D2FDF1E3102A}">
+		<group>Bushes</group>
+		<name>deciduous tree A</name>
+		<class name="freetrain.world.land.forest.ForestBuilder"
+			codebase="../org.kohsuke.freetrain.land.forest/bin/Debug/FreeTrain.Forest.dll"/>
+		
+		<picture src="trees_short01.SPR.bmp">
+			<override when="autumn" src="trees_short01.AUT.bmp" />
+			<override when="winter" src="trees_short01.WIN.bmp" />
+		</picture>
+		<size>192,16</size>
+		<count>6</count>
+		<density>18</density>
+		<price>0</price>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="land" id="{D828F5C5-2C45-43F7-C477-AB619FB21F03}">
+		<group>Bushes</group>
+		<name>evergreen tree A</name>
+		<class name="freetrain.world.land.forest.ForestBuilder"
+			codebase="../org.kohsuke.freetrain.land.forest/bin/Debug/FreeTrain.Forest.dll"/>
+		
+		<picture src="trees_short02.SUM.bmp">
+			<override when="winter" src="trees_short02.WIN.bmp" />
+		</picture>
+		<size>192,16</size>
+		<count>6</count>
+		<density>18</density>
+		<price>0</price>
+		<computerCannotBuild/>
+	</contribution>
+	
+	
+	<contribution type="land" id="{4307947B-3E50-4467-C477-37938B23AB89}-m">
+		<group>Bushes(mountain)</group>
+		<name>boxwood</name>
+		<class name="freetrain.world.land.forest.ForestBuilder"
+			codebase="../org.kohsuke.freetrain.land.forest/bin/Debug/FreeTrain.Forest.dll"/>
+		
+		<picture src="trees_bush01.bmp">
+			<override when="winter" src="trees_bush01.WIN.bmp" />
+		</picture>
+		<ground>
+			<picture ref = "{FBD0CD06-016A-4037-AB15-02040218CBAA}-G" origin="0,0"/>	
+		</ground>
+		<size>192,16</size>
+		<count>6</count>
+		<density>18</density>
+		<price>0</price>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="land" id="{7FA5C87F-2C70-460E-C477-405D5DFEB16A}-m">
+		<group>Bushes(mountain)</group>
+		<name>pampas grass</name>
+		<class name="freetrain.world.land.forest.ForestBuilder"
+			codebase="../org.kohsuke.freetrain.land.forest/bin/Debug/FreeTrain.Forest.dll"/>
+		
+		<picture src="trees_bush02.SPR.bmp">
+			<override when="summer" src="trees_bush02.SUM.bmp" />
+			<override when="autumn" src="trees_bush02.AUT.bmp" />
+			<override when="winter" src="trees_bush02.WIN.bmp" />
+		</picture>
+		<ground>
+			<picture ref = "{FBD0CD06-016A-4037-AB15-02040218CBAA}-G" origin="0,0"/>	
+		</ground>
+		<size>192,16</size>
+		<count>6</count>
+		<density>18</density>
+		<price>0</price>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="land" id="{1C67B6F8-65D2-4837-C477-D2FDF1E3102A}-m">
+		<group>Bushes(mountain)</group>
+		<name>deciduous tree A</name>
+		<class name="freetrain.world.land.forest.ForestBuilder"
+			codebase="../org.kohsuke.freetrain.land.forest/bin/Debug/FreeTrain.Forest.dll"/>
+		
+		<picture src="trees_short01.SPR.bmp">
+			<override when="autumn" src="trees_short01.AUT.bmp" />
+			<override when="winter" src="trees_short01.WIN.bmp" />
+		</picture>
+		<ground>
+			<picture ref = "{FBD0CD06-016A-4037-AB15-02040218CBAA}-G" origin="0,0"/>	
+		</ground>
+		<size>192,16</size>
+		<count>6</count>
+		<density>18</density>
+		<price>0</price>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="land" id="{D828F5C5-2C45-43F7-C477-AB619FB21F03}-m">
+		<group>Bushes(mountain)</group>
+		<name>evergreen tree A</name>
+		<class name="freetrain.world.land.forest.ForestBuilder"
+			codebase="../org.kohsuke.freetrain.land.forest/bin/Debug/FreeTrain.Forest.dll"/>
+		
+		<picture src="trees_short02.SUM.bmp">
+			<override when="winter" src="trees_short02.WIN.bmp" />
+		</picture>
+		<ground>
+			<picture ref = "{FBD0CD06-016A-4037-AB15-02040218CBAA}-G" origin="0,0"/>	
+		</ground>
+		<size>192,16</size>
+		<count>6</count>
+		<density>18</density>
+		<price>0</price>
+		<computerCannotBuild/>
+	</contribution>
+	
+	
+	<contribution type="land" id="{4307947B-3E50-4467-C477-37938B23AB89}-g">
+		<group>Bushes(grassland)</group>
+		<name>boxwood</name>
+		<class name="freetrain.world.land.forest.ForestBuilder"
+			codebase="../org.kohsuke.freetrain.land.forest/bin/Debug/FreeTrain.Forest.dll"/>
+		
+		<picture src="trees_bush01.bmp">
+			<override when="winter" src="trees_bush01.WIN.bmp" />
+		</picture>
+		<ground>
+			<picture ref = "{1AA12290-AC57-4388-AC62-323B813D0CAC}" origin="64,0"/>	
+		</ground>
+		<size>192,16</size>
+		<count>6</count>
+		<density>18</density>
+		<price>0</price>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="land" id="{7FA5C87F-2C70-460E-C477-405D5DFEB16A}-g">
+		<group>Bushes(grassland)</group>
+		<name>pampas grass</name>
+		<class name="freetrain.world.land.forest.ForestBuilder"
+			codebase="../org.kohsuke.freetrain.land.forest/bin/Debug/FreeTrain.Forest.dll"/>
+		
+		<picture src="trees_bush02.SPR.bmp">
+			<override when="summer" src="trees_bush02.SUM.bmp" />
+			<override when="autumn" src="trees_bush02.AUT.bmp" />
+			<override when="winter" src="trees_bush02.WIN.bmp" />
+		</picture>
+		<ground>
+			<picture ref = "{1AA12290-AC57-4388-AC62-323B813D0CAC}" origin="64,0"/>	
+		</ground>
+		<size>192,16</size>
+		<count>6</count>
+		<density>18</density>
+		<price>0</price>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="land" id="{1C67B6F8-65D2-4837-C477-D2FDF1E3102A}-g">
+		<group>Bushes(grassland)</group>
+		<name>deciduous tree A</name>
+		<class name="freetrain.world.land.forest.ForestBuilder"
+			codebase="../org.kohsuke.freetrain.land.forest/bin/Debug/FreeTrain.Forest.dll"/>
+		
+		<picture src="trees_short01.SPR.bmp">
+			<override when="autumn" src="trees_short01.AUT.bmp" />
+			<override when="winter" src="trees_short01.WIN.bmp" />
+		</picture>
+		<ground>
+			<picture ref = "{1AA12290-AC57-4388-AC62-323B813D0CAC}" origin="64,0"/>	
+		</ground>
+		<size>192,16</size>
+		<count>6</count>
+		<density>18</density>
+		<price>0</price>
+		<computerCannotBuild/>
+	</contribution>
+	
+	<contribution type="land" id="{D828F5C5-2C45-43F7-C477-AB619FB21F03}-g">
+		<group>Bushes(grassland)</group>
+		<name>evergreen tree A</name>
+		<class name="freetrain.world.land.forest.ForestBuilder"
+			codebase="../org.kohsuke.freetrain.land.forest/bin/Debug/FreeTrain.Forest.dll"/>
+		
+		<picture src="trees_short02.SUM.bmp">
+			<override when="winter" src="trees_short02.WIN.bmp" />
+		</picture>
+		<ground>
+			<picture ref = "{1AA12290-AC57-4388-AC62-323B813D0CAC}" origin="64,0"/>	
+		</ground>
+		<size>192,16</size>
+		<count>6</count>
+		<density>18</density>
+		<price>0</price>
+		<computerCannotBuild/>
+	</contribution>		
+
+</plug-in>

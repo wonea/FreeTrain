@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>TAKUROU</title>
+ 	<homepage>kei@viola.club.ne.jp</homepage>
+
+             <!-- イメージ画像定義 -->
+ 
+        <!-- Dc85 -->
+	<contribution type="picture" id="{AD070310-7653-11D7-A4B7-Dc85T}">
+		<picture src="kiha85a.bmp" />
+	</contribution>
+
+	<!-- Dc84 -->
+	<contribution type="picture" id="{AD070310-7653-11D7-A4B7-Dc84T}">
+		<picture src="kiha85b.bmp" />
+	</contribution>
+
+        <!-- Dc85-100 -->
+	<contribution type="picture" id="{AD070310-7653-11D7-A4B7-Dc85T_100}">
+		<picture src="kiha85c.bmp" />
+	</contribution>
+
+        <!-- Tsc383 -->
+	<contribution type="picture" id="{AD070310-7653-11D7-A4B7-Tsc383S}">
+		<picture src="383a.bmp" />
+	</contribution>
+
+        <!-- M383 -->
+	<contribution type="picture" id="{AD070310-7653-11D7-A4B7-M383S}">
+		<picture src="383c.bmp" />
+	</contribution>
+
+        <!-- T383 -->
+	<contribution type="picture" id="{AD070310-7653-11D7-A4B7-T383S}">
+		<picture src="383b.bmp" />
+	</contribution>
+
+        <!-- Mc383 -->
+	<contribution type="picture" id="{AD070310-7653-11D7-A4B7-Mc383S}">
+		<picture src="383d.bmp" />
+	</contribution>
+
+        <!-- Tc383 -->
+	<contribution type="picture" id="{AD070310-7653-11D7-A4B7-Tc383S}">
+		<picture src="383e.bmp" />
+	</contribution>
+
+        <!-- 車両定義 -->
+
+        <!-- キハ85(非貫通車) -->
+	<contribution type="trainCar" id="{AD070310-7653-11D7-A4B7-Dc85-T}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{AD070310-7653-11D7-A4B7-Dc85T}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+
+        <!-- キハ84(中間車) -->
+	<contribution type="trainCar" id="{AD070310-7653-11D7-A4B7-Dc84-T}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{AD070310-7653-11D7-A4B7-Dc84T}" />
+		</sprite>
+		<capacity>70</capacity>
+	</contribution>
+
+        <!-- キハ85 100番台(貫通車) -->
+	<contribution type="trainCar" id="{AD070310-7653-11D7-A4B7-Dc85_100-T}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{AD070310-7653-11D7-A4B7-Dc85T_100}" />
+		</sprite>
+		<capacity>30</capacity>
+	</contribution>
+	
+　　　　<!-- キハ85 100番台(反転) -->
+	<contribution type="trainCar" id="{AD070310-7653-11D7-A4B7-Dc85_100R-T}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{AD070310-7653-11D7-A4B7-Dc85_100-T}"/>
+	</contribution>
+
+        <!-- キハ85(反転) -->
+	<contribution type="trainCar" id="{AD070310-7653-11D7-A4B7-Dc85R-T}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{AD070310-7653-11D7-A4B7-Dc85-T}"/>
+	</contribution>
+       
+        <!-- クロ383 -->
+	<contribution type="trainCar" id="{AD070310-7653-11D7-A4B7-Tsc383-S}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{AD070310-7653-11D7-A4B7-Tsc383S}" />
+		</sprite>
+		<capacity>40</capacity>
+	</contribution>
+
+        <!-- モハ383 -->
+	<contribution type="trainCar" id="{AD070310-7653-11D7-A4B7-M383-S}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{AD070310-7653-11D7-A4B7-M383S}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+
+        <!-- サハ383 -->
+	<contribution type="trainCar" id="{AD070310-7653-11D7-A4B7-T383-S}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{AD070310-7653-11D7-A4B7-T383S}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+
+        <!-- クモハ383 -->
+	<contribution type="trainCar" id="{AD070310-7653-11D7-A4B7-Mc383-S}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{AD070310-7653-11D7-A4B7-Mc383S}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+
+        <!-- クハ383 -->
+	<contribution type="trainCar" id="{AD070310-7653-11D7-A4B7-Tc383-S}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{AD070310-7653-11D7-A4B7-Tc383S}" />
+		</sprite>
+		<capacity>60</capacity>
+	</contribution>
+
+        <!-- クモハ383(反転) -->
+	<contribution type="trainCar" id="{AD070310-7653-11D7-A4B7-Mc383R-S}">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{AD070310-7653-11D7-A4B7-Mc383-S}"/>
+	</contribution>
+                         
+        <!-- 編成の定義 -->
+        <contribution type="train" id="{AD070310-7653-11D7-A4B7-DCT85-W}">
+		<company>JR Central</company>
+		<type>KIHA 85 Series</type>
+		<name>'Wide View' Rail-Car</name>
+		<author>TAKUROU</author>
+		<description>KIHA 85 Series was introduced as a replacement
+for the aging KIHA 80 Series.
+In March 1989 it started to run as Limited Express 'Hida' (Nagoya – Takayama, Fuji) and
+in March 1992 Limited Express 'Nanki' (Nagoya – Kii Katsuura). There are in total 80 trains in service today.
+In the beginning, a distinction was made between 'Hida' formations (KIHA 85,
+85-100, 84; KIROHA 84) and 'Nanki' formations (KIHA 85-200, 84-200, 84-300;
+KIRO 85) but in March 2001 the 'Nanki' Green Car was discontinued in a
+revision of the scheduling.
+		</description>
+		<fare>1010</fare>
+		<price>100</price>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{AD070310-7653-11D7-A4B7-Dc85-T}"/>
+			<car char="B" ref="{AD070310-7653-11D7-A4B7-Dc84-T}"/>
+                        <car char="C" ref="{AD070310-7653-11D7-A4B7-Dc85_100-T}"/> 
+			<car char="D" ref="{AD070310-7653-11D7-A4B7-Dc85R-T}"/>
+                        <car char="E" ref="{AD070310-7653-11D7-A4B7-Dc85_100R-T}"/>
+
+                        <composition>CBD</composition>
+                        <composition>CBBBE</composition>
+                        <composition>ABBEBBD</composition>			
+		</config>
+             </contribution>
+
+             <contribution type="train" id="{AD070310-7653-11D7-A4B7-ECT383-S}">
+		<company>JR Central</company>
+		<type>383 Series</type>
+		<name>'Wide View' Electric Train</name>
+		<author>TAKUROU</author>
+		<description>Manufactures as a replacement for the aging
+Shinano.
+It had a body of stainless steel as well as VVVF inverter and observation
+'Green' cars attached, and the control was equipped with a passageway.
+Called 'Shinano' or 'Chikuma' Express on West Chuo Line and Shinonoi Line,
+some services went all the way to Osaka or Hakuba.
+		</description>
+		<fare>1010</fare>
+		<price>100</price>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{AD070310-7653-11D7-A4B7-Tsc383-S}"/>
+			<car char="B" ref="{AD070310-7653-11D7-A4B7-M383-S}"/>
+                        <car char="C" ref="{AD070310-7653-11D7-A4B7-T383-S}"/> 
+			<car char="D" ref="{AD070310-7653-11D7-A4B7-Tc383-S}"/>
+                        <car char="E" ref="{AD070310-7653-11D7-A4B7-Mc383R-S}"/>
+
+                        <composition>DE</composition>
+                        <composition>ABCE</composition>
+                        <composition>ABCBCE</composition>
+                        <composition>ABCBCEDE</composition>
+                        <composition>ABCBCEABCE</composition>			
+		</config>
+             </contribution>
+</plug-in>

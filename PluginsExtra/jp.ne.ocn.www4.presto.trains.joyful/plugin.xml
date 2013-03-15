@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Joyful Train Set</title>
+	<homepage>http://www4.ocn.ne.jp/~presto/ft/</homepage>
+	<author>Hinoto</author>
+
+<!-- 485系 シルフィード -->
+	<!-- シルフィード 先頭車両 -->
+	<contribution type="trainCar" id="{2E08F220-3DDB-11D8-968B-0800460222F0-titech-silpheed}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="485_silpheed_a.bmp" />
+		</sprite>
+		<capacity>42</capacity>
+	</contribution>
+	
+	<!-- シルフィード 中間車両 -->
+	<contribution type="trainCar" id="{2E08F220-3DDB-11D8-968B-0800460222F0-titech-silpheed}-m">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="485_silpheed_b.bmp" />
+		</sprite>
+		<capacity>51</capacity>
+	</contribution>
+
+	<!-- シルフィード 後尾車両 -->
+	<contribution type="trainCar" id="{2E08F220-3DDB-11D8-968B-0800460222F0-titech-silpheed}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{2E08F220-3DDB-11D8-968B-0800460222F0-titech-silpheed}-h"/>
+	</contribution>
+
+	<contribution type="train" id="{2E08F220-3DDB-11D8-968B-0800460222F0-titech-silpheed}">
+		<company>JR East</company>
+		<type>485 Series</type>
+		<name>Sylpheed</name>
+		<author>HINOTO</author>
+		<!-- 画像のベースとなった名鉄7500系を提供された477氏に感謝 -->
+		<description>
+「シルフィード」は485系交直流型特急電車をベースに、大幅な改造を加えて誕生した3両編成のジョイフルトレインです。
+機関車牽引による非電化区間への乗り入れを考慮し、先頭車に電源用ディーゼルエンジンを搭載しています。
+		</description>
+		<!-- かなーり間違っていると思うので誰か修正よろ -->
+		<price>80000</price>
+		<fare>1250</fare>
+		<speed>fast</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{2E08F220-3DDB-11D8-968B-0800460222F0-titech-silpheed}-h"/>
+			<car char="=" ref="{2E08F220-3DDB-11D8-968B-0800460222F0-titech-silpheed}-m"/>
+			<car char="＞" ref="{2E08F220-3DDB-11D8-968B-0800460222F0-titech-silpheed}-t"/>
+			<composition>＜=＞</composition>
+		</config>
+	</contribution>
+
+
+<!-- キロ59+キロ29 ふれあいパル -->
+	<!-- ふれあいパル-->
+	<contribution type="trainCar" id="{B038C0A1-3D35-11D8-968B-0800460222F0-titech-fureaipal}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="fureaipal.bmp" />
+		</sprite>
+		<capacity>48</capacity>
+	</contribution>
+	
+	
+
+	<!--　ふれあいパル 逆向き -->
+	<contribution type="trainCar" id="{B038C0A1-3D35-11D8-968B-0800460222F0-titech-fureaipal}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{B038C0A1-3D35-11D8-968B-0800460222F0-titech-fureaipal}-h"/>
+		<capacity>48</capacity>
+	</contribution>
+	
+	<contribution type="train" id="{B038C0A1-3D35-11D8-968B-0800460222F0-titech-fureaipal}">
+		<company>Japanese National Railways</company>
+		<type>KIHA 58 Series</type>
+		<name>Fureai Pal</name>
+		<author>HINOTO</author>
+		<!-- 画像のベースとなったキハ58を提供されたqra_ra氏に感謝 -->
+		<description>
+ふれあいパルは昭和61年3月に登場した山口鉄道部に所属する気動車2両のジョイフルトレイン。
+貫通扉撤去したうえ、助手席側を展望スペースにしているのが特徴。
+		</description>
+		<price>49000</price>
+		<fare>750</fare>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{B038C0A1-3D35-11D8-968B-0800460222F0-titech-fureaipal}-h"/>
+			<car char="B" ref="{B038C0A1-3D35-11D8-968B-0800460222F0-titech-fureaipal}-t"/>
+			<composition>AB</composition>
+		</config>
+	</contribution>
+
+<!-- キハ58系 新津カーペットカー -->
+	<!-- 新津カーペットカー-->
+	<contribution type="trainCar" id="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-niitsu-carpet}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="kiha58_niitsu_carpet.bmp" />
+		</sprite>
+		<capacity>48</capacity>
+	</contribution>
+	
+	
+
+	<!--　新津カーペットカー 逆向き -->
+	<contribution type="trainCar" id="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-niitsu-carpet}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-niitsu-carpet}-h"/>
+		<capacity>48</capacity>
+	</contribution>
+
+	<contribution type="train" id="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-niitsu-carpetl}">
+		<company>JR East</company>
+		<type>KIHA 58 Series</type>
+		<name>Carpet Car</name>
+		<author>HINOTO</author>
+		<!-- 画像のベースとなったキハ58を提供されたqra_ra氏に感謝 -->
+		<description>
+
+		</description>
+		<price>49000</price>
+		<fare>750</fare>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-niitsu-carpet}-h"/>
+			<car char="B" ref="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-niitsu-carpet}-t"/>
+			<composition>AB</composition>
+			<composition>AAB</composition>
+			<composition>ABAB</composition>
+		</config>
+	</contribution>
+
+<!--  JR Westキハ65　シュプールアンドリゾート  -->
+<!--  イメージ画像定義 
+  --> 
+<contribution type="picture" id="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands}-pic">
+  <picture src="kiha58_rands.bmp" /> 
+ </contribution>
+
+<!-- 黄色 -->
+<contribution type="trainCar" id="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands-y}-h">
+<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+<sprite origin="0,0">
+	<spriteType name="colorMapped">
+		<map from="255,0,0" to="255,255,0"/>
+		<map from="0,0,255" to="220,220,0"/>
+	</spriteType>
+	<picture ref="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands}-pic" /> 
+</sprite>
+<capacity>80</capacity> 
+</contribution>
+<!-- 黄色　逆向き -->
+<contribution type="trainCar" id="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands-y}-t">
+	<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+	<base carRef="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands-y}-h"/>
+	<capacity>80</capacity>
+</contribution>
+<!-- 緑色 -->
+<contribution type="trainCar" id="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands-g}-h">
+	<class name="freetrain.contributions.train.AsymTrainCarImpl" /> 
+	<sprite origin="0,0">
+	<spriteType name="colorMapped">
+		<map from="255,0,0" to="128,255,0"/>
+		<map from="0,0,255" to="92,185,0"/>
+	</spriteType>
+	<picture ref="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands}-pic" /> 
+</sprite>
+<capacity>80</capacity> 
+</contribution>
+<!-- 緑色　逆向き -->
+<contribution type="trainCar" id="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands-g}-t">
+	<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+	<base carRef="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands-g}-h"/>
+	<capacity>80</capacity>
+</contribution>
+
+	<contribution type="train" id="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands-y}">
+		<company>JR West</company>
+		<type>KIHA 65 Series</type>
+		<name>Spur &amp; Resort (Yellow)</name>
+		<author>HINOTO</author>
+		<!-- 画像のベースとなったキハ58を提供されたqra_ra氏に感謝 -->
+		<description>
+
+		</description>
+		<price>49000</price>
+		<fare>710</fare>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands-y}-h"/>
+			<car char="B" ref="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands-y}-t"/>
+			<composition>AB</composition>
+			<composition>ABAB</composition>
+			<composition>ABABAB</composition>
+			<composition>ABABABAB</composition>
+		</config>
+	</contribution>
+
+
+	<contribution type="train" id="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands-g}">
+		<company>JR West</company>
+		<type>KIHA 65 Series</type>
+		<name>Spur &amp; Resort (Green)</name>
+		<author>HINOTO</author>
+		<!-- 画像のベースとなったキハ58を提供されたqra_ra氏に感謝 -->
+		<description>
+
+		</description>
+		<price>49000</price>
+		<fare>710</fare>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands-g}-h"/>
+			<car char="B" ref="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands-g}-t"/>
+			<composition>AB</composition>
+			<composition>ABAB</composition>
+			<composition>ABABAB</composition>
+			<composition>ABABABAB</composition>
+		</config>
+	</contribution>
+	<contribution type="train" id="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands-gy}">
+		<company>JR West</company>
+		<type>KIHA 65 Series</type>
+		<name>Spur &amp; Resort (2 Colors)</name>
+		<author>HINOTO</author>
+		<!-- 画像のベースとなったキハ58を提供されたqra_ra氏に感謝 -->
+		<description>
+
+		</description>
+		<price>49000</price>
+		<fare>710</fare>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands-y}-h"/>
+			<car char="B" ref="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands-y}-t"/>
+			<car char="C" ref="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands-g}-h"/>
+			<car char="D" ref="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-jrw-rands-g}-t"/>
+			<composition>ABCD</composition>
+			<composition>ABCDAB</composition>
+			<composition>ABABCDCD</composition>
+		</config>
+	</contribution>
+
+<!-- キハ40系 リゾートしらかみ 青池 -->
+	<!-- 青池先頭車 -->
+	<contribution type="trainCar" id="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-aoike}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="r_shirakami_t.bmp" />
+		</sprite>
+		<capacity>72</capacity>
+	</contribution>
+	
+	<!--　青池先頭車 逆向き -->
+	<contribution type="trainCar" id="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-aoike}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-aoike}-h"/>
+		<capacity>72</capacity>
+	</contribution>
+
+	<!-- 青池中間車 -->
+	<contribution type="trainCar" id="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-aoike}-m">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="r_shirakami_m.bmp" />
+		</sprite>
+		<capacity>72</capacity>
+	</contribution>
+	
+	<!--　青池中間車 逆向き -->
+	<contribution type="trainCar" id="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-aoike}-n">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-aoike}-m"/>
+		<capacity>72</capacity>
+	</contribution>
+
+	<contribution type="train" id="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-aoike}">
+		<company>JR East</company>
+		<type>KIHA 40 Series</type>
+		<name>Resort Shirakami Aoike Formation</name>
+		<author>HINOTO</author>
+		<!-- 画像のベースとなったキハ58を提供されたqra_ra氏に感謝 -->
+		<description>
+
+		</description>
+		<price>65000</price>
+		<fare>800</fare>
+		<speed>slow</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="A" ref="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-aoike}-h"/>
+			<car char="B" ref="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-aoike}-t"/>
+			<car char="C" ref="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-aoike}-m"/>
+			<car char="D" ref="{B038C0A2-3D35-11D8-968B-0800460222F0-titech-aoike}-n"/>
+			<composition>AB</composition>
+			<composition>ACB</composition>
+			<composition>ADCB</composition>
+			<composition>ADCCB</composition>
+			<composition>ADCDCB</composition>
+		</config>
+	</contribution>
+
+<!-- キハ80系 トマムサホロエクスプレス -->
+	<!-- トマムサホロ先頭車 -->
+	<contribution type="trainCar" id="{46397FC0-4477-11D8-968B-0800460222F0-titech-tse}-h">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="tomamusahoro_a.bmp" />
+		</sprite>
+		<capacity>72</capacity>
+	</contribution>
+	
+	<!--　トマムサホロ先頭車 逆向き -->
+	<contribution type="trainCar" id="{46397FC0-4477-11D8-968B-0800460222F0-titech-tse}-t">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{46397FC0-4477-11D8-968B-0800460222F0-titech-tse}-h"/>
+		<capacity>72</capacity>
+	</contribution>
+
+	<!-- トマムサホロ中間車A -->
+	<contribution type="trainCar" id="{46397FC0-4477-11D8-968B-0800460222F0-titech-tse}-m1">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="tomamusahoro_b.bmp" />
+		</sprite>
+		<capacity>76</capacity>
+	</contribution>
+
+	<!-- トマムサホロ中間車B -->
+	<contribution type="trainCar" id="{46397FC0-4477-11D8-968B-0800460222F0-titech-tse}-m2">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="tomamusahoro_c.bmp" />
+		</sprite>
+		<capacity>76</capacity>
+	</contribution>
+
+	<contribution type="train" id="{46397FC0-4477-11D8-968B-0800460222F0-titech-tse}">
+		<company>JR Hokkaido</company>
+		<type>KIHA 80 Series</type>
+		<name>Tomamu Sahoro Express</name>
+		<author>HINOTO</author>
+		<description>
+
+		</description>
+		<price>75000</price>
+		<fare>920</fare>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="＜" ref="{46397FC0-4477-11D8-968B-0800460222F0-titech-tse}-h"/>
+			<car char="＞" ref="{46397FC0-4477-11D8-968B-0800460222F0-titech-tse}-t"/>
+			<car char="-" ref="{46397FC0-4477-11D8-968B-0800460222F0-titech-tse}-m1"/>
+			<car char="=" ref="{46397FC0-4477-11D8-968B-0800460222F0-titech-tse}-m2"/>
+			<composition>＜＞</composition>
+			<composition>＜-＞</composition>
+			<composition>＜--＞</composition>
+			<composition>＜-=-＞</composition>
+		</config>
+	</contribution>
+
+</plug-in>

@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title></title>
+	<homepage>--</homepage>
+	
+	
+	<!-- 80系湘南型電車 大糸色-->
+
+	<contribution type="trainCar" id="{27D5058D-41B9-T80-ooito-02B8DF3DE1E9}-A">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="80_B1.bmp" />
+
+		</sprite>
+		<capacity>79</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{27D5058D-41B9-T80-ooito-02B8DF3DE1E9}-B">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="80_B2.bmp" />
+
+		</sprite>
+		<capacity>92</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{27D5058D-41B9-T80-ooito-02B8DF3DE1E9}-C">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="80_B2.bmp" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="100,180,255"/>
+			<map from="128,0,0" to="0,120,230"/>
+		</spriteType>	
+		</sprite>
+		<capacity>89</capacity>
+	</contribution>	
+
+
+	<!-- 80系湘南型電車 マーブル色-->
+
+	<contribution type="trainCar" id="{27D5058D-41B9-T80-kansaiEX-02B8DF3DE1E9}-A">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="80_M1.bmp" />
+
+		</sprite>
+		<capacity>79</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{27D5058D-41B9-T80-kansai-02B8DF3DE1E9}-A">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="80_M1a.bmp" />
+
+		</sprite>
+		<capacity>79</capacity>
+	</contribution>
+
+
+	<contribution type="trainCar" id="{27D5058D-41B9-T80-kansai-02B8DF3DE1E9}-B">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="80_M2.bmp" />
+
+		</sprite>
+		<capacity>92</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{27D5058D-41B9-T80-kansai-02B8DF3DE1E9}-C">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="80_M2.bmp" />
+		<spriteType name="colorMapped">
+			<map from="255,0,0" to="100,180,255"/>
+			<map from="128,0,0" to="0,120,230"/>
+		</spriteType>	
+		</sprite>
+		<capacity>89</capacity>
+	</contribution>	
+
+
+	<contribution type="train" id="{8B8C5CB2-T80-43a5-ooito-4528788BF74E}">
+		<company>Japanese National Railways</company>
+		<type>80 Series Electrical Train</type>
+		<name>80 Series Oito Line Colors</name>
+		<author>--</author>
+		<description>80 Series painted in Oito Line colors. 
+The Oito Line 80 Series was in fact only registered in KUMOYUNI 81003 and
+used together with older electrical trains.
+		</description>
+		<price>1000</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="ク" ref="{27D5058D-41B9-T80-ooito-02B8DF3DE1E9}-A"/>
+			<car char="モ" ref="{27D5058D-41B9-T80-ooito-02B8DF3DE1E9}-B"/>
+			<car char="サ" ref="{27D5058D-41B9-T80-ooito-02B8DF3DE1E9}-C"/>
+			
+			<composition>クモク</composition>
+                        <composition>クモサク</composition>
+                        <composition>クモサモク</composition>
+                        <composition>クモククモク</composition>
+		</config>
+
+	</contribution>
+
+
+	<contribution type="train" id="{8B8C5CB2-T80-43a5-kansai-4528788BF74E}">
+		<company>Japanese National Railways</company>
+		<type>80 Series Electrical Train</type>
+		<name>Marble Color</name>
+		<author>--</author>
+		<description>80 Series in the Kansai region was painted in
+ivory and dark purple.
+		</description>
+		<price>1000</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="ク" ref="{27D5058D-41B9-T80-kansai-02B8DF3DE1E9}-A"/>
+			<car char="モ" ref="{27D5058D-41B9-T80-kansai-02B8DF3DE1E9}-B"/>
+			<car char="サ" ref="{27D5058D-41B9-T80-kansai-02B8DF3DE1E9}-C"/>
+			
+			<composition>クモク</composition>
+                        <composition>クモサク</composition>
+                        <composition>クモサモク</composition>
+                        <composition>クモモモモク</composition>
+	                <composition>クモサモククモサク</composition>
+                        <composition>クモモモモククモサク</composition>
+ 		</config>
+
+	</contribution>
+
+	<contribution type="train" id="{8B8C5CB2-T80-43a5-kansaiEX-4528788BF74E}">
+		<company>Japanese National Railways</company>
+		<type>80 Series Electrical Train</type>
+		<name>Kansai Express</name>
+		<author>--</author>
+		<description>Ran as an express train in the Kansai region.
+		</description>
+		<price>1000</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+			<car char="ク" ref="{27D5058D-41B9-T80-kansaiEX-02B8DF3DE1E9}-A"/>
+			<car char="モ" ref="{27D5058D-41B9-T80-kansai-02B8DF3DE1E9}-B"/>
+			<car char="サ" ref="{27D5058D-41B9-T80-kansai-02B8DF3DE1E9}-C"/>
+			
+	                <composition>クモサモククモサク</composition>
+                        <composition>クモモモモククモサク</composition>
+ 		</config>
+
+	</contribution>
+
+
+
+
+	<!-- 63系電車ジュラ電 -->
+	<!--クモハ-->
+	<contribution type="picture" id="{67705E9E-Tc62-JNR-duralumin-FE45DAC33699}">
+		<picture src="62d00.bmp" />
+	</contribution>
+
+	<contribution type="trainCar" id="{67705E9E-T62-49b2-duralumin-FE45DAC33699}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{67705E9E-Tc62-JNR-duralumin-FE45DAC33699}" />
+		</sprite>
+		<capacity>126</capacity>
+	</contribution>
+
+	<!--モハ-->
+	<contribution type="picture" id="{67705E9E-M62-JNR-duralumin-FE45DAC33699}">
+		<picture src="62d02.bmp" />
+	</contribution>
+
+	<contribution type="trainCar" id="{67705E9E-T62-49b2-duralumin-FE45DAC33699}-M">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{67705E9E-M62-JNR-duralumin-FE45DAC33699}" />
+		</sprite>
+		<capacity>126</capacity>
+	</contribution>
+
+	<!--クハ-->
+	<contribution type="picture" id="{67705E9E-Mc62-JNR-duralumin-FE45DAC33699}">
+		<picture src="62d01.bmp" />
+	</contribution>
+
+	<contribution type="trainCar" id="{67705E9E-T62-49b2-duralumin-FE45DAC33699}-T">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{67705E9E-Mc62-JNR-duralumin-FE45DAC33699}" />
+		</sprite>
+		<capacity>126</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{67705E9E-T62-49b2-duralumin-FE45DAC33699}-C">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{67705E9E-T62-49b2-duralumin-FE45DAC33699}-T"/>
+	</contribution>
+
+	
+	<contribution type="train" id="{67705E9E-4ED1-T63-duralumin-FE45DAC33699}">
+		<company>Japanese National Railways</company>
+		<type>62/63 Series</type>
+		<name>900 Model 'Dura' Electric Train</name>
+		<author>––</author>
+		<description>63 Series 900 Model has a body made of duralumin.
+Popularly called the 'Dura' train, due to its unpainted body it suffered from
+heavy corrosion and was in the end painted and finally converted to a steel
+body.
+		</description>
+		<price>50</price>
+		<speed>slow</speed>
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+
+		<car char="H" ref="{67705E9E-T62-49b2-duralumin-FE45DAC33699}"/>
+		<car char="M" ref="{67705E9E-T62-49b2-duralumin-FE45DAC33699}-M"/>
+		<car char="C" ref="{67705E9E-T62-49b2-duralumin-FE45DAC33699}-C"/>
+
+		<composition>HC</composition>
+		<composition>HMC</composition>
+		</config>
+	</contribution>
+
+
+	<!-- 63系電車ぶどう色 -->
+	<!--クモハ-->
+	<contribution type="picture" id="{67705E9E-Tc62-JNR-budou-FE45DAC33699}">
+		<picture src="62a.bmp" />
+	</contribution>
+
+	<contribution type="trainCar" id="{67705E9E-T62-49b2-budou-FE45DAC33699}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{67705E9E-Tc62-JNR-budou-FE45DAC33699}" />
+		</sprite>
+		<capacity>126</capacity>
+	</contribution>
+
+	<!--モハ・サハ-->
+	<contribution type="picture" id="{67705E9E-M62-JNR-budou-FE45DAC33699}">
+		<picture src="62.bmp" />
+	</contribution>
+
+	<contribution type="trainCar" id="{67705E9E-T62-49b2-budou-FE45DAC33699}-M">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{67705E9E-M62-JNR-budou-FE45DAC33699}" />
+		</sprite>
+		<capacity>126</capacity>
+	</contribution>
+
+	<!--モハ(パンタ付)-->
+
+	<contribution type="picture" id="{67705E9E-P62-JNR-budou-FE45DAC33699}">
+		<picture src="62c.bmp" />
+	</contribution>
+
+	<contribution type="trainCar" id="{67705E9E-T62-49b2-budou-FE45DAC33699}-P">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{67705E9E-P62-JNR-budou-FE45DAC33699}" />
+		</sprite>
+		<capacity>126</capacity>
+	</contribution>
+
+
+	<!--クハ-->
+	<contribution type="picture" id="{67705E9E-Mc62-JNR-budou-FE45DAC33699}">
+		<picture src="62b.bmp" />
+	</contribution>
+
+	<contribution type="trainCar" id="{67705E9E-T62-49b2-budou-FE45DAC33699}-T">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{67705E9E-Mc62-JNR-budou-FE45DAC33699}" />
+		</sprite>
+		<capacity>126</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{67705E9E-T62-49b2-budou-FE45DAC33699}-C">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{67705E9E-T62-49b2-budou-FE45DAC33699}-T"/>
+	</contribution>
+
+	
+	<contribution type="train" id="{67705E9E-4ED1-T63-budou-FE45DAC33699}">
+		<company>Japanese National Railways</company>
+		<type>62/63 Series</type>
+		<name>Dark Purple Color</name>
+		<author>––</author>
+		<description>Built during the war years, it was mass-produced
+after the war when trains were in short supply.
+Some variants had steel, half-steel or duralumin bodies.
+		</description>
+		<price>50</price>
+		<speed>slow</speed>
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+
+		<car char="H" ref="{67705E9E-T62-49b2-budou-FE45DAC33699}"/>
+		<car char="M" ref="{67705E9E-T62-49b2-budou-FE45DAC33699}-M"/>
+		<car char="P" ref="{67705E9E-T62-49b2-budou-FE45DAC33699}-P"/>
+		<car char="T" ref="{67705E9E-T62-49b2-budou-FE45DAC33699}-T"/>
+		<car char="C" ref="{67705E9E-T62-49b2-budou-FE45DAC33699}-C"/>
+		
+		<composition>HC</composition>
+		<composition>HMC</composition>
+		<composition>TPMC</composition>
+		<composition>TMPMC</composition>
+		<composition>HMCHMC</composition>
+		<composition>TMPMCHMC</composition>
+		<composition>HMCHMCHMC</composition>
+
+		</config>
+	</contribution>
+
+
+	<!-- 63系電車ぶどう色(2扉・クロスシートタイプ) -->
+
+	<!--クモハ-->
+	<contribution type="picture" id="{67705E9E-Tc62A-JNR-budou-FE45DAC33699}">
+		<picture src="62_T01.bmp" />
+	</contribution>
+
+	<contribution type="trainCar" id="{67705E9E-T62A-49b2-budou-FE45DAC33699}">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{67705E9E-Tc62A-JNR-budou-FE45DAC33699}" />
+		</sprite>
+		<capacity>104</capacity>
+	</contribution>
+
+	<!--モハ・サハ-->
+	<contribution type="picture" id="{67705E9E-M62A-JNR-budou-FE45DAC33699}">
+		<picture src="62_T03.bmp" />
+	</contribution>
+
+	<contribution type="trainCar" id="{67705E9E-T62A-49b2-budou-FE45DAC33699}-M">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{67705E9E-M62-JNR-budou-FE45DAC33699}" />
+		</sprite>
+		<capacity>104</capacity>
+	</contribution>
+
+
+	<!--クハ-->
+	<contribution type="picture" id="{67705E9E-Mc62A-JNR-budou-FE45DAC33699}">
+		<picture src="62_T02.bmp" />
+	</contribution>
+
+	<contribution type="trainCar" id="{67705E9E-T62A-49b2-budou-FE45DAC33699}-T">
+		<class name="freetrain.contributions.train.AsymTrainCarImpl" />
+		<sprite origin="0,0">
+			<picture ref="{67705E9E-Mc62A-JNR-budou-FE45DAC33699}" />
+		</sprite>
+		<capacity>104</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{67705E9E-T62A-49b2-budou-FE45DAC33699}-C">
+		<class name="freetrain.contributions.train.ReverseTrainCarImpl" />
+		<base carRef="{67705E9E-T62A-49b2-budou-FE45DAC33699}-T"/>
+	</contribution>
+
+
+	<contribution type="train" id="{67705E9E-4ED1-T63A-budou-FE45DAC33699}">
+		<company>Japanese National Railways</company>
+		<type>62/63 Series</type>
+		<name>Dark Purple Color(2 doors/cross-seats)</name>
+		<author>––</author>
+		<description>Local train variant with cross-seats and 2 doors.		</description>
+		<price>50</price>
+		<speed>slow</speed>
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+
+		<car char="H" ref="{67705E9E-T62A-49b2-budou-FE45DAC33699}"/>
+		<car char="M" ref="{67705E9E-T62A-49b2-budou-FE45DAC33699}-M"/>
+		<car char="C" ref="{67705E9E-T62A-49b2-budou-FE45DAC33699}-C"/>
+		
+		<!--←横浜-->
+		<composition>HC</composition>
+		<composition>HMC</composition>
+		<composition>HMCHC</composition>
+		<composition>HMCHMC</composition>
+
+		</config>
+	</contribution>
+
+
+
+
+
+
+	<contribution type="train" id="{67705E9E-4ED1-T63-bd-FE45DAC33699}">
+		<company>Japanese National Railways</company>
+		<type>62/63 Series</type>
+		<name>Dark Purple Color + Duralumin</name>
+		<author>––</author>
+		<description>Formation with normal and duralumin carriages.
+		</description>
+		<price>50</price>
+		<speed>slow</speed>
+
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+
+		<car char="H" ref="{67705E9E-T62-49b2-budou-FE45DAC33699}"/>
+		<car char="M" ref="{67705E9E-T62-49b2-budou-FE45DAC33699}-M"/>
+		<car char="P" ref="{67705E9E-T62-49b2-budou-FE45DAC33699}-P"/>
+		<car char="T" ref="{67705E9E-T62-49b2-budou-FE45DAC33699}-T"/>
+		<car char="C" ref="{67705E9E-T62-49b2-budou-FE45DAC33699}-C"/>
+
+		<car char="A" ref="{67705E9E-T62-49b2-duralumin-FE45DAC33699}"/>
+		<car char="B" ref="{67705E9E-T62-49b2-duralumin-FE45DAC33699}-M"/>
+		<car char="D" ref="{67705E9E-T62-49b2-duralumin-FE45DAC33699}-C"/>
+		
+
+		
+		<composition>HCAD</composition>
+		<composition>HMCAD</composition>
+		<composition>ABDHMC</composition>
+		<composition>HMCHCABD</composition>
+
+		</config>
+	</contribution>
+
+
+
+
+
+
+	<!-- 101系 -->
+	<contribution type="trainCar" id="{3991CE43-T101-4923-JNR-9DA7803A3322}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="101.bmp" />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>
+
+	<contribution type="trainCar" id="{3991CE43-T101-4923-JNR-9DA7803A3322}-B">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="101b.bmp" />
+		</sprite>
+		<capacity>144</capacity>
+	</contribution>	
+
+	<!--尻手支線-->
+	<contribution type="trainCar" id="{3991CE43-T101-4923-JRE-9DA7803A3322}">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="101_n.bmp" />
+		</sprite>
+		<capacity>136</capacity>
+	</contribution>	
+
+	<contribution type="trainCar" id="{3991CE43-T101-4923-JRE-9DA7803A3322}-B">
+		<class name="freetrain.contributions.train.SymTrainCarImpl" />
+		<sprite origin="0,0">
+		<picture src="101_n1.bmp" />
+
+		</sprite>
+		<capacity>144</capacity>
+	</contribution>	
+
+
+
+
+	<contribution type="train" id="{3991CE43-T101-4923-JNR-9DA7803AW}">
+		<company>Japanese National Railways</company>
+		<type>101 Series</type>
+		<name>Orange Color</name>
+		<author>--</author>
+		<description>101 Series was made to replace the aging 72 Series.
+Initially all M carriages, as the capacity of the electrical facilities
+improved, it was later changed to 6M4T.
+		</description>
+		<price>1</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+		<car char="T" ref="{3991CE43-T101-4923-JNR-9DA7803A3322}"/>
+		<car char="M" ref="{3991CE43-T101-4923-JNR-9DA7803A3322}-B"/>
+
+
+		
+		<composition>TMT</composition>
+		<composition>TMMT</composition>
+		<composition>TMMMMT</composition>
+		<composition>TMMMMMT</composition>
+		<composition>TMMMMMMMMT</composition>
+		<composition>TMMMMMMMMMT</composition>
+
+
+		</config>
+	</contribution>	
+
+	<contribution type="train" id="{3991CE43-T101-4923-JRE-9DA7803A}">
+		<company>JR East</company>
+		<type>101 Series</type>
+		<name>Nambu Branch Line</name>
+		<author>--</author>
+		<description>
+Used on Nambu's Hamagawasaki Branch Line.
+Hamagawasaki Branch Line was the last line 101 Series served on. Replaced by
+205 Series in December 2003.
+		</description>
+		<price>1</price>
+		<speed>medium</speed>
+		<class name="freetrain.contributions.train.PatternTrainImpl"/>
+		<config>
+		<car char="-" ref="{3991CE43-T101-4923-JRE-9DA7803A3322}"/>
+		<car char="M" ref="{3991CE43-T101-4923-JRE-9DA7803A3322}-B"/>
+
+		
+		<!--←浜川崎-->
+		<composition>-M-</composition>
+
+		</config>
+	</contribution>	
+
+
+</plug-in>

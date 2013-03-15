@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Entrance to Tunnel</title>
+	<author>HEUER</author>
+	<homepage>http://freetrain.finito-web.com/</homepage>
+	
+	<depends on="org.kohsuke.freetrain.rail.electricPole" />
+	
+	<contribution type="electricPole" id="{RAIL0100-8058-11D7-BB78-0090FE1AB959}">
+		<name>Tunnel entrance(single-A)</name>
+		<sprite>
+			<picture src="tunnel.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{RAIL0105-8058-11D7-BB78-0090FE1AB959}">
+		<name>Tunnel entrance(single-B)</name>
+		<sprite>
+			<picture src="tunnel2.bmp">
+				<override when="winter" src="tunnel2w.bmp" />
+			</picture>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{RAIL0101-8058-11D7-BB78-0090FE1AB959}">
+		<name>Tunnel entrance(double-A,left)</name>
+		<sprite>
+			<picture src="tunnel_l.bmp"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="electricPole" id="{RAIL0102-8058-11D7-BB78-0090FE1AB959}">
+		<name>Tunnel entrance(double-A,right)</name>
+		<sprite>
+			<picture src="tunnel_r.bmp"/>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{RAIL0103-8058-11D7-BB78-0090FE1AB959}">
+		<name>Tunnel entrance(double-B,left)</name>
+		<sprite>
+			<picture src="tunnel2_l.bmp"/>
+		</sprite>
+	</contribution>
+	
+	<contribution type="electricPole" id="{RAIL0104-8058-11D7-BB78-0090FE1AB959}">
+		<name>Tunnel entrance(double-B,right)</name>
+		<sprite>
+			<picture src="tunnel2_r.bmp"/>
+		</sprite>
+	</contribution>
+
+
+	<title>Rock Shed</title>
+	<author>HEUER</author>
+	<homepage>http://freetrain.finito-web.com/</homepage>
+	
+	<depends on="org.kohsuke.freetrain.rail.electricPole" />
+	
+	<contribution type="electricPole" id="{RAIL0200-8058-11D7-BB78-0090FE1AB959}">
+		<name>Rock shed A1</name>
+		<sprite>
+			<picture src="rsa1.bmp">
+				<override when="winter" src="rsa1w.bmp" />
+			</picture>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{RAIL0201-8058-11D7-BB78-0090FE1AB959}">
+		<name>Rock shed A1c</name>
+		<sprite>
+			<picture src="rsa1c.bmp">
+				<override when="winter" src="rsa1cw.bmp" />
+			</picture>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{RAIL0202-8058-11D7-BB78-0090FE1AB959}">
+		<name>Rock shed A2</name>
+		<sprite>
+			<picture src="rsa2.bmp">
+				<override when="winter" src="rsa2w.bmp" />
+			</picture>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{RAIL0203-8058-11D7-BB78-0090FE1AB959}">
+		<name>Rock shed A2c</name>
+		<sprite>
+			<picture src="rsa2c.bmp">
+				<override when="winter" src="rsa2cw.bmp" />
+			</picture>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{RAIL0204-8058-11D7-BB78-0090FE1AB959}">
+		<name>Rock shed Ax</name>
+		<sprite>
+			<picture src="rsax.bmp">
+				<override when="winter" src="rsaxw.bmp" />
+			</picture>
+		</sprite>
+	</contribution>
+
+	<contribution type="electricPole" id="{RAIL0205-8058-11D7-BB78-0090FE1AB959}">
+		<name>Rock shed Ay</name>
+		<sprite>
+			<picture src="rsay.bmp">
+				<override when="winter" src="rsayw.bmp" />
+			</picture>
+		</sprite>
+	</contribution>
+
+</plug-in>

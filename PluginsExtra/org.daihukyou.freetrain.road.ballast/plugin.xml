@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plug-in>
+	<title>Ballast</title>
+	<author>ANK</author>
+	<homepage></homepage>
+	
+	<contribution type="road" id="{FreeTrain-Uploder-RoadImg-Siba3}">
+		<class name="freetrain.contributions.road.A3RoadContribution" />
+		<name>Ballast (gray)</name>
+		<description>Ballast (gray)</description>
+		<picture src="road_siba3.bmp" size="32,32" offset="16" />
+	</contribution>
+	
+	<contribution type="road" id="{FreeTrain-Uploder-RoadImg-Siba2}">
+		<class name="freetrain.contributions.road.A3RoadContribution" />
+		<name>Ballast (brown)</name>
+		<description>Ballast (brown)</description>
+		<picture src="road_siba2.bmp" size="32,32" offset="16" />
+	</contribution>
+
+
+</plug-in>

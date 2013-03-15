@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+
+<!ENTITY ta-white '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="244,234,218"/>
+</spriteType>
+'>
+<!ENTITY ta-silvergreen '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="198,198,184"/>
+</spriteType>
+'>
+<!ENTITY wall-brownbeige '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="217,197,173"/>
+</spriteType>
+'>
+<!ENTITY wall-redbrick '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="94,65,41"/>
+</spriteType>
+'>
+<!ENTITY wall-ivory '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="212,215,194"/>
+</spriteType>
+'>
+<!ENTITY wall-urbanstone '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="196,180,167"/>
+</spriteType>
+'>
+<!ENTITY wall-tiled '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="203,170,124"/>
+</spriteType>
+'>
+<!ENTITY wall-pastelgray '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="191,206,200"/>
+</spriteType>
+'>
+
+
+
+]>
+
+
+<plug-in>
+
+<author>Shikashika</author>
+<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+<title>Buildings(Tourism)</title>
+
+<!-- Shinto shrine -->
+
+<!-- Itsukushima shrine -->
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-shrine-shinto-itukushima-01}">
+	<picture  src="shrine_itukushima_01.bmp">
+		<override when="night" src="shrine_itukushima_01n.bmp"/>
+	</picture>
+</contribution>
+
+<!-- Itsukushima shrine -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-shrine-shinto-itukushima}">
+	<group>Famous Temples</group>
+	<name>Itsukushima shrine(3x5)</name>
+	<design>Itsukushima shrine</design>
+	<structure>
+		<category byname="Famous Temples"/>
+	</structure>
+	<price>10000</price>
+	<height>1</height>
+	<size>3,5</size>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>500</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>20</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,0" offset="32">
+		<picture ref="{FreeTrain-Shika-picture-structure-shrine-shinto-itukushima-01}"/>
+	</sprite>
+
+	<sprite origin="128,0" offset="48" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-structure-shrine-shinto-itukushima-01}"/>
+	</sprite>
+
+	<sprite origin="256,0" offset="32">
+		<picture ref="{FreeTrain-Shika-picture-structure-shrine-shinto-itukushima-01}"/>
+	</sprite>
+
+	<sprite origin="384,0" offset="48" opposite="true">
+		<picture ref="{FreeTrain-Shika-picture-structure-shrine-shinto-itukushima-01}"/>
+	</sprite>
+
+</contribution>
+
+<title>Lighthouses</title>
+
+<!-- Lighthouses -->
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-lighthouse-01}">
+	<picture  src="lighthouse_01.bmp">
+		<override when="night" src="lighthouse_01n.bmp"/>
+	</picture>
+</contribution>
+
+<!-- Lighthouses -->
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-lighthouse-01}">
+	<group>Landmarks</group>
+	<name>Lighthouses(1x1)</name>
+	<design>Lighthouses</design>
+	<structure>
+		<category byname="Landmarks"/>
+	</structure>
+	<price>1000</price>
+	<size>1,1</size>
+	<minHeight>2</minHeight>
+	<maxHeight>4</maxHeight>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.RestaurantPopulation"/>
+			<base>20</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>2</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<pictures>
+		<top    origin=" 0, 0" offset="16">
+			<picture ref="{FreeTrain-Shika-picture-structure-lighthouse-01}"/>
+		</top>
+		<middle origin=" 0, 32" offset="16">
+			<picture ref="{FreeTrain-Shika-picture-structure-lighthouse-01}"/>
+		</middle>
+		<bottom origin=" 0, 64" offset="16">
+			<picture ref="{FreeTrain-Shika-picture-structure-lighthouse-01}"/>
+		</bottom>
+	</pictures>
+
+	<pictures>
+		<top    origin=" 32, 0" offset="16">
+			<picture ref="{FreeTrain-Shika-picture-structure-lighthouse-01}"/>
+		</top>
+		<middle origin=" 32, 32" offset="16">
+			<picture ref="{FreeTrain-Shika-picture-structure-lighthouse-01}"/>
+		</middle>
+		<bottom origin=" 32, 64" offset="16">
+			<picture ref="{FreeTrain-Shika-picture-structure-lighthouse-01}"/>
+		</bottom>
+	</pictures>
+
+	<pictures>
+		<top    origin=" 64, 0" offset="16">
+			<picture ref="{FreeTrain-Shika-picture-structure-lighthouse-01}"/>
+		</top>
+		<middle origin=" 64, 32" offset="16">
+			<picture ref="{FreeTrain-Shika-picture-structure-lighthouse-01}"/>
+		</middle>
+		<bottom origin=" 64, 64" offset="16">
+			<picture ref="{FreeTrain-Shika-picture-structure-lighthouse-01}"/>
+		</bottom>
+	</pictures>
+
+	<pictures>
+		<top    origin=" 96, 0" offset="16">
+			<picture ref="{FreeTrain-Shika-picture-structure-lighthouse-01}"/>
+		</top>
+		<middle origin=" 96, 32" offset="16">
+			<picture ref="{FreeTrain-Shika-picture-structure-lighthouse-01}"/>
+		</middle>
+		<bottom origin=" 96, 64" offset="16">
+			<picture ref="{FreeTrain-Shika-picture-structure-lighthouse-01}"/>
+		</bottom>
+	</pictures>
+
+</contribution>
+
+<title>Waterfall</title>
+
+<!-- Waterfall(1x1) -->
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-waterfall-001-left}">
+	<picture  src="waterfall_001_left.bmp">
+		<override when="winter" src="waterfall_001_left_winter.bmp"/>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-waterfall-001-middle}">
+	<picture  src="waterfall_001_middle.bmp">
+		<override when="winter" src="waterfall_001_middle_winter.bmp"/>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-structure-waterfall-001-right}">
+	<picture  src="waterfall_001_right.bmp">
+		<override when="winter" src="waterfall_001_right_winter.bmp"/>
+	</picture>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-waterfall-001A-left-lower}"> 
+
+	<group>Beauty Spots</group>
+	<name>Waterfall(1x1)</name>
+	<design>Waterfall A(left below)</design>
+	<structure>
+		<category byname="Beauty Spots"/>
+	</structure>
+	<price>500</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>10</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-left}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-left}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-left}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-left}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-waterfall-001B-left-lower}"> 
+
+	<group>Beauty Spots</group>
+	<name>Waterfall(1x1)</name>
+	<design>Waterfall B(left below)</design>
+	<structure>
+		<category byname="Beauty Spots"/>
+	</structure>
+	<price>500</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>10</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-left}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-left}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-left}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-left}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-waterfall-001A-left-upper}"> 
+
+	<group>Beauty Spots</group>
+	<name>Waterfall(1x1)</name>
+	<design>Waterfall A(left above)</design>
+	<structure>
+		<category byname="Beauty Spots"/>
+	</structure>
+	<price>500</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>10</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-left}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-left}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-left}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-left}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-waterfall-001B-left-upper}"> 
+
+	<group>Beauty Spots</group>
+	<name>Waterfall(1x1)</name>
+	<design>Waterfall B(left above)</design>
+	<structure>
+		<category byname="Beauty Spots"/>
+	</structure>
+	<price>500</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>10</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-left}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-left}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-left}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-left}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-waterfall-001A-middle-lower}"> 
+
+	<group>Beauty Spots</group>
+	<name>Waterfall(1x1)</name>
+	<design>Waterfall A(center below)</design>
+	<structure>
+		<category byname="Beauty Spots"/>
+	</structure>
+	<price>500</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>10</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-middle}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-middle}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-middle}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-middle}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-waterfall-001B-middle-lower}"> 
+
+	<group>Beauty Spots</group>
+	<name>Waterfall(1x1)</name>
+	<design>Waterfall B(center below)</design>
+	<structure>
+		<category byname="Beauty Spots"/>
+	</structure>
+	<price>500</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>10</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-middle}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-middle}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-middle}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-middle}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-waterfall-001A-middle-upper}"> 
+
+	<group>Beauty Spots</group>
+	<name>Waterfall(1x1)</name>
+	<design>Waterfall A(center above)</design>
+	<structure>
+		<category byname="Beauty Spots"/>
+	</structure>
+	<price>500</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>10</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-middle}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-middle}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-middle}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-middle}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-waterfall-001B-middle-upper}"> 
+
+	<group>Beauty Spots</group>
+	<name>Waterfall(1x1)</name>
+	<design>Waterfall B(center above)</design>
+	<structure>
+		<category byname="Beauty Spots"/>
+	</structure>
+	<price>500</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>10</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-middle}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-middle}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-middle}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-middle}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-waterfall-001A-right-lower}"> 
+
+	<group>Beauty Spots</group>
+	<name>Waterfall(1x1)</name>
+	<design>Waterfall A(right below)</design>
+	<structure>
+		<category byname="Beauty Spots"/>
+	</structure>
+	<price>500</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>10</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-right}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-right}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-right}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-right}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-waterfall-001B-right-lower}"> 
+
+	<group>Beauty Spots</group>
+	<name>Waterfall(1x1)</name>
+	<design>Waterfall B(right below)</design>
+	<structure>
+		<category byname="Beauty Spots"/>
+	</structure>
+	<price>500</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>10</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-right}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-right}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-right}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-right}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-waterfall-001A-right-upper}"> 
+
+	<group>Beauty Spots</group>
+	<name>Waterfall(1x1)</name>
+	<design>Waterfall A(right above)</design>
+	<structure>
+		<category byname="Beauty Spots"/>
+	</structure>
+	<price>500</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>10</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-right}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-right}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-right}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-right}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-waterfall-001B-right-upper}"> 
+
+	<group>Beauty Spots</group>
+	<name>Waterfall(1x1)</name>
+	<design>Waterfall B(right above)</design>
+	<structure>
+		<category byname="Beauty Spots"/>
+	</structure>
+	<price>500</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>10</base>
+		</population>
+	</population>
+
+	<computerCannotBuild />
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-right}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-right}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-right}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-structure-waterfall-001-right}"/>
+	</sprite>
+
+</contribution>
+
+</plug-in>

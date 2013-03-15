@@ -1,0 +1,13 @@
+--- source.il	2003-01-19 19:01:25.000000000 -0800
++++ ~source.il	2003-01-19 19:20:53.000000000 -0800
+@@ -3256,8 +3256,8 @@
+     } // end of method ICaptureGraphBuilder2::RemoteFindInterface
+ 
+     .method public hidebysig newslot virtual abstract 
+-            instance void  RenderStream([in] valuetype [mscorlib]System.Guid& pCategory,
+-                                        [in] valuetype [mscorlib]System.Guid& pType,
++            instance void  RenderStream([in] native int pCategory,
++                                        [in] native int pType,
+                                         [in] object  marshal( iunknown) pSource,
+                                         [in] class DirectShowLib.IBaseFilter  marshal( interface) pfCompressor,
+                                         [in] class DirectShowLib.IBaseFilter  marshal( interface) pfRenderer) runtime managed internalcall

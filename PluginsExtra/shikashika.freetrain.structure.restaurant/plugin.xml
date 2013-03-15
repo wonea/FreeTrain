@@ -1,0 +1,1062 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plug-in [
+
+<!ENTITY ta-white '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="244,234,218"/>
+</spriteType>
+'>
+<!ENTITY ta-silvergreen '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="198,198,184"/>
+</spriteType>
+'>
+
+<!ENTITY wall-greyyellow '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="198,195,164"/>
+</spriteType>
+'>
+<!ENTITY wall-warmbrown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="174,143,122"/>
+</spriteType>
+'>
+<!ENTITY wall-greywarmbrown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="213,205,184"/>
+</spriteType>
+'>
+<!ENTITY wall-darkbrown '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="143,134,125"/>
+</spriteType>
+'>
+<!ENTITY wall-lightyelloworange '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="246,228,164"/>
+</spriteType>
+'>
+
+<!ENTITY wall-brownbeige '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="217,197,173"/>
+</spriteType>
+'>
+<!ENTITY wall-redbrick '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="94,65,41"/>
+</spriteType>
+'>
+<!ENTITY wall-ivory '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="212,215,194"/>
+</spriteType>
+'>
+<!ENTITY wall-urbanstone '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="196,180,167"/>
+</spriteType>
+'>
+<!ENTITY wall-tiled '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="203,170,124"/>
+</spriteType>
+'>
+<!ENTITY wall-pastelgray '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="191,206,200"/>
+</spriteType>
+'>
+
+<!ENTITY wall-wood001 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="191,138,85"/>
+</spriteType>
+'>
+<!ENTITY wall-wood002 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="191,175,85"/>
+</spriteType>
+'>
+<!ENTITY wall-wood003 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="204,150,97"/>
+</spriteType>
+'>
+<!ENTITY wall-wood004 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="199,178,153"/>
+</spriteType>
+'>
+<!ENTITY wall-wood005 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="138,110,61"/>
+</spriteType>
+'>
+<!ENTITY wall-wood006 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="114,99,88"/>
+</spriteType>
+'>
+<!ENTITY wall-wood007 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="160,151,104"/>
+</spriteType>
+'>
+<!ENTITY wall-wood008 '
+<spriteType name="hueTransform">
+<map from="*,0,0" to="93,79,65"/>
+</spriteType>
+'>
+
+<!ENTITY component_lamianrestaurant_001 '
+	<group>Restaurants</group>
+	<name>Ramen shop(1x1)</name>
+	<structure>
+		<category byname="Restaurants"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>300</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>90</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+'>
+<!ENTITY component_noodlerestaurant_001 '
+	<group>Restaurants</group>
+	<name>Udon and soba shop(1x1)</name>
+	<structure>
+		<category byname="Restaurants"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>300</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>90</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+'>
+<!ENTITY component_thinrestaurant_001 '
+	<group>Restaurants</group>
+	<name>Okonomiyaki shop(1x1)</name>
+	<structure>
+		<category byname="Restaurants"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>300</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>90</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+'>
+
+<!ENTITY component_teahouse_001 '
+	<group>Restaurants</group>
+	<name>Teahouse(1x1)</name>
+	<structure>
+		<category byname="Restaurants"/>
+		<category byname="Housing" hide="true"/>
+	</structure>
+	<price>300</price>
+	<size>1,1</size>
+	<height>1</height>
+	<population>
+		<class name="freetrain.contributions.population.CombinationPopulation"/>
+		<population>
+			<class name="freetrain.contributions.population.ShopperPopulation"/>
+			<base>80</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.OfficePopulation"/>
+			<base>5</base>
+		</population>
+		<population>
+			<class name="freetrain.contributions.population.ResidentialPopulation"/>
+			<base>5</base>
+		</population>
+	</population>
+'>
+
+]>
+
+
+<plug-in>
+
+<author>Shikashika</author>
+<homepage>http://shikashika.hp.infoseek.co.jp/</homepage>
+
+<title>Buildings(Restaurants)</title>
+
+<!-- Restaurants -->
+
+<!-- Ramen shop -->
+
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-restaurant-lamian-01}">
+	<picture  src="lamian_01.bmp">
+		<override when="night" src="lamian_01n.bmp"/>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-restaurant-lamian-02}">
+	<picture  src="lamian_02.bmp">
+		<override when="night" src="lamian_02n.bmp"/>
+	</picture>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-lamian-01-a}">
+&component_lamianrestaurant_001;
+	<design>Ramen shop A</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-01}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-01}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-01}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-lamian-02-a}">
+&component_lamianrestaurant_001;
+	<design>Ramen shop A(tile roof)</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-02}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-02}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-02}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-lamian-01-b}">
+&component_lamianrestaurant_001;
+	<design>Ramen shop B</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-01}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-01}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-01}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-lamian-02-b}">
+&component_lamianrestaurant_001;
+	<design>Ramen shop B(tile roof)</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-02}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-02}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-02}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-lamian-01-c}">
+&component_lamianrestaurant_001;
+	<design>Ramen shop C</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-01}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-01}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-01}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-lamian-02-c}">
+&component_lamianrestaurant_001;
+	<design>Ramen shop C(tile roof)</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-02}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-02}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-02}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-lamian-01-d}">
+&component_lamianrestaurant_001;
+	<design>Ramen shop D</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-01}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-01}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-01}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-lamian-02-d}">
+&component_lamianrestaurant_001;
+	<design>Ramen shop D(tile roof)</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-02}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-02}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-02}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-lamian-02}"/>
+	</sprite>
+
+</contribution>
+
+<!-- Udon and soba shop -->
+
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-restaurant-noodle-01}">
+	<picture  src="noodle_01.bmp">
+		<override when="night" src="noodle_01n.bmp"/>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-restaurant-noodle-02}">
+	<picture  src="noodle_02.bmp">
+		<override when="night" src="noodle_02n.bmp"/>
+	</picture>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-noodle-01-a}">
+&component_noodlerestaurant_001;
+	<design>Udon and soba shop A</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-01}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-01}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-01}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-noodle-02-a}">
+&component_noodlerestaurant_001;
+	<design>Udon and soba shop A(tile roof)</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-02}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-02}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-02}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-noodle-01-b}">
+&component_noodlerestaurant_001;
+	<design>Udon and soba shop B</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-01}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-01}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-01}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-noodle-02-b}">
+&component_noodlerestaurant_001;
+	<design>Udon and soba shop B(tile roof)</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-02}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-02}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-02}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-noodle-01-c}">
+&component_noodlerestaurant_001;
+	<design>Udon and soba shop C</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-01}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-01}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-01}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-noodle-02-c}">
+&component_noodlerestaurant_001;
+	<design>Udon and soba shop C(tile roof)</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-02}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-02}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-02}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-noodle-01-d}">
+&component_noodlerestaurant_001;
+	<design>Udon and soba shop D</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-01}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-01}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-01}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-noodle-02-d}">
+&component_noodlerestaurant_001;
+	<design>Udon and soba shop D(tile roof)</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-02}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-02}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-02}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-noodle-02}"/>
+	</sprite>
+
+</contribution>
+
+<!-- Okonomiyaki shop -->
+
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-restaurant-thin-01}">
+	<picture  src="thin_01.bmp">
+		<override when="night" src="thin_01n.bmp"/>
+	</picture>
+</contribution>
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-restaurant-thin-02}">
+	<picture  src="thin_02.bmp">
+		<override when="night" src="thin_02n.bmp"/>
+	</picture>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-thin-01-a}">
+&component_thinrestaurant_001;
+	<design>Okonomiyaki shop A</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-01}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-01}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-01}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-thin-02-a}">
+&component_thinrestaurant_001;
+	<design>Okonomiyaki shop A(tile roof)</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-02}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-02}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-02}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-thin-01-b}">
+&component_thinrestaurant_001;
+	<design>Okonomiyaki shop B</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-01}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-01}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-01}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-thin-02-b}">
+&component_thinrestaurant_001;
+	<design>Okonomiyaki shop B(tile roof)</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-02}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-02}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-02}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-thin-01-c}">
+&component_thinrestaurant_001;
+	<design>Okonomiyaki shop C</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-01}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-01}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-01}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-thin-02-c}">
+&component_thinrestaurant_001;
+	<design>Okonomiyaki shop C(tile roof)</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-02}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-02}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-02}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-02}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-thin-01-d}">
+&component_thinrestaurant_001;
+	<design>Okonomiyaki shop D</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-01}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-01}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-01}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-thin-02-d}">
+&component_thinrestaurant_001;
+	<design>Okonomiyaki shop D(tile roof)</design>
+	&wall-brownbeige;
+	&wall-redbrick;
+	&wall-ivory;
+	&wall-urbanstone;
+	&wall-tiled;
+	&wall-pastelgray;
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-02}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-02}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-02}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-thin-02}"/>
+	</sprite>
+
+</contribution>
+
+<!-- Teahouse -->
+
+<contribution type="picture" id="{FreeTrain-Shika-picture-building-restaurant-teahouse-01}">
+	<picture  src="teahouse_01.bmp">
+		<override when="night" src="teahouse_01n.bmp"/>
+	</picture>
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-teahouse-001-a}">
+&component_teahouse_001;
+	<design>Teahouse A</design>
+	&wall-wood003;
+	&wall-wood004;
+	&wall-wood005;
+	&wall-wood006;
+	&wall-wood007;
+	&wall-wood008;
+
+	<sprite origin="0,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-teahouse-01}"/>
+	</sprite>
+
+	<sprite origin="32,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-teahouse-01}"/>
+	</sprite>
+
+	<sprite origin="64,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-teahouse-01}"/>
+	</sprite>
+
+	<sprite origin="96,0" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-teahouse-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-teahouse-001-b}">
+&component_teahouse_001;
+	<design>Teahouse B</design>
+	&wall-wood003;
+	&wall-wood004;
+	&wall-wood005;
+	&wall-wood006;
+	&wall-wood007;
+	&wall-wood008;
+
+	<sprite origin="0,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-teahouse-01}"/>
+	</sprite>
+
+	<sprite origin="32,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-teahouse-01}"/>
+	</sprite>
+
+	<sprite origin="64,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-teahouse-01}"/>
+	</sprite>
+
+	<sprite origin="96,32" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-teahouse-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-teahouse-001-c}">
+&component_teahouse_001;
+	<design>Teahouse C</design>
+	&wall-wood003;
+	&wall-wood004;
+	&wall-wood005;
+	&wall-wood006;
+	&wall-wood007;
+	&wall-wood008;
+
+	<sprite origin="0,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-teahouse-01}"/>
+	</sprite>
+
+	<sprite origin="32,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-teahouse-01}"/>
+	</sprite>
+
+	<sprite origin="64,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-teahouse-01}"/>
+	</sprite>
+
+	<sprite origin="96,64" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-teahouse-01}"/>
+	</sprite>
+
+</contribution>
+
+<contribution type="GenericStructure" id="{FreeTrain-Shika-structure-building-restaurant-teahouse-001-d}">
+&component_teahouse_001;
+	<design>Teahouse D</design>
+	&wall-wood003;
+	&wall-wood004;
+	&wall-wood005;
+	&wall-wood006;
+	&wall-wood007;
+	&wall-wood008;
+
+	<sprite origin="0,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-teahouse-01}"/>
+	</sprite>
+
+	<sprite origin="32,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-teahouse-01}"/>
+	</sprite>
+
+	<sprite origin="64,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-teahouse-01}"/>
+	</sprite>
+
+	<sprite origin="96,96" offset="16">
+		<picture ref="{FreeTrain-Shika-picture-building-restaurant-teahouse-01}"/>
+	</sprite>
+
+</contribution>
+
+</plug-in>
